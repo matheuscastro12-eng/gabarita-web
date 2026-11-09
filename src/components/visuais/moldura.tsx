@@ -20,6 +20,11 @@ export function fmt(n: number, casas = 2): string {
   return n.toLocaleString("pt-BR", { maximumFractionDigits: casas });
 }
 
+/** Dinheiro: inteiro sem centavos ("R$ 80"), quebrado com duas casas ("R$ 0,80"). */
+export function reais(n: number): string {
+  return Number.isInteger(n) ? fmt(n) : n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
 /**
  * Moldura comum dos visuais de "Aprender o básico": exemplo com números, passo a passo
  * com Voltar/Avançar, o truque do ENEM numa linha e um mini exercício de um clique.

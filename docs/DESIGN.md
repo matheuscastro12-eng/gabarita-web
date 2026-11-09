@@ -49,7 +49,7 @@
 - Inputs, select e textarea: raio 12px, borda 1,5px, fundo branco; foco = borda azul.
 - Células do mapa de calor: 38px de altura, raio 8px, fonte arredondada; cinza = sem dados, vermelho/âmbar/verde suaves por nível, verde cheio no máximo; contorno azul = habilidade da semana.
 - Main: padding 26px 28px, largura máxima 1060px, alinhado à esquerda (como o original). Celular: 16px 12px.
-- Movimento: só `transform`, `opacity` e cores, 180ms, `cubic-bezier(.2,0,0,1)`; 0ms com `prefers-reduced-motion`. Foco visível: anel de 2px azul.
+- Movimento: só `transform`, `opacity` e cores, 180–240ms, `cubic-bezier(.2,0,0,1)`; 0ms com `prefers-reduced-motion`. Detalhes na §7. Foco visível: anel de 2px azul.
 
 ## 4. Layout e componentes
 - **Sidebar** (≥ 768px): 210px, branca, padding 28px 12px; marca (capelo azul em traço + "Gabarita"); rótulo MENU; itens com ícone Lucide 18px/1,8 em traço, 14px/500 muted, raio 10px; ativo = `--accent-soft` + azul + 600. Alternar tema no fim, como item de menu.
@@ -89,3 +89,26 @@ Nota 0–10 (1 exemplo e 1 correção em cada):
 - **Acabamento 9** — hover azul nos chips, disabled a 40%, estados vazio/carregando/erro. Correção: eixos do Mafs com passo bonito (antes um rótulo por unidade).
 
 Não testado: leitor de tela real, Safari/Firefox (só Chromium do Playwright), fontes SF/New York de verdade (na máquina de teste caem em Roboto e Tinos), tutor com chave real.
+
+## 7. Movimento (09/11/2026)
+Regras: só `transform` e `opacity` (cores com `transition-colors` quando é estado), 180–240ms, `cubic-bezier(.2,0,0,1)` (`--ease`), nada em loop, nada piscando. O bloco `@media (prefers-reduced-motion: reduce)` do `globals.css` zera toda animação e transição; o `Contador` também confere a preferência e mostra o número final direto. E2E: `aprender.spec.ts` confere a duração zero com `reducedMotion: "reduce"`.
+
+| Onde | Como | Classe / componente |
+|---|---|---|
+| Entrada das telas | filhos diretos do `ConteudoPagina` sobem 6px e aparecem, 220ms, 40ms entre eles (máx. 200ms); grades internas (stat cards, linhas do Hoje) fazem o próprio stagger | `.entrada-stagger`, `.anim-entrada` |
+| Stat cards | número sobe do anterior (0 na primeira vez) até o valor, 520ms com ease-out; "—" e decimais aparecem direto | `ui/contador.tsx`, `lib/movimento.ts` |
+| Confirmar resposta | certa "assenta" (scale .985 → 1.012 → 1) com o check desenhado (traço de 0 ao fim); errada faz shake de 240ms e o X entra com pop | `.anim-assenta`, `.anim-desenha`, `.anim-shake`, `.anim-pop` em `alternativas.tsx` |
+| Progresso do sprint | bolinha que vira verde/vermelha faz pop; barras de 11px crescem de 0 até o valor ao montar e animam a mudança (240ms) | `barra-sprint.tsx`, `ui/progress.tsx` |
+| Troca de questão | o card da questão entra deslizando 10px da direita, 220ms | `.anim-questao` em `questao-view.tsx` |
+| Questões por dia | barras crescem de baixo (`scaleY`) | `.anim-barra` |
+| Visuais | quadradinhos, barras e fichas mudam por cor/transform com atraso curto por item; leitura do eixo desenhada com `scaleX` | `components/visuais/*` |
+
+Exceção registrada: o check desenhado usa `stroke-dashoffset` num SVG de 16px (pintura mínima, sem layout).
+
+## 8. Aprender o básico (componentes visuais)
+Tela `/aprender` (menu "Aprender", Alt+7) e botão **"Ver visualmente"** (chip pequeno no canto da linha de tags do card da questão, só no sprint, não no simulado) que abre o visual do assunto num diálogo. O mapeamento assunto → visual fica em `src/lib/visuais/catalogo.ts`.
+
+- **`MolduraVisual`** (`components/visuais/moldura.tsx`): área do visual no cinza da página (r14), controles livres (slider `Deslizador`, chips, `+/−`), texto do passo (`aria-live`), Voltar (chip) / "Passo n de N" / Avançar (pílula azul), trilho de passos em pílulas de 6px, caixa **Truque do ENEM** em azul suave com lâmpada, e o **Teste rápido** (enunciado em serifa, opções em chips; certa = verde + assenta, errada = vermelho + shake, com retorno em `role="status"`).
+- Visuais: porcentagem (100 quadradinhos), proporção (duas barras com marcas de unidade), frações (barra dividida e a equivalente), gráficos (SVG com eixo, barra escolhida e leitura tracejada), estatística (fichas que se ordenam, mediana em azul, moda em verde, média como traço âmbar na reta), unidades (escada km…mm com marcador), área (grade que se preenche, contorno azul = perímetro), probabilidade (urna, favoráveis com anel, o resto apagado).
+- Cores: azul = o que se olha agora; verde = acerto/moda; vermelho = o que sai (desconto) ou erro; âmbar = referência (média, barra comparada). Números em `.num`.
+- A conta de cada visual vem de funções puras em `src/lib/visuais/` (100% de cobertura), nunca do componente.

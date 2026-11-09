@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { pelaUnidade } from "@/lib/visuais/proporcao";
-import { Deslizador, fmt, MolduraVisual } from "./moldura";
+import { Deslizador, MolduraVisual, reais } from "./moldura";
 
 const KG = 3;
 const PRECO = 12;
@@ -17,9 +17,9 @@ export function VisualProporcao() {
     <MolduraVisual
       id="proporcao"
       passos={[
-        <>O dado do problema: <b>{KG} kg</b> de arroz custam <b>R$ {fmt(PRECO)}</b>. As duas barras andam juntas.</>,
-        <>Reduza a 1 unidade: R$ {fmt(PRECO)} ÷ {KG} = <b>R$ {fmt(unitario)} por kg</b>.</>,
-        <>Agora multiplique: {alvo} kg × R$ {fmt(unitario)} = <b>R$ {fmt(resultado)}</b>. Mova o slider e veja as duas barras crescerem juntas.</>,
+        <>O dado do problema: <b>{KG} kg</b> de arroz custam <b>R$ {reais(PRECO)}</b>. As duas barras andam juntas.</>,
+        <>Reduza a 1 unidade: R$ {reais(PRECO)} ÷ {KG} = <b>R$ {reais(unitario)} por kg</b>.</>,
+        <>Agora multiplique: {alvo} kg × R$ {reais(unitario)} = <b>R$ {reais(resultado)}</b>. Mova o slider e veja as duas barras crescerem juntas.</>,
       ]}
       truque="Se uma grandeza dobra e a outra também dobra, é direta: ache quanto vale 1 e multiplique. Se uma dobra e a outra cai pela metade (mais pedreiros, menos dias), é inversa: multiplique cruzado ao contrário."
       exercicio={{
@@ -32,11 +32,11 @@ export function VisualProporcao() {
     >
       {(passo) => {
         const kg = passo === 0 ? KG : passo === 1 ? 1 : alvo;
-        const reais = kg * unitario;
+        const valorReais = kg * unitario;
         return (
-          <div className="flex flex-col gap-4" role="img" aria-label={`${kg} kg custam ${fmt(reais)} reais`}>
+          <div className="flex flex-col gap-4" role="img" aria-label={`${kg} kg custam ${reais(valorReais)} reais`}>
             <Linha rotulo="kg" valor={`${kg} kg`} fracao={kg / MAX_KG} cor="bg-accent" blocos={MAX_KG} />
-            <Linha rotulo="R$" valor={`R$ ${fmt(reais)}`} fracao={kg / MAX_KG} cor="bg-success" blocos={MAX_KG} />
+            <Linha rotulo="R$" valor={`R$ ${reais(valorReais)}`} fracao={kg / MAX_KG} cor="bg-success" blocos={MAX_KG} />
           </div>
         );
       }}

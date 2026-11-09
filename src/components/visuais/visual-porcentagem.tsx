@@ -3,7 +3,7 @@
 import * as React from "react";
 import { aplicarVariacoes, fator, porcentagemDe, quadradosPintados } from "@/lib/visuais/porcentagem";
 import { cn } from "@/lib/utils";
-import { Deslizador, fmt, MolduraVisual } from "./moldura";
+import { Deslizador, fmt, MolduraVisual, reais } from "./moldura";
 
 const PRECO = 80;
 
@@ -18,9 +18,9 @@ export function VisualPorcentagem() {
     <MolduraVisual
       id="porcentagem"
       passos={[
-        <>Uma camiseta custa <b>R$ {fmt(PRECO)}</b>. Os 100 quadradinhos são o preço inteiro: cada um vale R$ {fmt(PRECO / 100)}.</>,
-        <>Desconto de <b>{p}%</b> = {pintados} quadradinhos. {pintados} × R$ {fmt(PRECO / 100)} = <b>R$ {fmt(desconto)}</b> a menos.</>,
-        <>Sobram {100 - pintados} quadradinhos: você paga <b>R$ {fmt(fica)}</b>. Atalho: {fmt(PRECO)} × {fmt(fator(-p))} = {fmt(fica)}.</>,
+        <>Uma camiseta custa <b>R$ {reais(PRECO)}</b>. Os 100 quadradinhos são o preço inteiro: cada um vale R$ {reais(PRECO / 100)}.</>,
+        <>Desconto de <b>{p}%</b> = {pintados} quadradinhos. {pintados} × R$ {reais(PRECO / 100)} = <b>R$ {reais(desconto)}</b> a menos.</>,
+        <>Sobram {100 - pintados} quadradinhos: você paga <b>R$ {reais(fica)}</b>. Atalho: {fmt(PRECO)} × {fmt(fator(-p))} = {fmt(fica)}.</>,
       ]}
       truque={`Desconto de p% é multiplicar por (1 − p/100); aumento é multiplicar por (1 + p/100). Subir 10% e depois cair 10% dá −1%, não volta ao preço.`}
       exercicio={{

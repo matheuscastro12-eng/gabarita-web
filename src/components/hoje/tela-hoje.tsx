@@ -164,7 +164,7 @@ export function TelaHoje() {
                   {q ? (
                     <>
                       <span className="num">{q.habilidade ?? "—"}</span>
-                      {q.habilidade && <span className="hidden max-w-44 truncate font-medium text-muted-foreground md:inline">{NOME_HABILIDADE[q.habilidade]}</span>}
+                      {q.habilidade && <span className="hidden max-w-28 truncate font-medium text-muted-foreground md:inline">{NOME_HABILIDADE[q.habilidade]}</span>}
                       <Badge
                         variant={q.tri ? (q.dificuldade_estimada === "facil" ? "success" : q.dificuldade_estimada === "dificil" ? "danger" : "warning") : "neutral"}
                         className="rounded-full px-2 py-0 text-[11px]"

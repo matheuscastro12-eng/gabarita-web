@@ -36,7 +36,7 @@ export function TelaAprender() {
         titulo="Aprender o básico"
         descricao="A matemática que mais cai nas questões fáceis do ENEM, em visuais curtos: avance no seu ritmo, mexa nos números e faça o teste de um clique."
       />
-      <div className="grid gap-3.5 lg:grid-cols-[240px_minmax(0,1fr)] lg:items-start">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-3.5 lg:grid-cols-[240px_minmax(0,1fr)] lg:items-start">
         <nav aria-label="Temas" className="-mx-3 overflow-x-auto px-3 lg:mx-0 lg:px-0">
           <ul className="flex gap-2 lg:flex-col lg:gap-1">
             {VISUAIS.map((v) => (
