@@ -107,6 +107,18 @@ export interface Perfil {
   mostrarTimer: boolean;
 }
 
+export type TipoEventoTutor = "dica" | "erro" | "equivoco" | "pedido_resposta" | "verificacao" | "gemea";
+
+/** Evento registrado pelo tutor (ferramenta record_event) ou pelo modo guiado. */
+export interface EventoTutor {
+  id: string;
+  tipo: TipoEventoTutor;
+  questaoId: string;
+  detalhe: string;
+  degrau: number | null;
+  em: string;
+}
+
 export interface EstadoAluno {
   versao: 1;
   criadoEm: string;
@@ -117,6 +129,8 @@ export interface EstadoAluno {
   caderno: EntradaCaderno[];
   sprints: Sprint[];
   simulados: Simulado[];
+  /** Eventos do tutor; opcional para ler estados gravados antes da etapa 2. */
+  eventosTutor?: EventoTutor[];
 }
 
 export interface IntervaloNota {

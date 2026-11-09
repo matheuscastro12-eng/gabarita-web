@@ -9,3 +9,4 @@ export * from "./pronto";
 export * from "./fila";
 export * from "./caderno";
 export * from "./estado";
+export * from "./eventos";

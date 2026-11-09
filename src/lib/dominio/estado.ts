@@ -42,6 +42,7 @@ export function estadoInicial(agora: Date, perfil: Partial<Perfil> = {}): Estado
     caderno: [],
     sprints: [],
     simulados: [],
+    eventosTutor: [],
   };
 }
 

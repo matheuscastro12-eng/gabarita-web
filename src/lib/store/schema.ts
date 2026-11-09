@@ -7,6 +7,7 @@ import type {
   EntradaCaderno,
   EstadoAluno,
   EstadoHabilidade,
+  EventoTutor,
   Habilidade,
   Perfil,
   Simulado,
@@ -109,6 +110,15 @@ export const perfilSchema: z.ZodType<Perfil> = z.object({
   mostrarTimer: z.boolean(),
 });
 
+export const eventoTutorSchema: z.ZodType<EventoTutor> = z.object({
+  id: z.string(),
+  tipo: z.enum(["dica", "erro", "equivoco", "pedido_resposta", "verificacao", "gemea"]),
+  questaoId: z.string(),
+  detalhe: z.string(),
+  degrau: z.number().int().min(0).max(4).nullable(),
+  em: isoSchema,
+});
+
 export const estadoAlunoSchema: z.ZodType<EstadoAluno> = z.object({
   versao: z.literal(1),
   criadoEm: isoSchema,
@@ -119,4 +129,5 @@ export const estadoAlunoSchema: z.ZodType<EstadoAluno> = z.object({
   caderno: z.array(entradaCadernoSchema),
   sprints: z.array(sprintSchema),
   simulados: z.array(simuladoSchema),
+  eventosTutor: z.array(eventoTutorSchema).optional(),
 });
