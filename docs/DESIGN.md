@@ -112,3 +112,14 @@ Tela `/aprender` (menu "Aprender", Alt+7) e botão **"Ver visualmente"** (chip p
 - Visuais: porcentagem (100 quadradinhos), proporção (duas barras com marcas de unidade), frações (barra dividida e a equivalente), gráficos (SVG com eixo, barra escolhida e leitura tracejada), estatística (fichas que se ordenam, mediana em azul, moda em verde, média como traço âmbar na reta), unidades (escada km…mm com marcador), área (grade que se preenche, contorno azul = perímetro), probabilidade (urna, favoráveis com anel, o resto apagado).
 - Cores: azul = o que se olha agora; verde = acerto/moda; vermelho = o que sai (desconto) ou erro; âmbar = referência (média, barra comparada). Números em `.num`.
 - A conta de cada visual vem de funções puras em `src/lib/visuais/` (100% de cobertura), nunca do componente.
+
+## 9. Resumos de caderno (09/11/2026)
+Tela `/resumos` (menu "Resumos", Alt+8) e `/resumos/<id>`. Item próprio no menu, e não aba de Aprender, porque Aprender é interação curta com visuais e o resumo é leitura de revisão longa, com índice, busca e progresso; misturar os dois deixaria a lista lateral de Aprender com 26 itens. O `/caderno` continua sendo o caderno de erros.
+
+- **Folha de caderno:** `.caderno-pauta` (pauta de 28px na cor da linha sobre o branco do card) nos blocos de texto e nos cards do índice; `.caderno-quadriculado` (24px) atrás do mapa mental. Nada de bege nem fonte manuscrita; no escuro as linhas usam o `--border` escuro.
+- **Grifo e sublinhado:** pegadinhas com o termo em marca-texto (`.grifo strong`, token `--marca-texto`); a resposta do exemplo sublinhada em azul (`.sublinhado`).
+- **Margem:** coluna de 220px à direita com anotações curtas (linha azul suave à esquerda, rótulo "NA MARGEM"); no celular vira chips depois do conteúdo.
+- **Selo:** "cai muito" = tag azul cheia (`solid`); "cai às vezes" = tag neutra. Habilidades em tags azuis suaves com o nome curto.
+- **Mapa mental** (`components/resumos/mapa-mental.tsx`): SVG com nó central em pílula azul, ramos em pílulas brancas de borda azul numa elipse que crescem para fora, filhos empilhados além do ramo com ligação tracejada. Um ramo aberto por vez; clique, Enter ou Espaço; `aria-expanded`. Filhos entram com `.anim-mapa` (opacity + scale .92→1, 200ms, 40ms entre eles), zerado por `prefers-reduced-motion`. Abaixo de 768px vira árvore em lista com os mesmos ramos. A geometria e o viewBox saem de `geometriaMapa` (função pura testada contra sobreposição).
+- **Fórmulas** em KaTeX (modo display) dentro de cartões de borda azul suave; **Truque de prova** na caixa azul suave com lâmpada, como o Truque do ENEM de Aprender.
+- **IDE:** chip "Ver resumo" ao lado de "Ver visualmente" quando a habilidade e o assunto da questão têm resumo (só no sprint).
