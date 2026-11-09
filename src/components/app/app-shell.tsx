@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { AjudaAtalhos } from "./ajuda-atalhos";
 import { PaletaComandos } from "./paleta-comandos";
 import { BarraInferior, Sidebar } from "./sidebar";
+import { AvisoArmazenamento } from "./aviso-armazenamento";
 
 /**
  * Casca do app: barra lateral (desktop) ou inferior (celular), conteúdo,
@@ -34,6 +35,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </div>
       )}
       <main id="conteudo" className="flex min-h-0 min-w-0 flex-1 flex-col">
+        <AvisoArmazenamento />
         {children}
       </main>
       {!foco && (
