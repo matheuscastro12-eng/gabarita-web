@@ -26,6 +26,10 @@ export const triSchema = z.object({
   a: z.number(),
   b: z.number(),
   c: z.number().min(0).max(1),
+  /** true quando o espelho trazia o decimal quebrado e o PROVAS reinseriu o ponto (só 2009). */
+  corrigido: z.boolean().optional(),
+  /** Ex.: "INEP, microdados do ENEM 2023 (ITENS_PROVA), espelho Zenodo record 18801899". */
+  fonte: z.string().optional(),
 });
 export type ParametrosTRI = z.infer<typeof triSchema>;
 
@@ -61,6 +65,10 @@ export const resolucaoSchema = z.object({
   classificacao: z.literal("revisada"),
   revisado_por: z.string().optional(),
   revisado_em: z.string().optional(),
+  /** Dificuldade percebida pelo curador (1 = mais fácil); ordena a trilha quando não há TRI. */
+  nivel_curador: z.number().int().min(1).max(5).optional(),
+  /** Transcrição textual da tabela/gráfico quando a questão depende de imagem. */
+  dados_da_imagem: z.string().optional(),
 });
 export type Resolucao = z.infer<typeof resolucaoSchema>;
 
@@ -71,6 +79,7 @@ export const fonteSchema = z.object({
   transcricao: z.literal("enem.dev"),
   transcricao_url: z.string().url(),
   microdados_url: z.string().url().nullable().optional(),
+  microdados_espelho_url: z.string().url().nullable().optional(),
 });
 
 export const qualidadeSchema = z.object({
@@ -91,6 +100,8 @@ export const questaoSchema = z.object({
   imagens: z.array(z.string().url()),
   alternativas: z.array(alternativaSchema).min(4).max(5),
   gabarito: letraSchema,
+  /** "inep" = TX_GABARITO oficial dos microdados; "transcricao" = só a enem.dev. Ausente no fixture antigo. */
+  gabarito_fonte: z.enum(["inep", "transcricao"]).optional(),
   anulada: z.boolean(),
   habilidade: habilidadeSchema.nullable(),
   habilidade_origem: z.enum(["inep", "heuristica", "revisada"]).nullable().optional(),
@@ -133,7 +144,10 @@ export function competenciaDa(habilidade: Habilidade | string): Competencia | nu
   return "C7";
 }
 
-/** Dificuldade heurística a partir do parâmetro b, na mesma regra do PROVAS. */
+/**
+ * Dificuldade heurística a partir do parâmetro b (regra antiga do PROVAS). Hoje o banco
+ * traz `dificuldade_estimada` pelos tercis de b; isto é só o fallback quando não há limiar.
+ */
 export function dificuldadeDoB(b: number): "facil" | "media" | "dificil" {
   if (b < 0.5) return "facil";
   if (b < 1.5) return "media";
@@ -173,3 +187,45 @@ export const NOME_HABILIDADE: Record<string, string> = {
   H29: "Probabilidade e argumentação",
   H30: "Intervenção com estatística",
 };
+
+/** "ENEM 2023, questão 137" (para citar a fonte em qualquer tela). */
+export function citarFonte(q: Pick<Questao, "ano" | "numero">): string {
+  return `INEP, ENEM ${q.ano}, questão ${q.numero}`;
+}
+
+export interface FonteDetalhada {
+  /** "Fonte: INEP, ENEM 2023, questão 137" */
+  citacao: string;
+  /** Link da transcrição na enem.dev. */
+  transcricaoUrl: string;
+  /** Página oficial de provas e gabaritos do INEP, se houver. */
+  urlOficial: string | null;
+  /** "gabarito oficial do INEP" | "gabarito da transcrição (enem.dev)" */
+  gabarito: string;
+  /** Texto curto sobre o TRI: fonte, correção, ou ausência. */
+  tri: string;
+}
+
+/** Monta os textos de atribuição de uma questão (sempre citando o INEP). */
+export function fonteDetalhada(q: Questao): FonteDetalhada {
+  const gabarito =
+    q.gabarito_fonte === "inep"
+      ? "gabarito oficial do INEP (microdados)"
+      : q.gabarito_fonte === "transcricao"
+        ? "gabarito da transcrição (enem.dev)"
+        : "gabarito oficial do INEP";
+  let tri: string;
+  if (q.anulada) tri = "questão anulada: sem parâmetros TRI";
+  else if (!q.tri) tri = "sem parâmetros TRI";
+  else {
+    tri = `TRI: ${q.tri.fonte ?? "microdados do INEP"}`;
+    if (q.tri.corrigido) tri += " (decimal corrigido pelo PROVAS)";
+  }
+  return {
+    citacao: `Fonte: ${citarFonte(q)}`,
+    transcricaoUrl: q.fonte.transcricao_url,
+    urlOficial: q.fonte.url_oficial ?? null,
+    gabarito,
+    tri,
+  };
+}

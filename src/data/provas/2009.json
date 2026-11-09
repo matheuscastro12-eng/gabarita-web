@@ -38,31 +38,40 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H24",
+    "habilidade_origem": "inep",
+    "competencia": "C6",
     "assuntos": [
-      "equacao-1-grau",
       "graficos-tabelas",
-      "razao-proporcao"
+      "equacao-1-grau"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.40407,
+      "b": 2.10238,
+      "c": 0.10698,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 136",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/136",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=340.407); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -104,30 +113,40 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H12",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [
       "geometria-plana",
       "grandezas-unidades-escalas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.70316,
+      "b": 1.28868,
+      "c": 0.13945,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 137",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/137",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=270.316); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -169,31 +188,41 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H24",
+    "habilidade_origem": "inep",
+    "competencia": "C6",
     "assuntos": [
-      "porcentagem",
       "graficos-tabelas",
+      "porcentagem",
       "sequencias-pa"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.4516,
+      "b": 2.26159,
+      "c": 0.07674,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 138",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/138",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=24.516); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -235,31 +264,40 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H28",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
       "probabilidade",
-      "porcentagem",
-      "graficos-tabelas"
+      "porcentagem"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.18226,
+      "b": 2.25808,
+      "c": 0.24918,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 139",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/139",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=218.226); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -299,30 +337,88 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H23",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
-      "geometria-espacial",
+      "regra-de-tres",
       "porcentagem"
     ],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "classificacao": "revisada",
+    "tri": {
+      "a": 1.76793,
+      "b": 0.79745,
+      "c": 0.17243,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 141",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/141",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=176.793); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
+    },
+    "resolucao": {
+      "id": "enem-2009-141",
+      "gabarito": "D",
+      "assuntos": [
+        "regra-de-tres",
+        "porcentagem"
+      ],
+      "habilidade": "H23",
+      "resumo": "Mesmo volume de mistura: se 4% equivalem a 925 milhões de litros, quanto são 3%?",
+      "resolucao": "**1. Entenda o que é fixo.** O volume total da mistura é o mesmo nos dois cenários; só muda a fração de biodiesel: 4% → 925 milhões de litros; 3% → ?\n\n**2. Regra de três direta** (mais porcentagem, mais biodiesel):\n$$\\frac{4\\%}{925} = \\frac{3\\%}{x} \\;\\Rightarrow\\; x = \\frac{3 \\times 925}{4} = \\frac{2\\,775}{4} = 693{,}75$$\n\n**3. Conclusão.** Seriam consumidos **693,75 milhões de litros**. Alternativa **D**.\n\nCaminho equivalente: 1% da mistura ↔ $925/4 = 231{,}25$ milhões de litros; 3% ↔ $3 \\times 231{,}25 = 693{,}75$.",
+      "dicas": {
+        "dica1": "O volume da mistura não muda; biodiesel é proporcional à porcentagem (4% ↔ 925 milhões de litros).",
+        "dica2": "Descubra quanto vale 1% (divida 925 por 4) e multiplique por 3.",
+        "dica3": "x = 925 × 3 ÷ 4."
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "C",
+          "por_que": "Parou em 925 ÷ 4 = 231,25, que é o consumo para 1%, e não para 3%."
+        },
+        {
+          "alternativa": "A",
+          "por_que": "Calculou 3% de 925 (0,03 × 925 = 27,75), tratando 925 como se fosse o volume total da mistura."
+        },
+        {
+          "alternativa": "B",
+          "por_que": "Calculou 4% de 925 (37,00), outra porcentagem aplicada sobre o número errado."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Reduziu 925 em 4% (0,96 × 925 = 888), confundindo 'de 4% para 3%' com 'desconto de 4%'."
+        }
+      ],
+      "conceitos": [
+        "grandezas diretamente proporcionais",
+        "regra de três simples",
+        "porcentagem como fração de um todo fixo"
+      ],
+      "verificacao": {
+        "codigo_sympy": "resultado = Rational(3, 4) * 925",
+        "resultado_esperado": "Rational(2775, 4)",
+        "alternativa_esperada": "D"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 2
     }
   },
   {
@@ -364,29 +460,39 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H24",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H26",
+    "habilidade_origem": "inep",
     "competencia": "C6",
     "assuntos": [
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.38979,
+      "b": 1.27326,
+      "c": 0.18155,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 142",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/142",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=138.979); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -428,30 +534,40 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H24",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C6",
     "assuntos": [
       "graficos-tabelas",
       "porcentagem"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.02435,
+      "b": 2.59979,
+      "c": 0.15523,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 143",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/143",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=202.435); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -493,31 +609,41 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H1",
+    "habilidade_origem": "inep",
     "competencia": "C1",
     "assuntos": [
+      "numeros-operacoes",
       "equacao-1-grau",
-      "analise-combinatoria",
-      "numeros-operacoes"
+      "analise-combinatoria"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.55003,
+      "b": 2.41723,
+      "c": 0.23666,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 144",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/144",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=355.003); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -557,30 +683,40 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H29",
+    "habilidade_origem": "inep",
+    "competencia": "C7",
     "assuntos": [
-      "porcentagem",
-      "probabilidade"
+      "probabilidade",
+      "porcentagem"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 4.3337,
+      "b": 2.47568,
+      "c": 0.1023,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 145",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/145",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": true,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=43.337); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -622,31 +758,41 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H26",
+    "habilidade_origem": "inep",
+    "competencia": "C6",
     "assuntos": [
+      "graficos-tabelas",
       "razao-proporcao",
-      "estatistica-basica",
-      "graficos-tabelas"
+      "estatistica-basica"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.51401,
+      "b": 1.02663,
+      "c": 0.15914,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 146",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/146",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=151.401); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -689,27 +835,37 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
+    "habilidade": "H6",
+    "habilidade_origem": "inep",
+    "competencia": "C2",
     "assuntos": [],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.21921,
+      "b": 0.13076,
+      "c": 0.08474,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 147",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/147",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=121.921); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -751,30 +907,39 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H24",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C6",
     "assuntos": [
-      "graficos-tabelas",
-      "estatistica-basica"
+      "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 0.2988,
+      "b": 3.54917,
+      "c": 0.08531,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 148",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/148",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=0.2988); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -816,27 +981,37 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
+    "habilidade": "H7",
+    "habilidade_origem": "inep",
+    "competencia": "C2",
     "assuntos": [],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.01912,
+      "b": -0.96661,
+      "c": 0.0063,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 149",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/149",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=101.912); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -878,29 +1053,39 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H24",
-    "habilidade_origem": "heuristica",
-    "competencia": "C6",
+    "habilidade": "H27",
+    "habilidade_origem": "inep",
+    "competencia": "C7",
     "assuntos": [
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.13467,
+      "b": 1.88587,
+      "c": 0.17527,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 150",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/150",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=213.467); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -940,29 +1125,39 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H22",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
       "razao-proporcao"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.69347,
+      "b": 1.67973,
+      "c": 0.17628,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 151",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/151",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=169.347); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1002,29 +1197,40 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H13",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [
-      "geometria-espacial"
+      "geometria-espacial",
+      "grandezas-unidades-escalas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.56477,
+      "b": 2.32056,
+      "c": 0.09997,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 152",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/152",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=356.477); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1066,29 +1272,39 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H8",
+    "habilidade_origem": "inep",
     "competencia": "C2",
     "assuntos": [
       "geometria-espacial"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.06463,
+      "b": 2.24084,
+      "c": 0.2378,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 153",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/153",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=206.463); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1128,29 +1344,88 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H10",
-    "habilidade_origem": "heuristica",
-    "competencia": "C3",
+    "habilidade": "H15",
+    "habilidade_origem": "inep",
+    "competencia": "C4",
     "assuntos": [
-      "grandezas-unidades-escalas"
+      "razao-proporcao",
+      "semelhanca-pitagoras"
     ],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "classificacao": "revisada",
+    "tri": {
+      "a": 2.9312,
+      "b": 1.44841,
+      "c": 0.17344,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 154",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/154",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=29.312); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
+    },
+    "resolucao": {
+      "id": "enem-2009-154",
+      "gabarito": "D",
+      "assuntos": [
+        "razao-proporcao",
+        "semelhanca-pitagoras"
+      ],
+      "habilidade": "H15",
+      "resumo": "Em uma rampa reta, altura e distância percorrida são proporcionais: 3,2 m ↔ 0,8 m; quanto falta para 2,2 m.",
+      "resolucao": "**1. Proporcionalidade na rampa.** Ao caminhar sobre uma rampa reta (inclinação constante), a altura alcançada é proporcional à distância percorrida:\n$$\\frac{0{,}8}{3{,}2} = \\frac{1}{4} \\quad (\\text{sobe 1 m a cada 4 m caminhados})$$\n\n**2. Comprimento total da rampa** (altura 2,2 m):\n$$\\frac{2{,}2}{L} = \\frac{1}{4} \\;\\Rightarrow\\; L = 4 \\times 2{,}2 = 8{,}8\\ \\text{m}$$\n\n**3. Quanto falta.**\n$$8{,}8 - 3{,}2 = 5{,}6\\ \\text{m}$$\n\nAlternativa **D**. (Equivalente: faltam $2{,}2 - 0{,}8 = 1{,}4$ m de altura; $1{,}4 \\times 4 = 5{,}6$ m.)",
+      "dicas": {
+        "dica1": "Rampa reta: triângulos semelhantes. A razão entre a altura subida e a distância caminhada é sempre a mesma.",
+        "dica2": "Descubra a razão com os dados (0,8 m de altura para 3,2 m caminhados) e aplique-a à altura que falta (2,2 − 0,8).",
+        "dica3": "Falta subir 1,4 m; cada metro de altura exige 4 m de rampa → 1,4 × 4."
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "B",
+          "por_que": "Somou as duas alturas (2,2 + 0,8 = 3,0), sem usar a proporção entre altura e distância."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Multiplicou 2,2 por 3,2 (7,04), confundindo proporção com produto."
+        },
+        {
+          "alternativa": "C",
+          "por_que": "Somou a distância caminhada com a altura final (3,2 + 2,2 = 5,4), misturando grandezas."
+        },
+        {
+          "alternativa": "A",
+          "por_que": "Montou a regra de três invertida: 3,2 × 0,8 ÷ 2,2 ≈ 1,16."
+        }
+      ],
+      "conceitos": [
+        "proporcionalidade direta",
+        "semelhança de triângulos (inclinação constante)",
+        "subtração de comprimentos"
+      ],
+      "verificacao": {
+        "codigo_sympy": "razao = Rational(32, 10) / Rational(8, 10)\ntotal = razao * Rational(22, 10)\nresultado = total - Rational(32, 10)",
+        "resultado_esperado": "Rational(28, 5)",
+        "alternativa_esperada": "D"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 2
     }
   },
   {
@@ -1190,31 +1465,88 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H10",
-    "habilidade_origem": "heuristica",
-    "competencia": "C3",
+    "habilidade": "H19",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
-      "grandezas-unidades-escalas",
-      "geometria-espacial",
-      "funcao-quadratica"
+      "funcao-quadratica",
+      "equacao-1-grau"
     ],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "classificacao": "revisada",
+    "tri": {
+      "a": 2.9235,
+      "b": 2.16387,
+      "c": 0.21233,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 155",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/155",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=29.235); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
+    },
+    "resolucao": {
+      "id": "enem-2009-155",
+      "gabarito": "D",
+      "assuntos": [
+        "funcao-quadratica",
+        "equacao-1-grau"
+      ],
+      "habilidade": "H19",
+      "resumo": "Modelar a arrecadação V (R$) em função do desconto x (centavos): produto de duas expressões afins.",
+      "resolucao": "**1. Preço por litro com desconto de $x$ centavos:** $1{,}50 - 0{,}01x$ reais, ou seja, $(150 - x)$ centavos.\n\n**2. Litros vendidos:** 100 a mais por centavo de desconto: $10\\,000 + 100x$.\n\n**3. Arrecadação** = preço × quantidade. Em reais:\n$$V = \\frac{150 - x}{100} \\cdot (10\\,000 + 100x) = (150 - x)(100 + x)$$\n\n**4. Expanda:**\n$$V = 15\\,000 + 150x - 100x - x^2 = 15\\,000 + 50x - x^2$$\n\nAlternativa **D**.\n\nTeste com $x = 2$: preço R$ 1,48 × 10 200 L = R$ 15 096; e $15\\,000 + 100 - 4 = 15\\,096$ ✓.",
+      "dicas": {
+        "dica1": "Arrecadação é preço × quantidade. Escreva cada um em função de x antes de multiplicar.",
+        "dica2": "Preço: 1,50 − 0,01x reais. Quantidade: 10 000 + 100x litros. Multiplique e simplifique.",
+        "dica3": "(150 − x)(100 + x) = ? Use o exemplo do enunciado (x = 2 → 15 096) para conferir."
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "C",
+          "por_que": "Errou o sinal do termo em x (−50x): trocou o sinal ao multiplicar (150 − x)(100 + x)."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Errou os sinais de x e de x²: tratou como (150 − x)(100 − x)."
+        },
+        {
+          "alternativa": "A",
+          "por_que": "Usou 10 000 como arrecadação inicial (confundiu litros com reais): a arrecadação sem desconto é 15 000."
+        },
+        {
+          "alternativa": "B",
+          "por_que": "Mesmo erro de A e ainda com x² positivo."
+        }
+      ],
+      "conceitos": [
+        "receita = preço × quantidade",
+        "produto de binômios",
+        "função quadrática"
+      ],
+      "verificacao": {
+        "codigo_sympy": "x = symbols('x')\nV = (Rational(150, 100) - Rational(1, 100)*x) * (10000 + 100*x)\nresultado = expand(V)",
+        "resultado_esperado": "-x**2 + 50*x + 15000",
+        "alternativa_esperada": "D"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 3
     }
   },
   {
@@ -1254,29 +1586,40 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H2",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H3",
+    "habilidade_origem": "inep",
     "competencia": "C1",
     "assuntos": [
-      "sequencias-pa"
+      "sequencias-pa",
+      "numeros-operacoes"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.53416,
+      "b": 2.27137,
+      "c": 0.18142,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 156",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/156",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=253.416); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1318,29 +1661,39 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H10",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H11",
+    "habilidade_origem": "inep",
     "competencia": "C3",
     "assuntos": [
       "grandezas-unidades-escalas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 0.79007,
+      "b": 3.53111,
+      "c": 0.19229,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 158",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/158",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=0.79007); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1383,30 +1736,40 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H15",
-    "habilidade_origem": "heuristica",
-    "competencia": "C4",
+    "habilidade": "H19",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
       "funcao-afim",
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.09974,
+      "b": 1.56133,
+      "c": 0.10802,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 159",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/159",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=309.974); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1446,27 +1809,39 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
-    "assuntos": [],
+    "habilidade": "H17",
+    "habilidade_origem": "inep",
+    "competencia": "C4",
+    "assuntos": [
+      "regra-de-tres"
+    ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.25005,
+      "b": 2.00509,
+      "c": 0.17589,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 160",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/160",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=125.005); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1506,30 +1881,40 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H27",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H28",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
       "estatistica-basica",
       "equacao-2-grau"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.98315,
+      "b": 2.70571,
+      "c": 0.21033,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 161",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/161",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=198.315); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1569,74 +1954,37 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
+    "habilidade": "H16",
+    "habilidade_origem": "inep",
+    "competencia": "C4",
     "assuntos": [],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.32988,
+      "b": 2.23435,
+      "c": 0.20364,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 162",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/162",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
-    },
-    "resolucao": {
-      "id": "enem-2009-162",
-      "gabarito": "A",
-      "assuntos": [
-        "regra-de-tres",
-        "razao-proporcao"
-      ],
-      "habilidade": "H16",
-      "resumo": "Regra de três composta: alunos, horas por dia e dias determinam a quantidade arrecadada.",
-      "resolucao": "**1. Primeira fase (10 dias).** 20 alunos, 3 h/dia, 12 kg/dia:\n$$10 \\times 12 = 120 \\text{ kg}$$\n\n**2. Ritmo de coleta por aluno e por hora.** Em um dia, 20 alunos × 3 h = 60 \"aluno-horas\" rendem 12 kg:\n$$\\frac{12}{60} = 0{,}2 \\text{ kg por aluno-hora}$$\n\n**3. Segunda fase (20 dias restantes).** Agora são $20 + 30 = 50$ alunos, 4 h/dia:\n$$50 \\times 4 \\times 0{,}2 = 40 \\text{ kg/dia} \\;\\Rightarrow\\; 20 \\times 40 = 800 \\text{ kg}$$\n\n**4. Total:** $120 + 800 = 920$ kg. Alternativa **A**.\n\nEm forma de regra de três composta: $\\dfrac{12}{x} = \\dfrac{20}{50} \\cdot \\dfrac{3}{4} \\Rightarrow x = 12 \\cdot \\dfrac{50}{20} \\cdot \\dfrac{4}{3} = 40$ kg/dia.",
-      "dicas": {
-        "dica1": "A arrecadação é diretamente proporcional ao número de alunos, às horas por dia e aos dias. Separe a campanha em duas fases.",
-        "dica2": "Calcule o que foi arrecadado nos 10 primeiros dias. Depois ache a nova arrecadação diária (mais alunos, mais horas) e multiplique pelos 20 dias restantes.",
-        "dica3": "Nova arrecadação diária = 12 × (50/20) × (4/3) = 40 kg. Total = 10 × 12 + 20 × 40."
-      },
-      "erros_comuns": [
-        {
-          "alternativa": "B",
-          "por_que": "Considerou só a segunda fase (20 × 40 = 800 kg) e esqueceu os 120 kg dos primeiros 10 dias."
-        },
-        {
-          "alternativa": "C",
-          "por_que": "Usou 30 alunos (os novos) em vez de 50 na segunda fase: 12 × 30/20 × 4/3 = 24 kg/dia... ou outro erro de montagem (ex.: 600 + 120)."
-        },
-        {
-          "alternativa": "D",
-          "por_que": "Esqueceu o aumento de horas (3 → 4): 12 × 50/20 = 30 kg/dia; 20 × 30 = 600."
-        },
-        {
-          "alternativa": "E",
-          "por_que": "Somou 120 com um valor da segunda fase calculado com proporção errada (ex.: só 30 alunos e 4 h: 24 × 20 = 480; 480 + 90...)."
-        }
-      ],
-      "conceitos": [
-        "regra de três composta",
-        "grandezas diretamente proporcionais",
-        "taxa por unidade (aluno-hora)"
-      ],
-      "verificacao": {
-        "codigo_sympy": "taxa = Rational(12, 20*3)  # kg por aluno-hora\nfase1 = 10*12\nfase2 = 20 * (50*4*taxa)\nresultado = fase1 + fase2",
-        "resultado_esperado": "920",
-        "alternativa_esperada": "A"
-      },
-      "classificacao": "revisada",
-      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
-      "revisado_em": "2026-11-09"
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=232.988); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1676,29 +2024,40 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H10",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H12",
+    "habilidade_origem": "inep",
     "competencia": "C3",
     "assuntos": [
-      "grandezas-unidades-escalas"
+      "grandezas-unidades-escalas",
+      "geometria-espacial"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.62945,
+      "b": 1.81383,
+      "c": 0.20231,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 163",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/163",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=262.945); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1740,31 +2099,39 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H8",
+    "habilidade_origem": "inep",
     "competencia": "C2",
     "assuntos": [
-      "geometria-plana",
-      "porcentagem",
-      "grandezas-unidades-escalas"
+      "geometria-plana"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.69212,
+      "b": 1.72672,
+      "c": 0.15858,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 164",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/164",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=169.212); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1804,29 +2171,39 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H2",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C1",
     "assuntos": [
       "analise-combinatoria"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.98397,
+      "b": 2.6823,
+      "c": 0.19702,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 165",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/165",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=198.397); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1868,29 +2245,40 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H25",
+    "habilidade_origem": "inep",
+    "competencia": "C6",
     "assuntos": [
-      "geometria-plana"
+      "geometria-plana",
+      "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 4.03232,
+      "b": 2.25593,
+      "c": 0.08861,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 167",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/167",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=403.232); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1932,30 +2320,40 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H27",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
       "estatistica-basica",
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.69948,
+      "b": 2.61663,
+      "c": 0.21668,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 168",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/168",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=269.948); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -1997,30 +2395,40 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H18",
+    "habilidade_origem": "inep",
+    "competencia": "C4",
     "assuntos": [
       "geometria-espacial",
       "geometria-plana"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.96538,
+      "b": 1.94141,
+      "c": 0.18386,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 169",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/169",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=196.538); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2060,30 +2468,40 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H4",
+    "habilidade_origem": "inep",
     "competencia": "C1",
     "assuntos": [
       "porcentagem",
       "grandezas-unidades-escalas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.66774,
+      "b": 2.75397,
+      "c": 0.16322,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 170",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/170",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=266.774); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2123,13 +2541,13 @@
       }
     ],
     "gabarito": "C",
-    "anulada": false,
-    "habilidade": "H28",
-    "habilidade_origem": "heuristica",
+    "gabarito_fonte": "transcricao",
+    "anulada": true,
+    "habilidade": "H30",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
-      "probabilidade",
-      "grandezas-unidades-escalas"
+      "probabilidade"
     ],
     "classificacao": "heuristica",
     "tri": null,
@@ -2140,13 +2558,16 @@
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/171",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "item anulado pelo INEP (IN_ITEM_ABAN=1); gabarito mantido da transcrição"
+      ]
     }
   },
   {
@@ -2188,30 +2609,41 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H25",
+    "habilidade_origem": "inep",
+    "competencia": "C6",
     "assuntos": [
       "geometria-espacial",
+      "graficos-tabelas",
       "grandezas-unidades-escalas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.05092,
+      "b": 4.28177,
+      "c": 0.21068,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 172",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/172",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=105.092); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2253,29 +2685,39 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H14",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [
       "geometria-espacial"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.68279,
+      "b": 2.86692,
+      "c": 0.22261,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 173",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/173",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=368.279); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2317,31 +2759,41 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H19",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
       "geometria-plana",
-      "graficos-tabelas",
-      "trigonometria"
+      "geometria-analitica",
+      "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.12337,
+      "b": 3.16783,
+      "c": 0.27419,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 174",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/174",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=312.337); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2381,30 +2833,40 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H21",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
       "porcentagem",
       "estatistica-basica"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.83725,
+      "b": 3.26771,
+      "c": 0.21224,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 175",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/175",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=283.725); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2444,27 +2906,37 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
+    "habilidade": "H4",
+    "habilidade_origem": "inep",
+    "competencia": "C1",
     "assuntos": [],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.83932,
+      "b": 2.82176,
+      "c": 0.21303,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 176",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/176",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=183.932); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2504,30 +2976,40 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H9",
+    "habilidade_origem": "inep",
     "competencia": "C2",
     "assuntos": [
       "geometria-plana",
       "geometria-espacial"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.95278,
+      "b": 2.71524,
+      "c": 0.21173,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 177",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/177",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=195.278); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2567,30 +3049,40 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H5",
+    "habilidade_origem": "inep",
     "competencia": "C1",
     "assuntos": [
       "matematica-financeira",
       "porcentagem"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.48477,
+      "b": 4.00415,
+      "c": 0.13999,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 178",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/178",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=148.477); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2630,30 +3122,40 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H13",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [
       "geometria-espacial",
       "geometria-plana"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.09626,
+      "b": 2.8116,
+      "c": 0.2272,
+      "corrigido": true,
+      "fonte": "INEP, microdados do ENEM 2009 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2009, 2º dia, caderno azul (aplicação regular), questão 179",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/179",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "parâmetros TRI do espelho tinham o decimal quebrado (ex.: a=309.626); corrigidos pela reinserção do ponto após o primeiro dígito"
+      ]
     }
   },
   {
@@ -2693,14 +3195,15 @@
       }
     ],
     "gabarito": "B",
-    "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "gabarito_fonte": "transcricao",
+    "anulada": true,
+    "habilidade": "H30",
+    "habilidade_origem": "inep",
+    "competencia": "C7",
     "assuntos": [
+      "probabilidade",
       "porcentagem",
-      "razao-proporcao",
-      "probabilidade"
+      "razao-proporcao"
     ],
     "classificacao": "heuristica",
     "tri": null,
@@ -2711,13 +3214,16 @@
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2009/questions/180",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2009.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
-      "observacoes": []
+      "observacoes": [
+        "item anulado pelo INEP (IN_ITEM_ABAN=1); gabarito mantido da transcrição"
+      ]
     }
   }
 ]

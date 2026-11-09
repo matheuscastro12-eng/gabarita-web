@@ -114,6 +114,7 @@ export function blocoContexto({
       [
         "CURADORIA VERIFICADA (SymPy)",
         res.resumo ? `Resumo: ${res.resumo}` : null,
+        res.dados_da_imagem ? `Dados da imagem (transcrição revisada): ${res.dados_da_imagem}` : null,
         `Dica 1: ${res.dicas.dica1}`,
         `Dica 2: ${res.dicas.dica2}`,
         `Dica 3: ${res.dicas.dica3}`,

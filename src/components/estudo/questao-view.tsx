@@ -3,10 +3,11 @@
 import * as React from "react";
 import { MessageSquareQuote } from "lucide-react";
 import type { Questao, Letra } from "@/data/tipos";
-import { NOME_HABILIDADE } from "@/data/tipos";
+import { fonteDetalhada, NOME_HABILIDADE } from "@/data/tipos";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
+import { cn } from "@/lib/utils";
 import { Alternativas } from "./alternativas";
 import { Markdown } from "./markdown";
 
@@ -33,6 +34,34 @@ function rotuloDificuldade(q: Questao): { texto: string; variant: "success" | "w
         : { texto: `difícil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "danger" };
   }
   return { texto: "sem parâmetro TRI", variant: "outline" };
+}
+
+/** Atribuição obrigatória: INEP, transcrição enem.dev, origem do gabarito e do TRI. */
+export function FonteQuestao({ questao, className }: { questao: Questao; className?: string }) {
+  const f = fonteDetalhada(questao);
+  return (
+    <p className={cn("text-xs leading-relaxed text-muted-foreground", className)} data-testid="fonte">
+      {f.citacao}
+      {f.urlOficial && (
+        <>
+          {" "}
+          (
+          <a href={f.urlOficial} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
+            provas e gabaritos
+          </a>
+          )
+        </>
+      )}
+      {" · "}
+      <a href={f.transcricaoUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
+        transcrição enem.dev
+      </a>
+      {" · "}
+      {f.gabarito}
+      {" · "}
+      {f.tri}
+    </p>
+  );
 }
 
 interface Selecao {
@@ -147,9 +176,13 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
               {acertou ? "Acertou." : `Não foi dessa vez. O gabarito é ${questao.gabarito}.`}
             </p>
           )}
-          <p className="text-xs text-muted-foreground">
-            Fonte: INEP, {questao.fonte.prova}. Transcrição: enem.dev.
-          </p>
+          {questao.resolucao?.dados_da_imagem && (
+            <details className="rounded-md border border-border bg-surface px-3 py-2 text-sm">
+              <summary className="cursor-pointer text-muted-foreground">Dados da imagem em texto</summary>
+              <p className="pt-2">{questao.resolucao.dados_da_imagem}</p>
+            </details>
+          )}
+          <FonteQuestao questao={questao} />
         </div>
       </div>
 

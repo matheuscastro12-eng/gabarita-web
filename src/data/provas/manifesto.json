@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-09T06:16:59.742Z",
+  "gerado_em": "2026-11-09T08:55:40.055Z",
   "origem": "local:/workspace/repos/matheuscastro12-eng/PROVAS",
   "fixture": false,
   "anos": [
@@ -20,6 +20,6 @@
     2023
   ],
   "total": 636,
-  "com_tri": 0,
-  "com_resolucao": 19
+  "com_tri": 614,
+  "com_resolucao": 60
 }

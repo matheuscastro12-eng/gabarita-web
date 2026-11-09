@@ -36,24 +36,32 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H10",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H11",
+    "habilidade_origem": "inep",
     "competencia": "C3",
     "assuntos": [
       "grandezas-unidades-escalas",
       "funcao-afim"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.799,
+      "b": 2.214,
+      "c": 0.182,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 136",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/136",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -102,24 +110,32 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H7",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C2",
     "assuntos": [
       "geometria-plana",
       "porcentagem"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.881,
+      "b": 2.227,
+      "c": 0.204,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 137",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/137",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -165,23 +181,31 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H10",
-    "habilidade_origem": "heuristica",
-    "competencia": "C3",
+    "habilidade": "H3",
+    "habilidade_origem": "inep",
+    "competencia": "C1",
     "assuntos": [
       "grandezas-unidades-escalas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.328,
+      "b": 2.467,
+      "c": 0.193,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 138",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/138",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": true,
@@ -229,23 +253,31 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H28",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
       "probabilidade"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.952,
+      "b": 2.677,
+      "c": 0.096,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 139",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/139",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -293,23 +325,31 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H19",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
       "geometria-plana"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.305,
+      "b": 1.406,
+      "c": 0.305,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 141",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/141",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -355,30 +395,86 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H12",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [
-      "razao-proporcao",
-      "geometria-espacial"
+      "grandezas-unidades-escalas",
+      "equacao-1-grau"
     ],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "classificacao": "revisada",
+    "tri": {
+      "a": 1.797,
+      "b": 1.306,
+      "c": 0.12,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 142",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/142",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
       "observacoes": []
+    },
+    "resolucao": {
+      "id": "enem-2012-142",
+      "gabarito": "D",
+      "assuntos": [
+        "grandezas-unidades-escalas",
+        "equacao-1-grau"
+      ],
+      "habilidade": "H12",
+      "resumo": "Capacidade de ar-condicionado: 600 BTU/h por m² mais acréscimos por pessoa extra e por aparelho.",
+      "resolucao": "**1. Área da sala.** $4 \\times 5 = 20$ m².\n\n**2. Parcela básica** (até duas pessoas):\n$$20 \\times 600 = 12\\,000\\ \\text{BTU/h}$$\n\n**3. Acréscimos.**\n- Pessoas: são 4; as duas primeiras já estão contadas, então 2 adicionais: $2 \\times 600 = 1\\,200$.\n- Televisão: $1 \\times 600 = 600$.\n\n**4. Total.**\n$$12\\,000 + 1\\,200 + 600 = 13\\,800$$\n\nAlternativa **D**.",
+      "dicas": {
+        "dica1": "Siga a regra em três parcelas: área × 600, pessoas além das duas primeiras × 600, aparelhos × 600.",
+        "dica2": "Área 4 × 5; quantas pessoas são 'adicionais' em relação a duas? Some tudo.",
+        "dica3": "20 × 600 + 2 × 600 + 1 × 600."
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "A",
+          "por_que": "Calculou só a parcela da área (20 × 600 = 12 000) e ignorou pessoas e TV."
+        },
+        {
+          "alternativa": "B",
+          "por_que": "Acrescentou só a TV (12 000 + 600), esquecendo as duas pessoas adicionais."
+        },
+        {
+          "alternativa": "C",
+          "por_que": "Contou só 1 pessoa adicional e a TV (12 000 + 600 + 600 = 13 200)."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Contou as 4 pessoas como adicionais (4 × 600) e a TV: 12 000 + 2 400 + 600 = 15 000."
+        }
+      ],
+      "conceitos": [
+        "área do retângulo",
+        "aplicação de regra em etapas",
+        "leitura de texto técnico"
+      ],
+      "verificacao": {
+        "codigo_sympy": "area = 4 * 5\nresultado = area * 600 + (4 - 2) * 600 + 1 * 600",
+        "resultado_esperado": "13800",
+        "alternativa_esperada": "D"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 1
     }
   },
   {
@@ -420,21 +516,29 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
+    "habilidade": "H19",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.544,
+      "b": 1.267,
+      "c": 0.269,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 143",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/143",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -480,30 +584,83 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H28",
-    "habilidade_origem": "heuristica",
-    "competencia": "C7",
+    "habilidade": "H4",
+    "habilidade_origem": "inep",
+    "competencia": "C1",
     "assuntos": [
-      "probabilidade",
-      "razao-proporcao"
+      "analise-combinatoria"
     ],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "classificacao": "revisada",
+    "tri": {
+      "a": 2.346,
+      "b": 1.071,
+      "c": 0.107,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 144",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/144",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
       "observacoes": []
+    },
+    "resolucao": {
+      "id": "enem-2012-144",
+      "gabarito": "A",
+      "assuntos": [
+        "analise-combinatoria"
+      ],
+      "habilidade": "H2",
+      "resumo": "Princípio multiplicativo: objetos × personagens × cômodos, comparado ao número de alunos.",
+      "resolucao": "**1. Conte as respostas distintas possíveis.** Uma resposta é uma tripla (objeto, personagem, cômodo). Pelo princípio fundamental da contagem:\n$$5 \\times 6 \\times 9 = 270$$\n\n**2. Compare com o número de alunos.** São 280 alunos dando respostas sempre diferentes. Como $280 > 270$, as respostas distintas se esgotam antes dos alunos: alguém necessariamente acerta.\n$$280 - 270 = 10$$\n\nHá **10 alunos a mais** do que respostas possíveis (alternativa **A**).",
+      "dicas": {
+        "dica1": "Cada palpite combina três escolhas independentes. O total de palpites diferentes é o produto das quantidades de opções.",
+        "dica2": "Multiplique 5 × 6 × 9. Depois veja quantos alunos sobram além desse número.",
+        "dica3": "5 × 6 × 9 = 270; 280 − 270 = ?"
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "D",
+          "por_que": "Somou em vez de multiplicar (5 + 6 + 9 = 20) e fez 280 − 20 = 260."
+        },
+        {
+          "alternativa": "C",
+          "por_que": "Multiplicou só duas das três quantidades (ex.: 6 × 9 = 54... ou 5 × 6 × ... = 161) e subtraiu de 280."
+        },
+        {
+          "alternativa": "B",
+          "por_que": "Erro aritmético no produto (ex.: 5 × 6 × 9 = 260)."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Considerou apenas 10 respostas possíveis, confundindo o número final com a contagem de respostas."
+        }
+      ],
+      "conceitos": [
+        "princípio fundamental da contagem",
+        "princípio da casa dos pombos (intuitivo)"
+      ],
+      "verificacao": {
+        "codigo_sympy": "resultado = 280 - 5*6*9",
+        "resultado_esperado": "10",
+        "alternativa_esperada": "A"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 1
     }
   },
   {
@@ -545,21 +702,29 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
+    "habilidade": "H11",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.023,
+      "b": 1.286,
+      "c": 0.085,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 145",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/145",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -607,23 +772,31 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H28",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H30",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
       "probabilidade"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.282,
+      "b": 1.837,
+      "c": 0.151,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 146",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/146",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -671,24 +844,32 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H12",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [
-      "equacao-1-grau",
-      "geometria-espacial"
+      "geometria-espacial",
+      "equacao-1-grau"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.867,
+      "b": 1.515,
+      "c": 0.129,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 147",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/147",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -736,23 +917,31 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H24",
-    "habilidade_origem": "heuristica",
-    "competencia": "C6",
+    "habilidade": "H20",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.135,
+      "b": -1.259,
+      "c": 0.201,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 148",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/148",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -800,23 +989,31 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H7",
+    "habilidade_origem": "inep",
     "competencia": "C2",
     "assuntos": [
       "geometria-espacial"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.483,
+      "b": -0.252,
+      "c": 0.197,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 149",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/149",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -862,31 +1059,83 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H24",
-    "habilidade_origem": "heuristica",
-    "competencia": "C6",
+    "habilidade": "H3",
+    "habilidade_origem": "inep",
+    "competencia": "C1",
     "assuntos": [
-      "graficos-tabelas",
-      "probabilidade",
       "sequencias-pa"
     ],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "classificacao": "revisada",
+    "tri": {
+      "a": 1.517,
+      "b": -0.047,
+      "c": 0.173,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 150",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/150",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
       "observacoes": []
+    },
+    "resolucao": {
+      "id": "enem-2012-150",
+      "gabarito": "B",
+      "assuntos": [
+        "sequencias-pa"
+      ],
+      "habilidade": "H2",
+      "resumo": "Soma dos termos de uma PA (1 + 2 + … + 7) e subtração do total de cartas.",
+      "resolucao": "**1. Cartas nas colunas:** $1 + 2 + 3 + 4 + 5 + 6 + 7$. É a soma de uma PA com 7 termos:\n$$S = \\frac{(1 + 7) \\times 7}{2} = 28$$\n\n**2. Cartas no monte:**\n$$52 - 28 = 24$$\n\nAlternativa **B**.",
+      "dicas": {
+        "dica1": "As colunas usam 1 + 2 + … + 7 cartas. O monte é o que sobra do baralho de 52.",
+        "dica2": "Some 1 a 7 (fórmula da PA: (primeiro + último) × quantidade ÷ 2) e subtraia de 52.",
+        "dica3": "(1 + 7) × 7 / 2 = 28. 52 − 28 = ?"
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "A",
+          "por_que": "Somou 1 a 7 como 31 ou subtraiu 52 − 31 = 21 por erro de conta."
+        },
+        {
+          "alternativa": "C",
+          "por_que": "Respondeu 26 (metade do baralho), sem calcular a soma das colunas."
+        },
+        {
+          "alternativa": "D",
+          "por_que": "Respondeu 28, o número de cartas NAS COLUNAS, não no monte."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Somou 1 a 6 (21) e fez 52 − 21 = 31, esquecendo a sétima coluna."
+        }
+      ],
+      "conceitos": [
+        "soma de PA",
+        "complementar de um total"
+      ],
+      "verificacao": {
+        "codigo_sympy": "resultado = 52 - sum(range(1, 8))",
+        "resultado_esperado": "24",
+        "alternativa_esperada": "B"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 1
     }
   },
   {
@@ -928,23 +1177,31 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H24",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H26",
+    "habilidade_origem": "inep",
     "competencia": "C6",
     "assuntos": [
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.306,
+      "b": 0.46,
+      "c": 0.176,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 151",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/151",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -990,23 +1247,31 @@
       }
     ],
     "gabarito": "A",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H9",
+    "habilidade_origem": "inep",
     "competencia": "C2",
     "assuntos": [
       "geometria-plana"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.544,
+      "b": 2.408,
+      "c": 0.141,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 152",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/152",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1054,24 +1319,31 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H6",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C2",
     "assuntos": [
-      "geometria-espacial",
-      "geometria-plana"
+      "geometria-espacial"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.305,
+      "b": 2.218,
+      "c": 0.111,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 153",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/153",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1119,21 +1391,29 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
+    "habilidade": "H13",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.132,
+      "b": -0.048,
+      "c": 0.176,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 154",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/154",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1181,23 +1461,32 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H25",
+    "habilidade_origem": "inep",
+    "competencia": "C6",
     "assuntos": [
+      "regra-de-tres",
       "equacao-1-grau"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.353,
+      "b": 0.55,
+      "c": 0.186,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 155",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/155",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1243,24 +1532,32 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H20",
-    "habilidade_origem": "heuristica",
-    "competencia": "C5",
+    "habilidade": "H15",
+    "habilidade_origem": "inep",
+    "competencia": "C4",
     "assuntos": [
       "leitura-grafico-funcao",
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.384,
+      "b": 0.633,
+      "c": 0.16,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 156",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/156",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": true,
@@ -1306,24 +1603,32 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H5",
+    "habilidade_origem": "inep",
     "competencia": "C1",
     "assuntos": [
       "razao-proporcao",
       "equacao-1-grau"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 0.898,
+      "b": 1.628,
+      "c": 0.128,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 157",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/157",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1371,23 +1676,31 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H13",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [
       "geometria-espacial"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.113,
+      "b": 1.76,
+      "c": 0.222,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 158",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/158",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1435,21 +1748,31 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
-    "assuntos": [],
+    "habilidade": "H14",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
+    "assuntos": [
+      "regra-de-tres"
+    ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.786,
+      "b": 1.911,
+      "c": 0.138,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 159",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/159",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1497,23 +1820,31 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H8",
+    "habilidade_origem": "inep",
     "competencia": "C2",
     "assuntos": [
       "geometria-plana"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.576,
+      "b": 2.062,
+      "c": 0.189,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 160",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/160",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1559,29 +1890,84 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H1",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C1",
     "assuntos": [
       "numeros-operacoes"
     ],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "classificacao": "revisada",
+    "tri": {
+      "a": 1.589,
+      "b": 0.603,
+      "c": 0.137,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 161",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/161",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
       "observacoes": []
+    },
+    "resolucao": {
+      "id": "enem-2012-161",
+      "gabarito": "C",
+      "assuntos": [
+        "numeros-operacoes"
+      ],
+      "habilidade": "H1",
+      "resumo": "Identificar a ordem (posição) de um algarismo em um número de oito algarismos.",
+      "resolucao": "**1. Conte os algarismos.** O protocolo é $1\\ 3\\ \\_\\ 9\\ 8\\ 2\\ 0\\ 7$: oito posições, com o espaço vazio na **terceira** contando da esquerda.\n\n**2. Nomeie as ordens da direita para a esquerda.**\n\n| Algarismo | 7 | 0 | 2 | 8 | 9 | \\_ | 3 | 1 |\n|---|---|---|---|---|---|---|---|---|\n| Ordem | unidade | dezena | centena | unidade de milhar | dezena de milhar | **centena de milhar** | unidade de milhão | dezena de milhão |\n\n**3. Leia a posição do espaço.** Ele é o 6º algarismo da direita para a esquerda: **centena de milhar**. Alternativa **C**.\n\nEm grupos de três (classes): $13\\,\\_98\\,207$ → classe dos milhões (13), classe dos milhares ($\\_98$), classe das unidades (207); o espaço é a centena da classe dos milhares.",
+      "dicas": {
+        "dica1": "As ordens contam da direita para a esquerda: unidade, dezena, centena, unidade de milhar, dezena de milhar, centena de milhar, milhão…",
+        "dica2": "Separe o número em classes de três algarismos a partir da direita e veja em que classe e em que posição o espaço cai.",
+        "dica3": "O espaço é o 6º algarismo da direita: 1ª unidade, 2ª dezena, 3ª centena, 4ª milhar, 5ª dezena de milhar, 6ª …"
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "A",
+          "por_que": "Contou da esquerda para a direita e tomou a terceira posição como 'centena'."
+        },
+        {
+          "alternativa": "B",
+          "por_que": "Errou a contagem em uma casa (pegou a 5ª posição da direita, dezena de milhar)."
+        },
+        {
+          "alternativa": "D",
+          "por_que": "Errou a contagem em uma casa para o outro lado (7ª posição, unidade de milhão)."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Achou que o número tinha nove algarismos e que o espaço estava na classe dos milhões."
+        }
+      ],
+      "conceitos": [
+        "sistema de numeração decimal",
+        "ordens e classes",
+        "valor posicional"
+      ],
+      "verificacao": {
+        "codigo_sympy": "numero = '13_98207'\nordens = ['unidade', 'dezena', 'centena', 'unidade de milhar', 'dezena de milhar', 'centena de milhar', 'unidade de milhao', 'dezena de milhao']\nposicao_da_direita = len(numero) - numero.index('_')\nresultado = ordens[posicao_da_direita - 1]",
+        "resultado_esperado": "centena de milhar",
+        "alternativa_esperada": "C"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 1
     }
   },
   {
@@ -1623,23 +2009,31 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H24",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H26",
+    "habilidade_origem": "inep",
     "competencia": "C6",
     "assuntos": [
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.613,
+      "b": 0.452,
+      "c": 0.124,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 163",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/163",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1686,31 +2080,41 @@
         "imagem": "https://enem.dev/2012/questions/165/1332407d-5c97-49e1-b94a-2a46220809ac.png"
       }
     ],
-    "gabarito": "E",
+    "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H15",
-    "habilidade_origem": "heuristica",
-    "competencia": "C4",
+    "habilidade": "H6",
+    "habilidade_origem": "inep",
+    "competencia": "C2",
     "assuntos": [
-      "funcao-afim",
-      "geometria-espacial"
+      "geometria-espacial",
+      "funcao-afim"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.738,
+      "b": 0.754,
+      "c": 0.196,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 165",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/165",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": true,
-      "observacoes": []
+      "observacoes": [
+        "gabarito da transcrição enem.dev (E) difere do TX_GABARITO oficial do INEP (C); prevalece o INEP"
+      ]
     }
   },
   {
@@ -1752,21 +2156,29 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
+    "habilidade": "H21",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.369,
+      "b": 0.826,
+      "c": 0.148,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 166",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/166",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1812,27 +2224,86 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": null,
-    "habilidade_origem": null,
-    "competencia": null,
-    "assuntos": [],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "habilidade": "H4",
+    "habilidade_origem": "inep",
+    "competencia": "C1",
+    "assuntos": [
+      "razao-proporcao",
+      "equacao-1-grau"
+    ],
+    "classificacao": "revisada",
+    "tri": {
+      "a": 2.764,
+      "b": 0.956,
+      "c": 0.129,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 167",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/167",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
       "observacoes": []
+    },
+    "resolucao": {
+      "id": "enem-2012-167",
+      "gabarito": "D",
+      "assuntos": [
+        "razao-proporcao",
+        "equacao-1-grau"
+      ],
+      "habilidade": "H4",
+      "resumo": "Períodos necessários para juntar 9 200 tíquetes (20 por período) e custo a R$ 3,00 cada.",
+      "resolucao": "**1. Quantos períodos de jogo?** A criança ganha 20 tíquetes por período e precisa de 9 200:\n$$\\frac{9\\,200}{20} = 460\\ \\text{períodos}$$\n\n**2. Quanto custam esses períodos?** Cada período custa R$ 3,00:\n$$460 \\times 3 = 1\\,380$$\n\nAlternativa **D**: **R$ 1 380,00**.\n\nEm uma única razão: $9\\,200 \\times \\dfrac{3}{20} = 1\\,380$ (cada 20 tíquetes custam R$ 3,00).",
+      "dicas": {
+        "dica1": "A cada período a criança paga R$ 3,00 e recebe 20 tíquetes. Descubra quantos períodos ela precisa jogar.",
+        "dica2": "Divida 9 200 por 20 para obter os períodos; multiplique pelo preço do período.",
+        "dica3": "9 200 ÷ 20 = 460; 460 × 3 = ?"
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "B",
+          "por_que": "Parou no número de períodos (460) e esqueceu de multiplicar pelo preço."
+        },
+        {
+          "alternativa": "A",
+          "por_que": "Dividiu 9 200 por 60 (3 × 20) em vez de multiplicar por 3/20: 9 200 ÷ 60 ≈ 153."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Dividiu 9 200 por 3 (≈ 3 066), tratando R$ 3,00 como quantidade de tíquetes."
+        },
+        {
+          "alternativa": "C",
+          "por_que": "Errou a divisão 9 200 ÷ 20 (obteve 406 em vez de 460) e multiplicou por 3: 406 × 3 = 1 218."
+        }
+      ],
+      "conceitos": [
+        "razão entre tíquetes e custo",
+        "proporcionalidade direta",
+        "divisão e multiplicação com números grandes"
+      ],
+      "verificacao": {
+        "codigo_sympy": "periodos = Rational(9200, 20)\nresultado = periodos * 3",
+        "resultado_esperado": "1380",
+        "alternativa_esperada": "D"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 1
     }
   },
   {
@@ -1872,24 +2343,32 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H7",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H21",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
       "geometria-plana",
       "grandezas-unidades-escalas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.552,
+      "b": 2.084,
+      "c": 0.228,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 168",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/168",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -1937,24 +2416,32 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H24",
-    "habilidade_origem": "heuristica",
-    "competencia": "C6",
+    "habilidade": "H21",
+    "habilidade_origem": "inep",
+    "competencia": "C5",
     "assuntos": [
-      "graficos-tabelas",
-      "matrizes-sistemas"
+      "matrizes-sistemas",
+      "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.738,
+      "b": 1.953,
+      "c": 0.123,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 169",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/169",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2000,25 +2487,33 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H16",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H15",
+    "habilidade_origem": "inep",
     "competencia": "C4",
     "assuntos": [
-      "regra-de-tres",
       "razao-proporcao",
+      "regra-de-tres",
       "geometria-plana"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.035,
+      "b": 1.851,
+      "c": 0.256,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 170",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/170",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2064,24 +2559,32 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H28",
-    "habilidade_origem": "heuristica",
-    "competencia": "C7",
+    "habilidade": "H10",
+    "habilidade_origem": "inep",
+    "competencia": "C3",
     "assuntos": [
       "probabilidade",
       "numeros-operacoes"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.508,
+      "b": 1.659,
+      "c": 0.175,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "media",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 171",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/171",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2129,23 +2632,31 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H10",
-    "habilidade_origem": "heuristica",
-    "competencia": "C3",
+    "habilidade": "H1",
+    "habilidade_origem": "inep",
+    "competencia": "C1",
     "assuntos": [
       "grandezas-unidades-escalas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 3.324,
+      "b": 1.019,
+      "c": 0.124,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 172",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/172",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2191,29 +2702,86 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H16",
+    "habilidade_origem": "inep",
+    "competencia": "C4",
     "assuntos": [
-      "geometria-espacial"
+      "razao-proporcao",
+      "regra-de-tres"
     ],
-    "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "classificacao": "revisada",
+    "tri": {
+      "a": 1.453,
+      "b": 0.875,
+      "c": 0.19,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 173",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/173",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
       "alternativas_incompletas": false,
       "depende_de_imagem": false,
       "observacoes": []
+    },
+    "resolucao": {
+      "id": "enem-2012-173",
+      "gabarito": "B",
+      "assuntos": [
+        "razao-proporcao",
+        "regra-de-tres"
+      ],
+      "habilidade": "H16",
+      "resumo": "Número de descargas por dia (60 L ÷ 15 L) e economia ao trocar por 6 L por descarga.",
+      "resolucao": "**1. Quantas descargas por dia?** A bacia comum gasta 15 L por descarga e 60 L por dia:\n$$\\frac{60}{15} = 4\\ \\text{descargas por dia}$$\n\n**2. Gasto diário da bacia ecológica** (6 L por descarga, mesmo número de descargas):\n$$4 \\times 6 = 24\\ \\text{L}$$\n\n**3. Economia.**\n$$60 - 24 = 36\\ \\text{litros por dia}$$\n\nAlternativa **B**. Atalho: cada descarga economiza $15 - 6 = 9$ L; $4 \\times 9 = 36$.",
+      "dicas": {
+        "dica1": "O que não muda é o número de descargas por dia. Descubra-o antes de comparar os gastos.",
+        "dica2": "Divida 60 L por 15 L para achar as descargas diárias; multiplique pelo gasto da ecológica; subtraia de 60.",
+        "dica3": "4 descargas × (15 − 6) litros economizados em cada uma."
+      },
+      "erros_comuns": [
+        {
+          "alternativa": "A",
+          "por_que": "Respondeu o gasto diário da bacia ecológica (4 × 6 = 24 L), não a economia."
+        },
+        {
+          "alternativa": "C",
+          "por_que": "Aproximou 6 L para 'um terço de 15 L' e fez 60 − 60/3 = 40, em vez de calcular as 4 descargas."
+        },
+        {
+          "alternativa": "D",
+          "por_que": "Fez 60 − 3 × 6 = 42: usou 3 descargas por dia (60 ÷ 20) em vez de 4 (60 ÷ 15)."
+        },
+        {
+          "alternativa": "E",
+          "por_que": "Subtraiu de 60 uma única diferença 'arredondada' (15 − 6 ≈ 10), sem multiplicar pelo número de descargas."
+        }
+      ],
+      "conceitos": [
+        "razão entre grandezas",
+        "proporcionalidade direta",
+        "diferença entre consumo e economia"
+      ],
+      "verificacao": {
+        "codigo_sympy": "descargas = Rational(60, 15)\nresultado = 60 - descargas * 6",
+        "resultado_esperado": "36",
+        "alternativa_esperada": "B"
+      },
+      "classificacao": "revisada",
+      "revisado_por": "Curadoria Gabarita (assistida por IA; contas conferidas com SymPy)",
+      "revisado_em": "2026-11-09",
+      "nivel_curador": 1
     }
   },
   {
@@ -2255,24 +2823,31 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H27",
-    "habilidade_origem": "heuristica",
+    "habilidade": "H29",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
-      "estatistica-basica",
-      "graficos-tabelas"
+      "estatistica-basica"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.479,
+      "b": 0.795,
+      "c": 0.195,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 174",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/174",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2320,23 +2895,31 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H3",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H25",
+    "habilidade_origem": "inep",
+    "competencia": "C6",
     "assuntos": [
       "porcentagem"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.198,
+      "b": 0.699,
+      "c": 0.158,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "facil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 175",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/175",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2382,25 +2965,31 @@
       }
     ],
     "gabarito": "E",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H27",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
-      "estatistica-basica",
-      "grandezas-unidades-escalas",
-      "sequencias-pa"
+      "estatistica-basica"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.042,
+      "b": 3.236,
+      "c": 0.108,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 176",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/176",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2446,23 +3035,31 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H3",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C1",
     "assuntos": [
       "equacao-1-grau"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.312,
+      "b": 3.255,
+      "c": 0.143,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 177",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/177",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2508,24 +3105,33 @@
       }
     ],
     "gabarito": "D",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H2",
-    "habilidade_origem": "heuristica",
-    "competencia": "C1",
+    "habilidade": "H29",
+    "habilidade_origem": "inep",
+    "competencia": "C7",
     "assuntos": [
       "analise-combinatoria",
+      "probabilidade",
       "equacao-1-grau"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.24,
+      "b": 3.242,
+      "c": 0.18,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 178",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/178",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2573,24 +3179,32 @@
       }
     ],
     "gabarito": "B",
+    "gabarito_fonte": "inep",
     "anulada": false,
     "habilidade": "H27",
-    "habilidade_origem": "heuristica",
+    "habilidade_origem": "inep",
     "competencia": "C7",
     "assuntos": [
       "estatistica-basica",
       "graficos-tabelas"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 1.891,
+      "b": 2.719,
+      "c": 0.12,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 179",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/179",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,
@@ -2636,25 +3250,33 @@
       }
     ],
     "gabarito": "C",
+    "gabarito_fonte": "inep",
     "anulada": false,
-    "habilidade": "H6",
-    "habilidade_origem": "heuristica",
-    "competencia": "C2",
+    "habilidade": "H17",
+    "habilidade_origem": "inep",
+    "competencia": "C4",
     "assuntos": [
       "geometria-espacial",
       "geometria-plana",
       "porcentagem"
     ],
     "classificacao": "heuristica",
-    "tri": null,
-    "dificuldade_estimada": null,
+    "tri": {
+      "a": 2.309,
+      "b": 2.521,
+      "c": 0.16,
+      "corrigido": false,
+      "fonte": "INEP, microdados do ENEM 2012 (ITENS_PROVA), espelho Zenodo record 18801899"
+    },
+    "dificuldade_estimada": "dificil",
     "fonte": {
       "orgao": "INEP",
       "prova": "ENEM 2012, 2º dia, caderno azul (aplicação regular), questão 180",
       "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
       "transcricao": "enem.dev",
       "transcricao_url": "https://api.enem.dev/v1/exams/2012/questions/180",
-      "microdados_url": null
+      "microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2012.zip",
+      "microdados_espelho_url": "https://zenodo.org/records/18801899"
     },
     "qualidade": {
       "enunciado_vazio": false,

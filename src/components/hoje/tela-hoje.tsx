@@ -116,7 +116,7 @@ export function TelaHoje() {
             <CardDescription>
               {nota && nota.itens > 0
                 ? `Estimativa com ${plural(nota.itens, "item oficial", "itens oficiais")} com TRI.`
-                : "Sem parâmetro TRI nos itens feitos: a estimativa aparece quando os microdados do INEP entrarem no banco."}
+                : "Estimativa: aparece depois da primeira questão oficial com parâmetros TRI do INEP."}
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -124,7 +124,7 @@ export function TelaHoje() {
               <p className="tabular text-3xl font-semibold">
                 {nota.nota}
                 <span className="ml-2 text-base font-normal text-muted-foreground">
-                  ({nota.inferior}–{nota.superior})
+                  ({nota.inferior}–{nota.superior}) · estimativa
                 </span>
               </p>
             ) : (
