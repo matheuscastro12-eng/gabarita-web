@@ -49,7 +49,7 @@ export function VisualProbabilidade() {
     >
       {(passo) => (
         <div className="flex flex-col items-center gap-3" role="img" aria-label={`${fav} favoráveis de ${TOTAL} possíveis`}>
-          <div className="grid grid-cols-6 gap-2.5 rounded-[28px] border-[1.5px] border-border bg-card p-4">
+          <div className="grid grid-cols-6 gap-2.5 rounded-lg border border-border bg-card p-4">
             {bolas.map((b, i) => {
               const apagada = passo === 2 && b.cor !== cor;
               const contorno = passo === 1 || (passo === 2 && b.cor === cor);

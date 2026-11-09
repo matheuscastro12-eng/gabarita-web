@@ -44,7 +44,7 @@ export function VisualUnidades() {
             </p>
             <div className="relative">
               <div
-                className="absolute inset-y-0 left-0 rounded-[10px] bg-primary transition-transform duration-[240ms] ease-(--curva)"
+                className="absolute inset-y-0 left-0 rounded-md bg-primary transition-transform duration-[240ms] ease-(--curva)"
                 style={{ width: `${100 / ESCADA_METRO.length}%`, transform: `translateX(${indice * 100}%)` }}
                 aria-hidden
               />
@@ -62,7 +62,7 @@ export function VisualUnidades() {
                 ))}
               </ol>
             </div>
-            <p className="flex justify-between text-[11px] font-semibold text-muted-foreground">
+            <p className="flex justify-between text-xs font-medium text-muted-foreground">
               <span>÷10 a cada degrau para cima</span>
               <span>×10 a cada degrau para baixo</span>
             </p>

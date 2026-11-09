@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport, lastAssistantMessageIsCompleteWithToolCalls } from "ai";
-import { Lightbulb, SendHorizontal, Sparkles, Square, Unlock, WifiOff, X } from "lucide-react";
+import { Lightbulb, SendHorizontal, Square, Unlock, WifiOff, X } from "lucide-react";
 import Link from "next/link";
 import type { Questao, Letra } from "@/data/tipos";
 import type { DegrauDica, Perfil } from "@/lib/dominio/tipos";
@@ -16,6 +16,8 @@ import { rodarPython } from "@/lib/pyodide/rodar";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { Badge } from "@/components/ui/badge";
+import { Bolha } from "@/components/ui/bolha";
+import { Textarea } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import type { RespostaGemea } from "./gemea-card";
 import { Balao, contarVerificacoes, MensagemGuiadaView, MensagemTutorView, type MensagemGuiada } from "./mensagem-tutor";
@@ -51,6 +53,9 @@ export interface PropsPainelTutor {
 const NOMES_DEGRAU = ["pergunta", "conceito", "primeiro passo", "quase lá", "resolução"];
 /** O aviso tem a chave no meio; aqui ela vira <code>. */
 const AVISO_OFFLINE_PARTES = AVISO_OFFLINE.split("ANTHROPIC_API_KEY") as [string, string];
+/** Chip de sugestão (regras: h-8, borda de campo, raio de controle). */
+const CHIP =
+  "inline-flex h-8 items-center rounded-md border border-input bg-background px-3 text-sm font-medium transition-colors hover:bg-muted disabled:pointer-events-none disabled:opacity-50 pointer-coarse:min-h-11";
 const ABERTURA = "Antes de calcular: o que a questão está pedindo, com as suas palavras?";
 
 /** Painel do tutor: IA (useChat + ferramentas) ou modo guiado offline, com a mesma casca. */
@@ -119,9 +124,8 @@ function Casca({
   };
 
   return (
-    <section className="flex h-full min-h-0 flex-col bg-card" aria-label="Tutor">
-      <header className="flex items-center gap-2 border-b border-border px-4 py-3">
-        <Sparkles className="size-4 text-primary" strokeWidth={1.8} />
+    <section className="flex h-full min-h-0 flex-col bg-background" aria-label="Tutor">
+      <header className="flex h-12 shrink-0 items-center gap-2 border-b border-border px-4">
         <h2 className="text-sm font-semibold">Tutor</h2>
         {modo === "ia" ? (
           <Badge variant="destaque" className="ml-auto" title={modelo ? `Modelo: ${modelo}` : undefined}>
@@ -141,11 +145,11 @@ function Casca({
       <div ref={listaRef} className="min-h-0 flex-1 overflow-y-auto px-4 py-4" data-testid="conversa">
         <div className="flex flex-col gap-3">
           {modo === "guiado" && (
-            <p className="flex items-start gap-2 rounded-md bg-aviso-suave px-3 py-2 text-[13px] leading-snug text-foreground" role="note">
-              <WifiOff className="mt-0.5 size-4 shrink-0 text-aviso" aria-hidden />
+            <p className="flex items-start gap-2 rounded-md border border-border p-3 text-xs leading-normal text-texto-2" role="note">
+              <WifiOff className="size-4 shrink-0 text-aviso" strokeWidth={1.5} aria-hidden />
               <span>
                 {AVISO_OFFLINE_PARTES[0]}
-                <code className="font-mono text-[0.8em]">ANTHROPIC_API_KEY</code>
+                <code className="num">ANTHROPIC_API_KEY</code>
                 {AVISO_OFFLINE_PARTES[1]}
               </span>
             </p>
@@ -155,25 +159,25 @@ function Casca({
         </div>
       </div>
 
-      <footer className="flex flex-col gap-2.5 border-t border-border px-4 py-3">
+      <footer className="flex flex-col gap-3 border-t border-border p-3">
         {sugestoes && sugestoes.length > 0 && (
-          <div className="flex flex-wrap gap-1.5" aria-label="Sugestões">
+          <div className="flex flex-wrap gap-2" aria-label="Sugestões">
             {sugestoes.map((s) =>
               s.rotulo === "Laboratório" ? (
-                <Button key={s.rotulo} variant="outline" size="sm" asChild>
-                  <Link href="/laboratorio">{s.rotulo}</Link>
-                </Button>
-              ) : (
-                <Button key={s.rotulo} variant="outline" size="sm" onClick={() => aoSugestao?.(s)} disabled={ocupado}>
+                <Link key={s.rotulo} href="/laboratorio" className={CHIP}>
                   {s.rotulo}
-                </Button>
+                </Link>
+              ) : (
+                <button key={s.rotulo} type="button" className={CHIP} onClick={() => aoSugestao?.(s)} disabled={ocupado}>
+                  {s.rotulo}
+                </button>
               ),
             )}
           </div>
         )}
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-sm">
           <div className="flex items-center gap-2">
-            <span className="text-muted-foreground">Dica</span>
+            <span className="font-medium">Dica</span>
             <EscadaDicas degrau={degrau} />
             <span className="sr-only">{NOMES_DEGRAU[degrau]}</span>
           </div>
@@ -188,21 +192,21 @@ function Casca({
               aria-label={pediuResposta ? "Resposta pedida" : "Resposta direta"}
               data-testid="resposta-direta"
             >
-              <Unlock /> <span className="hidden sm:inline">{pediuResposta ? "Resposta pedida" : "Resposta direta"}</span>
+              <Unlock className="size-4" strokeWidth={1.5} /> <span className="hidden sm:inline">{pediuResposta ? "Resposta pedida" : "Resposta direta"}</span>
               <Kbd className="hidden lg:inline-flex">⌥R</Kbd>
             </Button>
-            <Button variant="secondary" size="sm" onClick={aoPedirDica} disabled={!aoPedirDica || degrau >= 4 || ocupado} data-testid="dica">
-              <Lightbulb /> {degrau >= 4 ? "Resolução mostrada" : "Próximo degrau"} <Kbd className="hidden sm:inline-flex">H</Kbd>
+            <Button variant="outline" size="sm" onClick={aoPedirDica} disabled={!aoPedirDica || degrau >= 4 || ocupado} data-testid="dica">
+              <Lightbulb className="size-4" strokeWidth={1.5} /> {degrau >= 4 ? "Resolução mostrada" : "Próximo degrau"} <Kbd className="hidden sm:inline-flex">H</Kbd>
             </Button>
           </div>
         </div>
         {selecao && (
-          <div className="flex items-center gap-2 rounded-md bg-accent px-3 py-1.5 text-sm text-primaria-texto" data-testid="chip-selecao">
+          <div className="flex min-h-8 items-center gap-2 rounded-md border border-primary bg-accent px-3 py-1 text-sm text-primaria-texto" data-testid="chip-selecao">
             <span className="min-w-0 flex-1 truncate">
               Sobre: <q>{selecao}</q>
             </span>
-            <button type="button" onClick={aoLimparSelecao} aria-label="Remover o trecho selecionado" className="rounded-full p-0.5 hover:bg-card">
-              <X className="size-4" />
+            <button type="button" onClick={aoLimparSelecao} aria-label="Remover o trecho selecionado" className="inline-flex size-6 items-center justify-center rounded-sm transition-colors hover:bg-background pointer-coarse:size-11">
+              <X className="size-4" strokeWidth={1.5} />
             </button>
           </div>
         )}
@@ -216,7 +220,7 @@ function Casca({
           <label htmlFor="pergunta-tutor" className="sr-only">
             Pergunte do seu jeito
           </label>
-          <textarea
+          <Textarea
             id="pergunta-tutor"
             ref={inputRef}
             rows={1}
@@ -230,15 +234,15 @@ function Casca({
             }}
             placeholder={modo === "guiado" ? "peça dica, resolução ou conta…" : "pergunte do seu jeito…"}
             disabled={modo === "carregando"}
-            className="min-h-11 max-h-40 flex-1 resize-none rounded-lg border-[1.5px] border-input bg-card px-3.5 py-2.5 text-[15px] placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none"
+            className="field-sizing-content min-h-9 max-h-40 flex-1 resize-none focus-visible:border-primary focus-visible:outline-none"
           />
           {ocupado && aoParar ? (
-            <Button type="button" size="icon" variant="secondary" aria-label="Parar" onClick={aoParar}>
-              <Square />
+            <Button type="button" size="icon" variant="primary" aria-label="Parar" onClick={aoParar}>
+              <Square className="size-4" strokeWidth={1.5} />
             </Button>
           ) : (
             <Button type="submit" size="icon" aria-label="Enviar" disabled={!texto.trim() || !aoEnviar || modo === "carregando"}>
-              <SendHorizontal />
+              <SendHorizontal className="size-4" strokeWidth={1.5} />
             </Button>
           )}
         </form>
@@ -247,16 +251,12 @@ function Casca({
   );
 }
 
-/** ▮▮▯▯ dos degraus de dica usados. */
+/** Os 4 degraus da dica como bolhas: usados = marcada. */
 export function EscadaDicas({ degrau, className }: { degrau: DegrauDica; className?: string }) {
   return (
-    <span className={cn("inline-flex gap-0.5", className)} aria-label={`degrau ${degrau} de 4`} role="img">
+    <span className={cn("inline-flex items-center gap-1.5", className)} aria-label={`degrau ${degrau} de 4`} role="img">
       {[1, 2, 3, 4].map((n) => (
-        <span
-          key={n}
-          aria-hidden
-          className={cn("h-3.5 w-2 rounded-[3px]", n <= degrau ? "bg-primary" : "border-[1.5px] border-border bg-muted")}
-        />
+        <Bolha key={n} tamanho="xs" estado={n <= degrau ? "marcada" : "vazia"} />
       ))}
     </span>
   );
@@ -431,11 +431,11 @@ function ChatIA(props: PropsPainelTutor & { modelo: string | null }) {
         </Balao>
       )}
       {erro && (
-        <div role="alert" className="flex flex-col gap-2 rounded-lg bg-erro-suave px-3 py-2 text-sm">
-          <p className="font-semibold text-erro">O tutor não respondeu.</p>
-          <p className="text-muted-foreground">{erro}</p>
+        <div role="alert" className="flex flex-col gap-2 rounded-md bg-erro-suave p-3 text-sm text-erro">
+          <p className="font-medium">O tutor não respondeu.</p>
+          <p>{erro}</p>
           <div>
-            <Button size="sm" variant="secondary" onClick={() => void chat.regenerate()}>
+            <Button size="sm" variant="outline" onClick={() => void chat.regenerate()}>
               Tentar de novo
             </Button>
           </div>

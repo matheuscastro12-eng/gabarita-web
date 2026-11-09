@@ -1,4 +1,4 @@
-# Spec 05 — Mapa e Simulado · porta 3113
+# Spec 05 — Mapa e Simulado
 
 Leia `design/specs/00-regras-telas.md` inteiro primeiro. Arquivos seus: `src/components/mapa/tela-mapa.tsx`, `src/components/simulado/tela-simulado.tsx`. Inventário: §1.3, §1.4, §3.6 e o trecho do simulado em §3. O simulado reusa `QuestaoView`/`CaixaTempo` de `src/components/estudo/` (outro worker está redesenhando esses arquivos agora: **não edite**; use as props que existem). Telas para capturar: `mapa,simulado`; para o simulado rodando e o fim, escreva um script temporário em `/tmp` (clicar em "Começar", marcar, Enter, `n`; 15 itens) e capture em 375 e 1440.
 

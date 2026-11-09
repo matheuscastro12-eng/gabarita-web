@@ -1,4 +1,4 @@
-# Spec 03 — Hoje, Aprender (+ visuais) e 404  · porta 3111
+# Spec 03 — Hoje, Aprender (+ visuais) e 404
 
 Leia `design/specs/00-regras-telas.md` inteiro primeiro. Arquivos seus: `src/components/hoje/tela-hoje.tsx`, `src/components/aprender/tela-aprender.tsx`, `src/components/visuais/*.tsx`, `src/app/not-found.tsx`. Inventário: §1.1, §1.7, §1.9, §3.2, §3.8. Telas para capturar: `hoje,hoje-escuro,aprender,404`.
 

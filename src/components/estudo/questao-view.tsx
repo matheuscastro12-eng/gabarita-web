@@ -7,7 +7,7 @@ import { COMPONENTE_VISUAL } from "@/components/visuais";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import type { Questao, Letra } from "@/data/tipos";
 import { fonteDetalhada, NOME_HABILIDADE } from "@/data/tipos";
-import { Badge } from "@/components/ui/badge";
+import { Badge, badgeVariants } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { cn } from "@/lib/utils";
@@ -53,14 +53,14 @@ export function FonteQuestao({ questao, className }: { questao: Questao; classNa
         <>
           {" "}
           (
-          <a href={f.urlOficial} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
+          <a href={f.urlOficial} target="_blank" rel="noreferrer" className="text-primaria-texto underline underline-offset-2">
             provas e gabaritos
           </a>
           )
         </>
       )}
       {" · "}
-      <a href={f.transcricaoUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
+      <a href={f.transcricaoUrl} target="_blank" rel="noreferrer" className="text-primaria-texto underline underline-offset-2">
         transcrição enem.dev
       </a>
       {" · "}
@@ -80,9 +80,8 @@ interface Selecao {
 }
 
 /**
- * Painel da questão no estilo Resolver do original: um card branco com a linha de tags
- * (ENEM ano · Questão n · dificuldade · Hn), enunciado serifado, alternativas em cartões
- * e o botão Confirmar em pílula azul à direita.
+ * Painel da questão (Cartão-resposta): coluna de leitura direto no papel, linha de etiquetas,
+ * enunciado `.qtext`, alternativas em caixas com a bolha da letra e rodapé Pular | Confirmar.
  */
 export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirmar, aoPular, aoProxima, ehUltima, aoPerguntarSobre, canto, comVisual = false }: Props) {
   const dif = rotuloDificuldade(questao);
@@ -134,13 +133,12 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
 
   return (
     <article className="flex h-full min-h-0 flex-col bg-background" aria-labelledby="titulo-questao">
-      <div ref={areaRef} className="relative min-h-0 flex-1 overflow-y-auto px-3 pt-3 pb-4 md:px-5 md:pt-4">
+      <div ref={areaRef} className="relative min-h-0 flex-1 overflow-y-auto">
         {selecao && aoPerguntarSobre && (
           <div className={selecao.abaixo ? "selecao-flutuante selecao-flutuante-abaixo" : "selecao-flutuante"} style={{ left: selecao.x, top: selecao.y }}>
             <Button
-              size="sm"
-              variant="primary"
-              className="shadow-flutua"
+              variant="ghost"
+              className="h-8 rounded-md bg-foreground px-2.5 text-xs font-medium text-background shadow-flutua hover:bg-foreground"
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => {
                 aoPerguntarSobre(selecao.texto);
@@ -149,18 +147,18 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
               }}
               data-testid="perguntar-sobre"
             >
-              <MessageSquareQuote /> Perguntar sobre isto
+              <MessageSquareQuote className="size-3.5" strokeWidth={1.5} /> Perguntar sobre isto
             </Button>
           </div>
         )}
-        <div className="anim-questao mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl border border-border bg-card p-4 md:p-5">
+        <div className="anim-questao mx-auto flex w-full max-w-[720px] flex-col gap-4 px-4 py-5 md:px-8 md:py-6">
           <header className="flex flex-wrap items-center gap-1.5 text-sm">
-            <h2 id="titulo-questao" className="inline-flex items-center rounded-sm bg-muted px-2.25 py-0.75 text-xs font-semibold text-muted-foreground">
+            <h2 id="titulo-questao" className={cn(badgeVariants({ variant: "neutral" }), "num")}>
               ENEM {questao.ano} · Q{questao.numero}
             </h2>
-            <Badge variant={dif.variant}>{dif.texto}</Badge>
+            <Badge variant={dif.variant} className="num">{dif.texto}</Badge>
             {questao.habilidade && (
-              <Badge variant="destaque" title={NOME_HABILIDADE[questao.habilidade]}>
+              <Badge variant="destaque" className="num" title={NOME_HABILIDADE[questao.habilidade]}>
                 {questao.habilidade}
                 {questao.habilidade_origem && questao.habilidade_origem !== "inep" ? " (estimada)" : ""}
               </Badge>
@@ -171,7 +169,7 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
           </header>
 
           <div ref={enunciadoRef} data-testid="enunciado">
-            <Markdown className="qtext [&>p]:my-2.75 [&_strong]:font-semibold">{questao.enunciado}</Markdown>
+            <Markdown className="qtext [&>p]:my-3 [&_strong]:font-semibold">{questao.enunciado}</Markdown>
           </div>
           <Alternativas
             alternativas={questao.alternativas}
@@ -181,13 +179,13 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             aoMarcar={aoMarcar}
           />
           {confirmada && (
-            <p ref={statusRef} role="status" className={cn("text-base font-semibold", acertou ? "text-sucesso" : "text-erro")}>
+            <p ref={statusRef} role="status" className={cn("text-sm font-medium", acertou ? "text-sucesso" : "text-erro")}>
               {acertou ? "Acertou." : `Não foi dessa vez. O gabarito é ${questao.gabarito}.`}
             </p>
           )}
           {questao.resolucao?.dados_da_imagem && (
-            <details className="rounded-md bg-muted px-3 py-2 text-sm">
-              <summary className="cursor-pointer font-medium text-muted-foreground">Dados da imagem em texto</summary>
+            <details className="border-t border-border pt-3 text-xs text-muted-foreground">
+              <summary className="cursor-pointer font-medium">Dados da imagem em texto</summary>
               <p className="pt-2">{questao.resolucao.dados_da_imagem}</p>
             </details>
           )}
@@ -195,19 +193,19 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
         </div>
       </div>
 
-      <footer className="flex shrink-0 flex-wrap items-center gap-2 border-t border-border bg-card px-4 py-2.5 md:px-5">
+      <footer className="flex shrink-0 items-center gap-3 border-t border-border bg-background px-4 py-3 md:px-8">
         {!confirmada ? (
           <>
             <Button variant="ghost" onClick={aoPular} className="text-muted-foreground">
               Pular
             </Button>
-            <Button onClick={aoConfirmar} disabled={!marcada} data-testid="confirmar" className="ml-auto px-6">
-              Confirmar <Kbd className="ml-0.5 border-primary-foreground/40 bg-transparent text-primary-foreground">Enter</Kbd>
+            <Button onClick={aoConfirmar} disabled={!marcada} data-testid="confirmar" className="ml-auto h-11 flex-1 px-5 text-base sm:h-9 sm:flex-none sm:px-6 sm:text-sm">
+              Confirmar <Kbd className="ml-0.5">Enter</Kbd>
             </Button>
           </>
         ) : (
-          <Button onClick={aoProxima} data-testid="proxima" className="ml-auto px-6">
-            {ehUltima ? "Ver resultado" : "Próxima"} <Kbd className="ml-0.5 border-primary-foreground/40 bg-transparent text-primary-foreground">N</Kbd>
+          <Button onClick={aoProxima} data-testid="proxima" className="ml-auto h-11 flex-1 px-5 text-base sm:h-9 sm:flex-none sm:px-6 sm:text-sm">
+            {ehUltima ? "Ver resultado" : "Próxima"} <Kbd className="ml-0.5">N</Kbd>
           </Button>
         )}
       </footer>
@@ -224,8 +222,8 @@ function BotaoVisual({ assuntos }: { assuntos: readonly string[] }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="ml-auto h-7 px-3 text-xs" data-testid="ver-visualmente">
-          <Shapes strokeWidth={1.8} /> Ver visualmente
+        <Button variant="outline" size="sm" className="ml-auto" data-testid="ver-visualmente">
+          <Shapes className="size-4" strokeWidth={1.5} /> Ver visualmente
         </Button>
       </DialogTrigger>
       <DialogContent className="max-h-[90dvh] max-w-2xl overflow-y-auto">

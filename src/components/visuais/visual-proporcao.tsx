@@ -47,10 +47,10 @@ export function VisualProporcao() {
 function Linha({ rotulo, valor, fracao, cor, blocos }: { rotulo: string; valor: string; fracao: number; cor: string; blocos: number }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="w-7 shrink-0 text-xs font-semibold text-muted-foreground">{rotulo}</span>
-      <div className="relative h-8 flex-1 overflow-hidden rounded-[10px] bg-card">
+      <span className="w-7 shrink-0 text-xs font-medium text-muted-foreground">{rotulo}</span>
+      <div className="relative h-8 flex-1 overflow-hidden rounded-md bg-card">
         <div
-          className={`absolute inset-y-0 left-0 w-full origin-left rounded-[10px] ${cor} transition-transform duration-[240ms] ease-(--curva)`}
+          className={`absolute inset-y-0 left-0 w-full origin-left rounded-md ${cor} transition-transform duration-[240ms] ease-(--curva)`}
           style={{ transform: `scaleX(${fracao})` }}
         />
         {/* Marcas de cada unidade, para contar. */}

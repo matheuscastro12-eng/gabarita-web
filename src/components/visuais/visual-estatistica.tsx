@@ -84,7 +84,7 @@ export function VisualEstatistica() {
           <div className="relative mx-2 h-10">
             <div className="absolute inset-x-0 top-4 h-[2px] rounded-full bg-border" />
             {Array.from({ length: 11 }, (_, k) => (
-              <span key={k} className="num absolute top-6 -translate-x-1/2 text-[10px] text-muted-foreground" style={{ left: `${k * 10}%` }}>
+              <span key={k} className="num absolute top-6 -translate-x-1/2 text-xs text-muted-foreground" style={{ left: `${k * 10}%` }}>
                 {k}
               </span>
             ))}

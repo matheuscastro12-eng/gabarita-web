@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import { CircleAlert, CircleCheck } from "lucide-react";
 import type { Questao } from "@/data/tipos";
 import { NOME_HABILIDADE } from "@/data/tipos";
 import { useQuestoes } from "@/data/use-questoes";
@@ -24,6 +25,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { ConteudoPagina, EstadoVazio } from "@/components/app/pagina";
 import { useToast } from "@/components/ui/toast";
+import { Esqueleto, EsqueletoTexto } from "@/components/ui/esqueleto";
 import { FimSprint } from "./fim-sprint";
 import { IDE, type RespostaQuestao } from "./ide";
 import { useResponderGemea } from "./use-responder-gemea";
@@ -142,7 +144,7 @@ export function TelaEstudar() {
   if (erro) {
     return (
       <ConteudoPagina className="justify-center">
-        <EstadoVazio titulo="Não consegui carregar" descricao={erro} acao={<Button onClick={() => window.location.reload()}>Tentar de novo</Button>} />
+        <EstadoVazio icone={<CircleAlert strokeWidth={1.5} />} titulo="Não consegui carregar" descricao={erro} acao={<Button onClick={() => window.location.reload()}>Tentar de novo</Button>} />
       </ConteudoPagina>
     );
   }
@@ -155,6 +157,7 @@ export function TelaEstudar() {
     return (
       <ConteudoPagina className="justify-center">
         <EstadoVazio
+          icone={<CircleCheck strokeWidth={1.5} />}
           titulo="Nada para estudar agora"
           descricao="Todas as questões disponíveis foram acertadas nos últimos 7 dias. Volte amanhã ou sincronize mais questões com pnpm sync-provas."
           acao={
@@ -201,14 +204,14 @@ export function TelaEstudar() {
       aoResponderGemea={responderGemea}
       rodape={
         questaoAtual?.habilidade ? (
-          <div className="flex items-center gap-3">
-            <span className="shrink-0 text-[13px] font-medium text-muted-foreground">
-              domínio <span className="num">{questaoAtual.habilidade}</span>
+          <div className="flex w-full min-w-0 items-center gap-3">
+            <span className="shrink-0 text-muted-foreground">
+              domínio <span className="num text-foreground">{questaoAtual.habilidade}</span>
               <span className="sr-only"> {NOME_HABILIDADE[questaoAtual.habilidade]}</span>
             </span>
-            <Progress value={(hab?.dominio ?? 0.3) * 100} className="max-w-48" />
-            <span className="num text-[13px] font-semibold">{formatarDecimal(hab?.dominio ?? 0.3, 2)}</span>
-            <span className="hidden min-w-0 truncate text-[13px] text-muted-foreground sm:inline" data-testid="falta">
+            <Progress value={(hab?.dominio ?? 0.3) * 100} className="max-w-40" />
+            <span className="num shrink-0">{formatarDecimal(hab?.dominio ?? 0.3, 2)}</span>
+            <span className="hidden min-w-0 truncate text-muted-foreground sm:inline" data-testid="falta">
               {pronto ? (pronto.pronto ? "pronto nesta habilidade" : pronto.faltas[0]) : "primeiro item desta habilidade"}
             </span>
           </div>
@@ -221,23 +224,30 @@ export function TelaEstudar() {
 function EsqueletoIDE() {
   return (
     <div className="flex h-full flex-col bg-background" aria-busy="true" aria-label="Carregando o sprint">
-      <div className="h-12 border-b border-border bg-card" />
-      <div className="grid flex-1 grid-cols-1 md:grid-cols-[58%_1fr]">
-        <div className="p-4">
-          <div className="mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl bg-card p-5">
-            <div className="h-5 w-40 rounded-sm bg-muted" />
-            <div className="h-4 w-full rounded-sm bg-muted" />
-            <div className="h-4 w-11/12 rounded-sm bg-muted" />
-            <div className="h-4 w-3/4 rounded-sm bg-muted" />
-            <div className="mt-2 flex flex-col gap-2">
-              {[0, 1, 2, 3, 4].map((i) => (
-                <div key={i} className="h-13 rounded-lg border-[1.5px] border-border" />
-              ))}
-            </div>
+      <div className="flex h-12 shrink-0 items-center gap-3 border-b border-border px-4">
+        <Esqueleto className="h-4 w-24" />
+        <Esqueleto className="h-4 w-10" />
+      </div>
+      <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-[58%_1fr]">
+        <div className="mx-auto flex w-full max-w-[720px] flex-col gap-4 px-4 py-5 md:px-8 md:py-6">
+          <div className="flex gap-1.5">
+            <Esqueleto className="h-6 w-32 rounded-sm" />
+            <Esqueleto className="h-6 w-24 rounded-sm" />
+          </div>
+          <EsqueletoTexto linhas={4} />
+          <div className="mt-2 flex flex-col gap-2">
+            {[0, 1, 2, 3, 4].map((i) => (
+              <div key={i} className="h-12 rounded-md border border-border" aria-hidden />
+            ))}
           </div>
         </div>
-        <div className="hidden border-l border-border bg-card p-6 md:block">
-          <div className="h-5 w-24 rounded-sm bg-muted" />
+        <div className="hidden border-l border-border md:block">
+          <div className="flex h-12 items-center border-b border-border px-4">
+            <Esqueleto className="h-4 w-16" />
+          </div>
+          <div className="p-4">
+            <Esqueleto className="h-16 w-4/5 rounded-lg" />
+          </div>
         </div>
       </div>
     </div>

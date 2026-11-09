@@ -321,11 +321,14 @@ function QuestaoDoSprint({
           }}
           className="h-full"
         >
-          <Panel id="questao" defaultSize="58%" minSize="35%" className="min-w-0">
+          <Panel id="questao" defaultSize="58%" minSize="35%" className="min-w-0 bg-background">
             {painelQuestao}
           </Panel>
-          <Separator className="w-1.5 cursor-col-resize" aria-label="Redimensionar painéis" />
-          <Panel id="tutor" defaultSize="42%" minSize="28%" className="min-w-0 bg-card">
+          <Separator
+            className="relative w-px cursor-col-resize bg-border transition-colors duration-(--duracao) after:absolute after:inset-y-0 after:-left-1 after:-right-1 after:content-[''] hover:bg-input data-[separator=active]:bg-primary"
+            aria-label="Redimensionar painéis"
+          />
+          <Panel id="tutor" defaultSize="42%" minSize="28%" className="min-w-0 bg-background">
             {painelTutor}
           </Panel>
         </Group>
@@ -334,24 +337,24 @@ function QuestaoDoSprint({
       {/* Celular: abas. */}
       <div className="flex min-h-0 flex-1 flex-col md:hidden">
         <Tabs value={aba} onValueChange={(v) => setAba(v as "questao" | "tutor")} className="min-h-0 flex-1 gap-0">
-          <TabsList className="mx-3 mt-3 w-[calc(100%-1.5rem)] flex-nowrap">
-            <TabsTrigger value="questao" className="flex-1">
+          <TabsList className="flex-nowrap gap-0 px-4">
+            <TabsTrigger value="questao" className="h-11 flex-1">
               Questão
             </TabsTrigger>
-            <TabsTrigger value="tutor" className="flex-1">
+            <TabsTrigger value="tutor" className="h-11 flex-1">
               Tutor
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="questao" className="mt-1 min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
+          <TabsContent value="questao" className="min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
             {painelQuestao}
           </TabsContent>
-          <TabsContent value="tutor" className="mt-1 min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
+          <TabsContent value="tutor" className="min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
             {painelTutor}
           </TabsContent>
         </Tabs>
       </div>
 
-      {rodape && <footer className="shrink-0 border-t border-border bg-card px-4 py-2 text-sm">{rodape}</footer>}
+      {rodape && <footer className="flex h-9 shrink-0 items-center border-t border-border bg-background px-4 text-xs">{rodape}</footer>}
     </div>
   );
 }

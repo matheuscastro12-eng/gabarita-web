@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { CabecalhoPagina, ConteudoPagina } from "@/components/app/pagina";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { COMPONENTE_VISUAL } from "@/components/visuais";
 import { VISUAIS, type IdVisual } from "@/lib/visuais/catalogo";
 import { cn } from "@/lib/utils";
@@ -36,9 +35,12 @@ export function TelaAprender() {
         titulo="Aprender o básico"
         descricao="A matemática que mais cai nas questões fáceis do ENEM, em visuais curtos: avance no seu ritmo, mexa nos números e faça o teste de um clique."
       />
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-3.5 lg:grid-cols-[240px_minmax(0,1fr)] lg:items-start">
-        <nav aria-label="Temas" className="-mx-3 overflow-x-auto px-3 lg:mx-0 lg:px-0">
-          <ul className="flex gap-2 lg:flex-col lg:gap-1">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[232px_minmax(0,1fr)] lg:items-start lg:gap-0 lg:divide-x lg:divide-border">
+        <nav
+          aria-label="Temas"
+          className="-mx-4 overflow-x-auto border-b border-border px-4 [scrollbar-width:none] md:-mx-8 md:px-8 lg:mx-0 lg:border-b-0 lg:px-0 lg:pr-4 [&::-webkit-scrollbar]:hidden"
+        >
+          <ul className="flex gap-4 lg:flex-col lg:gap-0">
             {VISUAIS.map((v) => (
               <li key={v.id} className="shrink-0">
                 <button
@@ -46,26 +48,28 @@ export function TelaAprender() {
                   onClick={() => escolher(v.id)}
                   aria-current={v.id === atual ? "true" : undefined}
                   className={cn(
-                    "w-full rounded-full border-[1.5px] border-border bg-card px-4 py-2 text-left text-[13px] font-semibold whitespace-nowrap",
-                    "transition-[background-color,border-color,color] duration-(--duracao) ease-(--curva) hover:border-primary",
-                    "lg:rounded-[12px] lg:border-transparent lg:bg-transparent lg:px-3 lg:py-2.5 lg:whitespace-normal lg:hover:border-transparent lg:hover:bg-card",
-                    v.id === atual && "border-primary bg-primary text-primary-foreground hover:border-primary lg:bg-accent lg:text-primaria-texto lg:hover:bg-accent",
+                    "relative flex min-h-11 w-full flex-col justify-center text-left text-sm font-medium whitespace-nowrap text-muted-foreground",
+                    "transition-colors duration-(--duracao) ease-(--curva) hover:text-foreground",
+                    "after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-transparent",
+                    "lg:rounded-md lg:px-3 lg:py-2 lg:whitespace-normal lg:text-foreground lg:after:hidden lg:hover:bg-muted",
+                    "before:absolute before:inset-y-2 before:left-0 before:hidden before:w-0.5 before:bg-transparent lg:before:block",
+                    v.id === atual && "text-foreground after:bg-primary lg:bg-muted lg:font-semibold lg:before:bg-primary",
                   )}
                 >
                   {v.titulo}
-                  <span className={cn("hidden text-xs font-medium lg:block", v.id === atual ? "text-primaria-texto/80" : "text-muted-foreground")}>{v.resumo}</span>
+                  <span className="hidden text-xs font-normal text-muted-foreground lg:block">{v.resumo}</span>
                 </button>
               </li>
             ))}
           </ul>
         </nav>
-        <Card key={atual} className="anim-entrada gap-5" data-testid="card-visual">
-          <CardHeader>
-            <CardTitle>{info.titulo}</CardTitle>
-            <CardDescription>{info.resumo}</CardDescription>
-          </CardHeader>
+        <section key={atual} className="anim-entrada flex min-w-0 flex-col gap-5 lg:pl-8" data-testid="card-visual">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-xl font-semibold">{info.titulo}</h2>
+            <p className="text-sm text-muted-foreground">{info.resumo}</p>
+          </div>
           <Visual />
-        </Card>
+        </section>
       </div>
     </ConteudoPagina>
   );

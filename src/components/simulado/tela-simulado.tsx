@@ -21,13 +21,12 @@ import {
 } from "@/lib/dominio";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { Bolha } from "@/components/ui/bolha";
 import { CabecalhoPagina, ConteudoPagina, EstadoVazio } from "@/components/app/pagina";
 import { useToast } from "@/components/ui/toast";
 import { CaixaTempo, formatarTempo } from "@/components/estudo/barra-sprint";
 import { QuestaoView } from "@/components/estudo/questao-view";
-import { Logo } from "@/components/app/sidebar";
 import { cn } from "@/lib/utils";
 
 interface Resposta {
@@ -123,35 +122,45 @@ export function TelaSimulado() {
     const n = fila?.length ?? null;
     const suficiente = n !== null && n >= TAMANHO_SIMULADO_FACEIS;
     return (
-      <ConteudoPagina className="max-w-[760px]">
+      <ConteudoPagina className="mx-0 max-w-[720px] gap-6">
         <CabecalhoPagina titulo={`Simulado de ${TAMANHO_SIMULADO_FACEIS} fáceis`} descricao="Itens oficiais do tercil fácil que você nunca fez. Sem tutor, sem dicas: só você e o cronômetro." />
-        <Card className="gap-5 md:p-6">
-          <CardHeader>
-            <CardTitle className="text-xl">Como funciona</CardTitle>
-            <CardDescription>
-              {TAMANHO_SIMULADO_FACEIS} questões fáceis pelo parâmetro b do INEP, todas inéditas para você. Até 3 minutos por item: quando o tempo acaba, a questão fecha sem resposta e a próxima entra.
-              Para valer como “pronto nos fáceis” é preciso acertar pelo menos 90% (14 de 15) sem estourar o tempo em nenhum item.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-wrap items-center gap-3">
-              <Button size="lg" onClick={comecar} disabled={!suficiente} data-testid="comecar-simulado">
-                <Timer /> Começar
-              </Button>
-              <span className="text-sm text-muted-foreground" data-testid="disponiveis-simulado">
-                {n === null
-                  ? "Montando a lista…"
-                  : suficiente
-                    ? `${TAMANHO_SIMULADO_FACEIS} questões prontas, ${estado ? resumirHabilidades(fila!) : ""}.`
-                    : `Só ${plural(n, "questão fácil inédita", "questões fáceis inéditas")} restantes: não dá para montar o simulado. Sincronize mais questões ou aguarde novas.`}
-              </span>
-            </div>
-            <p className="text-xs text-muted-foreground">
-              Cada resposta conta como tentativa oficial (domínio e nota TRI), como num sprint, mas sem dica e com peso normal.
-            </p>
-          </CardContent>
-        </Card>
-        <Button variant="outline" asChild className="self-start">
+        <section className="flex flex-col gap-3 border-t border-border pt-6" aria-labelledby="como-funciona">
+          <h2 id="como-funciona" className="text-base font-semibold">
+            Como funciona
+          </h2>
+          <ol className="flex flex-col gap-3 text-sm text-texto-2">
+            {[
+              `${TAMANHO_SIMULADO_FACEIS} questões fáceis pelo parâmetro b do INEP, todas inéditas para você.`,
+              "Até 3 minutos por item: quando o tempo acaba, a questão fecha sem resposta e a próxima entra.",
+              "Para valer como “pronto nos fáceis” é preciso acertar pelo menos 90% (14 de 15) sem estourar o tempo em nenhum item.",
+            ].map((regra, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <Bolha tamanho="sm" className="num mt-px text-xs">
+                  {i + 1}
+                </Bolha>
+                <span>{regra}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+        <section className="flex flex-col gap-3 border-t border-border pt-6">
+          <div className="flex flex-wrap items-center gap-3">
+            <Button size="lg" onClick={comecar} disabled={!suficiente} data-testid="comecar-simulado">
+              <Timer /> Começar
+            </Button>
+            <span className="min-w-0 text-sm text-muted-foreground" data-testid="disponiveis-simulado">
+              {n === null
+                ? "Montando a lista…"
+                : suficiente
+                  ? `${TAMANHO_SIMULADO_FACEIS} questões prontas, ${estado ? resumirHabilidades(fila!) : ""}.`
+                  : `Só ${plural(n, "questão fácil inédita", "questões fáceis inéditas")} restantes: não dá para montar o simulado. Sincronize mais questões ou aguarde novas.`}
+            </span>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Cada resposta conta como tentativa oficial (domínio e nota TRI), como num sprint, mas sem dica e com peso normal.
+          </p>
+        </section>
+        <Button variant="ghost" asChild className="self-start pointer-coarse:min-h-11">
           <Link href="/mapa">
             <ArrowLeft /> Voltar para o Mapa
           </Link>
@@ -168,20 +177,17 @@ export function TelaSimulado() {
   const resposta = fase.respostas[fase.indice] ?? null;
   return (
     <div className="flex h-full min-h-0 flex-col">
-      <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border bg-card px-4 text-sm">
-        <span className="flex items-center gap-2 text-base font-semibold">
-          <Logo className="size-5" />
-          <span className="hidden sm:inline">Simulado</span>
-        </span>
-        <span className="num text-muted-foreground" data-testid="progresso-simulado">
+      <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border bg-background px-4 text-sm">
+        <span className="hidden text-sm font-semibold sm:inline">Simulado</span>
+        <span className="num text-texto-2" data-testid="progresso-simulado">
           {fase.indice + 1}/{fase.questoes.length}
         </span>
-        <Progress value={(fase.indice / fase.questoes.length) * 100} className="hidden max-w-48 sm:block" aria-label="Progresso do simulado" />
-        <span className="hidden truncate text-muted-foreground md:inline">
+        <Progress value={(fase.indice / fase.questoes.length) * 100} className="hidden max-w-[200px] sm:block" aria-label="Progresso do simulado" />
+        <span className="hidden min-w-0 truncate text-muted-foreground md:inline">
           {questao.habilidade ? `${NOME_HABILIDADE[questao.habilidade]} · ${questao.habilidade}` : ""}
         </span>
-        <span className="ml-auto flex items-center gap-3">
-          <span className="num text-muted-foreground">
+        <span className="ml-auto flex shrink-0 items-center gap-3">
+          <span className="num text-texto-2">
             {fase.respostas.filter((r) => r?.acertou).length} acertos
           </span>
         </span>
@@ -282,7 +288,7 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
   const vale = simuladoValeParaFaceis(simulado);
   const taxa = simulado.total > 0 ? simulado.acertos / simulado.total : 0;
   return (
-    <ConteudoPagina className="max-w-[760px] gap-4">
+    <ConteudoPagina className="mx-0 max-w-[720px] gap-6">
       <CabecalhoPagina
         titulo={`${simulado.acertos} de ${simulado.total}`}
         descricao={
@@ -299,33 +305,45 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
         </Badge>
         <Badge variant="outline">maior tempo por item: {formatarTempo(simulado.maiorTempoItem)}</Badge>
       </div>
-      <Card>
-        <CardHeader>
-          <CardTitle>Questões</CardTitle>
-        </CardHeader>
-        <CardContent className="gap-0 divide-y divide-border">
+      <ol className="flex flex-wrap gap-2" aria-label="Resumo do simulado">
+        {questoes.map((q, i) => {
+          const acertou = !!respostas[i]?.acertou;
+          return (
+            <li key={q.id}>
+              <Bolha tamanho="md" estado={acertou ? "certa" : "errada"}>
+                {i + 1}
+              </Bolha>
+            </li>
+          );
+        })}
+      </ol>
+      <section className="flex flex-col gap-2 border-t border-border pt-6" aria-labelledby="questoes-simulado">
+        <h2 id="questoes-simulado" className="text-base font-semibold">
+          Questões
+        </h2>
+        <div className="flex flex-col">
           {questoes.map((q, i) => {
             const r = respostas[i];
             const acertou = !!r?.acertou;
             return (
-              <div key={q.id} className="flex items-center gap-3 py-2.5 text-sm" data-testid="resultado-simulado">
-                <span className={cn("inline-flex size-7 shrink-0 items-center justify-center rounded-full", acertou ? "bg-sucesso-forte text-sucesso-contraste" : "bg-erro-forte text-erro-contraste")} aria-label={acertou ? "acertou" : "errou"}>
-                  {acertou ? <Check className="size-4" strokeWidth={2.5} /> : <X className="size-4" strokeWidth={2.5} />}
-                </span>
-                <span className="num w-5 text-muted-foreground">{i + 1}.</span>
-                <span className="min-w-0 flex-1 truncate font-medium">
+              <div key={q.id} className="flex min-h-10 items-center gap-3 border-b border-border py-2 text-sm" data-testid="resultado-simulado">
+                <Bolha tamanho="sm" estado={acertou ? "certa" : "errada"} aria-hidden={false} aria-label={acertou ? "acertou" : "errou"}>
+                  {acertou ? <Check strokeWidth={2} /> : <X strokeWidth={2} />}
+                </Bolha>
+                <span className="num w-6 shrink-0 text-muted-foreground">{i + 1}.</span>
+                <span className="min-w-0 flex-1 font-medium">
                   ENEM {q.ano} · Q{q.numero}
                   <span className="font-normal text-muted-foreground"> · {q.habilidade}</span>
                 </span>
-                <span className="num text-[13px] text-muted-foreground">
+                <span className="num shrink-0 text-xs text-muted-foreground">
                   {r?.tempoEsgotado ? "tempo esgotado" : r?.escolha ? `marcou ${r.escolha}` : "pulou"}
                   {r && !r.tempoEsgotado ? ` · ${formatarTempo(r.segundos)}` : ""}
                 </span>
               </div>
             );
           })}
-        </CardContent>
-      </Card>
+        </div>
+      </section>
       <div className="flex flex-wrap items-center gap-3">
         <Button size="lg" asChild>
           <Link href="/mapa">

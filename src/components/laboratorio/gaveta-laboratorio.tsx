@@ -19,29 +19,29 @@ export function GavetaLaboratorio({ aberta, aoMudar }: { aberta: boolean; aoMuda
           aria-describedby={undefined}
           data-testid="gaveta-laboratorio"
           className={cn(
-            "fixed inset-y-0 right-0 z-50 flex w-full max-w-xl flex-col bg-card text-foreground shadow-flutua md:inset-y-3 md:right-3 md:rounded-xl",
+            "fixed inset-y-0 right-0 z-50 flex w-full flex-col bg-popover text-foreground shadow-flutua md:max-w-xl md:border-l md:border-border",
             "data-[state=open]:anim-slide-in-right data-[state=closed]:anim-fade-out",
           )}
         >
-          <header className="flex items-center gap-2 border-b border-border px-4 py-3">
-            <FlaskConical className="size-4 text-primary" strokeWidth={1.8} />
+          <header className="flex h-12 shrink-0 items-center gap-2 border-b border-border px-4">
+            <FlaskConical className="size-4" strokeWidth={1.5} />
             <DialogPrimitive.Title className="text-sm font-semibold">Laboratório</DialogPrimitive.Title>
-            <span className="text-xs text-muted-foreground">
+            <span className="min-w-0 truncate text-xs text-muted-foreground">
               gaveta · <Kbd>L</Kbd> abre e <Kbd>Esc</Kbd> fecha
             </span>
-            <DialogPrimitive.Close className="ml-auto inline-flex size-8 items-center justify-center rounded-full bg-muted text-muted-foreground hover:bg-muted-forte hover:text-foreground" aria-label="Fechar o Laboratório">
-              <X className="size-5" />
+            <DialogPrimitive.Close className="ml-auto inline-flex size-8 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors duration-(--duracao) hover:bg-muted hover:text-foreground pointer-coarse:size-11" aria-label="Fechar o Laboratório">
+              <X className="size-4" strokeWidth={1.5} />
             </DialogPrimitive.Close>
           </header>
           <Tabs defaultValue="python" className="min-h-0 flex-1 gap-0">
-            <TabsList className="mx-4 mt-3">
+            <TabsList className="px-4">
               <TabsTrigger value="python">Python + SymPy</TabsTrigger>
               <TabsTrigger value="grafico">Gráfico</TabsTrigger>
             </TabsList>
-            <TabsContent value="python" className="min-h-0 overflow-y-auto px-4 py-4">
+            <TabsContent value="python" className="min-h-0 overflow-y-auto p-4">
               <EditorPython compacto />
             </TabsContent>
-            <TabsContent value="grafico" className="min-h-0 overflow-y-auto px-4 py-4">
+            <TabsContent value="grafico" className="min-h-0 overflow-y-auto p-4">
               <Plotador compacto />
             </TabsContent>
           </Tabs>

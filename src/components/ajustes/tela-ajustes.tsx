@@ -25,7 +25,8 @@ import {
 import type { EstadoAluno, Habilidade, Perfil } from "@/lib/dominio/tipos";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input, Label, Textarea } from "@/components/ui/input";
+import { Esqueleto } from "@/components/ui/esqueleto";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { CabecalhoPagina, ConteudoPagina } from "@/components/app/pagina";
 import { useToast } from "@/components/ui/toast";
@@ -38,19 +39,19 @@ export function TelaAjustes() {
     return (
       <ConteudoPagina>
         <CabecalhoPagina titulo="Ajustes" />
-        <div role="alert" className="rounded-lg bg-erro-suave px-4 py-3 text-sm">
-          <p className="font-semibold text-erro">Não consegui carregar seus dados.</p>
-          <p className="text-muted-foreground">{erro}</p>
+        <div role="alert" className="max-w-[960px] rounded-md bg-erro-suave p-3 text-sm text-erro">
+          <p className="font-medium">Não consegui carregar seus dados.</p>
+          <p>{erro}</p>
         </div>
       </ConteudoPagina>
     );
   }
   if (!estado) {
     return (
-      <ConteudoPagina aria-busy="true">
+      <ConteudoPagina aria-busy="true" className="mx-0 max-w-[960px]">
         <CabecalhoPagina titulo="Ajustes" descricao="Carregando…" />
         {[0, 1, 2].map((i) => (
-          <div key={i} className="h-40 rounded-xl bg-card" />
+          <Esqueleto key={i} className="h-40 w-full" />
         ))}
       </ConteudoPagina>
     );
@@ -74,17 +75,39 @@ function Formularios({ estado }: { estado: EstadoAluno }) {
   );
 
   return (
-    <ConteudoPagina className="max-w-[760px]">
+    <ConteudoPagina className="mx-0 max-w-[720px] lg:max-w-[960px]">
       <CabecalhoPagina titulo="Ajustes" descricao="Como o tutor explica, quando é a prova, qual é a meta e onde ficam os seus dados." />
+      <div className="flex flex-col">
       <CardPerfil perfil={perfil} salvar={salvarPerfil} />
       <CardProva perfil={perfil} salvar={salvarPerfil} />
       <CardSemana perfil={perfil} salvar={salvarPerfil} />
       <CardTutor perfil={perfil} salvar={salvarPerfil} />
       <CardAparencia />
       <CardDados estado={estado} store={store} />
+      </div>
     </ConteudoPagina>
   );
 }
+
+/** Seção da página: linha fina em cima, título + descrição; em `lg`, título à esquerda e controles à direita. */
+function Secao({ titulo, descricao, children }: { titulo: React.ReactNode; descricao: React.ReactNode; children: React.ReactNode }) {
+  return (
+    <section className="grid gap-4 border-t border-border py-6 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-6">
+      <div className="flex min-w-0 flex-col gap-1">
+        <h2 className="flex items-center gap-2 text-base font-semibold">{titulo}</h2>
+        <p className="text-sm text-muted-foreground">{descricao}</p>
+      </div>
+      <div className="flex min-w-0 flex-col gap-4">{children}</div>
+    </section>
+  );
+}
+
+/** Controle segmentado (rádio): ativa em cinza, sem tinta azul. */
+const segmento = (ativo: boolean) =>
+  cn(
+    "inline-flex h-8 items-center gap-1.5 rounded-[6px] px-3 text-sm font-medium transition-colors duration-(--duracao) ease-(--curva) pointer-coarse:min-h-11",
+    ativo ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground",
+  );
 
 /* ------------------------------ Perfil ------------------------------ */
 
@@ -99,15 +122,11 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
   };
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Explica do meu jeito</CardTitle>
-        <CardDescription>Vai junto com cada mensagem para o tutor (em cache). Escolha presets, escreva do seu jeito, ou os dois.</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <label className="flex flex-col gap-1 text-sm">
-          <span className="text-muted-foreground">Como o tutor te chama</span>
-          <input
+    <Secao titulo={<>Explica do meu jeito</>} descricao={<>Vai junto com cada mensagem para o tutor (em cache). Escolha presets, escreva do seu jeito, ou os dois.</>}>
+        <div className="flex flex-col gap-2">
+          <Label htmlFor="campo-nome">Como o tutor te chama</Label>
+          <Input
+            id="campo-nome"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
             onBlur={() => {
@@ -115,10 +134,10 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
               setNome(n);
               if (n !== perfil.nome) salvar({ nome: n });
             }}
-            className="h-11 max-w-xs rounded-md border-[1.5px] border-input bg-card px-3.5 font-medium focus-visible:border-primary focus-visible:outline-none"
+            className="max-w-xs"
             data-testid="campo-nome"
           />
-        </label>
+        </div>
         <div className="flex flex-wrap gap-2" role="group" aria-label="Presets de explicação">
           {PRESETS_EXPLICACAO.map((p) => {
             const ativo = presetAtivo(texto, p);
@@ -130,20 +149,21 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                 onClick={() => alternarPreset(p)}
                 data-testid={`preset-${p.id}`}
                 className={cn(
-                  "inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] px-3.5 text-[13px] font-semibold",
-                  "transition-[background-color,border-color,color] duration-(--duracao) ease-(--curva)",
-                  ativo ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-foreground hover:border-primary",
+                  "inline-flex h-8 items-center gap-1.5 rounded-md border px-3 text-sm font-medium pointer-coarse:min-h-11",
+                  "transition-colors duration-(--duracao) ease-(--curva)",
+                  ativo ? "border-primary bg-accent text-primaria-texto" : "border-input bg-background text-foreground hover:bg-muted",
                 )}
               >
-                {ativo && <Check className="size-4" />}
+                {ativo && <Check className="size-3.5" strokeWidth={1.5} />}
                 {p.rotulo}
               </button>
             );
           })}
         </div>
-        <label className="flex flex-col gap-1 text-sm">
-          <span className="text-muted-foreground">Texto livre</span>
-          <textarea
+        <div className="flex flex-col gap-2">
+          <Label htmlFor="campo-explica">Texto livre</Label>
+          <Textarea
+            id="campo-explica"
             value={texto}
             onChange={(e) => setTexto(e.target.value)}
             onBlur={() => {
@@ -151,13 +171,12 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
             }}
             rows={4}
             placeholder="Ex.: prefiro exemplos com dinheiro; não gosto quando repetem o enunciado; me pergunte antes de dar a conta."
-            className="w-full resize-y rounded-md border-[1.5px] border-input bg-card px-3.5 py-2.5 text-[15px] leading-relaxed focus-visible:border-primary focus-visible:outline-none"
+            className="resize-y leading-relaxed"
             data-testid="campo-explica"
           />
-          <span className="text-xs text-muted-foreground">{texto.length} caracteres · salva ao sair do campo</span>
-        </label>
-      </CardContent>
-    </Card>
+          <span className="text-xs text-muted-foreground"><span className="num">{texto.length}</span> caracteres · salva ao sair do campo</span>
+        </div>
+    </Secao>
   );
 }
 
@@ -170,29 +189,27 @@ function CardProva({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
   const dias = diasAteProva(perfil.dataProva, agora);
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Prova e meta</CardTitle>
-        <CardDescription>A meta entra no critério “pronto para a prova”: o limite inferior da nota estimada precisa passar dela.</CardDescription>
-      </CardHeader>
-      <CardContent className="sm:flex-row sm:flex-wrap sm:gap-6">
-        <label className="flex flex-col gap-1 text-sm">
-          <span className="text-muted-foreground">Data da prova de matemática</span>
-          <input
+    <Secao titulo={<>Prova e meta</>} descricao={<>A meta entra no critério “pronto para a prova”: o limite inferior da nota estimada precisa passar dela.</>}>
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+        <div className="flex min-w-0 flex-col gap-2">
+          <Label htmlFor="campo-data-prova">Data da prova de matemática</Label>
+          <Input
+            id="campo-data-prova"
             type="date"
             value={perfil.dataProva ?? ""}
             min={dataLocal(agora)}
             onChange={(e) => salvar({ dataProva: e.target.value || null }, e.target.value ? "Data da prova salva." : "Data da prova removida.")}
-            className="h-11 rounded-md border-[1.5px] border-input bg-card px-3.5 font-medium focus-visible:border-primary focus-visible:outline-none"
+            className="num max-w-56"
             data-testid="campo-data-prova"
           />
           <span className="text-xs text-muted-foreground" data-testid="prazo-prova">
             {dias === null ? "Sem data: o Gabarita não conta os dias." : `A prova ${descreverPrazo(dias)}.`}
           </span>
-        </label>
-        <label className="flex flex-col gap-1 text-sm">
-          <span className="text-muted-foreground">Meta de nota (matemática)</span>
-          <input
+        </div>
+        <div className="flex min-w-0 flex-col gap-2">
+          <Label htmlFor="campo-meta">Meta de nota (matemática)</Label>
+          <Input
+            id="campo-meta"
             type="number"
             inputMode="numeric"
             min={META_NOTA_MIN}
@@ -206,15 +223,15 @@ function CardProva({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
               setMeta(String(metaValida));
             }}
             aria-invalid={metaValida === null}
-            className={cn("num h-11 w-32 rounded-md border-[1.5px] bg-card px-3.5 font-semibold focus-visible:border-primary focus-visible:outline-none", metaValida === null ? "border-erro" : "border-input")}
+            className="num w-32"
             data-testid="campo-meta"
           />
-          <span className={cn("text-xs", metaValida === null ? "font-medium text-erro" : "text-muted-foreground")}>
+          <span className={cn("text-xs", metaValida === null ? "text-erro" : "text-muted-foreground")}>
             {metaValida === null ? `Use um número entre ${META_NOTA_MIN} e ${META_NOTA_MAX}.` : "Escala do ENEM (500 é a média de referência)."}
           </span>
-        </label>
-      </CardContent>
-    </Card>
+        </div>
+        </div>
+    </Secao>
   );
 }
 
@@ -228,19 +245,13 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
     salvar({ habilidadesDaSemana: nova }, semana.has(h) ? `${h} saiu da semana.` : `${h} entrou na semana.`);
   };
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Habilidades da semana</CardTitle>
-        <CardDescription>
-          Meta “pronto nos fáceis”: todas estas prontas e um simulado de 15 fáceis. Hoje: {plural(perfil.habilidadesDaSemana.length, "habilidade", "habilidades")}.
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
+    <Secao titulo={<>Habilidades da semana</>} descricao={<>Meta “pronto nos fáceis”: todas estas prontas e um simulado de 15 fáceis. Hoje: {plural(perfil.habilidadesDaSemana.length, "habilidade", "habilidades")}.</>}>
         {COMPETENCIAS.map((c) => (
-          <div key={c.id} className="flex flex-wrap items-center gap-1.5">
-            <span className="w-40 shrink-0 text-xs text-muted-foreground">
-              {c.id} · {c.nome}
+          <div key={c.id} className="flex flex-col gap-2">
+            <span className="text-xs text-muted-foreground">
+              <span className="num">{c.id}</span> · {c.nome}
             </span>
+            <div className="flex flex-wrap gap-2">
             {c.habilidades.map((h) => {
               const ativa = semana.has(h);
               return (
@@ -253,19 +264,19 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                   onClick={() => alternar(h)}
                   data-testid={`semana-${h}`}
                   className={cn(
-                    "num h-8 rounded-full border-[1.5px] px-2.5 text-[13px] font-semibold transition-colors duration-(--duracao)",
-                    ativa ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-muted-foreground hover:border-primary hover:text-primaria-texto",
+                    "num h-8 min-w-11 rounded-md border px-2 text-xs transition-colors duration-(--duracao) ease-(--curva) pointer-coarse:min-h-11",
+                    ativa ? "border-primary bg-accent font-medium text-primaria-texto" : "border-input bg-background text-muted-foreground hover:bg-muted hover:text-foreground",
                   )}
                 >
                   {h}
                 </button>
               );
             })}
+            </div>
           </div>
         ))}
         <p className="text-xs text-muted-foreground">{HABILIDADES.length} habilidades da Matriz de Referência do INEP; passe o mouse para ver o nome.</p>
-      </CardContent>
-    </Card>
+    </Secao>
   );
 }
 
@@ -274,14 +285,7 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
 function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Perfil>, msg?: string) => void }) {
   const status = useStatusIA();
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Bot className="size-4 text-primary" strokeWidth={1.8} /> Tutor
-        </CardTitle>
-        <CardDescription>O estado vem de /api/status. A chave nunca sai do servidor nem aparece aqui.</CardDescription>
-      </CardHeader>
-      <CardContent>
+    <Secao titulo={<><Bot className="size-4" strokeWidth={1.5} /> Tutor</>} descricao={<>O estado vem de /api/status. A chave nunca sai do servidor nem aparece aqui.</>}>
         <div className="flex flex-wrap items-center gap-2 text-sm" data-testid="estado-tutor">
           <span className="text-muted-foreground">IA configurada:</span>
           {status.ia === null ? (
@@ -297,8 +301,8 @@ function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
             <>
               <Badge variant="aviso">não</Badge>
               <span className="text-muted-foreground">
-                Modo guiado offline com dicas verificadas. Para ligar a IA, defina <code className="font-mono text-xs">ANTHROPIC_API_KEY</code> (ou{" "}
-                <code className="font-mono text-xs">AI_GATEWAY_API_KEY</code>) no <code className="font-mono text-xs">.env.local</code> e reinicie o servidor.
+                Modo guiado offline com dicas verificadas. Para ligar a IA, defina <code className="num text-xs">ANTHROPIC_API_KEY</code> (ou{" "}
+                <code className="num text-xs">AI_GATEWAY_API_KEY</code>) no <code className="num text-xs">.env.local</code> e reinicie o servidor.
               </span>
             </>
           )}
@@ -310,8 +314,7 @@ function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
           ligado={perfil.mostrarTimer}
           aoMudar={(v) => salvar({ mostrarTimer: v }, v ? "Cronômetro visível." : "Cronômetro escondido.")}
         />
-      </CardContent>
-    </Card>
+    </Secao>
   );
 }
 
@@ -324,11 +327,11 @@ function Interruptor({ id, rotulo, descricao, ligado, aoMudar }: { id: string; r
         role="switch"
         aria-checked={ligado}
         onClick={() => aoMudar(!ligado)}
-        className={cn("relative mt-0.5 h-[26px] w-[46px] shrink-0 rounded-full transition-colors duration-(--duracao)", ligado ? "bg-sucesso-forte" : "bg-border dark:bg-muted")}
+        className={cn("relative h-6 w-11 shrink-0 rounded-full transition-colors duration-(--duracao) ease-(--curva)", ligado ? "bg-primary" : "bg-muted-forte")}
       >
-        <span aria-hidden className={cn("absolute top-[3px] left-[3px] size-5 rounded-full bg-white shadow-[0_1px_3px_rgba(0,0,0,0.25)] transition-transform duration-(--duracao)", ligado && "translate-x-5")} />
+        <span aria-hidden className={cn("absolute top-0.5 left-0.5 size-5 rounded-full bg-background shadow-suave transition-transform duration-(--duracao) ease-(--curva)", ligado && "translate-x-5")} />
       </button>
-      <label htmlFor={id} className="flex flex-col text-sm">
+      <label htmlFor={id} className="flex flex-col gap-0.5 text-sm">
         <span>{rotulo}</span>
         {descricao && <span className="text-xs text-muted-foreground">{descricao}</span>}
       </label>
@@ -343,13 +346,8 @@ function CardAparencia() {
   const montado = useMontado();
   const atual = montado ? (resolvedTheme === "dark" ? "dark" : "light") : "light";
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Aparência</CardTitle>
-        <CardDescription>Claro por padrão, como o Gabarita original; o escuro usa o mesmo azul de sistema. Fica salvo neste navegador.</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="inline-flex gap-1.75" role="radiogroup" aria-label="Tema">
+    <Secao titulo={<>Aparência</>} descricao={<>Claro por padrão, como o Gabarita original; o escuro usa o mesmo azul de sistema. Fica salvo neste navegador.</>}>
+        <div className="inline-flex self-start rounded-md border border-input p-0.5" role="radiogroup" aria-label="Tema">
           {(
             [
               { v: "light", rotulo: "Claro", Icone: Sun },
@@ -363,14 +361,13 @@ function CardAparencia() {
               aria-checked={atual === v}
               onClick={() => setTheme(v)}
               data-testid={`tema-${v}`}
-              className={cn("inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] border-border bg-card px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duracao)", atual === v && "border-primary bg-primary text-primary-foreground")}
+              className={segmento(atual === v)}
             >
-              <Icone className="size-4" /> {rotulo}
+              <Icone className="size-4" strokeWidth={1.5} /> {rotulo}
             </button>
           ))}
         </div>
-      </CardContent>
-    </Card>
+    </Secao>
   );
 }
 
@@ -430,21 +427,28 @@ function CardDados({ estado, store }: { estado: EstadoAluno; store: ReturnType<t
   };
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Seus dados</CardTitle>
-        <CardDescription>
-          Tudo fica neste navegador (IndexedDB), sem conta e sem servidor. Hoje: {plural(estado.tentativas.length, "tentativa", "tentativas")},{" "}
-          {plural(estado.sprints.length, "sprint", "sprints")}, {plural(estado.simulados.length, "simulado", "simulados")}, {plural(estado.caderno.length, "erro no caderno", "erros no caderno")}; desde{" "}
-          {new Date(estado.criadoEm).toLocaleDateString("pt-BR")}.
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
+    <Secao titulo={<>Seus dados</>} descricao={<>Tudo fica neste navegador (IndexedDB), sem conta e sem servidor.</>}>
+        <dl className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          {(
+            [
+              ["tentativas", estado.tentativas.length],
+              ["sprints", estado.sprints.length],
+              ["simulados", estado.simulados.length],
+              ["erros no caderno", estado.caderno.length],
+              ["desde", new Date(estado.criadoEm).toLocaleDateString("pt-BR")],
+            ] as const
+          ).map(([rotulo, valor]) => (
+            <div key={rotulo} className="flex items-baseline gap-1.5">
+              <dt className="text-muted-foreground">{rotulo}</dt>
+              <dd className="num font-medium">{valor}</dd>
+            </div>
+          ))}
+        </dl>
         <div className="flex flex-wrap items-center gap-2">
-          <Button variant="secondary" onClick={exportar} data-testid="exportar-backup">
+          <Button variant="outline" onClick={exportar} data-testid="exportar-backup">
             <Download /> Exportar backup (JSON)
           </Button>
-          <Button variant="secondary" onClick={() => arquivoRef.current?.click()} data-testid="importar-backup">
+          <Button variant="outline" onClick={() => arquivoRef.current?.click()} data-testid="importar-backup">
             <Upload /> Importar backup
           </Button>
           <input
@@ -459,12 +463,11 @@ function CardDados({ estado, store }: { estado: EstadoAluno; store: ReturnType<t
               if (f) void lerArquivo(f);
             }}
           />
-          <Button variant="erro" onClick={() => setZerando(true)} data-testid="zerar-progresso">
+          <Button variant="erro" className="max-sm:basis-full sm:ml-auto" onClick={() => setZerando(true)} data-testid="zerar-progresso">
             <Trash2 /> Zerar progresso
           </Button>
         </div>
         <p className="text-xs text-muted-foreground">Importar substitui tudo o que está aqui pelo conteúdo do arquivo. Exporte antes, por garantia.</p>
-      </CardContent>
 
       <Dialog open={importando !== null} onOpenChange={(a) => !a && setImportando(null)}>
         <DialogContent>
@@ -508,6 +511,6 @@ function CardDados({ estado, store }: { estado: EstadoAluno; store: ReturnType<t
           </DialogFooter>
         </DialogContent>
       </Dialog>
-    </Card>
+    </Secao>
   );
 }

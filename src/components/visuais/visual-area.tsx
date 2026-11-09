@@ -40,7 +40,7 @@ export function VisualArea() {
           <div className="flex justify-center">
             <div
               className={cn(
-                "grid gap-[3px] rounded-[8px] p-[3px] ring-2 transition-[box-shadow] duration-(--duracao)",
+                "grid gap-1 rounded-md p-1 ring-2 transition-[box-shadow] duration-(--duracao)",
                 passo === 2 ? "ring-primary" : "ring-transparent",
               )}
               style={{ gridTemplateColumns: `repeat(${base}, 28px)` }}
@@ -51,7 +51,7 @@ export function VisualArea() {
                 <span
                   key={`${base}-${altura}-${i}`}
                   className={cn(
-                    "size-7 rounded-[4px] transition-[background-color,transform] duration-200 ease-(--curva)",
+                    "size-7 rounded-sm transition-[background-color,transform] duration-200 ease-(--curva)",
                     i < cheias ? (passo === 2 ? "bg-primary/35" : "bg-primary") : "bg-card ring-1 ring-border ring-inset",
                   )}
                   style={{ transitionDelay: passo === 1 ? `${i * 12}ms` : "0ms" }}

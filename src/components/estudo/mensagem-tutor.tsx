@@ -29,15 +29,15 @@ export function Balao({
   return (
     <div
       className={cn(
-        "flex max-w-[95%] flex-col gap-1.5 rounded-lg px-3.5 py-3 text-[15px] leading-relaxed",
-        papel === "tutor" ? "self-start rounded-tl-[4px] bg-muted" : "self-end rounded-tr-[4px] bg-accent text-foreground",
+        "flex max-w-[88%] flex-col gap-1.5 rounded-lg px-3 py-2.5 text-sm leading-relaxed",
+        papel === "tutor" ? "self-start bg-muted" : "self-end bg-accent text-foreground",
         className,
       )}
       data-papel={papel}
     >
       {(rotulo || selo) && (
         <div className="flex flex-wrap items-center gap-2">
-          {rotulo && <span className="text-[11px] font-semibold tracking-[0.5px] text-muted-foreground uppercase">{rotulo}</span>}
+          {rotulo && <span className="num text-xs text-muted-foreground">{rotulo}</span>}
           {selo}
         </div>
       )}
@@ -123,7 +123,7 @@ export function MensagemTutorView({ mensagem, divergenciasAntes, aoResponderGeme
       ))}
       {transmitindo && textos.length === 0 && visiveis.length === 0 && (
         <span className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Loader2 className="size-4 animate-spin motion-reduce:animate-none" /> pensando…
+          <Loader2 className="size-3.5 animate-spin motion-reduce:animate-none" strokeWidth={1.5} /> pensando…
         </span>
       )}
     </Balao>
@@ -145,25 +145,25 @@ function ParteFerramentaView({ parte, aoResponderGemea }: { parte: ParteFerramen
     case "tool-verify_answer":
       if (parte.state !== "output-available") return <Rodando texto="conferindo o valor…" />;
       return (
-        <p className={cn("flex items-start gap-1.5 text-sm", parte.output.bateu ? "text-sucesso" : "text-aviso")}>
-          {parte.output.bateu ? <BadgeCheck className="mt-0.5 size-4 shrink-0" /> : <ShieldAlert className="mt-0.5 size-4 shrink-0" />}
+        <p className={cn("flex items-start gap-1.5 text-xs", parte.output.bateu ? "text-sucesso" : "text-aviso")}>
+          {parte.output.bateu ? <BadgeCheck className="size-3.5 shrink-0" strokeWidth={1.5} /> : <ShieldAlert className="size-3.5 shrink-0" strokeWidth={1.5} />}
           <span>{parte.output.observacao}</span>
         </p>
       );
     case "tool-calc":
       if (parte.state !== "output-available") return <Rodando texto="calculando…" />;
       return (
-        <p className="font-mono text-sm text-muted-foreground">
+        <p className="num text-xs text-muted-foreground">
           {parte.output.expressao} = {parte.output.ok ? parte.output.resultado : `erro (${parte.output.erro})`}
         </p>
       );
     case "tool-plot_function":
       if (parte.state !== "output-available") return <Rodando texto="desenhando o gráfico…" />;
-      if ("erro" in parte.output) return <p className="text-sm text-erro">Gráfico inválido: {parte.output.erro}</p>;
+      if ("erro" in parte.output) return <p className="text-xs text-erro">Gráfico inválido: {parte.output.erro}</p>;
       return <Grafico spec={parte.output as PlotSpec} />;
     case "tool-make_twin":
       if (parte.state !== "output-available") return <Rodando texto="gerando a gêmea…" />;
-      if (!parte.output.ok) return <p className="text-sm text-muted-foreground">{parte.output.motivo}</p>;
+      if (!parte.output.ok) return <p className="text-xs text-muted-foreground">{parte.output.motivo}</p>;
       return <GemeaCard gemea={parte.output.gemea} aoResponder={aoResponderGemea} />;
     default:
       return null;
@@ -172,8 +172,8 @@ function ParteFerramentaView({ parte, aoResponderGemea }: { parte: ParteFerramen
 
 function Rodando({ texto }: { texto: string }) {
   return (
-    <span className="flex items-center gap-2 text-sm text-muted-foreground">
-      <Loader2 className="size-4 animate-spin motion-reduce:animate-none" /> {texto}
+    <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
+      <Loader2 className="size-3.5 animate-spin motion-reduce:animate-none" strokeWidth={1.5} /> {texto}
     </span>
   );
 }
@@ -185,17 +185,17 @@ function RunPythonView({ parte }: { parte: Extract<ParteFerramenta, { type: "too
   const saida = parte.state === "output-available" ? parte.output : null;
   const erro = parte.state === "output-error" ? parte.errorText : saida && !saida.ok ? saida.erro : null;
   return (
-    <div className="rounded-md border-[1.5px] border-border bg-card text-sm">
+    <div className="rounded-md border border-border bg-background text-xs">
       <button
         type="button"
-        className="flex w-full items-center gap-2 px-3 py-2 text-left text-muted-foreground hover:text-foreground"
+        className="flex w-full items-center gap-2 px-3 py-2 text-left text-muted-foreground transition-colors hover:text-foreground"
         onClick={() => setAberto((v) => !v)}
         aria-expanded={aberto}
       >
-        <Code2 className="size-4 shrink-0" />
+        <Code2 className="size-3.5 shrink-0" strokeWidth={1.5} />
         <span className="min-w-0 flex-1 truncate">{objetivo ?? "Conferindo no SymPy"}</span>
         {parte.state === "input-streaming" || parte.state === "input-available" ? (
-          <Loader2 className="size-4 animate-spin motion-reduce:animate-none" />
+          <Loader2 className="size-3.5 animate-spin motion-reduce:animate-none" strokeWidth={1.5} />
         ) : erro ? (
           <Badge variant="erro">erro</Badge>
         ) : (
@@ -204,16 +204,16 @@ function RunPythonView({ parte }: { parte: Extract<ParteFerramenta, { type: "too
       </button>
       {aberto && (
         <div className="flex flex-col gap-2 border-t border-border px-3 py-2">
-          <pre className="overflow-x-auto font-mono text-xs leading-relaxed whitespace-pre-wrap">{codigo}</pre>
+          <pre className="num overflow-x-auto text-xs leading-relaxed whitespace-pre-wrap">{codigo}</pre>
           {saida && (saida.saida || saida.resultado) && (
-            <pre className="overflow-x-auto rounded-sm bg-muted px-2 py-1 font-mono text-xs whitespace-pre-wrap">
+            <pre className="num overflow-x-auto rounded-sm bg-muted px-2 py-1 text-xs whitespace-pre-wrap">
               {[saida.saida, saida.resultado].filter(Boolean).join("\n")}
             </pre>
           )}
-          {erro && <p className="font-mono text-xs text-erro whitespace-pre-wrap">{erro}</p>}
+          {erro && <p className="num text-xs text-erro whitespace-pre-wrap">{erro}</p>}
         </div>
       )}
-      {!aberto && saida?.resultado && <p className="truncate px-3 pb-2 font-mono text-xs text-muted-foreground">= {saida.resultado}</p>}
+      {!aberto && saida?.resultado && <p className="num truncate px-3 pb-2 text-xs text-muted-foreground">= {saida.resultado}</p>}
     </div>
   );
 }

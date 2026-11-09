@@ -3,6 +3,7 @@
 import * as React from "react";
 import { LineChart } from "lucide-react";
 import { extrairFuncao, normalizarPlot, type PlotSpec } from "@/lib/tutor/plot";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Grafico } from "@/components/estudo/grafico";
 
@@ -27,18 +28,18 @@ export function Plotador({ compacto = false }: { compacto?: boolean }) {
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-col gap-1">
-        <span className="flex items-center gap-1.5 text-sm font-semibold">
-          <LineChart className="size-4 text-primary" strokeWidth={1.8} /> Gráfico de função
-        </span>
+        <h2 className="flex items-center gap-2 text-base font-semibold">
+          <LineChart className="size-4" strokeWidth={1.5} /> Gráfico de função
+        </h2>
         {!compacto && <p className="text-sm text-muted-foreground">Escreva uma função de x. Letras como a, b, k viram sliders.</p>}
       </div>
-      <div className="flex flex-wrap gap-1.5" role="group" aria-label="Exemplos de função">
+      <div className="flex flex-wrap gap-2" role="group" aria-label="Exemplos de função">
         {EXEMPLOS_GRAFICO.map((ex) => (
           <Button
             key={ex}
             variant="outline"
             size="sm"
-            className="font-mono"
+            className="num"
             onClick={() => {
               setExpressao(ex);
               desenhar(ex);
@@ -58,12 +59,12 @@ export function Plotador({ compacto = false }: { compacto?: boolean }) {
         <label htmlFor={compacto ? "expressao-grafico-gaveta" : "expressao-grafico"} className="sr-only">
           Função de x
         </label>
-        <span className="font-mono text-sm">y =</span>
-        <input
+        <span className="num text-sm text-texto-2">y =</span>
+        <Input
           id={compacto ? "expressao-grafico-gaveta" : "expressao-grafico"}
           value={expressao}
           onChange={(e) => setExpressao(e.target.value)}
-          className="min-w-40 flex-1 rounded-md border-[1.5px] border-input bg-card px-3 py-2 font-mono text-sm focus-visible:border-primary focus-visible:outline-none"
+          className="num h-9 w-auto min-w-0 flex-1 basis-40"
           spellCheck={false}
           autoCapitalize="off"
         />
@@ -72,7 +73,7 @@ export function Plotador({ compacto = false }: { compacto?: boolean }) {
         </Button>
       </form>
       {erro && (
-        <p className="text-sm font-medium text-erro" role="alert">
+        <p className="rounded-md bg-erro-suave p-3 text-sm text-erro" role="alert">
           {erro}
         </p>
       )}

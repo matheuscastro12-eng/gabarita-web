@@ -1,4 +1,4 @@
-# Spec 06 — Caderno, Ajustes e Laboratório (+ gaveta) · porta 3114
+# Spec 06 — Caderno, Ajustes e Laboratório (+ gaveta)
 
 Leia `design/specs/00-regras-telas.md` inteiro primeiro. Arquivos seus: `src/components/caderno/tela-caderno.tsx`, `src/components/ajustes/tela-ajustes.tsx`, `src/components/laboratorio/*.tsx`. Inventário: §1.5, §1.6, §1.8, §1.2.5, §3.5, §3.7, §3.9. `GemeaCard`, `Markdown` e `Grafico` vêm de `src/components/estudo/` (outro worker está editando: **não edite**). Telas para capturar: `caderno,laboratorio,ajustes` (com `--semear` o caderno já tem erros); para a gaveta, um script temporário em `/tmp` que abra `/estudar`, aperte `l` e capture em 375 e 1440; para o caderno vazio, capture sem `--semear`.
 

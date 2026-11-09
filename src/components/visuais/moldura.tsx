@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { ArrowLeft, ArrowRight, Lightbulb } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { Bolha } from "@/components/ui/bolha";
 import { Button } from "@/components/ui/button";
 import { passoAnterior, proximoPasso, rotuloPasso } from "@/lib/visuais/passos";
 import { cn } from "@/lib/utils";
@@ -51,35 +52,34 @@ export function MolduraVisual({
   const total = passos.length;
   return (
     <section className="flex flex-col gap-4" data-testid={`visual-${id}`} aria-label="Explicação visual">
-      <div className="rounded-lg bg-muted p-4">{children(passo)}</div>
+      <div className="rounded-lg border border-border bg-muted p-4">{children(passo)}</div>
       {controles && <div className="flex flex-col gap-2">{controles}</div>}
 
       <div className="flex flex-col gap-3">
-        <p key={passo} className="anim-entrada min-h-12 text-[15px] leading-relaxed" aria-live="polite" data-testid="texto-passo">
+        <p key={passo} className="anim-entrada min-h-12 text-base leading-relaxed" aria-live="polite" data-testid="texto-passo">
           {passos[passo]}
         </p>
         <div className="flex items-center gap-2">
           <Button variant="outline" size="sm" onClick={() => setPasso(passoAnterior)} disabled={passo === 0} aria-label="Passo anterior">
             <ArrowLeft /> Voltar
           </Button>
-          <span className="num flex-1 text-center text-xs font-semibold text-muted-foreground">{rotuloPasso(passo, total)}</span>
+          <span className="num flex-1 text-center text-xs text-muted-foreground">{rotuloPasso(passo, total)}</span>
           <Button size="sm" onClick={() => setPasso((p) => proximoPasso(p, total))} disabled={passo === total - 1} aria-label="Próximo passo" data-testid="avancar-passo">
             Avançar <ArrowRight />
           </Button>
         </div>
-        <ol className="flex justify-center gap-1.5" aria-hidden>
+        <ol className="flex justify-center gap-2" aria-hidden>
           {passos.map((_, i) => (
-            <li key={i} className={cn("h-1.5 w-6 rounded-full transition-colors duration-(--duracao)", i <= passo ? "bg-primary" : "bg-border")} />
+            <li key={i} className="flex">
+              <Bolha tamanho="xs" estado={i < passo ? "marcada" : i === passo ? "meia" : "vazia"} />
+            </li>
           ))}
         </ol>
       </div>
 
-      <p className="flex items-start gap-2.5 rounded-lg bg-accent px-3.5 py-3 text-sm font-medium text-foreground" data-testid="truque">
-        <Lightbulb className="mt-0.5 size-4 shrink-0 text-primary" strokeWidth={1.8} aria-hidden />
-        <span>
-          <span className="font-semibold">Truque do ENEM: </span>
-          {truque}
-        </span>
+      <p className="border-l-2 border-primary pl-3 text-sm" data-testid="truque">
+        <span className="font-semibold">Truque do ENEM: </span>
+        {truque}
       </p>
 
       <MiniExercicio exercicio={exercicio} />
@@ -87,15 +87,15 @@ export function MolduraVisual({
   );
 }
 
-/** Uma pergunta, opções em chips, um clique: verde e "assenta" se acertou; shake e a explicação se errou. */
+/** Uma pergunta, opções em linhas com bolha, um clique: verde e "assenta" se acertou; shake e a explicação se errou. */
 export function MiniExercicio({ exercicio }: { exercicio: Exercicio }) {
   const [escolha, setEscolha] = React.useState<number | null>(null);
   const acertou = escolha === exercicio.certa;
   return (
     <div className="flex flex-col gap-3 border-t border-border pt-4" data-testid="mini-exercicio">
-      <p className="text-sm font-semibold">Teste rápido</p>
-      <p className="text-[15px] leading-relaxed">{exercicio.pergunta}</p>
-      <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Opções do teste">
+      <p className="text-base font-semibold">Teste rápido</p>
+      <p className="qtext">{exercicio.pergunta}</p>
+      <div className="flex flex-col gap-2" role="radiogroup" aria-label="Opções do teste">
         {exercicio.opcoes.map((op, i) => {
           const marcada = escolha === i;
           return (
@@ -106,26 +106,31 @@ export function MiniExercicio({ exercicio }: { exercicio: Exercicio }) {
               aria-checked={marcada}
               onClick={() => setEscolha(i)}
               className={cn(
-                "num rounded-full border-[1.5px] border-border bg-card px-4 py-2 text-sm font-semibold",
-                "transition-[background-color,border-color,color] duration-(--duracao) ease-(--curva) hover:border-primary",
-                marcada && acertou && "anim-assenta border-sucesso bg-sucesso-suave text-sucesso hover:border-sucesso",
-                marcada && !acertou && "anim-shake border-erro bg-erro-suave text-erro hover:border-erro",
+                "flex min-h-11 w-full items-center gap-3 rounded-md border border-border px-3 py-2 text-left text-sm",
+                "transition-colors duration-(--duracao) ease-(--curva) hover:border-input",
+                marcada && acertou && "anim-assenta border-sucesso bg-sucesso-suave hover:border-sucesso",
+                marcada && !acertou && "anim-shake border-erro bg-erro-suave hover:border-erro",
               )}
             >
-              {op}
+              <Bolha tamanho="md" estado={marcada ? (acertou ? "certa" : "errada") : "vazia"}>
+                {LETRAS[i] ?? i + 1}
+              </Bolha>
+              <span className="num">{op}</span>
             </button>
           );
         })}
       </div>
       {escolha !== null && (
         <p role="status" className={cn("anim-entrada text-sm", acertou ? "text-sucesso" : "text-erro")}>
-          <span className="font-semibold">{acertou ? "Isso. " : "Ainda não. "}</span>
+          <span className="font-medium">{acertou ? "Isso. " : "Ainda não. "}</span>
           <span className="text-foreground">{acertou ? exercicio.explicacao : "Tente de novo: volte um passo no visual se precisar."}</span>
         </p>
       )}
     </div>
   );
 }
+
+const LETRAS = ["A", "B", "C", "D", "E", "F"];
 
 /** Slider com rótulo e valor ao lado. */
 export function Deslizador({
@@ -161,7 +166,7 @@ export function Deslizador({
         onChange={(e) => aoMudar(Number(e.target.value))}
         className="h-2 min-w-0 flex-1 cursor-pointer accent-[var(--cor-primaria)]"
       />
-      <span className="num w-16 shrink-0 text-right font-semibold">
+      <span className="num w-16 shrink-0 text-right font-medium">
         {fmt(valor)}
         {sufixo}
       </span>

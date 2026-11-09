@@ -1,4 +1,4 @@
-# Spec 04 — Estudar (IDE, tutor, fim do sprint) · porta 3112
+# Spec 04 — Estudar (IDE, tutor, fim do sprint)
 
 Leia `design/specs/00-regras-telas.md` inteiro primeiro. Arquivos seus: `src/components/estudo/*.tsx` (todos). Inventário: §1.2 inteiro, §3.3, §3.4. Telas para capturar: `estudar,estudar-marcada,estudar-confirmada,estudar-escuro`; e, para o fim do sprint, escreva um script temporário em `/tmp` que responda as 5 questões (clicar numa alternativa, Enter, `n`) e capture o fim em 375 e 1440.
 

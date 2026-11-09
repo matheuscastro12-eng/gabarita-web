@@ -13,7 +13,7 @@ const componentes: Components = {
   // Imagens das questões vêm do enem.dev; o tamanho real varia, então usamos <img> com limite.
   img: ({ src, alt }) => <ImagemQuestao src={typeof src === "string" ? src : undefined} alt={alt ?? ""} />,
   a: ({ href, children }) => (
-    <a href={href} target="_blank" rel="noreferrer" className="font-semibold text-primaria-texto underline underline-offset-4">
+    <a href={href} target="_blank" rel="noreferrer" className="font-medium text-primaria-texto underline underline-offset-4">
       {children}
     </a>
   ),

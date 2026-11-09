@@ -71,8 +71,8 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
   }, [funcoes, spec, valores]);
 
   return (
-    <figure className={cn("flex flex-col gap-3 rounded-lg border-[1.5px] border-border bg-card p-3", className)} data-testid="grafico">
-      {spec.titulo && <figcaption className="text-sm font-semibold">{spec.titulo}</figcaption>}
+    <figure className={cn("flex flex-col gap-3 rounded-md border border-border bg-background p-3", className)} data-testid="grafico">
+      {spec.titulo && <figcaption className="text-sm font-medium">{spec.titulo}</figcaption>}
       {erro ? (
         <p className="text-sm text-erro">{erro}</p>
       ) : !compilar ? (
@@ -98,11 +98,11 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
           </Mafs>
         </div>
       )}
-      <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+      <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
         {funcoes.map((f) => (
           <li key={f.rotulo} className="flex items-center gap-2">
-            <span aria-hidden className="inline-block h-0.5 w-5 rounded" style={{ background: f.cor }} />
-            <span className={cn("font-mono text-xs", f.erro && "text-erro")}>{f.erro ? `${f.rotulo}: ${f.erro}` : f.rotulo}</span>
+            <span aria-hidden className="inline-block h-0.5 w-5 rounded-sm" style={{ background: f.cor }} />
+            <span className={cn("num text-xs", f.erro && "text-erro")}>{f.erro ? `${f.rotulo}: ${f.erro}` : f.rotulo}</span>
           </li>
         ))}
       </ul>
@@ -110,8 +110,8 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
         <div className="grid gap-2 sm:grid-cols-2">
           {spec.parametros.map((p) => (
             <label key={p.nome} className="flex items-center gap-3 text-sm">
-              <span className="w-10 font-mono">
-                {p.nome} = <span className="tabular">{formatar(valores[p.nome] ?? p.valor)}</span>
+              <span className="num w-14 shrink-0 text-xs">
+                {p.nome} = <span>{formatar(valores[p.nome] ?? p.valor)}</span>
               </span>
               <input
                 type="range"
