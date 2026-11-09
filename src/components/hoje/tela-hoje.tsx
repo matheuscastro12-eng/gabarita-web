@@ -197,6 +197,26 @@ export function TelaHoje() {
         <PlanoDeHoje estado={estado} resumo={resumo} dias={dias} />
       </div>
 
+      <Card data-testid="card-apostas">
+        <CardContent className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div className="flex min-w-0 flex-col gap-1">
+            <div className="flex flex-wrap items-center gap-2">
+              <h2 className="text-[19px] font-bold">Apostas 2026</h2>
+              <Badge variant="warning">não oficial</Badge>
+              <Badge>50 questões · 4 áreas</Badge>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Apostas do curso Edcley Teixeira (questões inéditas, não oficiais), com a resolução do autor. Simulado com cronômetro ou treino com o tutor; não contam na nota TRI nem no domínio.
+            </p>
+          </div>
+          <Button asChild variant="secondary" className="shrink-0">
+            <Link href="/apostas" data-testid="abrir-apostas">
+              Abrir apostas <ArrowRight />
+            </Link>
+          </Button>
+        </CardContent>
+      </Card>
+
       <div className="entrada-stagger grid gap-3.5 lg:grid-cols-4">
         <Card className="lg:col-span-2">
           <CardHeader>

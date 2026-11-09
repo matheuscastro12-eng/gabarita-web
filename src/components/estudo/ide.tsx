@@ -3,7 +3,8 @@
 import * as React from "react";
 import { Group, Panel, Separator } from "react-resizable-panels";
 import type { Questao, Letra } from "@/data/tipos";
-import { NOME_HABILIDADE } from "@/data/tipos";
+import { ehAposta, NOME_HABILIDADE } from "@/data/tipos";
+import { NOME_AREA } from "@/data/apostas";
 import type { DegrauDica } from "@/lib/dominio/tipos";
 import type { EntradaEvento } from "@/lib/dominio/eventos";
 import { useAtalho } from "@/lib/atalhos/provider";
@@ -241,7 +242,9 @@ function QuestaoDoSprint({
 
   const rotuloHabilidade = questao.habilidade
     ? `${NOME_HABILIDADE[questao.habilidade] ?? "Habilidade"} · ${questao.habilidade}`
-    : null;
+    : ehAposta(questao)
+      ? `Apostas 2026 · ${NOME_AREA[questao.area]}`
+      : null;
 
   const painelQuestao = (
     <QuestaoView
