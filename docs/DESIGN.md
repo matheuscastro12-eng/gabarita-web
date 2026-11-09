@@ -48,7 +48,7 @@
 - Barras (`Progress`): **11px**, pílula, trilho no cinza do fundo, preenchimento azul.
 - Inputs, select e textarea: raio 12px, borda 1,5px, fundo branco; foco = borda azul.
 - Células do mapa de calor: 38px de altura, raio 8px, fonte arredondada; cinza = sem dados, vermelho/âmbar/verde suaves por nível, verde cheio no máximo; contorno azul = habilidade da semana.
-- Main: padding 26px 28px, largura máxima 1060px, alinhado à esquerda (como o original). Celular: 16px 12px.
+- Main: padding 26px 28px, largura máxima 1400px, centralizado (preenche telas largas; antes 1060px à esquerda deixava faixa vazia). Celular: 16px 12px.
 - Movimento: só `transform`, `opacity` e cores, 180–240ms, `cubic-bezier(.2,0,0,1)`; 0ms com `prefers-reduced-motion`. Detalhes na §7. Foco visível: anel de 2px azul.
 
 ## 4. Layout e componentes
