@@ -68,7 +68,8 @@ test.describe("Estudar", () => {
     await expect(enunciado).toHaveCSS("font-family", /New York|Times New Roman|Georgia|serif/);
     const alternativa = page.getByRole("radio").first();
     await expect(alternativa).toHaveCSS("border-radius", "14px");
-    await expect(alternativa).toHaveCSS("border-top-width", "1.5px");
+    // 1,5px no CSS; em DPR 1 o Chromium arredonda para 1px, em telas retina fica 1,5px.
+    await expect(alternativa).toHaveCSS("border-top-width", /^1(\.5)?px$/);
     await page.keyboard.press("a");
     await expect(alternativa).toHaveCSS("border-top-color", "rgb(10, 132, 255)");
   });

@@ -28,7 +28,7 @@ Produto completo e polido para uso pessoal do Matheus (um único usuário, sem l
 - Sem chave: o app funciona inteiro em "modo guiado offline": o tutor usa as dicas em níveis, erros_comuns e resolução curadas do PROVAS (e o gerador de gêmeas), com um aviso claro e discreto: "Tutor de IA desligado: falta a chave ANTHROPIC_API_KEY. Usando dicas verificadas." Para questões sem curadoria, oferecer gabarito + Laboratório.
 
 ## Design
-- Escuro grafite (não preto puro), uma cor de destaque, texto 17–18px, contraste AA, nada piscando, blocos curtos (TDAH), modo claro opcional. Tipografia: Inter/Geist + fonte matemática do KaTeX. Microinterações discretas. Responsivo (notebook primeiro; no celular, questão e tutor em abas).
+- **Design system original do Gabarita ENEM** (decisão do Matheus, 09/11/2026; fonte em `/workspace/gabarita/design-system-original/`, regras em docs/DESIGN.md): tema claro por padrão (fundo #F5F7FA, cards brancos de raio 20px com sombra dupla, azul de sistema #0A84FF e #E5F1FF, ink #1D1D1F, muted #6E6E73, linha #E3E8EF de 1,5px). Fonte do sistema na interface, ui-rounded na marca e nos números, serifa no enunciado e nas alternativas, KaTeX para a matemática. Botões e chips em pílula, barras de 11px, sidebar branca de 210px com o capelo. Modo escuro opcional como versão azul do mesmo sistema (nunca o grafite com âmbar). Nada piscando, blocos curtos (TDAH), contraste AA no texto de estado. Responsivo (notebook primeiro; no celular, barra superior e questão/tutor em abas).
 - UI 100% em pt-BR.
 
 ## Qualidade

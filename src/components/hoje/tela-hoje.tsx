@@ -384,7 +384,7 @@ function PlanoDeHoje({
             ) : dias < 0 ? (
               `A prova ${descreverPrazo(dias)}.`
             ) : dias <= 30 ? (
-              `Reta final: ${descreverPrazo(dias)} para a prova!`
+              `Reta final: ${descreverPrazo(dias)} para a prova`
             ) : (
               `A prova ${descreverPrazo(dias)}.`
             )}

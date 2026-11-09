@@ -41,10 +41,14 @@ test.describe("Robustez", () => {
     await page.route(/cdn\.jsdelivr\.net/, (rota) => rota.abort());
     await page.goto("/laboratorio");
     const editor = page.getByLabel("Código Python");
-    // Espera a hidratação (o exemplo inicial já está no editor) antes de digitar.
-    await expect(editor).toHaveValue(/Rational/);
+    // O valor inicial vem do SSR antes da hidratação; digitar nessa janela concatena com o
+    // estado inicial do React. Clicar num exemplo até o valor mudar prova que o React já reage.
+    await expect(async () => {
+      await page.getByTestId("exemplo-simplificar").click();
+      await expect(editor).toHaveValue(/simplify/, { timeout: 1_000 });
+    }).toPass({ timeout: 20_000 });
     await editor.fill("# só a conta\n28900 / Rational(25, 100)");
-    await expect(editor).toHaveValue(/^# só a conta/);
+    await expect(editor).toHaveValue("# só a conta\n28900 / Rational(25, 100)");
     await page.getByTestId("rodar-python").click();
     await expect(page.getByTestId("erro-pyodide")).toContainText("não carregou do CDN", { timeout: 30_000 });
     await expect(page.getByTestId("recarregar-pyodide")).toBeVisible();

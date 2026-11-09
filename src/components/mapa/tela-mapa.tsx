@@ -352,7 +352,7 @@ function CelulaCalor({ celula, selecionada, aoSelecionar }: { celula: CelulaMapa
       data-nivel={nivel}
       className={cn(
         "num relative flex h-[38px] items-center justify-center rounded-sm text-[13px] font-bold",
-        "transition-[transform,box-shadow] duration-(--duration) ease-(--ease) hover:scale-[1.03]",
+        "transition-[box-shadow,filter] duration-(--duration) ease-(--ease) hover:brightness-95 dark:hover:brightness-125",
         CLASSE_NIVEL[nivel],
         selecionada && "ring-2 ring-ring ring-offset-2 ring-offset-surface",
         celula.daSemana && !selecionada && "shadow-[inset_0_0_0_1.5px_var(--accent)]",
