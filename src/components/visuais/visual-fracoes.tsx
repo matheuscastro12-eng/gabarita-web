@@ -50,10 +50,10 @@ export function VisualFracoes() {
       {(passo) => (
         <div className="flex flex-col gap-3" role="img" aria-label={`${n} de ${d} partes pintadas`}>
           <Barra pintadas={passo === 0 ? fatias(0, d) : fatias(n, d)} />
-          <div className={cn("transition-opacity duration-(--duracao)", passo === 2 ? "opacity-100" : "opacity-0")} aria-hidden={passo !== 2}>
+          <div className={cn("transition-opacity duration-(--duration)", passo === 2 ? "opacity-100" : "opacity-0")} aria-hidden={passo !== 2}>
             <Barra pintadas={fatias(2 * n, 2 * d)} />
           </div>
-          <p className="num text-center text-2xl font-semibold">
+          <p className="num text-center text-2xl font-extrabold">
             {passo === 0 ? `? / ${d}` : passo === 1 ? `${n} / ${d}` : `${n}/${d} = ${2 * n}/${2 * d}`}
           </p>
         </div>
@@ -68,7 +68,7 @@ function Barra({ pintadas }: { pintadas: boolean[] }) {
       {pintadas.map((p, i) => (
         <span
           key={i}
-          className={cn("flex-1 rounded-[6px] transition-colors duration-200 ease-(--curva)", p ? "bg-primary" : "bg-card ring-1 ring-border ring-inset")}
+          className={cn("flex-1 rounded-[6px] transition-colors duration-200 ease-(--ease)", p ? "bg-accent" : "bg-surface ring-1 ring-border ring-inset")}
           style={{ transitionDelay: `${i * 25}ms` }}
         />
       ))}
@@ -83,7 +83,7 @@ function Contador({ rotulo, valor, min, max, aoMudar }: { rotulo: string; valor:
       <Button variant="outline" size="icon-sm" className="size-8" onClick={() => aoMudar(Math.max(min, valor - 1))} disabled={valor <= min} aria-label={`Diminuir ${rotulo.toLowerCase()}`}>
         <Minus />
       </Button>
-      <span className="num w-6 text-center font-semibold">{valor}</span>
+      <span className="num w-6 text-center font-bold">{valor}</span>
       <Button variant="outline" size="icon-sm" className="size-8" onClick={() => aoMudar(Math.min(max, valor + 1))} disabled={valor >= max} aria-label={`Aumentar ${rotulo.toLowerCase()}`}>
         <Plus />
       </Button>

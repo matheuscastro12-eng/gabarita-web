@@ -7,8 +7,8 @@ import { cn } from "@/lib/utils";
 import { fmt, MolduraVisual } from "./moldura";
 
 const URNA = [
-  { cor: "azul", n: 3, classe: "bg-primary" },
-  { cor: "verde", n: 4, classe: "bg-sucesso-forte" },
+  { cor: "azul", n: 3, classe: "bg-accent" },
+  { cor: "verde", n: 4, classe: "bg-success" },
   { cor: "cinza", n: 5, classe: "bg-muted-foreground/60" },
 ] as const;
 type Cor = (typeof URNA)[number]["cor"];
@@ -49,7 +49,7 @@ export function VisualProbabilidade() {
     >
       {(passo) => (
         <div className="flex flex-col items-center gap-3" role="img" aria-label={`${fav} favoráveis de ${TOTAL} possíveis`}>
-          <div className="grid grid-cols-6 gap-2.5 rounded-lg border border-border bg-card p-4">
+          <div className="grid grid-cols-6 gap-2.5 rounded-[28px] border-[1.5px] border-border bg-surface p-4">
             {bolas.map((b, i) => {
               const apagada = passo === 2 && b.cor !== cor;
               const contorno = passo === 1 || (passo === 2 && b.cor === cor);
@@ -57,17 +57,17 @@ export function VisualProbabilidade() {
                 <span
                   key={i}
                   className={cn(
-                    "size-7 rounded-full transition-[opacity,transform] duration-[220ms] ease-(--curva)",
+                    "size-7 rounded-full transition-[opacity,transform] duration-[220ms] ease-(--ease)",
                     b.classe,
                     apagada ? "scale-90 opacity-20" : "opacity-100",
-                    contorno && "ring-2 ring-foreground/70 ring-offset-2 ring-offset-card",
+                    contorno && "ring-2 ring-foreground/70 ring-offset-2 ring-offset-surface",
                   )}
                   style={{ transitionDelay: `${i * 15}ms` }}
                 />
               );
             })}
           </div>
-          <p className="num text-2xl font-semibold">
+          <p className="num text-2xl font-extrabold">
             {passo < 2 ? `? / ${TOTAL}` : `${fav}/${TOTAL} = ${p.n}/${p.d}`}
           </p>
         </div>

@@ -37,14 +37,14 @@ export function VisualUnidades() {
         const valor = converter(real, "cm", atual);
         return (
           <div className="flex flex-col gap-4" role="img" aria-label={`${fmt(valor)} ${atual}`}>
-            <p className="num text-center text-3xl font-semibold">
+            <p className="num text-center text-3xl font-extrabold">
               <span key={atual} className="anim-entrada inline-block">
                 {fmt(valor)} {atual}
               </span>
             </p>
             <div className="relative">
               <div
-                className="absolute inset-y-0 left-0 rounded-md bg-primary transition-transform duration-[240ms] ease-(--curva)"
+                className="absolute inset-y-0 left-0 rounded-[10px] bg-accent transition-transform duration-[240ms] ease-(--ease)"
                 style={{ width: `${100 / ESCADA_METRO.length}%`, transform: `translateX(${indice * 100}%)` }}
                 aria-hidden
               />
@@ -53,8 +53,8 @@ export function VisualUnidades() {
                   <li
                     key={u}
                     className={cn(
-                      "num py-2.5 text-center text-sm font-semibold transition-colors duration-(--duracao)",
-                      u === atual ? "text-primary-foreground" : u === "m" ? "text-foreground" : "text-muted-foreground",
+                      "num py-2.5 text-center text-sm font-bold transition-colors duration-(--duration)",
+                      u === atual ? "text-white" : u === "m" ? "text-foreground" : "text-muted-foreground",
                     )}
                   >
                     {u}
@@ -62,7 +62,7 @@ export function VisualUnidades() {
                 ))}
               </ol>
             </div>
-            <p className="flex justify-between text-xs font-medium text-muted-foreground">
+            <p className="flex justify-between text-[11px] font-semibold text-muted-foreground">
               <span>÷10 a cada degrau para cima</span>
               <span>×10 a cada degrau para baixo</span>
             </p>

@@ -71,12 +71,12 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
   }, [funcoes, spec, valores]);
 
   return (
-    <figure className={cn("flex flex-col gap-3 rounded-md border border-border bg-background p-3", className)} data-testid="grafico">
-      {spec.titulo && <figcaption className="text-sm font-medium">{spec.titulo}</figcaption>}
+    <figure className={cn("flex flex-col gap-3 rounded-lg border-[1.5px] border-border bg-surface p-3", className)} data-testid="grafico">
+      {spec.titulo && <figcaption className="text-sm font-bold">{spec.titulo}</figcaption>}
       {erro ? (
-        <p className="text-sm text-erro">{erro}</p>
+        <p className="text-sm text-danger-text">{erro}</p>
       ) : !compilar ? (
-        <div className="rounded-md bg-muted" style={{ height: altura }} aria-busy="true" aria-label="Carregando o gráfico" />
+        <div className="rounded-md bg-background dark:bg-surface-2" style={{ height: altura }} aria-busy="true" aria-label="Carregando o gráfico" />
       ) : (
         <div className="mafs-tema overflow-hidden rounded-md" style={{ height: altura }}>
           <Mafs height={altura} viewBox={{ x: [spec.xMin, spec.xMax], y: yAuto }} preserveAspectRatio={false} pan zoom>
@@ -98,11 +98,11 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
           </Mafs>
         </div>
       )}
-      <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+      <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
         {funcoes.map((f) => (
           <li key={f.rotulo} className="flex items-center gap-2">
-            <span aria-hidden className="inline-block h-0.5 w-5 rounded-sm" style={{ background: f.cor }} />
-            <span className={cn("num text-xs", f.erro && "text-erro")}>{f.erro ? `${f.rotulo}: ${f.erro}` : f.rotulo}</span>
+            <span aria-hidden className="inline-block h-0.5 w-5 rounded" style={{ background: f.cor }} />
+            <span className={cn("font-mono text-xs", f.erro && "text-danger-text")}>{f.erro ? `${f.rotulo}: ${f.erro}` : f.rotulo}</span>
           </li>
         ))}
       </ul>
@@ -110,8 +110,8 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
         <div className="grid gap-2 sm:grid-cols-2">
           {spec.parametros.map((p) => (
             <label key={p.nome} className="flex items-center gap-3 text-sm">
-              <span className="num w-14 shrink-0 text-xs">
-                {p.nome} = <span>{formatar(valores[p.nome] ?? p.valor)}</span>
+              <span className="w-10 font-mono">
+                {p.nome} = <span className="tabular">{formatar(valores[p.nome] ?? p.valor)}</span>
               </span>
               <input
                 type="range"
@@ -121,7 +121,7 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
                 value={valores[p.nome] ?? p.valor}
                 onChange={(e) => setValores((v) => ({ ...v, [p.nome]: Number(e.target.value) }))}
                 aria-label={`parâmetro ${p.nome}`}
-                className="flex-1 accent-(--cor-primaria)"
+                className="flex-1 accent-(--accent)"
               />
             </label>
           ))}

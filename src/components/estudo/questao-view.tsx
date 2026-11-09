@@ -7,7 +7,7 @@ import { COMPONENTE_VISUAL } from "@/components/visuais";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import type { Questao, Letra } from "@/data/tipos";
 import { fonteDetalhada, NOME_HABILIDADE } from "@/data/tipos";
-import { Badge, badgeVariants } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { cn } from "@/lib/utils";
@@ -31,14 +31,14 @@ interface Props {
   comVisual?: boolean;
 }
 
-function rotuloDificuldade(q: Questao): { texto: string; variant: "sucesso" | "aviso" | "erro" | "neutral" } {
+function rotuloDificuldade(q: Questao): { texto: string; variant: "success" | "warning" | "danger" | "neutral" } {
   if (q.tri) {
     const d = q.dificuldade_estimada ?? "media";
     return d === "facil"
-      ? { texto: `fácil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "sucesso" }
+      ? { texto: `fácil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "success" }
       : d === "media"
-        ? { texto: `média · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "aviso" }
-        : { texto: `difícil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "erro" };
+        ? { texto: `média · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "warning" }
+        : { texto: `difícil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "danger" };
   }
   return { texto: "sem parâmetro TRI", variant: "neutral" };
 }
@@ -53,14 +53,14 @@ export function FonteQuestao({ questao, className }: { questao: Questao; classNa
         <>
           {" "}
           (
-          <a href={f.urlOficial} target="_blank" rel="noreferrer" className="text-primaria-texto underline underline-offset-2">
+          <a href={f.urlOficial} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
             provas e gabaritos
           </a>
           )
         </>
       )}
       {" · "}
-      <a href={f.transcricaoUrl} target="_blank" rel="noreferrer" className="text-primaria-texto underline underline-offset-2">
+      <a href={f.transcricaoUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-foreground">
         transcrição enem.dev
       </a>
       {" · "}
@@ -80,8 +80,9 @@ interface Selecao {
 }
 
 /**
- * Painel da questão (Cartão-resposta): coluna de leitura direto no papel, linha de etiquetas,
- * enunciado `.qtext`, alternativas em caixas com a bolha da letra e rodapé Pular | Confirmar.
+ * Painel da questão no estilo Resolver do original: um card branco com a linha de tags
+ * (ENEM ano · Questão n · dificuldade · Hn), enunciado serifado, alternativas em cartões
+ * e o botão Confirmar em pílula azul à direita.
  */
 export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirmar, aoPular, aoProxima, ehUltima, aoPerguntarSobre, canto, comVisual = false }: Props) {
   const dif = rotuloDificuldade(questao);
@@ -133,12 +134,13 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
 
   return (
     <article className="flex h-full min-h-0 flex-col bg-background" aria-labelledby="titulo-questao">
-      <div ref={areaRef} className="relative min-h-0 flex-1 overflow-y-auto">
+      <div ref={areaRef} className="relative min-h-0 flex-1 overflow-y-auto px-3 pt-3 pb-4 md:px-5 md:pt-4">
         {selecao && aoPerguntarSobre && (
           <div className={selecao.abaixo ? "selecao-flutuante selecao-flutuante-abaixo" : "selecao-flutuante"} style={{ left: selecao.x, top: selecao.y }}>
             <Button
-              variant="ghost"
-              className="h-8 rounded-md bg-foreground px-2.5 text-xs font-medium text-background shadow-flutua hover:bg-foreground"
+              size="sm"
+              variant="primary"
+              className="shadow-flutuante"
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => {
                 aoPerguntarSobre(selecao.texto);
@@ -147,29 +149,29 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
               }}
               data-testid="perguntar-sobre"
             >
-              <MessageSquareQuote className="size-3.5" strokeWidth={1.5} /> Perguntar sobre isto
+              <MessageSquareQuote /> Perguntar sobre isto
             </Button>
           </div>
         )}
-        <div className="anim-questao mx-auto flex w-full max-w-[720px] flex-col gap-4 px-4 py-5 md:px-8 md:py-6">
+        <div className="anim-questao mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl border border-card-borda bg-surface p-4 shadow-card md:p-5">
           <header className="flex flex-wrap items-center gap-1.5 text-sm">
-            <h2 id="titulo-questao" className={cn(badgeVariants({ variant: "neutral" }), "num")}>
+            <h2 id="titulo-questao" className="inline-flex items-center rounded-sm bg-background px-2.25 py-0.75 text-xs font-bold text-muted-foreground dark:bg-surface-2">
               ENEM {questao.ano} · Q{questao.numero}
             </h2>
-            <Badge variant={dif.variant} className="num">{dif.texto}</Badge>
+            <Badge variant={dif.variant}>{dif.texto}</Badge>
             {questao.habilidade && (
-              <Badge variant="destaque" className="num" title={NOME_HABILIDADE[questao.habilidade]}>
+              <Badge variant="accent" title={NOME_HABILIDADE[questao.habilidade]}>
                 {questao.habilidade}
                 {questao.habilidade_origem && questao.habilidade_origem !== "inep" ? " (estimada)" : ""}
               </Badge>
             )}
-            {questao.anulada && <Badge variant="erro">anulada</Badge>}
+            {questao.anulada && <Badge variant="danger">anulada</Badge>}
             {canto && <span className="ml-auto">{canto}</span>}
             {comVisual && <BotaoVisual assuntos={questao.assuntos} />}
           </header>
 
           <div ref={enunciadoRef} data-testid="enunciado">
-            <Markdown className="qtext [&>p]:my-3 [&_strong]:font-semibold">{questao.enunciado}</Markdown>
+            <Markdown className="qtext [&>p]:my-2.75 [&_strong]:font-bold">{questao.enunciado}</Markdown>
           </div>
           <Alternativas
             alternativas={questao.alternativas}
@@ -179,13 +181,13 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             aoMarcar={aoMarcar}
           />
           {confirmada && (
-            <p ref={statusRef} role="status" className={cn("text-sm font-medium", acertou ? "text-sucesso" : "text-erro")}>
+            <p ref={statusRef} role="status" className={cn("text-base font-extrabold", acertou ? "text-success-text" : "text-danger-text")}>
               {acertou ? "Acertou." : `Não foi dessa vez. O gabarito é ${questao.gabarito}.`}
             </p>
           )}
           {questao.resolucao?.dados_da_imagem && (
-            <details className="border-t border-border pt-3 text-xs text-muted-foreground">
-              <summary className="cursor-pointer font-medium">Dados da imagem em texto</summary>
+            <details className="rounded-md bg-background px-3 py-2 text-sm dark:bg-surface-2">
+              <summary className="cursor-pointer font-medium text-muted-foreground">Dados da imagem em texto</summary>
               <p className="pt-2">{questao.resolucao.dados_da_imagem}</p>
             </details>
           )}
@@ -193,19 +195,19 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
         </div>
       </div>
 
-      <footer className="flex shrink-0 items-center gap-3 border-t border-border bg-background px-4 py-3 md:px-8">
+      <footer className="flex shrink-0 flex-wrap items-center gap-2 border-t border-border bg-surface px-4 py-2.5 md:px-5">
         {!confirmada ? (
           <>
             <Button variant="ghost" onClick={aoPular} className="text-muted-foreground">
               Pular
             </Button>
-            <Button onClick={aoConfirmar} disabled={!marcada} data-testid="confirmar" className="ml-auto h-11 flex-1 px-5 text-base sm:h-9 sm:flex-none sm:px-6 sm:text-sm">
-              Confirmar <Kbd className="ml-0.5">Enter</Kbd>
+            <Button onClick={aoConfirmar} disabled={!marcada} data-testid="confirmar" className="ml-auto px-6">
+              Confirmar <Kbd className="ml-0.5 border-white/40 bg-transparent text-white">Enter</Kbd>
             </Button>
           </>
         ) : (
-          <Button onClick={aoProxima} data-testid="proxima" className="ml-auto h-11 flex-1 px-5 text-base sm:h-9 sm:flex-none sm:px-6 sm:text-sm">
-            {ehUltima ? "Ver resultado" : "Próxima"} <Kbd className="ml-0.5">N</Kbd>
+          <Button onClick={aoProxima} data-testid="proxima" className="ml-auto px-6">
+            {ehUltima ? "Ver resultado" : "Próxima"} <Kbd className="ml-0.5 border-white/40 bg-transparent text-white">N</Kbd>
           </Button>
         )}
       </footer>
@@ -222,8 +224,8 @@ function BotaoVisual({ assuntos }: { assuntos: readonly string[] }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="ml-auto" data-testid="ver-visualmente">
-          <Shapes className="size-4" strokeWidth={1.5} /> Ver visualmente
+        <Button variant="outline" size="sm" className="ml-auto h-7 px-3 text-xs" data-testid="ver-visualmente">
+          <Shapes strokeWidth={1.8} /> Ver visualmente
         </Button>
       </DialogTrigger>
       <DialogContent className="max-h-[90dvh] max-w-2xl overflow-y-auto">

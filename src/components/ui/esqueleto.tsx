@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
  * estável enquanto o estado vem do IndexedDB.
  */
 function Esqueleto({ className, ...props }: React.ComponentProps<"div">) {
-  return <div aria-hidden data-slot="esqueleto" className={cn("rounded-md bg-muted", className)} {...props} />;
+  return <div aria-hidden data-slot="esqueleto" className={cn("rounded-sm bg-background dark:bg-surface-2", className)} {...props} />;
 }
 
 /** Linhas de texto falsas com larguras variadas. */

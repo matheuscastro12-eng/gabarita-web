@@ -8,9 +8,9 @@ function Tabs({ className, ...props }: React.ComponentProps<typeof TabsPrimitive
   return <TabsPrimitive.Root data-slot="tabs" className={cn("flex flex-col gap-3", className)} {...props} />;
 }
 
-/** Abas com linha embaixo; a ativa ganha uma barra de 2px de tinta. */
+/** Abas como chips do original: pílulas com borda 1,5px; a ativa fica azul com texto branco. */
 function TabsList({ className, ...props }: React.ComponentProps<typeof TabsPrimitive.List>) {
-  return <TabsPrimitive.List data-slot="tabs-list" className={cn("flex w-full flex-wrap items-center gap-1 border-b border-border", className)} {...props} />;
+  return <TabsPrimitive.List data-slot="tabs-list" className={cn("inline-flex w-fit flex-wrap items-center gap-2", className)} {...props} />;
 }
 
 function TabsTrigger({ className, ...props }: React.ComponentProps<typeof TabsPrimitive.Trigger>) {
@@ -18,11 +18,10 @@ function TabsTrigger({ className, ...props }: React.ComponentProps<typeof TabsPr
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
       className={cn(
-        "relative -mb-px inline-flex h-10 items-center justify-center gap-1.5 px-3 text-sm font-medium whitespace-nowrap text-muted-foreground",
-        "transition-colors duration-(--duracao) ease-(--curva)",
-        "hover:text-foreground disabled:pointer-events-none disabled:opacity-50",
-        "after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-transparent after:transition-colors",
-        "data-[state=active]:text-foreground data-[state=active]:after:bg-primary",
+        "inline-flex h-9 items-center justify-center gap-1.5 rounded-full border-[1.5px] border-border bg-surface px-4 text-[13px] font-semibold whitespace-nowrap text-foreground",
+        "transition-[background-color,color,border-color] duration-(--duration) ease-(--ease)",
+        "hover:border-accent disabled:pointer-events-none disabled:opacity-50",
+        "data-[state=active]:border-accent data-[state=active]:bg-accent data-[state=active]:text-accent-foreground",
         className,
       )}
       {...props}

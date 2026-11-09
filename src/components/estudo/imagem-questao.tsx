@@ -24,7 +24,7 @@ export function ImagemQuestao({ src, alt, className, descricao }: Props) {
         role="img"
         aria-label={alt || "Imagem da questão indisponível"}
         data-testid="imagem-quebrada"
-        className={cn("my-3 flex flex-col gap-2 rounded-md border border-dashed border-input px-4 py-3 text-sm text-muted-foreground", className)}
+        className={cn("my-3 flex flex-col gap-2 rounded-md border-[1.5px] border-dashed border-border bg-background px-4 py-3 text-sm text-muted-foreground dark:bg-surface-2", className)}
       >
         <span className="flex items-center gap-2">
           <ImageOff className="size-4 shrink-0" aria-hidden />
@@ -36,7 +36,7 @@ export function ImagemQuestao({ src, alt, className, descricao }: Props) {
           <span>Ela vem do enem.dev; sem internet ou com o servidor fora, não aparece. Use o texto do enunciado e as alternativas.</span>
         )}
         {src && (
-          <a href={src} target="_blank" rel="noreferrer" className="w-fit text-primaria-texto underline underline-offset-4">
+          <a href={src} target="_blank" rel="noreferrer" className="w-fit underline underline-offset-4 hover:text-foreground">
             Abrir a imagem original
           </a>
         )}
@@ -51,7 +51,7 @@ export function ImagemQuestao({ src, alt, className, descricao }: Props) {
       loading="lazy"
       decoding="async"
       onError={() => setQuebrada(true)}
-      className={cn("my-2 block max-h-[28rem] max-w-full rounded-md border border-border bg-white object-contain", className)}
+      className={cn("my-2 block max-h-[28rem] max-w-full rounded-[10px] bg-white object-contain", className)}
     />
   );
 }

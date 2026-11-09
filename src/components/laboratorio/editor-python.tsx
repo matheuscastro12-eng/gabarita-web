@@ -10,6 +10,7 @@ import { EXEMPLOS_PYTHON, tokenizar } from "@/lib/laboratorio/realce";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
+import { cn } from "@/lib/utils";
 
 function assinarStatus(cb: () => void) {
   return pyodideCliente().assinar(() => cb());
@@ -34,7 +35,7 @@ export function StatusPyodideBadge() {
     erro: "Pyodide não carregou",
   };
   return (
-    <Badge variant={status.estado === "erro" ? "erro" : status.estado === "pronto" ? "sucesso" : "neutral"} data-testid="status-pyodide">
+    <Badge variant={status.estado === "erro" ? "danger" : status.estado === "pronto" ? "success" : "neutral"} data-testid="status-pyodide">
       {(status.estado === "carregando" || status.estado === "rodando") && <Loader2 className="animate-spin motion-reduce:animate-none" />}
       {rotulo[status.estado]}
     </Badge>
@@ -85,7 +86,7 @@ export function CampoCodigo({
     pre.scrollLeft = e.currentTarget.scrollLeft;
   };
   return (
-    <div className="editor-codigo relative rounded-md border border-input bg-background" style={{ minHeight: `calc(${linhas} * 1.6em + 1.25rem)` }}>
+    <div className="editor-codigo relative rounded-md border-[1.5px] border-input bg-background dark:bg-surface-2" style={{ minHeight: `calc(${linhas} * 1.6em + 1.25rem)` }}>
       <pre ref={preRef} aria-hidden className="editor-camada pointer-events-none m-0 overflow-hidden" data-testid="realce-python">
         {tokens.map((t, i) =>
           CLASSE_TOKEN[t.tipo] ? (
@@ -124,7 +125,7 @@ export function CampoCodigo({
         autoCapitalize="off"
         autoCorrect="off"
         rows={linhas}
-        className="editor-camada absolute inset-0 h-full w-full resize-none bg-transparent text-transparent caret-foreground outline-none selection:bg-primary/30 focus-visible:outline-none"
+        className="editor-camada absolute inset-0 h-full w-full resize-none bg-transparent text-transparent caret-foreground outline-none selection:bg-accent/30 focus-visible:outline-none"
       />
     </div>
   );
@@ -157,19 +158,19 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-wrap items-center gap-2">
-        <h2 className="flex items-center gap-2 text-base font-semibold">
-          <FlaskConical className="size-4" strokeWidth={1.5} /> Python + SymPy
-        </h2>
+        <span className="flex items-center gap-1.5 text-sm font-bold">
+          <FlaskConical className="size-4 text-accent" strokeWidth={1.8} /> Python + SymPy
+        </span>
         <span className="ml-auto">
           <StatusPyodideBadge />
         </span>
       </div>
       {!compacto && (
         <p className="text-sm text-muted-foreground">
-          <code className="num text-xs">from sympy import *</code> já está feito. A última linha, se for uma expressão, aparece como resultado.
+          <code className="font-mono text-xs">from sympy import *</code> já está feito. A última linha, se for uma expressão, aparece como resultado.
         </p>
       )}
-      <div className="flex flex-wrap gap-2" role="group" aria-label="Exemplos prontos">
+      <div className="flex flex-wrap gap-1.5" role="group" aria-label="Exemplos prontos">
         {EXEMPLOS_PYTHON.map((ex) => (
           <Button key={ex.id} variant="outline" size="sm" title={ex.descricao} onClick={() => setCodigo(ex.codigo)} data-testid={`exemplo-${ex.id}`}>
             {ex.rotulo}
@@ -177,16 +178,16 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
         ))}
       </div>
       {status.estado === "erro" && (
-        <div role="alert" className="flex flex-col gap-2 rounded-md bg-aviso-suave p-3 text-sm text-aviso" data-testid="erro-pyodide">
-          <p className="flex items-start gap-2 font-medium">
-            <WifiOff className="mt-0.5 size-4 shrink-0" strokeWidth={1.5} aria-hidden />
+        <div role="alert" className="flex flex-col gap-2 rounded-md bg-warning-soft px-3 py-2.5 text-sm" data-testid="erro-pyodide">
+          <p className="flex items-start gap-2 font-semibold">
+            <WifiOff className="mt-0.5 size-4 shrink-0 text-warning-text" aria-hidden />
             <span>O Pyodide não carregou do CDN (jsdelivr). Sem ele, o SymPy não roda aqui.</span>
           </p>
-          <p>
-{status.erro ? `Motivo: ${resumirMotivo(status.erro)}. ` : ""}Confira a conexão e tente de novo. Enquanto isso, contas simples na última linha (ex.: <code className="num text-xs">28900 / Rational(25, 100)</code>) saem pelo mathjs, dentro do app.
+          <p className="text-muted-foreground">
+{status.erro ? `Motivo: ${resumirMotivo(status.erro)}. ` : ""}Confira a conexão e tente de novo. Enquanto isso, contas simples na última linha (ex.: <code className="font-mono text-xs">28900 / Rational(25, 100)</code>) saem pelo mathjs, dentro do app.
           </p>
           <div>
-            <Button size="sm" variant="outline" onClick={() => void pyodideCliente().carregar().catch(() => {})} data-testid="recarregar-pyodide">
+            <Button size="sm" variant="secondary" onClick={() => void pyodideCliente().carregar().catch(() => {})} data-testid="recarregar-pyodide">
               <RotateCcw /> Tentar carregar de novo
             </Button>
           </div>
@@ -195,31 +196,31 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
       <CampoCodigo valor={codigo} aoMudar={setCodigo} aoRodar={() => void rodar()} linhas={compacto ? 7 : 9} id={compacto ? "codigo-python-gaveta" : "codigo-python"} />
       <div className="flex flex-wrap items-center gap-2">
         {rodando ? (
-          <Button size="sm" variant="outline" onClick={cancelar} data-testid="cancelar-python">
+          <Button variant="secondary" onClick={cancelar} data-testid="cancelar-python">
             <Square /> Cancelar
           </Button>
         ) : (
-          <Button size="sm" onClick={() => void rodar()} data-testid="rodar-python">
-            <Play /> Rodar <Kbd>Ctrl+Enter</Kbd>
+          <Button onClick={() => void rodar()} data-testid="rodar-python">
+            <Play /> Rodar <Kbd className="border-white/40 bg-transparent text-white">Ctrl+Enter</Kbd>
           </Button>
         )}
-        <span className="min-w-0 flex-1 basis-60 text-xs text-muted-foreground">
+        <span className={cn("text-muted-foreground", compacto ? "text-xs" : "text-sm")}>
           Primeira execução baixa uns 15 MB do CDN jsdelivr (fica em cache). Limite de 30 s por execução.
         </span>
       </div>
       {saida && (
-        <div className="num flex flex-col gap-2 rounded-md bg-muted p-3 text-sm" role="status" data-testid="saida-python">
+        <div className="flex flex-col gap-2" role="status" data-testid="saida-python">
           {viaMathjs ? (
-            <p className="flex items-center gap-2 font-sans text-xs text-muted-foreground">
-              <Badge variant="aviso">mathjs</Badge> {NOTA_MATHJS}
+            <p className="flex items-center gap-2 text-xs text-muted-foreground">
+              <Badge variant="warning">mathjs</Badge> {NOTA_MATHJS}
             </p>
           ) : (
-            saida.saida && <pre className="m-0 overflow-x-auto font-mono text-sm whitespace-pre-wrap">{saida.saida}</pre>
+            saida.saida && <pre className="overflow-x-auto rounded-md bg-background px-3 py-2 font-mono text-sm whitespace-pre-wrap dark:bg-surface-2">{saida.saida}</pre>
           )}
           {saida.resultado && (
-            <pre className="m-0 overflow-x-auto font-mono text-sm font-medium text-sucesso whitespace-pre-wrap">{saida.resultado}</pre>
+            <pre className="overflow-x-auto rounded-md bg-success-soft px-3 py-2 font-mono text-sm font-semibold text-success-text whitespace-pre-wrap">{saida.resultado}</pre>
           )}
-          {saida.erro && <pre className="m-0 overflow-x-auto font-mono text-sm text-erro whitespace-pre-wrap">{saida.erro}</pre>}
+          {saida.erro && <pre className="overflow-x-auto rounded-md bg-danger-soft px-3 py-2 font-mono text-sm text-danger-text whitespace-pre-wrap">{saida.erro}</pre>}
           <p className="text-xs text-muted-foreground">{saida.ms} ms</p>
         </div>
       )}

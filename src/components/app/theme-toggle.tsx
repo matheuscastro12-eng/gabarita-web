@@ -21,9 +21,9 @@ export function ThemeToggle({ className, compacto = false }: { className?: strin
         aria-label={rotulo}
         title={rotulo}
         onClick={() => setTheme(escuro ? "light" : "dark")}
-        className={cn("inline-flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground pointer-coarse:size-11", className)}
+        className={cn("inline-flex size-9 items-center justify-center rounded-full text-muted-foreground hover:bg-background hover:text-foreground dark:hover:bg-surface-2", className)}
       >
-        <Icone className="size-4" strokeWidth={1.5} />
+        <Icone className="size-[18px]" strokeWidth={1.8} />
       </button>
     );
   }
@@ -34,12 +34,12 @@ export function ThemeToggle({ className, compacto = false }: { className?: strin
       aria-label={rotulo}
       onClick={() => setTheme(escuro ? "light" : "dark")}
       className={cn(
-        "flex h-9 w-full items-center gap-2.5 rounded-md px-2.5 text-sm text-texto-2",
-        "transition-colors duration-(--duracao) ease-(--curva) hover:bg-muted",
+        "flex w-full items-center gap-2.5 rounded-[10px] px-3 py-2.5 text-sm font-medium text-muted-foreground",
+        "transition-[background-color,color] duration-(--duration) ease-(--ease) hover:bg-background hover:text-foreground dark:hover:bg-surface-2",
         className,
       )}
     >
-      <Icone className="size-4 shrink-0 text-muted-foreground" strokeWidth={1.5} />
+      <Icone className="size-[18px] shrink-0" strokeWidth={1.8} />
       <span>{escuro ? "Modo claro" : "Modo escuro"}</span>
     </button>
   );

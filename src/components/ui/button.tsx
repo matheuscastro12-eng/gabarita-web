@@ -3,32 +3,31 @@ import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-/** Botões do Cartão-resposta: raio de controle (8px), peso 500, tinta azul só no primário. */
+/** Botões do original: pílula azul (primário), pílula no cinza do fundo (ghost), chip com borda 1,5px (outline). */
 const buttonVariants = cva(
   [
-    "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium",
-    "transition-[background-color,color,border-color,transform,opacity] duration-(--duracao) ease-(--curva)",
-    "disabled:pointer-events-none disabled:opacity-50",
+    "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold",
+    "transition-[background-color,color,border-color,transform,opacity] duration-(--duration) ease-(--ease)",
+    "disabled:pointer-events-none disabled:opacity-40",
     "active:translate-y-px",
     "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-[1.1em]",
   ],
   {
     variants: {
       variant: {
-        primary:
-          "bg-primary text-primary-foreground hover:bg-primaria-hover [&_kbd]:border-primary-foreground/40 [&_kbd]:bg-transparent [&_kbd]:text-primary-foreground",
-        secondary: "bg-muted text-foreground hover:bg-muted-forte",
-        ghost: "bg-transparent text-foreground hover:bg-muted",
-        outline: "border border-input bg-background text-foreground hover:bg-muted",
-        erro: "bg-erro-suave text-erro hover:bg-erro-forte hover:text-erro-contraste",
-        link: "text-primaria-texto underline-offset-4 hover:underline",
+        primary: "bg-accent text-accent-foreground hover:bg-accent-deep",
+        secondary: "bg-background text-foreground hover:bg-surface-2 dark:bg-surface-2 dark:hover:bg-border",
+        ghost: "bg-transparent text-foreground hover:bg-surface-2 font-semibold",
+        outline: "border-[1.5px] border-border bg-surface text-foreground hover:border-accent hover:text-accent-text font-semibold",
+        danger: "bg-danger-soft text-danger-text hover:bg-danger hover:text-white",
+        link: "text-accent-text underline-offset-4 hover:underline font-semibold",
       },
       size: {
-        sm: "h-8 px-3 text-sm pointer-coarse:min-h-11",
-        md: "h-9 px-4 text-sm pointer-coarse:min-h-11",
-        lg: "h-11 px-5 text-base pointer-coarse:min-h-11",
-        icon: "size-9 pointer-coarse:min-h-11 pointer-coarse:min-w-11",
-        "icon-sm": "size-8 pointer-coarse:min-h-11 pointer-coarse:min-w-11",
+        sm: "h-9 px-3.5 text-[13px]",
+        md: "h-10 px-5 text-sm",
+        lg: "h-12 px-6 text-base",
+        icon: "size-10",
+        "icon-sm": "size-9",
       },
     },
     defaultVariants: { variant: "primary", size: "md" },

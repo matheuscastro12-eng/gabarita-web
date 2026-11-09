@@ -5,22 +5,12 @@ import { Providers } from "@/components/app/providers";
 import { AppShell } from "@/components/app/app-shell";
 import "./globals.css";
 
-const plexSans = localFont({
+const inter = localFont({
   src: [
-    { path: "../fonts/plex-sans.woff2", weight: "100 700", style: "normal" },
-    { path: "../fonts/plex-sans-italic.woff2", weight: "100 700", style: "italic" },
+    { path: "../fonts/inter-latin.woff2", weight: "100 900", style: "normal" },
+    { path: "../fonts/inter-latin-ext.woff2", weight: "100 900", style: "normal" },
   ],
-  variable: "--font-plex-sans",
-  weight: "100 700",
-  display: "swap",
-});
-
-const plexMono = localFont({
-  src: [
-    { path: "../fonts/plex-mono-400.woff2", weight: "400", style: "normal" },
-    { path: "../fonts/plex-mono-500.woff2", weight: "500", style: "normal" },
-  ],
-  variable: "--font-plex-mono",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -51,8 +41,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0f0f11" },
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f1217" },
+    { media: "(prefers-color-scheme: light)", color: "#f5f7fa" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -61,11 +51,11 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${plexSans.variable} ${plexMono.variable} h-full antialiased`} suppressHydrationWarning>
+    <html lang="pt-BR" className={`${inter.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full">
         <a
           href="#conteudo"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:font-semibold focus:text-primary-foreground"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:font-bold focus:text-accent-foreground"
         >
           Pular para o conteúdo
         </a>

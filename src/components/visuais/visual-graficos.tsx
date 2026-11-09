@@ -56,13 +56,13 @@ export function VisualGraficos() {
                 x={L - 6}
                 y={y(v) + 3}
                 textAnchor="end"
-                className={cn("text-[9px] transition-colors duration-(--duracao)", passo >= 2 && v === barra.v ? "fill-primary font-semibold" : "fill-muted-foreground")}
+                className={cn("text-[9px] transition-colors duration-(--duration)", passo >= 2 && v === barra.v ? "fill-accent font-bold" : "fill-muted-foreground")}
               >
                 {v}
               </text>
             </g>
           ))}
-          <line x1={L} x2={L} y1={T} y2={B} strokeWidth={1.5} className={cn("transition-colors duration-(--duracao)", passo === 0 ? "stroke-primary" : "stroke-muted-foreground")} />
+          <line x1={L} x2={L} y1={T} y2={B} strokeWidth={1.5} className={cn("transition-colors duration-(--duration)", passo === 0 ? "stroke-accent" : "stroke-muted-foreground")} />
           {DADOS.map((d, i) => {
             const x = L + 18 + i * VAO;
             const ativo = i === sel && passo >= 1;
@@ -75,7 +75,7 @@ export function VisualGraficos() {
                   width={LARG_BARRA}
                   height={B - y(d.v)}
                   rx={5}
-                  className={cn("transition-[fill,opacity] duration-(--duracao)", ativo ? "fill-primary" : comparada ? "fill-aviso" : "fill-primary/30")}
+                  className={cn("transition-[fill,opacity] duration-(--duration)", ativo ? "fill-accent" : comparada ? "fill-warning" : "fill-accent/30")}
                 />
                 <text x={x + LARG_BARRA / 2} y={B + 13} textAnchor="middle" className="fill-muted-foreground text-[9px]">
                   {d.mes}
@@ -84,7 +84,7 @@ export function VisualGraficos() {
             );
           })}
           {passo >= 2 && barra.v % 5 !== 0 && (
-            <text key={`valor-${sel}`} x={L - 6} y={y(barra.v) + 3} textAnchor="end" className="anim-entrada fill-primary text-[9px] font-semibold">
+            <text key={`valor-${sel}`} x={L - 6} y={y(barra.v) + 3} textAnchor="end" className="anim-entrada fill-accent text-[9px] font-bold">
               {barra.v}
             </text>
           )}
@@ -98,7 +98,7 @@ export function VisualGraficos() {
               y2={y(barra.v)}
               strokeWidth={1.5}
               strokeDasharray="4 3"
-              className="anim-traco-eixo stroke-primary"
+              className="anim-traco-eixo stroke-accent"
               style={{ transformOrigin: `${L + 18 + sel * VAO}px ${y(barra.v)}px` }}
             />
           )}

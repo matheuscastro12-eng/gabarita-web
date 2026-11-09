@@ -69,9 +69,9 @@ export function VisualEstatistica() {
                 <span
                   key={i}
                   className={cn(
-                    "num absolute top-0 left-0 inline-flex size-12 items-center justify-center rounded-full border-[1.5px] text-lg font-semibold",
-                    "transition-[transform,background-color,border-color,color] duration-[240ms] ease-(--curva)",
-                    ehMeio ? "border-primary bg-primary text-primary-foreground" : ehModa ? "border-sucesso bg-sucesso-suave text-sucesso" : "border-border bg-card",
+                    "num absolute top-0 left-0 inline-flex size-12 items-center justify-center rounded-full border-[1.5px] text-lg font-extrabold",
+                    "transition-[transform,background-color,border-color,color] duration-[240ms] ease-(--ease)",
+                    ehMeio ? "border-accent bg-accent text-white" : ehModa ? "border-success bg-success-tint text-success-text" : "border-border bg-surface",
                   )}
                   style={{ transform: `translateX(${pos * 56 + 4}px)` }}
                 >
@@ -84,7 +84,7 @@ export function VisualEstatistica() {
           <div className="relative mx-2 h-10">
             <div className="absolute inset-x-0 top-4 h-[2px] rounded-full bg-border" />
             {Array.from({ length: 11 }, (_, k) => (
-              <span key={k} className="num absolute top-6 -translate-x-1/2 text-xs text-muted-foreground" style={{ left: `${k * 10}%` }}>
+              <span key={k} className="num absolute top-6 -translate-x-1/2 text-[10px] text-muted-foreground" style={{ left: `${k * 10}%` }}>
                 {k}
               </span>
             ))}
@@ -93,14 +93,14 @@ export function VisualEstatistica() {
               return (
                 <span
                   key={i}
-                  className="absolute size-2.5 -translate-x-1/2 rounded-full bg-primary"
+                  className="absolute size-2.5 -translate-x-1/2 rounded-full bg-accent"
                   style={{ left: `${v * 10}%`, top: `${11 - repetidos * 9}px` }}
                 />
               );
             })}
             <span
               className={cn(
-                "absolute top-0 h-9 w-[2px] -translate-x-1/2 rounded-full bg-aviso transition-opacity duration-(--duracao)",
+                "absolute top-0 h-9 w-[2px] -translate-x-1/2 rounded-full bg-warning transition-opacity duration-(--duration)",
                 passo >= 3 ? "opacity-100" : "opacity-0",
               )}
               style={{ left: `${m * 10}%` }}

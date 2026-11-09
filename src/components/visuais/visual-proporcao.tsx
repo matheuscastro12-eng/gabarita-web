@@ -35,8 +35,8 @@ export function VisualProporcao() {
         const valorReais = kg * unitario;
         return (
           <div className="flex flex-col gap-4" role="img" aria-label={`${kg} kg custam ${reais(valorReais)} reais`}>
-            <Linha rotulo="kg" valor={`${kg} kg`} fracao={kg / MAX_KG} cor="bg-primary" blocos={MAX_KG} />
-            <Linha rotulo="R$" valor={`R$ ${reais(valorReais)}`} fracao={kg / MAX_KG} cor="bg-sucesso-forte" blocos={MAX_KG} />
+            <Linha rotulo="kg" valor={`${kg} kg`} fracao={kg / MAX_KG} cor="bg-accent" blocos={MAX_KG} />
+            <Linha rotulo="R$" valor={`R$ ${reais(valorReais)}`} fracao={kg / MAX_KG} cor="bg-success" blocos={MAX_KG} />
           </div>
         );
       }}
@@ -47,20 +47,20 @@ export function VisualProporcao() {
 function Linha({ rotulo, valor, fracao, cor, blocos }: { rotulo: string; valor: string; fracao: number; cor: string; blocos: number }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="w-7 shrink-0 text-xs font-medium text-muted-foreground">{rotulo}</span>
-      <div className="relative h-8 flex-1 overflow-hidden rounded-md bg-card">
+      <span className="w-7 shrink-0 text-xs font-bold text-muted-foreground">{rotulo}</span>
+      <div className="relative h-8 flex-1 overflow-hidden rounded-[10px] bg-surface">
         <div
-          className={`absolute inset-y-0 left-0 w-full origin-left rounded-md ${cor} transition-transform duration-[240ms] ease-(--curva)`}
+          className={`absolute inset-y-0 left-0 w-full origin-left rounded-[10px] ${cor} transition-transform duration-[240ms] ease-(--ease)`}
           style={{ transform: `scaleX(${fracao})` }}
         />
         {/* Marcas de cada unidade, para contar. */}
         <div className="pointer-events-none absolute inset-0 flex">
           {Array.from({ length: blocos }, (_, i) => (
-            <span key={i} className="flex-1 border-r border-card/70 last:border-r-0" />
+            <span key={i} className="flex-1 border-r border-surface/70 last:border-r-0" />
           ))}
         </div>
       </div>
-      <span className="num w-20 shrink-0 text-right text-sm font-semibold">{valor}</span>
+      <span className="num w-20 shrink-0 text-right text-sm font-bold">{valor}</span>
     </div>
   );
 }

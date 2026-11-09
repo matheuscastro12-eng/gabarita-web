@@ -10,8 +10,6 @@ import { useStore } from "@/lib/store/provider";
 import { listarCaderno, plural, type EntradaCadernoDetalhada } from "@/lib/dominio";
 import { ehNomeGerador, gemeaDaQuestao, gerarGemea, ROTULO_GERADOR, type Gemea, type NomeGerador } from "@/lib/gemeas";
 import { Badge } from "@/components/ui/badge";
-import { Bolha } from "@/components/ui/bolha";
-import { Label, Select } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -79,9 +77,9 @@ export function TelaCaderno() {
         acoes={
           lista && lista.length > 0 ? (
             <div className="flex flex-wrap items-center gap-2 text-sm">
-              <Badge variant={abertos > 0 ? "destaque" : "sucesso"}>{plural(abertos, "erro aberto", "erros abertos")}</Badge>
+              <Badge variant={abertos > 0 ? "accent" : "success"}>{plural(abertos, "erro aberto", "erros abertos")}</Badge>
               {vencidas > 0 && (
-                <Badge variant="aviso">
+                <Badge variant="warning">
                   <RotateCcw /> {plural(vencidas, "revisão vencida", "revisões vencidas")}
                 </Badge>
               )}
@@ -91,27 +89,22 @@ export function TelaCaderno() {
       />
 
       {erro && (
-        <div role="alert" className="rounded-md bg-erro-suave p-3 text-sm text-erro">
-          <p className="font-medium">Não consegui carregar seus dados.</p>
-          <p>{erro}</p>
+        <div role="alert" className="rounded-lg bg-danger-soft px-4 py-3 text-sm">
+          <p className="font-semibold text-danger-text">Não consegui carregar seus dados.</p>
+          <p className="text-muted-foreground">{erro}</p>
         </div>
       )}
 
       {lista === null && !erro && (
-        <div className="flex flex-col gap-4" aria-busy="true" aria-label="Carregando o caderno">
-          <div className="flex items-center gap-3 border-b border-border pb-4">
-            <Esqueleto className="h-9 w-40" />
-            <Esqueleto className="h-10 w-56" />
-          </div>
-          <div className="grid gap-4 xl:grid-cols-2">
+        <div className="flex flex-col gap-3" aria-busy="true" aria-label="Carregando o caderno">
+          <Esqueleto className="h-9 w-56" />
           {[0, 1].map((i) => (
-            <Card key={i} className="gap-3 p-4">
+            <Card key={i} className="gap-3">
               <Esqueleto className="h-5 w-40" />
               <EsqueletoTexto linhas={2} />
               <Esqueleto className="h-10 w-full" />
             </Card>
           ))}
-          </div>
         </div>
       )}
 
@@ -130,8 +123,8 @@ export function TelaCaderno() {
 
       {lista && lista.length > 0 && (
         <>
-          <div className="flex flex-wrap items-center gap-3 border-b border-border pb-4" role="toolbar" aria-label="Filtros do caderno">
-            <div className="inline-flex rounded-md border border-input p-0.5" role="radiogroup" aria-label="Mostrar">
+          <div className="flex flex-wrap items-center gap-2" role="toolbar" aria-label="Filtros do caderno">
+            <div className="inline-flex gap-1.75" role="radiogroup" aria-label="Mostrar">
               {(["abertos", "todos"] as const).map((f) => (
                 <button
                   key={f}
@@ -140,33 +133,33 @@ export function TelaCaderno() {
                   aria-checked={filtro === f}
                   onClick={() => setFiltro(f)}
                   className={cn(
-                    "h-8 rounded-[6px] px-3 text-sm font-medium transition-colors duration-(--duracao) ease-(--curva) pointer-coarse:min-h-11",
-                    filtro === f ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground",
+                    "h-9 rounded-full border-[1.5px] border-border bg-surface px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duration)",
+                    filtro === f && "border-accent bg-accent text-white",
                   )}
                 >
                   {f === "abertos" ? "Abertos" : "Todos"}
                 </button>
               ))}
             </div>
-            <Label className="flex min-w-0 items-center gap-2">
+            <label className="flex items-center gap-2 text-sm">
               <span className="text-muted-foreground">Habilidade</span>
-              <Select value={habilidade} onChange={(e) => setHabilidade(e.target.value)} className="h-9 w-auto max-w-full min-w-0 pointer-coarse:min-h-11">
+              <select value={habilidade} onChange={(e) => setHabilidade(e.target.value)} className="h-9 rounded-md border-[1.5px] border-input bg-surface px-2.5 text-sm font-semibold">
                 <option value="todas">todas</option>
                 {habilidades.map((h) => (
                   <option key={h} value={h}>
                     {h} · {NOME_HABILIDADE[h]}
                   </option>
                 ))}
-              </Select>
-            </Label>
+              </select>
+            </label>
           </div>
 
           {visiveis && visiveis.length === 0 ? (
             <p className="text-sm text-muted-foreground">Nenhum erro com esse filtro.</p>
           ) : (
-            <ul className="grid gap-4 xl:grid-cols-2" data-testid="lista-caderno">
+            <ul className="flex flex-col gap-3" data-testid="lista-caderno">
               {visiveis?.map((e) => (
-                <li key={e.id} className="min-w-0">
+                <li key={e.id}>
                   <EntradaView entrada={e} questao={porId?.get(e.questaoId)} aoGemea={abrirGemea} aoGemeaDeEntrada={abrirGemeaDeEntrada} />
                 </li>
               ))}
@@ -214,95 +207,77 @@ function EntradaView({
   const marcada = entrada.escolha ? alternativas?.find((a) => a.letra === entrada.escolha) : undefined;
   const correta = alternativas?.find((a) => a.letra === entrada.gabarito);
   return (
-    <Card className={cn("h-full gap-3 p-4", resolvida && "opacity-70")} data-testid="entrada-caderno" data-resolvida={resolvida}>
+    <Card className={cn("gap-3", resolvida && "opacity-70")} data-testid="entrada-caderno" data-resolvida={resolvida}>
       <div className="flex flex-wrap items-center gap-2 text-sm">
-        <span className="num text-xs font-medium text-texto-2">
+        <span className="font-bold">
           {questao ? `ENEM ${questao.ano} · Q${questao.numero}` : idGemea ? `Gêmea · ${ROTULO_GERADOR[idGemea.gerador]}` : entrada.questaoId}
         </span>
-        <Badge variant="destaque" className="num" title={NOME_HABILIDADE[entrada.habilidade]}>
+        <Badge variant="accent" title={NOME_HABILIDADE[entrada.habilidade]}>
           {entrada.habilidade}
         </Badge>
         {questao?.dificuldade_estimada && <Badge variant="outline">{questao.dificuldade_estimada === "facil" ? "fácil" : questao.dificuldade_estimada === "media" ? "média" : "difícil"}</Badge>}
-        {entrada.vezes > 1 && <Badge variant="aviso">errada {entrada.vezes}×</Badge>}
+        {entrada.vezes > 1 && <Badge variant="warning">errada {entrada.vezes}×</Badge>}
         {entrada.revisaoVencida && !resolvida && (
-          <Badge variant="aviso">
+          <Badge variant="warning">
             <RotateCcw /> revisão vencida
           </Badge>
         )}
-        {resolvida && <Badge variant="sucesso">resolvida</Badge>}
-        <span className="num ml-auto text-xs text-muted-foreground">{data}</span>
+        {resolvida && <Badge variant="success">resolvida</Badge>}
+        <span className="ml-auto text-xs text-muted-foreground">{data}</span>
       </div>
 
       {(questao || gemeaOriginal) && (
-        <div className="line-clamp-3 text-sm text-texto-2">
-          <Markdown className="text-sm leading-relaxed [&_img]:hidden">{questao ? questao.enunciado : gemeaOriginal!.enunciado}</Markdown>
+        <div className="max-h-24 overflow-hidden text-sm text-muted-foreground [mask-image:linear-gradient(to_bottom,black_60%,transparent)]">
+          <Markdown className="font-serif text-[15px] leading-relaxed [&_img]:hidden">{questao ? questao.enunciado : gemeaOriginal!.enunciado}</Markdown>
         </div>
       )}
 
-      <dl className="flex flex-col gap-2 text-sm">
-        <div className="flex min-w-0 items-start gap-2">
-          <dt className="w-16 shrink-0 pt-0.5 text-muted-foreground">Marcou</dt>
-          <dd className="flex min-w-0 items-start gap-2" data-testid="marcou">
-            {entrada.escolha ? (
-              <>
-                <Bolha tamanho="sm" estado="errada" className="mt-0.5 font-mono text-[11px] font-medium">
-                  {entrada.escolha}
-                </Bolha>
-                <span className="sr-only">{entrada.escolha}</span>
-                {marcada?.texto ? <span className="min-w-0 text-foreground"><Markdown inline>{marcada.texto}</Markdown></span> : null}
-              </>
-            ) : (
-              <>
-                <Bolha tamanho="sm" estado="vazia" className="mt-0.5">
-                  –
-                </Bolha>
-                <span className="text-muted-foreground">pulou</span>
-              </>
-            )}
+      <dl className="grid gap-x-4 gap-y-1 text-sm sm:grid-cols-2">
+        <div className="flex gap-2">
+          <dt className="shrink-0 text-muted-foreground">Marcou</dt>
+          <dd className={cn("min-w-0 font-bold", entrada.escolha ? "text-danger-text" : "text-muted-foreground")} data-testid="marcou">
+            {entrada.escolha ? <>{entrada.escolha}{marcada?.texto ? <span className="font-normal text-foreground"> · <Markdown inline>{marcada.texto}</Markdown></span> : null}</> : "pulou"}
           </dd>
         </div>
-        <div className="flex min-w-0 items-start gap-2">
-          <dt className="w-16 shrink-0 pt-0.5 text-muted-foreground">Gabarito</dt>
-          <dd className="flex min-w-0 items-start gap-2">
-            <Bolha tamanho="sm" estado="certa" className="mt-0.5 font-mono text-[11px] font-medium">
-              {entrada.gabarito}
-            </Bolha>
-            <span className="sr-only">{entrada.gabarito}</span>
-            {correta?.texto ? <span className="min-w-0 text-foreground"><Markdown inline>{correta.texto}</Markdown></span> : null}
+        <div className="flex gap-2">
+          <dt className="shrink-0 text-muted-foreground">Gabarito</dt>
+          <dd className="min-w-0 font-bold text-success-text">
+            {entrada.gabarito}
+            {correta?.texto ? <span className="font-normal text-foreground"> · <Markdown inline>{correta.texto}</Markdown></span> : null}
           </dd>
         </div>
       </dl>
 
-      <div className="border-l-2 border-erro pl-3 text-sm" data-testid="equivoco">
-        <span className="font-medium">Equívoco: </span>
+      <div className="rounded-md bg-background px-3 py-2 text-sm dark:bg-surface-2" data-testid="equivoco">
+        <span className="font-bold">Equívoco: </span>
         {entrada.porQue ? <span>{entrada.porQue}</span> : <span className="text-muted-foreground">sem diagnóstico ainda. Refaça com o tutor e peça “por que errei?”.</span>}
       </div>
 
-      <div className="mt-auto flex flex-wrap items-center gap-2 border-t border-border pt-3">
+      <div className="flex flex-wrap items-center gap-2">
         {idGemea ? (
           <>
-            <Button size="sm" variant="outline" onClick={() => aoGemeaDeEntrada(entrada, false)} data-testid="refazer">
+            <Button size="sm" onClick={() => aoGemeaDeEntrada(entrada, false)} data-testid="refazer">
               <RotateCcw /> Refazer
             </Button>
-            <Button size="sm" variant="ghost" onClick={() => aoGemeaDeEntrada(entrada, true)} data-testid="gemea-caderno">
+            <Button size="sm" variant="secondary" onClick={() => aoGemeaDeEntrada(entrada, true)} data-testid="gemea-caderno">
               <Copy /> Nova gêmea
             </Button>
           </>
         ) : (
-          <Button size="sm" variant="outline" asChild data-testid="refazer">
+          <Button size="sm" asChild data-testid="refazer">
             <Link href={`/estudar?questao=${encodeURIComponent(entrada.questaoId)}`}>
               <RotateCcw /> Refazer
             </Link>
           </Button>
         )}
         {questao && (
-          <Button size="sm" variant="ghost" disabled={!temGemea} title={temGemea ? undefined : "Ainda não há gerador de gêmea para este assunto"} onClick={() => aoGemea(questao)} data-testid="gemea-caderno">
+          <Button size="sm" variant="secondary" disabled={!temGemea} title={temGemea ? undefined : "Ainda não há gerador de gêmea para este assunto"} onClick={() => aoGemea(questao)} data-testid="gemea-caderno">
             <Copy /> Gêmea
           </Button>
         )}
         {questao?.resolucao && (
           <span className="flex items-center gap-1 text-xs text-muted-foreground">
-            <Sparkles className="size-3.5" strokeWidth={1.5} /> resolução curada disponível no tutor
+            <Sparkles className="size-3.5" /> resolução curada disponível no tutor
           </span>
         )}
       </div>

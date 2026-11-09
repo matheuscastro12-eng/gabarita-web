@@ -39,11 +39,11 @@ export function GemeaCard({ gemea, aoResponder }: Props) {
   }
 
   return (
-    <section className="flex flex-col gap-3 rounded-lg border border-primary/40 bg-card p-3" aria-label="Questão gêmea" data-testid="gemea">
+    <section className="flex flex-col gap-3 rounded-lg border-[1.5px] border-accent/50 bg-surface p-3.5" aria-label="Questão gêmea" data-testid="gemea">
       <header className="flex flex-wrap items-center gap-2 text-sm">
-        <Badge variant="destaque">Gêmea · {ROTULO_GERADOR[gemea.gerador]}</Badge>
+        <Badge variant="accent">Gêmea · {ROTULO_GERADOR[gemea.gerador]}</Badge>
         <Badge variant="outline" title="Resposta calculada pelo código, não pelo modelo">
-          <Check className="size-3" strokeWidth={1.5} /> resposta calculada
+          <Check className="size-3" /> resposta calculada
         </Badge>
       </header>
       <Markdown className="qtext">{gemea.enunciado}</Markdown>
@@ -56,20 +56,20 @@ export function GemeaCard({ gemea, aoResponder }: Props) {
         </div>
       ) : (
         <div className="flex flex-col gap-2 text-sm" role="status">
-          <p className={acertou ? "flex items-center gap-1.5 font-medium text-sucesso" : "flex items-center gap-1.5 font-medium text-erro"}>
+          <p className={acertou ? "flex items-center gap-1.5 font-bold text-success-text" : "flex items-center gap-1.5 font-bold text-danger-text"}>
             {acertou ? <Check className="size-4" /> : <X className="size-4" />}
             {acertou ? "Acertou a gêmea." : `Não foi dessa vez. O gabarito é ${gemea.gabarito}.`}
           </p>
           {erro && (
             <p>
-              <span className="font-medium">Erro típico de quem marca {marcada}:</span> {erro}
+              <span className="font-semibold">Erro típico de quem marca {marcada}:</span> {erro}
             </p>
           )}
           {verResolucao ? (
-            <Markdown className="border-t border-border pt-3">{gemea.resolucao}</Markdown>
+            <Markdown className="rounded-md bg-background px-3 py-2 dark:bg-surface-2">{gemea.resolucao}</Markdown>
           ) : (
             <div>
-              <Button variant="outline" size="sm" onClick={() => setVerResolucao(true)}>
+              <Button variant="secondary" size="sm" onClick={() => setVerResolucao(true)}>
                 Ver a resolução
               </Button>
             </div>
