@@ -14,10 +14,29 @@ const inter = localFont({
   display: "swap",
 });
 
+const DESCRICAO = "IDE de estudo de matemática do ENEM: a questão oficial de um lado, um tutor que confere cada conta do outro, e um mapa que diz quando você está pronto.";
+
 export const metadata: Metadata = {
   title: { default: "Gabarita", template: "%s · Gabarita" },
-  description: "IDE de estudo de matemática do ENEM: a questão de um lado, o tutor do outro.",
+  description: DESCRICAO,
   applicationName: "Gabarita",
+  keywords: ["ENEM", "matemática", "TRI", "estudo", "tutor", "questões oficiais", "INEP"],
+  authors: [{ name: "Matheus Castro" }],
+  creator: "Matheus Castro",
+  formatDetection: { telephone: false },
+  appleWebApp: { capable: true, title: "Gabarita", statusBarStyle: "black-translucent" },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Gabarita",
+    title: "Gabarita",
+    description: DESCRICAO,
+  },
+  twitter: { card: "summary", title: "Gabarita", description: DESCRICAO },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }, { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
+  },
 };
 
 export const viewport: Viewport = {
@@ -27,6 +46,7 @@ export const viewport: Viewport = {
   ],
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
