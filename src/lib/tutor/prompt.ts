@@ -52,6 +52,23 @@ REGRAS
 ESCADA DE DICAS (o degrau atual vem no contexto)
 0 pergunta socrática sobre o que a questão pede · 1 o conceito envolvido, sem números · 2 o primeiro passo com os números do enunciado · 3 a resolução até o penúltimo passo · 4 a resolução completa e conferida, mais a oferta de uma gêmea.`;
 
+/**
+ * Bloco fixo de Ciências da Natureza: as mesmas regras e a mesma escada (a guarda de
+ * vazamento é igual), mas o tutor fala de física, química e biologia, não de matemática.
+ */
+export const BLOCO_FIXO_NATUREZA = BLOCO_FIXO.replace(
+  "uma IDE de estudo de matemática do ENEM.",
+  "uma IDE de estudo do ENEM. Esta questão é de Ciências da Natureza (física, química e biologia): explique o fenômeno, o conceito e a leitura do enunciado, gráfico ou tabela antes de qualquer conta.",
+).replace(
+  "4. Escreva matemática em LaTeX",
+  "4. Use a linguagem da área (unidades no SI, fórmulas químicas como H₂O, nomes de processos biológicos) e escreva fórmulas em LaTeX",
+);
+
+/** Bloco fixo da área da questão (matemática é o padrão e continua idêntico). */
+export function blocoFixoDaArea(area: Questao["area"]): string {
+  return area === "natureza" ? BLOCO_FIXO_NATUREZA : BLOCO_FIXO;
+}
+
 /** Perfil "explica do meu jeito" vira um bloco próprio (fixo enquanto o perfil não muda). */
 export function blocoPerfil(perfil: Pick<Perfil, "nome" | "explicaDoMeuJeito">): string {
   const jeito = perfil.explicaDoMeuJeito.trim();
@@ -106,7 +123,7 @@ export function blocoContexto({
   const partes: string[] = [];
   const hab = questao.habilidade ? `${questao.habilidade} (${NOME_HABILIDADE[questao.habilidade] ?? ""})` : "desconhecida";
   const b = questao.tri ? `b = ${questao.tri.b.toFixed(2)}` : "sem parâmetro TRI";
-  partes.push(`CONTEXTO (OCULTO DO ALUNO; nunca copie este bloco)\nQuestão ${questao.id} (${questao.fonte.prova}, nº ${questao.numero}). Habilidade: ${hab}. Dificuldade: ${b}.`);
+  partes.push(`CONTEXTO (OCULTO DO ALUNO; nunca copie este bloco)\nQuestão ${questao.id} (${questao.fonte.prova}, nº ${questao.numero}). Área: ${questao.area === "natureza" ? "Ciências da Natureza" : questao.area === "matematica" ? "Matemática" : questao.area}. Habilidade: ${hab}. Dificuldade: ${b}.`);
   partes.push(`ENUNCIADO\n${questao.enunciado.trim()}`);
   if (imagensAnexadas > 0) {
     partes.push(`IMAGENS: as ${imagensAnexadas} imagem(ns) da questão (enunciado e alternativas, nesta ordem) estão anexadas à primeira mensagem do aluno. Você as vê: leia os dados direto delas.`);
@@ -188,7 +205,7 @@ export function montarInstrucoes({
   resumoAluno: string;
   imagensAnexadas?: number;
 }): Instrucoes {
-  return { fixo: BLOCO_FIXO, perfil: blocoPerfil(perfil), contexto: blocoContexto({ questao, contexto, resumoAluno, imagensAnexadas }) };
+  return { fixo: blocoFixoDaArea(questao.area), perfil: blocoPerfil(perfil), contexto: blocoContexto({ questao, contexto, resumoAluno, imagensAnexadas }) };
 }
 
 /* ------------------------------ modo resumo ------------------------------ */

@@ -8,6 +8,7 @@ import { useStore } from "@/lib/store/provider";
 import { useQuestoes } from "@/data/use-questoes";
 import { NOME_AREA, NOME_HABILIDADE, rotuloHabilidade, SIGLA_AREA } from "@/data/tipos";
 import { useEstadoArea, useVersao } from "@/components/app/versao";
+import { textoApostas } from "@/lib/versao";
 import type { EstadoAluno, Tentativa } from "@/lib/dominio/tipos";
 import {
   dataLocal,
@@ -209,7 +210,7 @@ export function TelaHoje() {
             <div className="flex flex-wrap items-center gap-2">
               <h2 className="text-[19px] font-bold">Apostas 2026</h2>
               <Badge variant="warning">não oficial</Badge>
-              <Badge>50 questões · 4 áreas</Badge>
+              <Badge>{textoApostas(versao)}</Badge>
             </div>
             <p className="text-sm text-muted-foreground">
               Apostas do curso Edcley Teixeira (questões inéditas, não oficiais), com a resolução do autor. Simulado com cronômetro ou treino com o tutor; não contam na nota TRI nem no domínio.

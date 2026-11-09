@@ -2,7 +2,7 @@
  * Simulado de 15 fáceis inéditos (critério "pronto nos fáceis", seção 6 do BRAINSTORM):
  * itens oficiais do tercil fácil que o aluno nunca tentou, 3 minutos por item.
  */
-import type { Questao } from "@/data/tipos";
+import type { Area, Questao } from "@/data/tipos";
 import { gerarId, type GeradorId } from "./id";
 import { bOrdenacao } from "./fila";
 import { MAX_SEGUNDOS_ITEM_FACEIS } from "./pronto";
@@ -73,7 +73,14 @@ export function montarSimuladoFaceis({
  */
 export function encerrarSimulado(
   estado: EstadoAluno,
-  { tipo, iniciadoEm, tentativaIds }: { tipo: TipoSimulado; iniciadoEm: string; tentativaIds: string[] },
+  {
+    tipo,
+    iniciadoEm,
+    tentativaIds,
+    areas,
+    ano,
+    total,
+  }: { tipo: TipoSimulado; iniciadoEm: string; tentativaIds: string[]; areas?: Area[]; ano?: number | null; total?: number },
   agora: Date,
   idFn: GeradorId = (prefixo) => gerarId(prefixo),
 ): { estado: EstadoAluno; simulado: Simulado } {
@@ -84,10 +91,12 @@ export function encerrarSimulado(
     tipo,
     iniciadoEm,
     terminadoEm: agora.toISOString(),
-    total: tentativaIds.length,
+    total: total ?? tentativaIds.length,
     acertos: tentativas.filter((t) => t.acertou).length,
     maiorTempoItem: tentativas.reduce((m, t) => Math.max(m, t.segundos), 0),
     tentativaIds: [...tentativaIds],
+    ...(areas ? { areas } : {}),
+    ...(ano != null ? { ano } : {}),
   };
   return {
     estado: { ...estado, simulados: [...estado.simulados, simulado], atualizadoEm: agora.toISOString() },

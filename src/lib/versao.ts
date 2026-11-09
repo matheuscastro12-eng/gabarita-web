@@ -68,3 +68,10 @@ export function versaoInicial(salva: string | null, temProgresso: boolean): Vers
 export function nomeArea(a: Area): string {
   return NOME_AREA[a];
 }
+
+/** Recorte das Apostas por versão: das 50, 14 são de CN e 18 de MT. */
+export function textoApostas(versao: Versao | null): string {
+  if (versao === "natureza") return "14 questões de natureza";
+  if (versao === "geral") return "32 questões · 14 de CN e 18 de MT";
+  return "50 questões · 4 áreas";
+}

@@ -75,6 +75,7 @@ function carregarArea(area: Area): Promise<Questao[]> {
  * Sem argumento: só matemática (compatível com o comportamento antigo).
  */
 export async function carregarQuestoes(areas: readonly Area[] = ["matematica"]): Promise<Questao[]> {
+  if (areas.length === 1) return carregarArea(areas[0]!);
   const listas = await Promise.all(areas.map(carregarArea));
   return listas.flat();
 }

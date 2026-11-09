@@ -35,6 +35,8 @@ interface Props {
   comVisual?: boolean;
   /** "Ver resolução" depois de confirmar (o simulado oficial mostra só na correção do fim). */
   comResolucao?: boolean;
+  /** Substitui o rodapé padrão (Pular/Confirmar): a prova longa usa a sua navegação. */
+  rodape?: React.ReactNode;
 }
 
 function rotuloDificuldade(q: Questao): { texto: string; variant: "success" | "warning" | "danger" | "neutral" } {
@@ -98,7 +100,7 @@ interface Selecao {
  * (ENEM ano · Questão n · dificuldade · Hn), enunciado serifado, alternativas em cartões
  * e o botão Confirmar em pílula azul à direita.
  */
-export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirmar, aoPular, aoProxima, ehUltima, aoPerguntarSobre, canto, comVisual = false, comResolucao = true }: Props) {
+export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirmar, aoPular, aoProxima, ehUltima, aoPerguntarSobre, canto, comVisual = false, comResolucao = true, rodape }: Props) {
   const dif = rotuloDificuldade(questao);
   const aposta = ehAposta(questao);
   const acertou = confirmada && marcada === questao.gabarito;
@@ -224,7 +226,9 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
       </div>
 
       <footer className="flex shrink-0 flex-wrap items-center gap-2 border-t border-border bg-surface px-4 py-2.5 md:px-5">
-        {!confirmada ? (
+        {rodape ? (
+          rodape
+        ) : !confirmada ? (
           <>
             <Button variant="ghost" onClick={aoPular} className="text-muted-foreground">
               Pular
