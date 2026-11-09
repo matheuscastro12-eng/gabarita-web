@@ -25,11 +25,11 @@ export function CabecalhoPagina({
   );
 }
 
-/** Área de conteúdo (main do original: padding 26px 28px, largura máxima 1060px, alinhada à esquerda) com rolagem própria. */
+/** Área de conteúdo (main do original: padding 26px 28px, largura máxima 1400px, centralizada (ocupa a tela larga)) com rolagem própria. */
 export function ConteudoPagina({ className, children, semRodape = false, ...props }: React.ComponentProps<"div"> & { semRodape?: boolean }) {
   return (
     <div className="min-h-0 flex-1 overflow-y-auto">
-      <div className={cn("entrada-stagger flex w-full max-w-[1060px] flex-col gap-5 px-3 pt-4 pb-10 md:px-7 md:pt-6.5", className)} {...props}>
+      <div className={cn("entrada-stagger flex w-full mx-auto max-w-[1400px] flex-col gap-5 px-3 pt-4 pb-10 md:px-7 md:pt-6.5", className)} {...props}>
         {children}
       </div>
       {!semRodape && <RodapeFonte />}
@@ -41,7 +41,7 @@ export function ConteudoPagina({ className, children, semRodape = false, ...prop
 export function RodapeFonte({ className }: { className?: string }) {
   const origem = origemDosDados();
   return (
-    <footer className={cn("max-w-[1060px] px-4 pb-8 text-center text-[11.5px] leading-relaxed text-muted-foreground md:px-7", className)}>
+    <footer className={cn("mx-auto max-w-[1400px] px-4 pb-8 text-center text-[11.5px] leading-relaxed text-muted-foreground md:px-7", className)}>
       {origem.fixture
         ? `Dados de desenvolvimento (fixture): ${origem.total} questões reais do ENEM 2023, via enem.dev`
         : `${origem.total} questões oficiais do INEP (transcrição enem.dev)`}
