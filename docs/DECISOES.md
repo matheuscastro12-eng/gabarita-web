@@ -36,3 +36,10 @@ Produto completo e polido para uso pessoal do Matheus (um único usuário, sem l
 - Gerenciador: pnpm. Node 24.
 - Commits pequenos e descritivos na branch feat/gabarita-v1. Sem push, merge ou deploy (quem faz é o orquestrador).
 - Nunca imprimir, logar ou commitar segredos. Rodar o dev server SEM herdar ANTHROPIC_API_KEY do ambiente (use `env -u ANTHROPIC_API_KEY`).
+
+## Tutor com o Claude local no app do Mac (09/11/2026)
+- Pedido do Matheus: no app do Mac, o tutor usa o Claude Code logado (`~/.local/bin/claude`, assinatura) no lugar da API paga. A Vercel continua igual.
+- Provedor `claude-local` (`TUTOR_PROVIDER=claude-local`, prioridade sobre as chaves) com `ai-sdk-provider-claude-code` 4.x (AI SDK v7, Claude Agent SDK). A CLI roda o laço de ferramentas, então as ferramentas com `execute` viram MCP em processo (`createAiSdkMcpServer`); um middleware tira o prefixo `mcp__tutor__` para o cliente renderizar as mesmas partes `tool-*`. Ferramentas internas da CLI desligadas (`tools: []`), `settingSources: []`, `permissionPrompts: "none"`, `cwd` em pasta temporária, sem sessão persistida.
+- `run_python` e `record_event` ficam fora no modo local (são executadas no navegador e não podem atravessar a CLI). Contas: `calc`/`verify_answer`.
+- O app do Mac sobe `next start` em 127.0.0.1:3917 (porta fixa por causa do localStorage por origem) e cai para a Vercel se falhar. Titlebar normal (sem `fullSizeContentView`), para os botões da janela não cobrirem a barra da IDE.
+- Imagens da questão vão ao modelo em base64 na primeira mensagem do aluno (todos os provedores), para o tutor ler gráficos.
