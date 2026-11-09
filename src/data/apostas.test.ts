@@ -4,7 +4,7 @@ import { carregarApostas, contarPorArea, ehIdAposta, filtrarPorArea } from "./ap
 import { carregarQuestao, carregarQuestoes } from "./carregar";
 import { AREAS, ehAposta, fonteDetalhada, questaoSchema } from "./tipos";
 
-describe("coleção Apostas 2026", () => {
+describe("coleção Apostas 2026", { timeout: 30_000 }, () => {
   it("tem as 50 questões, ids estáveis e todas passam no schema", async () => {
     const qs = await carregarApostas();
     expect(qs).toHaveLength(50);

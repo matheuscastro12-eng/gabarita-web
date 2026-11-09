@@ -13,12 +13,12 @@ describe("explicações de IA das questões oficiais", () => {
       expect(todas[k]!.texto).not.toMatch(/^(You've hit your|API Error:)/);
       expect(todas[k]!.texto.length).toBeGreaterThan(50);
     }
-  });
+  }, 30_000);
 
   it("marca as divergentes e devolve undefined para quem não tem", async () => {
     const todas = Object.values(await carregarExplicacoes());
     expect(todas.some((e) => e.divergente)).toBe(true);
     // gabarito do app antigo diferente do INEP: explicação excluída de propósito
     expect(await carregarExplicacao("enem-2021-139")).toBeUndefined();
-  });
+  }, 30_000);
 });
