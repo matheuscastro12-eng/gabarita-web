@@ -1,0 +1,24 @@
+# Spec 08 — Página `/design-system` mostrando o design system ORIGINAL
+
+O design system vigente é o original (`docs/DESIGN.md`; tokens em `src/app/globals.css`; componentes em `src/components/ui`). Crie a página de preview dele. Leia `AGENTS.md` (Next 16), `docs/DESIGN.md` inteiro e os componentes de `src/components/ui` e `src/components/app/pagina.tsx`. Outro worker está, em paralelo, ajustando tokens de contraste em `globals.css` e classes nos componentes: **você só cria arquivos novos** em `src/app/design-system/` e `src/components/design-system/` e não edita mais nada. Não faça commit. Nunca `pkill -f`.
+
+- `src/app/design-system/page.tsx` (Server Component): `export const metadata = { title: "Design system", robots: { index: false, follow: false } }`. Não entra no menu (`navegacao.ts`) nem na paleta. Usa `ConteudoPagina`/cabeçalho como as outras telas, com a mesma linguagem do app (cards brancos de raio 20, `CardTitle`, tags, pílulas). Partes interativas num componente cliente em `src/components/design-system/demos.tsx`.
+- Topo: título "Design system", descrição "O design system original do Gabarita: cards brancos sobre cinza-azulado, azul de sistema, números arredondados e enunciado em serifa." e uma `Badge` "dados de exemplo".
+- Seções (um `Card` cada, título com `CardTitle`):
+  1. **Cores**: amostras lendo os tokens por `getComputedStyle` num componente cliente (mudam com o tema; não escreva hex no TSX): fundo, superfície, superfície 2, texto, texto suave, linha, borda de campo (`--input`), azul (`--accent`), azul sólido (`--accent-solid`, se existir no CSS quando você rodar), azul texto, azul suave, azul fundo (`--accent-deep`), sucesso/texto/suave/tint, erro/texto/suave/tint, aviso/texto/suave, marca-texto. Cada uma: quadrado 44px raio 12 com borda, nome do token em mono 12px, papel.
+  2. **Tipografia**: interface (pilha do sistema), `.num`/`font-rounded` (marca e números: um "391" em 40px/800 e "Gabarita" 20px/800), `.qtext` (um enunciado de exemplo em serifa) e mono (cronômetro "02:41"); a escala 12 / 14 / 16 / 19 / 24 / 28 / 40 com uma frase em cada.
+  3. **Botões**: todas as variantes e tamanhos de `Button`, um desabilitado, um com `Kbd` ("Começar" + Enter, tamanho lg).
+  4. **Chips e tags**: chips de filtro (um ativo), todas as variantes de `Badge`.
+  5. **Stat cards**: os quatro do Hoje com dados de exemplo, o primeiro com `hero-azul` (copie a marcação de `tela-hoje.tsx`, sem a lógica).
+  6. **Alternativas**: cinco alternativas de exemplo no visual do app (uma marcada) e as mesmas confirmadas (uma certa, uma errada), estáticas (reaproveite o componente `Alternativas` de `src/components/estudo/alternativas.tsx` se as props permitirem sem estado global; senão, copie as classes).
+  7. **Campos**: input, select, textarea com rótulo; um com erro (`aria-invalid`), no visual dos Ajustes (copie as classes de `tela-ajustes.tsx`).
+  8. **Barras, abas, esqueleto, tooltip, diálogo, toast**: `Progress` (22% e 85%), `Tabs`, `Esqueleto`, `Tooltip`, um botão que abre um `Dialog`, três botões que disparam toasts (`useToast`).
+  9. **Raios** (8, 12, 14, 20), **sombras** (card, flutuante), **movimento** (botão "Repetir" que reaplica `anim-entrada`, `anim-pop`, `anim-assenta`, `anim-shake` em quatro caixas; legenda "180–240ms, cubic-bezier(.2,0,0,1); só transform e opacity; desliga com prefers-reduced-motion").
+  10. **Estados**: os seis do `docs/DESIGN.md` §5, um bloco cada, com dados de exemplo (permissão: "não se aplica: um usuário, sem login").
+  11. **Contraste**: uma tabela com os pares principais e os números; calcule com `node design/scripts/contraste.mjs "#texto/#fundo[:min]" …` usando os valores que estiverem no `globals.css` **no fim** da sua tarefa (o outro worker pode ter mudado `--accent-text`, `--success-text`, `--danger-text`, `--input` e criado `--accent-solid`; leia o arquivo de novo antes de montar a tabela). Pares: texto/fundo, texto/superfície, texto suave/fundo, texto suave/superfície, branco/azul do botão, azul texto/superfície, azul texto/azul suave, sucesso texto/sucesso suave, erro texto/erro suave, aviso texto/aviso suave, borda de campo/superfície (mín. 3), claro e escuro. Mostre "passa" ou "falha" honestamente.
+- Sem hex/`rgb()` no TSX (a tabela de contraste mostra os números como texto). Responsivo: em 375px nada vaza; grades viram uma coluna.
+
+## Verificação
+1. `pnpm lint` e `pnpm typecheck` verdes (não rode build nem test).
+2. Servidor de desenvolvimento já no ar em `http://localhost:3100` (não suba outro nem derrube): `node design/scripts/capturar.mjs --base http://localhost:3100 --dir /tmp/gab-08 --prefixo "" --so design-system`, abra os dois PNG (375 e 1440), e também capture no escuro com um script temporário em `/tmp` (localStorage `theme=dark`). Corrija overflow, texto cortado, sobreposição. Até 3 rodadas.
+3. Resumo: arquivos criados e o que viu nas capturas.

@@ -110,7 +110,7 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
         <div className="grid gap-2 sm:grid-cols-2">
           {spec.parametros.map((p) => (
             <label key={p.nome} className="flex items-center gap-3 text-sm">
-              <span className="w-10 font-mono">
+              <span className="w-16 shrink-0 font-mono whitespace-nowrap">
                 {p.nome} = <span className="tabular">{formatar(valores[p.nome] ?? p.valor)}</span>
               </span>
               <input
@@ -121,7 +121,7 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
                 value={valores[p.nome] ?? p.valor}
                 onChange={(e) => setValores((v) => ({ ...v, [p.nome]: Number(e.target.value) }))}
                 aria-label={`parâmetro ${p.nome}`}
-                className="flex-1 accent-(--accent)"
+                className="min-w-0 flex-1 accent-(--accent)"
               />
             </label>
           ))}

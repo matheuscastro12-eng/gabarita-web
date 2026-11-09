@@ -73,3 +73,14 @@ export function EstadoVazio({
     </div>
   );
 }
+
+/** Estado de erro do §5: caixa danger-soft com texto danger-text, o motivo e como resolver. */
+export function EstadoErro({ titulo, descricao, acao }: { titulo: string; descricao: string; acao?: React.ReactNode }) {
+  return (
+    <div role="alert" className="flex flex-col items-start gap-2 rounded-lg border-[1.5px] border-danger/30 bg-danger-soft px-4 py-3 text-sm">
+      <p className="font-semibold text-danger-text">{titulo}</p>
+      <p className="text-danger-text">{descricao}</p>
+      {acao && <div className="pt-1">{acao}</div>}
+    </div>
+  );
+}

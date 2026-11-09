@@ -55,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full">
         <a
           href="#conteudo"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:font-bold focus:text-accent-foreground"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:rounded-full focus:bg-accent-solid focus:px-4 focus:py-2 focus:font-bold focus:text-accent-foreground"
         >
           Pular para o conteúdo
         </a>

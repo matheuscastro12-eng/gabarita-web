@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Direção B — Cartão-resposta</title>
+<style>
+@font-face { font-family: "Plex Sans"; src: url("fonts/IBMPlexSans-Variable.ttf") format("truetype"); font-weight: 100 700; font-stretch: 85% 100%; }
+@font-face { font-family: "Plex Mono"; src: url("fonts/IBMPlexMono-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Plex Mono"; src: url("fonts/IBMPlexMono-Medium.ttf") format("truetype"); font-weight: 500; }
+
+:root {
+  --bg: #FFFFFF;
+  --surface: #FFFFFF;
+  --muted: #F4F4F5;
+  --muted-strong: #E4E4E7;
+  --line: #E4E4E7;
+  --field: #8A8A93;
+  --text: #18181B;
+  --text-2: #3F3F46;
+  --text-soft: #63636B;
+  --ink: #1A56DB;
+  --ink-hover: #1648B8;
+  --ink-soft: #EEF4FF;
+  --ok: #15803D;
+  --ok-soft: #DCFCE7;
+  --warn: #B45309;
+  --warn-soft: #FEF3C7;
+  --err: #BE123C;
+  --err-soft: #FFE4E6;
+  --white: #FFFFFF;
+  --sans: "Plex Sans", system-ui, sans-serif;
+  --mono: "Plex Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+body { width: 1440px; margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 14px; line-height: 20px; font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p { margin: 0; }
+.mono { font-family: var(--mono); }
+.soft { color: var(--text-soft); }
+svg.i { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+svg.i.sm { width: 16px; height: 16px; }
+
+/* ---------- faixa de identificação ---------- */
+.ident { height: 120px; padding: 20px 40px; display: flex; align-items: center; gap: 40px; border-bottom: 1px solid var(--line); }
+.ident-name { width: 300px; flex: none; }
+.ident-name h1 { font-size: 20px; line-height: 28px; font-weight: 600; }
+.ident-name p { font-size: 13px; line-height: 20px; color: var(--text-soft); margin-top: 4px; }
+.swatches { display: flex; gap: 12px; flex: none; }
+.sw { width: 56px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.sw i { width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--line); display: block; }
+.sw span { font-family: var(--mono); font-size: 11px; line-height: 12px; color: var(--text-2); }
+.sw em { font-style: normal; font-size: 11px; line-height: 12px; color: var(--text-soft); }
+.fontinfo { margin-left: auto; text-align: right; }
+.fontinfo b { display: block; font-weight: 600; font-size: 13px; }
+.fontinfo .aa { font-size: 22px; line-height: 32px; }
+.fontinfo .aa .mono { font-size: 18px; }
+
+.label { padding: 32px 40px 12px; font-size: 13px; color: var(--text-soft); }
+
+/* ---------- moldura ---------- */
+.frame { width: 1440px; height: 900px; overflow: hidden; display: flex; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--bg); }
+
+/* ---------- barra lateral ---------- */
+.side { width: 232px; flex: none; border-right: 1px solid var(--line); padding: 20px 12px; display: flex; flex-direction: column; }
+.brand { display: flex; align-items: center; gap: 12px; height: 36px; padding: 0 12px; font-weight: 600; font-size: 16px; margin-bottom: 20px; }
+.brand svg.i { width: 22px; height: 22px; color: var(--ink); }
+.nav { display: flex; flex-direction: column; gap: 4px; }
+.nav a { position: relative; display: flex; align-items: center; gap: 12px; height: 36px; padding: 0 12px; border-radius: 8px; color: var(--text-2); text-decoration: none; }
+.nav a.on { background: var(--muted); color: var(--text); font-weight: 600; }
+.nav a.on::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 2px; background: var(--ink); border-radius: 1px; }
+.side .foot { margin-top: auto; border-top: 1px solid var(--line); padding-top: 12px; }
+
+/* ---------- bolhas ---------- */
+.bub { width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--field); display: inline-flex; align-items: center; justify-content: center; flex: none; font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--text-2); background: var(--white); }
+.bub.fill { background: var(--ink); border-color: var(--ink); color: var(--white); }
+.bub.ok { background: var(--ok); border-color: var(--ok); color: var(--white); }
+.bub.err { background: var(--err-soft); border-color: var(--err); color: var(--err); }
+.bub.s20 { width: 20px; height: 20px; font-size: 11px; }
+.bub svg.i { width: 14px; height: 14px; stroke-width: 2; }
+.bub.s20 svg.i { width: 12px; height: 12px; stroke-width: 2.2; }
+.dot { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid var(--field); flex: none; }
+.dot.fill { background: var(--ink); border-color: var(--ink); }
+.dot.half { border-color: var(--ink); background: linear-gradient(90deg, var(--ink) 50%, var(--white) 50%); }
+
+/* ---------- controles ---------- */
+.btn { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px; border-radius: 8px; border: 1px solid transparent; font: 500 14px/20px var(--sans); color: var(--text); background: var(--muted); cursor: pointer; white-space: nowrap; }
+.btn.pri { background: var(--ink); color: var(--white); }
+.btn.pri:hover { background: var(--ink-hover); }
+.btn.out { background: var(--white); border-color: var(--field); }
+.btn.ghost { background: transparent; color: var(--text-2); }
+.btn:disabled { background: var(--muted); color: var(--text-soft); cursor: not-allowed; }
+.btn.sm { height: 32px; padding: 0 12px; font-size: 13px; }
+.btn.icon { width: 32px; height: 32px; padding: 0; justify-content: center; background: transparent; border-color: var(--line); color: var(--text-2); }
+.btn:focus-visible, .field input:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+kbd { font-family: var(--mono); font-size: 11px; line-height: 16px; padding: 0 4px; border-radius: 4px; border: 1px solid var(--line); background: var(--white); color: var(--text-2); }
+.btn.pri kbd { background: transparent; border-color: rgba(255,255,255,.5); color: var(--white); }
+.tag { display: inline-flex; align-items: center; height: 24px; padding: 0 8px; border-radius: 6px; font-size: 12px; line-height: 16px; font-weight: 500; background: var(--muted); color: var(--text-2); white-space: nowrap; }
+.tag.ink { background: var(--ink-soft); color: var(--ink); }
+.tag.ok { background: var(--ok-soft); color: var(--ok); }
+.tag.warn { background: var(--warn-soft); color: var(--warn); }
+.tag.err { background: var(--err-soft); color: var(--err); }
+.bar { height: 6px; border-radius: 3px; background: var(--muted-strong); overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--ink); border-radius: 3px; }
+a.link { color: var(--ink); text-decoration: none; font-weight: 500; }
+
+/* ---------- Hoje ---------- */
+.main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.today { padding: 32px 40px 0; display: flex; flex-direction: column; height: 100%; }
+.head { display: flex; align-items: center; justify-content: space-between; height: 40px; }
+.head h1 { font-size: 24px; line-height: 32px; font-weight: 600; }
+.head .right { display: flex; align-items: center; gap: 16px; font-size: 13px; color: var(--text-soft); }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 24px; }
+.stat { padding: 16px 24px; border-left: 1px solid var(--line); }
+.stat:first-child { border-left: 0; padding-left: 0; }
+.stat .k { font-size: 13px; line-height: 20px; color: var(--text-soft); }
+.stat .v { font-family: var(--mono); font-weight: 500; font-size: 32px; line-height: 40px; margin-top: 4px; }
+.stat .d { font-size: 12px; line-height: 16px; color: var(--text-2); margin-top: 4px; }
+.cols { display: grid; grid-template-columns: 62fr 38fr; gap: 48px; margin-top: 28px; flex: 1; min-height: 0; }
+.sec + .sec { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+.sec h2 { font-size: 16px; line-height: 24px; font-weight: 600; }
+.sec .sub { font-size: 13px; line-height: 20px; color: var(--text-soft); margin-top: 4px; }
+.queue { list-style: none; margin: 12px 0 0; padding: 0; }
+.queue li { display: flex; align-items: center; gap: 16px; height: 44px; border-bottom: 1px solid var(--line); }
+.queue li:last-child { border-bottom: 0; }
+.queue .code { font-family: var(--mono); font-size: 13px; width: 32px; color: var(--text-2); }
+.queue .nm { flex: 1; }
+.queue .lv { font-size: 13px; color: var(--text-soft); }
+.chart { position: relative; display: flex; gap: 24px; margin-top: 16px; }
+.chart .meta { position: absolute; left: 0; right: 0; top: 40px; border-top: 1px dashed var(--field); }
+.chart .meta span { position: absolute; left: 0; top: -20px; font-size: 12px; line-height: 16px; color: var(--text-soft); }
+.chart .col { flex: 1; display: flex; flex-direction: column; align-items: center; }
+.chart .col .area { height: 140px; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; border-bottom: 1px solid var(--line); }
+.chart .col i { width: 12px; height: 2px; background: var(--muted-strong); border-radius: 1px 1px 0 0; display: block; }
+.chart .col.now i { height: 100px; background: var(--ink); }
+.chart .col b { font-family: var(--mono); font-weight: 400; font-size: 11px; line-height: 16px; color: var(--text-soft); margin-bottom: 4px; }
+.chart .col em { font-style: normal; font-size: 12px; line-height: 16px; color: var(--text-soft); margin-top: 8px; }
+.chart .col.now em { color: var(--ink); font-weight: 600; }
+.plan { list-style: none; margin: 12px 0 0; padding: 0; }
+.plan li { display: flex; align-items: center; gap: 12px; height: 44px; border-bottom: 1px solid var(--line); }
+.plan li:last-child { border-bottom: 0; }
+.plan li .t { flex: 1; }
+.plan li.done .t { color: var(--text-soft); }
+.plan li .go { color: var(--text-soft); display: flex; align-items: center; gap: 4px; font-size: 13px; }
+.dom { list-style: none; margin: 12px 0 0; padding: 0; }
+.dom li { display: grid; grid-template-columns: 40px 1fr 40px; gap: 12px; align-items: center; height: 32px; }
+.dom .c { font-family: var(--mono); font-size: 13px; color: var(--text-2); }
+.dom .n { font-family: var(--mono); font-size: 13px; text-align: right; }
+.dom + .link { display: inline-block; margin-top: 8px; font-size: 13px; }
+.footer { border-top: 1px solid var(--line); padding: 16px 0 20px; font-size: 12px; line-height: 16px; color: var(--text-soft); margin-top: auto; }
+
+/* ---------- IDE ---------- */
+.sprint { height: 48px; flex: none; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 16px; padding: 0 24px 0 40px; }
+.sprint .ttl { font-weight: 600; }
+.sprint .dots { display: flex; gap: 8px; }
+.sprint .sep { width: 1px; height: 20px; background: var(--line); }
+.sprint .sk { color: var(--text-2); }
+.sprint .timer { margin-left: auto; font-family: var(--mono); font-size: 14px; display: flex; align-items: center; gap: 8px; color: var(--text-2); }
+.sprint .tools { display: flex; gap: 8px; }
+.work { flex: 1; display: grid; grid-template-columns: 58fr 42fr; min-height: 0; }
+.q { padding: 24px 40px 0; display: flex; flex-direction: column; min-height: 0; }
+.q .read { max-width: 620px; }
+.q .tags { display: flex; align-items: center; gap: 8px; }
+.q .tags .btn { margin-left: auto; }
+.tag.code { font-family: var(--mono); font-weight: 400; }
+.fig { margin-top: 16px; border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px 8px; }
+.fig svg { display: block; width: 100%; height: 168px; }
+.stem { font-size: 17px; line-height: 28px; margin-top: 16px; }
+.alts { list-style: none; margin: 12px 0 0; padding: 0; border-top: 1px solid var(--line); }
+.alts li { display: flex; align-items: center; gap: 16px; height: 48px; padding: 0 12px; border-bottom: 1px solid var(--line); font-size: 16px; line-height: 24px; }
+.alts li.mk { background: var(--ink-soft); }
+.alts li.right { background: var(--ok-soft); }
+.alts li.wrong { background: var(--err-soft); }
+.alts li .note { margin-left: auto; font-size: 12px; font-weight: 500; }
+.src { font-size: 12px; line-height: 16px; color: var(--text-soft); margin-top: 8px; }
+.qfoot { margin-top: auto; border-top: 1px solid var(--line); padding: 16px 0 20px; display: flex; align-items: center; gap: 16px; }
+.qfoot .domline { white-space: nowrap; display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--text-soft); }
+.qfoot .domline .bar { width: 64px; }
+.qfoot .domline .mono { color: var(--text); font-size: 12px; }
+.qfoot .acts { margin-left: auto; display: flex; gap: 8px; }
+
+.tutor { border-left: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; padding: 20px 24px 20px; }
+.tutor .th { display: flex; align-items: center; gap: 8px; height: 28px; }
+.tutor .th h2 { font-size: 16px; line-height: 24px; font-weight: 600; }
+.notice { margin-top: 16px; display: flex; gap: 8px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; font-size: 13px; line-height: 20px; color: var(--text-2); }
+.notice svg.i { color: var(--warn); margin-top: 2px; }
+.notice code { font-family: var(--mono); font-size: 12px; }
+.msgs { margin-top: 20px; display: flex; flex-direction: column; gap: 12px; }
+.msg { max-width: 88%; padding: 12px 16px; border-radius: 10px; font-size: 14px; line-height: 20px; }
+.msg.t { background: var(--muted); }
+.msg.t .st { font-family: var(--mono); font-size: 12px; line-height: 16px; color: var(--text-soft); margin-bottom: 4px; display: block; }
+.msg.a { background: var(--ink-soft); align-self: flex-end; }
+.chips { display: flex; gap: 8px; margin-top: 16px; }
+.ladder { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.ladder .row { display: flex; align-items: center; gap: 12px; }
+.ladder .row b { font-weight: 600; font-size: 14px; }
+.ladder .steps { display: flex; gap: 8px; }
+.ladder .row .soft { font-size: 12px; margin-left: auto; }
+.ladder .acts { display: flex; gap: 8px; margin-top: 12px; }
+.compose { margin-top: auto; display: flex; gap: 8px; }
+.compose .in { flex: 1; height: 40px; border: 1px solid var(--field); border-radius: 8px; display: flex; align-items: center; padding: 0 12px; color: var(--text-soft); }
+.compose .btn.pri { width: 40px; padding: 0; justify-content: center; }
+
+/* ---------- estados ---------- */
+.states { display: grid; grid-template-columns: 420px 1.3fr 1fr; gap: 0; padding: 0 40px 48px; }
+.st-block { padding: 0 32px; border-left: 1px solid var(--line); }
+.st-block:first-child { padding-left: 0; border-left: 0; }
+.st-block h3 { font-size: 13px; line-height: 20px; font-weight: 600; color: var(--text-2); margin-bottom: 12px; }
+.st-block + .st-block { }
+.verdict { margin-top: 12px; display: flex; align-items: center; gap: 8px; color: var(--err); font-weight: 500; }
+.row-wrap { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field label { font-size: 13px; font-weight: 500; color: var(--text-2); }
+.field input { height: 40px; border: 1px solid var(--ink); border-radius: 8px; padding: 0 12px; font: 400 14px var(--sans); color: var(--text); outline: 2px solid var(--ink); outline-offset: 2px; }
+.field small { font-size: 12px; color: var(--text-soft); }
+.prog { display: flex; align-items: center; gap: 12px; }
+.prog .bar { flex: 1; }
+.stack > * + * { margin-top: 28px; }
+</style>
+</head>
+<body>
+
+<!-- SVG sprites -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+    <symbol id="book" viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2Z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7Z"/></symbol>
+    <symbol id="map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></symbol>
+    <symbol id="note" viewBox="0 0 24 24"><path d="M4 4h12l4 4v12H4Z"/><path d="M8 10h8M8 14h8M8 18h5"/></symbol>
+    <symbol id="flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/></symbol>
+    <symbol id="cog" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3.1 14H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.2-2.9l-.1-.1A2 2 0 1 1 7 4.2l.1.1A1.7 1.7 0 0 0 10 3.1V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0 1.2 2.9h.1a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></symbol>
+    <symbol id="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5 10 17l9-10"/></symbol>
+    <symbol id="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="focus" viewBox="0 0 24 24"><path d="M3 8V3h5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></symbol>
+    <symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="alert" viewBox="0 0 24 24"><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="send" viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- 1. Faixa de identificação -->
+<header class="ident">
+  <div class="ident-name">
+    <h1>Direção B — Cartão-resposta</h1>
+    <p>Exato e calmo, com cara de folha de prova: papel branco, linha fina e tinta azul só onde você marca.</p>
+  </div>
+  <div class="swatches">
+    <div class="sw"><i style="background:var(--bg)"></i><span>#FFFFFF</span><em>fundo</em></div>
+    <div class="sw"><i style="background:var(--surface)"></i><span>#FFFFFF</span><em>superfície</em></div>
+    <div class="sw"><i style="background:var(--muted)"></i><span>#F4F4F5</span><em>muted</em></div>
+    <div class="sw"><i style="background:var(--line)"></i><span>#E4E4E7</span><em>linha</em></div>
+    <div class="sw"><i style="background:var(--text)"></i><span>#18181B</span><em>texto</em></div>
+    <div class="sw"><i style="background:var(--text-soft)"></i><span>#63636B</span><em>suave</em></div>
+    <div class="sw"><i style="background:var(--ink)"></i><span>#1A56DB</span><em>destaque</em></div>
+    <div class="sw"><i style="background:var(--ink-soft)"></i><span>#EEF4FF</span><em>dest. suave</em></div>
+    <div class="sw"><i style="background:var(--ok)"></i><span>#15803D</span><em>sucesso</em></div>
+    <div class="sw"><i style="background:var(--warn)"></i><span>#B45309</span><em>aviso</em></div>
+    <div class="sw"><i style="background:var(--err)"></i><span>#BE123C</span><em>erro</em></div>
+  </div>
+  <div class="fontinfo">
+    <b>IBM Plex Sans + IBM Plex Mono</b>
+    <div class="aa">Aa <span class="mono">0123456789 ½ x² ≤</span></div>
+  </div>
+</header>
+
+<!-- 2. Tela 1 -->
+<div class="label">Tela 1 — Hoje (dados de exemplo)</div>
+<section class="frame">
+  <aside class="side">
+    <div class="brand"><svg class="i"><use href="#cap"/></svg>Gabarita</div>
+    <nav class="nav">
+      <a class="on"><svg class="i"><use href="#sun"/></svg>Hoje</a>
+      <a><svg class="i"><use href="#pen"/></svg>Estudar</a>
+      <a><svg class="i"><use href="#book"/></svg>Aprender</a>
+      <a><svg class="i"><use href="#map"/></svg>Mapa</a>
+      <a><svg class="i"><use href="#note"/></svg>Caderno</a>
+      <a><svg class="i"><use href="#flask"/></svg>Laboratório</a>
+      <a><svg class="i"><use href="#cog"/></svg>Ajustes</a>
+    </nav>
+    <div class="foot nav"><a><svg class="i"><use href="#moon"/></svg>Modo escuro</a></div>
+  </aside>
+  <main class="main">
+    <div class="today">
+      <div class="head">
+        <h1>Boa noite, Matheus</h1>
+        <div class="right">Hoje: 1 sprint, 1/5 acertos <button class="btn pri">Começar <kbd>Enter</kbd></button></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="k">Dias até a prova</div><div class="v">362</div><div class="d">prova em 07/11/2027</div></div>
+        <div class="stat"><div class="k">Resolvidas hoje</div><div class="v">5</div><div class="d">1 acerto · 1 sprint</div></div>
+        <div class="stat"><div class="k">Nota estimada</div><div class="v">391</div><div class="d">262–520 · estimativa</div></div>
+        <div class="stat"><div class="k">Revisões vencidas</div><div class="v">0</div><div class="d">retenção prevista acima de 90%</div></div>
+      </div>
+      <div class="cols">
+        <div>
+          <div class="sec">
+            <h2>Sprint de 5 questões</h2>
+            <p class="sub">Próximas: 5 questões oficiais em 4 habilidades, fáceis primeiro. Uns 12 minutos, com as suas revisões no meio.</p>
+            <ol class="queue">
+              <li><span class="bub">1</span><span class="code">H20</span><span class="nm">Gráfico cartesiano</span><span class="lv">fácil</span></li>
+              <li><span class="bub">2</span><span class="code">H7</span><span class="nm">Planificações e sólidos</span><span class="lv">fácil</span></li>
+              <li><span class="bub">3</span><span class="code">H26</span><span class="nm">Gráficos e argumentação</span><span class="lv">fácil</span></li>
+              <li><span class="bub">4</span><span class="code">H6</span><span class="nm">Visão espacial</span><span class="lv">fácil</span></li>
+              <li><span class="bub">5</span><span class="code">H6</span><span class="nm">Visão espacial</span><span class="lv">fácil</span></li>
+            </ol>
+          </div>
+          <div class="sec">
+            <h2>Questões por dia</h2>
+            <div class="chart">
+              <div class="meta"><span>meta 5/dia (um sprint)</span></div><div class="col"><div class="area"><b>0</b><i></i></div><em>T</em></div><div class="col"><div class="area"><b>0</b><i></i></div><em>Q</em></div><div class="col"><div class="area"><b>0</b><i></i></div><em>Q</em></div><div class="col"><div class="area"><b>0</b><i></i></div><em>S</em></div><div class="col"><div class="area"><b>0</b><i></i></div><em>S</em></div><div class="col"><div class="area"><b>0</b><i></i></div><em>D</em></div><div class="col now"><div class="area"><b>5</b><i></i></div><em>S</em></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="sec">
+            <h2>Plano de hoje</h2>
+            <ul class="plan">
+              <li class="done"><span class="bub s20 fill"><svg class="i"><use href="#check"/></svg></span><span class="t">1 sprint feito hoje</span></li>
+              <li class="done"><span class="bub s20 fill"><svg class="i"><use href="#check"/></svg></span><span class="t">Revisões em dia</span></li>
+              <li><span class="bub s20"></span><span class="t">Refazer 4 erros abertos do caderno</span><span class="go">Caderno <svg class="i sm"><use href="#arrow"/></svg></span></li>
+              <li><span class="bub s20"></span><span class="t">Simulado de 15 fáceis inéditos</span><span class="go">Simulado <svg class="i sm"><use href="#arrow"/></svg></span></li>
+            </ul>
+          </div>
+          <div class="sec">
+            <h2>Domínio por habilidade</h2>
+            <p class="sub">As que mais precisam de atenção (de 0 a 1)</p>
+            <ul class="dom">
+              <li><span class="c">H20</span><div class="bar"><i style="width:22%"></i></div><span class="n">0,22</span></li>
+              <li><span class="c">H7</span><div class="bar"><i style="width:22%"></i></div><span class="n">0,22</span></li>
+              <li><span class="c">H26</span><div class="bar"><i style="width:22%"></i></div><span class="n">0,22</span></li>
+              <li><span class="c">H6</span><div class="bar"><i style="width:22%"></i></div><span class="n">0,22</span></li>
+              <li><span class="c">H1</span><div class="bar"><i style="width:51%"></i></div><span class="n">0,51</span></li>
+            </ul>
+            <a class="link">Ver o mapa completo</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">636 questões oficiais do INEP (transcrição enem.dev) · nota TRI sempre estimada · explicações do tutor podem conter erros · seu progresso fica salvo neste navegador</div>
+    </div>
+  </main>
+</section>
+
+<!-- 3. Tela 2 -->
+<div class="label">Tela 2 — IDE de estudo (dados de exemplo)</div>
+<section class="frame">
+  <aside class="side">
+    <div class="brand"><svg class="i"><use href="#cap"/></svg>Gabarita</div>
+    <nav class="nav">
+      <a><svg class="i"><use href="#sun"/></svg>Hoje</a>
+      <a class="on"><svg class="i"><use href="#pen"/></svg>Estudar</a>
+      <a><svg class="i"><use href="#book"/></svg>Aprender</a>
+      <a><svg class="i"><use href="#map"/></svg>Mapa</a>
+      <a><svg class="i"><use href="#note"/></svg>Caderno</a>
+      <a><svg class="i"><use href="#flask"/></svg>Laboratório</a>
+      <a><svg class="i"><use href="#cog"/></svg>Ajustes</a>
+    </nav>
+    <div class="foot nav"><a><svg class="i"><use href="#moon"/></svg>Modo escuro</a></div>
+  </aside>
+  <main class="main">
+    <div class="sprint">
+      <span class="ttl">Sprint</span>
+      <span class="dots"><i class="dot half"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span>
+      <span class="mono">1/5</span>
+      <span class="sep"></span>
+      <span class="sk">Gráfico cartesiano · <span class="mono">H20</span></span>
+      <span class="timer"><svg class="i sm"><use href="#clock"/></svg>00:41</span>
+      <span class="tools">
+        <button class="btn icon" aria-label="Laboratório"><svg class="i sm"><use href="#flask"/></svg></button>
+        <button class="btn icon" aria-label="Modo foco"><svg class="i sm"><use href="#focus"/></svg></button>
+      </span>
+    </div>
+    <div class="work">
+      <div class="q">
+        <div class="read">
+          <div class="tags">
+            <span class="tag code">ENEM 2012 · Q148</span>
+            <span class="tag">fácil · <span class="mono">&nbsp;b −1,26</span></span>
+            <span class="tag code">H20</span>
+            <button class="btn sm out"><svg class="i sm"><use href="#eye"/></svg>Ver visualmente</button>
+          </div>
+          <div class="fig">
+            <svg viewBox="0 0 580 168" font-family="Plex Sans" font-size="11">
+              <g stroke="var(--line)" stroke-width="1"><line x1="56" y1="140" x2="572" y2="140"/><line x1="56" y1="12" x2="56" y2="140"/></g>
+              <text x="0" y="12" fill="var(--text-soft)">vendas (R$)</text>
+              <g stroke="var(--field)" stroke-width="1" stroke-dasharray="3 3">
+                <line x1="80" y1="88" x2="80" y2="140"/><line x1="124" y1="76" x2="124" y2="140"/><line x1="168" y1="44" x2="168" y2="140"/><line x1="212" y1="64" x2="212" y2="140"/><line x1="256" y1="56" x2="256" y2="140"/><line x1="300" y1="20" x2="300" y2="140"/><line x1="344" y1="72" x2="344" y2="140"/><line x1="388" y1="120" x2="388" y2="140"/><line x1="432" y1="92" x2="432" y2="140"/><line x1="476" y1="80" x2="476" y2="140"/><line x1="520" y1="68" x2="520" y2="140"/><line x1="564" y1="60" x2="564" y2="140"/>
+              </g>
+              <polyline fill="none" stroke="var(--text)" stroke-width="1.6" points="80,88 124,76 168,44 212,64 256,56 300,20 344,72 388,120 432,92 476,80 520,68 564,60"/>
+              <g fill="var(--text)"><circle cx="80" cy="88" r="3"/><circle cx="124" cy="76" r="3"/><circle cx="168" cy="44" r="3"/><circle cx="212" cy="64" r="3"/><circle cx="256" cy="56" r="3"/><circle cx="300" cy="20" r="3"/><circle cx="344" cy="72" r="3"/><circle cx="388" cy="120" r="3"/><circle cx="432" cy="92" r="3"/><circle cx="476" cy="80" r="3"/><circle cx="520" cy="68" r="3"/><circle cx="564" cy="60" r="3"/></g>
+              <g fill="var(--text-soft)" text-anchor="middle"><text x="80" y="158">Jan</text><text x="124" y="158">Fev</text><text x="168" y="158">Mar</text><text x="212" y="158">Abr</text><text x="256" y="158">Mai</text><text x="300" y="158">Jun</text><text x="344" y="158">Jul</text><text x="388" y="158">Ago</text><text x="432" y="158">Set</text><text x="476" y="158">Out</text><text x="520" y="158">Nov</text><text x="564" y="158">Dez</text></g>
+            </svg>
+          </div>
+          <p class="stem">De acordo com o gráfico, os meses em que ocorreram, respectivamente, a maior e a menor venda absolutas em 2011 foram</p>
+          <ol class="alts">
+            <li><span class="bub">A</span>Março e abril.</li>
+            <li class="mk"><span class="bub fill">B</span>Março e agosto.</li>
+            <li><span class="bub">C</span>Agosto e setembro.</li>
+            <li><span class="bub">D</span>Junho e setembro.</li>
+            <li><span class="bub">E</span>Junho e agosto.</li>
+          </ol>
+          <p class="src">Fonte: ENEM 2012, INEP</p>
+        </div>
+        <div class="qfoot">
+          <div class="domline">domínio <span class="mono">H20</span><div class="bar"><i style="width:22%"></i></div><span class="mono">0,22</span><span>domínio efetivo <span class="mono">0,16</span> (meta <span class="mono">0,85</span>)</span></div>
+          <div class="acts"><button class="btn ghost">Pular</button><button class="btn pri">Confirmar <kbd>Enter</kbd></button></div>
+        </div>
+      </div>
+      <aside class="tutor">
+        <div class="th"><h2>Tutor</h2><span class="tag warn">modo guiado</span></div>
+        <div class="notice"><svg class="i sm"><use href="#alert"/></svg><span>Tutor de IA desligado: falta a chave <code>ANTHROPIC_API_KEY</code>. Usando dicas verificadas.</span></div>
+        <div class="msgs">
+          <div class="msg t"><span class="st">Degrau 0 · pergunta</span>Antes de calcular: o que a questão está pedindo, com as suas palavras?</div>
+          <div class="msg a">o mês que mais vendeu e o que menos vendeu</div>
+        </div>
+        <div class="chips"><button class="btn sm out">Dica</button><button class="btn sm out">Gráfico</button><button class="btn sm out">Laboratório</button></div>
+        <div class="ladder">
+          <div class="row"><b>Dica</b><span class="steps"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span><span class="soft">0 de 4 degraus usados</span></div>
+          <div class="acts"><button class="btn sm out">Próximo degrau <kbd>H</kbd></button><button class="btn sm ghost">Resposta direta <kbd>⌥R</kbd></button></div>
+        </div>
+        <div class="compose"><div class="in">peça dica, resolução ou conta…</div><button class="btn pri" aria-label="Enviar"><svg class="i sm"><use href="#send"/></svg></button></div>
+      </aside>
+    </div>
+  </main>
+</section>
+
+<!-- 4. Faixa de estados -->
+<div class="label">Estados</div>
+<section class="states">
+  <div class="st-block">
+    <h3>Alternativas depois de confirmar</h3>
+    <ol class="alts">
+      <li><span class="bub">A</span>Março e abril.</li>
+      <li class="wrong"><span class="bub err"><svg class="i"><use href="#x"/></svg></span>Março e agosto.<span class="note" style="color:var(--err)">sua marcação</span></li>
+      <li><span class="bub">C</span>Agosto e setembro.</li>
+      <li><span class="bub">D</span>Junho e setembro.</li>
+      <li class="right"><span class="bub ok"><svg class="i"><use href="#check"/></svg></span>Junho e agosto.<span class="note" style="color:var(--ok)">gabarito</span></li>
+    </ol>
+    <p class="verdict"><svg class="i sm"><use href="#x"/></svg>Não foi dessa vez. O gabarito é E</p>
+  </div>
+  <div class="st-block stack">
+    <div><h3>Botões</h3>
+      <div class="row-wrap"><button class="btn pri">Primário <kbd>Enter</kbd></button><button class="btn">Secundário</button><button class="btn out">Contorno</button><button class="btn" disabled>Desabilitado</button></div>
+    </div>
+    <div><h3>Etiquetas</h3>
+      <div class="row-wrap"><span class="tag">neutra</span><span class="tag ink">destaque</span><span class="tag ok">sucesso</span><span class="tag warn">aviso</span><span class="tag err">erro</span></div>
+    </div>
+  </div>
+  <div class="st-block stack">
+    <div class="field"><label for="f1">Seu nome</label><input id="f1" value="Matheus"><small>Campo em foco: anel de 2px em azul-caneta</small></div>
+    <div><h3>Progresso</h3>
+      <div class="prog"><div class="bar"><i style="width:22%"></i></div><span class="mono">22%</span></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

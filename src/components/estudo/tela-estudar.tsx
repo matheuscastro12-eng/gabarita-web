@@ -22,7 +22,8 @@ import type { EstadoAluno } from "@/lib/dominio/tipos";
 import { resumirAluno } from "@/lib/tutor/prompt";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { ConteudoPagina, EstadoVazio } from "@/components/app/pagina";
+import { CalendarCheck } from "lucide-react";
+import { ConteudoPagina, EstadoErro, EstadoVazio } from "@/components/app/pagina";
 import { useToast } from "@/components/ui/toast";
 import { FimSprint } from "./fim-sprint";
 import { IDE, type RespostaQuestao } from "./ide";
@@ -142,7 +143,7 @@ export function TelaEstudar() {
   if (erro) {
     return (
       <ConteudoPagina className="justify-center">
-        <EstadoVazio titulo="Não consegui carregar" descricao={erro} acao={<Button onClick={() => window.location.reload()}>Tentar de novo</Button>} />
+        <EstadoErro titulo="Não consegui carregar" descricao={erro} acao={<Button onClick={() => window.location.reload()}>Tentar de novo</Button>} />
       </ConteudoPagina>
     );
   }
@@ -155,6 +156,7 @@ export function TelaEstudar() {
     return (
       <ConteudoPagina className="justify-center">
         <EstadoVazio
+          icone={<CalendarCheck />}
           titulo="Nada para estudar agora"
           descricao="Todas as questões disponíveis foram acertadas nos últimos 7 dias. Volte amanhã ou sincronize mais questões com pnpm sync-provas."
           acao={

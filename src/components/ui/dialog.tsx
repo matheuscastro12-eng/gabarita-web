@@ -47,7 +47,7 @@ function DialogContent({ className, children, semFechar = false, ...props }: Dia
         {!semFechar && (
           <DialogPrimitive.Close
             className={cn(
-              "absolute top-3.5 right-3.5 inline-flex size-8 items-center justify-center rounded-full bg-background text-muted-foreground",
+              "absolute top-3.5 right-3.5 inline-flex size-8 items-center justify-center rounded-full bg-background pointer-coarse:min-h-11 pointer-coarse:min-w-11 text-muted-foreground",
               "hover:bg-surface-2 hover:text-foreground dark:bg-surface-2",
             )}
             aria-label="Fechar"

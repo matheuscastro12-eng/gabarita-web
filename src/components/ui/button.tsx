@@ -15,7 +15,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-accent text-accent-foreground hover:bg-accent-deep",
+        primary: "bg-accent-solid text-accent-foreground hover:bg-accent-deep",
         secondary: "bg-background text-foreground hover:bg-surface-2 dark:bg-surface-2 dark:hover:bg-border",
         ghost: "bg-transparent text-foreground hover:bg-surface-2 font-semibold",
         outline: "border-[1.5px] border-border bg-surface text-foreground hover:border-accent hover:text-accent-text font-semibold",
@@ -26,8 +26,8 @@ const buttonVariants = cva(
         sm: "h-9 px-3.5 text-[13px]",
         md: "h-10 px-5 text-sm",
         lg: "h-12 px-6 text-base",
-        icon: "size-10",
-        "icon-sm": "size-9",
+        icon: "size-10 pointer-coarse:min-h-11 pointer-coarse:min-w-11",
+        "icon-sm": "size-9 pointer-coarse:min-h-11 pointer-coarse:min-w-11",
       },
     },
     defaultVariants: { variant: "primary", size: "md" },

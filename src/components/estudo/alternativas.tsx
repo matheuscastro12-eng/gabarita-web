@@ -54,7 +54,7 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
               aria-hidden
               className={cn(
                 "inline-flex size-[29px] shrink-0 items-center justify-center rounded-full border-[1.5px] font-sans text-[13px] font-extrabold",
-                selecionada && !confirmada ? "border-accent bg-accent text-white" : "border-border bg-surface text-foreground",
+                selecionada && !confirmada ? "border-accent bg-accent-solid text-white" : "border-border bg-surface text-foreground",
                 ehGabarito && "border-success bg-success text-white",
                 ehErro && "border-danger bg-danger text-white",
               )}

@@ -71,7 +71,7 @@ export function VisualEstatistica() {
                   className={cn(
                     "num absolute top-0 left-0 inline-flex size-12 items-center justify-center rounded-full border-[1.5px] text-lg font-extrabold",
                     "transition-[transform,background-color,border-color,color] duration-[240ms] ease-(--ease)",
-                    ehMeio ? "border-accent bg-accent text-white" : ehModa ? "border-success bg-success-tint text-success-text" : "border-border bg-surface",
+                    ehMeio ? "border-accent bg-accent-solid text-white" : ehModa ? "border-success bg-success-tint text-success-text" : "border-border bg-surface",
                   )}
                   style={{ transform: `translateX(${pos * 56 + 4}px)` }}
                 >

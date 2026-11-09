@@ -119,7 +119,7 @@ export function BarraSuperior() {
                 href={item.href}
                 aria-current={ativo ? "page" : undefined}
                 className={cn(
-                  "flex items-center rounded-[10px] px-2.5 py-2 text-[12.5px] font-medium text-muted-foreground",
+                  "flex items-center justify-center rounded-[10px] px-2.5 py-2 text-[12.5px] pointer-coarse:min-h-11 pointer-coarse:min-w-11 font-medium text-muted-foreground",
                   ativo && "bg-accent-soft font-semibold text-accent-text",
                 )}
               >
