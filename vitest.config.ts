@@ -19,6 +19,7 @@ export default defineConfig({
         "src/lib/aleatorio.ts",
         "src/lib/tutor/**/*.ts",
         "src/lib/gemeas/**/*.ts",
+        "src/lib/laboratorio/**/*.ts",
       ],
       exclude: [
         "src/lib/**/*.test.ts",
@@ -40,6 +41,7 @@ export default defineConfig({
         "src/lib/atalhos/registro.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
         "src/lib/utils.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
         "src/lib/aleatorio.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
+        "src/lib/laboratorio/**/*.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
       },
     },
   },

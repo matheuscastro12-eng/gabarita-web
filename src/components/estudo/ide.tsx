@@ -9,6 +9,7 @@ import type { EntradaEvento } from "@/lib/dominio/eventos";
 import { useAtalho } from "@/lib/atalhos/provider";
 import { definirModoFoco } from "@/components/app/app-shell";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { GavetaLaboratorio } from "@/components/laboratorio/gaveta-laboratorio";
 import { BarraSprint, type EstadoBolinha } from "./barra-sprint";
 import type { RespostaGemea } from "./gemea-card";
 import { PainelTutor, type AcoesTutor, type ContextoAluno } from "./painel-tutor";
@@ -73,6 +74,7 @@ const semAssinatura = () => () => {};
 export function IDE({ questoes, indice, respostas, mostrarTimer, aoResponder, aoAvancar, rodape, contextoAluno, aoEvento, aoResponderGemea }: Props) {
   const questao = questoes[indice];
   const [foco, setFoco] = React.useState(false);
+  const [laboratorio, setLaboratorio] = React.useState(false);
   const layoutInicial = React.useSyncExternalStore(semAssinatura, lerLayout, () => undefined);
 
   React.useEffect(() => {
@@ -81,6 +83,7 @@ export function IDE({ questoes, indice, respostas, mostrarTimer, aoResponder, ao
   }, [foco]);
 
   useAtalho({ id: "foco", combinacao: "f", descricao: "Alternar o modo foco", grupo: "Geral", acao: () => setFoco((v) => !v) });
+  useAtalho({ id: "laboratorio", combinacao: "l", descricao: "Abrir o Laboratório (gaveta)", grupo: "Tutor", acao: () => setLaboratorio(true) });
 
   if (!questao) return null;
 
@@ -91,6 +94,7 @@ export function IDE({ questoes, indice, respostas, mostrarTimer, aoResponder, ao
   });
 
   return (
+    <>
     <QuestaoDoSprint
       key={questao.id}
       questao={questao}
@@ -108,7 +112,10 @@ export function IDE({ questoes, indice, respostas, mostrarTimer, aoResponder, ao
       contextoAluno={contextoAluno}
       aoEvento={aoEvento}
       aoResponderGemea={(r) => aoResponderGemea(questao, r)}
+      aoAbrirLaboratorio={() => setLaboratorio(true)}
     />
+    <GavetaLaboratorio aberta={laboratorio} aoMudar={setLaboratorio} />
+    </>
   );
 }
 
@@ -128,6 +135,7 @@ interface PropsQuestao {
   contextoAluno: ContextoAluno;
   aoEvento: (e: EntradaEvento) => void;
   aoResponderGemea: (r: RespostaGemea) => void;
+  aoAbrirLaboratorio: () => void;
 }
 
 /** Uma questão do sprint. Montado com `key` por questão: o estado local recomeça sozinho. */
@@ -147,6 +155,7 @@ function QuestaoDoSprint({
   contextoAluno,
   aoEvento,
   aoResponderGemea,
+  aoAbrirLaboratorio,
 }: PropsQuestao) {
   const confirmada = resposta !== null;
   const [marcada, setMarcada] = React.useState<Letra | null>(null);
@@ -293,6 +302,7 @@ function QuestaoDoSprint({
         mostrarTimer={mostrarTimer}
         foco={foco}
         aoAlternarFoco={aoAlternarFoco}
+        aoAbrirLaboratorio={aoAbrirLaboratorio}
       />
 
       {/* Desktop: painéis lado a lado. */}

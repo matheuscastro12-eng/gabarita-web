@@ -279,3 +279,42 @@ body {
 .selecao-flutuante-abaixo {
   transform: translate(-50%, 8px);
 }
+
+/* ---------- Editor de código do Laboratório ---------- */
+.editor-camada {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding: 0.625rem 0.75rem;
+  white-space: pre;
+  tab-size: 4;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.editor-codigo textarea.editor-camada {
+  overflow: auto;
+}
+.editor-codigo:focus-within {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.tok-comentario {
+  color: var(--muted-foreground);
+  font-style: italic;
+}
+.tok-string {
+  color: var(--warning);
+}
+.tok-numero {
+  color: var(--foreground);
+}
+.tok-palavra {
+  color: var(--accent-text);
+}
+.tok-builtin {
+  color: var(--foreground);
+  font-weight: 600;
+}
+.tok-operador {
+  color: var(--muted-foreground);
+}

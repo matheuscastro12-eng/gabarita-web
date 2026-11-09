@@ -9,7 +9,8 @@ import {
   TAMANHO_SIMULADO_FACEIS,
 } from "./simulado";
 import { questaoFake, tentativaFake } from "./teste-fixtures";
-import type { Questao, Simulado } from "./tipos";
+import type { Questao } from "@/data/tipos";
+import type { Simulado } from "./tipos";
 
 const agora = new Date(2026, 10, 9, 10);
 
@@ -32,7 +33,7 @@ describe("montarSimuladoFaceis", () => {
     const estado = estadoInicial(agora);
     const s = montarSimuladoFaceis({ questoes: qs, estado, limiarFacil: 10 });
     expect(s).toHaveLength(TAMANHO_SIMULADO_FACEIS);
-    const semana = new Set(estado.perfil.habilidadesDaSemana);
+    const semana = new Set<string>(estado.perfil.habilidadesDaSemana);
     // As 8 habilidades da semana × 2 = 16 ≥ 15: todas da semana.
     expect(s.every((q) => semana.has(q.habilidade!))).toBe(true);
     const porH = new Map<string, number>();

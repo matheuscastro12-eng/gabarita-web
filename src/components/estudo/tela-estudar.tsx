@@ -19,15 +19,14 @@ import {
 } from "@/lib/dominio";
 import type { EntradaEvento } from "@/lib/dominio/eventos";
 import type { EstadoAluno } from "@/lib/dominio/tipos";
-import { gemeaComoQuestao } from "@/lib/gemeas";
 import { resumirAluno } from "@/lib/tutor/prompt";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { ConteudoPagina, EstadoVazio } from "@/components/app/pagina";
 import { useToast } from "@/components/ui/toast";
 import { FimSprint } from "./fim-sprint";
-import type { RespostaGemea } from "./gemea-card";
 import { IDE, type RespostaQuestao } from "./ide";
+import { useResponderGemea } from "./use-responder-gemea";
 
 type Fase =
   | { tipo: "carregando" }
@@ -132,34 +131,7 @@ export function TelaEstudar() {
     [atualizar],
   );
 
-  const responderGemea = React.useCallback(
-    (questaoPai: Questao, r: RespostaGemea) => {
-      if (!porId) return;
-      const agora = new Date();
-      const questaoGemea = gemeaComoQuestao(r.gemea, questaoPai);
-      const porQue = r.acertou ? null : (r.gemea.erros[r.escolha] ?? null);
-      atualizar((e: EstadoAluno) =>
-        registrarTentativa(
-          e,
-          {
-            questao: questaoGemea,
-            escolha: r.escolha,
-            segundos: r.segundos,
-            degrauMaximo: 0,
-            pediuResposta: false,
-            origem: "gemea",
-            sprintId: null,
-            porQue,
-            buscarQuestao: (id) => porId.get(id),
-          },
-          agora,
-        ).estado,
-      ).catch((err: unknown) => {
-        notificar({ tipo: "erro", titulo: "Não consegui salvar a gêmea", descricao: err instanceof Error ? err.message : undefined });
-      });
-    },
-    [porId, atualizar, notificar],
-  );
+  const responderGemea = useResponderGemea(porId);
 
   const novoSprint = React.useCallback(() => {
     setFase({ tipo: "carregando" });

@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Maximize2, Minimize2 } from "lucide-react";
+import { FlaskConical, Maximize2, Minimize2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Kbd } from "@/components/ui/kbd";
 import { Button } from "@/components/ui/button";
@@ -18,6 +18,8 @@ interface Props {
   mostrarTimer: boolean;
   foco: boolean;
   aoAlternarFoco: () => void;
+  /** Abre a gaveta do Laboratório (opcional: o simulado não tem). */
+  aoAbrirLaboratorio?: () => void;
 }
 
 export function formatarTempo(total: number): string {
@@ -27,7 +29,7 @@ export function formatarTempo(total: number): string {
 }
 
 /** Barra superior da IDE: logo, ●●◐○○, habilidade, timer discreto e modo foco. */
-export function BarraSprint({ bolinhas, indice, rotuloHabilidade, segundos, mostrarTimer, foco, aoAlternarFoco }: Props) {
+export function BarraSprint({ bolinhas, indice, rotuloHabilidade, segundos, mostrarTimer, foco, aoAlternarFoco, aoAbrirLaboratorio }: Props) {
   return (
     <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border px-4 text-sm">
       <span className="flex items-center gap-2 font-semibold">
@@ -61,6 +63,18 @@ export function BarraSprint({ bolinhas, indice, rotuloHabilidade, segundos, most
           <span className="tabular text-muted-foreground" aria-label="tempo nesta questão">
             {formatarTempo(segundos)}
           </span>
+        )}
+        {aoAbrirLaboratorio && (
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="ghost" size="icon-sm" aria-label="Abrir o Laboratório" onClick={aoAbrirLaboratorio} data-testid="abrir-laboratorio">
+                <FlaskConical />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent side="bottom" className="flex items-center gap-2">
+              Laboratório <Kbd>L</Kbd>
+            </TooltipContent>
+          </Tooltip>
         )}
         <Tooltip>
           <TooltipTrigger asChild>

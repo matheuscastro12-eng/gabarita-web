@@ -59,6 +59,8 @@ async function rodar(id, codigo) {
   saidaAtual = [];
   try {
     const py = await carregar();
+    // As mensagens de carga do Pyodide ("Loading sympy…") não são saída do código do aluno.
+    saidaAtual = [];
     const valor = await py.runPythonAsync(codigo);
     let resultado = null;
     if (valor !== undefined && valor !== null) {

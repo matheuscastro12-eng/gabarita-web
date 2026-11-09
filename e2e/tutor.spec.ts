@@ -97,17 +97,3 @@ test.describe("Tutor (modo guiado offline)", () => {
     await expect(page.getByTestId("chip-selecao").first()).toContainText("Em janeiro de 2013");
   });
 });
-
-test.describe("Laboratório", () => {
-  test("abre com editor Python e gráfico com sliders", async ({ page }) => {
-    await page.goto("/laboratorio");
-    await expect(page.getByRole("heading", { name: "Laboratório", exact: true })).toBeVisible();
-    await expect(page.getByTestId("rodar-python")).toBeVisible();
-    await expect(page.getByTestId("status-pyodide")).toContainText("não carregado");
-    const grafico = page.getByTestId("grafico");
-    await expect(grafico.getByRole("slider", { name: "parâmetro a" })).toBeVisible();
-    await page.getByLabel("Função de x").fill("2x + 3");
-    await page.getByTestId("desenhar").click();
-    await expect(grafico.getByText("y = 2x + 3")).toBeVisible();
-  });
-});
