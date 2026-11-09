@@ -1,14 +1,12 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
+/** Card do original: branco, raio 20px, padding 20px, sombra dupla suave (no escuro ganha uma linha). */
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card"
-      className={cn(
-        "flex flex-col gap-4 rounded-lg border border-border bg-surface p-5 text-foreground",
-        className,
-      )}
+      className={cn("flex flex-col gap-4 rounded-xl border border-card-borda bg-surface p-5 text-foreground shadow-card", className)}
       {...props}
     />
   );
@@ -19,23 +17,11 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 function CardTitle({ className, ...props }: React.ComponentProps<"h2">) {
-  return (
-    <h2
-      data-slot="card-title"
-      className={cn("text-lg font-semibold leading-tight tracking-tight", className)}
-      {...props}
-    />
-  );
+  return <h2 data-slot="card-title" className={cn("text-lg font-bold leading-tight tracking-tight", className)} {...props} />;
 }
 
 function CardDescription({ className, ...props }: React.ComponentProps<"p">) {
-  return (
-    <p
-      data-slot="card-description"
-      className={cn("text-sm text-muted-foreground", className)}
-      {...props}
-    />
-  );
+  return <p data-slot="card-description" className={cn("text-sm text-muted-foreground", className)} {...props} />;
 }
 
 function CardContent({ className, ...props }: React.ComponentProps<"div">) {
@@ -43,13 +29,7 @@ function CardContent({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
-  return (
-    <div
-      data-slot="card-footer"
-      className={cn("flex items-center gap-3 pt-1", className)}
-      {...props}
-    />
-  );
+  return <div data-slot="card-footer" className={cn("flex items-center gap-3 pt-1", className)} {...props} />;
 }
 
 export { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter };

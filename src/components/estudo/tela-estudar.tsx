@@ -202,13 +202,13 @@ export function TelaEstudar() {
       rodape={
         questaoAtual?.habilidade ? (
           <div className="flex items-center gap-3">
-            <span className="shrink-0 text-muted-foreground">
-              domínio {questaoAtual.habilidade}
+            <span className="shrink-0 text-[13px] font-medium text-muted-foreground">
+              domínio <span className="num">{questaoAtual.habilidade}</span>
               <span className="sr-only"> {NOME_HABILIDADE[questaoAtual.habilidade]}</span>
             </span>
             <Progress value={(hab?.dominio ?? 0.3) * 100} className="max-w-48" />
-            <span className="tabular">{formatarDecimal(hab?.dominio ?? 0.3, 2)}</span>
-            <span className="hidden min-w-0 truncate text-muted-foreground sm:inline" data-testid="falta">
+            <span className="num text-[13px] font-bold">{formatarDecimal(hab?.dominio ?? 0.3, 2)}</span>
+            <span className="hidden min-w-0 truncate text-[13px] text-muted-foreground sm:inline" data-testid="falta">
               {pronto ? (pronto.pronto ? "pronto nesta habilidade" : pronto.faltas[0]) : "primeiro item desta habilidade"}
             </span>
           </div>
@@ -220,22 +220,24 @@ export function TelaEstudar() {
 
 function EsqueletoIDE() {
   return (
-    <div className="flex h-full flex-col" aria-busy="true" aria-label="Carregando o sprint">
-      <div className="h-12 border-b border-border" />
+    <div className="flex h-full flex-col bg-background" aria-busy="true" aria-label="Carregando o sprint">
+      <div className="h-12 border-b border-border bg-surface" />
       <div className="grid flex-1 grid-cols-1 md:grid-cols-[58%_1fr]">
-        <div className="flex flex-col gap-4 p-6">
-          <div className="h-5 w-40 rounded bg-surface-2" />
-          <div className="h-4 w-full rounded bg-surface-2" />
-          <div className="h-4 w-11/12 rounded bg-surface-2" />
-          <div className="h-4 w-3/4 rounded bg-surface-2" />
-          <div className="mt-4 flex flex-col gap-2">
-            {[0, 1, 2, 3, 4].map((i) => (
-              <div key={i} className="h-12 rounded-md border border-border bg-surface" />
-            ))}
+        <div className="p-4">
+          <div className="mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl bg-surface p-5 shadow-card">
+            <div className="h-5 w-40 rounded-sm bg-background" />
+            <div className="h-4 w-full rounded-sm bg-background" />
+            <div className="h-4 w-11/12 rounded-sm bg-background" />
+            <div className="h-4 w-3/4 rounded-sm bg-background" />
+            <div className="mt-2 flex flex-col gap-2">
+              {[0, 1, 2, 3, 4].map((i) => (
+                <div key={i} className="h-13 rounded-lg border-[1.5px] border-border" />
+              ))}
+            </div>
           </div>
         </div>
-        <div className="hidden border-l border-border p-6 md:block">
-          <div className="h-5 w-24 rounded bg-surface-2" />
+        <div className="hidden border-l border-border bg-surface p-6 md:block">
+          <div className="h-5 w-24 rounded-sm bg-background" />
         </div>
       </div>
     </div>

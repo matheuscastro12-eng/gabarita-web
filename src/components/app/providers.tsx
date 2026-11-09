@@ -9,7 +9,7 @@ import { StoreProvider } from "@/lib/store/provider";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
       <TooltipProvider>
         <AtalhosProvider>
           <ToastProvider>

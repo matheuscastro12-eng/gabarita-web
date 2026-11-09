@@ -2,17 +2,19 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
+/** Tag do original: fundo no cinza da página, texto muted, raio 8px, 12px/700; variantes azul/verde/âmbar/vermelho suaves. */
 const badgeVariants = cva(
-  "inline-flex items-center gap-1 rounded-sm border px-2 py-0.5 text-xs font-medium leading-5 whitespace-nowrap [&_svg]:size-3.5",
+  "inline-flex items-center gap-1 rounded-sm px-2.25 py-0.75 text-xs font-bold leading-5 whitespace-nowrap [&_svg]:size-3.5",
   {
     variants: {
       variant: {
-        neutral: "border-border bg-surface-2 text-foreground",
-        accent: "border-transparent bg-accent-soft text-accent-text",
-        success: "border-transparent bg-success-soft text-success",
-        danger: "border-transparent bg-danger-soft text-danger",
-        warning: "border-transparent bg-warning-soft text-warning",
-        outline: "border-border bg-transparent text-muted-foreground",
+        neutral: "bg-background text-muted-foreground dark:bg-surface-2",
+        accent: "bg-accent-soft text-accent-text",
+        success: "bg-success-soft text-success-text",
+        danger: "bg-danger-soft text-danger-text",
+        warning: "bg-warning-soft text-warning-text",
+        outline: "border-[1.5px] border-border bg-transparent text-muted-foreground",
+        solid: "bg-accent text-accent-foreground",
       },
     },
     defaultVariants: { variant: "neutral" },

@@ -86,7 +86,7 @@ export function CampoCodigo({
     pre.scrollLeft = e.currentTarget.scrollLeft;
   };
   return (
-    <div className="editor-codigo relative rounded-md border border-input bg-background" style={{ minHeight: `calc(${linhas} * 1.6em + 1.25rem)` }}>
+    <div className="editor-codigo relative rounded-md border-[1.5px] border-input bg-background dark:bg-surface-2" style={{ minHeight: `calc(${linhas} * 1.6em + 1.25rem)` }}>
       <pre ref={preRef} aria-hidden className="editor-camada pointer-events-none m-0 overflow-hidden" data-testid="realce-python">
         {tokens.map((t, i) =>
           CLASSE_TOKEN[t.tipo] ? (
@@ -158,8 +158,8 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-wrap items-center gap-2">
-        <span className="flex items-center gap-1.5 text-sm font-semibold">
-          <FlaskConical className="size-4 text-accent-text" /> Python + SymPy
+        <span className="flex items-center gap-1.5 text-sm font-bold">
+          <FlaskConical className="size-4 text-accent" strokeWidth={1.8} /> Python + SymPy
         </span>
         <span className="ml-auto">
           <StatusPyodideBadge />
@@ -178,9 +178,9 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
         ))}
       </div>
       {status.estado === "erro" && (
-        <div role="alert" className="flex flex-col gap-2 rounded-md border border-warning/30 bg-warning-soft px-3 py-2.5 text-sm" data-testid="erro-pyodide">
-          <p className="flex items-start gap-2 font-medium">
-            <WifiOff className="mt-0.5 size-4 shrink-0 text-warning" aria-hidden />
+        <div role="alert" className="flex flex-col gap-2 rounded-md bg-warning-soft px-3 py-2.5 text-sm" data-testid="erro-pyodide">
+          <p className="flex items-start gap-2 font-semibold">
+            <WifiOff className="mt-0.5 size-4 shrink-0 text-warning-text" aria-hidden />
             <span>O Pyodide não carregou do CDN (jsdelivr). Sem ele, o SymPy não roda aqui.</span>
           </p>
           <p className="text-muted-foreground">
@@ -201,7 +201,7 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
           </Button>
         ) : (
           <Button onClick={() => void rodar()} data-testid="rodar-python">
-            <Play /> Rodar <Kbd className="border-accent-foreground/30 bg-transparent text-accent-foreground">Ctrl+Enter</Kbd>
+            <Play /> Rodar <Kbd className="border-white/40 bg-transparent text-white">Ctrl+Enter</Kbd>
           </Button>
         )}
         <span className={cn("text-muted-foreground", compacto ? "text-xs" : "text-sm")}>
@@ -215,12 +215,12 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
               <Badge variant="warning">mathjs</Badge> {NOTA_MATHJS}
             </p>
           ) : (
-            saida.saida && <pre className="overflow-x-auto rounded-md bg-surface-2 px-3 py-2 font-mono text-sm whitespace-pre-wrap">{saida.saida}</pre>
+            saida.saida && <pre className="overflow-x-auto rounded-md bg-background px-3 py-2 font-mono text-sm whitespace-pre-wrap dark:bg-surface-2">{saida.saida}</pre>
           )}
           {saida.resultado && (
-            <pre className="overflow-x-auto rounded-md border border-success/40 bg-success-soft px-3 py-2 font-mono text-sm whitespace-pre-wrap">{saida.resultado}</pre>
+            <pre className="overflow-x-auto rounded-md bg-success-soft px-3 py-2 font-mono text-sm font-semibold text-success-text whitespace-pre-wrap">{saida.resultado}</pre>
           )}
-          {saida.erro && <pre className="overflow-x-auto rounded-md bg-danger-soft px-3 py-2 font-mono text-sm text-danger whitespace-pre-wrap">{saida.erro}</pre>}
+          {saida.erro && <pre className="overflow-x-auto rounded-md bg-danger-soft px-3 py-2 font-mono text-sm text-danger-text whitespace-pre-wrap">{saida.erro}</pre>}
           <p className="text-xs text-muted-foreground">{saida.ms} ms</p>
         </div>
       )}

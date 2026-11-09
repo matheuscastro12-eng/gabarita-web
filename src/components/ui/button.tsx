@@ -3,29 +3,30 @@ import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
+/** Botões do original: pílula azul (primário), pílula no cinza do fundo (ghost), chip com borda 1,5px (outline). */
 const buttonVariants = cva(
   [
-    "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium",
+    "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold",
     "transition-[background-color,color,border-color,transform,opacity] duration-(--duration) ease-(--ease)",
-    "disabled:pointer-events-none disabled:opacity-50",
+    "disabled:pointer-events-none disabled:opacity-40",
     "active:translate-y-px",
     "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-[1.1em]",
   ],
   {
     variants: {
       variant: {
-        primary: "bg-accent text-accent-foreground hover:brightness-105 dark:hover:brightness-95",
-        secondary: "bg-surface-2 text-foreground border border-border hover:bg-border/60",
-        ghost: "text-foreground hover:bg-surface-2",
-        outline: "border border-border bg-transparent text-foreground hover:bg-surface-2",
-        danger: "bg-danger-soft text-danger border border-danger/30 hover:bg-danger/15",
-        link: "text-accent-text underline-offset-4 hover:underline",
+        primary: "bg-accent text-accent-foreground hover:bg-accent-deep",
+        secondary: "bg-background text-foreground hover:bg-surface-2 dark:bg-surface-2 dark:hover:bg-border",
+        ghost: "bg-transparent text-foreground hover:bg-surface-2 font-semibold",
+        outline: "border-[1.5px] border-border bg-surface text-foreground hover:border-accent hover:text-accent-text font-semibold",
+        danger: "bg-danger-soft text-danger-text hover:bg-danger hover:text-white",
+        link: "text-accent-text underline-offset-4 hover:underline font-semibold",
       },
       size: {
-        sm: "h-9 px-3 text-sm",
-        md: "h-11 px-4 text-base",
-        lg: "h-13 px-6 text-lg",
-        icon: "size-11",
+        sm: "h-9 px-3.5 text-[13px]",
+        md: "h-10 px-5 text-sm",
+        lg: "h-12 px-6 text-base",
+        icon: "size-10",
         "icon-sm": "size-9",
       },
     },

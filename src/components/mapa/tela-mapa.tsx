@@ -91,8 +91,8 @@ export function TelaMapa() {
       />
 
       {erro && (
-        <div role="alert" className="rounded-lg border border-danger/30 bg-danger-soft px-4 py-3 text-sm">
-          <p className="font-medium text-danger">Não consegui carregar seus dados.</p>
+        <div role="alert" className="rounded-lg bg-danger-soft px-4 py-3 text-sm">
+          <p className="font-semibold text-danger-text">Não consegui carregar seus dados.</p>
           <p className="text-muted-foreground">{erro}</p>
         </div>
       )}
@@ -102,7 +102,7 @@ export function TelaMapa() {
         <div className="flex flex-col gap-4">
           <Card data-testid="card-nota">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-base">
+              <CardTitle className="flex items-center gap-2">
                 Nota estimada <Badge variant="outline">estimativa</Badge>
               </CardTitle>
               <CardDescription>
@@ -112,9 +112,9 @@ export function TelaMapa() {
             <CardContent>
               {nota && nota.itens > 0 ? (
                 <>
-                  <p className="tabular text-4xl font-semibold">
+                  <p className="num text-3xl font-extrabold">
                     {nota.nota}
-                    <span className="ml-2 text-base font-normal text-muted-foreground">
+                    <span className="ml-2 text-base font-semibold text-muted-foreground">
                       ({nota.inferior}–{nota.superior})
                     </span>
                   </p>
@@ -132,7 +132,7 @@ export function TelaMapa() {
           </Card>
           <Card data-testid="card-simulado">
             <CardHeader>
-              <CardTitle className="text-base">Simulado de {TAMANHO_SIMULADO_FACEIS} fáceis inéditos</CardTitle>
+              <CardTitle>Simulado de {TAMANHO_SIMULADO_FACEIS} fáceis inéditos</CardTitle>
               <CardDescription>
                 Itens oficiais do tercil fácil (pelo b do INEP) que você nunca fez, 3 minutos por item. Vale para o critério “pronto nos fáceis”.
               </CardDescription>
@@ -153,7 +153,7 @@ export function TelaMapa() {
                     .slice(0, 5)
                     .map((s) => (
                       <li key={s.id} className="flex flex-wrap items-center gap-2">
-                        <span className="tabular font-medium">
+                        <span className="num font-bold">
                           {s.acertos} de {s.total}
                         </span>
                         <span className="text-muted-foreground">
@@ -164,7 +164,7 @@ export function TelaMapa() {
                     ))}
                 </ul>
               )}
-              {melhorSimulado && <p className="text-success">Critério do simulado cumprido.</p>}
+              {melhorSimulado && <p className="font-semibold text-success-text">Critério do simulado cumprido.</p>}
               <div className="pt-1">
                 <Button variant="secondary" asChild>
                   <Link href="/simulado">
@@ -177,7 +177,7 @@ export function TelaMapa() {
         </div>
         <Card data-testid="card-pronto">
           <CardHeader>
-            <CardTitle className="text-base">O que falta para “pronto”</CardTitle>
+            <CardTitle>O que falta para “pronto”</CardTitle>
             <CardDescription>Três níveis: cada habilidade da semana, os fáceis da semana e a prova de matemática.</CardDescription>
           </CardHeader>
           <CardContent className="gap-4">
@@ -229,7 +229,7 @@ export function TelaMapa() {
       {/* Calor por competência */}
       <section className="flex flex-col gap-3" aria-labelledby="calor-titulo">
         <div className="flex flex-wrap items-end justify-between gap-2">
-          <h2 id="calor-titulo" className="text-lg font-semibold">
+          <h2 id="calor-titulo" className="text-lg font-bold">
             Calor por habilidade
           </h2>
           <Legenda />
@@ -244,7 +244,7 @@ export function TelaMapa() {
                         <span className="font-semibold">{g.competencia.id}</span>{" "}
                         <span className="text-muted-foreground">{g.competencia.nome}</span>
                       </span>
-                      <span className="tabular text-muted-foreground">{g.media === null ? "—" : formatarDecimal(g.media, 2)}</span>
+                      <span className="num font-bold text-muted-foreground">{g.media === null ? "—" : formatarDecimal(g.media, 2)}</span>
                     </div>
                     <div className="grid grid-cols-5 gap-1.5" role="group" aria-label={`Competência ${g.competencia.id}: ${g.competencia.nome}`}>
                       {g.celulas.map((c) => (
@@ -253,7 +253,7 @@ export function TelaMapa() {
                     </div>
                   </div>
                 ))
-              : Array.from({ length: 7 }, (_, i) => <div key={i} className="h-16 rounded-md bg-surface-2" />)}
+              : Array.from({ length: 7 }, (_, i) => <div key={i} className="h-16 rounded-md bg-background dark:bg-surface-2" />)}
           </Card>
           <DetalheCelula celula={celula} />
         </div>
@@ -261,7 +261,7 @@ export function TelaMapa() {
 
       {/* Por assunto de foco */}
       <section className="flex flex-col gap-3" aria-labelledby="assuntos-titulo">
-        <h2 id="assuntos-titulo" className="text-lg font-semibold">
+        <h2 id="assuntos-titulo" className="text-lg font-bold">
           Por assunto de foco
         </h2>
         <Card className="gap-0 divide-y divide-border py-2" data-testid="mapa-assuntos">
@@ -274,9 +274,9 @@ export function TelaMapa() {
                   </div>
                   <div className="flex items-center gap-3">
                     <Progress value={(a.media ?? 0) * 100} tom={a.media === null ? "neutral" : "accent"} aria-label={`Domínio em ${a.assunto.nome}`} />
-                    <span className="tabular w-10 text-right">{a.media === null ? "—" : formatarDecimal(a.media, 2)}</span>
+                    <span className="num w-10 text-right font-bold">{a.media === null ? "—" : formatarDecimal(a.media, 2)}</span>
                   </div>
-                  <span className="tabular text-xs text-muted-foreground">
+                  <span className="num text-xs text-muted-foreground">
                     {a.tentativas === 0 ? "sem itens" : `${a.acertos}/${a.tentativas} acertos`}
                   </span>
                 </div>
@@ -305,7 +305,7 @@ function NivelPronto({
 }) {
   return (
     <div className="flex flex-col gap-1.5" data-testid="nivel-pronto">
-      <h3 className="flex items-center gap-2 text-sm font-semibold">
+      <h3 className="flex items-center gap-2 text-sm font-bold">
         {pronto ? <Check className="size-4 text-success" /> : <CircleDashed className="size-4 text-muted-foreground" />}
         {titulo}
         <Badge variant={pronto ? "success" : "outline"}>{pronto ? "pronto" : "falta"}</Badge>
@@ -330,12 +330,13 @@ function NivelPronto({
   );
 }
 
+/** Cores do mapa de calor do original: cinza (sem dados), vermelho, âmbar e verde suaves; o nível máximo é verde cheio. */
 const CLASSE_NIVEL: Record<0 | 1 | 2 | 3 | 4, string> = {
-  0: "border-dashed border-border bg-transparent text-muted-foreground",
-  1: "border-transparent bg-accent/15 text-foreground",
-  2: "border-transparent bg-accent/35 text-foreground",
-  3: "border-transparent bg-accent/60 text-accent-foreground dark:text-foreground",
-  4: "border-transparent bg-accent text-accent-foreground",
+  0: "bg-black/5 text-muted-foreground dark:bg-white/5",
+  1: "bg-danger-soft text-danger-text",
+  2: "bg-warning-soft text-warning-text",
+  3: "bg-success-soft text-success-text",
+  4: "bg-success text-white",
 };
 
 function CelulaCalor({ celula, selecionada, aoSelecionar }: { celula: CelulaMapa; selecionada: boolean; aoSelecionar: () => void }) {
@@ -350,11 +351,11 @@ function CelulaCalor({ celula, selecionada, aoSelecionar }: { celula: CelulaMapa
       data-testid="celula-calor"
       data-nivel={nivel}
       className={cn(
-        "relative flex h-11 items-center justify-center rounded-md border text-sm font-semibold",
+        "num relative flex h-[38px] items-center justify-center rounded-sm text-[13px] font-bold",
         "transition-[transform,box-shadow] duration-(--duration) ease-(--ease) hover:scale-[1.03]",
         CLASSE_NIVEL[nivel],
-        selecionada && "ring-2 ring-ring ring-offset-2 ring-offset-background",
-        celula.daSemana && !selecionada && "shadow-[inset_0_0_0_1px_var(--accent)]",
+        selecionada && "ring-2 ring-ring ring-offset-2 ring-offset-surface",
+        celula.daSemana && !selecionada && "shadow-[inset_0_0_0_1.5px_var(--accent)]",
       )}
     >
       {celula.habilidade}
@@ -369,12 +370,12 @@ function Legenda() {
     <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
       <span className="flex items-center gap-1">
         {([0, 1, 2, 3, 4] as const).map((n) => (
-          <span key={n} aria-hidden className={cn("size-3.5 rounded-sm border", CLASSE_NIVEL[n])} />
+          <span key={n} aria-hidden className={cn("size-3.5 rounded-[4px]", CLASSE_NIVEL[n])} />
         ))}
         <span className="ml-1">sem dados → 0,85+</span>
       </span>
       <span className="flex items-center gap-1">
-        <span aria-hidden className="size-3.5 rounded-sm shadow-[inset_0_0_0_1px_var(--accent)]" /> da semana
+        <span aria-hidden className="size-3.5 rounded-[4px] shadow-[inset_0_0_0_1.5px_var(--accent)]" /> da semana
       </span>
       <span className="flex items-center gap-1">
         <Check className="size-3" /> pronta
@@ -391,8 +392,8 @@ function DetalheCelula({ celula }: { celula: CelulaMapa | null }) {
   return (
     <Card data-testid="detalhe-habilidade" aria-live="polite">
       <CardHeader>
-        <CardTitle className="flex flex-wrap items-center gap-2 text-base">
-          {celula.habilidade}
+        <CardTitle className="flex flex-wrap items-center gap-2">
+          <span className="num">{celula.habilidade}</span>
           <span className="font-normal text-muted-foreground">{celula.nome}</span>
           {celula.daSemana && <Badge variant="accent">da semana</Badge>}
           {celula.pronto && <Badge variant="success">pronta</Badge>}
@@ -407,22 +408,22 @@ function DetalheCelula({ celula }: { celula: CelulaMapa | null }) {
       <CardContent className="text-sm">
         <dl className="grid grid-cols-2 gap-x-4 gap-y-1.5">
           <dt className="text-muted-foreground">Domínio</dt>
-          <dd className="tabular">{formatarDecimal(celula.dominio, 2)}</dd>
+          <dd className="num font-semibold">{formatarDecimal(celula.dominio, 2)}</dd>
           <dt className="text-muted-foreground">Retenção prevista</dt>
-          <dd className="tabular">{Math.round(celula.retencao * 100)}%</dd>
+          <dd className="num font-semibold">{Math.round(celula.retencao * 100)}%</dd>
           <dt className="text-muted-foreground">Domínio efetivo</dt>
-          <dd className="tabular">{formatarDecimal(celula.dominioEfetivo, 2)}</dd>
+          <dd className="num font-semibold">{formatarDecimal(celula.dominioEfetivo, 2)}</dd>
           <dt className="text-muted-foreground">Itens oficiais</dt>
-          <dd className="tabular">
+          <dd className="num font-semibold">
             {celula.itensOficiais}
             {celula.itensGemeos > 0 ? ` (+${plural(celula.itensGemeos, "gêmea", "gêmeas")})` : ""}
           </dd>
           <dt className="text-muted-foreground">Acertos</dt>
-          <dd className="tabular">{celula.acertos}</dd>
+          <dd className="num font-semibold">{celula.acertos}</dd>
         </dl>
         <Progress value={celula.dominioEfetivo * 100} aria-label="Domínio efetivo" />
         <div>
-          <p className="font-medium">{celula.pronto ? "Pronta." : "O que falta:"}</p>
+          <p className="font-semibold">{celula.pronto ? "Pronta." : "O que falta:"}</p>
           {!celula.pronto && (
             <ul className="mt-1 list-disc pl-5 text-muted-foreground" data-testid="faltas-habilidade">
               {celula.faltas.map((f) => (

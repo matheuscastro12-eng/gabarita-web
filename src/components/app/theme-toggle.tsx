@@ -3,30 +3,44 @@
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useMontado } from "@/lib/use-cliente";
+import { cn } from "@/lib/utils";
 
-export function ThemeToggle({ className }: { className?: string }) {
+/** Alterna claro/escuro. Na barra lateral vira um item de menu; `compacto` é só o ícone (barra superior do celular). */
+export function ThemeToggle({ className, compacto = false }: { className?: string; compacto?: boolean }) {
   const { resolvedTheme, setTheme } = useTheme();
   const montado = useMontado();
-  const escuro = montado ? resolvedTheme === "dark" : true;
+  const escuro = montado ? resolvedTheme === "dark" : false;
   const rotulo = escuro ? "Mudar para o modo claro" : "Mudar para o modo escuro";
+  const Icone = escuro ? Sun : Moon;
+
+  if (compacto) {
+    return (
+      <button
+        type="button"
+        aria-label={rotulo}
+        title={rotulo}
+        onClick={() => setTheme(escuro ? "light" : "dark")}
+        className={cn("inline-flex size-9 items-center justify-center rounded-full text-muted-foreground hover:bg-background hover:text-foreground dark:hover:bg-surface-2", className)}
+      >
+        <Icone className="size-[18px]" strokeWidth={1.8} />
+      </button>
+    );
+  }
 
   return (
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <Button
-          variant="ghost"
-          size="icon-sm"
-          aria-label={rotulo}
-          className={className}
-          onClick={() => setTheme(escuro ? "light" : "dark")}
-        >
-          {escuro ? <Sun /> : <Moon />}
-        </Button>
-      </TooltipTrigger>
-      <TooltipContent side="right">{rotulo}</TooltipContent>
-    </Tooltip>
+    <button
+      type="button"
+      aria-label={rotulo}
+      onClick={() => setTheme(escuro ? "light" : "dark")}
+      className={cn(
+        "flex w-full items-center gap-2.5 rounded-[10px] px-3 py-2.5 text-sm font-medium text-muted-foreground",
+        "transition-[background-color,color] duration-(--duration) ease-(--ease) hover:bg-background hover:text-foreground dark:hover:bg-surface-2",
+        className,
+      )}
+    >
+      <Icone className="size-[18px] shrink-0" strokeWidth={1.8} />
+      <span>{escuro ? "Modo claro" : "Modo escuro"}</span>
+    </button>
   );
 }

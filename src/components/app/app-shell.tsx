@@ -4,11 +4,11 @@ import * as React from "react";
 import { usePathname } from "next/navigation";
 import { AjudaAtalhos } from "./ajuda-atalhos";
 import { PaletaComandos } from "./paleta-comandos";
-import { BarraInferior, Sidebar } from "./sidebar";
+import { BarraSuperior, Sidebar } from "./sidebar";
 import { AvisoArmazenamento } from "./aviso-armazenamento";
 
 /**
- * Casca do app: barra lateral (desktop) ou inferior (celular), conteúdo,
+ * Casca do app: barra lateral (desktop) ou barra superior (celular), conteúdo,
  * paleta de comandos e ajuda de atalhos. O modo foco esconde a navegação.
  */
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -28,21 +28,21 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <div className="flex h-dvh w-full flex-col md:flex-row">
+    <div className="flex h-dvh w-full flex-col bg-background md:flex-row">
       {!foco && (
         <div className="hidden md:block">
           <Sidebar />
+        </div>
+      )}
+      {!foco && (
+        <div className="md:hidden">
+          <BarraSuperior />
         </div>
       )}
       <main id="conteudo" className="flex min-h-0 min-w-0 flex-1 flex-col">
         <AvisoArmazenamento />
         {children}
       </main>
-      {!foco && (
-        <div className="md:hidden">
-          <BarraInferior />
-        </div>
-      )}
       <PaletaComandos aberta={paletaAberta} aoMudar={setPaletaAberta} abrirAjuda={() => setAjudaAberta(true)} />
       <AjudaAtalhos aberta={ajudaAberta} aoMudar={setAjudaAberta} />
     </div>
