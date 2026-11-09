@@ -18,6 +18,7 @@ import { questoesDoResumo } from "@/lib/resumos/logica";
 import { infoVisual } from "@/lib/visuais/catalogo";
 import { cn } from "@/lib/utils";
 import { MapaMental } from "./mapa-mental";
+import { GavetaDuvida, PainelDuvida, useDesktop } from "./painel-duvida";
 import { SeloIncidencia } from "./selo";
 import { useEstudados } from "./use-estudados";
 import "katex/dist/katex.min.css";
@@ -76,6 +77,7 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
   const ligadas = React.useMemo(() => (questoes ? questoesDoResumo(resumo, questoes) : null), [questoes, resumo]);
   const indice = RESUMOS.findIndex((r) => r.id === resumo.id);
   const proximo = RESUMOS[(indice + 1) % RESUMOS.length]!;
+  const desktop = useDesktop();
 
   return (
     <ConteudoPagina>
@@ -109,7 +111,7 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
         </Button>
       </header>
 
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-3.5 lg:grid-cols-[minmax(0,1fr)_220px] lg:items-start">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-3.5 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start xl:grid-cols-[minmax(0,1fr)_400px]">
         <div className="flex flex-col gap-3.5">
           <Card className="gap-3">
             <CardTitle className="text-[17px]">Mapa mental</CardTitle>
@@ -205,17 +207,26 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
           </Card>
         </div>
 
-        <aside aria-label="Anotações na margem" className="flex flex-wrap gap-2 lg:sticky lg:top-4 lg:flex-col lg:gap-3 lg:border-l-2 lg:border-accent-soft lg:pl-4" data-testid="margem">
-          <p className="hidden text-[10px] font-bold tracking-[1px] text-muted-foreground uppercase lg:block">Na margem</p>
-          {resumo.margem.map((m) => (
-            <p key={m} className="rounded-sm bg-background px-2.5 py-1 text-[13px] font-semibold text-muted-foreground lg:bg-transparent lg:p-0 lg:text-sm dark:bg-surface-2 lg:dark:bg-transparent">
-              {m}
-            </p>
-          ))}
-          <Link href={`/resumos/${proximo.id}`} className="hidden pt-4 text-sm font-semibold text-accent-text hover:underline lg:block">
-            Próximo: {proximo.titulo}
-          </Link>
-        </aside>
+        {/* Desktop: coluna da direita com a margem e o chat, colada no topo como o tutor da IDE. */}
+        <div className="flex flex-col gap-3.5 lg:sticky lg:top-4 lg:h-[calc(100dvh-2.5rem)]">
+          <aside aria-label="Anotações na margem" className="flex flex-wrap gap-2 lg:border-l-2 lg:border-accent-soft lg:pl-4" data-testid="margem">
+            <p className="hidden w-full text-[10px] font-bold tracking-[1px] text-muted-foreground uppercase lg:block">Na margem</p>
+            {resumo.margem.map((m) => (
+              <p key={m} className="rounded-sm bg-background px-2.5 py-1 text-[13px] font-semibold text-muted-foreground dark:bg-surface-2">
+                {m}
+              </p>
+            ))}
+            <Link href={`/resumos/${proximo.id}`} className="hidden w-full text-sm font-semibold text-accent-text hover:underline lg:block">
+              Próximo: {proximo.titulo}
+            </Link>
+          </aside>
+          {desktop && (
+            <div className="min-h-0 flex-1 overflow-hidden rounded-xl border border-card-borda shadow-card">
+              <PainelDuvida resumo={resumo} />
+            </div>
+          )}
+        </div>
+        {desktop === false && <GavetaDuvida resumo={resumo} />}
       </div>
     </ConteudoPagina>
   );

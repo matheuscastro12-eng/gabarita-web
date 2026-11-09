@@ -77,3 +77,65 @@ test.describe("Resumos", () => {
     expect(parseFloat(duracao)).toBeLessThan(0.001);
   });
 });
+
+test.describe("Resumos: legendas e Tirar dúvida", () => {
+  test("cada fórmula tem legenda com quando usar e símbolos", async ({ page }) => {
+    await page.goto("/resumos/porcentagem");
+    const legendas = page.getByTestId("legenda-formula");
+    await expect(legendas).toHaveCount(3, { timeout: 20_000 });
+    await expect(legendas.nth(1)).toContainText("Quando usar");
+    await expect(legendas.nth(1)).toContainText("valor inicial (antes do aumento ou desconto)");
+    await expect(legendas.nth(1).locator("dt .katex").first()).toBeVisible();
+  });
+
+  test("desktop: o painel aparece ao lado e, sem IA, diz como ligar", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto("/resumos/porcentagem");
+    const painel = page.getByTestId("painel-duvida");
+    await expect(painel).toBeVisible({ timeout: 20_000 });
+    await expect(painel.getByRole("heading", { name: "Tirar dúvida" })).toBeVisible();
+    await expect(page.getByTestId("duvida-desligada")).toContainText("O tutor de IA está desligado");
+    await expect(page.getByTestId("duvida-desligada")).toContainText("TUTOR_PROVIDER=claude-local");
+    await expect(page.getByTestId("abrir-duvida")).toHaveCount(0);
+  });
+
+  test("com IA: chips de sugestão mandam o contexto do resumo", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.route("**/api/status", (r) => r.fulfill({ json: { ia: true, provedor: "claude-local", modelo: "teste" } }));
+    let corpo: { contexto?: { tipo?: string; resumoId?: string } } = {};
+    await page.route("**/api/tutor", async (r) => {
+      corpo = r.request().postDataJSON() as typeof corpo;
+      const partes = [
+        { type: "start" },
+        { type: "text-start", id: "t" },
+        { type: "text-delta", id: "t", delta: "O $p$ é a porcentagem." },
+        { type: "text-end", id: "t" },
+        { type: "finish" },
+      ];
+      await r.fulfill({
+        headers: { "content-type": "text/event-stream", "x-vercel-ai-ui-message-stream": "v1" },
+        body: partes.map((p) => `data: ${JSON.stringify(p)}\n\n`).join("") + "data: [DONE]\n\n",
+      });
+    });
+    await page.goto("/resumos/porcentagem");
+    const painel = page.getByTestId("painel-duvida");
+    for (const chip of ["Explica de outro jeito", "Me dá outro exemplo", "O que significa cada letra?", "Como isso cai no ENEM?"]) {
+      await expect(painel.getByRole("button", { name: chip })).toBeVisible({ timeout: 20_000 });
+    }
+    await painel.getByRole("button", { name: "O que significa cada letra?" }).click();
+    await expect(painel.getByTestId("conversa")).toContainText("é a porcentagem");
+    expect(corpo.contexto).toMatchObject({ tipo: "resumo", resumoId: "porcentagem" });
+  });
+
+  test("celular: a pílula abre o chat numa gaveta", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto("/resumos/juros");
+    await expect(page.getByTestId("painel-duvida")).toHaveCount(0, { timeout: 20_000 });
+    await page.getByTestId("abrir-duvida").click();
+    const gaveta = page.getByTestId("gaveta-duvida");
+    await expect(gaveta).toBeVisible();
+    await expect(gaveta.getByTestId("painel-duvida")).toBeVisible();
+    await gaveta.getByRole("button", { name: "Fechar" }).click();
+    await expect(gaveta).toBeHidden();
+  });
+});
