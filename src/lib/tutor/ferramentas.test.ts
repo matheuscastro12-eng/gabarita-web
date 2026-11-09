@@ -65,3 +65,13 @@ describe("ferramentasTutor", () => {
     expect(saidaPythonSchema.safeParse({ ok: true }).success).toBe(false);
   });
 });
+
+describe("roteamento das ferramentas por modo", () => {
+  it("modo resumo: só calc e plot_function, ambas no servidor (servem ao claude-local)", async () => {
+    const { ferramentasResumo } = await import("./ferramentas");
+    const { ferramentasServidor } = await import("./claude-local");
+    const f = ferramentasResumo();
+    expect(Object.keys(f).sort()).toEqual(["calc", "plot_function"]);
+    expect(Object.keys(ferramentasServidor(f)).sort()).toEqual(["calc", "plot_function"]);
+  });
+});

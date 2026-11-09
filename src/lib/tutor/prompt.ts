@@ -10,6 +10,8 @@ import { NOME_HABILIDADE } from "@/data/tipos";
 import type { DegrauDica, EstadoAluno, Letra, Perfil } from "@/lib/dominio/tipos";
 import { equivocosRecorrentes } from "@/lib/dominio/eventos";
 import { formatarDecimal } from "@/lib/dominio/formato";
+import type { Resumo } from "@/lib/resumos/conteudo";
+import { legendaDe } from "@/lib/resumos/legendas";
 
 export interface ContextoConversa {
   degrau: DegrauDica;
@@ -175,4 +177,48 @@ export function montarInstrucoes({
   imagensAnexadas?: number;
 }): Instrucoes {
   return { fixo: BLOCO_FIXO, perfil: blocoPerfil(perfil), contexto: blocoContexto({ questao, contexto, resumoAluno, imagensAnexadas }) };
+}
+
+/* ------------------------------ modo resumo ------------------------------ */
+
+/**
+ * Bloco fixo do modo resumo ("Tirar dúvida" em /resumos/<id>). Não há questão nem gabarito:
+ * nada de escada de dicas nem guarda de vazamento. Só calc e plot_function.
+ */
+export const BLOCO_FIXO_RESUMO = `Você é o tutor do Gabarita, uma IDE de estudo de matemática do ENEM. O aluno é o Matheus, que tem TDAH. Ele está lendo um resumo de caderno e quer tirar uma dúvida sobre ele. Seja curto, concreto e gentil. Escreva em português do Brasil.
+
+REGRAS
+1. Responda em no máximo 5 frases curtas (ou uma lista curta) e termine com UMA pergunta ou UMA ação concreta para ele.
+2. Use o resumo do contexto como base: as fórmulas, a legenda de cada letra, o exemplo e as pegadinhas. Quando ele perguntar o que uma letra significa, responda pela legenda e dê um exemplo com números.
+3. Todo número que você afirmar tem que ter passado por ${NOME_FERRAMENTAS.calc}. Não faça contas de cabeça.
+4. Escreva matemática em LaTeX com $...$ (inline) ou $$...$$ (bloco). Para mostrar uma função, chame ${NOME_FERRAMENTAS.plotFunction} em vez de descrever o gráfico.
+5. Para "outro exemplo", crie um exemplo NOVO no estilo do ENEM (contexto do dia a dia), com números diferentes do exemplo do resumo, e resolva em passos numerados conferidos com ${NOME_FERRAMENTAS.calc}.
+6. Se a dúvida for de outro assunto, responda curto e sugira o resumo certo pelo nome.
+7. Não invente fatos sobre o ENEM (anos, número de questões) que não estejam no contexto.`;
+
+function legendaTexto(resumoId: string, rotulo: string): string {
+  const l = legendaDe(resumoId, rotulo);
+  if (!l) return "";
+  const itens = l.itens.map((it) => `${it.simbolo}: ${it.significado}${it.unidade ? ` (${it.unidade})` : ""}`).join("; ");
+  return `\n  Quando usar: ${l.quandoUsar}\n  Legenda: ${itens}`;
+}
+
+/** Contexto do modo resumo: o conteúdo inteiro do resumo, com as legendas das fórmulas. */
+export function blocoContextoResumo(resumo: Resumo): string {
+  const habs = resumo.habilidades.map((h) => `${h} (${NOME_HABILIDADE[h] ?? ""})`).join(", ");
+  const partes = [
+    `RESUMO QUE O ALUNO ESTÁ LENDO\n${resumo.titulo} (id ${resumo.id}). Competência ${resumo.competencia}. Habilidades: ${habs}. Incidência: ${resumo.incidencia === "cai-muito" ? "cai muito" : "cai às vezes"}.\n${resumo.chamada}`,
+    `MAPA MENTAL\n${resumo.mapa.centro}: ${resumo.mapa.ramos.map((r) => `${r.rotulo} (${r.itens.join("; ")})`).join(" | ")}`,
+    `FÓRMULAS\n${resumo.formulas.map((f) => `- ${f.rotulo}: $${f.tex}$${legendaTexto(resumo.id, f.rotulo)}`).join("\n")}`,
+    `COMO O ENEM COBRA\n${resumo.comoCobra}`,
+    `EXEMPLO RESOLVIDO\n${resumo.exemplo.enunciado}\n${resumo.exemplo.passos.map((p, i) => `${i + 1}. ${p}`).join("\n")}\nResposta: ${resumo.exemplo.respostaTexto}`,
+    `PEGADINHAS\n${resumo.pegadinhas.map((p) => `- ${p}`).join("\n")}`,
+    `TRUQUE DE PROVA\n${resumo.truque}`,
+    `NA MARGEM\n${resumo.margem.join(" · ")}`,
+  ];
+  return partes.join("\n\n");
+}
+
+export function montarInstrucoesResumo({ resumo, perfil }: { resumo: Resumo; perfil: Pick<Perfil, "nome" | "explicaDoMeuJeito"> }): Instrucoes {
+  return { fixo: BLOCO_FIXO_RESUMO, perfil: blocoPerfil(perfil), contexto: blocoContextoResumo(resumo) };
 }

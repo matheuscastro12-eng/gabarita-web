@@ -12,10 +12,9 @@
 import os from "node:os";
 import path from "node:path";
 import fs from "node:fs";
-import { wrapLanguageModel, type LanguageModel, type LanguageModelMiddleware } from "ai";
+import { wrapLanguageModel, type LanguageModel, type LanguageModelMiddleware, type ToolSet } from "ai";
 import { claudeCode, createAiSdkMcpServer } from "ai-sdk-provider-claude-code";
 import type { ConfiguracaoTutor } from "./config";
-import type { FerramentasTutor } from "./ferramentas";
 import { NOME_FERRAMENTAS } from "./prompt";
 
 export const SERVIDOR_MCP = "tutor";
@@ -27,10 +26,10 @@ export const FERRAMENTAS_SO_CLIENTE = [NOME_FERRAMENTAS.runPython, NOME_FERRAMEN
 /** Aviso extra de sistema no modo local (o prompt fixo cita ferramentas que não existem aqui). */
 export const AVISO_MODO_LOCAL = `Neste ambiente, ${NOME_FERRAMENTAS.runPython} e ${NOME_FERRAMENTAS.recordEvent} não estão disponíveis. Para conferir contas use ${NOME_FERRAMENTAS.calc} e ${NOME_FERRAMENTAS.verifyAnswer}; não tente registrar eventos.`;
 
-type FerramentaServidor = FerramentasTutor[keyof FerramentasTutor];
+type FerramentaServidor = ToolSet[string];
 
 /** Só as ferramentas com `execute` (rodam no servidor). */
-export function ferramentasServidor(ferramentas: FerramentasTutor): Record<string, FerramentaServidor> {
+export function ferramentasServidor(ferramentas: ToolSet): Record<string, FerramentaServidor> {
   const saida: Record<string, FerramentaServidor> = {};
   for (const [nome, f] of Object.entries(ferramentas)) {
     if (typeof (f as { execute?: unknown }).execute === "function") saida[nome] = f;
@@ -82,7 +81,7 @@ export function caminhoCli(env: Env, existe: (p: string) => boolean = fs.existsS
 }
 
 /** Monta as opções da CLI (puro, testável). */
-export function opcoesClaudeLocal(config: ConfiguracaoTutor, ferramentas: FerramentasTutor, env: Env, maxTurnos: number) {
+export function opcoesClaudeLocal(config: ConfiguracaoTutor, ferramentas: ToolSet, env: Env, maxTurnos: number) {
   const servidor = ferramentasServidor(ferramentas);
   return {
     pathToClaudeCodeExecutable: caminhoCli(env),
@@ -103,7 +102,7 @@ export function opcoesClaudeLocal(config: ConfiguracaoTutor, ferramentas: Ferram
 
 export function criarModeloClaudeLocal(
   config: ConfiguracaoTutor,
-  ferramentas: FerramentasTutor,
+  ferramentas: ToolSet,
   env: Env,
   maxTurnos: number,
 ): LanguageModel {

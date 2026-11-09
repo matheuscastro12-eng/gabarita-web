@@ -118,3 +118,12 @@ describe("middlewareNomes", () => {
     expect(base.doStreamCalls[0]?.tools).toBeUndefined();
   });
 });
+
+describe("claude-local no modo resumo", () => {
+  it("libera só calc e plot_function via MCP", async () => {
+    const { ferramentasResumo } = await import("./ferramentas");
+    const op = opcoesClaudeLocal(config, ferramentasResumo(), { HOME: "/casa" }, 8);
+    expect(op.allowedTools.sort()).toEqual(["mcp__tutor__calc", "mcp__tutor__plot_function"]);
+    expect(op.tools).toEqual([]);
+  });
+});
