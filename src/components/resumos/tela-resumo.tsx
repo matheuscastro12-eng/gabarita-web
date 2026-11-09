@@ -65,7 +65,7 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
           <h1 className="text-[22px] font-extrabold tracking-[-0.4px] md:text-[28px]">{resumo.titulo}</h1>
           <p className="max-w-prose text-sm text-muted-foreground">{resumo.chamada}</p>
         </div>
-        <Button variant={feito ? "secondary" : "primary"} aria-pressed={feito} onClick={() => alternar(resumo.id)} data-testid="marcar-estudado">
+        <Button variant={feito ? "outline" : "primary"} aria-pressed={feito} onClick={() => alternar(resumo.id)} data-testid="marcar-estudado">
           {feito ? (
             <>
               <Check strokeWidth={2.5} className="text-success-text" /> Estudado
