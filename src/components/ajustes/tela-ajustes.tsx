@@ -29,6 +29,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { CabecalhoPagina, ConteudoPagina } from "@/components/app/pagina";
+import { Esqueleto, EsqueletoTexto } from "@/components/ui/esqueleto";
 import { useToast } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
 
@@ -51,7 +52,11 @@ export function TelaAjustes() {
       <ConteudoPagina aria-busy="true">
         <CabecalhoPagina titulo="Ajustes" descricao="Carregando…" />
         {[0, 1, 2].map((i) => (
-          <div key={i} className="h-40 rounded-xl bg-surface shadow-card" />
+          <div key={i} className="flex h-40 flex-col gap-3 rounded-xl bg-surface p-6 shadow-card">
+            <Esqueleto className="h-5 w-40" />
+            <EsqueletoTexto linhas={2} />
+            <Esqueleto className="h-11 w-full max-w-xs rounded-md" />
+          </div>
         ))}
       </ConteudoPagina>
     );
@@ -162,7 +167,7 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                 className={cn(
                   "inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] px-3.5 text-[13px] font-semibold",
                   "transition-[background-color,border-color,color] duration-(--duration) ease-(--ease)",
-                  ativo ? "border-accent bg-accent text-white" : "border-border bg-surface text-foreground hover:border-accent",
+                  ativo ? "border-accent bg-accent-solid text-white" : "border-border bg-surface text-foreground hover:border-accent",
                 )}
               >
                 {ativo && <Check className="size-4" />}
@@ -268,7 +273,7 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
       <CardContent>
         {COMPETENCIAS.map((c) => (
           <div key={c.id} className="flex flex-wrap items-center gap-1.5">
-            <span className="w-40 shrink-0 text-xs text-muted-foreground">
+            <span className="w-full shrink-0 text-xs text-muted-foreground sm:w-40">
               {c.id} · {c.nome}
             </span>
             {c.habilidades.map((h) => {
@@ -284,7 +289,7 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                   data-testid={`semana-${h}`}
                   className={cn(
                     "num h-8 rounded-full border-[1.5px] px-2.5 text-[13px] font-bold transition-colors duration-(--duration)",
-                    ativa ? "border-accent bg-accent text-white" : "border-border bg-surface text-muted-foreground hover:border-accent hover:text-accent-text",
+                    ativa ? "border-accent bg-accent-solid text-white" : "border-border bg-surface text-muted-foreground hover:border-accent hover:text-accent-text",
                   )}
                 >
                   {h}
@@ -406,7 +411,7 @@ function CardAparencia() {
               aria-checked={atual === v}
               onClick={() => setTheme(v)}
               data-testid={`tema-${v}`}
-              className={cn("inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] border-border bg-surface px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duration)", atual === v && "border-accent bg-accent text-white")}
+              className={cn("inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] border-border bg-surface px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duration)", atual === v && "border-accent bg-accent-solid text-white")}
             >
               <Icone className="size-4" /> {rotulo}
             </button>

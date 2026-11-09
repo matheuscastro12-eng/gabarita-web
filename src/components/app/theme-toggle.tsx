@@ -21,7 +21,7 @@ export function ThemeToggle({ className, compacto = false }: { className?: strin
         aria-label={rotulo}
         title={rotulo}
         onClick={() => setTheme(escuro ? "light" : "dark")}
-        className={cn("inline-flex size-9 items-center justify-center rounded-full text-muted-foreground hover:bg-background hover:text-foreground dark:hover:bg-surface-2", className)}
+        className={cn("inline-flex size-9 pointer-coarse:min-h-11 pointer-coarse:min-w-11 items-center justify-center rounded-full text-muted-foreground hover:bg-background hover:text-foreground dark:hover:bg-surface-2", className)}
       >
         <Icone className="size-[18px]" strokeWidth={1.8} />
       </button>

@@ -23,7 +23,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { CabecalhoPagina, ConteudoPagina, EstadoVazio } from "@/components/app/pagina";
+import { CabecalhoPagina, ConteudoPagina, EstadoErro } from "@/components/app/pagina";
 import { useToast } from "@/components/ui/toast";
 import { CaixaTempo, formatarTempo } from "@/components/estudo/barra-sprint";
 import { QuestaoView } from "@/components/estudo/questao-view";
@@ -114,7 +114,7 @@ export function TelaSimulado() {
   if (erro) {
     return (
       <ConteudoPagina className="justify-center">
-        <EstadoVazio titulo="Não consegui carregar" descricao={erro} acao={<Button onClick={() => window.location.reload()}>Tentar de novo</Button>} />
+        <EstadoErro titulo="Não consegui carregar" descricao={erro} acao={<Button onClick={() => window.location.reload()}>Tentar de novo</Button>} />
       </ConteudoPagina>
     );
   }

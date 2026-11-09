@@ -44,7 +44,7 @@ export function VisualUnidades() {
             </p>
             <div className="relative">
               <div
-                className="absolute inset-y-0 left-0 rounded-[10px] bg-accent transition-transform duration-[240ms] ease-(--ease)"
+                className="absolute inset-y-0 left-0 rounded-[10px] bg-accent-solid transition-transform duration-[240ms] ease-(--ease)"
                 style={{ width: `${100 / ESCADA_METRO.length}%`, transform: `translateX(${indice * 100}%)` }}
                 aria-hidden
               />

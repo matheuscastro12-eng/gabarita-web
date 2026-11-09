@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Gabarita — Direção C · Marca-texto</title>
+<style>
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("fonts/AtkinsonHyperlegible-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; }
+
+:root {
+  --fundo: #FFFFFF;
+  --superficie: #FFFFFF;
+  --muted: #F3F4F6;
+  --linha: #E5E7EB;
+  --borda-campo: #868B94;
+  --tinta: #111827;
+  --texto-suave: #5B6472;
+  --branco: #FFFFFF;
+  --destaque: #FFD60A;
+  --destaque-suave: #FFF4B8;
+  --sucesso: #15803D;
+  --sucesso-suave: #DCFCE7;
+  --aviso: #9A3412;
+  --aviso-suave: #FFEDD5;
+  --erro: #BE123C;
+  --erro-suave: #FFE4E6;
+  --fonte: "Atkinson Hyperlegible", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { width: 1440px; margin: 0; background: var(--fundo); color: var(--tinta); font-family: var(--fonte); font-size: 15px; line-height: 1.45; font-variant-numeric: tabular-nums; }
+h1, h2, h3, p { margin: 0; }
+svg.i { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+svg.i.sm { width: 16px; height: 16px; }
+.num { font-variant-numeric: tabular-nums; }
+.suave { color: var(--texto-suave); }
+
+/* grifo */
+.grifo { background: var(--destaque); color: var(--tinta); padding: 0 4px; border-radius: 4px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+/* faixa de identificação */
+.ident { height: 120px; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px; border-bottom: 1px solid var(--linha); }
+.ident h1 { font-size: 24px; font-weight: 700; line-height: 32px; }
+.ident p { font-size: 14px; color: var(--texto-suave); margin-top: 4px; max-width: 360px; }
+.amostras { display: flex; gap: 12px; }
+.amostra { width: 56px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.amostra i { width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--linha); display: block; }
+.amostra span { font-size: 11px; line-height: 12px; color: var(--texto-suave); text-align: center; }
+.amostra b { font-size: 11px; line-height: 12px; font-weight: 400; color: var(--tinta); }
+.fonte-am { text-align: right; }
+.fonte-am strong { display: block; font-size: 14px; }
+.fonte-am span { white-space: nowrap; font-size: 22px; font-weight: 700; }
+
+.rotulo-tela { padding: 24px 40px 8px; font-size: 13px; color: var(--texto-suave); }
+
+/* moldura */
+.moldura { width: 1440px; height: 900px; overflow: hidden; display: flex; border-top: 1px solid var(--linha); border-bottom: 1px solid var(--linha); background: var(--fundo); }
+
+/* barra lateral */
+.lateral { width: 220px; flex: none; background: var(--muted); padding: 24px 16px; display: flex; flex-direction: column; }
+.marca { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 18px; height: 32px; padding: 0 8px; margin-bottom: 24px; }
+.marca svg { width: 24px; height: 24px; }
+.menu { display: flex; flex-direction: column; gap: 4px; }
+.item { display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 8px; border-radius: 10px; color: var(--tinta); font-size: 15px; }
+.item svg { color: var(--texto-suave); }
+.item.ativo { font-weight: 700; }
+.item.ativo svg { color: var(--tinta); }
+.lateral .fim { margin-top: auto; }
+
+/* conteúdo */
+.conteudo { flex: 1; min-width: 0; padding: 32px 40px; display: flex; flex-direction: column; gap: 24px; }
+.card { background: var(--superficie); border: 1px solid var(--linha); border-radius: 12px; padding: 24px; }
+.card h2 { font-size: 18px; font-weight: 700; line-height: 24px; }
+.card .sub { font-size: 13px; color: var(--texto-suave); margin-top: 4px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 10px; font: 700 15px/1 var(--fonte); border: 1px solid transparent; cursor: pointer; }
+.btn.prim { background: var(--tinta); color: var(--branco); }
+.btn.sec { background: var(--muted); color: var(--tinta); }
+.btn.cont { background: var(--superficie); color: var(--tinta); border-color: var(--borda-campo); }
+.btn.desab { background: var(--muted); color: var(--texto-suave); cursor: not-allowed; }
+.btn.peq { height: 32px; padding: 0 12px; font-size: 13px; border-radius: 8px; }
+.btn:focus-visible, .campo input:focus-visible, .alt:focus-visible { outline: 2px solid var(--destaque); outline-offset: 2px; border-color: var(--tinta); }
+kbd { font: 700 11px/1 var(--fonte); padding: 3px 6px; border-radius: 4px; border: 1px solid currentColor; opacity: .85; }
+.btn.prim kbd { border-color: var(--branco); }
+
+.tag { display: inline-flex; align-items: center; height: 24px; padding: 0 8px; border-radius: 6px; font-size: 13px; font-weight: 700; background: var(--muted); color: var(--tinta); }
+.tag.dest { background: var(--destaque); }
+.tag.suc { background: var(--sucesso-suave); color: var(--sucesso); }
+.tag.avi { background: var(--aviso-suave); color: var(--aviso); }
+.tag.err { background: var(--erro-suave); color: var(--erro); }
+
+.barra { height: 8px; border-radius: 4px; background: var(--muted); overflow: hidden; }
+.barra > i { display: block; height: 100%; background: var(--destaque); border-radius: 4px; }
+
+/* Hoje */
+.hoje h1 { font-size: 32px; font-weight: 700; line-height: 40px; }
+.sprint { display: grid; grid-template-columns: 1fr 520px; gap: 40px; align-items: start; }
+.sprint p.desc { font-size: 15px; margin-top: 8px; max-width: 520px; }
+.sprint .acoes { display: flex; align-items: center; gap: 16px; margin-top: 24px; }
+.fila { display: flex; flex-direction: column; gap: 4px; }
+.fila li { display: grid; grid-template-columns: 28px 48px 1fr auto; align-items: center; gap: 12px; height: 36px; padding: 0 12px; border-radius: 8px; font-size: 14px; }
+.fila li:nth-child(odd) { background: var(--muted); }
+.fila .n { font-weight: 700; color: var(--texto-suave); }
+.fila .cod { font-weight: 700; }
+ol.fila { list-style: none; margin: 0; padding: 0; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.stat { padding: 20px 24px; }
+.stat .rot { font-size: 14px; color: var(--texto-suave); }
+.stat .val { font-size: 36px; font-weight: 700; line-height: 44px; margin-top: 8px; display: inline-block; }
+.stat .val .grifo { padding: 0 8px; }
+.stat .det { font-size: 13px; color: var(--texto-suave); margin-top: 8px; }
+
+.tres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; flex: 1; min-height: 0; }
+.tres .card { display: flex; flex-direction: column; }
+.plano { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.plano li { display: grid; grid-template-columns: 24px 1fr 16px; gap: 12px; align-items: center; min-height: 44px; padding: 0 8px; border-radius: 8px; font-size: 14px; }
+.plano .ok { width: 24px; height: 24px; border-radius: 8px; background: var(--sucesso-suave); color: var(--sucesso); display: grid; place-items: center; }
+.plano .pend { width: 24px; height: 24px; border-radius: 8px; border: 1.5px solid var(--borda-campo); }
+.plano li.feito span { color: var(--texto-suave); }
+.plano li small { display: block; font-size: 12px; color: var(--texto-suave); }
+
+.grafico { margin-top: 16px; flex: 1; display: flex; flex-direction: column; }
+.colunas { position: relative; height: 140px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; align-items: end; border-bottom: 1px solid var(--linha); }
+.colunas .meta { position: absolute; left: 0; right: 0; top: 20px; border-top: 1.5px dashed var(--borda-campo); }
+.colunas .col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 4px; font-size: 12px; color: var(--texto-suave); }
+.colunas .col i { display: block; width: 24px; height: 2px; background: var(--linha); border-radius: 4px 4px 0 0; }
+.colunas .col.hoje-c i { height: 120px; background: var(--destaque); }
+.colunas .col.hoje-c { color: var(--tinta); font-weight: 700; }
+.dias { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin-top: 8px; font-size: 13px; color: var(--texto-suave); text-align: center; }
+.dias .h { color: var(--tinta); font-weight: 700; }
+.legenda { margin-top: 12px; font-size: 13px; color: var(--texto-suave); display: flex; align-items: center; gap: 8px; }
+.legenda i { width: 16px; border-top: 1.5px dashed var(--borda-campo); }
+
+.dominio { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.dominio li { display: grid; grid-template-columns: 40px 1fr 36px; gap: 12px; align-items: center; font-size: 14px; }
+.dominio b { font-weight: 700; }
+.dominio .v { text-align: right; }
+.link { margin-top: auto; padding-top: 16px; font-size: 14px; font-weight: 700; color: var(--tinta); text-decoration: underline; text-decoration-color: var(--destaque); text-decoration-thickness: 3px; text-underline-offset: 4px; display: inline-flex; align-items: center; gap: 4px; }
+.rodape { font-size: 12px; color: var(--texto-suave); }
+
+/* IDE */
+.ide { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.barra-sprint { height: 56px; flex: none; display: flex; align-items: center; gap: 16px; padding: 0 24px; border-bottom: 1px solid var(--linha); font-size: 14px; }
+.barra-sprint .t { font-weight: 700; }
+.passos { display: flex; gap: 4px; }
+.passos i { width: 40px; height: 8px; border-radius: 4px; background: var(--muted); display: block; }
+.passos i.at { background: var(--destaque); }
+.barra-sprint .esp { flex: 1; }
+.crono { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; }
+.ibtn { width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--linha); background: var(--superficie); display: grid; place-items: center; color: var(--tinta); }
+.area { flex: 1; min-height: 0; display: grid; grid-template-columns: 58fr 42fr; }
+.lado-q { padding: 24px; min-width: 0; }
+.qcard { height: 100%; display: flex; flex-direction: column; padding: 24px; }
+.qtopo { display: flex; align-items: center; gap: 8px; }
+.qtopo .btn { margin-left: auto; }
+.figura { margin-top: 16px; border: 1px solid var(--linha); border-radius: 8px; padding: 8px 12px; }
+.figura svg { display: block; width: 100%; height: 168px; }
+.enun { font-size: 17px; line-height: 26px; margin-top: 16px; }
+.alts { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.alt { display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 8px 12px; border: 1px solid var(--linha); border-radius: 12px; font-size: 16px; }
+.alt .l { width: 28px; height: 28px; flex: none; border-radius: 8px; border: 1.5px solid var(--borda-campo); display: grid; place-items: center; font-weight: 700; font-size: 14px; }
+.alt.marcada { background: var(--destaque); border-color: var(--destaque); font-weight: 700; }
+.alt.marcada .l { background: var(--tinta); color: var(--branco); border-color: var(--tinta); }
+.alt:hover:not(.marcada) { background: var(--destaque-suave); }
+.alt.errada { background: var(--erro-suave); border-color: var(--erro); }
+.alt.errada .l { background: var(--erro); border-color: var(--erro); color: var(--branco); }
+.alt.certa { background: var(--sucesso-suave); border-color: var(--sucesso); }
+.alt.certa .l { background: var(--sucesso); border-color: var(--sucesso); color: var(--branco); }
+.alt .st { margin-left: auto; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px; }
+.alt.errada .st { color: var(--erro); }
+.alt.certa .st { color: var(--sucesso); }
+.fonte-q { font-size: 12px; color: var(--texto-suave); margin-top: 8px; }
+.qrodape { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--linha); display: flex; align-items: center; gap: 12px; }
+.dom-linha { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--texto-suave); }
+.dom-bloco { display: flex; flex-direction: column; gap: 4px; }
+.dom-linha { white-space: nowrap; }
+.dom-linha .barra { width: 96px; }
+.dom-linha b { color: var(--tinta); }
+.qrodape .bts { margin-left: auto; display: flex; gap: 8px; }
+
+.tutor { background: var(--muted); padding: 24px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.tutor-topo { display: flex; align-items: center; gap: 8px; }
+.tutor-topo h2 { font-size: 18px; font-weight: 700; }
+.aviso { display: flex; gap: 8px; padding: 12px; border-radius: 10px; background: var(--aviso-suave); color: var(--aviso); font-size: 13px; }
+.msgs { display: flex; flex-direction: column; gap: 12px; }
+.balao { background: var(--superficie); border: 1px solid var(--linha); border-radius: 12px; padding: 12px 16px; font-size: 15px; max-width: 88%; }
+.balao .deg { font-size: 12px; font-weight: 700; color: var(--texto-suave); display: block; margin-bottom: 4px; }
+.balao.aluno { align-self: flex-end; background: var(--tinta); color: var(--branco); border-color: var(--tinta); }
+.sugs { display: flex; gap: 8px; }
+.escada { background: var(--superficie); border: 1px solid var(--linha); border-radius: 12px; padding: 16px; }
+.escada-topo { display: flex; align-items: center; justify-content: space-between; font-size: 14px; }
+.degraus { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 12px; }
+.degraus i { height: 8px; border-radius: 4px; background: var(--muted); display: block; }
+.degraus-rot { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 4px; font-size: 12px; color: var(--texto-suave); }
+.escada .bts { display: flex; gap: 8px; margin-top: 16px; }
+.escada .bts .btn { flex: 1; }
+.campo-tutor { margin-top: auto; display: flex; gap: 8px; }
+.campo-tutor .inp { flex: 1; height: 48px; border: 1px solid var(--borda-campo); border-radius: 10px; background: var(--superficie); padding: 0 16px; display: flex; align-items: center; color: var(--texto-suave); font-size: 15px; }
+.campo-tutor .btn { width: 48px; height: 48px; padding: 0; }
+
+/* estados */
+.estados { padding: 24px 40px 48px; display: grid; grid-template-columns: 420px 1fr 1fr; gap: 24px; align-items: start; }
+.estados h3 { font-size: 14px; font-weight: 700; color: var(--texto-suave); margin-bottom: 12px; }
+.estados .bloco + .bloco { margin-top: 24px; }
+.msg-erro { margin-top: 12px; font-size: 15px; font-weight: 700; color: var(--erro); }
+.linha-bts, .linha-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.campo label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+.campo input { width: 100%; height: 44px; border: 1px solid var(--borda-campo); border-radius: 10px; padding: 0 12px; font: 400 15px var(--fonte); color: var(--tinta); background: var(--superficie); }
+.campo input.foco { outline: 2px solid var(--destaque); outline-offset: 2px; border-color: var(--tinta); }
+.campo small { display: block; font-size: 12px; color: var(--texto-suave); margin-top: 8px; }
+.prog-rot { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<!-- ícones -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="cap" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+  <symbol id="casa" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .71-1.53l7-6a2 2 0 0 1 2.58 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="alvo" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="livro" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+  <symbol id="mapa" viewBox="0 0 24 24"><path d="M14.11 5.45a2 2 0 0 0 1.78 0l3.66-1.83A1 1 0 0 1 21 4.62v12.76a1 1 0 0 1-.55.9l-4.56 2.27a2 2 0 0 1-1.78 0l-4.22-2.11a2 2 0 0 0-1.78 0l-3.66 1.83A1 1 0 0 1 3 19.38V6.62a1 1 0 0 1 .55-.9l4.56-2.27a2 2 0 0 1 1.78 0z"/><path d="M15 5.76v15"/><path d="M9 3.24v15"/></symbol>
+  <symbol id="caderno" viewBox="0 0 24 24"><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M16 2v20"/></symbol>
+  <symbol id="frasco" viewBox="0 0 24 24"><path d="M10 2v7.53a2 2 0 0 1-.21.9L4.72 20.55A1 1 0 0 0 5.6 22h12.8a1 1 0 0 0 .88-1.45l-5.07-10.12a2 2 0 0 1-.21-.9V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></symbol>
+  <symbol id="ajustes" viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></symbol>
+  <symbol id="lua" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="xis" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="seta" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="relogio" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="M12 14l3-3"/><circle cx="12" cy="14" r="8"/></symbol>
+  <symbol id="foco" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></symbol>
+  <symbol id="olho" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="enviar" viewBox="0 0 24 24"><path d="M14.54 21.69a.5.5 0 0 0 .94-.03l6.5-19a.5.5 0 0 0-.64-.64l-19 6.5a.5.5 0 0 0-.03.93l7.93 3.18a2 2 0 0 1 1.11 1.11z"/><path d="m21.85 2.15-10.94 10.94"/></symbol>
+  <symbol id="alerta" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+</svg>
+
+<!-- 1. Faixa de identificação -->
+<header class="ident">
+  <div>
+    <h1>Direção C — Marca-texto</h1>
+    <p>Direto, de mesa de estudo: preto no branco, com grifo amarelo só no que importa agora.</p>
+  </div>
+  <div class="amostras">
+    <div class="amostra"><i style="background:var(--fundo)"></i><span>fundo</span><b>#FFFFFF</b></div>
+    <div class="amostra"><i style="background:var(--superficie)"></i><span>superfície</span><b>#FFFFFF</b></div>
+    <div class="amostra"><i style="background:var(--muted)"></i><span>muted</span><b>#F3F4F6</b></div>
+    <div class="amostra"><i style="background:var(--linha)"></i><span>linha</span><b>#E5E7EB</b></div>
+    <div class="amostra"><i style="background:var(--tinta)"></i><span>texto</span><b>#111827</b></div>
+    <div class="amostra"><i style="background:var(--texto-suave)"></i><span>suave</span><b>#5B6472</b></div>
+    <div class="amostra"><i style="background:var(--destaque)"></i><span>destaque</span><b>#FFD60A</b></div>
+    <div class="amostra"><i style="background:var(--destaque-suave)"></i><span>dest. suave</span><b>#FFF4B8</b></div>
+    <div class="amostra"><i style="background:var(--sucesso)"></i><span>sucesso</span><b>#15803D</b></div>
+    <div class="amostra"><i style="background:var(--aviso)"></i><span>aviso</span><b>#9A3412</b></div>
+    <div class="amostra"><i style="background:var(--erro)"></i><span>erro</span><b>#BE123C</b></div>
+  </div>
+  <div class="fonte-am">
+    <strong>Atkinson Hyperlegible</strong>
+    <span class="num">Aa 0123456789 ½ x² ≤</span>
+  </div>
+</header>
+
+<!-- 2. Tela 1 -->
+<div class="rotulo-tela">Tela 1 — Hoje (dados de exemplo)</div>
+<section class="moldura">
+  <nav class="lateral">
+    <div class="marca"><svg class="i"><use href="#cap"/></svg>Gabarita</div>
+    <div class="menu">
+      <a class="item ativo"><svg class="i"><use href="#casa"/></svg><span class="grifo">Hoje</span></a>
+      <a class="item"><svg class="i"><use href="#alvo"/></svg>Estudar</a>
+      <a class="item"><svg class="i"><use href="#livro"/></svg>Aprender</a>
+      <a class="item"><svg class="i"><use href="#mapa"/></svg>Mapa</a>
+      <a class="item"><svg class="i"><use href="#caderno"/></svg>Caderno</a>
+      <a class="item"><svg class="i"><use href="#frasco"/></svg>Laboratório</a>
+      <a class="item"><svg class="i"><use href="#ajustes"/></svg>Ajustes</a>
+    </div>
+    <a class="item fim"><svg class="i"><use href="#lua"/></svg>Modo escuro</a>
+  </nav>
+
+  <main class="conteudo hoje">
+    <div class="card sprint">
+      <div>
+        <h1>Boa noite, Matheus</h1>
+        <h2 style="margin-top:16px">Sprint de 5 questões</h2>
+        <p class="desc">Próximas: 5 questões oficiais em 4 habilidades, fáceis primeiro. Uns 12 minutos, com as suas revisões no meio.</p>
+        <div class="acoes">
+          <button class="btn prim">Começar <kbd>Enter</kbd></button>
+          <span class="suave num">Hoje: 1 sprint, 1/5 acertos</span>
+        </div>
+      </div>
+      <ol class="fila">
+        <li><span class="n">1</span><span class="cod">H20</span><span>Gráfico cartesiano</span><span class="suave">fácil</span></li>
+        <li><span class="n">2</span><span class="cod">H7</span><span>Planificações e sólidos</span><span class="suave">fácil</span></li>
+        <li><span class="n">3</span><span class="cod">H26</span><span>Gráficos e argumentação</span><span class="suave">fácil</span></li>
+        <li><span class="n">4</span><span class="cod">H6</span><span>Visão espacial</span><span class="suave">fácil</span></li>
+        <li><span class="n">5</span><span class="cod">H6</span><span>Visão espacial</span><span class="suave">fácil</span></li>
+      </ol>
+    </div>
+
+    <div class="stats">
+      <div class="card stat"><div class="rot">Dias até a prova</div><div class="val num"><span class="grifo">362</span></div><div class="det">prova em 07/11/2027</div></div>
+      <div class="card stat"><div class="rot">Resolvidas hoje</div><div class="val num"><span class="grifo">5</span></div><div class="det">1 acerto · 1 sprint</div></div>
+      <div class="card stat"><div class="rot">Nota estimada</div><div class="val num"><span class="grifo">391</span></div><div class="det">262–520 · estimativa</div></div>
+      <div class="card stat"><div class="rot">Revisões vencidas</div><div class="val num"><span class="grifo">0</span></div><div class="det">retenção prevista acima de 90%</div></div>
+    </div>
+
+    <div class="tres">
+      <div class="card">
+        <h2>Plano de hoje</h2>
+        <ul class="plano">
+          <li class="feito"><span class="ok"><svg class="i sm"><use href="#check"/></svg></span><span>1 sprint feito hoje</span><span></span></li>
+          <li class="feito"><span class="ok"><svg class="i sm"><use href="#check"/></svg></span><span>Revisões em dia</span><span></span></li>
+          <li><span class="pend"></span><span>Refazer 4 erros abertos do caderno<small>Caderno</small></span><svg class="i sm"><use href="#seta"/></svg></li>
+          <li><span class="pend"></span><span>Simulado de 15 fáceis inéditos<small>Simulado</small></span><svg class="i sm"><use href="#seta"/></svg></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Questões por dia</h2>
+        <div class="grafico">
+          <div class="colunas">
+            <div class="meta"></div>
+            <div class="col">0<i></i></div>
+            <div class="col">0<i></i></div>
+            <div class="col">0<i></i></div>
+            <div class="col">0<i></i></div>
+            <div class="col">0<i></i></div>
+            <div class="col">0<i></i></div>
+            <div class="col hoje-c">5<i></i></div>
+          </div>
+          <div class="dias"><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span><span>D</span><span class="h">S</span></div>
+          <div class="legenda"><i></i>meta 5/dia (um sprint)</div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Domínio por habilidade</h2>
+        <p class="sub">As que mais precisam de atenção (de 0 a 1)</p>
+        <ul class="dominio num">
+          <li><b>H20</b><div class="barra"><i style="width:22%"></i></div><span class="v">0,22</span></li>
+          <li><b>H7</b><div class="barra"><i style="width:22%"></i></div><span class="v">0,22</span></li>
+          <li><b>H26</b><div class="barra"><i style="width:22%"></i></div><span class="v">0,22</span></li>
+          <li><b>H6</b><div class="barra"><i style="width:22%"></i></div><span class="v">0,22</span></li>
+          <li><b>H1</b><div class="barra"><i style="width:51%"></i></div><span class="v">0,51</span></li>
+        </ul>
+        <a class="link">Ver o mapa completo <svg class="i sm"><use href="#seta"/></svg></a>
+      </div>
+    </div>
+
+    <p class="rodape">636 questões oficiais do INEP (transcrição enem.dev) · nota TRI sempre estimada · explicações do tutor podem conter erros · seu progresso fica salvo neste navegador</p>
+  </main>
+</section>
+
+<!-- 3. Tela 2 -->
+<div class="rotulo-tela">Tela 2 — IDE de estudo (dados de exemplo)</div>
+<section class="moldura">
+  <nav class="lateral">
+    <div class="marca"><svg class="i"><use href="#cap"/></svg>Gabarita</div>
+    <div class="menu">
+      <a class="item"><svg class="i"><use href="#casa"/></svg>Hoje</a>
+      <a class="item ativo"><svg class="i"><use href="#alvo"/></svg><span class="grifo">Estudar</span></a>
+      <a class="item"><svg class="i"><use href="#livro"/></svg>Aprender</a>
+      <a class="item"><svg class="i"><use href="#mapa"/></svg>Mapa</a>
+      <a class="item"><svg class="i"><use href="#caderno"/></svg>Caderno</a>
+      <a class="item"><svg class="i"><use href="#frasco"/></svg>Laboratório</a>
+      <a class="item"><svg class="i"><use href="#ajustes"/></svg>Ajustes</a>
+    </div>
+    <a class="item fim"><svg class="i"><use href="#lua"/></svg>Modo escuro</a>
+  </nav>
+
+  <div class="ide">
+    <div class="barra-sprint">
+      <span class="t">Sprint</span>
+      <div class="passos"><i class="at"></i><i></i><i></i><i></i><i></i></div>
+      <span class="num t">1/5</span>
+      <span class="suave">Gráfico cartesiano · H20</span>
+      <span class="esp"></span>
+      <span class="crono num"><svg class="i sm"><use href="#relogio"/></svg>00:41</span>
+      <span class="ibtn" title="Laboratório"><svg class="i sm"><use href="#frasco"/></svg></span>
+      <span class="ibtn" title="Modo foco"><svg class="i sm"><use href="#foco"/></svg></span>
+    </div>
+
+    <div class="area">
+      <div class="lado-q">
+        <article class="card qcard">
+          <div class="qtopo">
+            <span class="tag">ENEM 2012 · Q148</span>
+            <span class="tag num">fácil · b −1,26</span>
+            <span class="tag">H20</span>
+            <button class="btn cont peq"><svg class="i sm"><use href="#olho"/></svg>Ver visualmente</button>
+          </div>
+          <div class="figura">
+            <svg viewBox="0 0 560 168" font-family="Atkinson Hyperlegible" font-size="11" fill="var(--texto-suave)">
+              <text x="8" y="14" fill="var(--tinta)" font-weight="700">vendas (R$)</text>
+              <line x1="36" y1="140" x2="552" y2="140" stroke="var(--borda-campo)" stroke-width="1"/>
+              <line x1="36" y1="24" x2="36" y2="140" stroke="var(--borda-campo)" stroke-width="1"/>
+              <g stroke="var(--borda-campo)" stroke-width="1" stroke-dasharray="3 3">
+                <line x1="60" y1="84" x2="60" y2="140"/><line x1="104" y1="78" x2="104" y2="140"/>
+                <line x1="148" y1="58" x2="148" y2="140"/><line x1="192" y1="70" x2="192" y2="140"/>
+                <line x1="236" y1="64" x2="236" y2="140"/><line x1="280" y1="32" x2="280" y2="140"/>
+                <line x1="324" y1="70" x2="324" y2="140"/><line x1="368" y1="112" x2="368" y2="140"/>
+                <line x1="412" y1="92" x2="412" y2="140"/><line x1="456" y1="78" x2="456" y2="140"/>
+                <line x1="500" y1="70" x2="500" y2="140"/><line x1="544" y1="58" x2="544" y2="140"/>
+              </g>
+              <polyline fill="none" stroke="var(--tinta)" stroke-width="2" stroke-linejoin="round" points="60,84 104,78 148,58 192,70 236,64 280,32 324,70 368,112 412,92 456,78 500,70 544,58"/>
+              <g fill="var(--tinta)">
+                <circle cx="60" cy="84" r="3.5"/><circle cx="104" cy="78" r="3.5"/><circle cx="148" cy="58" r="3.5"/><circle cx="192" cy="70" r="3.5"/>
+                <circle cx="236" cy="64" r="3.5"/><circle cx="280" cy="32" r="3.5"/><circle cx="324" cy="70" r="3.5"/><circle cx="368" cy="112" r="3.5"/>
+                <circle cx="412" cy="92" r="3.5"/><circle cx="456" cy="78" r="3.5"/><circle cx="500" cy="70" r="3.5"/><circle cx="544" cy="58" r="3.5"/>
+              </g>
+              <g text-anchor="middle">
+                <text x="60" y="158">Jan</text><text x="104" y="158">Fev</text><text x="148" y="158">Mar</text><text x="192" y="158">Abr</text>
+                <text x="236" y="158">Mai</text><text x="280" y="158">Jun</text><text x="324" y="158">Jul</text><text x="368" y="158">Ago</text>
+                <text x="412" y="158">Set</text><text x="456" y="158">Out</text><text x="500" y="158">Nov</text><text x="544" y="158">Dez</text>
+              </g>
+            </svg>
+          </div>
+          <p class="enun">De acordo com o gráfico, os meses em que ocorreram, respectivamente, a maior e a menor venda absolutas em 2011 foram</p>
+          <ul class="alts">
+            <li class="alt"><span class="l">A</span>Março e abril.</li>
+            <li class="alt marcada"><span class="l">B</span>Março e agosto.</li>
+            <li class="alt"><span class="l">C</span>Agosto e setembro.</li>
+            <li class="alt"><span class="l">D</span>Junho e setembro.</li>
+            <li class="alt"><span class="l">E</span>Junho e agosto.</li>
+          </ul>
+          <p class="fonte-q">Fonte: ENEM 2012, INEP</p>
+          <div class="qrodape">
+            <div class="dom-bloco num"><div class="dom-linha">domínio H20 <div class="barra"><i style="width:22%"></i></div><b>0,22</b></div><div class="dom-linha">domínio efetivo 0,16 (meta 0,85)</div></div>
+            <div class="bts">
+              <button class="btn sec">Pular</button>
+              <button class="btn prim">Confirmar <kbd>Enter</kbd></button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <aside class="tutor">
+        <div class="tutor-topo"><h2>Tutor</h2><span class="tag avi">modo guiado</span></div>
+        <div class="aviso"><svg class="i sm"><use href="#alerta"/></svg><span>Tutor de IA desligado: falta a chave ANTHROPIC_API_KEY. Usando dicas verificadas.</span></div>
+        <div class="msgs">
+          <div class="balao"><span class="deg">Degrau 0 · pergunta</span>Antes de calcular: o que a questão está pedindo, com as suas palavras?</div>
+          <div class="balao aluno">o mês que mais vendeu e o que menos vendeu</div>
+        </div>
+        <div class="sugs">
+          <button class="btn cont peq">Dica</button>
+          <button class="btn cont peq">Gráfico</button>
+          <button class="btn cont peq">Laboratório</button>
+        </div>
+        <div class="escada">
+          <div class="escada-topo"><b>Dica</b><span class="suave num">0 de 4 degraus usados</span></div>
+          <div class="degraus"><i></i><i></i><i></i><i></i></div>
+          <div class="degraus-rot num"><span>1</span><span>2</span><span>3</span><span>4</span></div>
+          <div class="bts">
+            <button class="btn cont peq">Resposta direta <kbd>⌥R</kbd></button>
+            <button class="btn sec peq">Próximo degrau <kbd>H</kbd></button>
+          </div>
+        </div>
+        <div class="campo-tutor">
+          <div class="inp">peça dica, resolução ou conta…</div>
+          <button class="btn prim" aria-label="Enviar"><svg class="i sm"><use href="#enviar"/></svg></button>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Faixa de estados -->
+<div class="rotulo-tela">Estados</div>
+<section class="estados">
+  <div>
+    <h3>(a) Alternativas depois de confirmar</h3>
+    <ul class="alts" style="margin:0">
+      <li class="alt"><span class="l">A</span>Março e abril.</li>
+      <li class="alt errada"><span class="l"><svg class="i sm"><use href="#xis"/></svg></span>Março e agosto.<span class="st">sua resposta</span></li>
+      <li class="alt"><span class="l">C</span>Agosto e setembro.</li>
+      <li class="alt"><span class="l">D</span>Junho e setembro.</li>
+      <li class="alt certa"><span class="l"><svg class="i sm"><use href="#check"/></svg></span>Junho e agosto.<span class="st">gabarito</span></li>
+    </ul>
+    <p class="msg-erro">Não foi dessa vez. O gabarito é E</p>
+  </div>
+  <div>
+    <div class="bloco">
+      <h3>(b) Botões</h3>
+      <div class="linha-bts">
+        <button class="btn prim">Primário <kbd>Enter</kbd></button>
+        <button class="btn sec">Secundário</button>
+        <button class="btn cont">Contorno</button>
+        <button class="btn desab" disabled>Desabilitado</button>
+      </div>
+    </div>
+    <div class="bloco">
+      <h3>(c) Etiquetas</h3>
+      <div class="linha-tags">
+        <span class="tag">neutra</span>
+        <span class="tag dest">destaque</span>
+        <span class="tag suc">sucesso</span>
+        <span class="tag avi">aviso</span>
+        <span class="tag err">erro</span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="bloco campo">
+      <h3>(d) Campo com foco</h3>
+      <label for="c1">Seu nome</label>
+      <input id="c1" class="foco" value="Matheus">
+      <small>Anel de 2px em amarelo, borda em tinta.</small>
+    </div>
+    <div class="bloco">
+      <h3>(e) Progresso</h3>
+      <div class="prog-rot"><span>Meta da semana</span><b class="num">22%</b></div>
+      <div class="barra"><i style="width:22%"></i></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

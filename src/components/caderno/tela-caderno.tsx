@@ -135,7 +135,7 @@ export function TelaCaderno() {
                   onClick={() => setFiltro(f)}
                   className={cn(
                     "h-9 rounded-full border-[1.5px] border-border bg-surface px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duration)",
-                    filtro === f && "border-accent bg-accent text-white",
+                    filtro === f && "border-accent bg-accent-solid text-white",
                   )}
                 >
                   {f === "abertos" ? "Abertos" : "Todos"}
