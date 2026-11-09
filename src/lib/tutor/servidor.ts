@@ -20,6 +20,7 @@ import {
 import { z } from "zod";
 import type { Questao } from "@/data/tipos";
 import { LETRAS } from "@/data/tipos";
+import { AVISO_MODO_LOCAL, criarModeloClaudeLocal } from "./claude-local";
 import { configuracaoTutor, modeloGateway, type ConfiguracaoTutor } from "./config";
 import { ferramentasTutor, type DadosTutor, type FerramentasTutor } from "./ferramentas";
 import { montarInstrucoes, type ContextoConversa } from "./prompt";
@@ -53,7 +54,15 @@ export function respostaErro(codigo: ErroTutor, status: number, mensagem: string
 }
 
 /** Cria o modelo a partir da configuração (nunca expõe a chave). */
-export function criarModelo(config: ConfiguracaoTutor, env: Record<string, string | undefined>): LanguageModel {
+export function criarModelo(
+  config: ConfiguracaoTutor,
+  env: Record<string, string | undefined>,
+  ferramentas?: FerramentasTutor,
+): LanguageModel {
+  if (config.provedor === "claude-local") {
+    if (!ferramentas) throw new Error("claude-local precisa das ferramentas da questão.");
+    return criarModeloClaudeLocal(config, ferramentas, env, MAX_PASSOS);
+  }
   if (config.provedor === "gateway") {
     return createGateway({ apiKey: env.AI_GATEWAY_API_KEY })(modeloGateway(config.modelo));
   }
@@ -151,7 +160,8 @@ export async function responderTutor({ corpo, env, buscarQuestao, modelo }: Opco
     return respostaErro("invalid_body", 400, "Histórico de mensagens inválido.");
   }
 
-  const modeloFinal = modelo ?? criarModelo(config, env);
+  const modeloFinal = modelo ?? criarModelo(config, env, ferramentas);
+  const local = config.provedor === "claude-local";
   const cache = { anthropic: { cacheControl: { type: "ephemeral" as const } } };
 
   const stream = createUIMessageStream<UIMessage<never, DadosTutor>>({
@@ -162,6 +172,7 @@ export async function responderTutor({ corpo, env, buscarQuestao, modelo }: Opco
           { role: "system", content: instrucoes.fixo, providerOptions: cache },
           { role: "system", content: instrucoes.perfil, providerOptions: cache },
           { role: "system", content: instrucoes.contexto },
+          ...(local ? [{ role: "system" as const, content: AVISO_MODO_LOCAL }] : []),
         ],
         messages: mensagensModelo,
         tools: ferramentas,

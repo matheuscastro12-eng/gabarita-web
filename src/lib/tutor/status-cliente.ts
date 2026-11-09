@@ -6,7 +6,7 @@ import * as React from "react";
 export interface StatusIA {
   /** null enquanto carrega. */
   ia: boolean | null;
-  provedor: "anthropic" | "gateway" | null;
+  provedor: "anthropic" | "gateway" | "claude-local" | null;
   modelo: string | null;
 }
 

@@ -279,3 +279,20 @@ describe("responderTutor: provedores, erros de stream e histórico", () => {
     expect(textoDe(await lerChunks(res))).toContain("parte");
   });
 });
+
+describe("responderTutor com TUTOR_PROVIDER=claude-local", () => {
+  it("não pede chave e avisa o modelo que run_python e record_event estão fora", async () => {
+    const modelo = mock([[...texto("Qual é a pergunta?"), fim("stop")]]);
+    const res = await responderTutor({ corpo: corpo(), env: { TUTOR_PROVIDER: "claude-local" }, buscarQuestao, modelo });
+    expect(res.status).toBe(200);
+    await lerChunks(res);
+    const sistema = JSON.stringify(modelo.doStreamCalls[0]?.prompt.filter((m) => m.role === "system"));
+    expect(sistema).toContain("run_python e record_event não estão disponíveis");
+  });
+  it("com chave da API, o aviso do modo local não entra", async () => {
+    const modelo = mock([[...texto("Oi."), fim("stop")]]);
+    const res = await responderTutor({ corpo: corpo(), env: { ANTHROPIC_API_KEY: "k" }, buscarQuestao, modelo });
+    await lerChunks(res);
+    expect(JSON.stringify(modelo.doStreamCalls[0]?.prompt)).not.toContain("não estão disponíveis");
+  });
+});

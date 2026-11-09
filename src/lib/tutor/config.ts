@@ -7,7 +7,7 @@ export const MODELO_PADRAO = "claude-sonnet-5-5";
 export type Esforco = "low" | "medium" | "high";
 export const ESFORCO_PADRAO: Esforco = "low";
 
-export type Provedor = "anthropic" | "gateway";
+export type Provedor = "anthropic" | "gateway" | "claude-local";
 
 export interface ConfiguracaoTutor {
   /** null quando nenhuma chave está definida (modo guiado offline). */
@@ -22,12 +22,16 @@ function limpar(valor: string | undefined): string {
   return (valor ?? "").trim();
 }
 
-/** Lê ANTHROPIC_API_KEY (prioridade), AI_GATEWAY_API_KEY, TUTOR_MODEL e TUTOR_EFFORT. */
+/**
+ * Lê TUTOR_PROVIDER, ANTHROPIC_API_KEY, AI_GATEWAY_API_KEY, TUTOR_MODEL e TUTOR_EFFORT.
+ * Ordem: TUTOR_PROVIDER=claude-local (Claude Code logado no Mac) > ANTHROPIC_API_KEY > AI_GATEWAY_API_KEY.
+ */
 export function configuracaoTutor(env: Env): ConfiguracaoTutor {
   const modelo = limpar(env.TUTOR_MODEL) || MODELO_PADRAO;
   const esforcoBruto = limpar(env.TUTOR_EFFORT);
   const esforco: Esforco =
     esforcoBruto === "low" || esforcoBruto === "medium" || esforcoBruto === "high" ? esforcoBruto : ESFORCO_PADRAO;
+  if (limpar(env.TUTOR_PROVIDER).toLowerCase() === "claude-local") return { provedor: "claude-local", modelo, esforco };
   if (limpar(env.ANTHROPIC_API_KEY)) return { provedor: "anthropic", modelo, esforco };
   if (limpar(env.AI_GATEWAY_API_KEY)) return { provedor: "gateway", modelo, esforco };
   return { provedor: null, modelo, esforco };
