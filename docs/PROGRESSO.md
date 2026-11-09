@@ -187,3 +187,14 @@ Branch `feat/design-polish-animacoes`.
 ### Pendências
 - E2E instável nesta máquina por carga (load average acima de 150 durante a sessão): `page.goto` e navegações estouram o timeout de forma aleatória, em testes diferentes a cada rodada. Uma rodada completa passou 32/32; as outras falharam em 1 a 6 testes distintos, todos verdes quando rodados de novo.
 - Conferir a sensação das animações num Mac de verdade (aqui, Chromium headless).
+
+## Resumos de caderno (09/11/2026, branch feat/resumos-caderno)
+
+### O que foi feito
+- 18 resumos de matemática em `src/lib/resumos/conteudo.ts`, cada um com habilidades Hn, selo de incidência, mapa mental, fórmulas KaTeX, como o ENEM cobra, exemplo resolvido, pegadinhas grifadas, truque de prova e anotações de margem. Fontes em docs/FONTES-RESUMOS.md.
+- Telas `/resumos` (mapa geral da matemática ligando os 18, busca sem acento, grade por competência, "estudado" em localStorage `gabarita:resumos-estudados` com barra de progresso) e `/resumos/<id>` (treinar: questões reais do app com a mesma habilidade e assunto, e o visual de /aprender quando existe). Link "Ver resumo" na IDE.
+- Testes: `src/lib/resumos/resumos.test.ts` (107 casos; toda conta de exemplo conferida com mathjs, toda fórmula compilada no KaTeX, habilidades e assuntos existem, mapas sem sobreposição; 100% de cobertura exigida na pasta); `e2e/resumos.spec.ts` (4 testes).
+
+### Pendências
+- Revisão humana do texto dos resumos (a matemática foi conferida, a didática não).
+- Mapa mental em telas médias (768 a 1024px) não foi fotografado.
