@@ -123,7 +123,7 @@ export function textoDegrau(questao: Questao, n: 1 | 2 | 3 | 4): { texto: string
 
 function sugestoesPara(estado: EstadoOffline, extras: Sugestao[] = []): Sugestao[] {
   const s: Sugestao[] = [];
-  if (estado.degrau < 4) s.push({ rotulo: estado.degrau === 3 ? "Ver a resolução" : "Próximo degrau", mensagem: "Me dá uma dica." });
+  if (estado.degrau < 4) s.push({ rotulo: estado.degrau === 3 ? "Ver a resolução" : "Dica", mensagem: "Me dá uma dica." });
   if (estado.confirmada && estado.escolha && estado.escolha !== estado.questao.gabarito) {
     s.push({ rotulo: "Por que errei?", mensagem: "Por que errei?" });
   }
@@ -215,12 +215,13 @@ function respostaResposta(estado: EstadoOffline): RespostaOffline {
   const pedido = estado.degrau < 4 && !estado.confirmada;
   const eventos: EntradaEvento[] = [];
   if (pedido) eventos.push({ tipo: "pedido_resposta", questaoId: questao.id, detalhe: "pediu a resposta direta (modo guiado)", degrau: 4 });
-  const proximo: EstadoOffline = { ...estado, degrau: 4, pedidoResposta: estado.pedidoResposta || pedido };
+  const proximo: EstadoOffline = { ...estado, degrau: 4, pedidoResposta: true };
   return {
     texto: `${texto}\n\n${geradorPara(questao) ? "Quer treinar numa gêmea com números novos?" : "Quer levar a conta para o Laboratório?"}`,
     rotulo: `Resolução completa${curado ? "" : " (sem curadoria)"}`,
     novoDegrau: 4,
-    pedidoResposta: pedido || undefined,
+    // O botão "Resposta direta" fica marcado como pedido; o evento só conta antes do degrau 4 e antes de confirmar.
+    pedidoResposta: true,
     conferido: curado ? true : undefined,
     eventos,
     sugestoes: sugestoesPara(proximo),

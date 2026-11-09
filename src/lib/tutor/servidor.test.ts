@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { simulateReadableStream, type UIMessage } from "ai";
 import { MockLanguageModelV4 } from "ai/test";
 import type { LanguageModelV4StreamPart } from "@ai-sdk/provider";
@@ -217,5 +217,65 @@ describe("responderTutor com modelo mock", () => {
     const ferramentas = (modelo.doStreamCalls[0]?.tools ?? []).map((t) => t.name).sort();
     expect(ferramentas).toEqual(["calc", "get_hint", "make_twin", "plot_function", "record_event", "run_python", "verify_answer"]);
     expect(modelo.doStreamCalls[0]?.providerOptions).toMatchObject({ anthropic: { effort: "low" } });
+  });
+});
+
+describe("responderTutor: provedores, erros de stream e histórico", () => {
+  const env = { ANTHROPIC_API_KEY: "sk-teste" };
+
+  it("criarModelo monta o modelo Anthropic ou do Gateway sem expor a chave", async () => {
+    const { criarModelo } = await import("./servidor");
+    type ComId = { modelId: string; provider: string };
+    const a = criarModelo({ provedor: "anthropic", modelo: "claude-sonnet-5-5", esforco: "low" }, env) as unknown as ComId;
+    expect(a.modelId).toBe("claude-sonnet-5-5");
+    expect(a.provider).toMatch(/anthropic/);
+    const g = criarModelo({ provedor: "gateway", modelo: "claude-sonnet-5-5", esforco: "low" }, { AI_GATEWAY_API_KEY: "gw" }) as unknown as ComId;
+    expect(g.modelId).toBe("anthropic/claude-sonnet-5-5");
+    expect(JSON.stringify({ a: a.modelId, g: g.modelId })).not.toContain("sk-teste");
+  });
+
+  it("com gateway configurado (sem modelo injetado) a rota passa da checagem de chave", async () => {
+    const res = await responderTutor({ corpo: { messages: [] }, env: { AI_GATEWAY_API_KEY: "gw" }, buscarQuestao });
+    expect(res.status).toBe(400); // chegou na validação do corpo
+  });
+
+  it("texto interrompido sem text-end é liberado (redigido) no flush", async () => {
+    const modelo = mock([
+      [
+        { type: "text-start", id: "t1" },
+        { type: "text-delta", id: "t1", delta: "É a alternativa C, confia." },
+        fim("stop"),
+      ],
+    ]);
+    const res = await responderTutor({ corpo: corpo(), env, buscarQuestao, modelo });
+    const t = textoDe(await lerChunks(res));
+    expect(t).toContain("▮▮▮");
+    expect(t).not.toMatch(/alternativa C/);
+  });
+
+  it("erro do provedor vira mensagem de erro no stream, sem derrubar a rota", async () => {
+    const silencio = vi.spyOn(console, "error").mockImplementation(() => {});
+    const modelo = mock([[{ type: "error", error: new Error("boom do provedor") }]]);
+    const res = await responderTutor({ corpo: corpo(), env, buscarQuestao, modelo });
+    expect(res.status).toBe(200);
+    const chunks = await lerChunks(res);
+    expect(chunks.some((c) => c.type === "error")).toBe(true);
+    silencio.mockRestore();
+  });
+
+  it("histórico com parte de ferramenta incompleta é tolerado", async () => {
+    const modelo = mock([[...texto("Qual é a parte e qual é o todo?"), fim("stop")]]);
+    const historico: UIMessage[] = [
+      mensagem("oi"),
+      {
+        id: "a1",
+        role: "assistant",
+        parts: [{ type: "tool-run_python", toolCallId: "x", state: "input-available", input: { codigo: "1+1" } } as never],
+      },
+      { ...mensagem("continua"), id: "u2" },
+    ];
+    const res = await responderTutor({ corpo: { ...corpo(), messages: historico }, env, buscarQuestao, modelo });
+    expect(res.status).toBe(200);
+    expect(textoDe(await lerChunks(res))).toContain("parte");
   });
 });

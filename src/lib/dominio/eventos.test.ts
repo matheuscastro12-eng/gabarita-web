@@ -59,11 +59,12 @@ describe("equivocosRecorrentes", () => {
       caderno: [
         { id: "e1", tentativaId: "t1", questaoId: "q", habilidade: "H3", escolha: "B", gabarito: "C", porQue: "Esqueceu o 100%", em: agora.toISOString(), resolvidaEm: null },
         { id: "e2", tentativaId: "t2", questaoId: "q", habilidade: "H3", escolha: "B", gabarito: "C", porQue: null, em: agora.toISOString(), resolvidaEm: null },
+        { id: "e3", tentativaId: "t3", questaoId: "q", habilidade: "H3", escolha: "B", gabarito: "C", porQue: "Esqueceu o 100%", em: agora.toISOString(), resolvidaEm: null },
       ],
     };
     expect(equivocosRecorrentes(estado)).toEqual([
       { detalhe: "dividiu pelo valor novo", vezes: 2 },
-      { detalhe: "esqueceu o 100%", vezes: 1 },
+      { detalhe: "esqueceu o 100%", vezes: 2 },
     ]);
     expect(equivocosRecorrentes(estado, 1)).toHaveLength(1);
     const semEventos = { ...estadoInicial(agora) } as EstadoAluno;

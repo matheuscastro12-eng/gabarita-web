@@ -85,6 +85,7 @@ export function ferramentasTutor(questao: Questao) {
         codigo: z.string().min(1).max(4000).describe("Código Python. A última linha pode ser uma expressão para ver o valor."),
         objetivo: z.string().max(200).optional().describe("O que você quer conferir, em uma frase."),
       }),
+      outputSchema: saidaPythonSchema,
       // Sem execute: roda no cliente (Pyodide num Web Worker).
     }),
     [NOME_FERRAMENTAS.verifyAnswer]: tool({
@@ -134,6 +135,7 @@ export function ferramentasTutor(questao: Questao) {
         detalhe: z.string().max(300),
         degrau: z.number().int().min(0).max(4).optional(),
       }),
+      outputSchema: z.object({ ok: z.boolean() }),
       // Sem execute: o cliente grava no StudentStore.
     }),
   };

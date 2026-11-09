@@ -75,7 +75,7 @@ describe("responderOffline", () => {
   it("abertura é a pergunta socrática com chips", () => {
     const a = aberturaOffline(estado());
     expect(a.texto).toMatch(/\?$/);
-    expect(a.sugestoes.map((s) => s.rotulo)).toEqual(["Próximo degrau", "Questão gêmea", "Gráfico", "Laboratório"]);
+    expect(a.sugestoes.map((s) => s.rotulo)).toEqual(["Dica", "Questão gêmea", "Gráfico", "Laboratório"]);
     expect(AVISO_OFFLINE).toContain("ANTHROPIC_API_KEY");
   });
   it("escada de dicas sobe um degrau por pedido e registra eventos", async () => {
@@ -124,7 +124,7 @@ describe("responderOffline", () => {
     expect(r.texto).toContain("gêmea");
     expect(r.eventos).toEqual([{ tipo: "pedido_resposta", questaoId: "enem-2022-154", detalhe: "pediu a resposta direta (modo guiado)", degrau: 4 }]);
     const depois = await responderOffline("resolução", estado({ confirmada: true }), deps);
-    expect(depois.pedidoResposta).toBeUndefined();
+    expect(depois.pedidoResposta).toBe(true); // marca o botão, mas não registra evento depois de confirmar
     expect(depois.eventos).toEqual([]);
     const semCur = await responderOffline("resolução", estado({ questao: semCuradoria, degrau: 4 }), deps);
     expect(semCur.rotulo).toContain("(sem curadoria)");
