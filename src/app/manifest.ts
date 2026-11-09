@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Gabarita",
     short_name: "Gabarita",
-    description: "IDE de estudo de matemática do ENEM: a questão de um lado, o tutor do outro.",
+    description: "Matemática do ENEM: questões oficiais, resumos com mapa mental e um mapa de domínio.",
     lang: "pt-BR",
     start_url: "/",
     scope: "/",

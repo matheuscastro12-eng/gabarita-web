@@ -14,6 +14,7 @@ import type { Resumo } from "@/lib/resumos/conteudo";
 import type { MensagemTutor } from "@/lib/tutor/ferramentas";
 import type { Sugestao } from "@/lib/tutor/offline";
 import { marcarIADesligada, useStatusIA } from "@/lib/tutor/status-cliente";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 import { useStore } from "@/lib/store/provider";
 import { Balao, MensagemTutorView } from "@/components/estudo/mensagem-tutor";
 import { Button } from "@/components/ui/button";
@@ -41,8 +42,13 @@ function Casca({ modo, modelo, children, rodape }: { modo: ModoTutor; modelo?: s
   );
 }
 
-/** Painel do chat: escolhe o modo pelo /api/status. */
+/** Painel do chat: escolhe o modo pelo /api/status. Some por completo quando o tutor está oculto. */
 export function PainelDuvida({ resumo }: { resumo: Resumo }) {
+  if (!TUTOR_VISIVEL) return null;
+  return <PainelDuvidaAtivo resumo={resumo} />;
+}
+
+function PainelDuvidaAtivo({ resumo }: { resumo: Resumo }) {
   const status = useStatusIA();
   if (status.ia === null) {
     return (
@@ -165,6 +171,11 @@ export function useDesktop(): boolean | null {
  * A gaveta fica montada depois da primeira abertura, para a conversa não sumir ao fechar.
  */
 export function GavetaDuvida({ resumo }: { resumo: Resumo }) {
+  if (!TUTOR_VISIVEL) return null;
+  return <GavetaDuvidaAtiva resumo={resumo} />;
+}
+
+function GavetaDuvidaAtiva({ resumo }: { resumo: Resumo }) {
   const [aberta, setAberta] = React.useState(false);
   const [jaAbriu, setJaAbriu] = React.useState(false);
   return (

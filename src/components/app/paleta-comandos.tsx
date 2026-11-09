@@ -10,6 +10,7 @@ import { Kbd } from "@/components/ui/kbd";
 import { useAtalho, useListaAtalhos } from "@/lib/atalhos/provider";
 import { teclasParaExibir } from "@/lib/atalhos/registro";
 import { useEhMac } from "@/lib/use-cliente";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 import { NAVEGACAO } from "./navegacao";
 
 interface Props {
@@ -40,7 +41,7 @@ export function PaletaComandos({ aberta, aoMudar, abrirAjuda }: Props) {
     setTimeout(fn, 0);
   };
 
-  const acoesDeTela = atalhos.filter((a) => a.grupo !== "Navegação" && a.grupo !== "Geral" && a.ativo !== false);
+  const acoesDeTela = atalhos.filter((a) => a.grupo !== "Navegação" && a.grupo !== "Geral" && a.ativo !== false && (TUTOR_VISIVEL || a.grupo !== "Tutor"));
 
   return (
     <Dialog open={aberta} onOpenChange={aoMudar}>

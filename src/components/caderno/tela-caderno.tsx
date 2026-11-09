@@ -18,6 +18,7 @@ import { Esqueleto, EsqueletoTexto } from "@/components/ui/esqueleto";
 import { GemeaCard } from "@/components/estudo/gemea-card";
 import { Markdown } from "@/components/estudo/markdown";
 import { useResponderGemea } from "@/components/estudo/use-responder-gemea";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 import { cn } from "@/lib/utils";
 
 type Filtro = "abertos" | "todos";
@@ -250,7 +251,13 @@ function EntradaView({
 
       <div className="rounded-md bg-background px-3 py-2 text-sm dark:bg-surface-2" data-testid="equivoco">
         <span className="font-bold">Equívoco: </span>
-        {entrada.porQue ? <span>{entrada.porQue}</span> : <span className="text-muted-foreground">sem diagnóstico ainda. Refaça com o tutor e peça “por que errei?”.</span>}
+        {entrada.porQue ? (
+          <span>{entrada.porQue}</span>
+        ) : (
+          <span className="text-muted-foreground">
+            {TUTOR_VISIVEL ? "sem diagnóstico ainda. Refaça com o tutor e peça “por que errei?”." : "sem diagnóstico ainda."}
+          </span>
+        )}
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
@@ -275,7 +282,7 @@ function EntradaView({
             <Copy /> Gêmea
           </Button>
         )}
-        {questao?.resolucao && (
+        {TUTOR_VISIVEL && questao?.resolucao && (
           <span className="flex items-center gap-1 text-xs text-muted-foreground">
             <Sparkles className="size-3.5" /> resolução curada disponível no tutor
           </span>

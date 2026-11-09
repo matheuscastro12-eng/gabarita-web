@@ -7,6 +7,7 @@ import { NOME_HABILIDADE } from "@/data/tipos";
 import type { DegrauDica } from "@/lib/dominio/tipos";
 import type { EntradaEvento } from "@/lib/dominio/eventos";
 import { useAtalho } from "@/lib/atalhos/provider";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 import { definirModoFoco } from "@/components/app/app-shell";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { GavetaLaboratorio } from "@/components/laboratorio/gaveta-laboratorio";
@@ -83,7 +84,13 @@ export function IDE({ questoes, indice, respostas, mostrarTimer, aoResponder, ao
   }, [foco]);
 
   useAtalho({ id: "foco", combinacao: "f", descricao: "Alternar o modo foco", grupo: "Geral", acao: () => setFoco((v) => !v) });
-  useAtalho({ id: "laboratorio", combinacao: "l", descricao: "Abrir o Laboratório (gaveta)", grupo: "Tutor", acao: () => setLaboratorio(true) });
+  useAtalho({
+    id: "laboratorio",
+    combinacao: "l",
+    descricao: "Abrir o Laboratório (gaveta)",
+    grupo: TUTOR_VISIVEL ? "Tutor" : "Geral",
+    acao: () => setLaboratorio(true),
+  });
 
   if (!questao) return null;
 
@@ -231,30 +238,6 @@ function QuestaoDoSprint({
   useAtalho({ id: "marcar-E", combinacao: "e", descricao: "Marcar a alternativa E", grupo: "Questão", ativo: !confirmada && letrasDisponiveis.has("E"), acao: () => setMarcada("E") });
   useAtalho({ id: "confirmar", combinacao: "enter", descricao: "Confirmar a resposta", grupo: "Questão", ativo: !confirmada, acao: confirmar });
   useAtalho({ id: "proxima", combinacao: "n", descricao: "Próxima questão", grupo: "Sprint", ativo: confirmada, acao: aoAvancar });
-  useAtalho({ id: "dica", combinacao: "h", descricao: "Pedir o próximo degrau de dica", grupo: "Tutor", ativo: degrau < 4, acao: pedirDica });
-  useAtalho({ id: "resposta-direta", combinacao: "alt+r", descricao: "Pedir a resposta direta (fica registrado)", grupo: "Tutor", emCampos: true, ativo: !pediuResposta, acao: pedirRespostaDireta });
-  useAtalho({
-    id: "chat",
-    combinacao: "/",
-    descricao: "Perguntar ao tutor",
-    grupo: "Tutor",
-    acao: () => {
-      setAba("tutor");
-      requestAnimationFrame(() => inputTutorRef.current?.focus());
-    },
-  });
-
-  // No Mac, ⌥R chega como "®": trata fora do registro para não duplicar na ajuda.
-  React.useEffect(() => {
-    const aoTecla = (e: KeyboardEvent) => {
-      if (e.altKey && e.key === "®" && !pediuResposta) {
-        e.preventDefault();
-        pedirRespostaDireta();
-      }
-    };
-    window.addEventListener("keydown", aoTecla);
-    return () => window.removeEventListener("keydown", aoTecla);
-  }, [pediuResposta, pedirRespostaDireta]);
 
   const rotuloHabilidade = questao.habilidade
     ? `${NOME_HABILIDADE[questao.habilidade] ?? "Habilidade"} · ${questao.habilidade}`
@@ -270,11 +253,11 @@ function QuestaoDoSprint({
       aoPular={pular}
       aoProxima={aoAvancar}
       ehUltima={ehUltima}
-      aoPerguntarSobre={perguntarSobre}
+      aoPerguntarSobre={TUTOR_VISIVEL ? perguntarSobre : undefined}
       comVisual
     />
   );
-  const painelTutor = (
+  const painelTutor = TUTOR_VISIVEL ? (
     <PainelTutor
       questao={questao}
       degrau={degrau}
@@ -291,10 +274,22 @@ function QuestaoDoSprint({
       aoEvento={aoEvento}
       aoResponderGemea={aoResponderGemea}
     />
-  );
+  ) : null;
 
   return (
     <div className="flex h-full min-h-0 flex-col">
+      {TUTOR_VISIVEL && (
+        <AtalhosDoTutor
+          degrau={degrau}
+          pediuResposta={pediuResposta}
+          pedirDica={pedirDica}
+          pedirRespostaDireta={pedirRespostaDireta}
+          focarChat={() => {
+            setAba("tutor");
+            requestAnimationFrame(() => inputTutorRef.current?.focus());
+          }}
+        />
+      )}
       <BarraSprint
         bolinhas={bolinhas}
         indice={indice}
@@ -306,54 +301,93 @@ function QuestaoDoSprint({
         aoAbrirLaboratorio={aoAbrirLaboratorio}
       />
 
-      {/* Desktop: painéis lado a lado. */}
-      <div className="hidden min-h-0 flex-1 md:block">
-        <Group
-          orientation="horizontal"
-          defaultLayout={layoutInicial}
-          onLayoutChanged={(layout, meta) => {
-            if (!meta.isUserInteraction) return;
-            try {
-              window.localStorage.setItem(CHAVE_LAYOUT, JSON.stringify(meta.requestedLayout ?? layout));
-            } catch {
-              /* sem armazenamento: ignora */
-            }
-          }}
-          className="h-full"
-        >
-          <Panel id="questao" defaultSize="58%" minSize="35%" className="min-w-0">
-            {painelQuestao}
-          </Panel>
-          <Separator className="w-1.5 cursor-col-resize" aria-label="Redimensionar painéis" />
-          <Panel id="tutor" defaultSize="42%" minSize="28%" className="min-w-0 bg-surface">
-            {painelTutor}
-          </Panel>
-        </Group>
-      </div>
+      {painelTutor ? (
+        <>
+          {/* Desktop: painéis lado a lado. */}
+          <div className="hidden min-h-0 flex-1 md:block">
+            <Group
+              orientation="horizontal"
+              defaultLayout={layoutInicial}
+              onLayoutChanged={(layout, meta) => {
+                if (!meta.isUserInteraction) return;
+                try {
+                  window.localStorage.setItem(CHAVE_LAYOUT, JSON.stringify(meta.requestedLayout ?? layout));
+                } catch {
+                  /* sem armazenamento: ignora */
+                }
+              }}
+              className="h-full"
+            >
+              <Panel id="questao" defaultSize="58%" minSize="35%" className="min-w-0">
+                {painelQuestao}
+              </Panel>
+              <Separator className="w-1.5 cursor-col-resize" aria-label="Redimensionar painéis" />
+              <Panel id="tutor" defaultSize="42%" minSize="28%" className="min-w-0 bg-surface">
+                {painelTutor}
+              </Panel>
+            </Group>
+          </div>
 
-      {/* Celular: abas. */}
-      <div className="flex min-h-0 flex-1 flex-col md:hidden">
-        <Tabs value={aba} onValueChange={(v) => setAba(v as "questao" | "tutor")} className="min-h-0 flex-1 gap-0">
-          <TabsList className="mx-3 mt-3 w-[calc(100%-1.5rem)] flex-nowrap">
-            <TabsTrigger value="questao" className="flex-1">
-              Questão
-            </TabsTrigger>
-            <TabsTrigger value="tutor" className="flex-1">
-              Tutor
-            </TabsTrigger>
-          </TabsList>
-          <TabsContent value="questao" className="mt-1 min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
-            {painelQuestao}
-          </TabsContent>
-          <TabsContent value="tutor" className="mt-1 min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
-            {painelTutor}
-          </TabsContent>
-        </Tabs>
-      </div>
+          {/* Celular: abas. */}
+          <div className="flex min-h-0 flex-1 flex-col md:hidden">
+            <Tabs value={aba} onValueChange={(v) => setAba(v as "questao" | "tutor")} className="min-h-0 flex-1 gap-0">
+              <TabsList className="mx-3 mt-3 w-[calc(100%-1.5rem)] flex-nowrap">
+                <TabsTrigger value="questao" className="flex-1">
+                  Questão
+                </TabsTrigger>
+                <TabsTrigger value="tutor" className="flex-1">
+                  Tutor
+                </TabsTrigger>
+              </TabsList>
+              <TabsContent value="questao" className="mt-1 min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
+                {painelQuestao}
+              </TabsContent>
+              <TabsContent value="tutor" className="mt-1 min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
+                {painelTutor}
+              </TabsContent>
+            </Tabs>
+          </div>
+        </>
+      ) : (
+        <div className="min-h-0 flex-1">{painelQuestao}</div>
+      )}
 
       {rodape && <footer className="shrink-0 border-t border-border bg-surface px-4 py-2 text-sm">{rodape}</footer>}
     </div>
   );
+}
+
+/** Atalhos do chat. Só monta com a interface do tutor ligada, para não aparecerem na ajuda. */
+function AtalhosDoTutor({
+  degrau,
+  pediuResposta,
+  pedirDica,
+  pedirRespostaDireta,
+  focarChat,
+}: {
+  degrau: DegrauDica;
+  pediuResposta: boolean;
+  pedirDica: () => void;
+  pedirRespostaDireta: () => void;
+  focarChat: () => void;
+}) {
+  useAtalho({ id: "dica", combinacao: "h", descricao: "Pedir o próximo degrau de dica", grupo: "Tutor", ativo: degrau < 4, acao: pedirDica });
+  useAtalho({ id: "resposta-direta", combinacao: "alt+r", descricao: "Pedir a resposta direta (fica registrado)", grupo: "Tutor", emCampos: true, ativo: !pediuResposta, acao: pedirRespostaDireta });
+  useAtalho({ id: "chat", combinacao: "/", descricao: "Perguntar ao tutor", grupo: "Tutor", acao: focarChat });
+
+  // No Mac, ⌥R chega como "®": trata fora do registro para não duplicar na ajuda.
+  React.useEffect(() => {
+    const aoTecla = (e: KeyboardEvent) => {
+      if (e.altKey && e.key === "®" && !pediuResposta) {
+        e.preventDefault();
+        pedirRespostaDireta();
+      }
+    };
+    window.addEventListener("keydown", aoTecla);
+    return () => window.removeEventListener("keydown", aoTecla);
+  }, [pediuResposta, pedirRespostaDireta]);
+
+  return null;
 }
 
 export { LETRAS };

@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { TUTOR_VISIVEL } from "./apoio";
 
 test.describe("Robustez", () => {
   test("IndexedDB bloqueado: o app segue em memória e avisa", async ({ page }) => {
@@ -64,6 +65,7 @@ test.describe("Robustez", () => {
   });
 
   test("questão sem curadoria: o modo guiado explica, dá o gabarito e aponta o Laboratório", async ({ page }) => {
+    test.skip(!TUTOR_VISIVEL, "interface do tutor oculta; ligue com NEXT_PUBLIC_TUTOR_VISIVEL=1");
     // ENEM 2012, Q148 não tem resolução curada.
     await page.goto("/estudar?questao=enem-2012-148");
     await expect(page.getByRole("heading", { name: "ENEM 2012 · Q148" })).toBeVisible();

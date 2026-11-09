@@ -14,13 +14,13 @@ const inter = localFont({
   display: "swap",
 });
 
-const DESCRICAO = "IDE de estudo de matemática do ENEM: a questão oficial de um lado, um tutor que confere cada conta do outro, e um mapa que diz quando você está pronto.";
+const DESCRICAO = "Estudo de matemática do ENEM: questões oficiais do INEP, resumos com mapa mental, visuais para aprender o básico e um mapa que diz quando você está pronto.";
 
 export const metadata: Metadata = {
   title: { default: "Gabarita", template: "%s · Gabarita" },
   description: DESCRICAO,
   applicationName: "Gabarita",
-  keywords: ["ENEM", "matemática", "TRI", "estudo", "tutor", "questões oficiais", "INEP"],
+  keywords: ["ENEM", "matemática", "TRI", "estudo", "questões oficiais", "INEP"],
   authors: [{ name: "Matheus Castro" }],
   creator: "Matheus Castro",
   formatDetection: { telephone: false },

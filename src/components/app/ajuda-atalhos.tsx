@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Kbd } from "@/components/ui/kbd";
 import { useAtalho, useListaAtalhos } from "@/lib/atalhos/provider";
 import { teclasParaExibir, type Atalho } from "@/lib/atalhos/registro";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 import { useEhMac } from "@/lib/use-cliente";
 
 interface Props {
@@ -41,7 +42,7 @@ export function AjudaAtalhos({ aberta, aoMudar }: Props) {
     acao: () => aoMudar(!aberta),
   });
 
-  const grupos = agrupar(atalhos);
+  const grupos = agrupar(TUTOR_VISIVEL ? atalhos : atalhos.filter((a) => a.grupo !== "Tutor"));
 
   return (
     <Dialog open={aberta} onOpenChange={aoMudar}>

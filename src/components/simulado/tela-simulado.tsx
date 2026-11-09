@@ -124,7 +124,7 @@ export function TelaSimulado() {
     const suficiente = n !== null && n >= TAMANHO_SIMULADO_FACEIS;
     return (
       <ConteudoPagina className="max-w-[760px]">
-        <CabecalhoPagina titulo={`Simulado de ${TAMANHO_SIMULADO_FACEIS} fáceis`} descricao="Itens oficiais do tercil fácil que você nunca fez. Sem tutor, sem dicas: só você e o cronômetro." />
+        <CabecalhoPagina titulo={`Simulado de ${TAMANHO_SIMULADO_FACEIS} fáceis`} descricao="Itens oficiais do tercil fácil que você nunca fez. Sem dicas: só você e o cronômetro." />
         <Card className="gap-5 md:p-6">
           <CardHeader>
             <CardTitle className="text-xl">Como funciona</CardTitle>

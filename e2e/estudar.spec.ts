@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { abrirEstudar, abrirHoje } from "./apoio";
+import { abrirEstudar, abrirHoje, TUTOR_VISIVEL } from "./apoio";
 
 test.describe("Estudar", () => {
   test("faz um sprint inteiro só pelo teclado e o estado persiste", async ({ page }) => {
@@ -37,6 +37,7 @@ test.describe("Estudar", () => {
   });
 
   test("painéis são redimensionáveis", async ({ page }) => {
+    test.skip(!TUTOR_VISIVEL, "o painel do tutor está oculto");
     await abrirEstudar(page);
     const separador = page.getByRole("separator", { name: "Redimensionar painéis" });
     await expect(separador).toBeVisible();
@@ -50,16 +51,28 @@ test.describe("Estudar", () => {
     expect((depois?.x ?? 0) < caixa.x - 50).toBe(true);
   });
 
-  test("no celular, questão e tutor viram abas e a navegação é a barra superior", async ({ page }) => {
+  test("no celular, a navegação é a barra superior", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await abrirEstudar(page);
     const nav = page.getByRole("navigation", { name: "Principal" }).first();
     await expect(nav).toBeVisible();
     const caixaNav = await nav.boundingBox();
     expect(caixaNav?.y).toBe(0);
-    await expect(page.getByRole("tab", { name: "Questão" })).toBeVisible();
-    await page.getByRole("tab", { name: "Tutor" }).click();
-    await expect(page.getByRole("button", { name: /Próximo degrau/ })).toBeVisible();
+    if (TUTOR_VISIVEL) {
+      await expect(page.getByRole("tab", { name: "Questão" })).toBeVisible();
+      await page.getByRole("tab", { name: "Tutor" }).click();
+      await expect(page.getByRole("button", { name: /Próximo degrau/ })).toBeVisible();
+    } else {
+      await expect(page.getByRole("tab", { name: "Tutor" })).toHaveCount(0);
+      await expect(page.getByRole("radiogroup", { name: "Alternativas" }).first()).toBeVisible();
+    }
+  });
+
+  test("sem o tutor, a questão ocupa a área inteira", async ({ page }) => {
+    test.skip(TUTOR_VISIVEL, "o tutor está ligado");
+    await abrirEstudar(page);
+    await expect(page.getByRole("separator", { name: "Redimensionar painéis" })).toHaveCount(0);
+    await expect(page.getByRole("region", { name: "Tutor" })).toHaveCount(0);
   });
 
   test("a questão usa fonte serifada e as alternativas têm a letra em círculo", async ({ page }) => {

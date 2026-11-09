@@ -16,6 +16,7 @@ import { RESUMOS, type Resumo } from "@/lib/resumos/conteudo";
 import { legendaDe, type Legenda } from "@/lib/resumos/legendas";
 import { questoesDoResumo } from "@/lib/resumos/logica";
 import { infoVisual } from "@/lib/visuais/catalogo";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 import { cn } from "@/lib/utils";
 import { MapaMental } from "./mapa-mental";
 import { GavetaDuvida, PainelDuvida, useDesktop } from "./painel-duvida";
@@ -111,7 +112,12 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
         </Button>
       </header>
 
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-3.5 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start xl:grid-cols-[minmax(0,1fr)_400px]">
+      <div
+        className={cn(
+          "grid grid-cols-[minmax(0,1fr)] gap-3.5 lg:items-start",
+          TUTOR_VISIVEL && "lg:grid-cols-[minmax(0,1fr)_360px] xl:grid-cols-[minmax(0,1fr)_400px]",
+        )}
+      >
         <div className="flex flex-col gap-3.5">
           <Card className="gap-3">
             <CardTitle className="text-[17px]">Mapa mental</CardTitle>
@@ -207,9 +213,13 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
           </Card>
         </div>
 
-        {/* Desktop: coluna da direita com a margem e o chat, colada no topo como o tutor da IDE. */}
-        <div className="flex flex-col gap-3.5 lg:sticky lg:top-4 lg:h-[calc(100dvh-2.5rem)]">
-          <aside aria-label="Anotações na margem" className="flex flex-wrap gap-2 lg:border-l-2 lg:border-accent-soft lg:pl-4" data-testid="margem">
+        {/* Com o tutor ligado: coluna da direita com a margem e o chat. Sem ele, a margem segue o texto. */}
+        <div className={cn("flex flex-col gap-3.5", TUTOR_VISIVEL && "lg:sticky lg:top-4 lg:h-[calc(100dvh-2.5rem)]")}>
+          <aside
+            aria-label="Anotações na margem"
+            className={cn("flex flex-wrap gap-2", TUTOR_VISIVEL && "lg:border-l-2 lg:border-accent-soft lg:pl-4")}
+            data-testid="margem"
+          >
             <p className="hidden w-full text-[10px] font-bold tracking-[1px] text-muted-foreground uppercase lg:block">Na margem</p>
             {resumo.margem.map((m) => (
               <p key={m} className="rounded-sm bg-background px-2.5 py-1 text-[13px] font-semibold text-muted-foreground dark:bg-surface-2">
@@ -220,13 +230,13 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
               Próximo: {proximo.titulo}
             </Link>
           </aside>
-          {desktop && (
+          {TUTOR_VISIVEL && desktop && (
             <div className="min-h-0 flex-1 overflow-hidden rounded-xl border border-card-borda shadow-card">
               <PainelDuvida resumo={resumo} />
             </div>
           )}
         </div>
-        {desktop === false && <GavetaDuvida resumo={resumo} />}
+        {TUTOR_VISIVEL && desktop === false && <GavetaDuvida resumo={resumo} />}
       </div>
     </ConteudoPagina>
   );

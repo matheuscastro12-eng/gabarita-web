@@ -8,6 +8,7 @@ import { COMPETENCIAS } from "@/data/taxonomia";
 import { useStore } from "@/lib/store/provider";
 import { exportarBackup, importarBackup } from "@/lib/store/backup";
 import { useStatusIA } from "@/lib/tutor/status-cliente";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 import { useMontado } from "@/lib/use-cliente";
 import {
   aplicarPreset,
@@ -75,11 +76,19 @@ function Formularios({ estado }: { estado: EstadoAluno }) {
 
   return (
     <ConteudoPagina className="max-w-[760px]">
-      <CabecalhoPagina titulo="Ajustes" descricao="Como o tutor explica, quando é a prova, qual é a meta e onde ficam os seus dados." />
-      <CardPerfil perfil={perfil} salvar={salvarPerfil} />
+      <CabecalhoPagina
+        titulo="Ajustes"
+        descricao={
+          TUTOR_VISIVEL
+            ? "Como o tutor explica, quando é a prova, qual é a meta e onde ficam os seus dados."
+            : "Quando é a prova, qual é a meta e onde ficam os seus dados."
+        }
+      />
+      {TUTOR_VISIVEL ? <CardPerfil perfil={perfil} salvar={salvarPerfil} /> : <CardNome perfil={perfil} salvar={salvarPerfil} />}
       <CardProva perfil={perfil} salvar={salvarPerfil} />
       <CardSemana perfil={perfil} salvar={salvarPerfil} />
-      <CardTutor perfil={perfil} salvar={salvarPerfil} />
+      <CardSprint perfil={perfil} salvar={salvarPerfil} />
+      {TUTOR_VISIVEL && <CardTutor />}
       <CardAparencia />
       <CardDados estado={estado} store={store} />
     </ConteudoPagina>
@@ -88,8 +97,42 @@ function Formularios({ estado }: { estado: EstadoAluno }) {
 
 /* ------------------------------ Perfil ------------------------------ */
 
-function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Perfil>, msg?: string) => void }) {
+function CampoNome({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Perfil>, msg?: string) => void }) {
   const [nome, setNome] = React.useState(perfil.nome);
+  return (
+    <label className="flex flex-col gap-1 text-sm">
+      <span className="text-muted-foreground">Como te chamamos</span>
+      <input
+        value={nome}
+        onChange={(e) => setNome(e.target.value)}
+        onBlur={() => {
+          const n = nome.trim() || "Matheus";
+          setNome(n);
+          if (n !== perfil.nome) salvar({ nome: n });
+        }}
+        className="h-11 max-w-xs rounded-md border-[1.5px] border-input bg-surface px-3.5 font-medium focus-visible:border-accent focus-visible:outline-none"
+        data-testid="campo-nome"
+      />
+    </label>
+  );
+}
+
+/** Nome da saudação, sem os presets que só servem ao prompt do tutor. */
+function CardNome({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Perfil>, msg?: string) => void }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Seu nome</CardTitle>
+        <CardDescription>Aparece na saudação da tela Hoje.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <CampoNome perfil={perfil} salvar={salvar} />
+      </CardContent>
+    </Card>
+  );
+}
+
+function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Perfil>, msg?: string) => void }) {
   const [texto, setTexto] = React.useState(perfil.explicaDoMeuJeito);
 
   const alternarPreset = (preset: (typeof PRESETS_EXPLICACAO)[number]) => {
@@ -105,20 +148,7 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
         <CardDescription>Vai junto com cada mensagem para o tutor (em cache). Escolha presets, escreva do seu jeito, ou os dois.</CardDescription>
       </CardHeader>
       <CardContent>
-        <label className="flex flex-col gap-1 text-sm">
-          <span className="text-muted-foreground">Como o tutor te chama</span>
-          <input
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
-            onBlur={() => {
-              const n = nome.trim() || "Matheus";
-              setNome(n);
-              if (n !== perfil.nome) salvar({ nome: n });
-            }}
-            className="h-11 max-w-xs rounded-md border-[1.5px] border-input bg-surface px-3.5 font-medium focus-visible:border-accent focus-visible:outline-none"
-            data-testid="campo-nome"
-          />
-        </label>
+        <CampoNome perfil={perfil} salvar={salvar} />
         <div className="flex flex-wrap gap-2" role="group" aria-label="Presets de explicação">
           {PRESETS_EXPLICACAO.map((p) => {
             const ativo = presetAtivo(texto, p);
@@ -271,7 +301,7 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
 
 /* ------------------------------ Tutor ------------------------------ */
 
-function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Perfil>, msg?: string) => void }) {
+function CardTutor() {
   const status = useStatusIA();
   return (
     <Card>
@@ -303,10 +333,23 @@ function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
             </>
           )}
         </div>
+      </CardContent>
+    </Card>
+  );
+}
+
+function CardSprint({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Perfil>, msg?: string) => void }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Sprint</CardTitle>
+        <CardDescription>O tempo de cada questão é medido de qualquer jeito. Isto só controla se o cronômetro aparece.</CardDescription>
+      </CardHeader>
+      <CardContent>
         <Interruptor
           id="mostrar-timer"
           rotulo="Mostrar o cronômetro discreto durante o sprint"
-          descricao="O tempo é medido de qualquer jeito (serve ao detector de chute); isto só controla se aparece."
+          descricao="O tempo continua valendo para o detector de chute, mesmo escondido."
           ligado={perfil.mostrarTimer}
           aoMudar={(v) => salvar({ mostrarTimer: v }, v ? "Cronômetro visível." : "Cronômetro escondido.")}
         />

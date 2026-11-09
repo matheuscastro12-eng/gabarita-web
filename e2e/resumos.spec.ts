@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { abrirHoje } from "./apoio";
+import { abrirHoje, TUTOR_VISIVEL } from "./apoio";
 
 test.describe("Resumos", () => {
   test("o menu abre o índice; a busca filtra; o mapa geral abre ramos com links", async ({ page }) => {
@@ -88,7 +88,18 @@ test.describe("Resumos: legendas e Tirar dúvida", () => {
     await expect(legendas.nth(1).locator("dt .katex").first()).toBeVisible();
   });
 
+  test("sem o tutor, o resumo não tem chat nem pílula de dúvida", async ({ page }) => {
+    test.skip(TUTOR_VISIVEL, "o tutor está ligado");
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto("/resumos/porcentagem");
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 20_000 });
+    await expect(page.getByTestId("painel-duvida")).toHaveCount(0);
+    await expect(page.getByTestId("abrir-duvida")).toHaveCount(0);
+    await expect(page.getByTestId("mapa-mental")).toBeVisible();
+  });
+
   test("desktop: o painel aparece ao lado e, sem IA, diz como ligar", async ({ page }) => {
+    test.skip(!TUTOR_VISIVEL, "interface do tutor oculta; ligue com NEXT_PUBLIC_TUTOR_VISIVEL=1");
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto("/resumos/porcentagem");
     const painel = page.getByTestId("painel-duvida");
@@ -100,6 +111,7 @@ test.describe("Resumos: legendas e Tirar dúvida", () => {
   });
 
   test("com IA: chips de sugestão mandam o contexto do resumo", async ({ page }) => {
+    test.skip(!TUTOR_VISIVEL, "interface do tutor oculta; ligue com NEXT_PUBLIC_TUTOR_VISIVEL=1");
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.route("**/api/status", (r) => r.fulfill({ json: { ia: true, provedor: "claude-local", modelo: "teste" } }));
     let corpo: { contexto?: { tipo?: string; resumoId?: string } } = {};
@@ -128,6 +140,7 @@ test.describe("Resumos: legendas e Tirar dúvida", () => {
   });
 
   test("celular: a pílula abre o chat numa gaveta", async ({ page }) => {
+    test.skip(!TUTOR_VISIVEL, "interface do tutor oculta; ligue com NEXT_PUBLIC_TUTOR_VISIVEL=1");
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto("/resumos/juros");
     await expect(page.getByTestId("painel-duvida")).toHaveCount(0, { timeout: 20_000 });

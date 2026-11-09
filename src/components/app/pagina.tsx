@@ -1,5 +1,6 @@
 import * as React from "react";
 import { origemDosDados } from "@/data/carregar";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 import { cn } from "@/lib/utils";
 
 /** Cabeçalho padrão das telas: título grande (28px/800), descrição curta e ações à direita. */
@@ -45,7 +46,9 @@ export function RodapeFonte({ className }: { className?: string }) {
       {origem.fixture
         ? `Dados de desenvolvimento (fixture): ${origem.total} questões reais do ENEM 2023, via enem.dev`
         : `${origem.total} questões oficiais do INEP (transcrição enem.dev)`}
-      {" · nota TRI sempre estimada · explicações do tutor podem conter erros · seu progresso fica salvo neste navegador"}
+      {TUTOR_VISIVEL
+        ? " · nota TRI sempre estimada · explicações do tutor podem conter erros · seu progresso fica salvo neste navegador"
+        : " · nota TRI sempre estimada · seu progresso fica salvo neste navegador"}
     </footer>
   );
 }

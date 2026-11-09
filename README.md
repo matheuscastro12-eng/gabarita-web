@@ -36,11 +36,11 @@ Requisitos: Node 24 e pnpm 10 (`corepack enable`).
 
 ```bash
 pnpm install
-cp .env.example .env.local      # opcional: chave da API para ligar o tutor de IA
+cp .env.example .env.local      # opcional: religar o tutor e a chave da API
 pnpm dev                        # http://localhost:3000
 ```
 
-Sem chave o app abre em modo guiado offline. Para ligar a IA, preencha `ANTHROPIC_API_KEY` (ou `AI_GATEWAY_API_KEY`) no `.env.local` e reinicie.
+A interface do tutor fica **desligada** enquanto `NEXT_PUBLIC_TUTOR_VISIVEL` não for exatamente `1`, `true`, `on` ou `sim` (é preciso um build novo depois de mudar, porque o Next embute essa variável). Com a interface ligada e sem chave, o app abre em modo guiado offline. Para a IA, preencha `ANTHROPIC_API_KEY` (ou `AI_GATEWAY_API_KEY`) no `.env.local` e reinicie.
 
 Produção local:
 
@@ -54,6 +54,7 @@ Documentadas em [`.env.example`](.env.example). Nenhuma é obrigatória.
 
 | Variável | Para quê |
 |---|---|
+| `NEXT_PUBLIC_TUTOR_VISIVEL` | Exatamente `1`, `true`, `on` ou `sim` mostra o tutor. Ausente ou qualquer outro valor esconde painel, atalhos, ajustes e textos. Padrão: escondido. Exige novo build. |
 | `ANTHROPIC_API_KEY` | Chave da API da Anthropic usada pelo tutor. Nunca é logada nem enviada ao navegador. |
 | `AI_GATEWAY_API_KEY` | Alternativa: Vercel AI Gateway (usada se a anterior estiver vazia). |
 | `TUTOR_PROVIDER` | `claude-local`: o tutor usa o Claude Code logado no computador (assinatura) em vez da API. Tem prioridade sobre as chaves. Usado pelo app do Mac; não serve na Vercel. |

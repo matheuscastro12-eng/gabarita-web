@@ -1,16 +1,22 @@
 import fs from "node:fs/promises";
 import { expect, test } from "@playwright/test";
+import { TUTOR_VISIVEL } from "./apoio";
 
 test.describe("Ajustes", () => {
   test("presets, meta, estado do tutor, tema, exportar, zerar e importar", async ({ page }, testInfo) => {
     await page.goto("/ajustes");
     await expect(page.getByTestId("campo-nome")).toHaveValue("Matheus", { timeout: 20_000 });
 
-    // Preset entra no texto livre e fica marcado.
-    await page.getByTestId("preset-direto").click();
-    await expect(page.getByTestId("preset-direto")).toHaveAttribute("aria-pressed", "true");
-    await expect(page.getByTestId("campo-explica")).toHaveValue(/Vá direto ao ponto/);
-    await expect(page.getByText("Salvo.").first()).toBeVisible();
+    if (TUTOR_VISIVEL) {
+      // Preset entra no texto livre e fica marcado.
+      await page.getByTestId("preset-direto").click();
+      await expect(page.getByTestId("preset-direto")).toHaveAttribute("aria-pressed", "true");
+      await expect(page.getByTestId("campo-explica")).toHaveValue(/Vá direto ao ponto/);
+      await expect(page.getByText("Salvo.").first()).toBeVisible();
+    } else {
+      await expect(page.getByTestId("preset-direto")).toHaveCount(0);
+      await expect(page.getByTestId("estado-tutor")).toHaveCount(0);
+    }
 
     // Meta de nota com validação.
     const meta = page.getByTestId("campo-meta");
@@ -24,10 +30,12 @@ test.describe("Ajustes", () => {
     await page.getByTestId("campo-data-prova").fill("2030-11-10");
     await expect(page.getByTestId("prazo-prova")).toContainText(/faltam \d+ dias/);
 
-    // Estado do tutor vem de /api/status (sem chave no e2e) e nunca mostra chave.
-    const tutor = page.getByTestId("estado-tutor");
-    await expect(tutor).toContainText("não");
-    await expect(tutor).not.toContainText(/sk-/);
+    if (TUTOR_VISIVEL) {
+      // Estado do tutor vem de /api/status (sem chave no e2e) e nunca mostra chave.
+      const tutor = page.getByTestId("estado-tutor");
+      await expect(tutor).toContainText("não");
+      await expect(tutor).not.toContainText(/sk-/);
+    }
 
     // Tema: claro por padrão; escuro opcional e de volta ao claro.
     await expect(page.locator("html")).toHaveClass(/light/);
@@ -54,7 +62,7 @@ test.describe("Ajustes", () => {
     await page.getByTestId("confirmar-zerar").click();
     await expect(page.getByText("Progresso zerado.").first()).toBeVisible();
     await expect(page.getByTestId("campo-meta")).toHaveValue("700");
-    await expect(page.getByTestId("preset-direto")).toHaveAttribute("aria-pressed", "false");
+    if (TUTOR_VISIVEL) await expect(page.getByTestId("preset-direto")).toHaveAttribute("aria-pressed", "false");
 
     // Importar o backup de volta (com confirmação).
     await page.getByTestId("arquivo-backup").setInputFiles(caminho);
@@ -62,7 +70,7 @@ test.describe("Ajustes", () => {
     await page.getByTestId("confirmar-importacao").click();
     await expect(page.getByText("Backup importado.").first()).toBeVisible();
     await expect(page.getByTestId("campo-meta")).toHaveValue("750");
-    await expect(page.getByTestId("preset-direto")).toHaveAttribute("aria-pressed", "true");
+    if (TUTOR_VISIVEL) await expect(page.getByTestId("preset-direto")).toHaveAttribute("aria-pressed", "true");
 
     // Arquivo inválido é recusado com mensagem.
     const invalido = testInfo.outputPath("invalido.json");

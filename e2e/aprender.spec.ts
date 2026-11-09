@@ -42,6 +42,13 @@ test.describe("Aprender o básico", () => {
     const dialogo = page.getByRole("dialog");
     await expect(dialogo).toBeVisible();
     await expect(dialogo.locator("[data-testid^=visual-]")).toBeVisible();
+    const caixa = await dialogo.boundingBox();
+    const tela = page.viewportSize();
+    if (!caixa || !tela) throw new Error("diálogo sem caixa");
+    const centroX = caixa.x + caixa.width / 2;
+    const centroY = caixa.y + caixa.height / 2;
+    expect(Math.abs(centroX - tela.width / 2)).toBeLessThan(80);
+    expect(Math.abs(centroY - tela.height / 2)).toBeLessThan(120);
     await page.keyboard.press("Escape");
     await expect(dialogo).toHaveCount(0);
   });

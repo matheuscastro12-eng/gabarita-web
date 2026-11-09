@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { TUTOR_VISIVEL } from "./apoio";
 
 /** Abre a IDE já numa questão curada (ENEM 2022, Q154: porcentagem). */
 async function abrirCurada(page: import("@playwright/test").Page) {
@@ -8,6 +9,7 @@ async function abrirCurada(page: import("@playwright/test").Page) {
 }
 
 test.describe("Tutor (modo guiado offline)", () => {
+  test.skip(!TUTOR_VISIVEL, "interface do tutor oculta; ligue com NEXT_PUBLIC_TUTOR_VISIVEL=1");
   test("/api/status diz que a IA está desligada e /api/tutor responde 503 missing_key", async ({ request }) => {
     const status = await request.get("/api/status");
     expect(status.ok()).toBe(true);
@@ -95,5 +97,25 @@ test.describe("Tutor (modo guiado offline)", () => {
     });
     await page.getByTestId("perguntar-sobre").click();
     await expect(page.getByTestId("chip-selecao").first()).toContainText("Em janeiro de 2013");
+  });
+});
+
+test.describe("Tutor oculto no site", () => {
+  test.skip(TUTOR_VISIVEL, "o tutor está ligado");
+
+  test("as páginas públicas não mostram painel, aviso nem texto de tutor", async ({ page, request }) => {
+    const status = await request.get("/api/status");
+    expect(status.ok()).toBe(true);
+    expect(((await status.json()) as { ia: boolean }).ia).toBe(false);
+    const rota = await request.post("/api/tutor", { data: {} });
+    expect(rota.status()).toBe(404);
+
+    const proibido = /tutor|modo guiado|ANTHROPIC_API_KEY|inteligência artificial/i;
+    for (const caminho of ["/", "/estudar?questao=enem-2012-148", "/ajustes", "/resumos/porcentagem", "/simulado", "/caderno"]) {
+      await page.goto(caminho);
+      await expect(page.locator("main, [role=main], body").first()).toBeVisible({ timeout: 20_000 });
+      const visivel = await page.locator("body").innerText();
+      expect(visivel, caminho).not.toMatch(proibido);
+    }
   });
 });
