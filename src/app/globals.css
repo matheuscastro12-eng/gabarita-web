@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Tokens (ver docs/DESIGN.md) ---------- */
+:root {
+  --background: #fdfdfd;
+  --surface: #f5f7f9;
+  --surface-2: #eceef1;
+  --foreground: #171b20;
+  --muted-foreground: #595e66;
+  --border: #d5d8db;
+  --input: #d5d8db;
+  --accent: #b55700;
+  --accent-foreground: #fdfdfd;
+  --accent-text: #a44100;
+  --accent-soft: #fbead6;
+  --success: #007f35;
+  --success-soft: #dff5e6;
+  --danger: #be222a;
+  --danger-soft: #fbe3e4;
+  --warning: #8a6d00;
+  --warning-soft: #fbf1c7;
+  --ring: #b55700;
+  --radius: 0.375rem;
+  --radius-lg: 0.625rem;
+  --duration: 180ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  color-scheme: light;
+}
+
+.dark {
+  --background: #16181c;
+  --surface: #1f2226;
+  --surface-2: #282b30;
+  --foreground: #edeef1;
+  --muted-foreground: #a0a5ac;
+  --border: #34383e;
+  --input: #3a3f46;
+  --accent: #fcb442;
+  --accent-foreground: #23190a;
+  --accent-text: #fcb442;
+  --accent-soft: #3a2d14;
+  --success: #6ed889;
+  --success-soft: #16301f;
+  --danger: #ff958d;
+  --danger-soft: #3a1f1d;
+  --warning: #f1c955;
+  --warning-soft: #342c10;
+  --ring: #fcb442;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-text: var(--accent-text);
+  --color-accent-soft: var(--accent-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --text-xs: 0.8125rem; /* 13 */
+  --text-xs--line-height: 1.4;
+  --text-sm: 0.9375rem; /* 15 */
+  --text-sm--line-height: 1.5;
+  --text-base: 1.0625rem; /* 17 */
+  --text-base--line-height: 1.55;
+  --text-lg: 1.25rem; /* 20 */
+  --text-lg--line-height: 1.4;
+  --text-xl: 1.5rem; /* 24 */
+  --text-xl--line-height: 1.25;
+  --text-2xl: 1.875rem; /* 30 */
+  --text-2xl--line-height: 1.2;
+  --text-3xl: 2.375rem; /* 38 */
+  --text-3xl--line-height: 1.1;
+
+  --radius-sm: 0.25rem;
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-lg);
+
+  --ease-out-soft: var(--ease);
+}
+
+/* ---------- Base ---------- */
+html {
+  font-size: 17px;
+  height: 100%;
+}
+@media (min-width: 1280px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100%;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Transições só em transform/opacity/cores; zero com reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration: 0ms;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Animações usadas pelos componentes Radix (data-state). */
+@keyframes gab-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes gab-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes gab-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes gab-pop-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+}
+@keyframes gab-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.anim-fade-in {
+  animation: gab-fade-in var(--duration) var(--ease) both;
+}
+.anim-fade-out {
+  animation: gab-fade-out var(--duration) var(--ease) both;
+}
+.anim-pop-in {
+  animation: gab-pop-in var(--duration) var(--ease) both;
+}
+.anim-pop-out {
+  animation: gab-pop-out var(--duration) var(--ease) both;
+}
+.anim-slide-in-right {
+  animation: gab-slide-in-right var(--duration) var(--ease) both;
+}
+
+/* Separador dos painéis redimensionáveis. */
+[data-separator] {
+  position: relative;
+  background: var(--border);
+  transition: background var(--duration) var(--ease);
+}
+[data-separator]:hover,
+[data-separator][data-state="hover"],
+[data-separator][data-state="drag"],
+[data-separator]:focus-visible {
+  background: var(--accent);
+}
+
+/* Scrollbar discreta. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+/* ---------- cmdk ---------- */
+.cmdk-grupo [cmdk-group-heading] {
+  padding: 0.5rem 0.75rem 0.25rem;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--muted-foreground);
+}
+.cmdk-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  font-size: var(--text-sm);
+  cursor: default;
+  user-select: none;
+}
+.cmdk-item[data-selected="true"] {
+  background: var(--surface-2);
+}
+.cmdk-item[data-disabled="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+}
