@@ -6,7 +6,8 @@ import { expect, type Page } from "@playwright/test";
  */
 export async function abrirHoje(page: Page) {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText(/^(Bom dia|Boa tarde|Boa noite), /);
+  // Em dev, a primeira compilação da rota e a leitura do IndexedDB podem demorar sob carga.
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(/^(Bom dia|Boa tarde|Boa noite), /, { timeout: 20_000 });
   await expect(page.getByText(/^Próximas:/)).toBeVisible();
 }
 

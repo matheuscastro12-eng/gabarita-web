@@ -5,11 +5,13 @@ import { Group, Panel, Separator } from "react-resizable-panels";
 import type { Questao, Letra } from "@/data/tipos";
 import { NOME_HABILIDADE } from "@/data/tipos";
 import type { DegrauDica } from "@/lib/dominio/tipos";
+import type { EntradaEvento } from "@/lib/dominio/eventos";
 import { useAtalho } from "@/lib/atalhos/provider";
 import { definirModoFoco } from "@/components/app/app-shell";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BarraSprint, type EstadoBolinha } from "./barra-sprint";
-import { PainelTutor } from "./painel-tutor";
+import type { RespostaGemea } from "./gemea-card";
+import { PainelTutor, type AcoesTutor, type ContextoAluno } from "./painel-tutor";
 import { QuestaoView } from "./questao-view";
 
 export interface RespostaQuestao {
@@ -31,6 +33,12 @@ interface Props {
   aoAvancar: () => void;
   /** Rodapé com o domínio da habilidade atual. */
   rodape?: React.ReactNode;
+  /** Resumo e perfil do aluno para o tutor. */
+  contextoAluno: ContextoAluno;
+  /** Eventos do tutor (dica, erro, equívoco…) para o StudentStore. */
+  aoEvento: (e: EntradaEvento) => void;
+  /** Resposta a uma questão gêmea dentro do chat. */
+  aoResponderGemea: (questaoPai: Questao, r: RespostaGemea) => void;
 }
 
 const LETRAS: Letra[] = ["A", "B", "C", "D", "E"];
@@ -62,7 +70,7 @@ const semAssinatura = () => () => {};
  * A IDE: questão à esquerda, tutor à direita, redimensionável; em telas estreitas vira abas.
  * Toda a interação dá para fazer pelo teclado.
  */
-export function IDE({ questoes, indice, respostas, mostrarTimer, aoResponder, aoAvancar, rodape }: Props) {
+export function IDE({ questoes, indice, respostas, mostrarTimer, aoResponder, aoAvancar, rodape, contextoAluno, aoEvento, aoResponderGemea }: Props) {
   const questao = questoes[indice];
   const [foco, setFoco] = React.useState(false);
   const layoutInicial = React.useSyncExternalStore(semAssinatura, lerLayout, () => undefined);
@@ -97,6 +105,9 @@ export function IDE({ questoes, indice, respostas, mostrarTimer, aoResponder, ao
       aoResponder={aoResponder}
       aoAvancar={aoAvancar}
       rodape={rodape}
+      contextoAluno={contextoAluno}
+      aoEvento={aoEvento}
+      aoResponderGemea={(r) => aoResponderGemea(questao, r)}
     />
   );
 }
@@ -114,6 +125,9 @@ interface PropsQuestao {
   aoResponder: (resposta: RespostaQuestao) => void;
   aoAvancar: () => void;
   rodape?: React.ReactNode;
+  contextoAluno: ContextoAluno;
+  aoEvento: (e: EntradaEvento) => void;
+  aoResponderGemea: (r: RespostaGemea) => void;
 }
 
 /** Uma questão do sprint. Montado com `key` por questão: o estado local recomeça sozinho. */
@@ -130,14 +144,20 @@ function QuestaoDoSprint({
   aoResponder,
   aoAvancar,
   rodape,
+  contextoAluno,
+  aoEvento,
+  aoResponderGemea,
 }: PropsQuestao) {
   const confirmada = resposta !== null;
   const [marcada, setMarcada] = React.useState<Letra | null>(null);
   const [degrau, setDegrau] = React.useState<DegrauDica>(0);
+  const [pediuResposta, setPediuResposta] = React.useState(false);
+  const [selecao, setSelecao] = React.useState<string | null>(null);
   const [segundos, setSegundos] = React.useState(0);
   const [aba, setAba] = React.useState<"questao" | "tutor">("questao");
   const [inicio] = React.useState(() => Date.now());
   const inputTutorRef = React.useRef<HTMLTextAreaElement | null>(null);
+  const acoesRef = React.useRef<AcoesTutor | null>(null);
 
   // Timer (1 s); para quando confirma.
   React.useEffect(() => {
@@ -153,9 +173,9 @@ function QuestaoDoSprint({
       acertou: marcada === questao.gabarito,
       segundos: Math.round((Date.now() - inicio) / 1000),
       degrauMaximo: degrau,
-      pediuResposta: degrau >= 4,
+      pediuResposta: pediuResposta || degrau >= 4,
     });
-  }, [questao, confirmada, marcada, degrau, inicio, aoResponder]);
+  }, [questao, confirmada, marcada, degrau, pediuResposta, inicio, aoResponder]);
 
   const pular = React.useCallback(() => {
     if (confirmada) return;
@@ -164,16 +184,36 @@ function QuestaoDoSprint({
       acertou: false,
       segundos: Math.round((Date.now() - inicio) / 1000),
       degrauMaximo: degrau,
-      pediuResposta: false,
+      pediuResposta,
     });
-  }, [confirmada, degrau, inicio, aoResponder]);
+  }, [confirmada, degrau, pediuResposta, inicio, aoResponder]);
 
-  const pedirDica = React.useCallback(() => {
-    setDegrau((d) => (d >= 4 ? d : ((d + 1) as DegrauDica)));
-    setAba("tutor");
+  const definirDegrau = React.useCallback((d: DegrauDica) => {
+    setDegrau((atual) => (d > atual ? d : atual));
   }, []);
 
-  // Atalhos. A–E marcam; Enter confirma; N avança; H dica; / foca o chat.
+  const pedirDica = React.useCallback(() => {
+    setAba("tutor");
+    acoesRef.current?.pedirDica();
+  }, []);
+
+  const pedirResposta = React.useCallback(() => {
+    setPediuResposta(true);
+    setDegrau(4);
+  }, []);
+
+  const pedirRespostaDireta = React.useCallback(() => {
+    setAba("tutor");
+    acoesRef.current?.pedirResposta();
+  }, []);
+
+  const perguntarSobre = React.useCallback((texto: string) => {
+    setSelecao(texto);
+    setAba("tutor");
+    requestAnimationFrame(() => inputTutorRef.current?.focus());
+  }, []);
+
+  // Atalhos. A–E marcam; Enter confirma; N avança; H dica; ⌥R resposta direta; / foca o chat.
   const letrasDisponiveis = new Set(questao.alternativas.map((a) => a.letra));
   useAtalho({ id: "marcar-A", combinacao: "a", descricao: "Marcar a alternativa A", grupo: "Questão", ativo: !confirmada && letrasDisponiveis.has("A"), acao: () => setMarcada("A") });
   useAtalho({ id: "marcar-B", combinacao: "b", descricao: "Marcar a alternativa B", grupo: "Questão", ativo: !confirmada && letrasDisponiveis.has("B"), acao: () => setMarcada("B") });
@@ -183,6 +223,7 @@ function QuestaoDoSprint({
   useAtalho({ id: "confirmar", combinacao: "enter", descricao: "Confirmar a resposta", grupo: "Questão", ativo: !confirmada, acao: confirmar });
   useAtalho({ id: "proxima", combinacao: "n", descricao: "Próxima questão", grupo: "Sprint", ativo: confirmada, acao: aoAvancar });
   useAtalho({ id: "dica", combinacao: "h", descricao: "Pedir o próximo degrau de dica", grupo: "Tutor", ativo: degrau < 4, acao: pedirDica });
+  useAtalho({ id: "resposta-direta", combinacao: "alt+r", descricao: "Pedir a resposta direta (fica registrado)", grupo: "Tutor", emCampos: true, ativo: !pediuResposta, acao: pedirRespostaDireta });
   useAtalho({
     id: "chat",
     combinacao: "/",
@@ -193,6 +234,18 @@ function QuestaoDoSprint({
       requestAnimationFrame(() => inputTutorRef.current?.focus());
     },
   });
+
+  // No Mac, ⌥R chega como "®": trata fora do registro para não duplicar na ajuda.
+  React.useEffect(() => {
+    const aoTecla = (e: KeyboardEvent) => {
+      if (e.altKey && e.key === "®" && !pediuResposta) {
+        e.preventDefault();
+        pedirRespostaDireta();
+      }
+    };
+    window.addEventListener("keydown", aoTecla);
+    return () => window.removeEventListener("keydown", aoTecla);
+  }, [pediuResposta, pedirRespostaDireta]);
 
   const rotuloHabilidade = questao.habilidade
     ? `${NOME_HABILIDADE[questao.habilidade] ?? "Habilidade"} · ${questao.habilidade}`
@@ -208,10 +261,26 @@ function QuestaoDoSprint({
       aoPular={pular}
       aoProxima={aoAvancar}
       ehUltima={ehUltima}
+      aoPerguntarSobre={perguntarSobre}
     />
   );
   const painelTutor = (
-    <PainelTutor questao={questao} degrau={degrau} aoPedirDica={pedirDica} confirmada={confirmada} inputRef={inputTutorRef} />
+    <PainelTutor
+      questao={questao}
+      degrau={degrau}
+      aoDefinirDegrau={definirDegrau}
+      marcada={marcada}
+      confirmada={confirmada}
+      pediuResposta={pediuResposta}
+      aoPedirResposta={pedirResposta}
+      selecao={selecao}
+      aoLimparSelecao={() => setSelecao(null)}
+      acoesRef={acoesRef}
+      inputRef={inputTutorRef}
+      contextoAluno={contextoAluno}
+      aoEvento={aoEvento}
+      aoResponderGemea={aoResponderGemea}
+    />
   );
 
   return (

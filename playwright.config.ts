@@ -19,7 +19,7 @@ export default defineConfig({
   ],
   webServer: {
     // Nunca herda a chave da API do ambiente da máquina.
-    command: `env -u ANTHROPIC_API_KEY pnpm exec next dev -p ${PORT}`,
+    command: `env -u ANTHROPIC_API_KEY -u AI_GATEWAY_API_KEY pnpm exec next dev -p ${PORT}`,
     url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

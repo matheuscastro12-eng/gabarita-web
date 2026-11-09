@@ -12,16 +12,21 @@ import {
   limiarFacil,
   montarFila,
   prontoHabilidade,
+  registrarEventoTutor,
   registrarTentativa,
   resumoSprint,
   formatarDecimal,
 } from "@/lib/dominio";
+import type { EntradaEvento } from "@/lib/dominio/eventos";
 import type { EstadoAluno } from "@/lib/dominio/tipos";
+import { gemeaComoQuestao } from "@/lib/gemeas";
+import { resumirAluno } from "@/lib/tutor/prompt";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { ConteudoPagina, EstadoVazio } from "@/components/app/pagina";
 import { useToast } from "@/components/ui/toast";
 import { FimSprint } from "./fim-sprint";
+import type { RespostaGemea } from "./gemea-card";
 import { IDE, type RespostaQuestao } from "./ide";
 
 type Fase =
@@ -44,7 +49,11 @@ export function TelaEstudar() {
     try {
       const agora = new Date();
       const bs = questoes.flatMap((q) => (q.tri ? [q.tri.b] : []));
-      const fila = montarFila({ questoes, estado, agora, limiarFacil: limiarFacil(bs), theta: null });
+      let fila = montarFila({ questoes, estado, agora, limiarFacil: limiarFacil(bs), theta: null });
+      // ?questao=enem-2022-154 põe uma questão específica na frente (refazer do caderno, e2e).
+      const pedida = new URLSearchParams(window.location.search).get("questao");
+      const questaoPedida = pedida ? questoes.find((q) => q.id === pedida) : undefined;
+      if (questaoPedida) fila = [questaoPedida, ...fila.filter((q) => q.id !== questaoPedida.id)].slice(0, Math.max(fila.length, 1));
       if (fila.length === 0) {
         setFase({ tipo: "vazio" });
         return;
@@ -114,6 +123,44 @@ export function TelaEstudar() {
     setFase({ tipo: "fim", sprintId: fase.sprintId });
   }, [fase, atualizar]);
 
+  const registrarEvento = React.useCallback(
+    (evento: EntradaEvento) => {
+      atualizar((e) => registrarEventoTutor(e, evento, new Date()).estado).catch(() => {
+        /* evento do tutor é auxiliar: não interrompe o estudo */
+      });
+    },
+    [atualizar],
+  );
+
+  const responderGemea = React.useCallback(
+    (questaoPai: Questao, r: RespostaGemea) => {
+      if (!porId) return;
+      const agora = new Date();
+      const questaoGemea = gemeaComoQuestao(r.gemea, questaoPai);
+      const porQue = r.acertou ? null : (r.gemea.erros[r.escolha] ?? null);
+      atualizar((e: EstadoAluno) =>
+        registrarTentativa(
+          e,
+          {
+            questao: questaoGemea,
+            escolha: r.escolha,
+            segundos: r.segundos,
+            degrauMaximo: 0,
+            pediuResposta: false,
+            origem: "gemea",
+            sprintId: null,
+            porQue,
+            buscarQuestao: (id) => porId.get(id),
+          },
+          agora,
+        ).estado,
+      ).catch((err: unknown) => {
+        notificar({ tipo: "erro", titulo: "Não consegui salvar a gêmea", descricao: err instanceof Error ? err.message : undefined });
+      });
+    },
+    [porId, atualizar, notificar],
+  );
+
   const novoSprint = React.useCallback(() => {
     setFase({ tipo: "carregando" });
     jaIniciou.current = false;
@@ -164,6 +211,10 @@ export function TelaEstudar() {
   const questaoAtual = fase.questoes[fase.indice];
   const hab = questaoAtual?.habilidade ? estado.habilidades[questaoAtual.habilidade] : undefined;
   const pronto = hab ? prontoHabilidade({ estado: hab, tentativas: estado.tentativas, agora: new Date() }) : null;
+  const contextoAluno = {
+    resumo: resumirAluno(estado, questaoAtual?.habilidade ?? null),
+    perfil: { nome: estado.perfil.nome, explicaDoMeuJeito: estado.perfil.explicaDoMeuJeito },
+  };
 
   return (
     <IDE
@@ -173,6 +224,9 @@ export function TelaEstudar() {
       mostrarTimer={estado.perfil.mostrarTimer}
       aoResponder={responder}
       aoAvancar={avancar}
+      contextoAluno={contextoAluno}
+      aoEvento={registrarEvento}
+      aoResponderGemea={responderGemea}
       rodape={
         questaoAtual?.habilidade ? (
           <div className="flex items-center gap-3">

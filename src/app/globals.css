@@ -256,3 +256,26 @@ body {
   opacity: 0.5;
   pointer-events: none;
 }
+
+/* Gráficos (Mafs) com as cores do tema. */
+.mafs-tema .MafsView {
+  --mafs-bg: var(--surface);
+  --mafs-fg: var(--foreground);
+  --mafs-line-color: color-mix(in oklch, var(--border) 80%, transparent);
+  --grid-line-subdivision-color: color-mix(in oklch, var(--border) 45%, transparent);
+  --mafs-origin-color: var(--muted-foreground);
+  border-radius: 0.375rem;
+}
+.mafs-tema .MafsView * {
+  font-family: var(--font-sans);
+}
+
+/* Botão flutuante da seleção do enunciado. */
+.selecao-flutuante {
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, calc(-100% - 8px));
+}
+.selecao-flutuante-abaixo {
+  transform: translate(-50%, 8px);
+}
