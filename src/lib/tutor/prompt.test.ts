@@ -2,6 +2,9 @@ import { describe, expect, it } from "vitest";
 import { estadoInicial, registrarEventoTutor, registrarTentativa } from "@/lib/dominio";
 import { questaoFake } from "@/lib/dominio/teste-fixtures";
 import { BLOCO_FIXO, blocoContexto, blocoPerfil, montarInstrucoes, resumirAluno } from "./prompt";
+import { RESUMOS } from "@/lib/resumos/conteudo";
+import { BLOCO_FIXO_RESUMO, montarInstrucoesResumo } from "./prompt";
+const resumoPorIdTeste = (id: string) => RESUMOS.find((r) => r.id === id)!;
 
 const agora = new Date("2026-11-09T12:00:00Z");
 const questao = questaoFake({
@@ -120,5 +123,25 @@ describe("blocoContexto / montarInstrucoes", () => {
     expect(i.fixo).toBe(BLOCO_FIXO);
     expect(i.perfil).toContain("PERFIL DO ALUNO");
     expect(i.contexto).toContain("CONTEXTO (OCULTO DO ALUNO");
+  });
+});
+
+describe("prompt do modo resumo", () => {
+  const resumo = resumoPorIdTeste("combinatoria");
+  const inst = montarInstrucoesResumo({ resumo, perfil: { nome: "Matheus", explicaDoMeuJeito: "com exemplos de futebol" } });
+  it("fixo sem escada de dicas nem gabarito; cita só calc e plot_function", () => {
+    expect(BLOCO_FIXO_RESUMO).not.toMatch(/ESCADA|gabarito|verify_answer|run_python|record_event|get_hint|make_twin/i);
+    expect(BLOCO_FIXO_RESUMO).toContain("calc");
+    expect(BLOCO_FIXO_RESUMO).toContain("plot_function");
+  });
+  it("contexto tem fórmulas, legendas, exemplo, pegadinhas e truque", () => {
+    expect(inst.contexto).toContain("Análise combinatória");
+    for (const f of resumo.formulas) expect(inst.contexto).toContain(f.tex);
+    expect(inst.contexto).toContain("Quando usar:");
+    expect(inst.contexto).toContain("fatorial");
+    expect(inst.contexto).toContain(resumo.exemplo.respostaTexto);
+    expect(inst.contexto).toContain("PEGADINHAS");
+    expect(inst.contexto).toContain(resumo.truque);
+    expect(inst.perfil).toContain("futebol");
   });
 });

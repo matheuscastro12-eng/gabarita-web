@@ -3,7 +3,7 @@
  * `run_python` e `record_event` não têm `execute` e são executadas no cliente
  * (Web Worker com Pyodide e StudentStore), via `onToolCall`/`addToolOutput`.
  */
-import { tool, type InferUITools, type UIMessage } from "ai";
+import { tool, type InferUITools, type ToolSet, type UIMessage } from "ai";
 import { z } from "zod";
 import type { Questao } from "@/data/tipos";
 import { gemeaDaQuestao, gerarGemea, ehNomeGerador, type Gemea } from "@/lib/gemeas";
@@ -75,6 +75,35 @@ export function fazerGemea(questao: Questao, indice: number, gerador?: string): 
   return g ? { ok: true, gemea: g } : { ok: false, motivo: "Não há gerador de gêmeas para o assunto desta questão." };
 }
 
+/** Ferramentas que não dependem de questão (calc e plot_function): servem também ao modo resumo. */
+export function ferramentasGerais() {
+  return {
+    [NOME_FERRAMENTAS.calc]: tool({
+      description: "Calcula ou simplifica uma expressão com mathjs (aceita vírgula decimal e porcentagem). Para contas rápidas sem Python.",
+      inputSchema: z.object({ expressao: z.string().min(1).max(300) }),
+      execute: async ({ expressao }) => calcular(expressao),
+    }),
+    [NOME_FERRAMENTAS.plotFunction]: tool({
+      description:
+        "Desenha um gráfico interativo no chat. Devolva funções em x; letras extras (a, b, k…) viram sliders se listadas em `parametros`.",
+      inputSchema: entradaPlotSchema,
+      execute: async (entrada): Promise<PlotSpec | { erro: string }> => {
+        try {
+          return normalizarPlot({ ...entrada, parametros: entrada.parametros ?? [], pontos: entrada.pontos ?? [] });
+        } catch (e) {
+          return { erro: e instanceof Error ? e.message : "spec inválida" };
+        }
+      },
+    }),
+  };
+}
+
+/** Ferramentas do modo resumo: sem gabarito, dicas, gêmeas nem eventos (não há questão). */
+export function ferramentasResumo() {
+  return ferramentasGerais();
+}
+export type FerramentasResumo = ReturnType<typeof ferramentasResumo>;
+
 /** Monta o conjunto de ferramentas para uma questão. */
 export function ferramentasTutor(questao: Questao) {
   return {
@@ -97,23 +126,7 @@ export function ferramentasTutor(questao: Questao) {
       }),
       execute: async ({ expressao }) => verificarResposta(questao, expressao),
     }),
-    [NOME_FERRAMENTAS.calc]: tool({
-      description: "Calcula ou simplifica uma expressão com mathjs (aceita vírgula decimal e porcentagem). Para contas rápidas sem Python.",
-      inputSchema: z.object({ expressao: z.string().min(1).max(300) }),
-      execute: async ({ expressao }) => calcular(expressao),
-    }),
-    [NOME_FERRAMENTAS.plotFunction]: tool({
-      description:
-        "Desenha um gráfico interativo no chat. Devolva funções em x; letras extras (a, b, k…) viram sliders se listadas em `parametros`.",
-      inputSchema: entradaPlotSchema,
-      execute: async (entrada): Promise<PlotSpec | { erro: string }> => {
-        try {
-          return normalizarPlot({ ...entrada, parametros: entrada.parametros ?? [], pontos: entrada.pontos ?? [] });
-        } catch (e) {
-          return { erro: e instanceof Error ? e.message : "spec inválida" };
-        }
-      },
-    }),
+    ...ferramentasGerais(),
     [NOME_FERRAMENTAS.getHint]: tool({
       description: "Lê a dica curada (verificada) do degrau pedido: 1 conceito, 2 primeiro passo, 3 quase lá, 4 resolução completa.",
       inputSchema: z.object({ nivel: z.number().int().min(1).max(4) }),
@@ -142,6 +155,8 @@ export function ferramentasTutor(questao: Questao) {
 }
 
 export type FerramentasTutor = ReturnType<typeof ferramentasTutor>;
+/** Qualquer conjunto de ferramentas do tutor (questão ou resumo). */
+export type QualquerFerramentas = ToolSet;
 export type UIToolsTutor = InferUITools<FerramentasTutor>;
 
 /** Dados extras enviados no stream (fora das mensagens do modelo). */

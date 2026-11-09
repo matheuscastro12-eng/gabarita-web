@@ -187,3 +187,27 @@ Branch `feat/design-polish-animacoes`.
 ### Pendências
 - E2E instável nesta máquina por carga (load average acima de 150 durante a sessão): `page.goto` e navegações estouram o timeout de forma aleatória, em testes diferentes a cada rodada. Uma rodada completa passou 32/32; as outras falharam em 1 a 6 testes distintos, todos verdes quando rodados de novo.
 - Conferir a sensação das animações num Mac de verdade (aqui, Chromium headless).
+
+## Resumos de caderno (09/11/2026, branch feat/resumos-caderno)
+
+### O que foi feito
+- 18 resumos de matemática em `src/lib/resumos/conteudo.ts`, cada um com habilidades Hn, selo de incidência, mapa mental, fórmulas KaTeX, como o ENEM cobra, exemplo resolvido, pegadinhas grifadas, truque de prova e anotações de margem. Fontes em docs/FONTES-RESUMOS.md.
+- Telas `/resumos` (mapa geral da matemática ligando os 18, busca sem acento, grade por competência, "estudado" em localStorage `gabarita:resumos-estudados` com barra de progresso) e `/resumos/<id>` (treinar: questões reais do app com a mesma habilidade e assunto, e o visual de /aprender quando existe). Link "Ver resumo" na IDE.
+- Testes: `src/lib/resumos/resumos.test.ts` (107 casos; toda conta de exemplo conferida com mathjs, toda fórmula compilada no KaTeX, habilidades e assuntos existem, mapas sem sobreposição; 100% de cobertura exigida na pasta); `e2e/resumos.spec.ts` (4 testes).
+
+### Pendências
+- Revisão humana do texto dos resumos (a matemática foi conferida, a didática não).
+- Mapa mental em telas médias (768 a 1024px) não foi fotografado.
+
+## Resumos: legenda das fórmulas e Tirar dúvida (09/11/2026, branch feat/resumos-duvidas-legendas)
+
+### O que foi feito
+- **Legendas:** as 56 fórmulas dos 18 resumos ganharam "quando usar" e a lista de símbolos com significado e unidade (`src/lib/resumos/legendas.ts`), mostradas embaixo de cada fórmula (símbolo em KaTeX à esquerda). Símbolos menos óbvios explicados: Δ, Σ, σ, n!, C(n,p) e binomial, log, π, r, θ, sen/cos/tg, q, a₁, Ω, ∪, ∩, |, ±.
+- **Tirar dúvida** em `/resumos/<id>`: painel ao lado no desktop e gaveta no celular. `/api/tutor` aceita `contexto: { tipo: "resumo", resumoId, perfil? }` (união com o contrato de questão, que não mudou). O servidor monta o prompt com o resumo inteiro (mapa, fórmulas com legendas, como cobra, exemplo, pegadinhas, truque, margem), usa só `calc` e `plot_function` (as duas rodam no servidor, então funcionam no claude-local via MCP) e não aplica a guarda de vazamento. Resumo inexistente → 404 `resumo_not_found`. Sem IA, estado vazio dizendo como ligar.
+- Refatoração: `ferramentasGerais()` (calc, plot) reaproveitada por `ferramentasTutor` e `ferramentasResumo`; `claude-local` aceita qualquer `ToolSet`; o stream do servidor virou `transmitir()`, comum aos dois modos; as peças visuais do chat saíram de `painel-tutor.tsx` para `tutor-comum.tsx`.
+- Testes: `legendas.test.ts` (58 casos: toda fórmula tem legenda, toda letra coberta e nenhuma sobrando, KaTeX compila), e casos novos em `servidor.test.ts` (schema, 404, prompt, ferramentas, sem guarda, claude-local sem aviso), `prompt.test.ts`, `ferramentas.test.ts` e `claude-local.test.ts`; `e2e/resumos.spec.ts` ganhou 4 testes (legendas, painel no desktop sem IA, chips com IA simulada mandando o contexto do resumo, gaveta no celular).
+- Teste real com `TUTOR_PROVIDER=claude-local` (build de produção): "o que é o p na fórmula do aumento e desconto?" → resposta coerente ("p é a porcentagem… o número que vem antes do %"), com 2 chamadas a `calc`.
+
+### Pendências
+- Tutor no modo resumo com `anthropic` e `gateway` só testado com modelo simulado (o caminho de código é o mesmo da questão).
+- Revisão humana das legendas.
