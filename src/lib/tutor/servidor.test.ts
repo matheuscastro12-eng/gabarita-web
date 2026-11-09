@@ -296,3 +296,23 @@ describe("responderTutor com TUTOR_PROVIDER=claude-local", () => {
     expect(JSON.stringify(modelo.doStreamCalls[0]?.prompt)).not.toContain("não estão disponíveis");
   });
 });
+
+describe("responderTutor com imagens na questão", () => {
+  it("anexa as imagens à primeira mensagem e diz ao modelo que ele as vê", async () => {
+    const comImagem = { ...questao, id: "enem-img-1", imagens: ["https://x.dev/grafico.png"] };
+    const modelo = mock([[...texto("Vejo o gráfico."), fim("stop")]]);
+    const buscar = async () => new Response(new Uint8Array([1, 2, 3]), { headers: { "content-type": "image/png" } });
+    const res = await responderTutor({
+      corpo: { ...corpo(), contexto: { ...corpo().contexto, questaoId: comImagem.id } },
+      env: { ANTHROPIC_API_KEY: "k" },
+      buscarQuestao: async (id) => (id === comImagem.id ? comImagem : undefined),
+      modelo,
+      buscar,
+    });
+    await lerChunks(res);
+    const prompt = modelo.doStreamCalls[0]?.prompt ?? [];
+    const usuario = prompt.find((m) => m.role === "user");
+    expect(JSON.stringify(usuario)).toContain("image/png");
+    expect(JSON.stringify(prompt.filter((m) => m.role === "system"))).toContain("Você as vê");
+  });
+});

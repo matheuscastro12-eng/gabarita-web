@@ -23,6 +23,7 @@ import { LETRAS } from "@/data/tipos";
 import { AVISO_MODO_LOCAL, criarModeloClaudeLocal } from "./claude-local";
 import { configuracaoTutor, modeloGateway, type ConfiguracaoTutor } from "./config";
 import { ferramentasTutor, type DadosTutor, type FerramentasTutor } from "./ferramentas";
+import { anexarImagens, imagensDaQuestao, type Buscar } from "./imagens";
 import { montarInstrucoes, type ContextoConversa } from "./prompt";
 import { aplicarGuarda, guardaAtiva } from "./vazamento";
 
@@ -128,10 +129,12 @@ export interface OpcoesResposta {
   buscarQuestao: (id: string) => Promise<Questao | undefined>;
   /** Modelo injetado (testes). Se ausente, cria pela configuração. */
   modelo?: LanguageModel;
+  /** fetch injetado para baixar as imagens da questão (testes). */
+  buscar?: Buscar;
 }
 
 /** Trata um POST em /api/tutor. */
-export async function responderTutor({ corpo, env, buscarQuestao, modelo }: OpcoesResposta): Promise<Response> {
+export async function responderTutor({ corpo, env, buscarQuestao, modelo, buscar }: OpcoesResposta): Promise<Response> {
   const config = configuracaoTutor(env);
   if (config.provedor === null && !modelo) {
     return respostaErro("missing_key", 503, "Tutor de IA desligado: falta a chave ANTHROPIC_API_KEY (ou AI_GATEWAY_API_KEY).");
@@ -150,12 +153,22 @@ export async function responderTutor({ corpo, env, buscarQuestao, modelo }: Opco
     pedidoResposta: contexto.pedidoResposta,
     selecao: contexto.selecao ?? null,
   };
-  const instrucoes = montarInstrucoes({ questao, perfil: contexto.perfil, contexto: ctx, resumoAluno: contexto.resumoAluno });
+  const imagens = await imagensDaQuestao(questao, buscar);
+  const instrucoes = montarInstrucoes({
+    questao,
+    perfil: contexto.perfil,
+    contexto: ctx,
+    resumoAluno: contexto.resumoAluno,
+    imagensAnexadas: imagens.length,
+  });
   const ferramentas = ferramentasTutor(questao);
 
   let mensagensModelo: ModelMessage[];
   try {
-    mensagensModelo = await convertToModelMessages(messages, { tools: ferramentas, ignoreIncompleteToolCalls: true });
+    mensagensModelo = anexarImagens(
+      await convertToModelMessages(messages, { tools: ferramentas, ignoreIncompleteToolCalls: true }),
+      imagens,
+    );
   } catch {
     return respostaErro("invalid_body", 400, "Histórico de mensagens inválido.");
   }
