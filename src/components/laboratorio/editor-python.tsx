@@ -1,8 +1,10 @@
 "use client";
 
 import * as React from "react";
-import { FlaskConical, Loader2, Play, Square } from "lucide-react";
+import { FlaskConical, Loader2, Play, RotateCcw, Square, WifiOff } from "lucide-react";
 import { pyodideCliente, type StatusPyodide } from "@/lib/pyodide/cliente";
+import { NOTA_MATHJS } from "@/lib/pyodide/fallback";
+import { rodarPython } from "@/lib/pyodide/rodar";
 import type { SaidaPython } from "@/lib/tutor/ferramentas";
 import { EXEMPLOS_PYTHON, tokenizar } from "@/lib/laboratorio/realce";
 import { Badge } from "@/components/ui/badge";
@@ -30,7 +32,7 @@ export function StatusPyodideBadge() {
     carregando: `Carregando${status.etapa ? `: ${status.etapa}` : "…"}`,
     pronto: `SymPy pronto (Pyodide ${status.versao ?? ""})`,
     rodando: "Rodando…",
-    erro: `Erro: ${status.erro ?? "falha ao carregar"}`,
+    erro: "Pyodide não carregou",
   };
   return (
     <Badge variant={status.estado === "erro" ? "danger" : status.estado === "pronto" ? "success" : "neutral"} data-testid="status-pyodide">
@@ -38,6 +40,13 @@ export function StatusPyodideBadge() {
       {rotulo[status.estado]}
     </Badge>
   );
+}
+
+/** O erro do worker vem com URL e nome de API; para o aluno basta a primeira frase curta. */
+function resumirMotivo(erro: string): string {
+  const semUrl = erro.replace(/https?:\/\/\S+/g, "CDN").replace(/\s+/g, " ").trim();
+  const frase = semUrl.split(/(?<=[.!?])\s/)[0] ?? semUrl;
+  return frase.length > 120 ? `${frase.slice(0, 117)}…` : frase;
 }
 
 const CLASSE_TOKEN: Record<string, string> = {
@@ -127,13 +136,15 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
   const [codigo, setCodigo] = React.useState(codigoInicial ?? EXEMPLOS_PYTHON[0]!.codigo);
   const [saida, setSaida] = React.useState<SaidaPython | null>(null);
   const [rodando, setRodando] = React.useState(false);
+  const status = useStatusPyodide();
+  const viaMathjs = saida?.ok === true && saida.saida === NOTA_MATHJS;
 
   const rodar = React.useCallback(async () => {
     if (rodando) return;
     setRodando(true);
     setSaida(null);
     try {
-      setSaida(await pyodideCliente().rodar(codigo));
+      setSaida(await rodarPython(codigo));
     } finally {
       setRodando(false);
     }
@@ -166,6 +177,22 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
           </Button>
         ))}
       </div>
+      {status.estado === "erro" && (
+        <div role="alert" className="flex flex-col gap-2 rounded-md border border-warning/30 bg-warning-soft px-3 py-2.5 text-sm" data-testid="erro-pyodide">
+          <p className="flex items-start gap-2 font-medium">
+            <WifiOff className="mt-0.5 size-4 shrink-0 text-warning" aria-hidden />
+            <span>O Pyodide não carregou do CDN (jsdelivr). Sem ele, o SymPy não roda aqui.</span>
+          </p>
+          <p className="text-muted-foreground">
+{status.erro ? `Motivo: ${resumirMotivo(status.erro)}. ` : ""}Confira a conexão e tente de novo. Enquanto isso, contas simples na última linha (ex.: <code className="font-mono text-xs">28900 / Rational(25, 100)</code>) saem pelo mathjs, dentro do app.
+          </p>
+          <div>
+            <Button size="sm" variant="secondary" onClick={() => void pyodideCliente().carregar().catch(() => {})} data-testid="recarregar-pyodide">
+              <RotateCcw /> Tentar carregar de novo
+            </Button>
+          </div>
+        </div>
+      )}
       <CampoCodigo valor={codigo} aoMudar={setCodigo} aoRodar={() => void rodar()} linhas={compacto ? 7 : 9} id={compacto ? "codigo-python-gaveta" : "codigo-python"} />
       <div className="flex flex-wrap items-center gap-2">
         {rodando ? (
@@ -183,7 +210,13 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
       </div>
       {saida && (
         <div className="flex flex-col gap-2" role="status" data-testid="saida-python">
-          {saida.saida && <pre className="overflow-x-auto rounded-md bg-surface-2 px-3 py-2 font-mono text-sm whitespace-pre-wrap">{saida.saida}</pre>}
+          {viaMathjs ? (
+            <p className="flex items-center gap-2 text-xs text-muted-foreground">
+              <Badge variant="warning">mathjs</Badge> {NOTA_MATHJS}
+            </p>
+          ) : (
+            saida.saida && <pre className="overflow-x-auto rounded-md bg-surface-2 px-3 py-2 font-mono text-sm whitespace-pre-wrap">{saida.saida}</pre>
+          )}
           {saida.resultado && (
             <pre className="overflow-x-auto rounded-md border border-success/40 bg-success-soft px-3 py-2 font-mono text-sm whitespace-pre-wrap">{saida.resultado}</pre>
           )}

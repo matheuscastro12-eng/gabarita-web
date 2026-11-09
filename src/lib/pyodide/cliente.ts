@@ -6,6 +6,7 @@
  * (cancelar = terminar o worker; o próximo uso recarrega).
  */
 import type { SaidaPython } from "@/lib/tutor/ferramentas";
+import { mensagemErroCarga } from "./fallback";
 
 export type EstadoPyodide = "parado" | "carregando" | "pronto" | "rodando" | "erro";
 
@@ -19,6 +20,8 @@ export interface StatusPyodide {
 type Ouvinte = (status: StatusPyodide) => void;
 
 export const TIMEOUT_PADRAO_MS = 30_000;
+/** A primeira carga baixa ~15 MB do CDN; o tempo dela não conta no timeout da execução. */
+export const TIMEOUT_CARGA_MS = 120_000;
 
 interface Pendente {
   resolver: (saida: SaidaPython) => void;
@@ -112,11 +115,43 @@ class ClientePyodide {
     return promessa;
   }
 
-  /** Executa o código; resolve sempre (erro vira `ok: false`). Timeout → cancela e reinicia o worker. */
-  rodar(codigo: string, timeoutMs = TIMEOUT_PADRAO_MS): Promise<SaidaPython> {
+  /** Carga com limite de tempo próprio; falha vira erro de carga (não timeout de execução). */
+  private carregarComLimite(ms: number): Promise<void> {
+    return new Promise<void>((resolver, rejeitar) => {
+      const timer = window.setTimeout(() => rejeitar(new Error(`demorou mais de ${Math.round(ms / 1000)} s`)), ms);
+      this.carregar().then(
+        () => {
+          window.clearTimeout(timer);
+          resolver();
+        },
+        (e: unknown) => {
+          window.clearTimeout(timer);
+          rejeitar(e instanceof Error ? e : new Error(String(e)));
+        },
+      );
+    });
+  }
+
+  /**
+   * Executa o código; resolve sempre (erro vira `ok: false`). Se o Pyodide não
+   * carregar, o erro começa com `ERRO_CARGA_PREFIXO` para a interface oferecer
+   * o fallback do mathjs. Timeout de execução → cancela e reinicia o worker.
+   */
+  async rodar(codigo: string, timeoutMs = TIMEOUT_PADRAO_MS): Promise<SaidaPython> {
+    const inicio = Date.now();
+    if (this.status.estado !== "pronto" && this.status.estado !== "rodando") {
+      try {
+        await this.carregarComLimite(TIMEOUT_CARGA_MS);
+      } catch (e) {
+        const motivo = e instanceof Error ? e.message : String(e);
+        // Cancelamento pelo aluno não é falha do CDN.
+        if (/^Cancelado/.test(motivo)) return { ok: false, saida: "", resultado: null, erro: motivo, ms: Date.now() - inicio };
+        if (this.status.estado !== "erro") this.definir({ estado: "erro", etapa: null, erro: motivo });
+        return { ok: false, saida: "", resultado: null, erro: mensagemErroCarga(motivo), ms: Date.now() - inicio };
+      }
+    }
     const id = `py-${++this.contador}`;
     const w = this.garantirWorker();
-    if (this.status.estado === "parado" || this.status.estado === "erro") void this.carregar().catch(() => {});
     return new Promise<SaidaPython>((resolver) => {
       const timer = window.setTimeout(() => {
         this.pendentes.delete(id);
