@@ -5,11 +5,11 @@ import Link from "next/link";
 import type { Questao } from "@/data/tipos";
 import { NOME_HABILIDADE } from "@/data/tipos";
 import { useQuestoes } from "@/data/use-questoes";
+import { MODO, limiarFacilDoModo } from "@/data/modo";
 import { useStore } from "@/lib/store/provider";
 import {
   encerrarSprint,
   iniciarSprint,
-  limiarFacil,
   montarFila,
   prontoHabilidade,
   registrarEventoTutor,
@@ -49,7 +49,7 @@ export function TelaEstudar() {
     try {
       const agora = new Date();
       const bs = questoes.flatMap((q) => (q.tri ? [q.tri.b] : []));
-      let fila = montarFila({ questoes, estado, agora, limiarFacil: limiarFacil(bs), theta: null });
+      let fila = montarFila({ questoes, estado, agora, limiarFacil: limiarFacilDoModo(bs), theta: null, repetirRevisoesSeVazia: MODO.soFaceis });
       // ?questao=enem-2022-154 põe uma questão específica na frente (refazer do caderno, e2e).
       const pedida = new URLSearchParams(window.location.search).get("questao");
       const questaoPedida = pedida ? questoes.find((q) => q.id === pedida) : undefined;

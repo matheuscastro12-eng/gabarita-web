@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { ArrowRight, Calendar, CheckCircle2, ChevronRight, Circle, RotateCcw, Target, type LucideIcon } from "lucide-react";
 import { useStore } from "@/lib/store/provider";
 import { useQuestoes } from "@/data/use-questoes";
+import { MODO, limiarFacilDoModo } from "@/data/modo";
 import { NOME_HABILIDADE } from "@/data/tipos";
 import type { EstadoAluno, Tentativa } from "@/lib/dominio/tipos";
 import {
@@ -14,7 +15,6 @@ import {
   diasAteProva,
   estimarTheta,
   formatarDecimal,
-  limiarFacil,
   montarFila,
   MS_POR_DIA,
   notaEstimada,
@@ -77,7 +77,7 @@ export function TelaHoje() {
   const fila = React.useMemo(() => {
     if (!estado || !questoes || !agora) return null;
     const bs = questoes.flatMap((q) => (q.tri ? [q.tri.b] : []));
-    return montarFila({ questoes, estado, agora, limiarFacil: limiarFacil(bs), theta: null });
+    return montarFila({ questoes, estado, agora, limiarFacil: limiarFacilDoModo(bs), theta: null, repetirRevisoesSeVazia: MODO.soFaceis });
   }, [estado, questoes, agora]);
 
   const nota = React.useMemo(() => {

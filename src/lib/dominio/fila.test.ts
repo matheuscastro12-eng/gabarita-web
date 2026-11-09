@@ -4,7 +4,7 @@ import { novoEstadoHabilidade } from "./evidencia";
 import { bOrdenacao, montarFila, ordenarCandidatas, resumoDoDia } from "./fila";
 import { revisarCartao } from "./revisao";
 import { questaoFake, tentativaFake } from "./teste-fixtures";
-import type { EstadoAluno } from "./tipos";
+import type { EstadoAluno, Habilidade } from "./tipos";
 
 const agora = new Date(2026, 10, 9, 10);
 const q = (n: number, extra: Parameters<typeof questaoFake>[0] = {}) =>
@@ -144,5 +144,50 @@ describe("resumoDoDia", () => {
       proximaRevisao: recente.due,
     });
     expect(resumoDoDia(base, agora).proximaRevisao).toBeNull();
+  });
+});
+
+describe("montarFila com pool pequeno (modo fáceis)", () => {
+  const pool = Array.from({ length: 40 }, (_, i) =>
+    q(100 + i, { habilidade: `H${(i % 17) + 1}`, tri: { a: 1, b: -1 + i * 0.03, c: 0.2 }, dificuldade_estimada: "facil" }),
+  );
+
+  it("monta a fila cheia só com fáceis e limiar = bMax", () => {
+    const fila = montarFila({ questoes: pool, estado: estadoInicial(agora), agora, limiarFacil: 0.5, theta: null });
+    expect(fila).toHaveLength(5);
+  });
+
+  it("enquanto houver questão nova, a fila não fica vazia", () => {
+    const tentativas = pool.slice(0, 39).map((x, i) =>
+      tentativaFake({ id: `t${i}`, questaoId: x.id, habilidade: x.habilidade as Habilidade, em: new Date(2026, 10, 8).toISOString() }),
+    );
+    const estado = { ...estadoInicial(agora), tentativas };
+    const fila = montarFila({ questoes: pool, estado, agora, limiarFacil: 0.5, theta: null });
+    expect(fila.map((x) => x.id)).toEqual([pool[39]!.id]);
+  });
+
+  it("tudo acertado há pouco: vazia por padrão; com revisão vencida e a opção ligada, repete", () => {
+    const tentativas = pool.map((x, i) =>
+      tentativaFake({ id: `t${i}`, questaoId: x.id, habilidade: x.habilidade as Habilidade, em: new Date(2026, 10, 8).toISOString() }),
+    );
+    const h3 = novoEstadoHabilidade("H3", agora);
+    const vencida = { ...h3, cartao: revisarCartao(h3.cartao, "good", new Date(2024, 0, 1)) };
+    const estado: EstadoAluno = { ...estadoInicial(agora), tentativas, habilidades: { H3: vencida } };
+
+    expect(montarFila({ questoes: pool, estado, agora, limiarFacil: 0.5, theta: null })).toEqual([]);
+    const doH3 = pool.filter((x) => x.habilidade === "H3");
+    // anulada, sem habilidade e repetida ficam de fora mesmo na repetição
+    const extras = [q(900, { habilidade: "H3", anulada: true }), q(901, { habilidade: null }), doH3[0]!];
+    const comAcertoExtra = { ...estado, tentativas: [...tentativas, tentativaFake({ id: "t901", questaoId: "enem-2023-901", em: new Date(2026, 10, 8).toISOString() })] };
+    const fila = montarFila({ questoes: [...pool, ...extras], estado: comAcertoExtra, agora, limiarFacil: 0.5, theta: null, repetirRevisoesSeVazia: true });
+    expect(fila.map((x) => x.id)).toEqual(doH3.map((x) => x.id));
+  });
+
+  it("sem revisão vencida, a opção ligada não inventa fila", () => {
+    const tentativas = pool.map((x, i) =>
+      tentativaFake({ id: `t${i}`, questaoId: x.id, habilidade: x.habilidade as Habilidade, em: new Date(2026, 10, 8).toISOString() }),
+    );
+    const estado = { ...estadoInicial(agora), tentativas };
+    expect(montarFila({ questoes: pool, estado, agora, limiarFacil: 0.5, theta: null, repetirRevisoesSeVazia: true })).toEqual([]);
   });
 });

@@ -4,6 +4,8 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { MODO } from "@/data/modo";
+import { Badge } from "@/components/ui/badge";
 import { useAtalho } from "@/lib/atalhos/provider";
 import { NAVEGACAO, itemAtivo, type ItemNavegacao } from "./navegacao";
 import { ThemeToggle } from "./theme-toggle";
@@ -61,9 +63,20 @@ export function Sidebar() {
         ))}
       </ul>
       <div className="mt-auto flex flex-col gap-1">
+        {MODO.soFaceis && <AvisoModoFaceis className="mx-2.5 mb-1 self-start" />}
         <ThemeToggle />
       </div>
     </nav>
+  );
+}
+
+/** Aviso discreto de que o banco está filtrado (NEXT_PUBLIC_MODO=faceis, só local). */
+function AvisoModoFaceis({ className, compacto = false }: { className?: string; compacto?: boolean }) {
+  const titulo = `Modo fáceis (local): só questões com b < ${MODO.bMax.toLocaleString("pt-BR")}`;
+  return (
+    <Badge variant="warning" title={titulo} aria-label={titulo} className={className}>
+      {compacto ? "Fáceis" : "Modo fáceis · local"}
+    </Badge>
   );
 }
 
@@ -129,7 +142,8 @@ export function BarraSuperior() {
           );
         })}
       </ul>
-      <div className="ml-auto shrink-0 pl-1">
+      <div className="ml-auto flex shrink-0 items-center gap-1 pl-1">
+        {MODO.soFaceis && <AvisoModoFaceis compacto />}
         <ThemeToggle compacto />
       </div>
     </nav>

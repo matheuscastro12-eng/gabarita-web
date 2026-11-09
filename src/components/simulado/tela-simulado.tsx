@@ -6,11 +6,11 @@ import { ArrowLeft, ArrowRight, Check, Timer, X } from "lucide-react";
 import type { Letra, Questao } from "@/data/tipos";
 import { NOME_HABILIDADE } from "@/data/tipos";
 import { useQuestoes } from "@/data/use-questoes";
+import { limiarFacilDoModo } from "@/data/modo";
 import { useStore } from "@/lib/store/provider";
 import { useAtalho } from "@/lib/atalhos/provider";
 import {
   encerrarSimulado,
-  limiarFacil,
   montarSimuladoFaceis,
   plural,
   registrarTentativa,
@@ -55,7 +55,7 @@ export function TelaSimulado() {
   const fila = React.useMemo(() => {
     if (!estado || !questoes) return null;
     const bs = questoes.flatMap((q) => (q.tri ? [q.tri.b] : []));
-    return montarSimuladoFaceis({ questoes, estado, limiarFacil: limiarFacil(bs) });
+    return montarSimuladoFaceis({ questoes, estado, limiarFacil: limiarFacilDoModo(bs) });
   }, [estado, questoes]);
 
   const comecar = React.useCallback(() => {

@@ -53,39 +53,8 @@ export function ordenarCandidatas(
   return comChave.map((c) => c.q);
 }
 
-/**
- * Monta a fila do sprint: exclui anuladas, acertadas nos últimos 7 dias e repetidas;
- * ordena com `ordenarCandidatas` e aplica a diversidade (máx. 2 por habilidade).
- * `theta` é aceito para uso futuro (ordenar por distância a θ); hoje não muda a ordem.
- */
-export function montarFila({
-  questoes,
-  estado,
-  agora,
-  tamanho = TAMANHO_FILA,
-  limiarFacil,
-}: {
-  questoes: Questao[];
-  estado: EstadoAluno;
-  agora: Date;
-  tamanho?: number;
-  limiarFacil: number | null;
-  theta: number | null;
-}): Questao[] {
-  const desde = agora.getTime() - DIAS_SEM_REPETIR_ACERTO * MS_POR_DIA;
-  const acertadas = new Set(
-    estado.tentativas
-      .filter((t) => t.acertou && new Date(t.em).getTime() > desde)
-      .map((t) => t.questaoId),
-  );
-  const vistas = new Set<string>();
-  const candidatas = questoes.filter((q) => {
-    if (q.anulada || acertadas.has(q.id) || vistas.has(q.id)) return false;
-    vistas.add(q.id);
-    return true;
-  });
-  const ordenadas = ordenarCandidatas(candidatas, { estado, agora, limiarFacil });
-
+/** Diversidade: no máx. 2 por habilidade, completando sem o limite se faltar questão. */
+function escolherComDiversidade(ordenadas: Questao[], tamanho: number): Questao[] {
   const fila: Questao[] = [];
   const porHabilidade = new Map<string, number>();
   for (const q of ordenadas) {
@@ -101,6 +70,58 @@ export function montarFila({
     if (!fila.includes(q)) fila.push(q);
   }
   return fila;
+}
+
+/**
+ * Monta a fila do sprint: exclui anuladas, acertadas nos últimos 7 dias e repetidas;
+ * ordena com `ordenarCandidatas` e aplica a diversidade (máx. 2 por habilidade).
+ * `theta` é aceito para uso futuro (ordenar por distância a θ); hoje não muda a ordem.
+ *
+ * `repetirRevisoesSeVazia` (desligado por padrão; ligado no modo fáceis, com pool
+ * pequeno): se a fila sair vazia mas houver habilidades com revisão FSRS vencida,
+ * usa as questões dessas habilidades mesmo acertadas nos últimos 7 dias.
+ */
+export function montarFila({
+  questoes,
+  estado,
+  agora,
+  tamanho = TAMANHO_FILA,
+  limiarFacil,
+  repetirRevisoesSeVazia = false,
+}: {
+  questoes: Questao[];
+  estado: EstadoAluno;
+  agora: Date;
+  tamanho?: number;
+  limiarFacil: number | null;
+  theta: number | null;
+  repetirRevisoesSeVazia?: boolean;
+}): Questao[] {
+  const desde = agora.getTime() - DIAS_SEM_REPETIR_ACERTO * MS_POR_DIA;
+  const acertadas = new Set(
+    estado.tentativas
+      .filter((t) => t.acertou && new Date(t.em).getTime() > desde)
+      .map((t) => t.questaoId),
+  );
+  const vistas = new Set<string>();
+  const candidatas = questoes.filter((q) => {
+    if (q.anulada || acertadas.has(q.id) || vistas.has(q.id)) return false;
+    vistas.add(q.id);
+    return true;
+  });
+  const ordenadas = ordenarCandidatas(candidatas, { estado, agora, limiarFacil });
+  const fila = escolherComDiversidade(ordenadas, tamanho);
+  if (fila.length > 0 || !repetirRevisoesSeVazia) return fila;
+
+  const vistasRevisao = new Set<string>();
+  const revisoes = questoes.filter((q) => {
+    if (q.anulada || !q.habilidade || vistasRevisao.has(q.id)) return false;
+    const h = estado.habilidades[q.habilidade];
+    if (!h || !precisaRevisao(h.cartao, agora)) return false;
+    vistasRevisao.add(q.id);
+    return true;
+  });
+  return escolherComDiversidade(ordenarCandidatas(revisoes, { estado, agora, limiarFacil }), tamanho);
 }
 
 export interface ResumoDoDia {

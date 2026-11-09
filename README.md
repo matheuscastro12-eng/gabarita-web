@@ -48,6 +48,19 @@ Produção local:
 pnpm build && pnpm start
 ```
 
+### Modo fáceis (só local)
+
+Para estudar só as questões fáceis no seu computador, crie um `.env.local` com:
+
+```bash
+# .env.local (não é versionado; sem segredos)
+NEXT_PUBLIC_MODO=faceis          # liga o modo fáceis
+NEXT_PUBLIC_FACEIS_B_MAX=0.5     # opcional: corte em b (fácil = b < 0,5, padrão)
+NEXT_PUBLIC_TUTOR_VISIVEL=0      # mantém o tutor escondido
+```
+
+Com o modo ligado, `carregarQuestoes()` devolve só as fáceis (com TRI, `tri.b < NEXT_PUBLIC_FACEIS_B_MAX`; sem TRI, `dificuldade_estimada === "facil"`), e isso vale para Hoje, Estudar, Caderno, Mapa e Simulado. Com o snapshot atual são 42 questões. Um selo "Modo fáceis · local" aparece na barra lateral. Valor inválido em `NEXT_PUBLIC_FACEIS_B_MAX` volta para 0,5. Como são variáveis `NEXT_PUBLIC_`, reinicie o `pnpm dev` ou faça um novo build depois de mudar. Em produção nenhuma delas é definida, e nada muda.
+
 ## Variáveis de ambiente
 
 Documentadas em [`.env.example`](.env.example). Nenhuma é obrigatória.
@@ -55,6 +68,8 @@ Documentadas em [`.env.example`](.env.example). Nenhuma é obrigatória.
 | Variável | Para quê |
 |---|---|
 | `NEXT_PUBLIC_TUTOR_VISIVEL` | Exatamente `1`, `true`, `on` ou `sim` mostra o tutor. Ausente ou qualquer outro valor esconde painel, atalhos, ajustes e textos. Padrão: escondido. Exige novo build. |
+| `NEXT_PUBLIC_MODO` | `faceis` liga o modo fáceis (só local; veja acima). Ausente: banco completo. Exige novo build. |
+| `NEXT_PUBLIC_FACEIS_B_MAX` | Corte em b do modo fáceis (padrão `0.5`; inválido volta ao padrão). |
 | `ANTHROPIC_API_KEY` | Chave da API da Anthropic usada pelo tutor. Nunca é logada nem enviada ao navegador. |
 | `AI_GATEWAY_API_KEY` | Alternativa: Vercel AI Gateway (usada se a anterior estiver vazia). |
 | `TUTOR_PROVIDER` | `claude-local`: o tutor usa o Claude Code logado no computador (assinatura) em vez da API. Tem prioridade sobre as chaves. Usado pelo app do Mac; não serve na Vercel. |

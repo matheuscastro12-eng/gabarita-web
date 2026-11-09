@@ -5,12 +5,12 @@ import Link from "next/link";
 import { ArrowRight, Check, CircleDashed, RotateCcw, Timer } from "lucide-react";
 import { useStore } from "@/lib/store/provider";
 import { useQuestoes } from "@/data/use-questoes";
+import { limiarFacilDoModo } from "@/data/modo";
 import {
   agruparPorCompetencia,
   dominioPorAssunto,
   estimarTheta,
   formatarDecimal,
-  limiarFacil,
   mapaHabilidades,
   montarSimuladoFaceis,
   nivelCalor,
@@ -68,7 +68,7 @@ export function TelaMapa() {
   const disponiveisSimulado = React.useMemo(() => {
     if (!estado || !questoes) return null;
     const bs = questoes.flatMap((q) => (q.tri ? [q.tri.b] : []));
-    return montarSimuladoFaceis({ questoes, estado, limiarFacil: limiarFacil(bs) }).length;
+    return montarSimuladoFaceis({ questoes, estado, limiarFacil: limiarFacilDoModo(bs) }).length;
   }, [estado, questoes]);
 
   const erro = erroStore ?? erroQuestoes;

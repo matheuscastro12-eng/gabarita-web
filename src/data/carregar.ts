@@ -8,6 +8,7 @@
 import { arquivoQuestoesSchema, manifestoSchema, type Questao } from "./tipos";
 import manifestoJson from "./provas/manifesto.json";
 import { anos, carregarAno, usaFixture } from "./provas";
+import { aplicarModo } from "./modo";
 
 const manifesto = manifestoSchema.parse(manifestoJson);
 // `anos` é uma tupla literal gerada; alargar evita comparações "impossíveis" no TS.
@@ -39,9 +40,12 @@ async function carregarTudo(): Promise<Questao[]> {
   return listas.flat();
 }
 
-/** Todas as questões do snapshot (validadas uma vez em dev e cacheadas em memória). */
+/**
+ * Todas as questões do snapshot (validadas uma vez em dev e cacheadas em memória).
+ * No modo fáceis (NEXT_PUBLIC_MODO=faceis, só local), devolve apenas as fáceis.
+ */
 export function carregarQuestoes(): Promise<Questao[]> {
-  cache ??= carregarTudo().catch((e: unknown) => {
+  cache ??= carregarTudo().then((questoes) => aplicarModo(questoes)).catch((e: unknown) => {
     cache = undefined;
     throw e;
   });
