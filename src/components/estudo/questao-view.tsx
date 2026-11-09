@@ -1,7 +1,10 @@
 "use client";
 
 import * as React from "react";
-import { MessageSquareQuote } from "lucide-react";
+import { MessageSquareQuote, Shapes } from "lucide-react";
+import { infoVisual, visualParaAssuntos } from "@/lib/visuais/catalogo";
+import { COMPONENTE_VISUAL } from "@/components/visuais";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import type { Questao, Letra } from "@/data/tipos";
 import { fonteDetalhada, NOME_HABILIDADE } from "@/data/tipos";
 import { Badge } from "@/components/ui/badge";
@@ -24,6 +27,8 @@ interface Props {
   aoPerguntarSobre?: (texto: string) => void;
   /** Conteúdo extra no canto direito da linha de tags (ex.: cronômetro do simulado). */
   canto?: React.ReactNode;
+  /** Mostra "Ver visualmente" quando a questão é de um tema de Aprender o básico (fora do simulado). */
+  comVisual?: boolean;
 }
 
 function rotuloDificuldade(q: Questao): { texto: string; variant: "success" | "warning" | "danger" | "neutral" } {
@@ -79,7 +84,7 @@ interface Selecao {
  * (ENEM ano · Questão n · dificuldade · Hn), enunciado serifado, alternativas em cartões
  * e o botão Confirmar em pílula azul à direita.
  */
-export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirmar, aoPular, aoProxima, ehUltima, aoPerguntarSobre, canto }: Props) {
+export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirmar, aoPular, aoProxima, ehUltima, aoPerguntarSobre, canto, comVisual = false }: Props) {
   const dif = rotuloDificuldade(questao);
   const acertou = confirmada && marcada === questao.gabarito;
   const statusRef = React.useRef<HTMLParagraphElement | null>(null);
@@ -148,7 +153,7 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             </Button>
           </div>
         )}
-        <div className="mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl border border-card-borda bg-surface p-4 shadow-card md:p-5">
+        <div className="anim-questao mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl border border-card-borda bg-surface p-4 shadow-card md:p-5">
           <header className="flex flex-wrap items-center gap-1.5 text-sm">
             <h2 id="titulo-questao" className="inline-flex items-center rounded-sm bg-background px-2.25 py-0.75 text-xs font-bold text-muted-foreground dark:bg-surface-2">
               ENEM {questao.ano} · Q{questao.numero}
@@ -162,6 +167,7 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             )}
             {questao.anulada && <Badge variant="danger">anulada</Badge>}
             {canto && <span className="ml-auto">{canto}</span>}
+            {comVisual && <BotaoVisual assuntos={questao.assuntos} />}
           </header>
 
           <div ref={enunciadoRef} data-testid="enunciado">
@@ -206,5 +212,29 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
         )}
       </footer>
     </article>
+  );
+}
+
+/** Abre, num diálogo, o visual de "Aprender o básico" do assunto da questão. */
+function BotaoVisual({ assuntos }: { assuntos: readonly string[] }) {
+  const id = visualParaAssuntos(assuntos);
+  if (!id) return null;
+  const info = infoVisual(id);
+  const Visual = COMPONENTE_VISUAL[id];
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="outline" size="sm" className="ml-auto h-7 px-3 text-xs" data-testid="ver-visualmente">
+          <Shapes strokeWidth={1.8} /> Ver visualmente
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="max-h-[90dvh] max-w-2xl overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle>{info.titulo}</DialogTitle>
+          <DialogDescription>O básico por trás desta questão, com outros números. Depois volte e resolva.</DialogDescription>
+        </DialogHeader>
+        <Visual />
+      </DialogContent>
+    </Dialog>
   );
 }

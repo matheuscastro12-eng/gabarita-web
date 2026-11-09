@@ -1,4 +1,4 @@
-import { BookMarked, FlaskConical, Home, Map, Pencil, Settings, type LucideIcon } from "lucide-react";
+import { BookMarked, FlaskConical, Home, Map, Pencil, Settings, Shapes, type LucideIcon } from "lucide-react";
 
 export interface ItemNavegacao {
   href: string;
@@ -11,6 +11,7 @@ export interface ItemNavegacao {
 export const NAVEGACAO: ItemNavegacao[] = [
   { href: "/", rotulo: "Hoje", icone: Home, indice: 1 },
   { href: "/estudar", rotulo: "Estudar", icone: Pencil, indice: 2 },
+  { href: "/aprender", rotulo: "Aprender", icone: Shapes, indice: 7 },
   { href: "/mapa", rotulo: "Mapa", icone: Map, indice: 3 },
   { href: "/caderno", rotulo: "Caderno", icone: BookMarked, indice: 4 },
   { href: "/laboratorio", rotulo: "Laboratório", icone: FlaskConical, indice: 5 },

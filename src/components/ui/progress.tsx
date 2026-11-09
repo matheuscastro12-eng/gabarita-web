@@ -21,6 +21,12 @@ const tons = {
 /** Barra do original: 11px de altura, pílula, trilho no cinza da página. */
 function Progress({ className, value = 0, tom = "accent", ...props }: ProgressProps) {
   const v = Math.max(0, Math.min(100, value));
+  // Começa vazia e cresce até o valor depois de montar (transform; 0ms com reduced motion).
+  const [montada, setMontada] = React.useState(false);
+  React.useEffect(() => {
+    const id = requestAnimationFrame(() => setMontada(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
   return (
     <ProgressPrimitive.Root
       data-slot="progress"
@@ -30,8 +36,8 @@ function Progress({ className, value = 0, tom = "accent", ...props }: ProgressPr
     >
       <ProgressPrimitive.Indicator
         data-slot="progress-indicator"
-        className={cn("h-full w-full rounded-full transition-transform duration-(--duration) ease-(--ease)", tons[tom])}
-        style={{ transform: `translateX(-${100 - v}%)` }}
+        className={cn("h-full w-full rounded-full transition-transform duration-[240ms] ease-(--ease)", tons[tom])}
+        style={{ transform: `translateX(-${100 - (montada ? v : 0)}%)` }}
       />
     </ProgressPrimitive.Root>
   );

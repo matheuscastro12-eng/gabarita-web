@@ -167,3 +167,23 @@ pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
 - As de antes continuam: tutor com chave real, simulado completo de 45 itens, relatório semanal pela Reason Network, `theta` na fila, testes automatizados de contraste/`prefers-reduced-motion`.
 - Conferir no Mac/iPhone de verdade as fontes SF, SF Rounded e New York (aqui só Roboto/Tinos/Gelasio).
 - Se o Matheus quiser, uma trilha de simulados por ano (como no original) e os cards "Treinar por matéria" não se aplicam ao Gabarita de matemática; ficaram de fora de propósito.
+
+## Etapa 6 — Polimento de design, movimento e "Aprender o básico" (09/11/2026)
+
+Branch `feat/design-polish-animacoes`.
+
+### O que foi feito
+- **Revisão visual** com screenshots do build de produção (1440×900 e 390×844, claro e escuro) antes e depois, em `/tmp/gabarita-shots/antes` e `/tmp/gabarita-shots/depois`.
+- **Correções:** Hoje com as linhas alinhadas ao grid de 4 colunas dos stat cards (antes 7fr/3fr e 3fr/2fr, cada linha com um corte diferente); chips da fila com o nome truncado mais curto para caber dois por linha; "Questões por dia" vazio com frase de estado em vez de um card alto sem nada; "Voltar para o Mapa" no simulado virou chip com seta (antes um ghost desalinhado do card).
+- **Movimento** (docs/DESIGN.md §7): stagger de entrada, contador nos stat cards, certa assenta com check desenhado, errada com shake, bolinhas com pop, barras crescendo, troca de questão deslizando. Tudo em transform/opacity e zerado com `prefers-reduced-motion`. Sem dependência nova: CSS + um hook de `requestAnimationFrame` (o `motion` não foi necessário).
+- **Aprender o básico** (docs/DESIGN.md §8): tela `/aprender` no menu e botão "Ver visualmente" na IDE para os assuntos mapeados (porcentagem, matemática financeira, regra de três, razão e proporção, números e operações, gráficos e tabelas, leitura de gráfico de função, estatística básica, grandezas/unidades/escalas, geometria plana, probabilidade). Oito visuais com exemplo numérico, passo a passo, controle do aluno, truque do ENEM e teste de um clique.
+- **Testes:** `src/lib/visuais/visuais.test.ts` e `src/lib/movimento.test.ts` (23 testes; 100% exigido na cobertura dessas pastas); `e2e/aprender.spec.ts` (menu, passo a passo, teste rápido, hash, "Ver visualmente" na IDE, reduced motion).
+
+### Decisões
+- CSS em vez de `motion`: as animações pedidas são curtas e de entrada/estado; keyframes cobrem tudo e o bloco global de reduced motion já as desliga.
+- O botão "Ver visualmente" não aparece no simulado ("sem tutor, sem dicas").
+- O visual usa outros números que os da questão, para ensinar a ideia sem entregar a resposta.
+
+### Pendências
+- E2E instável nesta máquina por carga (load average acima de 150 durante a sessão): `page.goto` e navegações estouram o timeout de forma aleatória, em testes diferentes a cada rodada. Uma rodada completa passou 32/32; as outras falharam em 1 a 6 testes distintos, todos verdes quando rodados de novo.
+- Conferir a sensação das animações num Mac de verdade (aqui, Chromium headless).

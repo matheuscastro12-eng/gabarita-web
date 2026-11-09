@@ -21,6 +21,8 @@ export default defineConfig({
         "src/lib/gemeas/**/*.ts",
         "src/lib/laboratorio/**/*.ts",
         "src/lib/pyodide/fallback.ts",
+        "src/lib/visuais/**/*.ts",
+        "src/lib/movimento.ts",
       ],
       exclude: [
         "src/lib/**/*.test.ts",
@@ -44,6 +46,8 @@ export default defineConfig({
         "src/lib/aleatorio.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
         "src/lib/laboratorio/**/*.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
         "src/lib/pyodide/fallback.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
+        "src/lib/visuais/**/*.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
+        "src/lib/movimento.ts": { lines: 100, functions: 100, branches: 100, statements: 100 },
       },
     },
   },

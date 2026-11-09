@@ -29,6 +29,7 @@ import { Badge } from "@/components/ui/badge";
 import { Kbd } from "@/components/ui/kbd";
 import { Progress } from "@/components/ui/progress";
 import { Esqueleto } from "@/components/ui/esqueleto";
+import { Contador } from "@/components/ui/contador";
 import { CabecalhoPagina, ConteudoPagina } from "@/components/app/pagina";
 import { useAtalho } from "@/lib/atalhos/provider";
 import { cn } from "@/lib/utils";
@@ -103,7 +104,7 @@ export function TelaHoje() {
       )}
 
       {/* Linha de stat cards: o primeiro é o hero em gradiente azul. */}
-      <div className="grid grid-cols-2 gap-3.5 lg:grid-cols-4" data-testid="stat-cards">
+      <div className="entrada-stagger grid grid-cols-2 gap-3.5 lg:grid-cols-4" data-testid="stat-cards">
         <Stat
           hero
           titulo="Dias até a prova"
@@ -137,8 +138,8 @@ export function TelaHoje() {
         />
       </div>
 
-      <div className="grid gap-3.5 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)]">
-        <Card className="gap-4" data-testid="card-sprint">
+      <div className="entrada-stagger grid gap-3.5 lg:grid-cols-4">
+        <Card className="gap-4 lg:col-span-2" data-testid="card-sprint">
           <CardHeader>
             <CardTitle>Sprint de 5 questões</CardTitle>
             <CardDescription>
@@ -163,7 +164,7 @@ export function TelaHoje() {
                   {q ? (
                     <>
                       <span className="num">{q.habilidade ?? "—"}</span>
-                      {q.habilidade && <span className="hidden max-w-44 truncate font-medium text-muted-foreground md:inline">{NOME_HABILIDADE[q.habilidade]}</span>}
+                      {q.habilidade && <span className="hidden max-w-28 truncate font-medium text-muted-foreground md:inline">{NOME_HABILIDADE[q.habilidade]}</span>}
                       <Badge
                         variant={q.tri ? (q.dificuldade_estimada === "facil" ? "success" : q.dificuldade_estimada === "dificil" ? "danger" : "warning") : "neutral"}
                         className="rounded-full px-2 py-0 text-[11px]"
@@ -196,8 +197,8 @@ export function TelaHoje() {
         <PlanoDeHoje estado={estado} resumo={resumo} dias={dias} />
       </div>
 
-      <div className="grid gap-3.5 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
-        <Card>
+      <div className="entrada-stagger grid gap-3.5 lg:grid-cols-4">
+        <Card className="lg:col-span-2">
           <CardHeader>
             <CardTitle>Questões por dia</CardTitle>
           </CardHeader>
@@ -209,7 +210,7 @@ export function TelaHoje() {
           </CardContent>
         </Card>
 
-        <Card data-testid="card-dominio">
+        <Card className="lg:col-span-2" data-testid="card-dominio">
           <CardHeader>
             <CardTitle>Domínio por habilidade</CardTitle>
             <CardDescription>As que mais precisam de atenção (de 0 a 1).</CardDescription>
@@ -260,7 +261,9 @@ function Stat({ hero = false, titulo, Icone, valor, detalhe }: { hero?: boolean;
       {valor === null ? (
         <Esqueleto className={cn("mt-auto h-9 w-16", hero && "bg-white/25")} />
       ) : (
-        <p className={cn("num mt-auto text-[30px] leading-none font-extrabold md:text-3xl", hero ? "text-white" : "text-foreground")}>{valor}</p>
+        <p className={cn("num mt-auto text-[30px] leading-none font-extrabold md:text-3xl", hero ? "text-white" : "text-foreground")}>
+          <Contador valor={valor} />
+        </p>
       )}
       <p className={cn("mt-1.5 line-clamp-2 text-[11.5px] leading-snug", hero ? "text-white/85" : "text-muted-foreground")} title={detalhe}>
         {detalhe || " "}
@@ -272,18 +275,24 @@ function Stat({ hero = false, titulo, Icone, valor, detalhe }: { hero?: boolean;
 /** Gráfico de barras dos últimos 7 dias (sem biblioteca; só divs). */
 function GraficoSemana({ dados }: { dados: { rotulo: string; chave: string; n: number }[] | null }) {
   const max = Math.max(5, ...(dados ?? []).map((d) => d.n));
+  const vazio = dados !== null && dados.every((d) => d.n === 0);
   return (
+    <div className="relative">
+    {vazio && (
+      <p className="absolute inset-x-0 top-6 text-center text-sm text-muted-foreground">Nenhuma questão nos últimos 7 dias. O primeiro sprint aparece aqui.</p>
+    )}
     <div className="flex h-[150px] items-end gap-2.5" role="img" aria-label={dados ? `Questões por dia: ${dados.map((d) => d.n).join(", ")}` : "Carregando"}>
       {(dados ?? Array.from({ length: 7 }, (_, i) => ({ rotulo: "", chave: String(i), n: 0 }))).map((d) => (
         <div key={d.chave} className="flex h-full flex-1 flex-col items-center justify-end gap-1">
           {d.n > 0 && <span className="num text-[10px] font-semibold text-muted-foreground">{d.n}</span>}
           <div
-            className={cn("w-full rounded-[7px]", d.n > 0 ? "bg-accent" : "bg-accent-soft dark:bg-surface-2")}
+            className={cn("w-full origin-bottom rounded-[7px]", d.n > 0 ? "anim-barra bg-accent" : "bg-accent-soft dark:bg-surface-2")}
             style={{ height: d.n > 0 ? `${Math.max(6, (d.n / max) * 110)}px` : "6px" }}
           />
           <span className="text-[10px] text-muted-foreground">{d.rotulo || " "}</span>
         </div>
       ))}
+    </div>
     </div>
   );
 }
@@ -340,7 +349,7 @@ function PlanoDeHoje({
       : null;
 
   return (
-    <Card className="gap-3" data-testid="plano-hoje">
+    <Card className="gap-3 lg:col-span-2" data-testid="plano-hoje">
       <CardHeader>
         <CardTitle>Plano de hoje</CardTitle>
       </CardHeader>

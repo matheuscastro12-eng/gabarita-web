@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Check, X } from "lucide-react";
+import { X } from "lucide-react";
 import type { Alternativa, Letra } from "@/data/tipos";
 import { cn } from "@/lib/utils";
 import { Kbd } from "@/components/ui/kbd";
@@ -29,6 +29,7 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
         const selecionada = marcada === alt.letra;
         const ehGabarito = confirmada && gabarito === alt.letra;
         const ehErro = confirmada && selecionada && gabarito !== alt.letra;
+        const acertou = ehGabarito && selecionada;
         return (
           <button
             key={alt.letra}
@@ -45,6 +46,8 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
               selecionada && !confirmada && "border-accent hover:border-accent",
               ehGabarito && "border-success bg-success-tint disabled:hover:border-success",
               ehErro && "border-danger bg-danger-tint disabled:hover:border-danger",
+              acertou && "anim-assenta",
+              ehErro && "anim-shake",
             )}
           >
             <span
@@ -56,7 +59,7 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
                 ehErro && "border-danger bg-danger text-white",
               )}
             >
-              {ehGabarito ? <Check className="size-4" strokeWidth={2.5} /> : ehErro ? <X className="size-4" strokeWidth={2.5} /> : alt.letra}
+              {ehGabarito ? <CheckDesenhado /> : ehErro ? <X className="anim-pop size-4" strokeWidth={2.5} /> : alt.letra}
             </span>
             <span className="min-w-0 flex-1 pt-0.75">
               {alt.texto && <Markdown inline>{alt.texto}</Markdown>}
@@ -69,5 +72,14 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
         );
       })}
     </div>
+  );
+}
+
+/** Check que se desenha (traço de 0 ao fim) ao revelar a certa. */
+function CheckDesenhado() {
+  return (
+    <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M5 12.5l4.5 4.5L19 7.5" pathLength={24} className="anim-desenha" style={{ ["--traco" as string]: 24 }} />
+    </svg>
   );
 }

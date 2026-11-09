@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { ArrowRight, Check, Timer, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Timer, X } from "lucide-react";
 import type { Letra, Questao } from "@/data/tipos";
 import { NOME_HABILIDADE } from "@/data/tipos";
 import { useQuestoes } from "@/data/use-questoes";
@@ -151,8 +151,10 @@ export function TelaSimulado() {
             </p>
           </CardContent>
         </Card>
-        <Button variant="ghost" asChild className="self-start">
-          <Link href="/mapa">Voltar para o Mapa</Link>
+        <Button variant="outline" asChild className="self-start">
+          <Link href="/mapa">
+            <ArrowLeft /> Voltar para o Mapa
+          </Link>
         </Button>
       </ConteudoPagina>
     );
