@@ -8,7 +8,7 @@ import { infoVisual, visualParaAssuntos } from "@/lib/visuais/catalogo";
 import { COMPONENTE_VISUAL } from "@/components/visuais";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import type { Questao, Letra } from "@/data/tipos";
-import { CREDITO_APOSTAS, ehAposta, fonteDetalhada, NOME_HABILIDADE } from "@/data/tipos";
+import { CREDITO_APOSTAS, ehAposta, exibirHabilidade, fonteDetalhada, NOME_HABILIDADE } from "@/data/tipos";
 import { NOME_AREA } from "@/data/apostas";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -183,7 +183,7 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             )}
             {questao.habilidade && (
               <Badge variant="accent" title={NOME_HABILIDADE[questao.habilidade]}>
-                {questao.habilidade}
+                {exibirHabilidade(questao.habilidade)}
                 {questao.habilidade_origem && questao.habilidade_origem !== "inep" ? " (estimada)" : ""}
               </Badge>
             )}

@@ -4,8 +4,9 @@ import * as React from "react";
 import Link from "next/link";
 import { BookMarked, Copy, RotateCcw, Sparkles } from "lucide-react";
 import type { Questao } from "@/data/tipos";
-import { NOME_HABILIDADE, ordemHabilidade, rotuloHabilidade } from "@/data/tipos";
+import { exibirHabilidade, NOME_HABILIDADE, ordemHabilidade } from "@/data/tipos";
 import { useQuestoes } from "@/data/use-questoes";
+import { useEstadoArea } from "@/components/app/versao";
 import { useStore } from "@/lib/store/provider";
 import { listarCaderno, plural, type EntradaCadernoDetalhada } from "@/lib/dominio";
 import { ehNomeGerador, gemeaDaQuestao, gerarGemea, ROTULO_GERADOR, type Gemea, type NomeGerador } from "@/lib/gemeas";
@@ -32,7 +33,8 @@ export function lerIdGemea(id: string): { gerador: NomeGerador; semente: number 
 
 /** Caderno de erros: cada erro com a questão, a alternativa marcada, o equívoco e as ações refazer / gêmea. */
 export function TelaCaderno() {
-  const { estado, erro: erroStore } = useStore();
+  const { erro: erroStore } = useStore();
+  const estado = useEstadoArea();
   const { porId, erro: erroQuestoes } = useQuestoes();
   const agora = React.useMemo(() => (estado ? new Date() : null), [estado]);
   const [filtro, setFiltro] = React.useState<Filtro>("abertos");
@@ -148,7 +150,7 @@ export function TelaCaderno() {
                 <option value="todas">todas</option>
                 {habilidades.map((h) => (
                   <option key={h} value={h}>
-                    {h} · {NOME_HABILIDADE[h]}
+                    {exibirHabilidade(h)} · {NOME_HABILIDADE[h]}
                   </option>
                 ))}
               </select>
@@ -214,7 +216,7 @@ function EntradaView({
           {questao ? `ENEM ${questao.ano} · Q${questao.numero}` : idGemea ? `Gêmea · ${ROTULO_GERADOR[idGemea.gerador]}` : entrada.questaoId}
         </span>
         <Badge variant="accent" title={NOME_HABILIDADE[entrada.habilidade]}>
-          {entrada.habilidade}
+          {exibirHabilidade(entrada.habilidade)}
         </Badge>
         {questao?.dificuldade_estimada && <Badge variant="outline">{questao.dificuldade_estimada === "facil" ? "fácil" : questao.dificuldade_estimada === "media" ? "média" : "difícil"}</Badge>}
         {entrada.vezes > 1 && <Badge variant="warning">errada {entrada.vezes}×</Badge>}

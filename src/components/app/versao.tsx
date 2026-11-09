@@ -30,21 +30,19 @@ function lerSalva(): string | null {
 export function VersaoProvider({ children, inicial }: { children: React.ReactNode; inicial?: Versao }) {
   const { estado } = useStore();
   const [escolhida, setEscolhida] = React.useState<Versao | null | undefined>(inicial);
+  const temProgresso = estado ? estado.tentativas.length > 0 || estado.sprints.length > 0 || estado.simulados.length > 0 : false;
+  // Decide quando o estado chega: a salva; senão, quem já tem progresso vai direto para Matemática.
+  const decidida: Versao | null | undefined = escolhida !== undefined ? escolhida : estado ? versaoInicial(lerSalva(), temProgresso) : undefined;
 
-  // Decide uma vez, quando o estado chega: quem já tem progresso vai direto para Matemática.
   React.useEffect(() => {
-    if (escolhida !== undefined || !estado) return;
-    const temProgresso = estado.tentativas.length > 0 || estado.sprints.length > 0 || estado.simulados.length > 0;
-    const v = versaoInicial(lerSalva(), temProgresso);
-    if (v) {
+    if (escolhida === undefined && decidida) {
       try {
-        window.localStorage.setItem(CHAVE_VERSAO, v);
+        window.localStorage.setItem(CHAVE_VERSAO, decidida);
       } catch {
         /* sem localStorage: vale só nesta aba */
       }
     }
-    setEscolhida(v);
-  }, [estado, escolhida]);
+  }, [escolhida, decidida]);
 
   const definir = React.useCallback((v: Versao) => {
     try {
@@ -55,10 +53,11 @@ export function VersaoProvider({ children, inicial }: { children: React.ReactNod
     setEscolhida(v);
   }, []);
 
-  const versao = escolhida ?? null;
+  const versao = decidida ?? null;
+  const carregada = decidida !== undefined;
   const valor = React.useMemo<ContextoVersao>(
-    () => ({ versao, carregada: escolhida !== undefined, areas: areasDaVersao(versao ?? "matematica"), definir }),
-    [versao, escolhida, definir],
+    () => ({ versao, carregada, areas: areasDaVersao(versao ?? "matematica"), definir }),
+    [versao, carregada, definir],
   );
   return <Ctx.Provider value={valor}>{children}</Ctx.Provider>;
 }

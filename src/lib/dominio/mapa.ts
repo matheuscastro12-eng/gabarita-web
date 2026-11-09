@@ -3,8 +3,8 @@
  * o que falta para "pronto"; agrupamento por competência e por assunto de foco.
  */
 import type { Questao } from "@/data/tipos";
-import { competenciaDa, HABILIDADES, NOME_HABILIDADE, type Competencia } from "@/data/tipos";
-import { ASSUNTOS_DE_FOCO, COMPETENCIAS, type AssuntoInfo, type CompetenciaInfo } from "@/data/taxonomia";
+import { competenciaDa, habilidadesDaArea, NOME_HABILIDADE, type Area, type Competencia } from "@/data/tipos";
+import { ASSUNTOS_DE_FOCO, competenciasDaArea, type AssuntoInfo, type CompetenciaInfo } from "@/data/taxonomia";
 import { DOMINIO_INICIAL, novoEstadoHabilidade } from "./evidencia";
 import { prontoHabilidade } from "./pronto";
 import { precisaRevisao } from "./revisao";
@@ -43,9 +43,9 @@ export function nivelCalor(dominioEfetivo: number | null): 0 | 1 | 2 | 3 | 4 {
   return 4;
 }
 
-export function mapaHabilidades(estado: EstadoAluno, agora: Date): CelulaMapa[] {
+export function mapaHabilidades(estado: EstadoAluno, agora: Date, area: Area = "matematica"): CelulaMapa[] {
   const semana = new Set<string>(estado.perfil.habilidadesDaSemana);
-  return HABILIDADES.map((h) => {
+  return habilidadesDaArea(area).map((h) => {
     const habilidade = h as Habilidade;
     const existente = estado.habilidades[habilidade];
     const eh = existente ?? novoEstadoHabilidade(habilidade, agora);
@@ -76,8 +76,8 @@ export interface GrupoCompetencia {
   media: number | null;
 }
 
-export function agruparPorCompetencia(celulas: CelulaMapa[]): GrupoCompetencia[] {
-  return COMPETENCIAS.map((competencia) => {
+export function agruparPorCompetencia(celulas: CelulaMapa[], area: Area = "matematica"): GrupoCompetencia[] {
+  return competenciasDaArea(area).map((competencia) => {
     const minhas = celulas.filter((c) => c.competencia === competencia.id);
     return { competencia, celulas: minhas, media: mediaComDados(minhas) };
   });

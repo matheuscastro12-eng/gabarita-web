@@ -3,14 +3,14 @@
 import * as React from "react";
 import Link from "next/link";
 import type { Questao } from "@/data/tipos";
-import { NOME_HABILIDADE } from "@/data/tipos";
+import { NOME_HABILIDADE, rotuloHabilidade } from "@/data/tipos";
+import { useEstadoArea, useVersao } from "@/components/app/versao";
 import { useQuestoes } from "@/data/use-questoes";
 import { useStore } from "@/lib/store/provider";
 import {
   encerrarSprint,
   iniciarSprint,
-  limiarFacil,
-  montarFila,
+  montarFilaDasAreas,
   prontoHabilidade,
   registrarEventoTutor,
   registrarTentativa,
@@ -37,7 +37,9 @@ type Fase =
 
 /** Tela Estudar: monta a fila, inicia o sprint, registra cada tentativa e mostra o fim. */
 export function TelaEstudar() {
-  const { estado, atualizar, erro: erroStore } = useStore();
+  const { atualizar, erro: erroStore } = useStore();
+  const estado = useEstadoArea();
+  const { areas } = useVersao();
   const { questoes, porId, erro: erroQuestoes } = useQuestoes();
   const { notificar } = useToast();
   const [fase, setFase] = React.useState<Fase>({ tipo: "carregando" });
@@ -48,8 +50,7 @@ export function TelaEstudar() {
     iniciandoRef.current = true;
     try {
       const agora = new Date();
-      const bs = questoes.flatMap((q) => (q.tri ? [q.tri.b] : []));
-      let fila = montarFila({ questoes, estado, agora, limiarFacil: limiarFacil(bs), theta: null });
+      let fila = montarFilaDasAreas({ questoes, estado, agora, areas });
       // ?questao=enem-2022-154 põe uma questão específica na frente (refazer do caderno, e2e).
       const pedida = new URLSearchParams(window.location.search).get("questao");
       const questaoPedida = pedida ? questoes.find((q) => q.id === pedida) : undefined;
@@ -60,7 +61,7 @@ export function TelaEstudar() {
       }
       let sprintId = "";
       await atualizar((e) => {
-        const r = iniciarSprint(e, fila.map((q) => q.id), agora);
+        const r = iniciarSprint(e, fila.map((q) => q.id), agora, undefined, areas.length > 1 ? "misto" : areas[0]);
         sprintId = r.sprint.id;
         return r.estado;
       });
@@ -70,7 +71,7 @@ export function TelaEstudar() {
     } finally {
       iniciandoRef.current = false;
     }
-  }, [estado, questoes, atualizar, notificar]);
+  }, [estado, questoes, atualizar, notificar, areas]);
 
   // Inicia assim que estado e questões estiverem prontos (uma vez).
   const jaIniciou = React.useRef(false);
@@ -205,7 +206,7 @@ export function TelaEstudar() {
         questaoAtual?.habilidade ? (
           <div className="flex items-center gap-3">
             <span className="shrink-0 text-[13px] font-medium text-muted-foreground">
-              domínio <span className="num">{questaoAtual.habilidade}</span>
+              domínio <span className="num">{rotuloHabilidade(questaoAtual.habilidade, areas.length > 1)}</span>
               <span className="sr-only"> {NOME_HABILIDADE[questaoAtual.habilidade]}</span>
             </span>
             <Progress value={(hab?.dominio ?? 0.3) * 100} className="max-w-48" />

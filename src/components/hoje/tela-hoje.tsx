@@ -6,19 +6,17 @@ import { useRouter } from "next/navigation";
 import { ArrowRight, Calendar, CheckCircle2, ChevronRight, Circle, RotateCcw, Target, type LucideIcon } from "lucide-react";
 import { useStore } from "@/lib/store/provider";
 import { useQuestoes } from "@/data/use-questoes";
-import { NOME_HABILIDADE } from "@/data/tipos";
+import { NOME_AREA, NOME_HABILIDADE, rotuloHabilidade, SIGLA_AREA } from "@/data/tipos";
+import { useEstadoArea, useVersao } from "@/components/app/versao";
 import type { EstadoAluno, Tentativa } from "@/lib/dominio/tipos";
 import {
   dataLocal,
   descreverPrazo,
   diasAteProva,
-  estimarTheta,
   formatarDecimal,
-  limiarFacil,
-  montarFila,
+  montarFilaDasAreas,
   MS_POR_DIA,
-  notaEstimada,
-  respostasTRI,
+  notaDaArea,
   resumoDoDia,
   simuladoValeParaFaceis,
   plural,
@@ -58,7 +56,10 @@ function contarPorDia(tentativas: Tentativa[], agora: Date): { rotulo: string; c
 
 /** Tela inicial no estilo do Dashboard original: stat cards, sprint, plano de hoje, questões por dia e domínio. */
 export function TelaHoje() {
-  const { estado, erro: erroStore } = useStore();
+  const { erro: erroStore } = useStore();
+  const estado = useEstadoArea();
+  const { versao, areas } = useVersao();
+  const comArea = areas.length > 1;
   const { questoes, erro: erroQuestoes } = useQuestoes();
   const router = useRouter();
   // Só existe depois que o estado chega do IndexedDB (nunca durante o prerender).
@@ -76,17 +77,14 @@ export function TelaHoje() {
 
   const fila = React.useMemo(() => {
     if (!estado || !questoes || !agora) return null;
-    const bs = questoes.flatMap((q) => (q.tri ? [q.tri.b] : []));
-    return montarFila({ questoes, estado, agora, limiarFacil: limiarFacil(bs), theta: null });
-  }, [estado, questoes, agora]);
+    return montarFilaDasAreas({ questoes, estado, agora, areas });
+  }, [estado, questoes, agora, areas]);
 
   const nota = React.useMemo(() => {
     if (!estado || !questoes) return null;
     const porId = new Map(questoes.map((q) => [q.id, q]));
-    const respostas = respostasTRI(estado.tentativas, porId);
-    const { theta, erroPadrao, itens } = estimarTheta(respostas);
-    return notaEstimada(theta, erroPadrao, itens);
-  }, [estado, questoes]);
+    return areas.map((a) => ({ area: a, nota: notaDaArea(estado, porId, a) }));
+  }, [estado, questoes, areas]);
 
   const porDia = React.useMemo(() => (estado && agora ? contarPorDia(estado.tentativas, agora) : null), [estado, agora]);
   const dias = estado && agora ? diasAteProva(estado.perfil.dataProva, agora) : null;
@@ -125,23 +123,31 @@ export function TelaHoje() {
           detalhe={resumo ? (resumo.tentativasHoje > 0 ? `${resumo.acertosHoje} acertos · ${plural(resumo.sprintsHoje, "sprint", "sprints")}` : "meta: 1 sprint de 5") : ""}
         />
         <Stat
-          titulo="Nota estimada"
+          titulo={comArea ? "Nota estimada · CN e MT" : `Nota estimada · ${SIGLA_AREA[areas[0]!]}`}
           Icone={Target}
-          valor={nota ? (nota.itens > 0 ? String(nota.nota) : "—") : null}
-          detalhe={nota ? (nota.itens > 0 ? `${nota.inferior}–${nota.superior} · estimativa` : "aparece após a 1ª questão com TRI") : ""}
+          valor={nota ? (comArea ? nota.map((n) => (n.nota.itens > 0 ? String(n.nota.nota) : "—")).join(" · ") : nota[0]!.nota.itens > 0 ? String(nota[0]!.nota.nota) : "—") : null}
+          detalhe={
+            nota
+              ? comArea
+                ? nota.map((n) => `${SIGLA_AREA[n.area]} ${n.nota.itens > 0 ? `${n.nota.inferior}–${n.nota.superior}` : "sem dados"}`).join(" · ") + " · estimativa"
+                : nota[0]!.nota.itens > 0
+                  ? `${nota[0]!.nota.inferior}–${nota[0]!.nota.superior} · estimativa`
+                  : "aparece após a 1ª questão com TRI"
+              : ""
+          }
         />
         <Stat
           titulo="Revisões vencidas"
           Icone={RotateCcw}
           valor={resumo ? String(resumo.habilidadesVencidas.length) : null}
-          detalhe={resumo ? (resumo.habilidadesVencidas.length > 0 ? resumo.habilidadesVencidas.join(", ") : "retenção prevista acima de 90%") : ""}
+          detalhe={resumo ? (resumo.habilidadesVencidas.length > 0 ? resumo.habilidadesVencidas.map((h) => rotuloHabilidade(h, comArea)).join(", ") : "retenção prevista acima de 90%") : ""}
         />
       </div>
 
       <div className="entrada-stagger grid gap-3.5 lg:grid-cols-4">
         <Card className="gap-4 lg:col-span-2" data-testid="card-sprint">
           <CardHeader>
-            <CardTitle>Sprint de 5 questões</CardTitle>
+            <CardTitle>{versao === "geral" ? "Treino misto de 5 questões" : `Sprint de 5 questões de ${NOME_AREA[areas[0]!].toLowerCase()}`}</CardTitle>
             <CardDescription>
               {fila === null ? (
                 <span className="sr-only">Montando a fila…</span>
@@ -163,7 +169,7 @@ export function TelaHoje() {
                 >
                   {q ? (
                     <>
-                      <span className="num">{q.habilidade ?? "—"}</span>
+                      <span className="num">{q.habilidade ? rotuloHabilidade(q.habilidade, comArea) : `${SIGLA_AREA[q.area]} —`}</span>
                       {q.habilidade && <span className="hidden max-w-28 truncate font-medium text-muted-foreground md:inline">{NOME_HABILIDADE[q.habilidade]}</span>}
                       <Badge
                         variant={q.tri ? (q.dificuldade_estimada === "facil" ? "success" : q.dificuldade_estimada === "dificil" ? "danger" : "warning") : "neutral"}
@@ -247,8 +253,8 @@ export function TelaHoje() {
                   .slice(0, 6)
                   .map((h) => (
                     <li key={h.habilidade} className="flex items-center gap-2.5 text-[13px]" title={NOME_HABILIDADE[h.habilidade]}>
-                      <span className="num w-9 shrink-0 font-semibold">{h.habilidade}</span>
-                      <Progress value={h.dominio * 100} aria-label={`Domínio em ${h.habilidade}`} />
+                      <span className={cn("num shrink-0 font-semibold", comArea ? "w-14" : "w-9")}>{rotuloHabilidade(h.habilidade, comArea)}</span>
+                      <Progress value={h.dominio * 100} aria-label={`Domínio em ${rotuloHabilidade(h.habilidade, true)}`} />
                       <span className="num w-9 shrink-0 text-right font-bold">{formatarDecimal(h.dominio, 2)}</span>
                     </li>
                   ))}

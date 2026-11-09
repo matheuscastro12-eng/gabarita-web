@@ -35,8 +35,14 @@ export function areaDaHabilidade(h: string): Area {
 }
 
 /** "CN-H3" → "H3" (rótulo curto; a área aparece no contexto da tela). */
-export function rotuloHabilidade(h: string): string {
-  return h.replace(/^CN-/, "");
+export function rotuloHabilidade(h: string, comArea = false): string {
+  const curto = h.replace(/^CN-/, "");
+  return comArea ? `${h.startsWith("CN-") ? "CN" : "MT"} ${curto}` : curto;
+}
+
+/** Rótulo para telas sem contexto de área: "H17" (matemática) ou "CN H17" (natureza). */
+export function exibirHabilidade(h: string): string {
+  return h.replace(/^CN-/, "CN ");
 }
 
 /** Chave de habilidade de uma área: matemática "H3", natureza "CN-H3". */
