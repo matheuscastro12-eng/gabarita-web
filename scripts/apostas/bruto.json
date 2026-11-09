@@ -1,0 +1,1953 @@
+[
+ {
+  "numero": 1,
+  "apoio": [
+   "No laboratório de bioquímica de uma universidade federal cearense, a professora Renata abre o semestre com uma provocação para a turma de Nutrição: antes de existirem folhas, músculos ou neurônios, a vida já precisava de uma moeda para pagar suas contas químicas. Ela projeta no quadro a estrutura de uma molécula pequena, presente de bactérias a baleias, e conta que a aquisição da capacidade de fabricá-la e gastá-la reorganizou a história do metabolismo — certas rotas só puderam se estabelecer depois desse marco. “Quem entende a ordem dos acontecimentos entende por que a célula funciona como funciona”, resume, antes de apresentar o texto de apoio.",
+   "A adenosina trifosfato (ATP) é reconhecida como a principal fonte de energia celular, desempenhando um papel crucial em diversas reações metabólicas essenciais para a vida."
+  ],
+  "fonte": "Disponível em: www.biologiacelularnaescola.com.br. Acesso em: 12 mar. 2026 (adaptado).",
+  "comando": "Considerando a evolução dos seres vivos e o surgimento do ATP como molécula energética, qual dos processos descreve corretamente uma atividade biológica que se tornou possível logo após o desenvolvimento da capacidade de utilizar o ATP?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Glicólise, processo metabólico que ocorre na ausência de ATP."
+   },
+   {
+    "letra": "B",
+    "texto": "Ciclo de Krebs, processo metabólico dependente da energia fornecida pelo ATP."
+   },
+   {
+    "letra": "C",
+    "texto": "Fermentação, um processo que não depende diretamente da utilização de ATP."
+   },
+   {
+    "letra": "D",
+    "texto": "Fotossíntese, processo que não depende diretamente da utilização de ATP."
+   },
+   {
+    "letra": "E",
+    "texto": "Ciclo de Krebs, onde ocorre a oxidação de moléculas de acetil-CoA para gerar energia."
+   }
+  ],
+  "gabarito_resolucao": "E",
+  "topico": "Energia celular e metabolismo",
+  "resolucao": [
+   "A chave desta questão está em separar as descrições bioquimicamente corretas das falsas. A glicólise não ocorre \"na ausência de ATP\": sua fase preparatória investe duas moléculas de ATP por glicose, o que derruba a primeira descrição. A fermentação embute a própria glicólise, logo depende do uso de ATP; e a fotossíntese consome ATP na fase de fixação do carbono (ciclo de Calvin), de modo que as duas alternativas construídas sobre \"não depende diretamente do ATP\" também caem.",
+   "Restam as duas formulações sobre o ciclo de Krebs. Dizer que ele é \"dependente da energia fornecida pelo ATP\" inverte o papel da via, que é oxidativa e geradora de intermediários energéticos, não consumidora líquida de ATP. A única descrição fiel ao metabolismo é a que apresenta o ciclo de Krebs como a oxidação de moléculas de acetil-CoA para gerar energia — atividade que se articula à maquinaria de uso do ATP na respiração celular. A resposta é a alternativa E."
+  ],
+  "gabarito_folha": "E"
+ },
+ {
+  "numero": 2,
+  "apoio": [
+   "Na feira de matemática de um colégio do Cariri cearense, a professora Elisa montou uma banca de jogos de azar pedagógicos para discutir tomada de decisão. A dupla escalada para a demonstração é conhecida da plateia: Arthur, do 2º ano, famoso por confiar na sorte, e João, do 3º, que só aceita apostar depois de fazer contas. Antes de girar o copo com os dados, Elisa lança a pergunta que dá título à banca: “escolher mais dados é sempre vantagem?” — e pede que a plateia acompanhe as regras com atenção, porque o detalhe do desempate pode mudar tudo.",
+   "Arthur e João participam de um jogo de dados com regras específicas. No jogo, são utilizados três dados comuns (com faces numeradas de 1 a 6). Arthur tem o direito de escolher dois desses dados para jogar, enquanto João fica com o dado restante. O objetivo do jogo é determinar quem obtém o maior número no lançamento dos dados. Arthur joga seus dois dados simultaneamente, e João lança o seu dado individualmente. Em caso de empate entre o maior número obtido por Arthur e o número de João, a vitória é atribuída a João."
+  ],
+  "fonte": "Disponível em: www.oficinadeprobabilidade.net.br. Acesso em: 9 abr. 2026 (adaptado).",
+  "comando": "Considerando as regras do jogo, qual é a probabilidade de Arthur ou João vencerem o jogo?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "A probabilidade de Arthur vencer o jogo é de 81/216."
+   },
+   {
+    "letra": "B",
+    "texto": "A probabilidade de João vencer o jogo é de 45/216."
+   },
+   {
+    "letra": "C",
+    "texto": "A probabilidade de Arthur vencer o jogo é de 100/216."
+   },
+   {
+    "letra": "D",
+    "texto": "A probabilidade de João vencer o jogo é de 35/216."
+   },
+   {
+    "letra": "E",
+    "texto": "A probabilidade de Arthur vencer o jogo é de 125/216."
+   }
+  ],
+  "gabarito_resolucao": "E",
+  "topico": "Probabilidade em jogo de dados",
+  "resolucao": [
+   "O espaço amostral tem 6 × 6 × 6 = 216 resultados equiprováveis. O número de Arthur é o maior valor entre seus dois dados, e ele só vence quando esse máximo supera estritamente o dado de João — no empate, a vitória é de João. O caminho limpo passa pelo complementar: a chance de o máximo de dois dados ser no máximo j é j²/36; logo, para cada valor j de João, Arthur vence em 36 − j² dos 36 pares possíveis. Somando para j de 1 a 6: 35 + 32 + 27 + 20 + 11 + 0 = 216 − 91 = 125 casos favoráveis a Arthur, restando 91 para João.",
+   "A probabilidade de Arthur vencer é, portanto, 125/216 (cerca de 58%): dois dados dão vantagem real, mas o desempate a favor de João impede a barbada. Os distratores 100 e 120 orbitam o valor certo capturando contagens que esquecem parte dos casos, e 35/216 fisga quem troca o maior dos dois dados pela soma deles. a resposta é a alternativa E."
+  ],
+  "gabarito_folha": "E"
+ },
+ {
+  "numero": 3,
+  "apoio": [
+   "Na abertura do treinamento semestral de uma concessionária de Belo Horizonte, a gerente Sandra gosta de quebrar o gelo com dinâmicas de sorte. Nesta edição, o prêmio é um vale-combustível, e a disputa envolve o carro-conceito recém-chegado ao showroom. Ela embaralha as chaves diante de todos, enfileira os cinco participantes e explica que ninguém terá segunda chance: cada um testa uma única chave, na sua vez, e sai da fila. Enquanto a plateia palpita sobre qual posição da fila é a melhor, o consultor Fábio, terceiro colocado por sorteio, tenta calcular friamente as próprias chances antes de a brincadeira começar.",
+   "Em uma concessionária, cinco funcionários precisam testar um novo modelo de carro. Na bancada, há cinco chaves, mas apenas uma delas é a chave correta para ligar o veículo. Os funcionários, em ordem, pegam uma chave por vez, testam e, caso não funcione, a descartam. O terceiro funcionário na fila é quem, finalmente, consegue a chave que liga o carro e ganha um bônus especial."
+  ],
+  "fonte": "Disponível em: www.matematicadodiaadia.com.br. Acesso em: 21 fev. 2026 (adaptado).",
+  "comando": "Qual a probabilidade de o terceiro funcionário ser o sortudo a encontrar a chave correta e, consequentemente, ganhar o bônus?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "1/5"
+   },
+   {
+    "letra": "B",
+    "texto": "4/5"
+   },
+   {
+    "letra": "C",
+    "texto": "1/4"
+   },
+   {
+    "letra": "D",
+    "texto": "3/5"
+   },
+   {
+    "letra": "E",
+    "texto": "2/5"
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Sorteio sem reposição",
+  "resolucao": [
+   "O caminho direto multiplica as etapas: o primeiro erra (4/5), o segundo erra (3/4) e o terceiro acerta (1/3), o que dá 4/5 × 3/4 × 1/3 = 12/60 = 1/5. Há também o atalho conceitual: num sorteio sem reposição, a chave correta tem a mesma chance de ocupar qualquer uma das cinco posições da fila — cada funcionário, antes de o processo começar, tem exatamente 1/5 de chance de ser o sortudo.",
+   "As demais frações confundem probabilidade condicional de uma etapa (1/4, 1/3 disfarçado) com a probabilidade do evento completo. A resposta é a alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 4,
+  "apoio": [
+   "Em um sítio aos pés dos monólitos de Quixadá, no interior do Ceará, o vazamento do tanque de diesel que abastecia o gerador da casa de farinha deixou uma mancha escura no terreiro e um cheiro forte que não passava com a chuva. Chamada pela família, a engenheira ambiental Luana coletou amostras, confirmou a contaminação e explicou que simplesmente raspar a terra empurraria o problema para outro lugar. “O que a gente precisa é tratar o solo aqui mesmo, com química a nosso favor”, disse, apresentando o par de reagentes que pretendia combinar no tratamento — uma dupla que a literatura técnica vem apontando como promissora para casos assim.",
+   "Em uma área rural, detectou-se a contaminação do solo por hidrocarbonetos, substâncias prejudiciais ao meio ambiente. Para solucionar esse problema, é necessário implementar um processo de descontaminação eficaz. Dentre as técnicas disponíveis, a utilização de tensoativos e peróxido de hidrogênio (água oxigenada) demonstrou-se promissora.",
+   "Os tensoativos, compostos que possuem propriedades específicas, e o peróxido de hidrogênio, conhecido por suas características oxidantes, podem desempenhar papéis importantes na remoção dos hidrocarbonetos do solo."
+  ],
+  "fonte": "Disponível em: www.quimicaambientalpratica.com.br. Acesso em: 5 maio 2026 (adaptado).",
+  "comando": "Considerando o conhecimento científico sobre a ação de tensoativos e peróxido de hidrogênio, qual das alternativas abaixo explica corretamente a utilidade de cada um desses agentes no processo de descontaminação do solo?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Os tensoativos formam micelas, estruturas que aprisionam os hidrocarbonetos, facilitando sua separação do solo. O peróxido de hidrogênio atua como um agente redutor, eliminando impurezas presentes no solo."
+   },
+   {
+    "letra": "B",
+    "texto": "Os tensoativos são úteis para remover hidrocarbonetos porque agem como agentes oxidantes. O peróxido de hidrogênio forma micelas que ajudam a dissolver os hidrocarbonetos no solo."
+   },
+   {
+    "letra": "C",
+    "texto": "Os tensoativos formam micelas, que envolvem os hidrocarbonetos, tornando-os mais solúveis em água e facilitando sua remoção. O peróxido de hidrogênio, por sua vez, auxilia na oxidação dos hidrocarbonetos, quebrando-os em compostos menos nocivos."
+   },
+   {
+    "letra": "D",
+    "texto": "Os tensoativos ajudam na remoção dos hidrocarbonetos, pois formam uma barreira protetora ao redor deles, evitando sua dispersão. O peróxido de hidrogênio, por outro lado, age como um solvente que dissolve os hidrocarbonetos."
+   },
+   {
+    "letra": "E",
+    "texto": "Os tensoativos atuam como agentes redutores, transformando os hidrocarbonetos em compostos inofensivos. O peróxido de hidrogênio age como um solvente que dissolve os hidrocarbonetos no solo."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Química da descontaminação de solos",
+  "resolucao": [
+   "O próprio enunciado dá as duas pistas: tensoativos têm \"propriedades específicas\" ligadas à sua estrutura anfifílica — cauda apolar que interage com o hidrocarboneto, cabeça polar voltada para a água — e o peróxido de hidrogênio é apresentado por suas \"características oxidantes\". A combinação correta é, portanto, micelas que solubilizam o contaminante em água e oxidação que degrada as cadeias em compostos menos nocivos.",
+   "As alternativas erradas trocam os papéis: chamam o H₂O₂ de redutor ou de solvente, atribuem micelas ao peróxido ou poder oxidante ao tensoativo. Quem guarda que \"água oxigenada oxida\" elimina quatro opções de uma vez. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 5,
+  "apoio": [
+   "Na expedição de uma distribuidora cearense de castanha-de-caju, o analista de logística Paulo herdou uma dor de cabeça: lotes diferentes saindo com o mesmo código, trocas de mercadoria e cliente reclamando. Para encerrar o problema, ele desenhou do zero o padrão de identificação da empresa, apresentado em reunião num cartaz dividido em blocos coloridos. “Antes de imprimir a primeira etiqueta, eu preciso saber se esse formato dá conta de todos os produtos que a gente ainda vai lançar”, justificou ao diretor, pedindo que a equipe conferisse com ele a capacidade do sistema.",
+   "Uma empresa utiliza códigos de barras de 13 dígitos para identificar seus produtos. As características desses códigos são definidas da seguinte forma:",
+   "Padrão Inicial: Os três primeiros dígitos do código são fixos e já determinados. Por exemplo, os dígitos iniciais podem ser 7, 5 e 6.",
+   "Conjunto Restrito: Os seis dígitos seguintes (posições 4 a 9) podem ser formados a partir de um conjunto limitado de quatro números possíveis. Por exemplo, os números disponíveis para essas posições podem ser 4, 7, 9 e 8.",
+   "Conjunto Amplo: Os três dígitos seguintes (posições 10 a 12) podem ser qualquer número de 0 a 9. Ou seja, para cada posição, há dez opções possíveis.",
+   "Dígito de Verificação: O último dígito (posição 13) é calculado automaticamente a partir dos dígitos anteriores, portanto, ele não oferece opções de escolha."
+  ],
+  "fonte": "Disponível em: www.logisticaemnumeros.com.br. Acesso em: 17 mar. 2026 (adaptado).",
+  "comando": "Considerando essas restrições, quantas combinações diferentes de códigos de barras podem ser formadas?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "4⁶ × 10³"
+   },
+   {
+    "letra": "B",
+    "texto": "4⁵ × 10⁴"
+   },
+   {
+    "letra": "C",
+    "texto": "4⁶ × 10²"
+   },
+   {
+    "letra": "D",
+    "texto": "4⁷ × 10³"
+   },
+   {
+    "letra": "E",
+    "texto": "4⁶ × 10²"
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Princípio multiplicativo de contagem",
+  "resolucao": [
+   "Basta multiplicar as liberdades de escolha posição a posição. Os três primeiros dígitos são fixos (fator 1), as seis posições do conjunto restrito contribuem com 4 opções cada (4⁶), as três posições do conjunto amplo contribuem com 10 opções cada (10³) e o dígito verificador é determinado pelos anteriores (fator 1). O total é 4⁶ × 10³.",
+   "Os distratores deslocam expoentes entre as bases — 4⁵ × 10⁴ e 4⁷ × 10³ trocam uma posição de grupo, e 4⁶ × 10² (que aparece repetido no material de origem) esquece uma das três posições livres. A resposta é a alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 6,
+  "apoio": [
+   "No centro de provas de uma montadora em Betim, na Grande BH, o engenheiro Caio conduz a bateria de ensaios de um novo sistema de freios antes da certificação. O protocolo do laboratório é rigoroso: cada frenagem de teste é registrada por sensores de temperatura instalados junto ao conjunto de aço que recebe o calor gerado, e nenhum componente é aprovado sem que os números fechem com a teoria. Na prancheta de Caio, o ensaio do dia está resumido em poucas linhas de dados — e é a partir delas que a equipe precisa dimensionar o sistema.",
+   "Em um teste de segurança veicular, o sistema de frenagem de um carro é avaliado quanto à sua capacidade de dissipar energia. Esse sistema opera convertendo a energia cinética do veículo em calor, que é absorvido por uma massa de aço presente no sistema.",
+   "Para analisar o desempenho do sistema, foram fornecidos os seguintes dados:",
+   "Calor específico do aço: c = 460 J/kg°C (Essa grandeza indica a quantidade de energia necessária para elevar a temperatura de 1 kg de aço em 1°C). Massa do carro: 1500 kg Velocidade inicial do carro: 20 m/s Variação de temperatura do aço durante a frenagem: de 20°C para 120°C."
+  ],
+  "fonte": "Disponível em: www.fisicanaengenharia.com.br. Acesso em: 26 fev. 2026 (adaptado).",
+  "comando": "Considerando que toda a energia cinética do carro é convertida em calor e absorvida pelo aço, qual das alternativas apresenta, respectivamente, o valor correto da energia cinética inicial do carro (em Joules) e a massa de aço necessária (em kg) para que a temperatura do sistema aumente de 20°C para 120°C durante a frenagem?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Energia Cinética: 150.000 J; Massa de Aço: 3,26 kg"
+   },
+   {
+    "letra": "B",
+    "texto": "Energia Cinética: 300.000 J; Massa de Aço: 6,52 kg"
+   },
+   {
+    "letra": "C",
+    "texto": "Energia Cinética: 300.000 J; Massa de Aço: 13,04 kg"
+   },
+   {
+    "letra": "D",
+    "texto": "Energia Cinética: 600.000 J; Massa de Aço: 3,26 kg"
+   },
+   {
+    "letra": "E",
+    "texto": "Energia Cinética: 600.000 J; Massa de Aço: 6,52 kg"
+   }
+  ],
+  "gabarito_resolucao": "B",
+  "topico": "Energia cinética convertida em calor",
+  "resolucao": [
+   "A energia cinética vale E = m·v²/2 = 1500 × 20² ÷ 2 = 1500 × 400 ÷ 2 = 300.000 J. Igualando ao calor sensível, Q = m·c·ΔT, com ΔT = 120 − 20 = 100 °C: 300.000 = m × 460 × 100, de onde m = 300.000 ÷ 46.000 ≈ 6,52 kg.",
+   "As armadilhas estão mapeadas nos distratores: quem esquece o ½ da energia cinética chega a 600.000 J; quem dobra ou reduz a energia pela metade arrasta a massa para 13,04 kg ou 3,26 kg. O par consistente — 300.000 J e 6,52 kg — está na alternativa B."
+  ],
+  "gabarito_folha": "B"
+ },
+ {
+  "numero": 7,
+  "apoio": [
+   "No buffet de dona Márcia, na zona norte de Sobral, a atração das festas de quinze anos é a fonte de bebidas envolta em névoa branca. O segredo, ela explica às ajudantes novatas, são os blocos de gelo seco comprados na véspera: mantidos na caixa térmica, eles diminuem de tamanho ao longo da noite sem deixar poça alguma no chão. Foi a filha dela, estudante de química, quem batizou o fenômeno pelo nome técnico e prometeu explicar, na reunião de domingo, o que acontece no nível invisível quando o bloco “vira fumaça” — explicação que começa pelo texto que ela separou.",
+   "O dióxido de carbono (CO₂) é comumente utilizado em sua forma sólida, conhecida como gelo seco, devido à sua capacidade de sublimar (passar diretamente do estado sólido para o gasoso) em condições ambientes. Esse processo, assim como a decomposição do gelo seco, envolve a ruptura de ligações químicas."
+  ],
+  "fonte": "Disponível em: www.quimicanacozinha.net.br. Acesso em: 14 jan. 2026 (adaptado).",
+  "comando": "Considerando a estrutura molecular do dióxido de carbono e os tipos de interação existentes entre suas moléculas, qual tipo de ligação é rompida durante a sublimação ou a decomposição do gelo seco?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Ligações iônicas, pois o CO₂ se dissocia em átomos de carbono e oxigênio."
+   },
+   {
+    "letra": "B",
+    "texto": "Ligações covalentes, pois as moléculas de CO₂ se separam para formar átomos livres."
+   },
+   {
+    "letra": "C",
+    "texto": "Ligações metálicas, devido à formação de uma rede de átomos de carbono."
+   },
+   {
+    "letra": "D",
+    "texto": "Ligações intermoleculares, como forças de Van der Waals, entre as moléculas de CO₂."
+   },
+   {
+    "letra": "E",
+    "texto": "Ligações de hidrogênio, que são responsáveis pela formação das moléculas de CO₂."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Interações intermoleculares no CO₂",
+  "resolucao": [
+   "Na sublimação, as moléculas de CO₂ permanecem intactas: o que se rompe é apenas a atração entre uma molécula e outra. Como o CO₂ é linear e apolar, essa atração se resume às forças de dispersão de London, da família das forças de Van der Waals — interações fracas, o que explica o gelo seco sublimar em condições ambientes.",
+   "As demais alternativas atribuem ao CO₂ ligações que ele não possui entre moléculas: não há íons, não há rede metálica e não há ligação de hidrogênio (o composto sequer tem H). Falar em rompimento covalente descreveria a quebra da própria molécula, que não ocorre na mudança de estado. A resposta é a alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 8,
+  "apoio": [
+   "Rodando o Brasil para um guia de pizzarias, a jornalista de gastronomia Beatriz notou um detalhe curioso no coração da Mooca, em São Paulo: três casas vizinhas anunciavam o mesmo queijo no cardápio, cada uma com uma forma diferente de escrevê-lo. Intrigada, levou a dúvida ao revisor da editora, que sorriu antes de responder: “esse é um caso clássico — e a resposta diz mais sobre a nossa língua do que sobre o queijo”. A conversa entre os dois virou o quadro de abertura do guia, reproduzido a seguir.",
+   "No Brasil, o queijo de origem italiana, originalmente chamado \"mozzarella\", apresenta diferentes grafias em português, como \"muçarela\", \"mussarela\" e \"mozarela\". Essa variação ortográfica demonstra como a língua se adapta e evolui ao incorporar termos estrangeiros."
+  ],
+  "fonte": "Disponível em: www.linguaportuguesaviva.com.br. Acesso em: 8 abr. 2026 (adaptado).",
+  "comando": "Qual é o principal fator que explica a ocorrência dessas diferentes formas de escrever a palavra \"mozzarella\" no português brasileiro?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "A adaptação da pronúncia e da escrita do termo italiano à fonética e às regras ortográficas do português."
+   },
+   {
+    "letra": "B",
+    "texto": "A influência da língua espanhola, que também utiliza termos italianos, na forma como o termo é escrito no Brasil."
+   },
+   {
+    "letra": "C",
+    "texto": "A diversidade de tipos de queijo mozzarella, cada um com uma grafia específica."
+   },
+   {
+    "letra": "D",
+    "texto": "A ausência de uma legislação específica que determine a grafia correta do termo."
+   },
+   {
+    "letra": "E",
+    "texto": "A variação na pronúncia do termo nas diferentes regiões do Brasil, refletida na escrita."
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Empréstimos linguísticos e ortografia",
+  "resolucao": [
+   "O fenômeno descrito é o aportuguesamento: quando um estrangeirismo entra na língua, sua forma tende a se acomodar à fonética e às convenções ortográficas do português — daí o \"zz\" italiano render \"ç\", \"ss\" ou \"z\" nas tentativas de registrar o mesmo som. É um processo interno de adaptação do empréstimo, não um reflexo de fatores externos.",
+   "As demais alternativas apontam causas que não sustentam a variação: não há mediação do espanhol, os tipos de queijo não determinam grafia, lei não é o que fixa ortografia de empréstimos em uso, e a pronúncia da palavra é essencialmente a mesma pelo país. A resposta é a alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 9,
+  "apoio": [
+   "Na lanchonete de dona Zélia, na orla de Fortaleza, a salada de frutas é preparada de madrugada para o movimento do almoço — e aí mora o prejuízo: no meio da manhã, maçãs e bananas já perderam a cor viva, e cliente recusa cumbuca escurecida mesmo estando tudo próprio para consumo. A filha dela, técnica em alimentos, foi chamada para resolver o caso sem congelar a fruta nem mudar a receita. Antes de sugerir qualquer coisa, ela abriu a apostila do curso na página que explica de onde vem o escurecimento — porque, como repete a professora dela, “ninguém desarma um mecanismo que não conhece”.",
+   "Maçãs e bananas, assim como muitas outras frutas, sofrem um processo de escurecimento quando expostas ao ar. Esse fenômeno é resultado da ação de enzimas que catalisam reações químicas específicas, e sua atividade é otimizada em um ambiente com pH próximo da neutralidade."
+  ],
+  "fonte": "Disponível em: www.tecnologiadealimentos.net.br. Acesso em: 19 mar. 2026 (adaptado).",
+  "comando": "Com o objetivo de retardar ou diminuir o escurecimento de frutas, qual substância poderia ser adicionada para interferir na ação dessas enzimas?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Suco de limão, pois sua acidez pode inibir a atividade enzimática."
+   },
+   {
+    "letra": "B",
+    "texto": "Mel de abelha, porque ele possui propriedades antioxidantes que protegem a fruta."
+   },
+   {
+    "letra": "C",
+    "texto": "Sal, pois cria um ambiente favorável para a atividade enzimática."
+   },
+   {
+    "letra": "D",
+    "texto": "Água, já que ajuda a diluir os compostos que causam o escurecimento."
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "pH e atividade enzimática",
+  "resolucao": [
+   "O enunciado entrega a alavanca: as enzimas do escurecimento trabalham melhor em pH próximo do neutro. Logo, deslocar o meio para longe da neutralidade reduz sua atividade — e é exatamente isso que o suco de limão faz, ao acidificar fortemente a superfície da fruta. É o gesto clássico da cozinha com respaldo bioquímico.",
+   "O sal se descreve como criador de ambiente \"favorável\" à enzima, o oposto do objetivo; a água apenas dilui sem alterar o pH de forma relevante; e o mel, embora tenha ação antioxidante, não é a resposta que decorre do mecanismo dado no enunciado (interferir na enzima via pH).",
+   "A resposta é a alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 10,
+  "apoio": [
+   "Encarregado de migrar o acervo digital de uma escola pública da periferia de Caucaia, na Grande Fortaleza, para o servidor novo, o técnico de informática Rodrigo estimava o tempo da operação diante do estagiário Ítalo. No painel, os números da cópia em andamento se atualizavam sem parar, e Ítalo, caderno na mão, confessou que sempre lia aquela sigla sem saber direito o que ela media. “Pergunta boa”, respondeu Rodrigo, “porque quem confunde essa grandeza acaba comprando equipamento errado” — e aproveitou a espera para transformar a dúvida em aula rápida, partindo do caso concreto que os dois tinham na tela.",
+   "Em uma transferência de dados, um arquivo com 5 Gigabytes (GB) será transmitido a uma taxa de 456 Megabytes por segundo (MB/s). Ao analisar essa informação, surge a dúvida sobre o significado da unidade \"MB/s\"."
+  ],
+  "fonte": "Disponível em: www.informaticaparaconcursos.com.br. Acesso em: 11 fev. 2026 (adaptado).",
+  "comando": "Considerando que a unidade \"MB/s\" expressa a quantidade de dados que são transferidos em um determinado intervalo de tempo, qual das alternativas a seguir descreve melhor a classificação para \"MB/s\"?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Velocidade por segundo"
+   },
+   {
+    "letra": "B",
+    "texto": "Distância por segundo"
+   },
+   {
+    "letra": "C",
+    "texto": "Taxa de transferência de dados"
+   },
+   {
+    "letra": "D",
+    "texto": "Volume por segundo"
+   },
+   {
+    "letra": "E",
+    "texto": "Fluxo de informações por segundo"
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Grandezas e unidades de informação",
+  "resolucao": [
+   "\"MB/s\" relaciona uma quantidade de dados (megabytes) com o tempo (segundos): é, por definição, uma taxa de transferência de dados — o nome técnico consagrado para essa grandeza em redes e armazenamento.",
+   "\"Velocidade por segundo\" e \"distância por segundo\" importam vocabulário da cinemática que não descreve informação; \"volume\" remete a capacidade, não a ritmo; e \"fluxo de informações por segundo\" é redundante, já que a divisão pelo tempo está embutida na própria ideia de fluxo. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 11,
+  "apoio": [
+   "Em Crateús, no oeste do Ceará, a enfermeira Auxiliadora prepara o boletim que a Secretaria Municipal de Saúde apresentará ao conselho comunitário. A orientação da secretária é clara: os indicadores internacionais que chegam nos relatórios técnicos precisam ser traduzidos para um formato que qualquer conselheiro compreenda de primeira, sem tabela nem jargão — afinal, é o conselho quem aprova as prioridades do posto para o semestre. O primeiro número da pauta é justamente o que mais gera confusão nas reuniões — e Auxiliadora decide abrir a apresentação convertendo-o, no quadro branco, para a linguagem de porcentagem que todos usam no dia a dia.",
+   "Em um relatório global sobre saúde, foi identificado que a taxa de mortalidade infantil de um país é de 15,6 óbitos a cada 1.000 nascidos vivos."
+  ],
+  "fonte": "Disponível em: www.saudeemdados.org.br. Acesso em: 27 maio 2026 (adaptado).",
+  "comando": "Considerando essa taxa, qual é o valor correspondente expresso em porcentagem?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "0,0156%"
+   },
+   {
+    "letra": "B",
+    "texto": "1,56%"
+   },
+   {
+    "letra": "C",
+    "texto": "15,6%"
+   },
+   {
+    "letra": "D",
+    "texto": "1,56‰"
+   },
+   {
+    "letra": "E",
+    "texto": "0,156%"
+   }
+  ],
+  "gabarito_resolucao": "B",
+  "topico": "Conversão entre taxas e porcentagens",
+  "resolucao": [
+   "Porcentagem é razão por cem. Se ocorrem 15,6 óbitos a cada 1.000 nascidos, a cada 100 nascidos ocorrem 15,6 ÷ 10 = 1,56 — ou seja, 1,56%.",
+   "Manter o 15,6 e só trocar o símbolo (15,6%) infla a taxa dez vezes; 1,56‰ troca a unidade pedida (a questão quer porcentagem, não por mil); 0,156% e 0,0156% dividem por 100 e por 1.000 a mais. A resposta é a alternativa B."
+  ],
+  "gabarito_folha": "B"
+ },
+ {
+  "numero": 12,
+  "apoio": [
+   "Depois de anos sedentário, o servidor público Marcos, morador de um bairro operário de Sobral, aceitou o desafio proposto pelo grupo de corrida do bairro: completar sua primeira prova de rua no aniversário da cidade. O treinador montou a planilha inicial em cima do que Marcos tem à mão — o campo de futebol ao lado de casa — e deixou uma tarefa para o próprio aluno: calcular quanto renderá, de fato, o treino de sábado, para registrar no aplicativo. “Quem sabe o tamanho do próprio esforço não desiste no meio”, provocou o treinador, entregando a Marcos os dados de que ele precisava.",
+   "Um corredor amador decide iniciar um programa de treinamento que envolve percorrer voltas em um campo de futebol para melhorar sua resistência. As regras da FIFA estabelecem que as dimensões de um campo de futebol variam, com um comprimento mínimo de 90 metros e máximo de 120 metros, e uma largura mínima de 45 metros e máxima de 90 metros. O corredor planeja correr ao redor do campo 12 vezes, utilizando as dimensões mínimas permitidas."
+  ],
+  "fonte": "Disponível em: www.matematicadoesporte.com.br. Acesso em: 3 jun. 2026 (adaptado).",
+  "comando": "Considerando as regras da FIFA e a necessidade de converter metros em quilômetros, qual a distância mínima, em quilômetros, que esse corredor percorrerá ao completar as 12 voltas no campo?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "1,8 km"
+   },
+   {
+    "letra": "B",
+    "texto": "2,7 km"
+   },
+   {
+    "letra": "C",
+    "texto": "3,24 km"
+   },
+   {
+    "letra": "D",
+    "texto": "4,5 km"
+   },
+   {
+    "letra": "E",
+    "texto": "5,4 km"
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Perímetro e conversão de unidades",
+  "resolucao": [
+   "Com as dimensões mínimas, o perímetro do campo é 2 × (90 + 45) = 270 metros. Em 12 voltas, o corredor percorre 12 × 270 = 3.240 metros, que convertidos dão 3,24 km.",
+   "Os distratores nascem de meio caminho: 2,7 km é o perímetro de 10 voltas (ou 270 lido direto como quilômetros vezes dez), 1,8 km esquece um dos pares de lados, e 4,5 e 5,4 km misturam as dimensões máximas. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 13,
+  "apoio": [
+   "No estande de uma administradora de consórcios montado na feira de veículos de Horizonte, na Região Metropolitana de Fortaleza, o atendente Genário recebeu Cláudia e Nelson com a tabela de adesão aberta sobre o balcão. O casal juntou dinheiro o ano inteiro para dar entrada no primeiro carro da família e não quer desperdiçar um real sequer em taxa que possa ser evitada. “A ordem dos nomes no contrato muda o valor, então vamos fazer as duas contas na sua frente”, propôs Genário, virando a tabela para os dois acompanharem cada linha.",
+   "Um casal, composto por Cláudia, de 23 anos, e Nelson, de 35 anos, está interessado em contratar um plano de consórcio para adquirir um carro. Eles têm uma dúvida sobre quem deve ser colocado como primeiro nome e quem será o segundo nome, já que a tabela de preços depende da faixa etária de cada um. A tabela estabelece que:",
+   "• Mulher (18 a 25 anos) paga R$ 300,00",
+   "• Mulher (26 a 35 anos) paga R$ 350,00",
+   "• Homem (18 a 25 anos) paga R$ 400,00",
+   "• Homem (26 a 35 anos) paga R$ 450,00",
+   "Além disso, o segundo nome tem um acréscimo no valor:",
+   "• Mulher como segundo nome: + R$ 200,00",
+   "• Homem como segundo nome: + R$ 100,00",
+   "Eles querem saber qual será a configuração que gerará a menor diferença de preço, comparando as duas opções:"
+  ],
+  "fonte": "Disponível em: www.educacaofinanceirafamiliar.com.br. Acesso em: 22 abr. 2026 (adaptado).",
+  "comando": "1. Quando Cláudia for o primeiro nome e Nelson o segundo nome. 2. Quando Nelson for o primeiro nome e Cláudia o segundo nome.",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Quando Cláudia for o primeiro nome e Nelson o segundo, a diferença será de R$ 200,00 a mais."
+   },
+   {
+    "letra": "B",
+    "texto": "Quando Cláudia for o primeiro nome e Nelson o segundo, a diferença será de R$ 100,00 a mais."
+   },
+   {
+    "letra": "C",
+    "texto": "Quando Nelson for o primeiro nome e Cláudia o segundo, a diferença será de R$ 200,00 a mais."
+   },
+   {
+    "letra": "D",
+    "texto": "Quando Nelson for o primeiro nome e Cláudia o segundo, a diferença será de R$ 100,00 a mais."
+   },
+   {
+    "letra": "E",
+    "texto": "Não há diferença entre as duas configurações."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Comparação de custos em tabela",
+  "resolucao": [
+   "Basta montar as duas contas. Configuração 1 — Cláudia (mulher, 23 anos) como primeiro nome: R$ 300,00; Nelson (homem, 35 anos) como segundo nome: R$ 450,00 + R$ 100,00 = R$ 550,00; total R$ 850,00. Configuração 2 — Nelson como primeiro nome: R$ 450,00; Cláudia como segundo nome: R$ 300,00 + R$ 200,00 = R$ 500,00; total R$ 950,00.",
+   "A diferença entre as configurações é de R$ 100,00, e o valor maior ocorre quando Nelson é o primeiro nome e Cláudia o segundo — exatamente o que afirma a alternativa que aponta essa configuração como R$ 100,00 a mais. Quem soma o acréscimo ao nome errado cai nas opções de R$ 200,00. A resposta é a alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 14,
+  "apoio": [
+   "No polo industrial de Camaçari, na Bahia, a engenheira de processos Talita acompanha a partida de uma unidade que fornece matéria-prima para as fábricas de vidro e de sabão da região. Antes de liberar a operação em escala cheia, o protocolo exige a chamada corrida de validação: alimenta-se uma quantidade conhecida do insumo de partida e confere-se, na saída, se a produção real bate com a prevista no papel. Talita reuniu os operadores na sala de controle, distribuiu a folha de dados do teste e avisou: “se a nossa conta não fechar com a balança, ninguém aumenta a carga”.",
+   "Em um processo industrial, a amônia (NH₃) é utilizada em duas reações consecutivas para produzir carbonato de sódio (Na₂CO₃). A segunda reação, já balanceada, apresenta o Na₂CO₃ com coeficiente estequiométrico 2 como reagente. Para estabelecer a relação correta entre a amônia e o carbonato de sódio na reação global, a equação da primeira reação, que envolve a amônia, deve ser multiplicada por 2.",
+   "Dados: Massa molar da amônia (NH₃): 17 g/mol Massa de amônia utilizada: 340 g Rendimento da reação: 90%"
+  ],
+  "fonte": "Disponível em: www.industriaquimicabrasil.com.br. Acesso em: 30 jan. 2026 (adaptado).",
+  "comando": "Considerando as informações e as relações estequiométricas, qual a massa de carbonato de sódio (Na₂CO₃) formada ao final do processo?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "900 g"
+   },
+   {
+    "letra": "B",
+    "texto": "954 g"
+   },
+   {
+    "letra": "C",
+    "texto": "1020 g"
+   },
+   {
+    "letra": "D",
+    "texto": "1060 g"
+   },
+   {
+    "letra": "E",
+    "texto": "1100 g"
+   }
+  ],
+  "gabarito_resolucao": "B",
+  "topico": "Estequiometria com rendimento",
+  "resolucao": [
+   "Os 340 g de amônia correspondem a 340 ÷ 17 = 20 mol de NH₃. Com a proporção global de 2 mol de NH₃ para 1 mol de Na₂CO₃ (é para isso que a primeira equação é multiplicada por 2), formam- se 10 mol de carbonato de sódio. Com massa molar de aproximadamente 106 g/mol, o rendimento teórico é 10 × 106 = 1.060 g.",
+   "Falta o passo que a prova adora cobrar: o rendimento de 90%. A massa efetivamente formada é 1.060 × 0,90 = 954 g. O distrator de 1.060 g captura quem para no teórico — e a presença dele na lista confirma a intenção do autor. A resposta é a alternativa B."
+  ],
+  "gabarito_folha": "B"
+ },
+ {
+  "numero": 15,
+  "apoio": [
+   "Para o arraial beneficente de junho, a ONG Mãos do Bem, do bairro da Várzea, no Recife, decidiu inovar na arrecadação: em vez de urna fechada, duas colunas de moedas crescendo à vista de todos na vitrine da sede, uma para cada campanha apoiada. A voluntária Ester, responsável pela montagem, quer inaugurar a vitrine com as duas torres exatamente da mesma altura, para nenhuma campanha parecer favorecida no primeiro dia — e precisa saber quanto pedir aos padrinhos do projeto para conseguir isso gastando o mínimo possível.",
+   "Uma organização de caridade está arrecadando doações para duas campanhas distintas. Para incentivar as doações, eles decidem criar duas colunas de moedas em um local de destaque: uma coluna feita com moedas de 1 real e outra com moedas de 50 centavos.",
+   "As moedas de 1 real têm uma espessura de 2,85 mm, enquanto as de 50 centavos possuem uma espessura de 1,95 mm. A organização quer saber qual o menor valor total de doações, em reais, que fará com que as duas colunas atinjam a mesma altura."
+  ],
+  "fonte": "Disponível em: www.matematicasolidaria.org.br. Acesso em: 2 jun. 2026 (adaptado).",
+  "comando": "Qual o valor total mínimo que a organização precisará arrecadar?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "R$ 20,00"
+   },
+   {
+    "letra": "B",
+    "texto": "R$ 22,50"
+   },
+   {
+    "letra": "C",
+    "texto": "R$ 25,00"
+   },
+   {
+    "letra": "D",
+    "texto": "R$ 30,00"
+   },
+   {
+    "letra": "E",
+    "texto": "R$ 35,00"
+   }
+  ],
+  "gabarito_resolucao": "B",
+  "topico": "Mínimo múltiplo comum aplicado",
+  "resolucao": [
+   "A menor altura comum às duas colunas é o mínimo múltiplo comum das espessuras. Escrevendo 2,85 = 3 × 0,95 e 1,95 = 3 × 0,65, ou trabalhando com 285 = 3 × 5 × 19 e 195 = 3 × 5 × 13 (em centésimos de milímetro), o MMC é 3 × 5 × 19 × 13 = 3.705, ou seja, 37,05 mm.",
+   "Nessa altura cabem 37,05 ÷ 2,85 = 13 moedas de R$ 1,00 (R$ 13,00) e 37,05 ÷ 1,95 = 19 moedas de R$ 0,50 (R$ 9,50). O total mínimo arrecadado é 13,00 + 9,50 = R$ 22,50. A resposta é a alternativa B."
+  ],
+  "gabarito_folha": "B"
+ },
+ {
+  "numero": 16,
+  "apoio": [
+   "Maria é operadora de caixa em um atacadista do parque industrial de Maracanaú, vizinho a Fortaleza, e viu o orçamento apertar de vez quando o aluguel foi reajustado e a filha entrou na escolinha de tempo integral. Sentada à mesa da cozinha com o contracheque e a calculadora do celular, ela riscou num caderno as duas colunas de sempre — o que entra, o que sai — e concluiu que a saída, no curto prazo, seria negociar com o supervisor uma carga maior de trabalho remunerado além do expediente. Antes da conversa, porém, quis chegar ao número exato de que precisaria, para não pedir nem de menos, nem além do que aguenta.",
+   "Maria trabalha em uma empresa que paga hora extra com um acréscimo de 50% sobre o valor da hora normal. Em uma semana, ela trabalha 40 horas regulares e 10 horas extras, recebendo um total de R$ 400,00. Ela precisa aumentar sua renda mensal, e seu objetivo é receber R$ 792,00 por mês."
+  ],
+  "fonte": "Disponível em: www.financaspessoaisnapratica.com.br. Acesso em: 15 maio 2026 (adaptado).",
+  "comando": "Considerando que o mês tem 4 semanas, quantas horas extras adicionais Maria precisa fazer por mês para atingir sua meta?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "10 horas extras adicionais"
+   },
+   {
+    "letra": "B",
+    "texto": "15 horas extras adicionais"
+   },
+   {
+    "letra": "C",
+    "texto": "130 horas extras adicionais"
+   },
+   {
+    "letra": "D",
+    "texto": "100 horas extras adicionais"
+   },
+   {
+    "letra": "E",
+    "texto": "30 horas extras adicionais"
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Proporcionalidade e remuneração",
+  "resolucao": [
+   "Os dados do enunciado não fecham numa única leitura — a renda mensal atual (4 × R$ 400,00 = R$ 1.600,00) já supera a \"meta\" de R$ 792,00 —, então a resolução exige reconstruir a intenção do autor. A leitura que conduz a uma alternativa existente entende R$ 792,00 como meta semanal e a hora normal como R$ 8,00 (400 ÷ 50 horas trabalhadas), de onde a hora extra vale R$ 12,00.",
+   "Com essa leitura, faltam 792 − 400 = R$ 392,00 por semana, o que exige 392 ÷ 12 ≈ 32,7 horas extras semanais — cerca de 130 horas extras adicionais no mês de 4 semanas, exatamente o valor presente entre as opções. Os demais números (10, 15, 30, 100) não emergem de nenhuma combinação coerente dos dados. a resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 17,
+  "apoio": [
+   "Jandira mora há vinte anos na zona leste da capital paulista e mede as chuvas de verão pela marca que a água deixa na parede da sala. Em janeiro de 2026, foi de novo o sofá para cima de tijolos, a geladeira içada no muro e uma noite inteira acompanhando o nível do córrego pelo grupo de mensagens da rua. “Chove forte no mundo todo, mas por que aqui vira tragédia todo ano?”, desabafou ela na reunião da associação de moradores, em que um geógrafo convidado apresentou o diagnóstico técnico do problema — o mesmo que abre o texto a seguir.",
+   "As enchentes representam um problema persistente na cidade de São Paulo, impactando diversas áreas durante a temporada de chuvas."
+  ],
+  "fonte": "Disponível em: www.geografiaurbanaemdebate.com.br. Acesso em: 20 fev. 2026 (adaptado).",
+  "comando": "Considerando os fatores ambientais e urbanísticos, qual das alternativas a seguir é apontada como a principal causa do aumento e da gravidade das enchentes na cidade?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "A criação de espaços verdes e parques, incluindo a construção de lagos artificiais, que visam a absorção de água."
+   },
+   {
+    "letra": "B",
+    "texto": "A impermeabilização do solo, consequência do crescimento urbano desordenado, que dificulta a infiltração da água."
+   },
+   {
+    "letra": "C",
+    "texto": "A presença de áreas de reflorestamento nas margens dos rios, contribuindo para a contenção e absorção da água."
+   },
+   {
+    "letra": "D",
+    "texto": "O aumento da vegetação nas planícies de inundação, auxiliando na drenagem natural e na redução do volume de água."
+   },
+   {
+    "letra": "E",
+    "texto": "A construção de diques e barreiras de contenção ao longo dos rios, que visam conter o volume de água e evitar o transbordamento."
+   }
+  ],
+  "gabarito_resolucao": "B",
+  "topico": "Urbanização e impermeabilização do solo",
+  "resolucao": [
+   "A geografia urbana aponta um vilão estrutural para as enchentes paulistanas: a impermeabilização do solo. Asfalto, concreto e ocupação desordenada — inclusive de várzeas — impedem a infiltração da água da chuva, que escoa superficialmente em grande volume e velocidade até sobrecarregar rios canalizados e galerias.",
+   "As demais alternativas descrevem fatores que atenuam (parques, reflorestamento ciliar, vegetação de várzea) ou medidas de contenção que não são causa do problema (diques e barreiras). A resposta é a alternativa B."
+  ],
+  "gabarito_folha": "B"
+ },
+ {
+  "numero": 18,
+  "apoio": [
+   "A cooperativa de transporte que atende o distrito industrial de Sobral, no norte do Ceará, colocou em votação a renovação da frota, e a assembleia se dividiu entre manter os motores atuais ou aderir a um combustível de origem vegetal. O motorista Chagas, cético, pediu a palavra: “quero ver o argumento no papel, não em propaganda”. A diretoria então convidou uma professora de química do campus local, que abriu sua fala explicando o elo entre o que sai do escapamento e a chuva que corrói telhados e monumentos da cidade — elo resumido no texto distribuído aos cooperados.",
+   "A utilização de combustíveis fósseis, como o óleo diesel, é uma das principais fontes de emissão de gases poluentes na atmosfera, incluindo óxidos de enxofre e nitrogênio, que são os principais componentes da chuva ácida. Em contrapartida, o biodiesel surge como uma alternativa mais sustentável."
+  ],
+  "fonte": "Disponível em: www.energiaemeioambiente.net.br. Acesso em: 24 mar. 2026 (adaptado).",
+  "comando": "Qual das afirmações a seguir justifica a menor contribuição do biodiesel para a formação da chuva ácida, em comparação com o óleo diesel?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "O biodiesel é derivado de fontes renováveis, o que resulta na redução da emissão de gases poluentes."
+   },
+   {
+    "letra": "B",
+    "texto": "A combustão do biodiesel produz uma quantidade significativamente menor de enxofre (aproximadamente 98% a menos), o principal agente causador da chuva ácida e de problemas respiratórios."
+   },
+   {
+    "letra": "C",
+    "texto": "O biodiesel apresenta um teor de enxofre superior, o que intensifica a formação de chuva ácida."
+   },
+   {
+    "letra": "D",
+    "texto": "A produção de biodiesel não libera gases poluentes, eliminando a formação de chuva ácida."
+   },
+   {
+    "letra": "E",
+    "texto": "O biodiesel contém compostos de enxofre que atuam na neutralização da acidez da chuva."
+   }
+  ],
+  "gabarito_resolucao": "B",
+  "topico": "Biodiesel e chuva ácida",
+  "resolucao": [
+   "A cadeia causal da chuva ácida associada ao diesel passa pelo enxofre: S do combustível → SO₂ na queima → H₂SO₄ na atmosfera. O biodiesel, obtido de óleos vegetais e gorduras, é praticamente isento de enxofre — a redução citada, da ordem de 98%, ataca diretamente o principal agente do fenômeno.",
+   "Ser renovável (primeira alternativa) fala do ciclo do carbono, não do enxofre, e por isso não justifica o efeito pedido; as demais opções invertem o teor de enxofre, prometem emissão zero inexistente ou atribuem ao biodiesel um papel neutralizador que ele não tem. A resposta é a alternativa B."
+  ],
+  "gabarito_folha": "B"
+ },
+ {
+  "numero": 19,
+  "apoio": [
+   "No laboratório de modelagem matemática de uma universidade de Campina Grande, no agreste paraibano, o grupo do professor Aldenor estuda métodos de aproximação usados por civilizações antigas e sua utilidade em sala de aula. A bolsista Rafaela ficou encarregada de avaliar um procedimento que dispensa o número π nas contas do dia a dia, substituindo uma figura curva por outra de lados retos. “Aproximar é sempre errar um pouco”, lembrou Aldenor na reunião do grupo, “a questão é saber se o erro cabe no critério que definimos antes” — e o critério do grupo está registrado no protocolo a seguir.",
+   "Uma equipe de pesquisadores propôs um novo método para estimar a área de um círculo, utilizando a área de um quadrado. Nesse método, o lado do quadrado é calculado por meio da expressão (16/9) · R, onde R representa o raio do círculo. A área desse quadrado é então utilizada como uma aproximação da área do círculo.",
+   "Para avaliar a precisão desse método, os pesquisadores decidiram comparar a estimativa da área do círculo com o valor real, que é dado por π (aproximadamente 3,14). Para isso, definiram a diferença absoluta entre a área estimada (A/B, onde A e B são valores que resultam da aplicação do método) e o valor de π.",
+   "A equipe estabeleceu os seguintes critérios para classificar o método:",
+   "Satisfatório: A diferença absoluta entre a área estimada e π é menor que 0,5. Insatisfatório: A diferença absoluta entre a área estimada e π é maior ou igual a 0,5."
+  ],
+  "fonte": "Disponível em: www.historiadamatematica.net.br. Acesso em: 7 abr. 2026 (adaptado).",
+  "comando": "Com base nesses critérios, qual das seguintes afirmações melhor descreve a avaliação do método proposto?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "O método é classificado como satisfatório, pois a diferença absoluta entre a área estimada e π é de 0,0205."
+   },
+   {
+    "letra": "B",
+    "texto": "O método é classificado como insatisfatório, pois a diferença absoluta entre a área estimada e π é de 1,2."
+   },
+   {
+    "letra": "C",
+    "texto": "O método é classificado como insatisfatório, pois a diferença absoluta entre a área estimada e π é de 0,6."
+   },
+   {
+    "letra": "D",
+    "texto": "O método é classificado como satisfatório, pois a diferença absoluta entre a área estimada e π é de 0,3."
+   },
+   {
+    "letra": "E",
+    "texto": "O método é classificado como insatisfatório, pois a diferença absoluta entre a área estimada e π é de 0,7."
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Aproximação numérica de áreas",
+  "resolucao": [
+   "Com lado (16/9)·R, a área do quadrado é (16/9)² · R² = (256/81) · R². Comparar com a área do círculo, π·R², significa comparar a fração 256/81 ≈ 3,1605 com π ≈ 3,14. A diferença absoluta é 3,1605 − 3,14 = 0,0205 — muito abaixo do corte de 0,5, portanto o método é satisfatório.",
+   "É a antiga aproximação de área circular por quadrado, e os distratores testam quem erra a potência (esquece de elevar 16/9 ao quadrado) ou inventa diferenças na casa dos décimos. Coerência interna: só a primeira alternativa apresenta ao mesmo tempo o valor certo e a classificação certa. A resposta é a alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 20,
+  "apoio": [
+   "Na marcenaria de seu Antônio, perto do horto do Padre Cícero, em Juazeiro do Norte, os tampos de mesa mais pedidos do ateliê têm formato de triângulo com os três lados iguais — herança de uma encomenda antiga que caiu no gosto da freguesia. O aprendiz Válber, que cuida do orçamento das chapas de madeira, percebeu que errava feio ao estimar o material quando o cliente pedia o tampo “um pouco maior”: a chapa acabava antes do previsto, e o cliente, esperando na loja, via o prazo dobrar. Seu Antônio riu e devolveu o problema em forma de lição: “antes de cortar, aprenda como a superfície da peça responde quando o lado dela muda”.",
+   "Considere um triângulo equilátero, ou seja, um triângulo com todos os lados de mesma medida."
+  ],
+  "fonte": "Disponível em: www.geometrianaoficina.com.br. Acesso em: 13 mar. 2026 (adaptado).",
+  "comando": "Qual das alternativas abaixo expressa corretamente a relação entre a área (A) desse triângulo e o comprimento de seu lado (l)?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "A é diretamente proporcional ao quadrado de l."
+   },
+   {
+    "letra": "B",
+    "texto": "A é inversamente proporcional ao quadrado de l."
+   },
+   {
+    "letra": "C",
+    "texto": "A é diretamente proporcional à raiz quadrada de l."
+   },
+   {
+    "letra": "D",
+    "texto": "A é inversamente proporcional à raiz quadrada de l."
+   },
+   {
+    "letra": "E",
+    "texto": "A é diretamente proporcional a l."
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Proporcionalidade em áreas",
+  "resolucao": [
+   "A área do triângulo equilátero é A = (√3/4) · l². O fator √3/4 é constante; a dependência em relação ao lado é quadrática. Dobrar o lado quadruplica a área — assinatura de proporcionalidade direta com o quadrado de l.",
+   "As alternativas com \"inversamente\" contrariam o crescimento da área com o lado, e as versões em l ou √l subestimam esse crescimento (valeriam para grandezas lineares, não para áreas). A resposta é a alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 21,
+  "apoio": [
+   "Na loja de móveis planejados onde trabalha, numa avenida movimentada de Fortaleza, o vendedor Ribamar fecha a maioria dos contratos na mesa de negociação de prazos. Foi assim com dona Ivone, aposentada que reformava o apartamento para receber os netos: o projeto completo ficou em um valor fechado, e a conversa travou justamente na quantidade de prestações. Ribamar então apresentou, lado a lado, os dois planos de pagamento autorizados pela gerência — idênticos no total, diferentes no fôlego mensal — e dona Ivone, desconfiada de promessa de vendedor, pediu papel e caneta para conferir os números ela mesma.",
+   "Uma empresa oferece duas opções de parcelamento para um valor de R$ 60.000,00.",
+   "Opção 1: O valor é dividido em N parcelas mensais iguais. Opção 2: O valor é dividido em N + 6 parcelas mensais, com cada parcela R$ 500,00 mais barata que as parcelas da Opção 1."
+  ],
+  "fonte": "Disponível em: www.matematicafinanceirasimples.com.br. Acesso em: 28 maio 2026 (adaptado).",
+  "comando": "Sabendo que o valor total a ser pago é o mesmo em ambas as opções, qual o número de parcelas (N) estabelecido na Opção 1?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "12 parcelas"
+   },
+   {
+    "letra": "B",
+    "texto": "18 parcelas"
+   },
+   {
+    "letra": "C",
+    "texto": "24 parcelas"
+   },
+   {
+    "letra": "D",
+    "texto": "30 parcelas"
+   },
+   {
+    "letra": "E",
+    "texto": "36 parcelas"
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Equação do segundo grau em parcelamentos",
+  "resolucao": [
+   "A condição do problema é 60.000/N − 60.000/(N + 6) = 500. Multiplicando por N(N + 6): 60.000 × 6 = 500 · N(N + 6), ou seja, N² + 6N − 720 = 0. O discriminante vale 36 + 2.880 = 2.916 = 54², e a raiz positiva é N = (−6 + 54)/2 = 24.",
+   "Verificação: com 24 parcelas, cada uma sai por R$ 2.500,00; com 30 parcelas, por R$ 2.000,00 — exatamente R$ 500,00 mais barata. O distrator de 30 captura quem responde N + 6 em vez de N. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 22,
+  "apoio": [
+   "O clube de leitura da biblioteca pública de Tauá, no sertão dos Inhamuns, dedicou o semestre aos autores que escreveram sobre o interior do Brasil. Na sessão de abertura, a mediadora Socorro escolheu começar pela obra que considera o retrato definitivo da paisagem que cerca a cidade — e avisou que a primeira atividade não seria discutir fatos históricos, e sim observar de perto como o autor constrói suas frases. “Reparem no modo de dizer, não só no que é dito”, orientou, antes de projetar na parede o trecho selecionado.",
+   "No livro \"Os Sertões\", de Euclides da Cunha, encontramos o seguinte trecho descritivo sobre a caatinga: \"A caatinga estende sobre a terra as ramagens de espinhos, e, como um cilício dilacerador, a caatinga estende sobre a terra as ramagens de espinhos.\""
+  ],
+  "fonte": "CUNHA, E. Os Sertões, 1902 (fragmento citado conforme o material de origem).",
+  "comando": "Com base na linguagem utilizada e no estilo de escrita, qual o tipo de linguagem predominante nesse trecho?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Linguagem literária"
+   },
+   {
+    "letra": "B",
+    "texto": "Linguagem coloquial"
+   },
+   {
+    "letra": "C",
+    "texto": "Linguagem científica"
+   },
+   {
+    "letra": "D",
+    "texto": "Linguagem técnica"
+   },
+   {
+    "letra": "E",
+    "texto": "Linguagem jornalística"
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Níveis de linguagem",
+  "resolucao": [
+   "O trecho opera com os recursos típicos do texto artístico: comparação (\"como um cilício dilacerador\"), personificação da caatinga que \"estende\" suas ramagens, vocabulário raro de carga expressiva e ritmo construído pela repetição. Nada disso pertence ao registro coloquial, ao relato jornalístico nem à precisão denotativa dos textos científico e técnico.",
+   "Euclides da Cunha é justamente célebre por revestir a observação da terra e do homem sertanejo de elaboração estética — é o traço que consagrou Os Sertões na literatura brasileira. A linguagem predominante é a literária, alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 23,
+  "apoio": [
+   "Para encerrar o bimestre, o professor Adriano, de um colégio da rede pública de Sobral, organizou uma simulação diplomática: cada equipe representaria um governo do século XIX e defenderia seus interesses num congresso fictício. À equipe de Larissa coube o papel mais comentado da sala — a jovem república que, recém-saída de sua independência, observava com desconfiança os movimentos das monarquias do outro lado do Atlântico. Antes do debate, Adriano distribuiu a cada grupo uma ficha histórica com o posicionamento oficial que deveriam sustentar; a ficha da equipe de Larissa é reproduzida a seguir.",
+   "Em 1823, o presidente dos Estados Unidos, James Monroe, estabeleceu uma política externa que ficou conhecida como Doutrina Monroe. Essa doutrina definiu os princípios para as relações entre os países americanos e as potências europeias."
+  ],
+  "fonte": "Disponível em: www.historiaemcena.com.br. Acesso em: 16 abr. 2026 (adaptado).",
+  "comando": "Qual das opções a seguir representa o objetivo principal dessa doutrina?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Estimular a intervenção europeia nos assuntos internos das nações americanas."
+   },
+   {
+    "letra": "B",
+    "texto": "Garantir a independência das colônias europeias na América."
+   },
+   {
+    "letra": "C",
+    "texto": "Evitar a formação de novas colônias europeias nas Américas e a interferência europeia nos assuntos internos dos países americanos."
+   },
+   {
+    "letra": "D",
+    "texto": "Apoiar a colonização europeia na América do Norte."
+   },
+   {
+    "letra": "E",
+    "texto": "Criar uma aliança militar entre os países americanos e as potências europeias."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Doutrina Monroe",
+  "resolucao": [
+   "A síntese da Doutrina Monroe cabe no lema \"a América para os americanos\": o continente estava fechado a novas colonizações europeias, e qualquer interferência das potências do Velho Mundo nos assuntos internos das nações americanas seria tratada como ato hostil aos Estados Unidos.",
+   "As alternativas que falam em estimular intervenção, apoiar colonização ou firmar aliança militar com a Europa invertem o sentido da doutrina; \"garantir a independência das colônias\" também não descreve o texto de 1823, que não prometia libertar territórios ainda coloniais, apenas vetar novas investidas. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 24,
+  "apoio": [
+   "No biotério de uma universidade cearense, a bióloga Carla mantém dois grupos de sapos da mesma espécie para sua pesquisa de mestrado: um formado por animais recolhidos na natureza, outro por indivíduos nascidos e criados no laboratório. Nos testes de rotina, uma diferença chamou a atenção da equipe — e Carla suspeitou que a explicação não estava nos genes dos animais, e sim na rotina do próprio biotério. Para orientar a discussão do grupo de pesquisa, ela selecionou o texto de referência a seguir, que descreve o fenômeno já documentado na literatura.",
+   "Em algumas espécies de sapos, a toxicidade da pele é influenciada pela dieta. No ambiente natural, esses sapos se alimentam de insetos que contêm substâncias químicas que, ao serem ingeridas, são acumuladas e secretadas na pele, tornando-a tóxica. Quando esses sapos são criados em cativeiro e recebem uma dieta diferente, como moscas comuns, a toxicidade da pele não se desenvolve da mesma forma."
+  ],
+  "fonte": "Disponível em: www.biologiadecampo.net.br. Acesso em: 6 mar. 2026 (adaptado).",
+  "comando": "Qual é a principal explicação para essa variação na toxicidade entre sapos em ambiente natural e em cativeiro?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "A dieta em cativeiro não possui os componentes químicos essenciais para a formação de toxinas."
+   },
+   {
+    "letra": "B",
+    "texto": "A dieta em cativeiro estimula a produção de toxinas na pele do sapo."
+   },
+   {
+    "letra": "C",
+    "texto": "A dieta em cativeiro diminui a produção de toxinas na pele do sapo."
+   },
+   {
+    "letra": "D",
+    "texto": "A dieta em cativeiro não interfere na produção de toxinas na pele do sapo."
+   },
+   {
+    "letra": "E",
+    "texto": "A dieta em cativeiro modifica a coloração da pele do sapo, aumentando sua toxicidade."
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Dieta e toxicidade em anfíbios",
+  "resolucao": [
+   "O mecanismo está descrito no próprio texto: a toxina não é fabricada do zero pelo sapo — ela vem dos insetos da dieta natural, é acumulada e depois secretada na pele (sequestro de compostos alimentares). Se a dieta de cativeiro, à base de moscas comuns, não fornece esses precursores químicos, a pele simplesmente não tem com o que se tornar tóxica.",
+   "Dizer que o cativeiro \"diminui a produção\" sugere uma síntese própria que o texto nega; \"estimula\", \"não interfere\" e a hipótese da coloração contradizem frontalmente o fenômeno observado. A resposta é a alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 25,
+  "apoio": [
+   "Em um centro de pesquisa do interior paulista, a geneticista Flávia coordena um estudo com famílias que atravessaram períodos de privação alimentar severa há duas gerações. Os dados preliminares intrigaram a equipe: certos padrões de saúde se repetem nos netos dos sobreviventes, mesmo sem qualquer mutação que os explique. Convidada a comentar os achados num programa de divulgação científica, Flávia começou pelo básico: “existe um nível de regulação da vida que os testes clássicos de DNA não enxergam” — e recomendou aos ouvintes o texto introdutório publicado pelo próprio centro, reproduzido a seguir.",
+   "A epigenética estuda as modificações na expressão gênica que não envolvem alterações na sequência do DNA. Essas modificações podem ser influenciadas por fatores ambientais e, em alguns casos, transmitidas de pais para filhos."
+  ],
+  "fonte": "Disponível em: www.genesevida.org.br. Acesso em: 29 abr. 2026 (adaptado).",
+  "comando": "Qual das alternativas abaixo melhor explica por que alterações epigenéticas nos pais podem ser herdadas pelos filhos?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "As modificações epigenéticas alteram diretamente a sequência do DNA, tornando-as hereditárias."
+   },
+   {
+    "letra": "B",
+    "texto": "As alterações epigenéticas afetam apenas os genes dos pais, não sendo transmitidas aos filhos."
+   },
+   {
+    "letra": "C",
+    "texto": "As modificações epigenéticas podem ser transmitidas aos filhos por meio de células germinativas, influenciando a expressão gênica sem alterar a sequência do DNA."
+   },
+   {
+    "letra": "D",
+    "texto": "As alterações epigenéticas são permanentes e não podem ser transmitidas para as gerações seguintes."
+   },
+   {
+    "letra": "E",
+    "texto": "As modificações epigenéticas não têm impacto na expressão gênica e, portanto, não são herdadas."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Herança epigenética",
+  "resolucao": [
+   "A definição dada no enunciado já elimina metade das opções: epigenética é, por construção, mudança de expressão gênica sem alteração da sequência de DNA. Alternativas que falam em \"alterar diretamente a sequência\" ou em \"não ter impacto na expressão\" contradizem a própria definição.",
+   "O elo da herança são as células germinativas: marcas como metilação do DNA presentes em gametas podem escapar da reprogramação e chegar à prole, modulando a expressão dos genes do descendente sem tocar na sequência. É exatamente essa a formulação correta. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 26,
+  "apoio": [
+   "O agente de endemias Josué percorre de bicicleta as comunidades ribeirinhas de um município do interior de Alagoas, onde a lagoa que serve de lazer nos fins de semana voltou a preocupar: nos últimos meses, o posto registrou novos casos da doença que os mais velhos chamam de barriga-d'água, inclusive entre crianças que passam as tardes de calor mergulhando ali. Na reunião com as famílias, Josué evitou o tom de bronca — “ninguém aqui tem culpa de gostar de um banho de lagoa” — e preferiu desenhar no quadro o caminho completo do problema, apoiado no material de capacitação da vigilância em saúde, cujo trecho central é apresentado a seguir.",
+   "A esquistossomose é uma doença parasitária transmitida pelo contato com águas contaminadas por caramujos hospedeiros do parasita."
+  ],
+  "fonte": "Disponível em: www.vigilanciaemsaude.org.br. Acesso em: 23 jan. 2026 (adaptado).",
+  "comando": "Qual das alternativas abaixo representa a medida mais eficaz para prevenir a transmissão dessa doença?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Realizar campanhas educativas sobre os sintomas da esquistossomose."
+   },
+   {
+    "letra": "B",
+    "texto": "Promover o uso de repelentes antes do contato com a água."
+   },
+   {
+    "letra": "C",
+    "texto": "Implementar o saneamento básico adequado e evitar o contato com águas contaminadas."
+   },
+   {
+    "letra": "D",
+    "texto": "Administrar medicamentos antiparasitários preventivos à população."
+   },
+   {
+    "letra": "E",
+    "texto": "Construir barreiras físicas em áreas de risco para impedir o acesso à água."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Prevenção de doenças parasitárias",
+  "resolucao": [
+   "O ciclo da esquistossomose depende de esgoto humano alcançando coleções de água doce onde vivem os caramujos do gênero Biomphalaria — e de pessoas entrando nessa água. A medida que rompe o ciclo nas duas pontas é o saneamento básico (impede que os ovos cheguem à água) combinado a evitar o contato com águas contaminadas (impede a penetração das cercárias pela pele).",
+   "Educação sobre sintomas ajuda no diagnóstico, não na transmissão; repelente não bloqueia cercárias; quimioprofilaxia em massa não é a estratégia central; e barreiras físicas atacam o acesso sem resolver a contaminação. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 27,
+  "apoio": [
+   "O laboratório de energias renováveis de um instituto federal no Ceará foi contratado para subsidiar a prefeitura de uma capital nordestina na escolha do combustível da nova frota de ônibus. A coordenadora do estudo, professora Helena, avisou à equipe que o edital mudou de filosofia: não vence o combustível que rende mais, nem o que polui menos em termos absolutos, mas o que entrega o melhor compromisso entre as duas coisas. “O número que interessa à cidade cruza as colunas da tabela — quem ler uma coluna só vai aconselhar errado”, resumiu Helena na reunião de partida.",
+   "Um grupo de pesquisadores avaliou a eficiência energética e o impacto ambiental de diferentes tipos de biodiesel, considerando: o poder calorífico médio (kcal/kg); a eficiência de combustão (%); e a emissão de dióxido de carbono (CO₂) por kg queimado (em gramas).",
+   "Eles montaram a tabela abaixo com os dados de quatro biocombustíveis testados:",
+   "Poder calorífico Eficiência Emissão de CO₂ Tipo de biodiesel (kcal/kg) (%) (g/kg)",
+   "Soja 9.200 82 2.800",
+   "Milho 8.700 90 2.700",
+   "Mamona 8.600 88 2.500",
+   "Dendê 8.800 86 2.900"
+  ],
+  "fonte": "Disponível em: www.energiasrenovaveisbr.org.br. Acesso em: 18 mar. 2026 (adaptado).",
+  "comando": "Sabendo que 1 kcal = 4,18 kJ, qual dos combustíveis apresenta a menor emissão de CO₂ por MJ (megajoule) de energia útil liberada?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Soja"
+   },
+   {
+    "letra": "B",
+    "texto": "Milho"
+   },
+   {
+    "letra": "C",
+    "texto": "Mamona"
+   },
+   {
+    "letra": "D",
+    "texto": "Dendê"
+   },
+   {
+    "letra": "E",
+    "texto": "Soja e mamona, empatadas"
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Emissão específica de carbono",
+  "resolucao": [
+   "A comparação pedida não é a emissão bruta por quilograma, e sim a emissão por unidade de energia útil. Para cada biodiesel: energia útil = poder calorífico × eficiência, convertida a MJ por 4,18 kJ/kcal. Soja: 9.200 × 0,82 = 7.544 kcal ≈ 31,54 MJ → 2.800 ÷ 31,54 ≈ 88,8 g/MJ. Milho: 7.830 kcal ≈ 32,73 MJ → ≈ 82,5 g/MJ. Mamona: 7.568 kcal ≈ 31,63 MJ → 2.500 ÷ 31,63 ≈ 79,0 g/MJ. Dendê: 7.568 kcal ≈ 31,63 MJ → 2.900 ÷ 31,63 ≈ 91,7 g/MJ.",
+   "A mamona vence com cerca de 79 g de CO₂ por megajoule útil. Note a pegadinha do empate: mamona e dendê liberam a mesma energia útil por quilograma, mas emitem quantidades diferentes de CO₂ — quem compara só a coluna de energia cai na última opção. A resposta é a alternativa C."
+  ],
+  "imagem": "/apostas-2026/q27.png",
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 28,
+  "apoio": [
+   "Na oficina de eletroeletrônica de uma escola técnica de Caxias do Sul, na serra gaúcha, o professor Ábner propôs à turma do último módulo um desafio de bancada tirado do cotidiano das assistências: aproveitar um equipamento projetado para uma rede elétrica diferente da disponível no balcão. “Na vida real, o cliente não troca de cidade por causa do aparelho”, brincou, lembrando que metade das manutenções que chegam à escola envolve exatamente esse descompasso. O roteiro do experimento, com as condições e exigências do projeto, foi fixado no mural da bancada e é reproduzido a seguir.",
+   "Em uma escola técnica, estudantes realizam um experimento com uma carga puramente resistiva projetada para operar sob tensão de 127 V e dissipar potência de 10 W. A bancada disponível, entretanto, fornece tensão contínua ideal de 220 V. Para manter a carga em suas condições nominais, o grupo pretende associar um resistor em série, de modo que a diferença de potencial sobre a carga continue sendo 127 V.",
+   "Além do valor da resistência, é necessário considerar o aquecimento do componente: o resistor deve suportar, sem danos, a potência que nele será dissipada. Admita que as resistências permaneçam constantes e que os componentes sejam ideais."
+  ],
+  "fonte": "Disponível em: www.eletronicanapratica.com.br. Acesso em: 10 abr. 2026 (adaptado).",
+  "comando": "Qual alternativa apresenta o valor comercial aproximado do resistor em série e uma potência nominal mínima adequada?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "1,2 kΩ e 10 W"
+   },
+   {
+    "letra": "B",
+    "texto": "1,2 kΩ e 5 W"
+   },
+   {
+    "letra": "C",
+    "texto": "1,8 kΩ e 10 W"
+   },
+   {
+    "letra": "D",
+    "texto": "980 Ω e 10 W"
+   },
+   {
+    "letra": "E",
+    "texto": "2,3 kΩ e 5 W"
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Divisor de tensão resistivo",
+  "resolucao": [
+   "A corrente nominal da carga sai de P = V·I: I = 10 ÷ 127 ≈ 0,0787 A. Em série, essa mesma corrente atravessa o resistor, que precisa segurar a tensão excedente: 220 − 127 = 93 V. Pela Lei de Ohm, R = 93 ÷ 0,0787 ≈ 1.182 Ω ≈ 1,2 kΩ.",
+   "Falta o critério térmico: o resistor dissipa P = 93 × 0,0787 ≈ 7,3 W. Um componente de 5 W trabalharia acima do limite e superaqueceria — daí a potência nominal mínima adequada, entre as opções, ser 10 W. O par correto, 1,2 kΩ com 10 W, está na alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 29,
+  "apoio": [
+   "Depois de uma década morando de aluguel em Palmas, capital do Tocantins, o engenheiro civil Válter decidiu que 2026 seria o ano de construir a casa própria. A esposa, Neuma, cuida da planilha da família e impôs a regra do jogo: o dinheiro da entrada é curto, então a decisão sobre onde construir será tomada friamente, no papel, sem paixão por rua ou por vizinhança. Numa manhã de sábado, os dois sentaram com as duas propostas que a imobiliária enviou por mensagem e começaram a conferência que Neuma chamou de “prova dos nove do sonho”.",
+   "Ao planejar a construção de sua residência, um engenheiro analisa dois terrenos à venda. O primeiro, denominado Terreno X, possui 20 metros de comprimento por 15 metros de largura e custa R$ 250,00 por metro quadrado. O segundo, chamado Terreno Y, mede 25 metros de comprimento por 12 metros de largura e está sendo vendido por R$ 230,00 o metro quadrado."
+  ],
+  "fonte": "Disponível em: www.orcamentofamiliar.net.br. Acesso em: 25 fev. 2026 (adaptado).",
+  "comando": "Com o objetivo de economizar na compra, o engenheiro deseja escolher o terreno que apresente o menor valor total de aquisição. Com base nas informações, qual terreno representa a melhor escolha em termos de custo?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Terreno X, por ter menor área, o que reduz o valor final."
+   },
+   {
+    "letra": "B",
+    "texto": "Terreno X, pois seu custo por metro quadrado é mais vantajoso."
+   },
+   {
+    "letra": "C",
+    "texto": "Terreno Y, já que apresenta menor área e preço unitário mais baixo."
+   },
+   {
+    "letra": "D",
+    "texto": "Terreno X, por garantir um custo-benefício superior com maior área."
+   },
+   {
+    "letra": "E",
+    "texto": "Terreno Y, pois tem o menor custo total para a área ofertada."
+   }
+  ],
+  "gabarito_resolucao": "E",
+  "topico": "Custo total de terrenos",
+  "resolucao": [
+   "As áreas empatam: Terreno X tem 20 × 15 = 300 m² e Terreno Y tem 25 × 12 = 300 m². Com áreas iguais, o custo total é decidido pelo preço unitário: X custa 300 × 250 = R$ 75.000,00 e Y custa 300 × 230 = R$ 69.000,00.",
+   "As justificativas erradas se traem: não há terreno \"com menor área\" (são iguais), o metro quadrado de X é o mais caro, e não existe \"maior área\" para sustentar custo-benefício superior. A escolha econômica é o Terreno Y pelo menor custo total — alternativa E."
+  ],
+  "gabarito_folha": "E"
+ },
+ {
+  "numero": 30,
+  "apoio": [
+   "Iuri largou o emprego fixo para viver da coquetelaria e hoje é um dos profissionais mais disputados nas festas de Gramado. Sem carteira assinada, ele aprendeu que o próprio contracheque é uma conta que se faz no caderno: cada contrato tem uma parte garantida e partes que dependem do movimento da noite. No fim de julho, antes de renegociar seus valores com a agência de eventos, Iuri sentou com a companheira para fechar o balanço do mês — e o resumo do que ele registrou no caderno está descrito a seguir.",
+   "Em uma temporada de festas, um barman é contratado com pagamento fixo mensal de R$ 1.000,00. Além desse valor, ele recebe R$ 200,00 por cada evento de que participa e R$ 15,00 por cada drinque servido durante os eventos. No mês de julho, ele trabalhou em 6 eventos e serviu 20 drinques ao todo."
+  ],
+  "fonte": "Disponível em: www.trabalhoerenda.com.br. Acesso em: 19 jun. 2026 (adaptado).",
+  "comando": "Qual foi o valor total recebido por ele ao final do mês?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "R$ 1.000,00"
+   },
+   {
+    "letra": "B",
+    "texto": "R$ 1.600,00"
+   },
+   {
+    "letra": "C",
+    "texto": "R$ 2.000,00"
+   },
+   {
+    "letra": "D",
+    "texto": "R$ 2.500,00"
+   },
+   {
+    "letra": "E",
+    "texto": "R$ 3.000,00"
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Composição de remuneração",
+  "resolucao": [
+   "A remuneração soma três parcelas independentes: o fixo de R$ 1.000,00; os eventos, 6 × 200 = R$ 1.200,00; e os drinques, 20 × 15 = R$ 300,00. Total: 1.000 + 1.200 + 300 = R$ 2.500,00.",
+   "Cada distrator omite um pedaço: R$ 1.000,00 é só o fixo, R$ 1.600,00 e R$ 2.000,00 deixam parcela variável de fora, e R$ 3.000,00 extrapola os dados. A resposta é a alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 31,
+  "apoio": [
+   "Recém-aprovada no concurso e transferida para a capital piauiense, Débora precisou montar o guarda-roupa do novo emprego praticamente do zero — o clima da cidade aposentou metade das peças que ela trouxe do Sul. Aproveitando a liquidação de inverno do centro, ela fez a lista exata do que falta e saiu com uma regra autoimposta para não estourar o cartão: nada de dividir a compra entre vitrines, tudo sairá de um único caixa, no estabelecimento que pesar menos no bolso. De volta ao apartamento, abriu as anotações de preços que colheu nas duas concorrentes.",
+   "Durante uma liquidação, um consumidor pretende adquirir 6 calças e 5 camisas para renovar seu guarda- roupa. Ele consulta os preços em duas lojas:",
+   "Loja X: calça por R$ 80,00 e camisa por R$ 50,00. Loja Y: calça por R$ 70,00 e camisa por R$ 60,00."
+  ],
+  "fonte": "Disponível em: www.consumoconsciente.net.br. Acesso em: 4 jun. 2026 (adaptado).",
+  "comando": "Sabendo que ele comprará todas as peças em uma única loja, qual das opções representa a escolha mais econômica?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Loja X, pois o valor unitário da camisa é inferior."
+   },
+   {
+    "letra": "B",
+    "texto": "Loja Y, pois o valor da calça é o mais barato."
+   },
+   {
+    "letra": "C",
+    "texto": "Loja X, porque o total gasto será menor."
+   },
+   {
+    "letra": "D",
+    "texto": "Loja Y, porque o custo total da compra será mais baixo."
+   },
+   {
+    "letra": "E",
+    "texto": "Ambas resultam em valores iguais para a compra total."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Comparação de compras",
+  "resolucao": [
+   "Na Loja X: 6 × 80 + 5 × 50 = 480 + 250 = R$ 730,00. Na Loja Y: 6 × 70 + 5 × 60 = 420 + 300 = R$ 720,00. A Loja Y sai R$ 10,00 mais barata no conjunto.",
+   "O detalhe está na justificativa: comparar um único item engana, porque as quantidades diferem — a camisa mais barata está na X e a calça mais barata na Y, mas só a soma completa decide. A escolha econômica, pelo custo total mais baixo, é a Loja Y — alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 32,
+  "apoio": [
+   "Na farmácia de manipulação de Camocim, no litoral oeste do Ceará, a farmacêutica Núbia recebeu a receita de um dermatologista com uma observação em letra caprichada: o paciente é idoso, de pele sensível, e a formulação de prateleira precisa chegar a ele mais branda do que sai do estoque. Núbia separou o frasco da solução-mãe, calçou as luvas e chamou a estagiária para acompanhar o procedimento na capela. “Aqui não existe olhômetro”, avisou, prendendo a receita no suporte, “a segurança do paciente mora na exatidão do volume que vamos acrescentar”.",
+   "Uma farmacêutica possui 100 ml de uma solução com concentração de 80% de um princípio ativo. Ela deseja reduzir essa concentração para 50%, sem alterar a quantidade de soluto, apenas adicionando água ao volume inicial."
+  ],
+  "fonte": "Disponível em: www.farmaciamagistral.net.br. Acesso em: 12 maio 2026 (adaptado).",
+  "comando": "Qual volume de água precisa ser adicionado para alcançar a nova concentração?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "20 ml"
+   },
+   {
+    "letra": "B",
+    "texto": "40 ml"
+   },
+   {
+    "letra": "C",
+    "texto": "60 ml"
+   },
+   {
+    "letra": "D",
+    "texto": "80 ml"
+   },
+   {
+    "letra": "E",
+    "texto": "100 ml"
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Diluição e conservação do soluto",
+  "resolucao": [
+   "Na diluição, o soluto se conserva: 80% de 100 ml são 80 ml de princípio ativo. Para que esses 80 ml representem 50% do volume final V, é preciso 0,50 · V = 80, logo V = 160 ml.",
+   "Partindo dos 100 ml iniciais, a água acrescentada é 160 − 100 = 60 ml. Quem responde 80 ml confunde o volume de soluto com o de água a adicionar. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 33,
+  "apoio": [
+   "No clube de astronomia de Itapipoca, cidade cearense repartida entre serra, sertão e praia, as noites de observação começam sempre com a “roda dos números”, momento em que o monitor Diego traduz as imensidões do céu para escalas que os visitantes consigam sentir. Na edição de aniversário do clube, o tema escolhido foi o tamanho do quintal cósmico da Terra, e Diego preparou uma atividade de conversão para os alunos do ensino médio que participavam pela primeira vez. “Astrônomo que se preza respeita cada algarismo”, avisou ele, distribuindo as fichas da atividade, “porque no espaço um deslize de vírgula custa planetas inteiros”.",
+   "Em observações astronômicas, as distâncias entre os corpos celestes são tão grandes que o uso exclusivo de metros ou quilômetros pode dificultar a leitura e a comparação dos valores. Por isso, os astrônomos utilizam unidades específicas. Uma delas é a Unidade Astronômica (UA), definida internacionalmente como exatamente 149.597.870.700 metros e empregada, sobretudo, na descrição de distâncias dentro do Sistema Solar."
+  ],
+  "fonte": "Disponível em: www.ceubrasileiro.org.br. Acesso em: 20 mar. 2026 (adaptado).",
+  "comando": "Durante uma atividade, um estudante precisa converter esse valor para quilômetros, mantendo toda a precisão fornecida. Sabendo que 1 km corresponde a 1.000 m, qual é o valor de 1 UA expresso em quilômetros?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "149.597.870,7 km"
+   },
+   {
+    "letra": "B",
+    "texto": "149.597.870.700 km"
+   },
+   {
+    "letra": "C",
+    "texto": "149.597,8707 km"
+   },
+   {
+    "letra": "D",
+    "texto": "1.495.978.707 km"
+   },
+   {
+    "letra": "E",
+    "texto": "149.600.384,4 km"
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Conversão de unidades astronômicas",
+  "resolucao": [
+   "Converter metros em quilômetros é dividir por 1.000 — a vírgula anda três casas para a esquerda: 149.597.870.700 m = 149.597.870,7 km, sem perda de precisão.",
+   "Manter o número e só trocar a unidade multiplica a distância por mil; deslocar casas a mais ou a menos, ou somar distâncias estranhas ao problema, gera os demais distratores. A resposta é a alternativa A."
+  ],
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 34,
+  "apoio": [
+   "Na festa junina do colégio de Quixeramobim, bem no coração do sertão central, a barraca mais concorrida do pátio é a roleta da sorte da turma do 3º ano, que reverte a renda para a formatura. Neste ano, o professor de matemática topou apadrinhar a barraca com uma condição: os próprios alunos deveriam ser capazes de responder a qualquer visitante qual resultado sai com mais frequência — “banca que não conhece o próprio jogo quebra antes do fim da festa”, avisou. O regulamento que a turma afixou ao lado da roleta é apresentado a seguir.",
+   "Durante uma gincana escolar, os participantes giram uma roleta duas vezes consecutivas. A roleta é dividida em 10 setores com a seguinte distribuição:",
+   "1 setor com o número 1 2 setores com o número 2 3 setores com o número 3 4 setores com o número 4",
+   "A pontuação final da rodada é definida pela seguinte regra:",
+   "Se os dois números sorteados forem iguais, o jogador marca o dobro desse número. Se os números forem diferentes, o jogador marca o produto entre os dois números sorteados."
+  ],
+  "fonte": "Disponível em: www.jogosematematica.com.br. Acesso em: 5 jun. 2026 (adaptado).",
+  "comando": "Considerando todas as combinações possíveis e respeitando a proporcionalidade da roleta, qual é a pontuação mais provável a ser obtida?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "4"
+   },
+   {
+    "letra": "B",
+    "texto": "6"
+   },
+   {
+    "letra": "C",
+    "texto": "8"
+   },
+   {
+    "letra": "D",
+    "texto": "12"
+   },
+   {
+    "letra": "E",
+    "texto": "16"
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Distribuição de probabilidade em roleta",
+  "resolucao": [
+   "Cada giro cai em um dos 10 setores, e os giros são independentes: 100 pares equiprováveis. Agrupando por pontuação (dobro nos pares iguais, produto nos diferentes) e pesando pela quantidade de setores: pontuação 2 → (1,1),(1,2),(2,1): 1 + 4 = 5 casos; 3 → (1,3),(3,1): 6; 4 → (2,2),(1,4), (4,1): 4 + 8 = 12; 6 → (3,3),(2,3),(3,2): 9 + 12 = 21; 8 → (4,4),(2,4),(4,2): 16 + 16 = 32; 12 → (3,4),(4,3): 24.",
+   "O truque é notar que a regra do dobro faz (4,4) render 8 — juntando-se aos produtos 2 × 4 — e (3,3) render 6, engordando essas pontuações. Com 32 casos em 100, a pontuação mais provável é 8. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 35,
+  "apoio": [
+   "Na oficina de geometria dinâmica do contraturno, em um colégio da capital cearense, cada estudante recebe um problema de otimização para investigar no computador antes de qualquer fórmula. Otávio, do 3º ano, ficou com o desafio da moldura: arrastando um controle deslizante na tela, ele via os quatro vértices de uma figura deslizarem pelas bordas de um contorno fixo, e a medida da superfície interna subir e descer no canto do painel. “O software mostra o que acontece; explicar por quê é com você”, disse a professora, entregando a Otávio a versão impressa do problema.",
+   "Um aluno investiga como a área de um quadrilátero varia quando seus vértices se deslocam sobre as bordas de um retângulo de 20 cm de base e 14 cm de altura. No esquema, os pontos P, Q, R e S são ligados nessa ordem e definidos da seguinte maneira:",
+   "P está na base do retângulo, a x centímetros do vértice inferior esquerdo; Q está no lado direito, a (14 − x) centímetros do vértice inferior direito; R está no lado superior, a x centímetros do vértice superior direito; S está no lado esquerdo, a x centímetros do vértice inferior esquerdo.",
+   "O quadrilátero PQRS permanece inscrito no retângulo e sua área depende do valor de x. Considere 0 < x < 14.",
+   "20 − x R x",
+   "x 14 − x",
+   "Q",
+   "S",
+   "14 − x x",
+   "P x 20 − x",
+   "Esquema do quadrilátero inscrito (sem escala)."
+  ],
+  "fonte": "Disponível em: www.geometriadinamicabr.com.br. Acesso em: 14 abr. 2026 (adaptado).",
+  "comando": "Qual valor de x maximiza a área do quadrilátero PQRS?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "7 cm"
+   },
+   {
+    "letra": "B",
+    "texto": "7,5 cm"
+   },
+   {
+    "letra": "C",
+    "texto": "8 cm"
+   },
+   {
+    "letra": "D",
+    "texto": "8,5 cm"
+   },
+   {
+    "letra": "E",
+    "texto": "9 cm"
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Máximo de função quadrática",
+  "resolucao": [
+   "A área central é o retângulo menos os quatro triângulos dos cantos. O retângulo tem 20 × 14 = 280 cm². Nos cantos inferior esquerdo e superior direito, os catetos medem x e x: juntos, 2 × (x·x ÷ 2) = x². Nos outros dois cantos, os catetos medem (20 − x) e (14 − x): juntos, (20 − x)(14 − x). Assim, A(x) = 280 − x² − (280 − 34x + x²) = −2x² + 34x.",
+   "É uma parábola com concavidade para baixo (a = −2), cujo máximo ocorre no vértice: x = −b ÷ (2a) = −34 ÷ (−4) = 8,5, valor dentro do intervalo permitido. A resposta é a alternativa D."
+  ],
+  "imagem": "/apostas-2026/q35.png",
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 36,
+  "apoio": [
+   "Dona Firmina finalmente vai realizar o plano adiado desde a mudança para o apartamento no bairro de Fátima, em Fortaleza: tirar as roupas das caixas e instalar um guarda-roupa de verdade. O marceneiro que fará a entrega foi taxativo ao telefone — móvel encostado em parede por todos os lados cria mofo, e mofo em roupa é prejuízo certo. Anotadas as exigências dele, Firmina pegou a trena emprestada da vizinha e mediu, um por um, os três cantos da casa que disputam o móvel, montando a tabela que agora está sobre a mesa da sala.",
+   "Uma moradora está avaliando três espaços da casa para instalar um guarda-roupa com 0,65 metro de largura e 0,95 metro de profundidade. Para garantir ventilação e evitar o acúmulo de umidade, é necessário deixar um espaço livre mínimo de 1 centímetro (0,01 metro) em cada lado lateral e no fundo do móvel.",
+   "As medidas dos vãos disponíveis são:",
+   "Vão Largura (m) Profundidade (m)",
+   "1 0,70 1,00",
+   "2 0,68 1,05",
+   "3 0,80 0,90"
+  ],
+  "fonte": "Disponível em: www.matematicaemcasa.net.br. Acesso em: 27 mar. 2026 (adaptado).",
+  "comando": "A moradora deseja escolher o menor espaço possível que ainda atenda às exigências de instalação do móvel. Com base nas informações, qual vão deve ser escolhido?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Vão 1 – 0,70 m²"
+   },
+   {
+    "letra": "B",
+    "texto": "Vão 2 – 0,714 m²"
+   },
+   {
+    "letra": "C",
+    "texto": "Vão 3 – 0,72 m²"
+   },
+   {
+    "letra": "D",
+    "texto": "Nenhum dos vãos é adequado"
+   },
+   {
+    "letra": "E",
+    "texto": "Todos os vãos atendem e possuem a mesma área"
+   }
+  ],
+  "gabarito_resolucao": "A",
+  "topico": "Medidas e folgas de instalação",
+  "resolucao": [
+   "Com as folgas, o móvel exige largura mínima de 0,65 + 0,01 + 0,01 = 0,67 m e profundidade mínima de 0,95 + 0,01 = 0,96 m. O Vão 3 (0,80 × 0,90) reprova na profundidade, pois 0,90 < 0,96. Os Vãos 1 e 2 atendem às duas exigências.",
+   "Entre os aprovados, compara-se a área: Vão 1 tem 0,70 × 1,00 = 0,70 m² e Vão 2 tem 0,68 × 1,05 = 0,714 m². O menor espaço adequado é o Vão 1 — e a ordem importa: primeiro eliminar quem não cabe, só depois comparar área. A resposta é a alternativa A."
+  ],
+  "imagem": "/apostas-2026/q36.png",
+  "gabarito_folha": "A"
+ },
+ {
+  "numero": 37,
+  "apoio": [
+   "A exposição “Retratos de um país em vitrine”, montada por um centro cultural do Recife Antigo em 2026, reúne fotografias, jornais e objetos do Brasil oitocentista. Logo na entrada, o visitante cruza um salão que reproduz o glamour dos bailes e dos cafés da Corte; na sala seguinte, porém, o cenário muda de forma deliberadamente abrupta, e muitos visitantes saem dali em silêncio. No caderno pedagógico distribuído às escolas, a curadoria explica que o percurso foi desenhado para provocar exatamente essa pergunta — que descompasso é esse? — e apresenta o painel de contexto reproduzido a seguir.",
+   "Durante o Império, sobretudo na segunda metade do século XIX, as elites brasileiras buscavam inserir o país no circuito das nações civilizadas, reproduzindo ideais europeus de progresso e modernidade. No entanto, esse projeto de modernização convivia com uma realidade social que comprometia sua efetivação, tornando o discurso contraditório em relação às práticas vigentes."
+  ],
+  "fonte": "Disponível em: www.historiaexposta.org.br. Acesso em: 9 abr. 2026 (adaptado).",
+  "comando": "Esse descompasso entre o projeto de civilização e a realidade brasileira se expressava na:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "promoção de políticas de inclusão escolar para a população negra."
+   },
+   {
+    "letra": "B",
+    "texto": "permanência de estruturas sociais sustentadas pelo trabalho escravo."
+   },
+   {
+    "letra": "C",
+    "texto": "distribuição de terras entre imigrantes e antigos cativos libertos."
+   },
+   {
+    "letra": "D",
+    "texto": "garantia de liberdade de culto às religiões de matriz africana."
+   },
+   {
+    "letra": "E",
+    "texto": "participação ativa das camadas populares no Parlamento Imperial."
+   }
+  ],
+  "gabarito_resolucao": "B",
+  "topico": "Contradições do projeto civilizatório",
+  "resolucao": [
+   "O Brasil proclamava alinhamento aos ideais europeus de progresso enquanto sustentava, até 1888, o regime escravista — visto internacionalmente como marca de atraso. É essa convivência entre discurso civilizatório e trabalho escravo que constitui o descompasso apontado.",
+   "As demais alternativas descrevem realidades que não existiram no período: não houve política consistente de inclusão escolar da população negra nem distribuição de terras a libertos; as religiões de matriz africana eram perseguidas, não protegidas; e o sistema político censitário excluía as camadas populares do Parlamento. A resposta é a alternativa B."
+  ],
+  "gabarito_folha": "B"
+ },
+ {
+  "numero": 38,
+  "apoio": [
+   "Para o trabalho final da disciplina de culturas alimentares, a estudante Bianca passou uma semana no largo do Rio Vermelho, em Salvador, acompanhando a rotina de dona Detinha, que há quarenta anos monta seu tabuleiro no mesmo largo do Rio Vermelho. Bianca chegou com o caderno cheio de perguntas sobre ingredientes e pontos de fritura, mas foi surpreendida logo no primeiro dia: antes de acender o fogo, dona Detinha cumpriu gestos, silêncios e cuidados que não estavam em receita nenhuma. “Isso aqui eu recebi da minha mãe de santo, e ela da dela”, explicou. O relato de campo de Bianca abre com a síntese a seguir.",
+   "Durante uma pesquisa sobre culturas alimentares brasileiras, um estudante se depara com o preparo do acarajé, alimento típico da tradição afrodescendente. O processo envolve ingredientes específicos, como feijão-fradinho, azeite de dendê e camarão seco, além de modos de preparo que seguem rituais e conhecimentos transmitidos por mulheres negras ao longo do tempo."
+  ],
+  "fonte": "Disponível em: www.culturasalimentares.org.br. Acesso em: 22 maio 2026 (adaptado).",
+  "comando": "Essa prática culinária representa:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "A padronização das receitas típicas em função do turismo gastronômico."
+   },
+   {
+    "letra": "B",
+    "texto": "A influência da globalização na redução das tradições alimentares."
+   },
+   {
+    "letra": "C",
+    "texto": "A perpetuação de um saber tradicional enraizado em práticas coletivas."
+   },
+   {
+    "letra": "D",
+    "texto": "A modernização de pratos regionais com base em técnicas industriais."
+   },
+   {
+    "letra": "E",
+    "texto": "A uniformização da cultura popular a partir de valores contemporâneos."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Saberes tradicionais como patrimônio",
+  "resolucao": [
+   "O que o texto descreve é transmissão intergeracional: ingredientes, rituais e técnicas passados por mulheres negras compõem um saber coletivo que ultrapassa a alimentação — envolve identidade, espiritualidade e resistência cultural, traços do patrimônio imaterial afro-brasileiro.",
+   "Turismo, globalização, industrialização e uniformização apontam todos para a descaracterização da prática, movimento oposto ao retratado, que é de preservação e continuidade. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 39,
+  "apoio": [
+   "Uma consultoria de recursos humanos contratada por um grupo empresarial paulistano para revisar seus processos seletivos incluiu no relatório final de 2026 uma seção de casos reais, colhidos em entrevistas confidenciais com candidatos e recrutadores. A coordenadora do estudo explicou a escolha metodológica na abertura do documento: “números mostram a dimensão do problema; casos mostram o seu rosto”. Entre os episódios documentados, um foi destacado pela equipe como emblemático do que ainda ocorre entre a triagem de currículos e a decisão final — e é ele que se relata a seguir.",
+   "Uma profissional negra participou de um processo seletivo para uma função administrativa. Na primeira etapa, realizada apenas pela análise do currículo, recebeu elogios por sua formação e experiência. Durante a entrevista por vídeo, porém, um dos recrutadores afirmou que alguns clientes \"não estavam acostumados a ser atendidos por mulheres negras em cargos de liderança\". Pouco depois, a candidata foi excluída da seleção, e a vaga foi preenchida por uma pessoa branca com qualificação inferior."
+  ],
+  "fonte": "Disponível em: www.gestaoepessoas.com.br. Acesso em: 17 jun. 2026 (adaptado).",
+  "comando": "O episódio descrito evidencia uma prática social ainda presente em diferentes ambientes profissionais. Trata- se de:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Discriminação com base em escolaridade."
+   },
+   {
+    "letra": "B",
+    "texto": "Rejeição por ausência de qualificação técnica."
+   },
+   {
+    "letra": "C",
+    "texto": "Preconceito étnico-racial no ambiente de trabalho."
+   },
+   {
+    "letra": "D",
+    "texto": "Desigualdade de acesso causada exclusivamente por diferenças de gênero."
+   },
+   {
+    "letra": "E",
+    "texto": "Competição regular entre profissionais com experiências distintas."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Racismo no processo seletivo",
+  "resolucao": [
+   "A cronologia do caso isola a causa: o currículo foi elogiado (o que descarta escolaridade e qualificação), a mudança de tratamento veio após a entrevista por vídeo, acompanhada de uma fala que vincula a exclusão ao fato de a candidata ser mulher negra — e a vaga foi ocupada por pessoa branca menos qualificada.",
+   "A alternativa do gênero falha no \"exclusivamente\": a fala registrada nomeia a dimensão racial. Não há competição regular quando uma característica alheia à capacidade profissional decide a seleção — trata-se de preconceito étnico-racial no ambiente de trabalho, alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 40,
+  "apoio": [
+   "Analista de suprimentos de um moinho dos Campos Gerais do Paraná, Henrique prepara o relatório anual que orienta de quais parceiros internacionais a empresa comprará grão no próximo ciclo. A diretoria pediu, desta vez, algo além da cotação: uma explicação de por que a lista dos grandes fornecedores mundiais muda tão pouco de um ano para o outro, concentrada sempre nas mesmas partes do mapa. Henrique abriu o relatório com o panorama a seguir, preparado a partir dos boletins técnicos que acompanha.",
+   "O cultivo de trigo tem grande importância na economia agrícola mundial. Essa cultura se desenvolve de forma mais eficiente em regiões com verões ensolarados e clima temperado. Entre os principais produtores estão países localizados em médias latitudes do hemisfério norte, como Rússia, Ucrânia, Canadá e Estados Unidos."
+  ],
+  "fonte": "Disponível em: www.agronegocioemfoco.com.br. Acesso em: 11 mar. 2026 (adaptado).",
+  "comando": "O fator geográfico que mais contribui para o sucesso da produção de trigo nesses países é:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "A existência de planícies aluviais próximas a rios caudalosos."
+   },
+   {
+    "letra": "B",
+    "texto": "O efeito da continentalidade sobre os índices pluviométricos."
+   },
+   {
+    "letra": "C",
+    "texto": "A influência das correntes oceânicas no regime térmico."
+   },
+   {
+    "letra": "D",
+    "texto": "A localização em faixas de latitude com clima propício ao cultivo."
+   },
+   {
+    "letra": "E",
+    "texto": "O predomínio de formações montanhosas em áreas férteis."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Latitude e zonas climáticas",
+  "resolucao": [
+   "O enunciado costura a resposta: o trigo pede verões ensolarados e clima temperado, e os grandes produtores citados ocupam as médias latitudes do hemisfério norte — a faixa que, justamente, organiza a distribuição do clima temperado, com estações bem marcadas e forte insolação estival.",
+   "Rios, continentalidade e correntes oceânicas influenciam localmente, mas não são o critério apresentado; relevo montanhoso, aliás, dificulta as grandes lavouras mecanizadas de trigo. O fator central é a latitude — alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 41,
+  "apoio": [
+   "No seminário de história social de uma universidade pernambucana, a mesa mais aguardada de 2026 discutiu como as multidões urbanas do passado transformaram problemas do cotidiano em assunto de governo. A professora convidada abriu sua fala com uma provocação ao auditório: “vocês reclamam nas redes; os trabalhadores do século XIX alugavam salões”. Em seguida, apresentou o painel histórico que serve de base ao seu livro em preparação, cujo trecho central foi distribuído aos participantes e é reproduzido a seguir.",
+   "Ao longo do século XIX, a industrialização, o crescimento das cidades e a organização de associações operárias ampliaram os debates sobre os problemas sociais. Em centros urbanos europeus, trabalhadores, reformadores, médicos, jornalistas e representantes políticos passaram a organizar conferências, assembleias e encontros públicos para discutir jornadas de trabalho, saneamento, educação popular, direitos civis e assistência aos grupos mais pobres.",
+   "Experiências semelhantes chegaram a países da América Latina, inclusive ao Brasil, favorecendo a circulação de ideias, a elaboração de reivindicações coletivas e a pressão sobre governos e instituições. Embora esses espaços não eliminassem as desigualdades de participação, eles contribuíram para aproximar determinados grupos sociais das discussões sobre decisões públicas."
+  ],
+  "fonte": "Disponível em: www.historiasocialbrasileira.org.br. Acesso em: 8 maio 2026 (adaptado).",
+  "comando": "Nesse processo histórico, tais iniciativas contribuíram principalmente para:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "O controle governamental dos discursos produzidos em espaços públicos."
+   },
+   {
+    "letra": "B",
+    "texto": "A criação de partidos políticos comprometidos com ideais autoritários."
+   },
+   {
+    "letra": "C",
+    "texto": "O aumento da repressão às associações e organizações populares."
+   },
+   {
+    "letra": "D",
+    "texto": "A redução do interesse coletivo por questões de ordem pública."
+   },
+   {
+    "letra": "E",
+    "texto": "A ampliação do envolvimento popular nos debates sobre políticas sociais."
+   }
+  ],
+  "gabarito_resolucao": "E",
+  "topico": "Esfera pública e questão social",
+  "resolucao": [
+   "O texto narra a formação de uma esfera pública ampliada: problemas antes tratados como privados — jornada, saneamento, educação, assistência — viram matéria de conferências e assembleias, com circulação de ideias, reivindicações coletivas e pressão sobre as instituições, na Europa e na América Latina.",
+   "Controle estatal dos discursos, autoritarismo partidário, repressão crescente e desinteresse coletivo invertem, cada um a seu modo, o sentido do processo descrito. O efeito central foi a ampliação do envolvimento popular nos debates sobre políticas sociais — alternativa E."
+  ],
+  "gabarito_folha": "E"
+ },
+ {
+  "numero": 42,
+  "apoio": [
+   "A repórter Valquíria cobriu, para uma agência de notícias brasileira, um fórum internacional de direitos humanos realizado no primeiro semestre de 2026. Na pauta que enviou à redação, destacou que a delegação vinda do Brasil concentrou suas falas num mesmo alerta, repetido em plenário e nas entrevistas de corredor. “Não viemos pedir favor, viemos cobrar o que a Constituição já garante”, disse-lhe um dos porta-vozes, ao fim do segundo dia. O trecho de abertura da reportagem de Valquíria, que resume o alerta levado ao fórum, é apresentado a seguir.",
+   "Durante um fórum internacional sobre direitos humanos, líderes indígenas brasileiros destacaram a crescente ameaça de invasão de seus territórios por grileiros — indivíduos que ocupam ilegalmente terras com falsos registros. Esse cenário revela desafios contínuos na defesa dos direitos garantidos a esses povos."
+  ],
+  "fonte": "Disponível em: www.agenciadireitos.org.br. Acesso em: 16 jun. 2026 (adaptado).",
+  "comando": "Nesse contexto, qual ação governamental se mostra mais eficaz na proteção dos territórios indígenas?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Estímulo à urbanização próxima às comunidades nativas."
+   },
+   {
+    "letra": "B",
+    "texto": "Implementação de políticas de demarcação e reconhecimento legal das terras."
+   },
+   {
+    "letra": "C",
+    "texto": "Abertura das terras indígenas ao ecoturismo internacional."
+   },
+   {
+    "letra": "D",
+    "texto": "Distribuição de equipamentos agrícolas para produção intensiva."
+   },
+   {
+    "letra": "E",
+    "texto": "Incentivo à migração de indígenas para os centros urbanos."
+   }
+  ],
+  "gabarito_resolucao": "B",
+  "topico": "Demarcação de terras indígenas",
+  "resolucao": [
+   "Contra a grilagem — ocupação com registros falsos —, a resposta estrutural é jurídica: demarcar e reconhecer legalmente as terras delimita o território sob proteção constitucional e dá base para combater as ocupações ilegais. É uma das principais pautas históricas dos povos originários.",
+   "Urbanização vizinha e migração para as cidades desarticulam as comunidades; ecoturismo e maquinário agrícola não enfrentam o problema fundiário. A resposta é a alternativa B."
+  ],
+  "gabarito_folha": "B"
+ },
+ {
+  "numero": 43,
+  "apoio": [
+   "O documentário “As guardiãs do Rio Vermelho”, produzido por um coletivo audiovisual baiano em 2026, acompanha mulheres da capital baiana cujas trajetórias se transformaram ao reencontrarem práticas herdadas de suas comunidades. A personagem central da segunda parte do filme conquistou a equipe já na entrevista de pesquisa, quando resumiu sua história numa frase que acabou no cartaz: “eu não aprendi coisa nova — eu lembrei quem eu era”. O texto de apresentação dessa personagem, lido em voz alta na abertura do episódio, é reproduzido a seguir.",
+   "Após enfrentar uma longa trajetória marcada por dificuldades sociais e econômicas, Onorata, mulher negra e moradora de Salvador, aproximou-se de um coletivo dedicado à preservação de expressões culturais afro- brasileiras. Nesse espaço, retomou o uso de indumentárias tradicionais, aprofundou conhecimentos sobre culinária ancestral e passou a compartilhar ensinamentos ligados às matrizes africanas presentes na formação cultural brasileira.",
+   "Com o tempo, a experiência fortaleceu sua autoestima e sua atuação comunitária. Outras mulheres passaram a reconhecê-la como referência de saber, resistência e pertencimento, recorrendo a ela para organizar atividades culturais e transmitir esses conhecimentos às gerações mais jovens."
+  ],
+  "fonte": "Disponível em: www.audiovisualdabahia.org.br. Acesso em: 21 maio 2026 (adaptado).",
+  "comando": "O processo vivido por Onorata representa:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "um movimento de assimilação da cultura dominante, acompanhado pelo abandono da identidade afrodescendente."
+   },
+   {
+    "letra": "B",
+    "texto": "um apagamento simbólico de tradições periféricas diante da cultura hegemônica."
+   },
+   {
+    "letra": "C",
+    "texto": "uma afirmação identitária baseada na valorização de saberes culturais ancestrais."
+   },
+   {
+    "letra": "D",
+    "texto": "uma imposição forçada de elementos étnicos à sociedade majoritária."
+   },
+   {
+    "letra": "E",
+    "texto": "uma fusão de elementos culturais voltada à padronização das identidades."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Identidade e ancestralidade",
+  "resolucao": [
+   "A trajetória de Onorata é de retomada: indumentárias, culinária e ensinamentos de matriz africana funcionam como fontes de pertencimento e fortalecimento pessoal, e a transmissão às gerações mais jovens dá continuidade a um patrimônio historicamente desvalorizado.",
+   "Assimilação e apagamento descrevem o contrário do relatado; a liderança dela nasce de reconhecimento comunitário, não de imposição; e o episódio celebra a especificidade dos saberes ancestrais, não a padronização. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 44,
+  "apoio": [
+   "A professora Regina, que leciona sociologia num colégio da periferia de Fortaleza, mantém desde o início do ano um “diário de sala” em que registra falas de alunos que renderiam debate. Na reunião pedagógica de maio de 2026, ela levou aos colegas o episódio que considerou o mais revelador do semestre — não pela irreverência, garantiu, mas pelo que a comparação escolhida pelo estudante dizia sobre o tempo em que essa geração cresceu. O registro feito por Regina no diário é reproduzido a seguir.",
+   "Durante uma conversa em sala de aula, um aluno compara a educação formal a um aplicativo lento, dizendo que o \"sistema de aprendizado\" demora anos para carregar. A professora, surpreendida, tenta explicar que o conhecimento não se instala como um programa de computador. A metáfora empregada evidencia a crítica do jovem ao ritmo do ensino tradicional, refletindo uma percepção social comum na atualidade."
+  ],
+  "fonte": "Disponível em: www.educacaoemdebate.com.br. Acesso em: 28 maio 2026 (adaptado).",
+  "comando": "Essa crítica revela, sobretudo, uma característica presente na sociedade contemporânea:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "A valorização da experiência afetiva no ambiente escolar."
+   },
+   {
+    "letra": "B",
+    "texto": "A nostalgia dos métodos de ensino do passado."
+   },
+   {
+    "letra": "C",
+    "texto": "O apelo por uma formação ética e cidadã no currículo escolar."
+   },
+   {
+    "letra": "D",
+    "texto": "A expectativa por agilidade e eficácia nos processos de aprendizagem."
+   },
+   {
+    "letra": "E",
+    "texto": "A defesa de modelos pedagógicos baseados em memorização."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Cultura do imediatismo",
+  "resolucao": [
+   "A metáfora do aplicativo lento transfere para a escola o padrão de expectativa da vida digital: tudo deve ser rápido, eficiente, instantâneo — inclusive aprender. É a cultura do imediatismo aplicada ao tempo da formação.",
+   "A crítica do aluno não fala de afeto, de saudade dos métodos antigos, de formação cidadã nem de memorização; fala de velocidade. A resposta é a alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 45,
+  "apoio": [
+   "A mostra “Barro e Mármore”, em cartaz numa galeria à beira-mar de João Pessoa no primeiro semestre de 2026, propõe ao público um jogo de espelhos entre séculos: de um lado das salas, reproduções fotográficas de obras-primas europeias; do outro, peças de ceramistas e santeiros do interior do Nordeste que partiram dessas mesmas cenas. No texto de parede da sala principal, a curadoria pede que o visitante observe um par específico antes de seguir adiante — e é exatamente esse par que o material educativo da mostra descreve no trecho a seguir.",
+   "Uma escultura clássica do Renascimento, como a Pietà de Michelangelo, representa com refinamento estético um tema religioso central para a cultura ocidental. Séculos depois, um artista nordestino reinterpreta essa cena utilizando barro como material e formas inspiradas na arte popular de sua região, imprimindo marcas da cultura brasileira à representação original."
+  ],
+  "fonte": "Disponível em: www.artesvisuaisnordeste.org.br. Acesso em: 30 abr. 2026 (adaptado).",
+  "comando": "Essa recriação evidencia:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Uma tentativa de competir tecnicamente com as obras europeias consagradas."
+   },
+   {
+    "letra": "B",
+    "texto": "A reprodução fiel de estilos clássicos por artistas de comunidades locais."
+   },
+   {
+    "letra": "C",
+    "texto": "O desinteresse por referências artísticas estrangeiras nas manifestações nacionais."
+   },
+   {
+    "letra": "D",
+    "texto": "A expressão de valores culturais locais em diálogo com um repertório artístico universal."
+   },
+   {
+    "letra": "E",
+    "texto": "O distanciamento entre a arte erudita europeia e as produções populares brasileiras."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Diálogo entre o local e o universal",
+  "resolucao": [
+   "A releitura em barro, com formas da arte popular nordestina, não copia nem rejeita a Pietà: apropria-se de um tema universal e o reelabora com vocabulário local. É o encontro entre repertório clássico e identidade regional que caracteriza a diversidade cultural nas artes.",
+   "Não há competição técnica nem reprodução fiel; tampouco desinteresse ou distanciamento — a obra nasce justamente do diálogo entre as duas tradições. A resposta é a alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 46,
+  "apoio": [
+   "Para o mural “Brasil que não se apaga”, o grêmio estudantil de uma escola de Exu, no sertão pernambucano onde nasceu o Rei do Baião, encomendou aos alunos do 3º ano minibiografias de brasileiros inesquecíveis, escritas em até cinco linhas. Entre as dezenas afixadas no corredor, duas ficaram lado a lado por sorteio e acabaram fotografadas juntas por quase todos os visitantes da feira cultural, como se formassem um díptico proposital. São elas que se reproduzem a seguir.",
+   "TEXTO 1",
+   "Luiz Gonzaga, mestre da sanfona e das canções sertanejas, traduzia em música as emoções do povo do Nordeste. Em seus últimos anos, encontrava beleza nas pequenas coisas do cotidiano, eternizando sons, paisagens e sentimentos por meio de sua arte.",
+   "TEXTO 2",
+   "Garrincha, o gênio irreverente do futebol, deixou uma marca eterna nos gramados. Ainda hoje, sua ausência é sentida, e sua memória ressurge sempre que se fala de talento puro, que o tempo não apaga, mas a vida levou."
+  ],
+  "fonte": "Disponível em: www.literaturanaescola.net.br. Acesso em: 15 abr. 2026 (adaptado).",
+  "comando": "O ponto de convergência entre os textos é o(a):",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Crítica ao esquecimento de ídolos da cultura brasileira."
+   },
+   {
+    "letra": "B",
+    "texto": "Defesa da cultura nordestina e do futebol como patrimônio imaterial."
+   },
+   {
+    "letra": "C",
+    "texto": "Enaltecimento do estilo artístico de figuras populares."
+   },
+   {
+    "letra": "D",
+    "texto": "Reflexão sobre a efemeridade da vida e a permanência da memória."
+   },
+   {
+    "letra": "E",
+    "texto": "Valorização da linguagem poética nas biografias culturais."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Memória e finitude",
+  "resolucao": [
+   "Os dois textos reverenciam personalidades marcantes e trabalham a mesma oposição: a vida passa — os \"últimos anos\" de Gonzaga, a \"ausência\" de Garrincha —, mas a obra e a lembrança permanecem, \"eternizando\" sons e mantendo viva a memória do talento.",
+   "Não há crítica ao esquecimento (os textos celebram, não denunciam), a cultura nordestina aparece só no primeiro, e nem o estilo artístico nem a linguagem poética são o eixo comum. A convergência é a reflexão sobre a efemeridade da vida e a permanência da memória — alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 47,
+  "apoio": [
+   "Na oficina de escrita criativa da biblioteca municipal de Sobral, às margens do rio Acaraú, o mediador Everardo abre cada encontro lendo em voz alta um pequeno texto de reflexão sobre o ofício de escrever, escolhido entre os que os próprios participantes trazem de casa. No encontro de encerramento do primeiro módulo, a passagem escolhida arrancou um silêncio comprido da roda — “é disso que a gente vem atrás toda quarta- feira”, resumiu uma participante, enquanto os demais copiavam a passagem no caderno para reler em casa. O fragmento lido por Everardo é reproduzido a seguir.",
+   "“Escrever poesia é como decifrar um mapa do invisível: o poeta escolhe palavras, ritmos e imagens com precisão, buscando entre infinitas possibilidades aquelas que melhor expressam um sentimento ou ideia.”"
+  ],
+  "fonte": "Fragmento de antologia didática da série (texto autoral). Edições da Oficina, 2026.",
+  "comando": "A partir desse fragmento, é possível compreender que o fazer poético envolve:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "O uso obrigatório da métrica clássica e de rimas tradicionais."
+   },
+   {
+    "letra": "B",
+    "texto": "A criação espontânea, sem necessidade de estrutura formal."
+   },
+   {
+    "letra": "C",
+    "texto": "A escolha intencional e refinada de palavras para construir sentido."
+   },
+   {
+    "letra": "D",
+    "texto": "A negação dos elementos simbólicos e sonoros da linguagem."
+   },
+   {
+    "letra": "E",
+    "texto": "A dependência exclusiva da linguagem cotidiana para alcançar o leitor."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "O trabalho da palavra",
+  "resolucao": [
+   "O fragmento define o fazer poético como seleção criteriosa: escolher \"com precisão\", entre infinitas possibilidades, as palavras, ritmos e imagens que melhor expressam a ideia. A imagem do \"mapa do invisível\" reforça que se trata de elaboração consciente, não de acaso.",
+   "O texto não impõe métrica ou rima, não prega espontaneidade sem forma, não nega símbolos e sons — ao contrário, os pressupõe — e não restringe o poeta ao vocabulário cotidiano. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ },
+ {
+  "numero": 48,
+  "apoio": [
+   "O concurso de cartões de formatura de um tradicional colégio fortalezense premiou, em 2026, a mensagem que os formandos do 3º ano estamparão no convite oficial. A comissão julgadora — duas professoras de linguagens e um poeta convidado — justificou a escolha em ata: entre dezenas de candidatas, a vencedora foi a única que transformou um objeto banal do cotidiano escolar em imagem para o momento que a turma atravessa — e, segundo a ata, foi também a que mais emocionou as famílias presentes à leitura pública. A mensagem premiada é reproduzida a seguir.",
+   "“Algumas portas se abrem com um leve empurrão. Outras exigem coragem, paciência e um pouco de fé. O que importa é saber que cada porta guarda um novo caminho.”"
+  ],
+  "fonte": "Mensagem vencedora do concurso (texto autoral da série). Colégio fictício, Fortaleza, 2026.",
+  "comando": "Considerando o emprego metafórico da palavra “porta” e a organização expressiva do texto, qual função da linguagem predomina nessa construção?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Função referencial, por explicar tecnicamente o funcionamento de fechaduras e dobradiças."
+   },
+   {
+    "letra": "B",
+    "texto": "Função metalinguística, por definir o significado literal da palavra “porta”."
+   },
+   {
+    "letra": "C",
+    "texto": "Função conativa, por apresentar instruções objetivas para a abertura de portas."
+   },
+   {
+    "letra": "D",
+    "texto": "Função poética, ao empregar a porta como metáfora de decisões, desafios e oportunidades."
+   },
+   {
+    "letra": "E",
+    "texto": "Função fática, por testar o funcionamento do canal de comunicação com o leitor."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Funções da linguagem",
+  "resolucao": [
+   "A “porta” do texto não nomeia um objeto: representa escolhas, desafios e possibilidades que conduzem a “novos caminhos”. A construção figurada, a repetição e o cuidado com a forma da mensagem indicam que a linguagem chama atenção para a própria elaboração — marca da função poética.",
+   "Não há explicação técnica (referencial), definição do código (metalinguística), instrução ao leitor (conativa) nem teste de canal (fática). A resposta é a alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 49,
+  "apoio": [
+   "No curso de licenciatura em Letras de uma universidade do Piauí, a roda de leitura do professor Anchieta dedicou o mês de março de 2026 aos romances brasileiros do final do século XIX. Antes de distribuir os capítulos da semana, Anchieta fez um alerta metodológico à turma: “não julguem o narrador com os olhos de hoje; perguntem que concepção de pessoa sustenta cada gesto dele”. A ficha de leitura preparada pelos monitores para orientar a discussão traz a observação a seguir sobre a obra escolhida.",
+   "Em determinado trecho da obra O Cortiço, de Aluísio Azevedo, o narrador descreve um personagem dominado por impulsos sexuais incontroláveis, que agem como forças instintivas, alheias à razão. Essa característica é comparada a comportamentos animais, destacando a força da natureza sobre o indivíduo."
+  ],
+  "fonte": "Disponível em: www.letrasemroda.com.br. Acesso em: 26 mar. 2026 (adaptado).",
+  "comando": "Esse procedimento estilístico está associado a qual visão literária do ser humano?",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "Representação idealizada da natureza e da pureza emocional."
+   },
+   {
+    "letra": "B",
+    "texto": "Predomínio do subjetivismo individual como guia de conduta."
+   },
+   {
+    "letra": "C",
+    "texto": "Ênfase na forma estética, com desprezo pelo conteúdo social."
+   },
+   {
+    "letra": "D",
+    "texto": "Perspectiva determinista, que enxerga o ser humano como resultado do meio e da biologia."
+   },
+   {
+    "letra": "E",
+    "texto": "Defesa moralista da contenção dos impulsos em favor da razão burguesa."
+   }
+  ],
+  "gabarito_resolucao": "D",
+  "topico": "Determinismo naturalista",
+  "resolucao": [
+   "A animalização do personagem — impulsos instintivos vencendo a razão — é procedimento típico do Naturalismo, escola em que O Cortiço se inscreve: o ser humano aparece como produto de fatores biológicos, hereditários e do meio, com o livre-arbítrio posto em xeque.",
+   "Idealização da natureza remete ao Romantismo; subjetivismo, a outra chave estética; culto da forma sem conteúdo social e moralismo prescritivo tampouco descrevem o projeto naturalista, que expõe sem pregar. A resposta é a alternativa D."
+  ],
+  "gabarito_folha": "D"
+ },
+ {
+  "numero": 50,
+  "apoio": [
+   "O clube do livro Mulheres que Leem, que se reúne mensalmente numa livraria do bairro Aldeota, em Fortaleza, escolheu para o encontro de junho de 2026 uma autobiografia que vinha sendo recomendada de leitora para leitora desde o lançamento. A mediadora Cleide preparou o roteiro do debate a partir das anotações enviadas pelas participantes e observou, na abertura, que quase todas haviam sublinhado o mesmo movimento da narrativa. A sinopse comentada que Cleide distribuiu ao grupo é reproduzida a seguir.",
+   "Em seu livro autobiográfico Finding Me, uma atriz negra premiada relata as dificuldades que enfrentou ao longo da vida, incluindo pobreza extrema e preconceito racial. Ela descreve como a reconexão com suas raízes africanas foi um passo fundamental em seu processo de fortalecimento pessoal e construção de identidade, permitindo que enfrentasse os desafios de uma indústria marcada por exclusão e desigualdade."
+  ],
+  "fonte": "Disponível em: www.clubesdeleitura.com.br. Acesso em: 10 jun. 2026 (adaptado).",
+  "comando": "Com base nesse relato, a principal mensagem transmitida está relacionada:",
+  "alternativas": [
+   {
+    "letra": "A",
+    "texto": "à negação de suas origens como estratégia de sucesso social."
+   },
+   {
+    "letra": "B",
+    "texto": "à conquista de reconhecimento por meio de mérito acadêmico."
+   },
+   {
+    "letra": "C",
+    "texto": "ao fortalecimento identitário promovido pela valorização cultural de suas raízes."
+   },
+   {
+    "letra": "D",
+    "texto": "ao abandono da carreira artística como resposta à exclusão."
+   },
+   {
+    "letra": "E",
+    "texto": "à dependência da validação externa para construção da autoestima."
+   }
+  ],
+  "gabarito_resolucao": "C",
+  "topico": "Raízes e reconstrução de si",
+  "resolucao": [
+   "A progressão do relato vai da exclusão — pobreza, preconceito — à reconexão com as raízes africanas e, daí, ao fortalecimento pessoal que sustenta a permanência numa indústria desigual. A valorização cultural da ancestralidade é apresentada como o motor da construção identitária.",
+   "Negação das origens e abandono da carreira contradizem a trajetória narrada; mérito acadêmico não é o eixo do texto; e o fortalecimento descrito é interno, não dependente de validação externa. A resposta é a alternativa C."
+  ],
+  "gabarito_folha": "C"
+ }
+]

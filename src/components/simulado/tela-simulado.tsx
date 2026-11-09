@@ -27,6 +27,7 @@ import { CabecalhoPagina, ConteudoPagina, EstadoErro } from "@/components/app/pa
 import { useToast } from "@/components/ui/toast";
 import { CaixaTempo, formatarTempo } from "@/components/estudo/barra-sprint";
 import { QuestaoView } from "@/components/estudo/questao-view";
+import { Resolucao } from "@/components/estudo/resolucao";
 import { Logo } from "@/components/app/sidebar";
 import { cn } from "@/lib/utils";
 
@@ -151,6 +152,21 @@ export function TelaSimulado() {
             </p>
           </CardContent>
         </Card>
+        <Card data-testid="card-apostas-simulado">
+          <CardHeader>
+            <CardTitle className="text-lg">Apostas 2026</CardTitle>
+            <CardDescription>
+              Apostas do curso Edcley Teixeira (questões inéditas, não oficiais): 50 questões de todas as áreas, em simulado com cronômetro ou treino. Não contam para o critério acima.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Button variant="secondary" asChild className="self-start">
+              <Link href="/apostas">
+                Abrir apostas <ArrowRight />
+              </Link>
+            </Button>
+          </CardContent>
+        </Card>
         <Button variant="outline" asChild className="self-start">
           <Link href="/mapa">
             <ArrowLeft /> Voltar para o Mapa
@@ -273,6 +289,7 @@ function ItemSimulado({
         aoPular={pular}
         aoProxima={aoAvancar}
         ehUltima={ehUltima}
+        comResolucao={false}
       />
     </div>
   );
@@ -308,7 +325,8 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
             const r = respostas[i];
             const acertou = !!r?.acertou;
             return (
-              <div key={q.id} className="flex items-center gap-3 py-2.5 text-sm" data-testid="resultado-simulado">
+              <div key={q.id} className="flex flex-col gap-2 py-2.5" data-testid="resultado-simulado">
+              <div className="flex items-center gap-3 text-sm">
                 <span className={cn("inline-flex size-7 shrink-0 items-center justify-center rounded-full text-white", acertou ? "bg-success" : "bg-danger")} aria-label={acertou ? "acertou" : "errou"}>
                   {acertou ? <Check className="size-4" strokeWidth={2.5} /> : <X className="size-4" strokeWidth={2.5} />}
                 </span>
@@ -320,7 +338,10 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
                 <span className="num text-[13px] text-muted-foreground">
                   {r?.tempoEsgotado ? "tempo esgotado" : r?.escolha ? `marcou ${r.escolha}` : "pulou"}
                   {r && !r.tempoEsgotado ? ` · ${formatarTempo(r.segundos)}` : ""}
+                  {` · gabarito ${q.gabarito}`}
                 </span>
+              </div>
+              <Resolucao questao={q} className="pl-10" />
               </div>
             );
           })}

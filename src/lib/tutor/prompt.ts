@@ -117,7 +117,19 @@ export function blocoContexto({
   partes.push(`GABARITO OFICIAL: ${questao.gabarito}${questao.anulada ? " (questão anulada)" : ""}`);
 
   const res = questao.resolucao;
-  if (res) {
+  if (questao.resolucao_autor) {
+    partes.push(
+      [
+        "QUESTÃO NÃO OFICIAL: coleção Apostas do curso Edcley Teixeira (inédita, fora do ENEM/INEP; o gabarito é do autor). Nunca a chame de questão do ENEM.",
+        questao.qualidade?.observacoes?.length ? `Dados da figura: ${questao.qualidade.observacoes.join(" ")}` : null,
+        `Resolução do autor (${questao.resolucao_autor.topico}): ${questao.resolucao_autor.texto}`,
+        questao.explicacao_detalhada ? `Explicação passo a passo (curadoria): ${questao.explicacao_detalhada}` : null,
+        questao.flags?.length ? `Avisos da curadoria: ${questao.flags.join(" | ")}` : null,
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    );
+  } else if (res) {
     partes.push(
       [
         "CURADORIA VERIFICADA (SymPy)",

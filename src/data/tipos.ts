@@ -82,6 +82,22 @@ export const fonteSchema = z.object({
   microdados_espelho_url: z.string().url().nullable().optional(),
 });
 
+/**
+ * Fonte das questões da coleção "Apostas 2026" (curso Edcley Teixeira): questões
+ * inéditas, NÃO oficiais. Nunca citar INEP nelas.
+ */
+export const fonteApostaSchema = z.object({
+  orgao: z.literal("Curso Edcley Teixeira"),
+  prova: z.literal("Apostas de Edcley Teixeira ENEM 2026"),
+  autor: z.literal("Edcley Teixeira"),
+  /** Linha de referência impressa sob o texto de apoio (sites/obras citados no material). */
+  referencia: z.string().nullable(),
+});
+
+export const COLECAO_APOSTAS = "apostas-2026" as const;
+export const AREAS = ["matematica", "natureza", "humanas", "linguagens"] as const;
+export type Area = (typeof AREAS)[number];
+
 export const qualidadeSchema = z.object({
   enunciado_vazio: z.boolean().optional(),
   alternativas_incompletas: z.boolean().optional(),
@@ -90,14 +106,16 @@ export const qualidadeSchema = z.object({
 });
 
 export const questaoSchema = z.object({
-  id: z.string().regex(/^enem-(19|20)[0-9]{2}-[0-9]{1,3}$/),
+  /** "enem-2023-142" (INEP) ou "apostas-2026-07" (coleção Apostas, não oficial). */
+  id: z.string().regex(/^(enem-(19|20)[0-9]{2}-[0-9]{1,3}|apostas-2026-[0-9]{2})$/),
   ano: z.number().int().min(1998).max(2100),
   dia: z.union([z.literal(1), z.literal(2)]),
   caderno: z.enum(["azul", "amarelo", "branco", "rosa", "cinza", "verde", "laranja"]),
   numero: z.number().int().min(1).max(200),
-  area: z.literal("matematica"),
+  area: z.enum(AREAS),
   enunciado: z.string(),
-  imagens: z.array(z.string().url()),
+  /** URL absoluta (enem.dev) ou caminho público local ("/apostas-2026/q35.png"). */
+  imagens: z.array(z.string().refine((u) => u.startsWith("/") || /^https?:\/\//.test(u), "URL ou caminho público")),
   alternativas: z.array(alternativaSchema).min(4).max(5),
   gabarito: letraSchema,
   /** "inep" = TX_GABARITO oficial dos microdados; "transcricao" = só a enem.dev. Ausente no fixture antigo. */
@@ -110,9 +128,17 @@ export const questaoSchema = z.object({
   classificacao: z.enum(["heuristica", "revisada"]),
   tri: triSchema.nullable(),
   dificuldade_estimada: z.enum(["facil", "media", "dificil"]).nullable(),
-  fonte: fonteSchema,
+  fonte: z.union([fonteSchema, fonteApostaSchema]),
   qualidade: qualidadeSchema.optional(),
   resolucao: resolucaoSchema.optional(),
+  /** Presente só nas questões de coleções não oficiais (ex.: "apostas-2026"). */
+  colecao: z.literal(COLECAO_APOSTAS).optional(),
+  /** Resolução do autor da coleção (texto do material, markdown). */
+  resolucao_autor: z.object({ topico: z.string(), texto: z.string().min(40) }).optional(),
+  /** Explicação passo a passo escrita e conferida na curadoria (complementa a do autor). */
+  explicacao_detalhada: z.string().min(80).optional(),
+  /** Avisos da curadoria (gabarito discutível, alternativa duplicada etc.). Não mudam o gabarito. */
+  flags: z.array(z.string()).optional(),
 });
 export type Questao = z.infer<typeof questaoSchema>;
 
@@ -189,6 +215,12 @@ export const NOME_HABILIDADE: Record<string, string> = {
 };
 
 /** "ENEM 2023, questão 137" (para citar a fonte em qualquer tela). */
+export function ehAposta(q: Pick<Questao, "colecao">): boolean {
+  return q.colecao === COLECAO_APOSTAS;
+}
+
+export const CREDITO_APOSTAS = "Apostas do curso Edcley Teixeira (questões inéditas, não oficiais)";
+
 export function citarFonte(q: Pick<Questao, "ano" | "numero">): string {
   return `INEP, ENEM ${q.ano}, questão ${q.numero}`;
 }
@@ -208,6 +240,15 @@ export interface FonteDetalhada {
 
 /** Monta os textos de atribuição de uma questão (sempre citando o INEP). */
 export function fonteDetalhada(q: Questao): FonteDetalhada {
+  if (q.fonte.orgao !== "INEP") {
+    return {
+      citacao: `Fonte: ${CREDITO_APOSTAS}, questão ${String(q.numero).padStart(2, "0")}. Autor: ${q.fonte.autor}`,
+      transcricaoUrl: "",
+      urlOficial: null,
+      gabarito: "gabarito do autor",
+      tri: "fora do TRI (não oficial)",
+    };
+  }
   const gabarito =
     q.gabarito_fonte === "inep"
       ? "gabarito oficial do INEP (microdados)"

@@ -8,13 +8,15 @@ import { infoVisual, visualParaAssuntos } from "@/lib/visuais/catalogo";
 import { COMPONENTE_VISUAL } from "@/components/visuais";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import type { Questao, Letra } from "@/data/tipos";
-import { fonteDetalhada, NOME_HABILIDADE } from "@/data/tipos";
+import { CREDITO_APOSTAS, ehAposta, fonteDetalhada, NOME_HABILIDADE } from "@/data/tipos";
+import { NOME_AREA } from "@/data/apostas";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { cn } from "@/lib/utils";
 import { Alternativas } from "./alternativas";
 import { Markdown } from "./markdown";
+import { Resolucao } from "./resolucao";
 
 interface Props {
   questao: Questao;
@@ -31,6 +33,8 @@ interface Props {
   canto?: React.ReactNode;
   /** Mostra "Ver visualmente" quando a questão é de um tema de Aprender o básico (fora do simulado). */
   comVisual?: boolean;
+  /** "Ver resolução" depois de confirmar (o simulado oficial mostra só na correção do fim). */
+  comResolucao?: boolean;
 }
 
 function rotuloDificuldade(q: Questao): { texto: string; variant: "success" | "warning" | "danger" | "neutral" } {
@@ -48,6 +52,14 @@ function rotuloDificuldade(q: Questao): { texto: string; variant: "success" | "w
 /** Atribuição obrigatória: INEP, transcrição enem.dev, origem do gabarito e do TRI. */
 export function FonteQuestao({ questao, className }: { questao: Questao; className?: string }) {
   const f = fonteDetalhada(questao);
+  if (questao.fonte.orgao !== "INEP") {
+    return (
+      <p className={cn("text-xs leading-relaxed text-muted-foreground", className)} data-testid="fonte">
+        {CREDITO_APOSTAS} · questão {String(questao.numero).padStart(2, "0")} · autor: {questao.fonte.autor} · gabarito do autor · fora do TRI e das estatísticas oficiais
+        {questao.fonte.referencia ? <><br />Referência do material: {questao.fonte.referencia}</> : null}
+      </p>
+    );
+  }
   return (
     <p className={cn("text-xs leading-relaxed text-muted-foreground", className)} data-testid="fonte">
       {f.citacao}
@@ -86,8 +98,9 @@ interface Selecao {
  * (ENEM ano · Questão n · dificuldade · Hn), enunciado serifado, alternativas em cartões
  * e o botão Confirmar em pílula azul à direita.
  */
-export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirmar, aoPular, aoProxima, ehUltima, aoPerguntarSobre, canto, comVisual = false }: Props) {
+export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirmar, aoPular, aoProxima, ehUltima, aoPerguntarSobre, canto, comVisual = false, comResolucao = true }: Props) {
   const dif = rotuloDificuldade(questao);
+  const aposta = ehAposta(questao);
   const acertou = confirmada && marcada === questao.gabarito;
   const statusRef = React.useRef<HTMLParagraphElement | null>(null);
   const enunciadoRef = React.useRef<HTMLDivElement | null>(null);
@@ -158,9 +171,16 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
         <div className="anim-questao mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl border border-card-borda bg-surface p-4 shadow-card md:p-5">
           <header className="flex flex-wrap items-center gap-1.5 text-sm">
             <h2 id="titulo-questao" className="inline-flex items-center rounded-sm bg-background px-2.25 py-0.75 text-xs font-bold text-muted-foreground dark:bg-surface-2">
-              ENEM {questao.ano} · Q{questao.numero}
+              {aposta ? `Apostas 2026 · Q${String(questao.numero).padStart(2, "0")}` : `ENEM ${questao.ano} · Q${questao.numero}`}
             </h2>
-            <Badge variant={dif.variant}>{dif.texto}</Badge>
+            {aposta ? (
+              <>
+                <Badge variant="warning" data-testid="selo-nao-oficial">não oficial</Badge>
+                <Badge variant="accent">{NOME_AREA[questao.area]}</Badge>
+              </>
+            ) : (
+              <Badge variant={dif.variant}>{dif.texto}</Badge>
+            )}
             {questao.habilidade && (
               <Badge variant="accent" title={NOME_HABILIDADE[questao.habilidade]}>
                 {questao.habilidade}
@@ -169,7 +189,7 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             )}
             {questao.anulada && <Badge variant="danger">anulada</Badge>}
             {canto && <span className="ml-auto">{canto}</span>}
-            {comVisual && (
+            {comVisual && !aposta && (
               <span className="ml-auto flex flex-wrap items-center gap-1.5">
                 <LinkResumo questao={questao} />
                 <BotaoVisual assuntos={questao.assuntos} />
@@ -192,6 +212,7 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
               {acertou ? "Acertou." : `Não foi dessa vez. O gabarito é ${questao.gabarito}.`}
             </p>
           )}
+          {confirmada && comResolucao && <Resolucao key={questao.id} questao={questao} />}
           {questao.resolucao?.dados_da_imagem && (
             <details className="rounded-md bg-background px-3 py-2 text-sm dark:bg-surface-2">
               <summary className="cursor-pointer font-medium text-muted-foreground">Dados da imagem em texto</summary>

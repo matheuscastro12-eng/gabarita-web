@@ -16,7 +16,7 @@ describe("tipos: fonte e atribuição", () => {
     expect(oficial.transcricaoUrl).toMatch(/enem\.dev/);
     expect(fonteDetalhada({ ...base, gabarito_fonte: "transcricao" }).gabarito).toMatch(/transcrição/);
     expect(fonteDetalhada(base).gabarito).toBe("gabarito oficial do INEP");
-    expect(fonteDetalhada({ ...base, fonte: { ...base.fonte, url_oficial: undefined } }).urlOficial).toBeNull();
+    expect(fonteDetalhada({ ...base, fonte: { ...(base.fonte as Extract<typeof base.fonte, { orgao: "INEP" }>), url_oficial: undefined } }).urlOficial).toBeNull();
   });
 
   it("fonteDetalhada descreve o TRI: fonte, correção, ausência e anulada", () => {
@@ -36,7 +36,7 @@ describe("tipos: fonte e atribuição", () => {
     const r = questaoSchema.safeParse(q);
     expect(r.success).toBe(true);
     expect(r.data?.tri?.fonte).toBe("INEP, microdados");
-    expect(r.data?.fonte.microdados_espelho_url).toBe("https://zenodo.org/records/18801899");
+    expect(r.data?.fonte.orgao === "INEP" && r.data.fonte.microdados_espelho_url).toBe("https://zenodo.org/records/18801899");
   });
 
   it("competenciaDa e dificuldadeDoB", () => {
