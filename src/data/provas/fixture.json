@@ -1,0 +1,316 @@
+[
+  {
+    "id": "enem-2023-143",
+    "ano": 2023,
+    "dia": 2,
+    "caderno": "azul",
+    "numero": 143,
+    "area": "matematica",
+    "enunciado": "Em janeiro do ano passado, a direção de uma fábrica abriu uma creche para os filhos de seus funcionários, com 10 salas, cada uma com capacidade para atender 10 crianças a cada ano. As vagas são sorteadas entre os filhos dos funcionários inscritos, enquanto os não contemplados pelo sorteio formam uma lista de espera. No ano passado, a lista de espera teve 400 nomes e, neste ano, esse número cresceu 10%. A direção da fábrica realizou uma pesquisa e constatou que a lista de espera para o próximo ano terá a mesma quantidade de nomes da lista de espera deste ano. Decidiu, então, construir, ao longo desse ano, novas salas para a creche, também com capacidade de atendimento para 10 crianças cada, de modo que o número de nomes na lista de espera no próximo ano seja 25% menor que o deste ano.\n\nO número mínimo de salas que deverão ser construídas é",
+    "imagens": [],
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "10",
+        "imagem": null
+      },
+      {
+        "letra": "B",
+        "texto": "11",
+        "imagem": null
+      },
+      {
+        "letra": "C",
+        "texto": "12",
+        "imagem": null
+      },
+      {
+        "letra": "D",
+        "texto": "30",
+        "imagem": null
+      },
+      {
+        "letra": "E",
+        "texto": "33",
+        "imagem": null
+      }
+    ],
+    "gabarito": "B",
+    "anulada": false,
+    "habilidade": "H3",
+    "habilidade_origem": "heuristica",
+    "competencia": "C1",
+    "assuntos": [
+      "porcentagem",
+      "aumento-e-desconto"
+    ],
+    "classificacao": "heuristica",
+    "tri": null,
+    "dificuldade_estimada": null,
+    "fonte": {
+      "orgao": "INEP",
+      "prova": "ENEM 2023, 2º dia, caderno azul (aplicação regular), questão 143",
+      "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+      "transcricao": "enem.dev",
+      "transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/143",
+      "microdados_url": null
+    },
+    "qualidade": {
+      "depende_de_imagem": false,
+      "observacoes": [
+        "Fixture de desenvolvimento: habilidade e assuntos atribuídos por heurística, sem parâmetros TRI."
+      ]
+    }
+  },
+  {
+    "id": "enem-2023-162",
+    "ano": 2023,
+    "dia": 2,
+    "caderno": "azul",
+    "numero": 162,
+    "area": "matematica",
+    "enunciado": "Para concretar a laje de sua residência, uma pessoa contratou uma construtora. Tal empresa informa que o preço _y_ do concreto bombeado é composto de duas partes: uma fixa, chamada de taxa de bombeamento, e uma variável, que depende do volume _x_ de concreto utilizado. Sabe-se que a taxa de bombeamento custa R$ 500,00 e que o metro cúbico do concreto bombeado é de R$ 250,00.\n\nA expressão que representa o preço y em função do volume x, em metro cúbico, é",
+    "imagens": [],
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Y = 250x",
+        "imagem": null
+      },
+      {
+        "letra": "B",
+        "texto": "Y = 500x",
+        "imagem": null
+      },
+      {
+        "letra": "C",
+        "texto": "Y = 750x",
+        "imagem": null
+      },
+      {
+        "letra": "D",
+        "texto": "Y = 250x + 500",
+        "imagem": null
+      },
+      {
+        "letra": "E",
+        "texto": "Y = 500x + 250",
+        "imagem": null
+      }
+    ],
+    "gabarito": "D",
+    "anulada": false,
+    "habilidade": "H19",
+    "habilidade_origem": "heuristica",
+    "competencia": "C5",
+    "assuntos": [
+      "funcao-afim",
+      "lei-de-formacao"
+    ],
+    "classificacao": "heuristica",
+    "tri": null,
+    "dificuldade_estimada": null,
+    "fonte": {
+      "orgao": "INEP",
+      "prova": "ENEM 2023, 2º dia, caderno azul (aplicação regular), questão 162",
+      "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+      "transcricao": "enem.dev",
+      "transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/162",
+      "microdados_url": null
+    },
+    "qualidade": {
+      "depende_de_imagem": false,
+      "observacoes": [
+        "Fixture de desenvolvimento: habilidade e assuntos atribuídos por heurística, sem parâmetros TRI."
+      ]
+    }
+  },
+  {
+    "id": "enem-2023-167",
+    "ano": 2023,
+    "dia": 2,
+    "caderno": "azul",
+    "numero": 167,
+    "area": "matematica",
+    "enunciado": "A cada bimestre, a diretora de uma escola compra uma quantidade de folhas de papel ofício proporcional ao número de alunos matriculados. No bimestre passado, ela comprou 6 000 folhas para serem utilizadas pelos 1 200 alunos matriculados. Neste bimestre, alguns alunos cancelaram suas matrículas e a escola tem, agora, 1 150 alunos. A diretora só pode gastar R$ 220,00 nessa compra, e sabe que o fornecedor da escola vende as folhas de papel ofício em embalagens de 100 unidades a R$ 4,00 a embalagem. Assim, será preciso convencer o fornecedor a dar um desconto à escola, de modo que seja possível comprar a quantidade total de papel ofício necessária para o bimestre.\n\nO desconto necessário no preço final da compra, em porcentagem, pertence ao intervalo",
+    "imagens": [],
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "(5,0 ; 5,5).",
+        "imagem": null
+      },
+      {
+        "letra": "B",
+        "texto": "(8,0 ; 8,5).",
+        "imagem": null
+      },
+      {
+        "letra": "C",
+        "texto": "(11,5 ; 12,5).",
+        "imagem": null
+      },
+      {
+        "letra": "D",
+        "texto": "(19,5 ; 20,5).",
+        "imagem": null
+      },
+      {
+        "letra": "E",
+        "texto": "(3,5 ; 4,0).",
+        "imagem": null
+      }
+    ],
+    "gabarito": "A",
+    "anulada": false,
+    "habilidade": "H16",
+    "habilidade_origem": "heuristica",
+    "competencia": "C4",
+    "assuntos": [
+      "regra-de-tres",
+      "porcentagem"
+    ],
+    "classificacao": "heuristica",
+    "tri": null,
+    "dificuldade_estimada": null,
+    "fonte": {
+      "orgao": "INEP",
+      "prova": "ENEM 2023, 2º dia, caderno azul (aplicação regular), questão 167",
+      "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+      "transcricao": "enem.dev",
+      "transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/167",
+      "microdados_url": null
+    },
+    "qualidade": {
+      "depende_de_imagem": false,
+      "observacoes": [
+        "Fixture de desenvolvimento: habilidade e assuntos atribuídos por heurística, sem parâmetros TRI."
+      ]
+    }
+  },
+  {
+    "id": "enem-2023-171",
+    "ano": 2023,
+    "dia": 2,
+    "caderno": "azul",
+    "numero": 171,
+    "area": "matematica",
+    "enunciado": "O calendário maia apresenta duas contagens simultâneas de anos, o chamado ano Tzolkim, composto por 260 dias e que determinava o calendário religioso, e o ano Haab, composto por 365 dias e que determinava o calendário agrícola. Um historiador encontrou evidências de que gerações de uma mesma família governaram certa comunidade maia pelo período de 20 ciclos, sendo cada ciclo formado por 52 anos Haab.\n\nDisponível em: www.suapesquisa.com. Acesso em: 20 ago. 2014.\n\nDe acordo com as informações fornecidas, durante quantos anos Tzolkim aquela comunidade maia foi governada por tal família?",
+    "imagens": [],
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "741",
+        "imagem": null
+      },
+      {
+        "letra": "B",
+        "texto": "1 040",
+        "imagem": null
+      },
+      {
+        "letra": "C",
+        "texto": "1 460",
+        "imagem": null
+      },
+      {
+        "letra": "D",
+        "texto": "2 100",
+        "imagem": null
+      },
+      {
+        "letra": "E",
+        "texto": "5 200",
+        "imagem": null
+      }
+    ],
+    "gabarito": "C",
+    "anulada": false,
+    "habilidade": "H16",
+    "habilidade_origem": "heuristica",
+    "competencia": "C4",
+    "assuntos": [
+      "razao-e-proporcao",
+      "regra-de-tres"
+    ],
+    "classificacao": "heuristica",
+    "tri": null,
+    "dificuldade_estimada": null,
+    "fonte": {
+      "orgao": "INEP",
+      "prova": "ENEM 2023, 2º dia, caderno azul (aplicação regular), questão 171",
+      "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+      "transcricao": "enem.dev",
+      "transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/171",
+      "microdados_url": null
+    },
+    "qualidade": {
+      "depende_de_imagem": false,
+      "observacoes": [
+        "Fixture de desenvolvimento: habilidade e assuntos atribuídos por heurística, sem parâmetros TRI."
+      ]
+    }
+  },
+  {
+    "id": "enem-2023-180",
+    "ano": 2023,
+    "dia": 2,
+    "caderno": "azul",
+    "numero": 180,
+    "area": "matematica",
+    "enunciado": "Um tipo de semente necessita de bastante água nos dois primeiros meses após o plantio. Um produtor pretende estabelecer o melhor momento para o plantio desse tipo de semente, nos meses de outubro a março. Após consultar a previsão do índice mensal de precipitação de chuva (ImPC) da região onde ocorrerá o plantio, para o período chuvoso de 2020-2021, ele obteve os seguintes dados:  \n• outubro/2020: ImPC = 250 mm;  \n• novembro/2020: ImPC = 150 mm;  \n• dezembro/2020: ImPC = 200 mm;  \n• janeiro/2021: ImPC = 450 mm;  \n• fevereiro/2021: ImPC = 100 mm;  \n• março/2021: ImPC = 200 mm.\n\nCom base nessas previsões, ele precisa escolher dois meses consecutivos em que a média mensal de precipitação seja a maior possível.\n\nNo início de qual desses meses o produtor deverá plantar esse tipo de semente?",
+    "imagens": [],
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Outubro.",
+        "imagem": null
+      },
+      {
+        "letra": "B",
+        "texto": "Novembro.",
+        "imagem": null
+      },
+      {
+        "letra": "C",
+        "texto": "Dezembro.",
+        "imagem": null
+      },
+      {
+        "letra": "D",
+        "texto": "Janeiro.",
+        "imagem": null
+      },
+      {
+        "letra": "E",
+        "texto": "Fevereiro.",
+        "imagem": null
+      }
+    ],
+    "gabarito": "C",
+    "anulada": false,
+    "habilidade": "H27",
+    "habilidade_origem": "heuristica",
+    "competencia": "C7",
+    "assuntos": [
+      "media-aritmetica"
+    ],
+    "classificacao": "heuristica",
+    "tri": null,
+    "dificuldade_estimada": null,
+    "fonte": {
+      "orgao": "INEP",
+      "prova": "ENEM 2023, 2º dia, caderno azul (aplicação regular), questão 180",
+      "url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+      "transcricao": "enem.dev",
+      "transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/180",
+      "microdados_url": null
+    },
+    "qualidade": {
+      "depende_de_imagem": false,
+      "observacoes": [
+        "Fixture de desenvolvimento: habilidade e assuntos atribuídos por heurística, sem parâmetros TRI."
+      ]
+    }
+  }
+]
