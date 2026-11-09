@@ -131,7 +131,7 @@ for (const largura of LARGURAS) {
             .slice(0, 5)
             .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)}`),
         }));
-        const arquivo = join(DIR, `${PREFIXO}-${tela.nome}-${largura}.png`);
+        const arquivo = join(DIR, `${PREFIXO ? PREFIXO + "-" : ""}${tela.nome}-${largura}.png`);
         // O conteúdo rola dentro do <main> (a casca tem altura da janela): cresce a janela até caber tudo.
         const alturaBase = largura < 700 ? 812 : 900;
         const extra = await page.evaluate(() =>

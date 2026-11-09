@@ -112,3 +112,21 @@ Tela `/aprender` (menu "Aprender", Alt+7) e botão **"Ver visualmente"** (chip p
 - Visuais: porcentagem (100 quadradinhos), proporção (duas barras com marcas de unidade), frações (barra dividida e a equivalente), gráficos (SVG com eixo, barra escolhida e leitura tracejada), estatística (fichas que se ordenam, mediana em azul, moda em verde, média como traço âmbar na reta), unidades (escada km…mm com marcador), área (grade que se preenche, contorno azul = perímetro), probabilidade (urna, favoráveis com anel, o resto apagado).
 - Cores: azul = o que se olha agora; verde = acerto/moda; vermelho = o que sai (desconto) ou erro; âmbar = referência (média, barra comparada). Números em `.num`.
 - A conta de cada visual vem de funções puras em `src/lib/visuais/` (100% de cobertura), nunca do componente.
+
+## 9. Acabamento de 09/11/2026 (contraste, celular, estados)
+Mesmo sistema, mesma cara. Mudou só o que a medição apontou (`node design/scripts/contraste.mjs`), sempre por token. Antes e depois de cada tela em `design/capturas/comparar/`.
+
+| Token | Antes | Agora | Por quê |
+|---|---|---|---|
+| `--accent-solid` (novo; claro e escuro) | — | `#0071E3` | preenchimento **com texto ou ícone branco por cima** (botão primário, chip/aba/rádio ativos, tag sólida, círculo da letra marcada, hero): branco sobre `#0A84FF` dava 3,65:1; agora 4,70:1. `--accent` continua `#0A84FF` em tudo que é só forma (barras, bolinhas, foco, logo, borda da alternativa marcada) |
+| `--accent-text` (claro) | `#0A84FF` | `#0066CC` | azul como texto: 3,65:1 → 5,57:1 no branco e 4,87:1 no azul suave. No escuro fica `#5EB0FF` |
+| `--success-text` (claro) | `#1A7F4F` | `#18794B` | sobre `--success-soft`: 4,49:1 → 4,85:1 |
+| `--danger-text` (claro) | `#D2302F` | `#C92A2A` | sobre `--danger-soft`: 4,35:1 → 4,75:1 |
+| `--input` | `#E3E8EF` / `#2A313C` | `#8791A0` / `#6B7380` | borda de campo de formulário: 1,23:1 → 3,19:1 (escuro 3,57:1). `--border` (cards, chips, alternativas) **não mudou** |
+| hero | `#0A84FF → #0058CC` | `#0071E3 → #0058CC` | o texto pequeno branco do card passa de 3,65:1 para 4,70:1 no ponto mais claro |
+
+Isto substitui a nota "o azul em texto pequeno (3,6:1) é herdado do original" do §1 e do §6: não há mais par de texto abaixo de 4,5:1 nos tokens (tabela em `/design-system`).
+
+Também: chips de "Habilidades da semana" alinhados no celular; status do Pyodide e rótulos dos sliders sem quebra torta em 375px; alvos de toque de 44px em ponteiro grosso nos botões de ícone e na barra superior; erro de carregamento do Estudar e do Simulado no padrão do §5 (caixa `danger-soft`, `role="alert"`, "Tentar de novo"); esqueleto nos Ajustes enquanto carrega; keyframes duplicados removidos do `globals.css`. Página `/design-system` (fora do índice e do menu) mostra tokens, tipografia, componentes, estados e a tabela de contraste.
+
+Avaliado e **não** feito: reordenar o Hoje para o sprint vir antes dos números ("uma coisa por vez"). No original o "Começar" já está na primeira dobra em 375px e na segunda linha em 1440px; mudar a ordem mexeria na cara da tela. Fica para o Matheus decidir.
