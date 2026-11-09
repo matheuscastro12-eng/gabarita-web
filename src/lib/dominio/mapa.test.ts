@@ -85,5 +85,9 @@ describe("dominioPorAssunto", () => {
     // Aceita busca por função e lista de assuntos customizada.
     const r2 = dominioPorAssunto(mapaHabilidades(estado, agora), estado, (id) => porId.get(id), [ASSUNTOS_DE_FOCO[0]!]);
     expect(r2).toHaveLength(1);
+    // Habilidade do assunto ausente nas células (mapa parcial): ignorada.
+    const parcial = mapaHabilidades(estado, agora).filter((c) => c.habilidade !== "H3");
+    const r3 = dominioPorAssunto(parcial, estado, porId, [{ id: "x", nome: "X", focoInicial: false, habilidades: ["H3"] }]);
+    expect(r3[0]!.media).toBeNull();
   });
 });

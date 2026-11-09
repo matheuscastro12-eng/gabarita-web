@@ -52,7 +52,7 @@ export function mapaHabilidades(estado: EstadoAluno, agora: Date): CelulaMapa[] 
     const r = prontoHabilidade({ estado: eh, tentativas: estado.tentativas, agora });
     return {
       habilidade,
-      nome: NOME_HABILIDADE[habilidade] ?? habilidade,
+      nome: NOME_HABILIDADE[habilidade]!,
       competencia: competenciaDa(habilidade)!,
       dominio: eh.dominio,
       dominioEfetivo: r.dominioEfetivo,

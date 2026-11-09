@@ -1,5 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { agruparPorHabilidade, errosAbertos, marcarResolvida, registrarErro } from "./caderno";
+import { estadoInicial } from "./estado";
+import { novoEstadoHabilidade } from "./evidencia";
+import { revisarCartao } from "./revisao";
+import { agruparPorHabilidade, errosAbertos, marcarResolvida, registrarErro, listarCaderno } from "./caderno";
 import { tentativaFake } from "./teste-fixtures";
 
 const t0 = new Date(2026, 10, 9, 10);
@@ -50,11 +53,7 @@ describe("caderno", () => {
 });
 
 describe("listarCaderno", () => {
-  it("abertas primeiro (mais recentes no topo), depois resolvidas; marca revisão vencida e repetições", async () => {
-    const { estadoInicial } = await import("./estado");
-    const { listarCaderno } = await import("./caderno");
-    const { novoEstadoHabilidade } = await import("./evidencia");
-    const { revisarCartao } = await import("./revisao");
+  it("abertas primeiro (mais recentes no topo), depois resolvidas; marca revisão vencida e repetições", () => {
     const agora = new Date(2026, 10, 9, 10);
     const antigo = new Date(2026, 0, 1);
     const h16 = novoEstadoHabilidade("H16", antigo);
@@ -73,9 +72,7 @@ describe("listarCaderno", () => {
     expect(lista.map((e) => e.vezes)).toEqual([1, 2, 2]);
   });
 
-  it("entradas com a mesma data mantêm a ordem estável", async () => {
-    const { estadoInicial } = await import("./estado");
-    const { listarCaderno } = await import("./caderno");
+  it("entradas com a mesma data mantêm a ordem estável", () => {
     const agora = new Date(2026, 10, 9, 10);
     const e = (id: string) => ({ id, tentativaId: id, questaoId: id, habilidade: "H3" as const, escolha: null, gabarito: "A" as const, porQue: null, em: "2026-11-04T10:00:00.000Z", resolvidaEm: null });
     const lista = listarCaderno({ ...estadoInicial(agora), caderno: [e("a"), e("b")] }, agora);

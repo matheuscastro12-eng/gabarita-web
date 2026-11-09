@@ -48,9 +48,7 @@ export function montarSimuladoFaceis({
     const sx = semana.has(x.habilidade!) ? 0 : 1;
     const sy = semana.has(y.habilidade!) ? 0 : 1;
     if (sx !== sy) return sx - sy;
-    const d = bOrdenacao(x) - bOrdenacao(y);
-    if (d !== 0) return d;
-    return x.id < y.id ? -1 : 1;
+    return bOrdenacao(x) - bOrdenacao(y) || x.id.localeCompare(y.id);
   });
 
   const escolhidas: Questao[] = [];

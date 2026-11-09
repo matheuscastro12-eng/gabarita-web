@@ -65,12 +65,8 @@ export function listarCaderno(estado: EstadoAluno, agora: Date): EntradaCadernoD
   for (const e of estado.caderno) vezesPorQuestao.set(e.questaoId, (vezesPorQuestao.get(e.questaoId) ?? 0) + 1);
   const detalhadas = estado.caderno.map((e) => {
     const h = estado.habilidades[e.habilidade];
-    return { ...e, revisaoVencida: !!h && precisaRevisao(h.cartao, agora), vezes: vezesPorQuestao.get(e.questaoId) ?? 1 };
+    return { ...e, revisaoVencida: !!h && precisaRevisao(h.cartao, agora), vezes: vezesPorQuestao.get(e.questaoId)! };
   });
-  return detalhadas.sort((a, b) => {
-    const ra = a.resolvidaEm === null ? 0 : 1;
-    const rb = b.resolvidaEm === null ? 0 : 1;
-    if (ra !== rb) return ra - rb;
-    return a.em < b.em ? 1 : a.em > b.em ? -1 : 0;
-  });
+  const posicao = (e: EntradaCaderno) => (e.resolvidaEm === null ? 0 : 1);
+  return detalhadas.sort((a, b) => posicao(a) - posicao(b) || b.em.localeCompare(a.em));
 }
