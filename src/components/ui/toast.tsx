@@ -33,10 +33,10 @@ const icones: Record<TipoToast, React.ComponentType<{ className?: string }>> = {
 };
 
 const cores: Record<TipoToast, string> = {
-  info: "text-accent-text",
-  sucesso: "text-success",
-  erro: "text-danger",
-  aviso: "text-warning",
+  info: "text-primaria-texto",
+  sucesso: "text-sucesso",
+  erro: "text-erro",
+  aviso: "text-aviso",
 };
 
 export function ToastProvider({ children }: { children: React.ReactNode }) {
@@ -69,14 +69,14 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
                 if (!aberto) remover(t.id);
               }}
               className={cn(
-                "group pointer-events-auto relative flex w-full items-start gap-3 rounded-lg border border-card-borda bg-surface p-4 pr-10 shadow-flutuante",
+                "group pointer-events-auto relative flex w-full items-start gap-3 rounded-lg border border-border bg-card p-4 pr-10 shadow-flutua",
                 "data-[state=open]:anim-slide-in-right data-[state=closed]:anim-fade-out",
                 "data-[swipe=move]:translate-x-(--radix-toast-swipe-move-x) data-[swipe=end]:translate-x-(--radix-toast-swipe-end-x) data-[swipe=cancel]:translate-x-0",
               )}
             >
               <Icone className={cn("mt-0.5 size-5 shrink-0", cores[tipo])} />
               <div className="flex min-w-0 flex-col gap-0.5">
-                <ToastPrimitive.Title className="text-sm font-bold">{t.titulo}</ToastPrimitive.Title>
+                <ToastPrimitive.Title className="text-sm font-semibold">{t.titulo}</ToastPrimitive.Title>
                 {t.descricao && (
                   <ToastPrimitive.Description className="text-sm text-muted-foreground">
                     {t.descricao}
@@ -85,7 +85,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
               </div>
               <ToastPrimitive.Close
                 aria-label="Fechar"
-                className="absolute top-2 right-2 inline-flex size-8 items-center justify-center rounded-full text-muted-foreground hover:bg-background hover:text-foreground"
+                className="absolute top-2 right-2 inline-flex size-8 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground"
               >
                 <X className="size-4" />
               </ToastPrimitive.Close>

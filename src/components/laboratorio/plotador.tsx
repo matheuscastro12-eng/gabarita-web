@@ -27,8 +27,8 @@ export function Plotador({ compacto = false }: { compacto?: boolean }) {
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-col gap-1">
-        <span className="flex items-center gap-1.5 text-sm font-bold">
-          <LineChart className="size-4 text-accent" strokeWidth={1.8} /> Gráfico de função
+        <span className="flex items-center gap-1.5 text-sm font-semibold">
+          <LineChart className="size-4 text-primary" strokeWidth={1.8} /> Gráfico de função
         </span>
         {!compacto && <p className="text-sm text-muted-foreground">Escreva uma função de x. Letras como a, b, k viram sliders.</p>}
       </div>
@@ -63,7 +63,7 @@ export function Plotador({ compacto = false }: { compacto?: boolean }) {
           id={compacto ? "expressao-grafico-gaveta" : "expressao-grafico"}
           value={expressao}
           onChange={(e) => setExpressao(e.target.value)}
-          className="min-w-40 flex-1 rounded-md border-[1.5px] border-input bg-surface px-3 py-2 font-mono text-sm focus-visible:border-accent focus-visible:outline-none"
+          className="min-w-40 flex-1 rounded-md border-[1.5px] border-input bg-card px-3 py-2 font-mono text-sm focus-visible:border-primary focus-visible:outline-none"
           spellCheck={false}
           autoCapitalize="off"
         />
@@ -72,7 +72,7 @@ export function Plotador({ compacto = false }: { compacto?: boolean }) {
         </Button>
       </form>
       {erro && (
-        <p className="text-sm font-medium text-danger-text" role="alert">
+        <p className="text-sm font-medium text-erro" role="alert">
           {erro}
         </p>
       )}

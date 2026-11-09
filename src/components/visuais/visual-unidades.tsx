@@ -37,14 +37,14 @@ export function VisualUnidades() {
         const valor = converter(real, "cm", atual);
         return (
           <div className="flex flex-col gap-4" role="img" aria-label={`${fmt(valor)} ${atual}`}>
-            <p className="num text-center text-3xl font-extrabold">
+            <p className="num text-center text-3xl font-semibold">
               <span key={atual} className="anim-entrada inline-block">
                 {fmt(valor)} {atual}
               </span>
             </p>
             <div className="relative">
               <div
-                className="absolute inset-y-0 left-0 rounded-[10px] bg-accent transition-transform duration-[240ms] ease-(--ease)"
+                className="absolute inset-y-0 left-0 rounded-[10px] bg-primary transition-transform duration-[240ms] ease-(--curva)"
                 style={{ width: `${100 / ESCADA_METRO.length}%`, transform: `translateX(${indice * 100}%)` }}
                 aria-hidden
               />
@@ -53,8 +53,8 @@ export function VisualUnidades() {
                   <li
                     key={u}
                     className={cn(
-                      "num py-2.5 text-center text-sm font-bold transition-colors duration-(--duration)",
-                      u === atual ? "text-white" : u === "m" ? "text-foreground" : "text-muted-foreground",
+                      "num py-2.5 text-center text-sm font-semibold transition-colors duration-(--duracao)",
+                      u === atual ? "text-primary-foreground" : u === "m" ? "text-foreground" : "text-muted-foreground",
                     )}
                   >
                     {u}

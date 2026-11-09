@@ -30,14 +30,14 @@ export function Balao({
     <div
       className={cn(
         "flex max-w-[95%] flex-col gap-1.5 rounded-lg px-3.5 py-3 text-[15px] leading-relaxed",
-        papel === "tutor" ? "self-start rounded-tl-[4px] bg-background dark:bg-surface-2" : "self-end rounded-tr-[4px] bg-accent-soft text-foreground",
+        papel === "tutor" ? "self-start rounded-tl-[4px] bg-muted" : "self-end rounded-tr-[4px] bg-accent text-foreground",
         className,
       )}
       data-papel={papel}
     >
       {(rotulo || selo) && (
         <div className="flex flex-wrap items-center gap-2">
-          {rotulo && <span className="text-[11px] font-bold tracking-[0.5px] text-muted-foreground uppercase">{rotulo}</span>}
+          {rotulo && <span className="text-[11px] font-semibold tracking-[0.5px] text-muted-foreground uppercase">{rotulo}</span>}
           {selo}
         </div>
       )}
@@ -48,7 +48,7 @@ export function Balao({
 
 export function SeloConferido() {
   return (
-    <Badge variant="success" title="A verificação bateu com o gabarito oficial" data-testid="selo-conferido">
+    <Badge variant="sucesso" title="A verificação bateu com o gabarito oficial" data-testid="selo-conferido">
       <BadgeCheck /> conferido
     </Badge>
   );
@@ -56,7 +56,7 @@ export function SeloConferido() {
 
 export function SeloNaoConferido() {
   return (
-    <Badge variant="warning" title="A verificação divergiu do gabarito duas vezes; o gabarito oficial manda">
+    <Badge variant="aviso" title="A verificação divergiu do gabarito duas vezes; o gabarito oficial manda">
       <TriangleAlert /> não conferido
     </Badge>
   );
@@ -145,7 +145,7 @@ function ParteFerramentaView({ parte, aoResponderGemea }: { parte: ParteFerramen
     case "tool-verify_answer":
       if (parte.state !== "output-available") return <Rodando texto="conferindo o valor…" />;
       return (
-        <p className={cn("flex items-start gap-1.5 text-sm", parte.output.bateu ? "text-success-text" : "text-warning-text")}>
+        <p className={cn("flex items-start gap-1.5 text-sm", parte.output.bateu ? "text-sucesso" : "text-aviso")}>
           {parte.output.bateu ? <BadgeCheck className="mt-0.5 size-4 shrink-0" /> : <ShieldAlert className="mt-0.5 size-4 shrink-0" />}
           <span>{parte.output.observacao}</span>
         </p>
@@ -159,7 +159,7 @@ function ParteFerramentaView({ parte, aoResponderGemea }: { parte: ParteFerramen
       );
     case "tool-plot_function":
       if (parte.state !== "output-available") return <Rodando texto="desenhando o gráfico…" />;
-      if ("erro" in parte.output) return <p className="text-sm text-danger-text">Gráfico inválido: {parte.output.erro}</p>;
+      if ("erro" in parte.output) return <p className="text-sm text-erro">Gráfico inválido: {parte.output.erro}</p>;
       return <Grafico spec={parte.output as PlotSpec} />;
     case "tool-make_twin":
       if (parte.state !== "output-available") return <Rodando texto="gerando a gêmea…" />;
@@ -185,7 +185,7 @@ function RunPythonView({ parte }: { parte: Extract<ParteFerramenta, { type: "too
   const saida = parte.state === "output-available" ? parte.output : null;
   const erro = parte.state === "output-error" ? parte.errorText : saida && !saida.ok ? saida.erro : null;
   return (
-    <div className="rounded-md border-[1.5px] border-border bg-surface text-sm">
+    <div className="rounded-md border-[1.5px] border-border bg-card text-sm">
       <button
         type="button"
         className="flex w-full items-center gap-2 px-3 py-2 text-left text-muted-foreground hover:text-foreground"
@@ -197,7 +197,7 @@ function RunPythonView({ parte }: { parte: Extract<ParteFerramenta, { type: "too
         {parte.state === "input-streaming" || parte.state === "input-available" ? (
           <Loader2 className="size-4 animate-spin motion-reduce:animate-none" />
         ) : erro ? (
-          <Badge variant="danger">erro</Badge>
+          <Badge variant="erro">erro</Badge>
         ) : (
           <Badge variant="neutral">SymPy</Badge>
         )}
@@ -206,11 +206,11 @@ function RunPythonView({ parte }: { parte: Extract<ParteFerramenta, { type: "too
         <div className="flex flex-col gap-2 border-t border-border px-3 py-2">
           <pre className="overflow-x-auto font-mono text-xs leading-relaxed whitespace-pre-wrap">{codigo}</pre>
           {saida && (saida.saida || saida.resultado) && (
-            <pre className="overflow-x-auto rounded-sm bg-background px-2 py-1 font-mono text-xs whitespace-pre-wrap dark:bg-surface-2">
+            <pre className="overflow-x-auto rounded-sm bg-muted px-2 py-1 font-mono text-xs whitespace-pre-wrap">
               {[saida.saida, saida.resultado].filter(Boolean).join("\n")}
             </pre>
           )}
-          {erro && <p className="font-mono text-xs text-danger-text whitespace-pre-wrap">{erro}</p>}
+          {erro && <p className="font-mono text-xs text-erro whitespace-pre-wrap">{erro}</p>}
         </div>
       )}
       {!aberto && saida?.resultado && <p className="truncate px-3 pb-2 font-mono text-xs text-muted-foreground">= {saida.resultado}</p>}

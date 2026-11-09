@@ -31,7 +31,7 @@ export function formatarTempo(total: number): string {
 /** Caixa do cronômetro do original: monoespaçada, dentro de uma tag. */
 export function CaixaTempo({ children, className, ...props }: React.ComponentProps<"span">) {
   return (
-    <span className={cn("rounded-sm bg-background px-2 py-0.5 font-mono text-[13px] font-semibold text-muted-foreground dark:bg-surface-2", className)} {...props}>
+    <span className={cn("rounded-sm bg-muted px-2 py-0.5 font-mono text-[13px] font-semibold text-muted-foreground", className)} {...props}>
       {children}
     </span>
   );
@@ -40,8 +40,8 @@ export function CaixaTempo({ children, className, ...props }: React.ComponentPro
 /** Barra superior da IDE: marca, ●●◐○○, habilidade, timer discreto, Laboratório e modo foco. */
 export function BarraSprint({ bolinhas, indice, rotuloHabilidade, segundos, mostrarTimer, foco, aoAlternarFoco, aoAbrirLaboratorio }: Props) {
   return (
-    <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border bg-surface px-4 text-sm">
-      <span className="flex items-center gap-2 font-rounded text-base font-extrabold">
+    <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border bg-card px-4 text-sm">
+      <span className="flex items-center gap-2 text-base font-semibold">
         <Logo className="size-5" />
         <span className="hidden sm:inline">Gabarita</span>
       </span>
@@ -55,9 +55,9 @@ export function BarraSprint({ bolinhas, indice, rotuloHabilidade, segundos, most
               className={cn(
                 "size-2.5 rounded-full border-[1.5px]",
                 (b === "acertou" || b === "errou") && "anim-pop",
-                b === "acertou" && "border-success bg-success",
-                b === "errou" && "border-danger bg-danger",
-                b === "atual" && "border-accent bg-[linear-gradient(90deg,var(--accent)_50%,transparent_50%)]",
+                b === "acertou" && "border-sucesso bg-sucesso-forte",
+                b === "errou" && "border-erro bg-erro-forte",
+                b === "atual" && "border-primary bg-[linear-gradient(90deg,var(--cor-primaria)_50%,transparent_50%)]",
                 b === "pendente" && "border-border bg-transparent",
               )}
             />

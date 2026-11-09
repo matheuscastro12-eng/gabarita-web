@@ -36,22 +36,22 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
       />
 
       <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-3">
-        <div className="hero-azul flex min-h-[104px] flex-col rounded-xl p-4.5">
-          <span className="text-[13px] font-semibold text-white/90">Acertos</span>
-          <span className="num mt-auto text-3xl font-extrabold">
+        <div className="flex min-h-[104px] flex-col rounded-xl border border-border bg-card p-4.5">
+          <span className="text-[13px] font-semibold text-foreground">Acertos</span>
+          <span className="num mt-auto text-3xl font-semibold">
             {acertos}
-            <span className="text-lg font-bold text-white/80">/{tentativas.length}</span>
+            <span className="text-lg font-semibold text-muted-foreground">/{tentativas.length}</span>
           </span>
         </div>
-        <div className="flex min-h-[104px] flex-col rounded-xl border border-card-borda bg-surface p-4.5 shadow-card">
+        <div className="flex min-h-[104px] flex-col rounded-xl border border-border bg-card p-4.5">
           <span className="text-[13px] font-semibold">Dicas usadas</span>
-          <span className="num mt-auto text-3xl font-extrabold">{tentativas.filter((t) => t.degrauMaximo > 0).length}</span>
+          <span className="num mt-auto text-3xl font-semibold">{tentativas.filter((t) => t.degrauMaximo > 0).length}</span>
         </div>
-        <div className="col-span-2 flex min-h-[104px] flex-col rounded-xl border border-card-borda bg-surface p-4.5 shadow-card sm:col-span-1">
+        <div className="col-span-2 flex min-h-[104px] flex-col rounded-xl border border-border bg-card p-4.5 sm:col-span-1">
           <span className="text-[13px] font-semibold">Tempo total</span>
-          <span className="num mt-auto text-3xl font-extrabold">
+          <span className="num mt-auto text-3xl font-semibold">
             {Math.round(tentativas.reduce((s, t) => s + t.segundos, 0) / 60)}
-            <span className="text-lg font-bold text-muted-foreground"> min</span>
+            <span className="text-lg font-semibold text-muted-foreground"> min</span>
           </span>
         </div>
       </div>
@@ -67,8 +67,8 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
               <div key={t.id} className="flex items-center gap-3 py-2.5 text-sm" data-testid="resultado-questao">
                 <span
                   className={cn(
-                    "inline-flex size-7 shrink-0 items-center justify-center rounded-full text-white",
-                    t.acertou ? "bg-success" : "bg-danger",
+                    "inline-flex size-7 shrink-0 items-center justify-center rounded-full",
+                    t.acertou ? "bg-sucesso-forte text-sucesso-contraste" : "bg-erro-forte text-erro-contraste",
                   )}
                   aria-label={t.acertou ? "acertou" : "errou"}
                 >
@@ -102,17 +102,17 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
               <div key={h} className="flex flex-col gap-1.5" data-testid="delta-habilidade">
                 <div className="flex items-center justify-between gap-3 text-sm">
                   <span>
-                    <span className="num font-bold">{h}</span> <span className="text-muted-foreground">{NOME_HABILIDADE[h]}</span>
+                    <span className="num font-semibold">{h}</span> <span className="text-muted-foreground">{NOME_HABILIDADE[h]}</span>
                   </span>
                   <span className="num">
                     {formatarDecimal(d.antes, 2)} → {formatarDecimal(d.depois, 2)}{" "}
-                    <span className={cn("font-bold", delta >= 0 ? "text-success-text" : "text-danger-text")}>
+                    <span className={cn("font-semibold", delta >= 0 ? "text-sucesso" : "text-erro")}>
                       ({delta >= 0 ? "+" : "−"}
                       {formatarDecimal(Math.abs(delta), 2)})
                     </span>
                   </span>
                 </div>
-                <Progress value={d.depois * 100} tom={delta >= 0 ? "accent" : "danger"} />
+                <Progress value={d.depois * 100} tom={delta >= 0 ? "destaque" : "erro"} />
               </div>
             );
           })}
@@ -121,7 +121,7 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
 
       <div className="flex flex-wrap items-center gap-3">
         <Button size="lg" onClick={aoNovoSprint} data-testid="novo-sprint">
-          <RotateCcw /> Novo sprint <Kbd className="border-white/40 bg-transparent text-white">N</Kbd>
+          <RotateCcw /> Novo sprint <Kbd className="border-primary-foreground/40 bg-transparent text-primary-foreground">N</Kbd>
         </Button>
         <Button variant="ghost" asChild>
           <Link href="/">

@@ -51,7 +51,7 @@ export function MolduraVisual({
   const total = passos.length;
   return (
     <section className="flex flex-col gap-4" data-testid={`visual-${id}`} aria-label="Explicação visual">
-      <div className="rounded-lg bg-background p-4 dark:bg-surface-2">{children(passo)}</div>
+      <div className="rounded-lg bg-muted p-4">{children(passo)}</div>
       {controles && <div className="flex flex-col gap-2">{controles}</div>}
 
       <div className="flex flex-col gap-3">
@@ -69,15 +69,15 @@ export function MolduraVisual({
         </div>
         <ol className="flex justify-center gap-1.5" aria-hidden>
           {passos.map((_, i) => (
-            <li key={i} className={cn("h-1.5 w-6 rounded-full transition-colors duration-(--duration)", i <= passo ? "bg-accent" : "bg-border")} />
+            <li key={i} className={cn("h-1.5 w-6 rounded-full transition-colors duration-(--duracao)", i <= passo ? "bg-primary" : "bg-border")} />
           ))}
         </ol>
       </div>
 
-      <p className="flex items-start gap-2.5 rounded-lg bg-accent-soft px-3.5 py-3 text-sm font-medium text-foreground" data-testid="truque">
-        <Lightbulb className="mt-0.5 size-4 shrink-0 text-accent" strokeWidth={1.8} aria-hidden />
+      <p className="flex items-start gap-2.5 rounded-lg bg-accent px-3.5 py-3 text-sm font-medium text-foreground" data-testid="truque">
+        <Lightbulb className="mt-0.5 size-4 shrink-0 text-primary" strokeWidth={1.8} aria-hidden />
         <span>
-          <span className="font-bold">Truque do ENEM: </span>
+          <span className="font-semibold">Truque do ENEM: </span>
           {truque}
         </span>
       </p>
@@ -93,8 +93,8 @@ export function MiniExercicio({ exercicio }: { exercicio: Exercicio }) {
   const acertou = escolha === exercicio.certa;
   return (
     <div className="flex flex-col gap-3 border-t border-border pt-4" data-testid="mini-exercicio">
-      <p className="text-sm font-bold">Teste rápido</p>
-      <p className="font-serif text-[15px] leading-relaxed">{exercicio.pergunta}</p>
+      <p className="text-sm font-semibold">Teste rápido</p>
+      <p className="text-[15px] leading-relaxed">{exercicio.pergunta}</p>
       <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Opções do teste">
         {exercicio.opcoes.map((op, i) => {
           const marcada = escolha === i;
@@ -106,10 +106,10 @@ export function MiniExercicio({ exercicio }: { exercicio: Exercicio }) {
               aria-checked={marcada}
               onClick={() => setEscolha(i)}
               className={cn(
-                "num rounded-full border-[1.5px] border-border bg-surface px-4 py-2 text-sm font-semibold",
-                "transition-[background-color,border-color,color] duration-(--duration) ease-(--ease) hover:border-accent",
-                marcada && acertou && "anim-assenta border-success bg-success-tint text-success-text hover:border-success",
-                marcada && !acertou && "anim-shake border-danger bg-danger-tint text-danger-text hover:border-danger",
+                "num rounded-full border-[1.5px] border-border bg-card px-4 py-2 text-sm font-semibold",
+                "transition-[background-color,border-color,color] duration-(--duracao) ease-(--curva) hover:border-primary",
+                marcada && acertou && "anim-assenta border-sucesso bg-sucesso-suave text-sucesso hover:border-sucesso",
+                marcada && !acertou && "anim-shake border-erro bg-erro-suave text-erro hover:border-erro",
               )}
             >
               {op}
@@ -118,8 +118,8 @@ export function MiniExercicio({ exercicio }: { exercicio: Exercicio }) {
         })}
       </div>
       {escolha !== null && (
-        <p role="status" className={cn("anim-entrada text-sm", acertou ? "text-success-text" : "text-danger-text")}>
-          <span className="font-bold">{acertou ? "Isso. " : "Ainda não. "}</span>
+        <p role="status" className={cn("anim-entrada text-sm", acertou ? "text-sucesso" : "text-erro")}>
+          <span className="font-semibold">{acertou ? "Isso. " : "Ainda não. "}</span>
           <span className="text-foreground">{acertou ? exercicio.explicacao : "Tente de novo: volte um passo no visual se precisar."}</span>
         </p>
       )}
@@ -159,9 +159,9 @@ export function Deslizador({
         step={passo}
         value={valor}
         onChange={(e) => aoMudar(Number(e.target.value))}
-        className="h-2 min-w-0 flex-1 cursor-pointer accent-[var(--accent)]"
+        className="h-2 min-w-0 flex-1 cursor-pointer accent-[var(--cor-primaria)]"
       />
-      <span className="num w-16 shrink-0 text-right font-bold">
+      <span className="num w-16 shrink-0 text-right font-semibold">
         {fmt(valor)}
         {sufixo}
       </span>

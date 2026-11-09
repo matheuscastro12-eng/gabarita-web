@@ -40,12 +40,12 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
             onClick={() => aoMarcar(alt.letra)}
             data-letra={alt.letra}
             className={cn(
-              "group flex w-full items-start gap-3 rounded-lg border-[1.5px] border-border bg-surface px-3.25 py-3 text-left font-serif text-[15px] leading-normal text-foreground",
-              "transition-[background-color,border-color,color] duration-(--duration) ease-(--ease)",
-              "hover:border-accent/60 disabled:cursor-default disabled:hover:border-border",
-              selecionada && !confirmada && "border-accent hover:border-accent",
-              ehGabarito && "border-success bg-success-tint disabled:hover:border-success",
-              ehErro && "border-danger bg-danger-tint disabled:hover:border-danger",
+              "group flex w-full items-start gap-3 rounded-lg border-[1.5px] border-border bg-card px-3.25 py-3 text-left text-[15px] leading-normal text-foreground",
+              "transition-[background-color,border-color,color] duration-(--duracao) ease-(--curva)",
+              "hover:border-primary/60 disabled:cursor-default disabled:hover:border-border",
+              selecionada && !confirmada && "border-primary hover:border-primary",
+              ehGabarito && "border-sucesso bg-sucesso-suave disabled:hover:border-sucesso",
+              ehErro && "border-erro bg-erro-suave disabled:hover:border-erro",
               acertou && "anim-assenta",
               ehErro && "anim-shake",
             )}
@@ -53,10 +53,10 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
             <span
               aria-hidden
               className={cn(
-                "inline-flex size-[29px] shrink-0 items-center justify-center rounded-full border-[1.5px] font-sans text-[13px] font-extrabold",
-                selecionada && !confirmada ? "border-accent bg-accent text-white" : "border-border bg-surface text-foreground",
-                ehGabarito && "border-success bg-success text-white",
-                ehErro && "border-danger bg-danger text-white",
+                "inline-flex size-[29px] shrink-0 items-center justify-center rounded-full border-[1.5px] font-sans text-[13px] font-semibold",
+                selecionada && !confirmada ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-foreground",
+                ehGabarito && "border-sucesso bg-sucesso-forte text-sucesso-contraste",
+                ehErro && "border-erro bg-erro-forte text-erro-contraste",
               )}
             >
               {ehGabarito ? <CheckDesenhado /> : ehErro ? <X className="anim-pop size-4" strokeWidth={2.5} /> : alt.letra}

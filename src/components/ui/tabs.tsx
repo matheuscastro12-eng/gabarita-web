@@ -18,10 +18,10 @@ function TabsTrigger({ className, ...props }: React.ComponentProps<typeof TabsPr
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
       className={cn(
-        "inline-flex h-9 items-center justify-center gap-1.5 rounded-full border-[1.5px] border-border bg-surface px-4 text-[13px] font-semibold whitespace-nowrap text-foreground",
-        "transition-[background-color,color,border-color] duration-(--duration) ease-(--ease)",
-        "hover:border-accent disabled:pointer-events-none disabled:opacity-50",
-        "data-[state=active]:border-accent data-[state=active]:bg-accent data-[state=active]:text-accent-foreground",
+        "inline-flex h-9 items-center justify-center gap-1.5 rounded-full border-[1.5px] border-border bg-card px-4 text-[13px] font-semibold whitespace-nowrap text-foreground",
+        "transition-[background-color,color,border-color] duration-(--duracao) ease-(--curva)",
+        "hover:border-primary disabled:pointer-events-none disabled:opacity-50",
+        "data-[state=active]:border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground",
         className,
       )}
       {...props}

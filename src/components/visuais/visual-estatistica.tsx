@@ -69,9 +69,9 @@ export function VisualEstatistica() {
                 <span
                   key={i}
                   className={cn(
-                    "num absolute top-0 left-0 inline-flex size-12 items-center justify-center rounded-full border-[1.5px] text-lg font-extrabold",
-                    "transition-[transform,background-color,border-color,color] duration-[240ms] ease-(--ease)",
-                    ehMeio ? "border-accent bg-accent text-white" : ehModa ? "border-success bg-success-tint text-success-text" : "border-border bg-surface",
+                    "num absolute top-0 left-0 inline-flex size-12 items-center justify-center rounded-full border-[1.5px] text-lg font-semibold",
+                    "transition-[transform,background-color,border-color,color] duration-[240ms] ease-(--curva)",
+                    ehMeio ? "border-primary bg-primary text-primary-foreground" : ehModa ? "border-sucesso bg-sucesso-suave text-sucesso" : "border-border bg-card",
                   )}
                   style={{ transform: `translateX(${pos * 56 + 4}px)` }}
                 >
@@ -93,14 +93,14 @@ export function VisualEstatistica() {
               return (
                 <span
                   key={i}
-                  className="absolute size-2.5 -translate-x-1/2 rounded-full bg-accent"
+                  className="absolute size-2.5 -translate-x-1/2 rounded-full bg-primary"
                   style={{ left: `${v * 10}%`, top: `${11 - repetidos * 9}px` }}
                 />
               );
             })}
             <span
               className={cn(
-                "absolute top-0 h-9 w-[2px] -translate-x-1/2 rounded-full bg-warning transition-opacity duration-(--duration)",
+                "absolute top-0 h-9 w-[2px] -translate-x-1/2 rounded-full bg-aviso transition-opacity duration-(--duracao)",
                 passo >= 3 ? "opacity-100" : "opacity-0",
               )}
               style={{ left: `${m * 10}%` }}

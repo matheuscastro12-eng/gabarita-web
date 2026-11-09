@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 /** Botões do original: pílula azul (primário), pílula no cinza do fundo (ghost), chip com borda 1,5px (outline). */
 const buttonVariants = cva(
   [
-    "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold",
-    "transition-[background-color,color,border-color,transform,opacity] duration-(--duration) ease-(--ease)",
+    "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold",
+    "transition-[background-color,color,border-color,transform,opacity] duration-(--duracao) ease-(--curva)",
     "disabled:pointer-events-none disabled:opacity-40",
     "active:translate-y-px",
     "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-[1.1em]",
@@ -15,12 +15,12 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-accent text-accent-foreground hover:bg-accent-deep",
-        secondary: "bg-background text-foreground hover:bg-surface-2 dark:bg-surface-2 dark:hover:bg-border",
-        ghost: "bg-transparent text-foreground hover:bg-surface-2 font-semibold",
-        outline: "border-[1.5px] border-border bg-surface text-foreground hover:border-accent hover:text-accent-text font-semibold",
-        danger: "bg-danger-soft text-danger-text hover:bg-danger hover:text-white",
-        link: "text-accent-text underline-offset-4 hover:underline font-semibold",
+        primary: "bg-primary text-primary-foreground hover:bg-primaria-hover",
+        secondary: "bg-muted text-foreground hover:bg-muted-forte",
+        ghost: "bg-transparent text-foreground hover:bg-muted font-semibold",
+        outline: "border-[1.5px] border-border bg-card text-foreground hover:border-primary hover:text-primaria-texto font-semibold",
+        erro: "bg-erro-suave text-erro hover:bg-erro-forte hover:text-erro-contraste",
+        link: "text-primaria-texto underline-offset-4 hover:underline font-semibold",
       },
       size: {
         sm: "h-9 px-3.5 text-[13px]",

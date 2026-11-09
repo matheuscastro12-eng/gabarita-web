@@ -119,16 +119,16 @@ function Casca({
   };
 
   return (
-    <section className="flex h-full min-h-0 flex-col bg-surface" aria-label="Tutor">
+    <section className="flex h-full min-h-0 flex-col bg-card" aria-label="Tutor">
       <header className="flex items-center gap-2 border-b border-border px-4 py-3">
-        <Sparkles className="size-4 text-accent" strokeWidth={1.8} />
-        <h2 className="text-sm font-bold">Tutor</h2>
+        <Sparkles className="size-4 text-primary" strokeWidth={1.8} />
+        <h2 className="text-sm font-semibold">Tutor</h2>
         {modo === "ia" ? (
-          <Badge variant="accent" className="ml-auto" title={modelo ? `Modelo: ${modelo}` : undefined}>
+          <Badge variant="destaque" className="ml-auto" title={modelo ? `Modelo: ${modelo}` : undefined}>
             IA
           </Badge>
         ) : modo === "guiado" ? (
-          <Badge variant="warning" className="ml-auto">
+          <Badge variant="aviso" className="ml-auto">
             modo guiado
           </Badge>
         ) : (
@@ -141,8 +141,8 @@ function Casca({
       <div ref={listaRef} className="min-h-0 flex-1 overflow-y-auto px-4 py-4" data-testid="conversa">
         <div className="flex flex-col gap-3">
           {modo === "guiado" && (
-            <p className="flex items-start gap-2 rounded-md bg-warning-soft px-3 py-2 text-[13px] leading-snug text-foreground" role="note">
-              <WifiOff className="mt-0.5 size-4 shrink-0 text-warning-text" aria-hidden />
+            <p className="flex items-start gap-2 rounded-md bg-aviso-suave px-3 py-2 text-[13px] leading-snug text-foreground" role="note">
+              <WifiOff className="mt-0.5 size-4 shrink-0 text-aviso" aria-hidden />
               <span>
                 {AVISO_OFFLINE_PARTES[0]}
                 <code className="font-mono text-[0.8em]">ANTHROPIC_API_KEY</code>
@@ -197,11 +197,11 @@ function Casca({
           </div>
         </div>
         {selecao && (
-          <div className="flex items-center gap-2 rounded-md bg-accent-soft px-3 py-1.5 text-sm text-accent-text" data-testid="chip-selecao">
+          <div className="flex items-center gap-2 rounded-md bg-accent px-3 py-1.5 text-sm text-primaria-texto" data-testid="chip-selecao">
             <span className="min-w-0 flex-1 truncate">
               Sobre: <q>{selecao}</q>
             </span>
-            <button type="button" onClick={aoLimparSelecao} aria-label="Remover o trecho selecionado" className="rounded-full p-0.5 hover:bg-surface">
+            <button type="button" onClick={aoLimparSelecao} aria-label="Remover o trecho selecionado" className="rounded-full p-0.5 hover:bg-card">
               <X className="size-4" />
             </button>
           </div>
@@ -230,7 +230,7 @@ function Casca({
             }}
             placeholder={modo === "guiado" ? "peça dica, resolução ou conta…" : "pergunte do seu jeito…"}
             disabled={modo === "carregando"}
-            className="min-h-11 max-h-40 flex-1 resize-none rounded-lg border-[1.5px] border-input bg-surface px-3.5 py-2.5 text-[15px] placeholder:text-muted-foreground focus-visible:border-accent focus-visible:outline-none"
+            className="min-h-11 max-h-40 flex-1 resize-none rounded-lg border-[1.5px] border-input bg-card px-3.5 py-2.5 text-[15px] placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none"
           />
           {ocupado && aoParar ? (
             <Button type="button" size="icon" variant="secondary" aria-label="Parar" onClick={aoParar}>
@@ -255,7 +255,7 @@ export function EscadaDicas({ degrau, className }: { degrau: DegrauDica; classNa
         <span
           key={n}
           aria-hidden
-          className={cn("h-3.5 w-2 rounded-[3px]", n <= degrau ? "bg-accent" : "border-[1.5px] border-border bg-background")}
+          className={cn("h-3.5 w-2 rounded-[3px]", n <= degrau ? "bg-primary" : "border-[1.5px] border-border bg-muted")}
         />
       ))}
     </span>
@@ -431,8 +431,8 @@ function ChatIA(props: PropsPainelTutor & { modelo: string | null }) {
         </Balao>
       )}
       {erro && (
-        <div role="alert" className="flex flex-col gap-2 rounded-lg bg-danger-soft px-3 py-2 text-sm">
-          <p className="font-semibold text-danger-text">O tutor não respondeu.</p>
+        <div role="alert" className="flex flex-col gap-2 rounded-lg bg-erro-suave px-3 py-2 text-sm">
+          <p className="font-semibold text-erro">O tutor não respondeu.</p>
           <p className="text-muted-foreground">{erro}</p>
           <div>
             <Button size="sm" variant="secondary" onClick={() => void chat.regenerate()}>

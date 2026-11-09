@@ -11,13 +11,13 @@ export const metadata: Metadata = { title: "Página não encontrada" };
 export default function NaoEncontrada() {
   return (
     <div className="flex min-h-0 flex-1 items-center justify-center overflow-y-auto px-4 py-8">
-      <section className="flex w-full max-w-md flex-col items-start gap-5 rounded-xl border border-card-borda bg-surface p-6 shadow-card md:p-8" aria-labelledby="titulo-404">
-        <span className="inline-flex size-12 items-center justify-center rounded-[12px] bg-accent-soft">
+      <section className="flex w-full max-w-md flex-col items-start gap-5 rounded-xl border border-border bg-card p-6 md:p-8" aria-labelledby="titulo-404">
+        <span className="inline-flex size-12 items-center justify-center rounded-[12px] bg-accent">
           <Logo className="size-6" />
         </span>
         <div className="flex flex-col gap-2">
           <p className="num text-sm font-semibold text-muted-foreground">Erro 404</p>
-          <h1 id="titulo-404" className="text-2xl font-extrabold tracking-[-0.4px]">
+          <h1 id="titulo-404" className="text-2xl font-semibold tracking-[-0.4px]">
             Essa página não existe
           </h1>
           <p className="text-sm text-muted-foreground">

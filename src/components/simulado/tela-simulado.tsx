@@ -168,8 +168,8 @@ export function TelaSimulado() {
   const resposta = fase.respostas[fase.indice] ?? null;
   return (
     <div className="flex h-full min-h-0 flex-col">
-      <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border bg-surface px-4 text-sm">
-        <span className="flex items-center gap-2 font-rounded text-base font-extrabold">
+      <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border bg-card px-4 text-sm">
+        <span className="flex items-center gap-2 text-base font-semibold">
           <Logo className="size-5" />
           <span className="hidden sm:inline">Simulado</span>
         </span>
@@ -258,7 +258,7 @@ function ItemSimulado({
       <QuestaoView
         canto={
           <CaixaTempo
-            className={cn(pouco && !confirmada && "bg-warning-soft text-warning-text")}
+            className={cn(pouco && !confirmada && "bg-aviso-suave text-aviso")}
             aria-label="tempo restante neste item"
             data-testid="cronometro"
           >
@@ -294,7 +294,7 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
         }
       />
       <div className="flex flex-wrap items-center gap-2">
-        <Badge variant={vale ? "success" : "outline"} data-testid="simulado-vale">
+        <Badge variant={vale ? "sucesso" : "outline"} data-testid="simulado-vale">
           {vale ? "vale para pronto nos fáceis" : "não vale ainda"}
         </Badge>
         <Badge variant="outline">maior tempo por item: {formatarTempo(simulado.maiorTempoItem)}</Badge>
@@ -309,7 +309,7 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
             const acertou = !!r?.acertou;
             return (
               <div key={q.id} className="flex items-center gap-3 py-2.5 text-sm" data-testid="resultado-simulado">
-                <span className={cn("inline-flex size-7 shrink-0 items-center justify-center rounded-full text-white", acertou ? "bg-success" : "bg-danger")} aria-label={acertou ? "acertou" : "errou"}>
+                <span className={cn("inline-flex size-7 shrink-0 items-center justify-center rounded-full", acertou ? "bg-sucesso-forte text-sucesso-contraste" : "bg-erro-forte text-erro-contraste")} aria-label={acertou ? "acertou" : "errou"}>
                   {acertou ? <Check className="size-4" strokeWidth={2.5} /> : <X className="size-4" strokeWidth={2.5} />}
                 </span>
                 <span className="num w-5 text-muted-foreground">{i + 1}.</span>

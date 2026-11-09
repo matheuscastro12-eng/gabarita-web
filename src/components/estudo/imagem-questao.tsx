@@ -24,7 +24,7 @@ export function ImagemQuestao({ src, alt, className, descricao }: Props) {
         role="img"
         aria-label={alt || "Imagem da questão indisponível"}
         data-testid="imagem-quebrada"
-        className={cn("my-3 flex flex-col gap-2 rounded-md border-[1.5px] border-dashed border-border bg-background px-4 py-3 text-sm text-muted-foreground dark:bg-surface-2", className)}
+        className={cn("my-3 flex flex-col gap-2 rounded-md border-[1.5px] border-dashed border-border bg-muted px-4 py-3 text-sm text-muted-foreground", className)}
       >
         <span className="flex items-center gap-2">
           <ImageOff className="size-4 shrink-0" aria-hidden />

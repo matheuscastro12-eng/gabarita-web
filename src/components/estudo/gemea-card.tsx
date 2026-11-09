@@ -39,9 +39,9 @@ export function GemeaCard({ gemea, aoResponder }: Props) {
   }
 
   return (
-    <section className="flex flex-col gap-3 rounded-lg border-[1.5px] border-accent/50 bg-surface p-3.5" aria-label="Questão gêmea" data-testid="gemea">
+    <section className="flex flex-col gap-3 rounded-lg border-[1.5px] border-primary/50 bg-card p-3.5" aria-label="Questão gêmea" data-testid="gemea">
       <header className="flex flex-wrap items-center gap-2 text-sm">
-        <Badge variant="accent">Gêmea · {ROTULO_GERADOR[gemea.gerador]}</Badge>
+        <Badge variant="destaque">Gêmea · {ROTULO_GERADOR[gemea.gerador]}</Badge>
         <Badge variant="outline" title="Resposta calculada pelo código, não pelo modelo">
           <Check className="size-3" /> resposta calculada
         </Badge>
@@ -56,7 +56,7 @@ export function GemeaCard({ gemea, aoResponder }: Props) {
         </div>
       ) : (
         <div className="flex flex-col gap-2 text-sm" role="status">
-          <p className={acertou ? "flex items-center gap-1.5 font-bold text-success-text" : "flex items-center gap-1.5 font-bold text-danger-text"}>
+          <p className={acertou ? "flex items-center gap-1.5 font-semibold text-sucesso" : "flex items-center gap-1.5 font-semibold text-erro"}>
             {acertou ? <Check className="size-4" /> : <X className="size-4" />}
             {acertou ? "Acertou a gêmea." : `Não foi dessa vez. O gabarito é ${gemea.gabarito}.`}
           </p>
@@ -66,7 +66,7 @@ export function GemeaCard({ gemea, aoResponder }: Props) {
             </p>
           )}
           {verResolucao ? (
-            <Markdown className="rounded-md bg-background px-3 py-2 dark:bg-surface-2">{gemea.resolucao}</Markdown>
+            <Markdown className="rounded-md bg-muted px-3 py-2">{gemea.resolucao}</Markdown>
           ) : (
             <div>
               <Button variant="secondary" size="sm" onClick={() => setVerResolucao(true)}>

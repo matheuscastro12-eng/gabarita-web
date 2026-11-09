@@ -38,8 +38,8 @@ export function TelaAjustes() {
     return (
       <ConteudoPagina>
         <CabecalhoPagina titulo="Ajustes" />
-        <div role="alert" className="rounded-lg bg-danger-soft px-4 py-3 text-sm">
-          <p className="font-semibold text-danger-text">Não consegui carregar seus dados.</p>
+        <div role="alert" className="rounded-lg bg-erro-suave px-4 py-3 text-sm">
+          <p className="font-semibold text-erro">Não consegui carregar seus dados.</p>
           <p className="text-muted-foreground">{erro}</p>
         </div>
       </ConteudoPagina>
@@ -50,7 +50,7 @@ export function TelaAjustes() {
       <ConteudoPagina aria-busy="true">
         <CabecalhoPagina titulo="Ajustes" descricao="Carregando…" />
         {[0, 1, 2].map((i) => (
-          <div key={i} className="h-40 rounded-xl bg-surface shadow-card" />
+          <div key={i} className="h-40 rounded-xl bg-card" />
         ))}
       </ConteudoPagina>
     );
@@ -115,7 +115,7 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
               setNome(n);
               if (n !== perfil.nome) salvar({ nome: n });
             }}
-            className="h-11 max-w-xs rounded-md border-[1.5px] border-input bg-surface px-3.5 font-medium focus-visible:border-accent focus-visible:outline-none"
+            className="h-11 max-w-xs rounded-md border-[1.5px] border-input bg-card px-3.5 font-medium focus-visible:border-primary focus-visible:outline-none"
             data-testid="campo-nome"
           />
         </label>
@@ -131,8 +131,8 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                 data-testid={`preset-${p.id}`}
                 className={cn(
                   "inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] px-3.5 text-[13px] font-semibold",
-                  "transition-[background-color,border-color,color] duration-(--duration) ease-(--ease)",
-                  ativo ? "border-accent bg-accent text-white" : "border-border bg-surface text-foreground hover:border-accent",
+                  "transition-[background-color,border-color,color] duration-(--duracao) ease-(--curva)",
+                  ativo ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-foreground hover:border-primary",
                 )}
               >
                 {ativo && <Check className="size-4" />}
@@ -151,7 +151,7 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
             }}
             rows={4}
             placeholder="Ex.: prefiro exemplos com dinheiro; não gosto quando repetem o enunciado; me pergunte antes de dar a conta."
-            className="w-full resize-y rounded-md border-[1.5px] border-input bg-surface px-3.5 py-2.5 text-[15px] leading-relaxed focus-visible:border-accent focus-visible:outline-none"
+            className="w-full resize-y rounded-md border-[1.5px] border-input bg-card px-3.5 py-2.5 text-[15px] leading-relaxed focus-visible:border-primary focus-visible:outline-none"
             data-testid="campo-explica"
           />
           <span className="text-xs text-muted-foreground">{texto.length} caracteres · salva ao sair do campo</span>
@@ -183,7 +183,7 @@ function CardProva({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
             value={perfil.dataProva ?? ""}
             min={dataLocal(agora)}
             onChange={(e) => salvar({ dataProva: e.target.value || null }, e.target.value ? "Data da prova salva." : "Data da prova removida.")}
-            className="h-11 rounded-md border-[1.5px] border-input bg-surface px-3.5 font-medium focus-visible:border-accent focus-visible:outline-none"
+            className="h-11 rounded-md border-[1.5px] border-input bg-card px-3.5 font-medium focus-visible:border-primary focus-visible:outline-none"
             data-testid="campo-data-prova"
           />
           <span className="text-xs text-muted-foreground" data-testid="prazo-prova">
@@ -206,10 +206,10 @@ function CardProva({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
               setMeta(String(metaValida));
             }}
             aria-invalid={metaValida === null}
-            className={cn("num h-11 w-32 rounded-md border-[1.5px] bg-surface px-3.5 font-semibold focus-visible:border-accent focus-visible:outline-none", metaValida === null ? "border-danger" : "border-input")}
+            className={cn("num h-11 w-32 rounded-md border-[1.5px] bg-card px-3.5 font-semibold focus-visible:border-primary focus-visible:outline-none", metaValida === null ? "border-erro" : "border-input")}
             data-testid="campo-meta"
           />
-          <span className={cn("text-xs", metaValida === null ? "font-medium text-danger-text" : "text-muted-foreground")}>
+          <span className={cn("text-xs", metaValida === null ? "font-medium text-erro" : "text-muted-foreground")}>
             {metaValida === null ? `Use um número entre ${META_NOTA_MIN} e ${META_NOTA_MAX}.` : "Escala do ENEM (500 é a média de referência)."}
           </span>
         </label>
@@ -253,8 +253,8 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                   onClick={() => alternar(h)}
                   data-testid={`semana-${h}`}
                   className={cn(
-                    "num h-8 rounded-full border-[1.5px] px-2.5 text-[13px] font-bold transition-colors duration-(--duration)",
-                    ativa ? "border-accent bg-accent text-white" : "border-border bg-surface text-muted-foreground hover:border-accent hover:text-accent-text",
+                    "num h-8 rounded-full border-[1.5px] px-2.5 text-[13px] font-semibold transition-colors duration-(--duracao)",
+                    ativa ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-muted-foreground hover:border-primary hover:text-primaria-texto",
                   )}
                 >
                   {h}
@@ -277,7 +277,7 @@ function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          <Bot className="size-4 text-accent" strokeWidth={1.8} /> Tutor
+          <Bot className="size-4 text-primary" strokeWidth={1.8} /> Tutor
         </CardTitle>
         <CardDescription>O estado vem de /api/status. A chave nunca sai do servidor nem aparece aqui.</CardDescription>
       </CardHeader>
@@ -288,14 +288,14 @@ function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
             <Badge variant="outline">verificando…</Badge>
           ) : status.ia ? (
             <>
-              <Badge variant="success">sim</Badge>
+              <Badge variant="sucesso">sim</Badge>
               <span className="text-muted-foreground">
                 {status.provedor === "gateway" ? "AI Gateway" : status.provedor === "claude-local" ? "Claude local (assinatura)" : "Anthropic"} · {status.modelo}
               </span>
             </>
           ) : (
             <>
-              <Badge variant="warning">não</Badge>
+              <Badge variant="aviso">não</Badge>
               <span className="text-muted-foreground">
                 Modo guiado offline com dicas verificadas. Para ligar a IA, defina <code className="font-mono text-xs">ANTHROPIC_API_KEY</code> (ou{" "}
                 <code className="font-mono text-xs">AI_GATEWAY_API_KEY</code>) no <code className="font-mono text-xs">.env.local</code> e reinicie o servidor.
@@ -324,9 +324,9 @@ function Interruptor({ id, rotulo, descricao, ligado, aoMudar }: { id: string; r
         role="switch"
         aria-checked={ligado}
         onClick={() => aoMudar(!ligado)}
-        className={cn("relative mt-0.5 h-[26px] w-[46px] shrink-0 rounded-full transition-colors duration-(--duration)", ligado ? "bg-success" : "bg-border dark:bg-surface-2")}
+        className={cn("relative mt-0.5 h-[26px] w-[46px] shrink-0 rounded-full transition-colors duration-(--duracao)", ligado ? "bg-sucesso-forte" : "bg-border dark:bg-muted")}
       >
-        <span aria-hidden className={cn("absolute top-[3px] left-[3px] size-5 rounded-full bg-white shadow-[0_1px_3px_rgba(0,0,0,0.25)] transition-transform duration-(--duration)", ligado && "translate-x-5")} />
+        <span aria-hidden className={cn("absolute top-[3px] left-[3px] size-5 rounded-full bg-white shadow-[0_1px_3px_rgba(0,0,0,0.25)] transition-transform duration-(--duracao)", ligado && "translate-x-5")} />
       </button>
       <label htmlFor={id} className="flex flex-col text-sm">
         <span>{rotulo}</span>
@@ -363,7 +363,7 @@ function CardAparencia() {
               aria-checked={atual === v}
               onClick={() => setTheme(v)}
               data-testid={`tema-${v}`}
-              className={cn("inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] border-border bg-surface px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duration)", atual === v && "border-accent bg-accent text-white")}
+              className={cn("inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] border-border bg-card px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duracao)", atual === v && "border-primary bg-primary text-primary-foreground")}
             >
               <Icone className="size-4" /> {rotulo}
             </button>
@@ -459,7 +459,7 @@ function CardDados({ estado, store }: { estado: EstadoAluno; store: ReturnType<t
               if (f) void lerArquivo(f);
             }}
           />
-          <Button variant="danger" onClick={() => setZerando(true)} data-testid="zerar-progresso">
+          <Button variant="erro" onClick={() => setZerando(true)} data-testid="zerar-progresso">
             <Trash2 /> Zerar progresso
           </Button>
         </div>
@@ -502,7 +502,7 @@ function CardDados({ estado, store }: { estado: EstadoAluno; store: ReturnType<t
             <Button variant="ghost" onClick={() => setZerando(false)}>
               Cancelar
             </Button>
-            <Button variant="danger" onClick={() => void zerar()} data-testid="confirmar-zerar">
+            <Button variant="erro" onClick={() => void zerar()} data-testid="confirmar-zerar">
               <Trash2 /> Zerar tudo
             </Button>
           </DialogFooter>

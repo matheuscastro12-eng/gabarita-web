@@ -31,14 +31,14 @@ interface Props {
   comVisual?: boolean;
 }
 
-function rotuloDificuldade(q: Questao): { texto: string; variant: "success" | "warning" | "danger" | "neutral" } {
+function rotuloDificuldade(q: Questao): { texto: string; variant: "sucesso" | "aviso" | "erro" | "neutral" } {
   if (q.tri) {
     const d = q.dificuldade_estimada ?? "media";
     return d === "facil"
-      ? { texto: `fácil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "success" }
+      ? { texto: `fácil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "sucesso" }
       : d === "media"
-        ? { texto: `média · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "warning" }
-        : { texto: `difícil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "danger" };
+        ? { texto: `média · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "aviso" }
+        : { texto: `difícil · b ${q.tri.b.toFixed(2).replace(".", ",")}`, variant: "erro" };
   }
   return { texto: "sem parâmetro TRI", variant: "neutral" };
 }
@@ -140,7 +140,7 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             <Button
               size="sm"
               variant="primary"
-              className="shadow-flutuante"
+              className="shadow-flutua"
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => {
                 aoPerguntarSobre(selecao.texto);
@@ -153,25 +153,25 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             </Button>
           </div>
         )}
-        <div className="anim-questao mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl border border-card-borda bg-surface p-4 shadow-card md:p-5">
+        <div className="anim-questao mx-auto flex max-w-[760px] flex-col gap-4 rounded-xl border border-border bg-card p-4 md:p-5">
           <header className="flex flex-wrap items-center gap-1.5 text-sm">
-            <h2 id="titulo-questao" className="inline-flex items-center rounded-sm bg-background px-2.25 py-0.75 text-xs font-bold text-muted-foreground dark:bg-surface-2">
+            <h2 id="titulo-questao" className="inline-flex items-center rounded-sm bg-muted px-2.25 py-0.75 text-xs font-semibold text-muted-foreground">
               ENEM {questao.ano} · Q{questao.numero}
             </h2>
             <Badge variant={dif.variant}>{dif.texto}</Badge>
             {questao.habilidade && (
-              <Badge variant="accent" title={NOME_HABILIDADE[questao.habilidade]}>
+              <Badge variant="destaque" title={NOME_HABILIDADE[questao.habilidade]}>
                 {questao.habilidade}
                 {questao.habilidade_origem && questao.habilidade_origem !== "inep" ? " (estimada)" : ""}
               </Badge>
             )}
-            {questao.anulada && <Badge variant="danger">anulada</Badge>}
+            {questao.anulada && <Badge variant="erro">anulada</Badge>}
             {canto && <span className="ml-auto">{canto}</span>}
             {comVisual && <BotaoVisual assuntos={questao.assuntos} />}
           </header>
 
           <div ref={enunciadoRef} data-testid="enunciado">
-            <Markdown className="qtext [&>p]:my-2.75 [&_strong]:font-bold">{questao.enunciado}</Markdown>
+            <Markdown className="qtext [&>p]:my-2.75 [&_strong]:font-semibold">{questao.enunciado}</Markdown>
           </div>
           <Alternativas
             alternativas={questao.alternativas}
@@ -181,12 +181,12 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             aoMarcar={aoMarcar}
           />
           {confirmada && (
-            <p ref={statusRef} role="status" className={cn("text-base font-extrabold", acertou ? "text-success-text" : "text-danger-text")}>
+            <p ref={statusRef} role="status" className={cn("text-base font-semibold", acertou ? "text-sucesso" : "text-erro")}>
               {acertou ? "Acertou." : `Não foi dessa vez. O gabarito é ${questao.gabarito}.`}
             </p>
           )}
           {questao.resolucao?.dados_da_imagem && (
-            <details className="rounded-md bg-background px-3 py-2 text-sm dark:bg-surface-2">
+            <details className="rounded-md bg-muted px-3 py-2 text-sm">
               <summary className="cursor-pointer font-medium text-muted-foreground">Dados da imagem em texto</summary>
               <p className="pt-2">{questao.resolucao.dados_da_imagem}</p>
             </details>
@@ -195,19 +195,19 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
         </div>
       </div>
 
-      <footer className="flex shrink-0 flex-wrap items-center gap-2 border-t border-border bg-surface px-4 py-2.5 md:px-5">
+      <footer className="flex shrink-0 flex-wrap items-center gap-2 border-t border-border bg-card px-4 py-2.5 md:px-5">
         {!confirmada ? (
           <>
             <Button variant="ghost" onClick={aoPular} className="text-muted-foreground">
               Pular
             </Button>
             <Button onClick={aoConfirmar} disabled={!marcada} data-testid="confirmar" className="ml-auto px-6">
-              Confirmar <Kbd className="ml-0.5 border-white/40 bg-transparent text-white">Enter</Kbd>
+              Confirmar <Kbd className="ml-0.5 border-primary-foreground/40 bg-transparent text-primary-foreground">Enter</Kbd>
             </Button>
           </>
         ) : (
           <Button onClick={aoProxima} data-testid="proxima" className="ml-auto px-6">
-            {ehUltima ? "Ver resultado" : "Próxima"} <Kbd className="ml-0.5 border-white/40 bg-transparent text-white">N</Kbd>
+            {ehUltima ? "Ver resultado" : "Próxima"} <Kbd className="ml-0.5 border-primary-foreground/40 bg-transparent text-primary-foreground">N</Kbd>
           </Button>
         )}
       </footer>

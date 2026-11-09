@@ -17,7 +17,7 @@ export function CabecalhoPagina({
   return (
     <header className={cn("flex flex-wrap items-end justify-between gap-x-4 gap-y-3", className)}>
       <div className="flex flex-col gap-1">
-        <h1 className="text-[22px] font-extrabold tracking-[-0.4px] md:text-2xl">{titulo}</h1>
+        <h1 className="text-[22px] font-semibold tracking-[-0.4px] md:text-2xl">{titulo}</h1>
         {descricao && <p className="max-w-prose text-sm text-muted-foreground">{descricao}</p>}
       </div>
       {acoes && <div className="flex items-center gap-2">{acoes}</div>}
@@ -63,11 +63,11 @@ export function EstadoVazio({
   acao?: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col items-center gap-3 rounded-xl border border-card-borda bg-surface px-6 py-12 text-center shadow-card">
+    <div className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card px-6 py-12 text-center">
       {icone && (
-        <div className="inline-flex size-12 items-center justify-center rounded-[12px] bg-accent-soft text-accent [&_svg]:size-6">{icone}</div>
+        <div className="inline-flex size-12 items-center justify-center rounded-[12px] bg-accent text-primary [&_svg]:size-6">{icone}</div>
       )}
-      <h2 className="text-lg font-bold">{titulo}</h2>
+      <h2 className="text-lg font-semibold">{titulo}</h2>
       <p className="max-w-md text-sm text-muted-foreground">{descricao}</p>
       {acao && <div className="pt-2">{acao}</div>}
     </div>

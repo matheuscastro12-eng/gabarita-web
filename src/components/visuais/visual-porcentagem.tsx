@@ -40,8 +40,8 @@ export function VisualPorcentagem() {
                 <span
                   key={i}
                   className={cn(
-                    "aspect-square rounded-[3px] transition-colors duration-200 ease-(--ease)",
-                    passo === 0 ? "bg-accent/25" : parte ? (passo === 1 ? "bg-danger" : "bg-danger/20") : passo === 2 ? "bg-accent" : "bg-accent/25",
+                    "aspect-square rounded-[3px] transition-colors duration-200 ease-(--curva)",
+                    passo === 0 ? "bg-primary/25" : parte ? (passo === 1 ? "bg-erro-forte" : "bg-erro-forte/20") : passo === 2 ? "bg-primary" : "bg-primary/25",
                   )}
                   style={{ transitionDelay: `${Math.min(i, 60) * 3}ms` }}
                 />
@@ -50,10 +50,10 @@ export function VisualPorcentagem() {
           </div>
           <div className="num flex gap-4 text-xs font-semibold">
             <span className="flex items-center gap-1.5">
-              <span className="size-2.5 rounded-[3px] bg-danger" aria-hidden /> desconto {p}%
+              <span className="size-2.5 rounded-[3px] bg-erro-forte" aria-hidden /> desconto {p}%
             </span>
             <span className="flex items-center gap-1.5">
-              <span className="size-2.5 rounded-[3px] bg-accent" aria-hidden /> você paga {100 - p}%
+              <span className="size-2.5 rounded-[3px] bg-primary" aria-hidden /> você paga {100 - p}%
             </span>
           </div>
         </div>

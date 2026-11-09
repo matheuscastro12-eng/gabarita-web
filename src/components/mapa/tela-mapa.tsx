@@ -91,8 +91,8 @@ export function TelaMapa() {
       />
 
       {erro && (
-        <div role="alert" className="rounded-lg bg-danger-soft px-4 py-3 text-sm">
-          <p className="font-semibold text-danger-text">Não consegui carregar seus dados.</p>
+        <div role="alert" className="rounded-lg bg-erro-suave px-4 py-3 text-sm">
+          <p className="font-semibold text-erro">Não consegui carregar seus dados.</p>
           <p className="text-muted-foreground">{erro}</p>
         </div>
       )}
@@ -112,7 +112,7 @@ export function TelaMapa() {
             <CardContent>
               {nota && nota.itens > 0 ? (
                 <>
-                  <p className="num text-3xl font-extrabold">
+                  <p className="num text-3xl font-semibold">
                     {nota.nota}
                     <span className="ml-2 text-base font-semibold text-muted-foreground">
                       ({nota.inferior}–{nota.superior})
@@ -153,18 +153,18 @@ export function TelaMapa() {
                     .slice(0, 5)
                     .map((s) => (
                       <li key={s.id} className="flex flex-wrap items-center gap-2">
-                        <span className="num font-bold">
+                        <span className="num font-semibold">
                           {s.acertos} de {s.total}
                         </span>
                         <span className="text-muted-foreground">
                           · maior tempo {Math.round(s.maiorTempoItem)} s · {new Date(s.terminadoEm).toLocaleDateString("pt-BR")}
                         </span>
-                        {simuladoValeParaFaceis(s) ? <Badge variant="success">vale</Badge> : <Badge variant="outline">não vale</Badge>}
+                        {simuladoValeParaFaceis(s) ? <Badge variant="sucesso">vale</Badge> : <Badge variant="outline">não vale</Badge>}
                       </li>
                     ))}
                 </ul>
               )}
-              {melhorSimulado && <p className="font-semibold text-success-text">Critério do simulado cumprido.</p>}
+              {melhorSimulado && <p className="font-semibold text-sucesso">Critério do simulado cumprido.</p>}
               <div className="pt-1">
                 <Button variant="secondary" asChild>
                   <Link href="/simulado">
@@ -229,7 +229,7 @@ export function TelaMapa() {
       {/* Calor por competência */}
       <section className="flex flex-col gap-3" aria-labelledby="calor-titulo">
         <div className="flex flex-wrap items-end justify-between gap-2">
-          <h2 id="calor-titulo" className="text-lg font-bold">
+          <h2 id="calor-titulo" className="text-lg font-semibold">
             Calor por habilidade
           </h2>
           <Legenda />
@@ -244,7 +244,7 @@ export function TelaMapa() {
                         <span className="font-semibold">{g.competencia.id}</span>{" "}
                         <span className="text-muted-foreground">{g.competencia.nome}</span>
                       </span>
-                      <span className="num font-bold text-muted-foreground">{g.media === null ? "—" : formatarDecimal(g.media, 2)}</span>
+                      <span className="num font-semibold text-muted-foreground">{g.media === null ? "—" : formatarDecimal(g.media, 2)}</span>
                     </div>
                     <div className="grid grid-cols-5 gap-1.5" role="group" aria-label={`Competência ${g.competencia.id}: ${g.competencia.nome}`}>
                       {g.celulas.map((c) => (
@@ -253,7 +253,7 @@ export function TelaMapa() {
                     </div>
                   </div>
                 ))
-              : Array.from({ length: 7 }, (_, i) => <div key={i} className="h-16 rounded-md bg-background dark:bg-surface-2" />)}
+              : Array.from({ length: 7 }, (_, i) => <div key={i} className="h-16 rounded-md bg-muted" />)}
           </Card>
           <DetalheCelula celula={celula} />
         </div>
@@ -261,7 +261,7 @@ export function TelaMapa() {
 
       {/* Por assunto de foco */}
       <section className="flex flex-col gap-3" aria-labelledby="assuntos-titulo">
-        <h2 id="assuntos-titulo" className="text-lg font-bold">
+        <h2 id="assuntos-titulo" className="text-lg font-semibold">
           Por assunto de foco
         </h2>
         <Card className="gap-0 divide-y divide-border py-2" data-testid="mapa-assuntos">
@@ -273,8 +273,8 @@ export function TelaMapa() {
                     <p className="truncate text-xs text-muted-foreground">{a.assunto.habilidades.join(" · ")}</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Progress value={(a.media ?? 0) * 100} tom={a.media === null ? "neutral" : "accent"} aria-label={`Domínio em ${a.assunto.nome}`} />
-                    <span className="num w-10 text-right font-bold">{a.media === null ? "—" : formatarDecimal(a.media, 2)}</span>
+                    <Progress value={(a.media ?? 0) * 100} tom={a.media === null ? "neutral" : "destaque"} aria-label={`Domínio em ${a.assunto.nome}`} />
+                    <span className="num w-10 text-right font-semibold">{a.media === null ? "—" : formatarDecimal(a.media, 2)}</span>
                   </div>
                   <span className="num text-xs text-muted-foreground">
                     {a.tentativas === 0 ? "sem itens" : `${a.acertos}/${a.tentativas} acertos`}
@@ -305,16 +305,16 @@ function NivelPronto({
 }) {
   return (
     <div className="flex flex-col gap-1.5" data-testid="nivel-pronto">
-      <h3 className="flex items-center gap-2 text-sm font-bold">
-        {pronto ? <Check className="size-4 text-success" /> : <CircleDashed className="size-4 text-muted-foreground" />}
+      <h3 className="flex items-center gap-2 text-sm font-semibold">
+        {pronto ? <Check className="size-4 text-sucesso" /> : <CircleDashed className="size-4 text-muted-foreground" />}
         {titulo}
-        <Badge variant={pronto ? "success" : "outline"}>{pronto ? "pronto" : "falta"}</Badge>
+        <Badge variant={pronto ? "sucesso" : "outline"}>{pronto ? "pronto" : "falta"}</Badge>
       </h3>
       {dica && <p className="text-xs text-muted-foreground">{dica}</p>}
       <ul className="flex flex-col gap-1 text-sm">
         {itens.map((it) => (
           <li key={it.chave} className={cn("flex gap-2", it.ok ? "text-muted-foreground" : "")}>
-            <span aria-hidden className={cn("mt-2 size-1.5 shrink-0 rounded-full", it.ok ? "bg-success" : "bg-accent")} />
+            <span aria-hidden className={cn("mt-2 size-1.5 shrink-0 rounded-full", it.ok ? "bg-sucesso-forte" : "bg-primary")} />
             {aoClicar && /^H\d+$/.test(it.chave) ? (
               <button type="button" className="text-left hover:underline" onClick={() => aoClicar(it.chave)}>
                 {it.texto}
@@ -333,10 +333,10 @@ function NivelPronto({
 /** Cores do mapa de calor do original: cinza (sem dados), vermelho, âmbar e verde suaves; o nível máximo é verde cheio. */
 const CLASSE_NIVEL: Record<0 | 1 | 2 | 3 | 4, string> = {
   0: "bg-black/5 text-muted-foreground dark:bg-white/5",
-  1: "bg-danger-soft text-danger-text",
-  2: "bg-warning-soft text-warning-text",
-  3: "bg-success-soft text-success-text",
-  4: "bg-success text-white",
+  1: "bg-erro-suave text-erro",
+  2: "bg-aviso-suave text-aviso",
+  3: "bg-sucesso-suave text-sucesso",
+  4: "bg-sucesso-forte text-sucesso-contraste",
 };
 
 function CelulaCalor({ celula, selecionada, aoSelecionar }: { celula: CelulaMapa; selecionada: boolean; aoSelecionar: () => void }) {
@@ -351,11 +351,11 @@ function CelulaCalor({ celula, selecionada, aoSelecionar }: { celula: CelulaMapa
       data-testid="celula-calor"
       data-nivel={nivel}
       className={cn(
-        "num relative flex h-[38px] items-center justify-center rounded-sm text-[13px] font-bold",
-        "transition-[box-shadow,filter] duration-(--duration) ease-(--ease) hover:brightness-95 dark:hover:brightness-125",
+        "num relative flex h-[38px] items-center justify-center rounded-sm text-[13px] font-semibold",
+        "transition-[box-shadow,filter] duration-(--duracao) ease-(--curva) hover:brightness-95 dark:hover:brightness-125",
         CLASSE_NIVEL[nivel],
-        selecionada && "ring-2 ring-ring ring-offset-2 ring-offset-surface",
-        celula.daSemana && !selecionada && "shadow-[inset_0_0_0_1.5px_var(--accent)]",
+        selecionada && "ring-2 ring-ring ring-offset-2 ring-offset-card",
+        celula.daSemana && !selecionada && "shadow-[inset_0_0_0_1.5px_var(--cor-primaria)]",
       )}
     >
       {celula.habilidade}
@@ -375,7 +375,7 @@ function Legenda() {
         <span className="ml-1">sem dados → 0,85+</span>
       </span>
       <span className="flex items-center gap-1">
-        <span aria-hidden className="size-3.5 rounded-[4px] shadow-[inset_0_0_0_1.5px_var(--accent)]" /> da semana
+        <span aria-hidden className="size-3.5 rounded-[4px] shadow-[inset_0_0_0_1.5px_var(--cor-primaria)]" /> da semana
       </span>
       <span className="flex items-center gap-1">
         <Check className="size-3" /> pronta
@@ -395,10 +395,10 @@ function DetalheCelula({ celula }: { celula: CelulaMapa | null }) {
         <CardTitle className="flex flex-wrap items-center gap-2">
           <span className="num">{celula.habilidade}</span>
           <span className="font-normal text-muted-foreground">{celula.nome}</span>
-          {celula.daSemana && <Badge variant="accent">da semana</Badge>}
-          {celula.pronto && <Badge variant="success">pronta</Badge>}
+          {celula.daSemana && <Badge variant="destaque">da semana</Badge>}
+          {celula.pronto && <Badge variant="sucesso">pronta</Badge>}
           {celula.revisaoVencida && (
-            <Badge variant="warning">
+            <Badge variant="aviso">
               <RotateCcw /> revisão vencida
             </Badge>
           )}

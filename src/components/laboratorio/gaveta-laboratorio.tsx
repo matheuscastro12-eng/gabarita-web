@@ -14,22 +14,22 @@ export function GavetaLaboratorio({ aberta, aoMudar }: { aberta: boolean; aoMuda
   return (
     <DialogPrimitive.Root open={aberta} onOpenChange={aoMudar}>
       <DialogPrimitive.Portal>
-        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-[rgba(29,29,31,0.35)] data-[state=open]:anim-fade-in data-[state=closed]:anim-fade-out dark:bg-black/60" />
+        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-veu data-[state=open]:anim-fade-in data-[state=closed]:anim-fade-out" />
         <DialogPrimitive.Content
           aria-describedby={undefined}
           data-testid="gaveta-laboratorio"
           className={cn(
-            "fixed inset-y-0 right-0 z-50 flex w-full max-w-xl flex-col bg-surface text-foreground shadow-flutuante md:inset-y-3 md:right-3 md:rounded-xl",
+            "fixed inset-y-0 right-0 z-50 flex w-full max-w-xl flex-col bg-card text-foreground shadow-flutua md:inset-y-3 md:right-3 md:rounded-xl",
             "data-[state=open]:anim-slide-in-right data-[state=closed]:anim-fade-out",
           )}
         >
           <header className="flex items-center gap-2 border-b border-border px-4 py-3">
-            <FlaskConical className="size-4 text-accent" strokeWidth={1.8} />
-            <DialogPrimitive.Title className="text-sm font-bold">Laboratório</DialogPrimitive.Title>
+            <FlaskConical className="size-4 text-primary" strokeWidth={1.8} />
+            <DialogPrimitive.Title className="text-sm font-semibold">Laboratório</DialogPrimitive.Title>
             <span className="text-xs text-muted-foreground">
               gaveta · <Kbd>L</Kbd> abre e <Kbd>Esc</Kbd> fecha
             </span>
-            <DialogPrimitive.Close className="ml-auto inline-flex size-8 items-center justify-center rounded-full bg-background text-muted-foreground hover:bg-surface-2 hover:text-foreground dark:bg-surface-2" aria-label="Fechar o Laboratório">
+            <DialogPrimitive.Close className="ml-auto inline-flex size-8 items-center justify-center rounded-full bg-muted text-muted-foreground hover:bg-muted-forte hover:text-foreground" aria-label="Fechar o Laboratório">
               <X className="size-5" />
             </DialogPrimitive.Close>
           </header>

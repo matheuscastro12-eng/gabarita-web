@@ -77,9 +77,9 @@ export function TelaCaderno() {
         acoes={
           lista && lista.length > 0 ? (
             <div className="flex flex-wrap items-center gap-2 text-sm">
-              <Badge variant={abertos > 0 ? "accent" : "success"}>{plural(abertos, "erro aberto", "erros abertos")}</Badge>
+              <Badge variant={abertos > 0 ? "destaque" : "sucesso"}>{plural(abertos, "erro aberto", "erros abertos")}</Badge>
               {vencidas > 0 && (
-                <Badge variant="warning">
+                <Badge variant="aviso">
                   <RotateCcw /> {plural(vencidas, "revisão vencida", "revisões vencidas")}
                 </Badge>
               )}
@@ -89,8 +89,8 @@ export function TelaCaderno() {
       />
 
       {erro && (
-        <div role="alert" className="rounded-lg bg-danger-soft px-4 py-3 text-sm">
-          <p className="font-semibold text-danger-text">Não consegui carregar seus dados.</p>
+        <div role="alert" className="rounded-lg bg-erro-suave px-4 py-3 text-sm">
+          <p className="font-semibold text-erro">Não consegui carregar seus dados.</p>
           <p className="text-muted-foreground">{erro}</p>
         </div>
       )}
@@ -133,8 +133,8 @@ export function TelaCaderno() {
                   aria-checked={filtro === f}
                   onClick={() => setFiltro(f)}
                   className={cn(
-                    "h-9 rounded-full border-[1.5px] border-border bg-surface px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duration)",
-                    filtro === f && "border-accent bg-accent text-white",
+                    "h-9 rounded-full border-[1.5px] border-border bg-card px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duracao)",
+                    filtro === f && "border-primary bg-primary text-primary-foreground",
                   )}
                 >
                   {f === "abertos" ? "Abertos" : "Todos"}
@@ -143,7 +143,7 @@ export function TelaCaderno() {
             </div>
             <label className="flex items-center gap-2 text-sm">
               <span className="text-muted-foreground">Habilidade</span>
-              <select value={habilidade} onChange={(e) => setHabilidade(e.target.value)} className="h-9 rounded-md border-[1.5px] border-input bg-surface px-2.5 text-sm font-semibold">
+              <select value={habilidade} onChange={(e) => setHabilidade(e.target.value)} className="h-9 rounded-md border-[1.5px] border-input bg-card px-2.5 text-sm font-semibold">
                 <option value="todas">todas</option>
                 {habilidades.map((h) => (
                   <option key={h} value={h}>
@@ -209,47 +209,47 @@ function EntradaView({
   return (
     <Card className={cn("gap-3", resolvida && "opacity-70")} data-testid="entrada-caderno" data-resolvida={resolvida}>
       <div className="flex flex-wrap items-center gap-2 text-sm">
-        <span className="font-bold">
+        <span className="font-semibold">
           {questao ? `ENEM ${questao.ano} · Q${questao.numero}` : idGemea ? `Gêmea · ${ROTULO_GERADOR[idGemea.gerador]}` : entrada.questaoId}
         </span>
-        <Badge variant="accent" title={NOME_HABILIDADE[entrada.habilidade]}>
+        <Badge variant="destaque" title={NOME_HABILIDADE[entrada.habilidade]}>
           {entrada.habilidade}
         </Badge>
         {questao?.dificuldade_estimada && <Badge variant="outline">{questao.dificuldade_estimada === "facil" ? "fácil" : questao.dificuldade_estimada === "media" ? "média" : "difícil"}</Badge>}
-        {entrada.vezes > 1 && <Badge variant="warning">errada {entrada.vezes}×</Badge>}
+        {entrada.vezes > 1 && <Badge variant="aviso">errada {entrada.vezes}×</Badge>}
         {entrada.revisaoVencida && !resolvida && (
-          <Badge variant="warning">
+          <Badge variant="aviso">
             <RotateCcw /> revisão vencida
           </Badge>
         )}
-        {resolvida && <Badge variant="success">resolvida</Badge>}
+        {resolvida && <Badge variant="sucesso">resolvida</Badge>}
         <span className="ml-auto text-xs text-muted-foreground">{data}</span>
       </div>
 
       {(questao || gemeaOriginal) && (
         <div className="max-h-24 overflow-hidden text-sm text-muted-foreground [mask-image:linear-gradient(to_bottom,black_60%,transparent)]">
-          <Markdown className="font-serif text-[15px] leading-relaxed [&_img]:hidden">{questao ? questao.enunciado : gemeaOriginal!.enunciado}</Markdown>
+          <Markdown className="text-[15px] leading-relaxed [&_img]:hidden">{questao ? questao.enunciado : gemeaOriginal!.enunciado}</Markdown>
         </div>
       )}
 
       <dl className="grid gap-x-4 gap-y-1 text-sm sm:grid-cols-2">
         <div className="flex gap-2">
           <dt className="shrink-0 text-muted-foreground">Marcou</dt>
-          <dd className={cn("min-w-0 font-bold", entrada.escolha ? "text-danger-text" : "text-muted-foreground")} data-testid="marcou">
+          <dd className={cn("min-w-0 font-semibold", entrada.escolha ? "text-erro" : "text-muted-foreground")} data-testid="marcou">
             {entrada.escolha ? <>{entrada.escolha}{marcada?.texto ? <span className="font-normal text-foreground"> · <Markdown inline>{marcada.texto}</Markdown></span> : null}</> : "pulou"}
           </dd>
         </div>
         <div className="flex gap-2">
           <dt className="shrink-0 text-muted-foreground">Gabarito</dt>
-          <dd className="min-w-0 font-bold text-success-text">
+          <dd className="min-w-0 font-semibold text-sucesso">
             {entrada.gabarito}
             {correta?.texto ? <span className="font-normal text-foreground"> · <Markdown inline>{correta.texto}</Markdown></span> : null}
           </dd>
         </div>
       </dl>
 
-      <div className="rounded-md bg-background px-3 py-2 text-sm dark:bg-surface-2" data-testid="equivoco">
-        <span className="font-bold">Equívoco: </span>
+      <div className="rounded-md bg-muted px-3 py-2 text-sm" data-testid="equivoco">
+        <span className="font-semibold">Equívoco: </span>
         {entrada.porQue ? <span>{entrada.porQue}</span> : <span className="text-muted-foreground">sem diagnóstico ainda. Refaça com o tutor e peça “por que errei?”.</span>}
       </div>
 

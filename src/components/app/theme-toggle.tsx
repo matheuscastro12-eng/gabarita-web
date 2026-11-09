@@ -21,7 +21,7 @@ export function ThemeToggle({ className, compacto = false }: { className?: strin
         aria-label={rotulo}
         title={rotulo}
         onClick={() => setTheme(escuro ? "light" : "dark")}
-        className={cn("inline-flex size-9 items-center justify-center rounded-full text-muted-foreground hover:bg-background hover:text-foreground dark:hover:bg-surface-2", className)}
+        className={cn("inline-flex size-9 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground", className)}
       >
         <Icone className="size-[18px]" strokeWidth={1.8} />
       </button>
@@ -35,7 +35,7 @@ export function ThemeToggle({ className, compacto = false }: { className?: strin
       onClick={() => setTheme(escuro ? "light" : "dark")}
       className={cn(
         "flex w-full items-center gap-2.5 rounded-[10px] px-3 py-2.5 text-sm font-medium text-muted-foreground",
-        "transition-[background-color,color] duration-(--duration) ease-(--ease) hover:bg-background hover:text-foreground dark:hover:bg-surface-2",
+        "transition-[background-color,color] duration-(--duracao) ease-(--curva) hover:bg-muted hover:text-foreground",
         className,
       )}
     >

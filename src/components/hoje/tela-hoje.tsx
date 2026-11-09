@@ -97,13 +97,13 @@ export function TelaHoje() {
       <CabecalhoPagina titulo={estado && agora ? saudacao(agora, estado.perfil.nome) : "Hoje"} className="mb-1" />
 
       {erro && (
-        <div role="alert" className="rounded-lg border-[1.5px] border-danger/30 bg-danger-soft px-4 py-3 text-sm">
-          <p className="font-semibold text-danger-text">Não consegui carregar seus dados.</p>
+        <div role="alert" className="rounded-lg border-[1.5px] border-erro/30 bg-erro-suave px-4 py-3 text-sm">
+          <p className="font-semibold text-erro">Não consegui carregar seus dados.</p>
           <p className="text-muted-foreground">{erro}</p>
         </div>
       )}
 
-      {/* Linha de stat cards: o primeiro é o hero em gradiente azul. */}
+      {/* Linha de stat cards: todos com o mesmo card. */}
       <div className="entrada-stagger grid grid-cols-2 gap-3.5 lg:grid-cols-4" data-testid="stat-cards">
         <Stat
           hero
@@ -158,7 +158,7 @@ export function TelaHoje() {
               {(fila ?? Array.from({ length: 5 }, () => null)).slice(0, 5).map((q, i) => (
                 <li
                   key={q?.id ?? i}
-                  className="flex items-center gap-2 rounded-full border-[1.5px] border-border bg-surface py-1.5 pr-2 pl-3 text-[13px] font-semibold"
+                  className="flex items-center gap-2 rounded-full border-[1.5px] border-border bg-card py-1.5 pr-2 pl-3 text-[13px] font-semibold"
                   title={q?.habilidade ? NOME_HABILIDADE[q.habilidade] : undefined}
                 >
                   {q ? (
@@ -166,7 +166,7 @@ export function TelaHoje() {
                       <span className="num">{q.habilidade ?? "—"}</span>
                       {q.habilidade && <span className="hidden max-w-28 truncate font-medium text-muted-foreground md:inline">{NOME_HABILIDADE[q.habilidade]}</span>}
                       <Badge
-                        variant={q.tri ? (q.dificuldade_estimada === "facil" ? "success" : q.dificuldade_estimada === "dificil" ? "danger" : "warning") : "neutral"}
+                        variant={q.tri ? (q.dificuldade_estimada === "facil" ? "sucesso" : q.dificuldade_estimada === "dificil" ? "erro" : "aviso") : "neutral"}
                         className="rounded-full px-2 py-0 text-[11px]"
                       >
                         {q.tri ? (q.dificuldade_estimada === "facil" ? "fácil" : q.dificuldade_estimada === "dificil" ? "difícil" : "média") : "sem TRI"}
@@ -182,7 +182,7 @@ export function TelaHoje() {
               <Button size="lg" asChild data-testid="comecar">
                 <Link href="/estudar">
                   Começar
-                  <Kbd className="border-white/40 bg-transparent text-white">Enter</Kbd>
+                  <Kbd className="border-primary-foreground/40 bg-transparent text-primary-foreground">Enter</Kbd>
                 </Link>
               </Button>
               {resumo && resumo.sprintsHoje > 0 && (
@@ -205,7 +205,7 @@ export function TelaHoje() {
           <CardContent>
             <GraficoSemana dados={porDia} />
             <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              <span aria-hidden className="inline-block size-1.5 rounded-full bg-accent" /> meta 5/dia (um sprint)
+              <span aria-hidden className="inline-block size-1.5 rounded-full bg-primary" /> meta 5/dia (um sprint)
             </p>
           </CardContent>
         </Card>
@@ -229,12 +229,12 @@ export function TelaHoje() {
                     <li key={h.habilidade} className="flex items-center gap-2.5 text-[13px]" title={NOME_HABILIDADE[h.habilidade]}>
                       <span className="num w-9 shrink-0 font-semibold">{h.habilidade}</span>
                       <Progress value={h.dominio * 100} aria-label={`Domínio em ${h.habilidade}`} />
-                      <span className="num w-9 shrink-0 text-right font-bold">{formatarDecimal(h.dominio, 2)}</span>
+                      <span className="num w-9 shrink-0 text-right font-semibold">{formatarDecimal(h.dominio, 2)}</span>
                     </li>
                   ))}
               </ul>
             )}
-            <Link href="/mapa" className="inline-flex items-center gap-1 text-sm font-semibold text-accent-text hover:underline">
+            <Link href="/mapa" className="inline-flex items-center gap-1 text-sm font-semibold text-primaria-texto hover:underline">
               Ver o mapa completo <ArrowRight className="size-4" />
             </Link>
           </CardContent>
@@ -245,27 +245,27 @@ export function TelaHoje() {
 }
 
 /** Stat card do original: título pequeno com ícone, número grande em fonte arredondada, detalhe. */
-function Stat({ hero = false, titulo, Icone, valor, detalhe }: { hero?: boolean; titulo: string; Icone: LucideIcon; valor: string | null; detalhe: string }) {
+function Stat({ titulo, Icone, valor, detalhe }: { hero?: boolean; titulo: string; Icone: LucideIcon; valor: string | null; detalhe: string }) {
   return (
     <div
       className={cn(
         "flex min-h-[104px] flex-col rounded-xl p-4 md:min-h-32 md:p-4.5",
-        hero ? "hero-azul" : "border border-card-borda bg-surface shadow-card",
+        "border border-border bg-card",
       )}
       data-testid="stat"
     >
-      <div className={cn("flex items-center justify-between gap-2 text-[13px] font-semibold", hero ? "text-white/90" : "text-foreground")}>
+      <div className={cn("flex items-center justify-between gap-2 text-[13px] font-semibold", "text-foreground")}>
         <span>{titulo}</span>
-        <Icone className={cn("size-4 shrink-0", hero ? "text-white/85" : "text-muted-foreground")} strokeWidth={1.8} aria-hidden />
+        <Icone className={cn("size-4 shrink-0", "text-muted-foreground")} strokeWidth={1.8} aria-hidden />
       </div>
       {valor === null ? (
-        <Esqueleto className={cn("mt-auto h-9 w-16", hero && "bg-white/25")} />
+        <Esqueleto className={"mt-auto h-9 w-16"} />
       ) : (
-        <p className={cn("num mt-auto text-[30px] leading-none font-extrabold md:text-3xl", hero ? "text-white" : "text-foreground")}>
+        <p className={cn("num mt-auto text-[30px] leading-none font-semibold md:text-3xl", "text-foreground")}>
           <Contador valor={valor} />
         </p>
       )}
-      <p className={cn("mt-1.5 line-clamp-2 text-[11.5px] leading-snug", hero ? "text-white/85" : "text-muted-foreground")} title={detalhe}>
+      <p className={cn("mt-1.5 line-clamp-2 text-[11.5px] leading-snug", "text-muted-foreground")} title={detalhe}>
         {detalhe || " "}
       </p>
     </div>
@@ -286,7 +286,7 @@ function GraficoSemana({ dados }: { dados: { rotulo: string; chave: string; n: n
         <div key={d.chave} className="flex h-full flex-1 flex-col items-center justify-end gap-1">
           {d.n > 0 && <span className="num text-[10px] font-semibold text-muted-foreground">{d.n}</span>}
           <div
-            className={cn("w-full origin-bottom rounded-[7px]", d.n > 0 ? "anim-barra bg-accent" : "bg-accent-soft dark:bg-surface-2")}
+            className={cn("w-full origin-bottom rounded-[7px]", d.n > 0 ? "anim-barra bg-primary" : "bg-accent dark:bg-muted")}
             style={{ height: d.n > 0 ? `${Math.max(6, (d.n / max) * 110)}px` : "6px" }}
           />
           <span className="text-[10px] text-muted-foreground">{d.rotulo || " "}</span>
@@ -365,13 +365,13 @@ function PlanoDeHoje({
             {itens.map((it) =>
               it.feito ? (
                 <li key={it.chave} className="flex items-center gap-2.5 px-1 py-1.75 text-[13px] font-medium text-muted-foreground line-through">
-                  <CheckCircle2 className="size-4 shrink-0 text-success" strokeWidth={1.8} aria-hidden />
+                  <CheckCircle2 className="size-4 shrink-0 text-sucesso" strokeWidth={1.8} aria-hidden />
                   <span>{it.texto}</span>
                 </li>
               ) : (
                 <li key={it.chave}>
-                  <Link href={it.href} className="flex items-center gap-2.5 rounded-[10px] px-1 py-1.75 text-[13px] font-medium hover:bg-background dark:hover:bg-surface-2">
-                    <Circle className="size-4 shrink-0 text-accent" strokeWidth={1.8} aria-hidden />
+                  <Link href={it.href} className="flex items-center gap-2.5 rounded-[10px] px-1 py-1.75 text-[13px] font-medium hover:bg-muted">
+                    <Circle className="size-4 shrink-0 text-primary" strokeWidth={1.8} aria-hidden />
                     <span className="min-w-0 flex-1">{it.texto}</span>
                     <ChevronRight className="size-3.5 shrink-0 text-muted-foreground" aria-hidden />
                   </Link>
@@ -381,11 +381,11 @@ function PlanoDeHoje({
           </ul>
         )}
         {estado && (
-          <p className={cn("pt-3 text-[13px] font-semibold", dias !== null && dias >= 0 && dias <= 30 ? "text-warning-text" : "text-muted-foreground")}>
+          <p className={cn("pt-3 text-[13px] font-semibold", dias !== null && dias >= 0 && dias <= 30 ? "text-aviso" : "text-muted-foreground")}>
             {dias === null ? (
               <>
                 Sem data da prova.{" "}
-                <Link href="/ajustes" className="text-accent-text underline-offset-4 hover:underline">
+                <Link href="/ajustes" className="text-primaria-texto underline-offset-4 hover:underline">
                   Definir nos Ajustes
                 </Link>
                 .

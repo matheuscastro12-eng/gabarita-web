@@ -325,7 +325,7 @@ function QuestaoDoSprint({
             {painelQuestao}
           </Panel>
           <Separator className="w-1.5 cursor-col-resize" aria-label="Redimensionar painéis" />
-          <Panel id="tutor" defaultSize="42%" minSize="28%" className="min-w-0 bg-surface">
+          <Panel id="tutor" defaultSize="42%" minSize="28%" className="min-w-0 bg-card">
             {painelTutor}
           </Panel>
         </Group>
@@ -351,7 +351,7 @@ function QuestaoDoSprint({
         </Tabs>
       </div>
 
-      {rodape && <footer className="shrink-0 border-t border-border bg-surface px-4 py-2 text-sm">{rodape}</footer>}
+      {rodape && <footer className="shrink-0 border-t border-border bg-card px-4 py-2 text-sm">{rodape}</footer>}
     </div>
   );
 }

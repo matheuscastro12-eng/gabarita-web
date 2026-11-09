@@ -46,14 +46,14 @@ export function TelaAprender() {
                   onClick={() => escolher(v.id)}
                   aria-current={v.id === atual ? "true" : undefined}
                   className={cn(
-                    "w-full rounded-full border-[1.5px] border-border bg-surface px-4 py-2 text-left text-[13px] font-semibold whitespace-nowrap",
-                    "transition-[background-color,border-color,color] duration-(--duration) ease-(--ease) hover:border-accent",
-                    "lg:rounded-[12px] lg:border-transparent lg:bg-transparent lg:px-3 lg:py-2.5 lg:whitespace-normal lg:hover:border-transparent lg:hover:bg-surface",
-                    v.id === atual && "border-accent bg-accent text-white hover:border-accent lg:bg-accent-soft lg:text-accent-text lg:hover:bg-accent-soft",
+                    "w-full rounded-full border-[1.5px] border-border bg-card px-4 py-2 text-left text-[13px] font-semibold whitespace-nowrap",
+                    "transition-[background-color,border-color,color] duration-(--duracao) ease-(--curva) hover:border-primary",
+                    "lg:rounded-[12px] lg:border-transparent lg:bg-transparent lg:px-3 lg:py-2.5 lg:whitespace-normal lg:hover:border-transparent lg:hover:bg-card",
+                    v.id === atual && "border-primary bg-primary text-primary-foreground hover:border-primary lg:bg-accent lg:text-primaria-texto lg:hover:bg-accent",
                   )}
                 >
                   {v.titulo}
-                  <span className={cn("hidden text-xs font-medium lg:block", v.id === atual ? "text-accent-text/80" : "text-muted-foreground")}>{v.resumo}</span>
+                  <span className={cn("hidden text-xs font-medium lg:block", v.id === atual ? "text-primaria-texto/80" : "text-muted-foreground")}>{v.resumo}</span>
                 </button>
               </li>
             ))}
