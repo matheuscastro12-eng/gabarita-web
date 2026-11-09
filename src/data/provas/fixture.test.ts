@@ -22,7 +22,7 @@ describe("fixture.json", () => {
       expect(q.habilidade).toMatch(/^H\d+$/);
       expect(q.habilidade_origem).toBe("heuristica");
       expect(q.competencia).toBe(competenciaDa(q.habilidade!));
-      expect(q.fonte.transcricao_url).toBe(`https://api.enem.dev/v1/exams/2023/questions/${q.numero}`);
+      expect(q.fonte.orgao === "INEP" && q.fonte.transcricao_url).toBe(`https://api.enem.dev/v1/exams/2023/questions/${q.numero}`);
       expect(q.alternativas).toHaveLength(5);
     }
   });
