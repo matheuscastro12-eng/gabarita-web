@@ -89,45 +89,73 @@ export interface NoMapa {
   href?: string;
 }
 
-export interface RamoGeometria {
+export type Ancora = "start" | "middle" | "end";
+
+export interface CaixaMapa {
+  /** Canto esquerdo e centro vertical da pílula. */
   x: number;
   y: number;
-  /** Onde o texto dos filhos se ancora. */
-  ancora: "start" | "middle" | "end";
-  filhos: { x: number; y: number }[];
+  largura: number;
 }
 
-export const MAPA_VIEWBOX = { x: -500, y: -300, largura: 1000, altura: 600 };
-const RX = 215;
-const RY = 150;
-const FX = 300;
-const FY = 210;
-const PASSO = 30;
+export interface RamoGeometria {
+  caixa: CaixaMapa;
+  ancora: Ancora;
+  /** Ponto da pílula do ramo de onde saem as ligações para os filhos. */
+  saida: { x: number; y: number };
+  filhos: CaixaMapa[];
+}
 
-/** Posições radiais: ramos numa elipse, filhos empilhados além do ramo, para fora. */
-export function geometriaMapa(qtdFilhos: readonly number[]): RamoGeometria[] {
-  const n = qtdFilhos.length;
-  return qtdFilhos.map((m, i) => {
+export interface GeometriaMapa {
+  ramos: RamoGeometria[];
+  viewBox: { x: number; y: number; largura: number; altura: number };
+}
+
+const RX = 190;
+const RY = 135;
+const VAO = 26;
+const PASSO = 30;
+const MEIA_ALTURA = 20;
+
+function esquerda(xAncora: number, largura: number, ancora: Ancora): number {
+  return ancora === "start" ? xAncora : ancora === "end" ? xAncora - largura : xAncora - largura / 2;
+}
+
+/**
+ * Posições radiais: o ponto de cada ramo fica numa elipse e a pílula cresce para fora do centro;
+ * os filhos empilham além da borda externa do ramo. O viewBox abraça tudo (todos os ramos abertos).
+ */
+export function geometriaMapa(ramos: readonly { largura: number; filhos: readonly number[] }[], larguraCentro = 160): GeometriaMapa {
+  const n = ramos.length;
+  const geo = ramos.map((r, i): RamoGeometria => {
     const ang = -Math.PI / 2 + (i * 2 * Math.PI) / n;
     const c = Math.cos(ang);
     const s = Math.sin(ang);
-    const x = Math.round(RX * c);
-    const y = Math.round(RY * s);
-    const ancora = c > 0.25 ? "start" : c < -0.25 ? "end" : "middle";
-    const baseX = Math.round(FX * c);
-    let filhos: { x: number; y: number }[];
+    const ancora: Ancora = c > 0.2 ? "start" : c < -0.2 ? "end" : "middle";
+    const px = Math.round(RX * c + (ancora === "middle" ? 0 : Math.sign(c) * (larguraCentro / 2 - 40)));
+    const py = Math.round(RY * s);
+    const caixa = { x: Math.round(esquerda(px, r.largura, ancora)), y: py, largura: r.largura };
+    let saida: { x: number; y: number };
+    let filhos: CaixaMapa[];
     if (ancora === "middle") {
-      // em cima ou embaixo: empilha para fora (para cima no topo, para baixo embaixo)
       const dir = s < 0 ? -1 : 1;
-      const y0 = Math.round(y + dir * 46);
-      filhos = Array.from({ length: m }, (_, j) => ({ x: baseX, y: y0 + dir * j * PASSO }));
+      saida = { x: px, y: py + dir * 17 };
+      filhos = r.filhos.map((w, j) => ({ x: Math.round(px - w / 2), y: py + dir * (48 + j * PASSO), largura: w }));
     } else {
-      const yc = Math.round(FY * s * 0.85);
-      const y0 = yc - ((m - 1) * PASSO) / 2;
-      filhos = Array.from({ length: m }, (_, j) => ({ x: baseX, y: Math.round(y0 + j * PASSO) }));
+      const borda = ancora === "start" ? caixa.x + r.largura : caixa.x;
+      saida = { x: borda, y: py };
+      const xf = borda + (ancora === "start" ? VAO : -VAO);
+      const y0 = py - ((r.filhos.length - 1) * PASSO) / 2;
+      filhos = r.filhos.map((w, j) => ({ x: Math.round(esquerda(xf, w, ancora)), y: Math.round(y0 + j * PASSO), largura: w }));
     }
-    return { x, y, ancora, filhos };
+    return { caixa, ancora, saida, filhos };
   });
+  const caixas = [{ x: -larguraCentro / 2, y: 0, largura: larguraCentro }, ...geo.flatMap((g) => [g.caixa, ...g.filhos])];
+  const minX = Math.min(...caixas.map((b) => b.x)) - 12;
+  const maxX = Math.max(...caixas.map((b) => b.x + b.largura)) + 12;
+  const minY = Math.min(...caixas.map((b) => b.y)) - MEIA_ALTURA - 8;
+  const maxY = Math.max(...caixas.map((b) => b.y)) + MEIA_ALTURA + 8;
+  return { ramos: geo, viewBox: { x: minX, y: minY, largura: maxX - minX, altura: maxY - minY } };
 }
 
 /** Largura aproximada de um rótulo (px) para desenhar a pílula atrás do texto. */

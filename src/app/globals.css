@@ -557,3 +557,55 @@ mark {
 .anim-traco-eixo {
   animation: gab-traco-eixo 240ms var(--ease) both;
 }
+
+/* Resumos de caderno: pauta e quadriculado na cor da linha, sobre o branco do card (claro e escuro). */
+.caderno-pauta {
+  background-color: var(--surface);
+  background-image: linear-gradient(to bottom, transparent 27px, color-mix(in oklch, var(--border) 80%, transparent) 27px, color-mix(in oklch, var(--border) 80%, transparent) 28px);
+  background-size: 100% 28px;
+  background-position: 0 6px;
+}
+.caderno-quadriculado {
+  background-color: var(--surface);
+  background-image:
+    linear-gradient(to right, color-mix(in oklch, var(--border) 55%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklch, var(--border) 55%, transparent) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+/* Grifo de marca-texto (pegadinhas) e sublinhado azul (resposta). */
+.grifo strong {
+  background: linear-gradient(to bottom, transparent 18%, var(--marca-texto) 18%, var(--marca-texto) 88%, transparent 88%);
+  padding: 0 3px;
+  border-radius: 2px;
+  font-weight: 700;
+}
+.sublinhado {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+/* Mapa mental: filhos entram com fade curto; ramos com foco visível. */
+@keyframes gab-mapa {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.anim-mapa {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: gab-mapa 200ms var(--ease) both;
+}
+.mapa-ramo:focus-visible rect {
+  stroke-width: 3px;
+  stroke: var(--accent);
+}
+.mapa-link:hover rect,
+.mapa-link:focus-visible rect {
+  fill: var(--accent-soft);
+}

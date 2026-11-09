@@ -1,7 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { MessageSquareQuote, Shapes } from "lucide-react";
+import Link from "next/link";
+import { MessageSquareQuote, NotebookPen, Shapes } from "lucide-react";
+import { resumoParaQuestao } from "@/lib/resumos/logica";
 import { infoVisual, visualParaAssuntos } from "@/lib/visuais/catalogo";
 import { COMPONENTE_VISUAL } from "@/components/visuais";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -167,7 +169,12 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
             )}
             {questao.anulada && <Badge variant="danger">anulada</Badge>}
             {canto && <span className="ml-auto">{canto}</span>}
-            {comVisual && <BotaoVisual assuntos={questao.assuntos} />}
+            {comVisual && (
+              <span className="ml-auto flex flex-wrap items-center gap-1.5">
+                <LinkResumo questao={questao} />
+                <BotaoVisual assuntos={questao.assuntos} />
+              </span>
+            )}
           </header>
 
           <div ref={enunciadoRef} data-testid="enunciado">
@@ -215,6 +222,19 @@ export function QuestaoView({ questao, marcada, confirmada, aoMarcar, aoConfirma
   );
 }
 
+/** Link "Ver resumo" quando a habilidade e o assunto da questão têm resumo de caderno. */
+function LinkResumo({ questao }: { questao: Questao }) {
+  const r = resumoParaQuestao(questao);
+  if (!r) return null;
+  return (
+    <Button asChild variant="outline" size="sm" className="h-7 px-3 text-xs">
+      <Link href={`/resumos/${r.id}`} data-testid="ver-resumo" title={r.titulo}>
+        <NotebookPen strokeWidth={1.8} /> Ver resumo
+      </Link>
+    </Button>
+  );
+}
+
 /** Abre, num diálogo, o visual de "Aprender o básico" do assunto da questão. */
 function BotaoVisual({ assuntos }: { assuntos: readonly string[] }) {
   const id = visualParaAssuntos(assuntos);
@@ -224,7 +244,7 @@ function BotaoVisual({ assuntos }: { assuntos: readonly string[] }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="ml-auto h-7 px-3 text-xs" data-testid="ver-visualmente">
+        <Button variant="outline" size="sm" className="h-7 px-3 text-xs" data-testid="ver-visualmente">
           <Shapes strokeWidth={1.8} /> Ver visualmente
         </Button>
       </DialogTrigger>

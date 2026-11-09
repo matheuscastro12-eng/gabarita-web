@@ -13,7 +13,6 @@ import {
   larguraRotulo,
   lerEstudados,
   mapaGeral,
-  MAPA_VIEWBOX,
   normalizar,
   questoesDoResumo,
   resumoParaQuestao,
@@ -166,44 +165,52 @@ describe("ligação com as questões", () => {
 });
 
 describe("mapa mental", () => {
-  it("ramos ficam dentro do viewBox e ancoram para fora", () => {
+  const sobrepoe = (a: { x: number; y: number; largura: number }, b: { x: number; y: number; largura: number }, h: number) =>
+    a.x < b.x + b.largura && b.x < a.x + a.largura && Math.abs(a.y - b.y) < h;
+
+  it("pílulas ficam no viewBox, crescem para fora e não se sobrepõem", () => {
     for (const n of [3, 4, 5, 7]) {
-      const g = geometriaMapa(Array.from({ length: n }, () => 4));
+      const { ramos: g, viewBox: vb } = geometriaMapa(Array.from({ length: n }, () => ({ largura: 180, filhos: [120, 150, 90, 140, 100] })));
       expect(g).toHaveLength(n);
       expect(g[0]!.ancora).toBe("middle");
       expect(g[0]!.filhos[1]!.y).toBeLessThan(g[0]!.filhos[0]!.y);
-      for (const r of g) {
-        for (const p of [r, ...r.filhos]) {
-          expect(Math.abs(p.x)).toBeLessThanOrEqual(-MAPA_VIEWBOX.x);
-          expect(Math.abs(p.y)).toBeLessThanOrEqual(-MAPA_VIEWBOX.y);
-        }
-      }
       expect(g.some((r) => r.ancora === "start")).toBe(true);
       expect(g.some((r) => r.ancora === "end")).toBe(true);
+      for (const r of g) {
+        for (const c of [r.caixa, ...r.filhos]) {
+          expect(c.x).toBeGreaterThanOrEqual(vb.x);
+          expect(c.x + c.largura).toBeLessThanOrEqual(vb.x + vb.largura);
+          expect(c.y).toBeGreaterThan(vb.y);
+          expect(c.y).toBeLessThan(vb.y + vb.altura);
+        }
+        if (r.ancora === "start") expect(r.filhos[0]!.x).toBeGreaterThan(r.caixa.x + r.caixa.largura);
+        if (r.ancora === "end") expect(r.filhos[0]!.x + r.filhos[0]!.largura).toBeLessThan(r.caixa.x);
+      }
     }
-    // 4 ramos: o de baixo empilha para baixo
-    const q = geometriaMapa([2, 2, 2, 2]);
-    expect(q[2]!.ancora).toBe("middle");
-    expect(q[2]!.filhos[1]!.y).toBeGreaterThan(q[2]!.filhos[0]!.y);
+    const q = geometriaMapa([2, 2, 2, 2].map(() => ({ largura: 100, filhos: [80, 80] })));
+    expect(q.ramos[2]!.ancora).toBe("middle");
+    expect(q.ramos[2]!.filhos[1]!.y).toBeGreaterThan(q.ramos[2]!.filhos[0]!.y);
   });
+
+  it("nos mapas reais e no geral, os ramos não se sobrepõem entre si nem ao centro", () => {
+    const mapas = [...RESUMOS.map((r) => r.mapa), mapaGeral()];
+    for (const m of mapas) {
+      const lc = larguraRotulo(m.centro, 16) + 10;
+      const { ramos } = geometriaMapa(
+        m.ramos.map((r) => ({ largura: larguraRotulo(r.rotulo, 14), filhos: r.itens.map((i) => larguraRotulo(typeof i === "string" ? i : i.rotulo, 12)) })),
+        lc,
+      );
+      const centro = { x: -lc / 2, y: 0, largura: lc };
+      ramos.forEach((a, i) => {
+        expect(sobrepoe(a.caixa, centro, 44), `${m.centro}: ramo ${i} x centro`).toBe(false);
+        ramos.slice(i + 1).forEach((b, j) => expect(sobrepoe(a.caixa, b.caixa, 36), `${m.centro}: ramos ${i}/${i + j + 1}`).toBe(false));
+      });
+    }
+  });
+
   it("larguraRotulo cresce com o texto", () => {
     expect(larguraRotulo("abcd")).toBeLessThan(larguraRotulo("abcdefgh"));
     expect(larguraRotulo("ab", 20)).toBeGreaterThan(larguraRotulo("ab"));
-  });
-  it("filhos dos resumos cabem no viewBox", () => {
-    for (const r of RESUMOS) {
-      const g = geometriaMapa(r.mapa.ramos.map((m) => m.itens.length));
-      r.mapa.ramos.forEach((ramo, i) => {
-        const geo = g[i]!;
-        ramo.itens.forEach((item, j) => {
-          const w = larguraRotulo(item, 12);
-          const p = geo.filhos[j]!;
-          const esq = geo.ancora === "start" ? p.x : geo.ancora === "end" ? p.x - w : p.x - w / 2;
-          expect(esq, `${r.id}: ${item}`).toBeGreaterThanOrEqual(MAPA_VIEWBOX.x);
-          expect(esq + w, `${r.id}: ${item}`).toBeLessThanOrEqual(MAPA_VIEWBOX.x + MAPA_VIEWBOX.largura);
-        });
-      });
-    }
   });
   it("mapa geral liga todos os resumos", () => {
     const m = mapaGeral();
