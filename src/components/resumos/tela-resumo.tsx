@@ -13,6 +13,7 @@ import { Esqueleto } from "@/components/ui/esqueleto";
 import { NOME_HABILIDADE } from "@/data/tipos";
 import { useQuestoes } from "@/data/use-questoes";
 import { RESUMOS, type Resumo } from "@/lib/resumos/conteudo";
+import { legendaDe, type Legenda } from "@/lib/resumos/legendas";
 import { questoesDoResumo } from "@/lib/resumos/logica";
 import { infoVisual } from "@/lib/visuais/catalogo";
 import { cn } from "@/lib/utils";
@@ -24,6 +25,36 @@ import "katex/dist/katex.min.css";
 function Formula({ tex }: { tex: string }) {
   const html = React.useMemo(() => katex.renderToString(tex, { displayMode: true, throwOnError: false }), [tex]);
   return <div className="overflow-x-auto py-1 text-[1.05em]" dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+function SimboloTex({ tex }: { tex: string }) {
+  const html = React.useMemo(() => katex.renderToString(tex, { displayMode: false, throwOnError: false }), [tex]);
+  return <span dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+/** "Quando usar" + o que cada letra significa, embaixo da fórmula. */
+function LegendaFormula({ legenda }: { legenda: Legenda }) {
+  return (
+    <div className="flex flex-col gap-2 border-t border-accent-soft pt-2.5" data-testid="legenda-formula">
+      <p className="text-[13px] leading-snug text-muted-foreground">
+        <span className="font-bold text-foreground">Quando usar: </span>
+        {legenda.quandoUsar}
+      </p>
+      <dl className="grid grid-cols-[minmax(3.5rem,auto)_minmax(0,1fr)] gap-x-3 gap-y-1 text-[13px] leading-snug">
+        {legenda.itens.map((it) => (
+          <React.Fragment key={it.simbolo}>
+            <dt className="text-right text-foreground">
+              <SimboloTex tex={it.simbolo} />
+            </dt>
+            <dd>
+              {it.significado}
+              {it.unidade && <span className="text-muted-foreground"> · {it.unidade}</span>}
+            </dd>
+          </React.Fragment>
+        ))}
+      </dl>
+    </div>
+  );
 }
 
 function Secao({ titulo, children, className, testid }: { titulo: string; children: React.ReactNode; className?: string; testid?: string }) {
@@ -91,6 +122,10 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
                 <li key={f.rotulo} className="rounded-[14px] border-[1.5px] border-accent-soft bg-surface px-4 py-2.5">
                   <p className="text-xs font-bold text-accent-text">{f.rotulo}</p>
                   <Formula tex={f.tex} />
+                  {(() => {
+                    const legenda = legendaDe(resumo.id, f.rotulo);
+                    return legenda ? <LegendaFormula legenda={legenda} /> : null;
+                  })()}
                 </li>
               ))}
             </ul>
