@@ -10,18 +10,19 @@
   --foreground: #1d1d1f; /* --ink */
   --muted-foreground: #6e6e73; /* --muted */
   --border: #e3e8ef; /* --line, sempre 1,5px */
-  --input: #e3e8ef;
-  --accent: #0a84ff; /* --blue */
+  --input: #8791a0; /* borda de campo de formulário: 3,19:1 */
+  --accent: #0a84ff; /* --blue: só forma (barras, bolinhas, foco, contornos) */
+  --accent-solid: #0071e3; /* preenchimento com texto/ícone branco por cima: 4,70:1 */
   --accent-foreground: #ffffff;
-  --accent-text: #0a84ff;
+  --accent-text: #0066cc;
   --accent-soft: #e5f1ff; /* --blue-soft */
   --accent-deep: #0058cc; /* fim do gradiente do hero */
   --success: #30a46c; /* --green */
-  --success-text: #1a7f4f;
+  --success-text: #18794b;
   --success-soft: #e7f6ee; /* tag.g */
   --success-tint: #f0faf5; /* alt.right */
   --danger: #e5484d; /* --red */
-  --danger-text: #d2302f;
+  --danger-text: #c92a2a;
   --danger-soft: #fdebec; /* tag.r */
   --danger-tint: #fdf3f3; /* alt.wrong */
   --warning: #e8960c; /* --amber */
@@ -45,8 +46,9 @@
   --foreground: #f2f2f7;
   --muted-foreground: #9a9fa8;
   --border: #2a313c;
-  --input: #2a313c;
+  --input: #6b7380;
   --accent: #0a84ff;
+  --accent-solid: #0071e3;
   --accent-foreground: #ffffff;
   --accent-text: #5eb0ff;
   --accent-soft: #15304f;
@@ -79,6 +81,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-accent: var(--accent);
+  --color-accent-solid: var(--accent-solid);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent-text: var(--accent-text);
   --color-accent-soft: var(--accent-soft);
@@ -179,7 +182,7 @@ body {
 
 /* Card de destaque: gradiente azul do original. */
 .hero-azul {
-  background: linear-gradient(135deg, #0a84ff, #0058cc);
+  background: linear-gradient(135deg, var(--accent-solid), var(--accent-deep));
   color: #ffffff;
 }
 
@@ -515,21 +518,6 @@ mark {
 }
 .anim-questao {
   animation: gab-questao-entra 220ms var(--ease) both;
-}
-/* Grades que fazem stagger dentro de uma página que já faz: o contêiner não anima de novo. */
-.entrada-stagger > .entrada-stagger {
-  animation: none;
-}
-@keyframes gab-barra {
-  from {
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(1);
-  }
-}
-.anim-barra {
-  animation: gab-barra 240ms var(--ease) 120ms both;
 }
 /* Grades que fazem stagger dentro de uma página que já faz: o contêiner não anima de novo. */
 .entrada-stagger > .entrada-stagger {

@@ -46,7 +46,7 @@ test.describe("Hoje", () => {
     await expect(page.getByRole("button", { name: "Mudar para o modo claro" })).toBeVisible();
     // O escuro é o mesmo sistema em azul, não o grafite com âmbar: o botão principal continua azul.
     const corBotao = await page.getByTestId("comecar").evaluate((el) => getComputedStyle(el).backgroundColor);
-    expect(corBotao).toBe("rgb(10, 132, 255)");
+    expect(corBotao).toBe("rgb(0, 113, 227)");
   });
 
   test("usa o design system original: fundo claro, sidebar branca de 210px, card branco com raio 20px", async ({ page }) => {

@@ -161,7 +161,7 @@ export function EditorPython({ compacto = false, codigoInicial }: { compacto?: b
         <span className="flex items-center gap-1.5 text-sm font-bold">
           <FlaskConical className="size-4 text-accent" strokeWidth={1.8} /> Python + SymPy
         </span>
-        <span className="ml-auto">
+        <span className="sm:ml-auto">
           <StatusPyodideBadge />
         </span>
       </div>
