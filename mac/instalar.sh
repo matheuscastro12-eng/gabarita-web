@@ -5,10 +5,11 @@ set -euo pipefail
 cd "$(dirname "$0")"
 REPO="$(cd .. && pwd)"
 # Servidor local do tutor (Claude Code logado neste Mac): dependências e build de produção.
+# NEXT_PUBLIC_TUTOR_VISIVEL=1: no app do Mac o tutor aparece (no site público fica escondido).
 PNPM=(npx -y pnpm@10.34.6)
 NODE="$(command -v node || true)"
 if [ -n "$NODE" ]; then
-  (cd "$REPO" && "${PNPM[@]}" install --frozen-lockfile && "${PNPM[@]}" build)
+  (cd "$REPO" && "${PNPM[@]}" install --frozen-lockfile && NEXT_PUBLIC_TUTOR_VISIVEL=1 "${PNPM[@]}" build)
 else
   echo "Aviso: node não encontrado; o app vai abrir a versão da Vercel." >&2
 fi
