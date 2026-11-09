@@ -7,6 +7,46 @@ import { cn } from "@/lib/utils";
 import { useAtalho } from "@/lib/atalhos/provider";
 import { NAVEGACAO, itemAtivo, type ItemNavegacao } from "./navegacao";
 import { ThemeToggle } from "./theme-toggle";
+import { useVersao } from "./versao";
+import { INFO_VERSAO, itemVisivel, VERSOES, type Versao } from "@/lib/versao";
+
+/** Seletor rápido da versão (Matemática, Natureza, Geral), perto da marca. */
+export function SeletorVersao({ className, compacto = false }: { className?: string; compacto?: boolean }) {
+  const { versao, definir } = useVersao();
+  const router = useRouter();
+  const pathname = usePathname();
+  if (!versao) return null;
+  return (
+    <label className={cn("flex items-center gap-1.5 text-xs text-muted-foreground", className)}>
+      <span className="sr-only">Versão do Gabarita</span>
+      <select
+        data-testid="seletor-versao"
+        value={versao}
+        onChange={(e) => {
+          const v = e.target.value as Versao;
+          definir(v);
+          if (!itemVisivel(pathname, v)) router.push("/");
+        }}
+        className={cn(
+          "cursor-pointer rounded-full border-[1.5px] border-border bg-surface py-1 pr-6 pl-2.5 font-semibold text-foreground",
+          "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+          compacto ? "text-[12px]" : "text-[12.5px]",
+        )}
+      >
+        {VERSOES.map((v) => (
+          <option key={v} value={v}>
+            {INFO_VERSAO[v].nome}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}
+
+function useNavegacaoDaVersao(): ItemNavegacao[] {
+  const { versao } = useVersao();
+  return NAVEGACAO.filter((i) => itemVisivel(i.href, versao ?? "matematica"));
+}
 
 function ItemLateral({ item, ativo }: { item: ItemNavegacao; ativo: boolean }) {
   const Icone = item.icone;
@@ -44,17 +84,19 @@ function AtalhoNavegacao({ item }: { item: ItemNavegacao }) {
 /** Barra lateral do original: 210px, branca, marca com capelo, rótulo MENU e itens com ícone de traço. */
 export function Sidebar() {
   const pathname = usePathname();
+  const itens = useNavegacaoDaVersao();
   return (
     <nav aria-label="Principal" className="flex h-full w-[210px] shrink-0 flex-col bg-surface px-3 pt-7 pb-4 dark:border-r dark:border-border">
-      {NAVEGACAO.map((item) => (
+      {itens.map((item) => (
         <AtalhoNavegacao key={item.href} item={item} />
       ))}
-      <Marca className="px-2.5 pb-6" />
+      <Marca className="px-2.5 pb-2" />
+      <SeletorVersao className="px-2.5 pb-5" />
       <p className="px-2.5 pb-2 text-[10px] font-bold tracking-[1px] text-muted-foreground uppercase" aria-hidden>
         Menu
       </p>
       <ul className="flex flex-col gap-0.5">
-        {NAVEGACAO.map((item) => (
+        {itens.map((item) => (
           <li key={item.href}>
             <ItemLateral item={item} ativo={itemAtivo(pathname, item.href)} />
           </li>
@@ -69,14 +111,20 @@ export function Sidebar() {
 
 /** Marca: capelo azul + "Gabarita" em fonte arredondada, peso 800. */
 export function Marca({ className, compacta = false }: { className?: string; compacta?: boolean }) {
+  const { versao } = useVersao();
   return (
     <Link
       href="/"
-      aria-label="Gabarita, início"
+      aria-label={versao ? `Gabarita ${INFO_VERSAO[versao].nome}, início` : "Gabarita, início"}
       className={cn("flex items-center gap-2 font-rounded font-extrabold text-foreground", compacta ? "text-base" : "text-xl", className)}
     >
       <Logo className={compacta ? "size-5" : "size-[22px]"} />
       <span>Gabarita</span>
+      {versao && !compacta && (
+        <span className="font-sans text-[13px] font-semibold text-muted-foreground" data-testid="versao-marca">
+          · {INFO_VERSAO[versao].nome}
+        </span>
+      )}
     </Link>
   );
 }
@@ -104,14 +152,16 @@ export function Logo({ className }: { className?: string }) {
 /** Celular (< md): barra superior fixa com a marca e os destinos em linha rolável, como no original. */
 export function BarraSuperior() {
   const pathname = usePathname();
+  const itens = useNavegacaoDaVersao();
   return (
     <nav
       aria-label="Principal"
       className="flex h-[52px] shrink-0 items-center gap-0.5 overflow-x-auto bg-surface px-2 shadow-card [scrollbar-width:none] dark:border-b dark:border-border"
     >
       <Marca compacta className="shrink-0 px-2" />
+      <SeletorVersao compacto className="shrink-0" />
       <ul className="flex items-center gap-0.5">
-        {NAVEGACAO.map((item) => {
+        {itens.map((item) => {
           const ativo = itemAtivo(pathname, item.href);
           return (
             <li key={item.href} className="shrink-0">

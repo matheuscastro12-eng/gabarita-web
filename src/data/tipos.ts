@@ -14,12 +14,51 @@ export const HABILIDADES = Array.from({ length: 30 }, (_, i) => `H${i + 1}`) as 
   string,
   ...string[],
 ];
-export type Habilidade = `H${number}`;
-export type Competencia = `C${1 | 2 | 3 | 4 | 5 | 6 | 7}`;
+/**
+ * Habilidade da matriz do INEP. Matemática usa "H1"–"H30" (chave histórica do estado do aluno);
+ * Ciências da Natureza usa "CN-H1"–"CN-H30", para não misturar Hn de matrizes diferentes.
+ */
+export type Habilidade = `H${number}` | `CN-H${number}`;
+export type Competencia = `C${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8}`;
+
+/**
+ * Áreas com banco de questões oficiais no app (Humanas e Linguagens ficaram de fora: o dia 1
+ * já passou). `AREAS` (mais abaixo) inclui as 4 porque as Apostas cobrem as 4 matérias.
+ */
+export const AREAS_OFICIAIS = ["matematica", "natureza"] as const;
+export const NOME_AREA: Record<Area, string> = { matematica: "Matemática", natureza: "Natureza", humanas: "Humanas", linguagens: "Linguagens" };
+export const SIGLA_AREA: Record<Area, string> = { matematica: "MT", natureza: "CN", humanas: "CH", linguagens: "LC" };
+
+/** Área de uma chave de habilidade ("CN-H3" → natureza; "H3" → matemática). */
+export function areaDaHabilidade(h: string): Area {
+  return h.startsWith("CN-") ? "natureza" : "matematica";
+}
+
+/** "CN-H3" → "H3" (rótulo curto; a área aparece no contexto da tela). */
+export function rotuloHabilidade(h: string): string {
+  return h.replace(/^CN-/, "");
+}
+
+/** Chave de habilidade de uma área: matemática "H3", natureza "CN-H3". */
+export function chaveHabilidade(area: Area, n: number): Habilidade {
+  return area === "natureza" ? `CN-H${n}` : `H${n}`;
+}
+
+/** Ordem estável: matemática H1–H30, depois natureza CN-H1–CN-H30. */
+export function ordemHabilidade(h: string): number {
+  return (h.startsWith("CN-") ? 100 : 0) + Number(h.replace(/^(CN-)?H/, ""));
+}
+
+/** As 30 habilidades da matriz da área, como chaves do estado do aluno. */
+export function habilidadesDaArea(area: Area): Habilidade[] {
+  return Array.from({ length: 30 }, (_, i) => chaveHabilidade(area, i + 1));
+}
+
+const urlOuCaminho = z.string().refine((u) => u.startsWith("/") || /^https?:\/\//.test(u), "URL ou caminho público");
 
 const letraSchema = z.enum(LETRAS);
-const habilidadeSchema = z.string().regex(/^H([1-9]|[12][0-9]|30)$/);
-const competenciaSchema = z.string().regex(/^C[1-7]$/);
+const habilidadeSchema = z.string().regex(/^(CN-)?H([1-9]|[12][0-9]|30)$/);
+const competenciaSchema = z.string().regex(/^C[1-8]$/);
 const slugSchema = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/);
 
 export const triSchema = z.object({
@@ -36,7 +75,7 @@ export type ParametrosTRI = z.infer<typeof triSchema>;
 export const alternativaSchema = z.object({
   letra: letraSchema,
   texto: z.string(),
-  imagem: z.string().url().nullable().optional(),
+  imagem: urlOuCaminho.nullable().optional(),
 });
 export type Alternativa = z.infer<typeof alternativaSchema>;
 
@@ -114,8 +153,8 @@ export const questaoSchema = z.object({
   numero: z.number().int().min(1).max(200),
   area: z.enum(AREAS),
   enunciado: z.string(),
-  /** URL absoluta (enem.dev) ou caminho público local ("/apostas-2026/q35.png"). */
-  imagens: z.array(z.string().refine((u) => u.startsWith("/") || /^https?:\/\//.test(u), "URL ou caminho público")),
+  /** URL absoluta (enem.dev) ou caminho público local ("/questoes/natureza/x.png"). */
+  imagens: z.array(urlOuCaminho),
   alternativas: z.array(alternativaSchema).min(4).max(5),
   gabarito: letraSchema,
   /** "inep" = TX_GABARITO oficial dos microdados; "transcricao" = só a enem.dev. Ausente no fixture antigo. */
@@ -159,6 +198,7 @@ export type Manifesto = z.infer<typeof manifestoSchema>;
 
 /** Competência (C1–C7) de cada habilidade da Matriz de Referência de Matemática. */
 export function competenciaDa(habilidade: Habilidade | string): Competencia | null {
+  if (habilidade.startsWith("CN-")) return competenciaNatureza(habilidade);
   const n = Number(habilidade.replace(/^H/, ""));
   if (!Number.isInteger(n) || n < 1 || n > 30) return null;
   if (n <= 5) return "C1";
@@ -213,6 +253,56 @@ export const NOME_HABILIDADE: Record<string, string> = {
   H29: "Probabilidade e argumentação",
   H30: "Intervenção com estatística",
 };
+
+/** Competência (C1–C8) de cada habilidade da Matriz de Referência de Ciências da Natureza. */
+export function competenciaNatureza(habilidade: string): Competencia | null {
+  const n = Number(habilidade.replace(/^CN-H/, ""));
+  if (!Number.isInteger(n) || n < 1 || n > 30) return null;
+  if (n <= 4) return "C1";
+  if (n <= 7) return "C2";
+  if (n <= 12) return "C3";
+  if (n <= 16) return "C4";
+  if (n <= 19) return "C5";
+  if (n <= 23) return "C6";
+  if (n <= 27) return "C7";
+  return "C8";
+}
+
+/** Nome curto das habilidades da Matriz de Ciências da Natureza (INEP), chave "CN-Hn". */
+export const NOME_HABILIDADE_CN: Record<string, string> = {
+  "CN-H1": "Ondas e oscilações",
+  "CN-H2": "Ciência resolvendo problemas",
+  "CN-H3": "Ciência e senso comum",
+  "CN-H4": "Intervenção e biodiversidade",
+  "CN-H5": "Circuitos elétricos",
+  "CN-H6": "Manuais e aparelhos",
+  "CN-H7": "Testes e critérios de materiais",
+  "CN-H8": "Obtenção e reciclagem de recursos",
+  "CN-H9": "Ciclos biogeoquímicos e energia",
+  "CN-H10": "Perturbações ambientais",
+  "CN-H11": "Biotecnologia",
+  "CN-H12": "Impactos de atividades humanas",
+  "CN-H13": "Transmissão da vida",
+  "CN-H14": "Padrões nos processos vitais",
+  "CN-H15": "Modelos e experimentos biológicos",
+  "CN-H16": "Evolução",
+  "CN-H17": "Linguagens das ciências",
+  "CN-H18": "Propriedades e finalidades",
+  "CN-H19": "Métodos para problemas sociais",
+  "CN-H20": "Movimentos",
+  "CN-H21": "Termodinâmica e eletromagnetismo",
+  "CN-H22": "Radiação e matéria",
+  "CN-H23": "Geração e uso de energia",
+  "CN-H24": "Linguagem química",
+  "CN-H25": "Obtenção de substâncias",
+  "CN-H26": "Recursos energéticos e minerais",
+  "CN-H27": "Intervenção com química",
+  "CN-H28": "Adaptações dos organismos",
+  "CN-H29": "Experimentos com seres vivos",
+  "CN-H30": "Saúde e ambiente",
+};
+
+Object.assign(NOME_HABILIDADE, NOME_HABILIDADE_CN);
 
 /** "ENEM 2023, questão 137" (para citar a fonte em qualquer tela). */
 export function ehAposta(q: Pick<Questao, "colecao">): boolean {

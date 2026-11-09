@@ -18,7 +18,7 @@ import type {
 const isoSchema = z.string().refine((s) => !Number.isNaN(Date.parse(s)), "data inválida");
 
 export const habilidadeSchema = z.custom<Habilidade>(
-  (v) => typeof v === "string" && /^H([1-9]|[12][0-9]|30)$/.test(v),
+  (v) => typeof v === "string" && /^(CN-)?H([1-9]|[12][0-9]|30)$/.test(v),
   "habilidade inválida",
 );
 const letraSchema = z.enum(LETRAS);
@@ -88,16 +88,19 @@ export const sprintSchema: z.ZodType<Sprint> = z.object({
   terminadoEm: isoSchema.nullable(),
   questaoIds: z.array(z.string()),
   tentativaIds: z.array(z.string()),
+  area: z.enum(["matematica", "natureza", "misto"]).optional(),
 });
 
 export const simuladoSchema: z.ZodType<Simulado> = z.object({
   id: z.string(),
-  tipo: z.enum(["faceis-15", "completo-45"]),
+  tipo: z.enum(["faceis-15", "completo-45", "prova-dia2", "assunto"]),
   iniciadoEm: isoSchema,
   terminadoEm: isoSchema,
   total: z.number().int().min(0),
   acertos: z.number().int().min(0),
   maiorTempoItem: z.number().min(0),
+  areas: z.array(z.enum(["matematica", "natureza"])).optional(),
+  ano: z.number().int().optional(),
   tentativaIds: z.array(z.string()),
 });
 

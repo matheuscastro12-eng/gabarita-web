@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ToastProvider } from "@/components/ui/toast";
 import { AtalhosProvider } from "@/lib/atalhos/provider";
 import { StoreProvider } from "@/lib/store/provider";
+import { VersaoProvider } from "./versao";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -13,7 +14,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <TooltipProvider>
         <AtalhosProvider>
           <ToastProvider>
-            <StoreProvider>{children}</StoreProvider>
+            <StoreProvider>
+              <VersaoProvider>{children}</VersaoProvider>
+            </StoreProvider>
           </ToastProvider>
         </AtalhosProvider>
       </TooltipProvider>

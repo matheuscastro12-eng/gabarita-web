@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { BookMarked, Copy, RotateCcw, Sparkles } from "lucide-react";
 import type { Questao } from "@/data/tipos";
-import { NOME_HABILIDADE } from "@/data/tipos";
+import { NOME_HABILIDADE, ordemHabilidade, rotuloHabilidade } from "@/data/tipos";
 import { useQuestoes } from "@/data/use-questoes";
 import { useStore } from "@/lib/store/provider";
 import { listarCaderno, plural, type EntradaCadernoDetalhada } from "@/lib/dominio";
@@ -42,7 +42,7 @@ export function TelaCaderno() {
 
   const lista = React.useMemo(() => (estado && agora ? listarCaderno(estado, agora) : null), [estado, agora]);
   const habilidades = React.useMemo(
-    () => (lista ? [...new Set(lista.map((e) => e.habilidade))].sort((a, b) => Number(a.slice(1)) - Number(b.slice(1))) : []),
+    () => (lista ? [...new Set(lista.map((e) => e.habilidade))].sort((a, b) => ordemHabilidade(a) - ordemHabilidade(b)) : []),
     [lista],
   );
   const visiveis = React.useMemo(

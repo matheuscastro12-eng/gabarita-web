@@ -74,7 +74,7 @@ const MAX_QUESTOES = 8;
 export function TelaResumo({ resumo }: { resumo: Resumo }) {
   const { estudados, alternar } = useEstudados();
   const feito = estudados.includes(resumo.id);
-  const { questoes, erro } = useQuestoes();
+  const { questoes, erro } = useQuestoes(["matematica"]);
   const ligadas = React.useMemo(() => (questoes ? questoesDoResumo(resumo, questoes) : null), [questoes, resumo]);
   const indice = RESUMOS.findIndex((r) => r.id === resumo.id);
   const proximo = RESUMOS[(indice + 1) % RESUMOS.length]!;
