@@ -5,6 +5,7 @@ import { Check, X } from "lucide-react";
 import type { Alternativa, Letra } from "@/data/tipos";
 import { cn } from "@/lib/utils";
 import { Kbd } from "@/components/ui/kbd";
+import { ImagemQuestao } from "./imagem-questao";
 import { Markdown } from "./markdown";
 
 interface Props {
@@ -58,15 +59,7 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
             </span>
             <span className="min-w-0 flex-1 pt-0.5">
               {alt.texto && <Markdown inline>{alt.texto}</Markdown>}
-              {alt.imagem && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={alt.imagem}
-                  alt={`Alternativa ${alt.letra}`}
-                  loading="lazy"
-                  className="mt-1 max-h-40 max-w-full rounded-sm bg-white object-contain"
-                />
-              )}
+              {alt.imagem && <ImagemQuestao src={alt.imagem} alt={`Alternativa ${alt.letra}`} className="my-1 max-h-40 rounded-sm" />}
             </span>
             {!confirmada && (
               <Kbd className="mt-1 opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">

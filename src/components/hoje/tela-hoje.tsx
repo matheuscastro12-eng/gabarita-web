@@ -22,8 +22,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Kbd } from "@/components/ui/kbd";
+import { Esqueleto } from "@/components/ui/esqueleto";
 import { CabecalhoPagina, ConteudoPagina } from "@/components/app/pagina";
 import { useAtalho } from "@/lib/atalhos/provider";
+import { cn } from "@/lib/utils";
 
 function saudacao(agora: Date, nome: string): string {
   const h = agora.getHours();
@@ -80,18 +82,48 @@ export function TelaHoje() {
         </div>
       )}
 
-      <Card className="gap-5 p-6 md:p-8">
+      <Card className="gap-5 p-6 md:p-8" data-testid="card-sprint">
         <CardHeader>
           <CardTitle className="text-xl">Sprint de 5 questões</CardTitle>
           <CardDescription>
-            {fila === null
-              ? "Montando a fila…"
-              : fila.length === 0
-                ? "Nenhuma questão disponível agora. Volte amanhã ou importe o banco."
-                : `Próximas: ${resumirFila(fila.map((q) => q.habilidade))}.`}
+            {fila === null ? (
+              <span className="sr-only">Montando a fila…</span>
+            ) : fila.length === 0 ? (
+              "Nenhuma questão disponível agora. Volte amanhã ou importe o banco."
+            ) : (
+              `Próximas: ${plural(fila.length, "questão oficial", "questões oficiais")} em ${plural(new Set(fila.map((q) => q.habilidade)).size, "habilidade", "habilidades")}, fáceis primeiro.`
+            )}
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="gap-4">
+          {/* As 5 bolinhas do sprint, antes de começar: o ritmo já aparece aqui. */}
+          <ol className="flex flex-wrap gap-2" aria-label="Fila do sprint">
+            {(fila ?? Array.from({ length: 5 }, () => null)).slice(0, 5).map((q, i) => (
+              <li
+                key={q?.id ?? i}
+                className="flex items-center gap-2 rounded-md border border-border bg-background px-2.5 py-1.5 text-sm"
+                title={q?.habilidade ? NOME_HABILIDADE[q.habilidade] : undefined}
+              >
+                <span aria-hidden className="size-2.5 rounded-full border border-border" />
+                {q ? (
+                  <>
+                    <span className="font-semibold">{q.habilidade ?? "—"}</span>
+                    {q.habilidade && <span className="hidden text-muted-foreground md:inline">{NOME_HABILIDADE[q.habilidade]}</span>}
+                    <span
+                      className={cn(
+                        "text-xs",
+                        q.dificuldade_estimada === "facil" ? "text-success" : q.dificuldade_estimada === "dificil" ? "text-danger" : "text-muted-foreground",
+                      )}
+                    >
+                      {q.tri ? (q.dificuldade_estimada === "facil" ? "fácil" : q.dificuldade_estimada === "dificil" ? "difícil" : "média") : "sem TRI"}
+                    </span>
+                  </>
+                ) : (
+                  <Esqueleto className="h-4 w-16" />
+                )}
+              </li>
+            ))}
+          </ol>
           <div className="flex flex-wrap items-center gap-3">
             <Button size="lg" asChild data-testid="comecar">
               <Link href="/estudar">
@@ -120,7 +152,9 @@ export function TelaHoje() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            {nota && nota.itens > 0 ? (
+            {nota === null ? (
+              <Esqueleto className="h-9 w-40" />
+            ) : nota.itens > 0 ? (
               <p className="tabular text-3xl font-semibold">
                 {nota.nota}
                 <span className="ml-2 text-base font-normal text-muted-foreground">
@@ -128,7 +162,9 @@ export function TelaHoje() {
                 </span>
               </p>
             ) : (
-              <p className="text-2xl font-semibold text-muted-foreground">—</p>
+              <p className="text-2xl font-semibold text-muted-foreground" aria-label="sem estimativa ainda">
+                —
+              </p>
             )}
           </CardContent>
         </Card>
@@ -139,7 +175,9 @@ export function TelaHoje() {
             <CardDescription>Habilidades com retenção prevista abaixo de 90%.</CardDescription>
           </CardHeader>
           <CardContent>
-            {resumo && resumo.habilidadesVencidas.length > 0 ? (
+            {resumo === null ? (
+              <Esqueleto className="h-5 w-48" />
+            ) : resumo.habilidadesVencidas.length > 0 ? (
               <ul className="flex flex-wrap gap-2">
                 {resumo.habilidadesVencidas.map((h) => (
                   <li key={h}>
@@ -187,7 +225,3 @@ export function TelaHoje() {
   );
 }
 
-function resumirFila(habilidades: (string | null)[]): string {
-  const nomes = habilidades.map((h) => (h ? `${NOME_HABILIDADE[h]?.toLowerCase() ?? h} (${h})` : "sem habilidade"));
-  return [...new Set(nomes)].join(", ");
-}

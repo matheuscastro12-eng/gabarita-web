@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { CabecalhoPagina, ConteudoPagina, EstadoVazio } from "@/components/app/pagina";
+import { Esqueleto, EsqueletoTexto } from "@/components/ui/esqueleto";
 import { GemeaCard } from "@/components/estudo/gemea-card";
 import { Markdown } from "@/components/estudo/markdown";
 import { useResponderGemea } from "@/components/estudo/use-responder-gemea";
@@ -91,6 +92,19 @@ export function TelaCaderno() {
         <div role="alert" className="rounded-lg border border-danger/30 bg-danger-soft px-4 py-3 text-sm">
           <p className="font-medium text-danger">Não consegui carregar seus dados.</p>
           <p className="text-muted-foreground">{erro}</p>
+        </div>
+      )}
+
+      {lista === null && !erro && (
+        <div className="flex flex-col gap-3" aria-busy="true" aria-label="Carregando o caderno">
+          <Esqueleto className="h-9 w-56" />
+          {[0, 1].map((i) => (
+            <Card key={i} className="gap-3">
+              <Esqueleto className="h-5 w-40" />
+              <EsqueletoTexto linhas={2} />
+              <Esqueleto className="h-10 w-full" />
+            </Card>
+          ))}
         </div>
       )}
 

@@ -97,39 +97,84 @@ export function TelaMapa() {
         </div>
       )}
 
-      {/* Nota + pronto */}
-      <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-        <Card data-testid="card-nota">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-base">
-              Nota estimada <Badge variant="outline">estimativa</Badge>
-            </CardTitle>
-            <CardDescription>
-              EAP com prior N(0, 1), só itens oficiais com parâmetros TRI do INEP. Escala 500 + 100·θ, intervalo de 95%. Não é a equalização oficial.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            {nota && nota.itens > 0 ? (
-              <>
-                <p className="tabular text-4xl font-semibold">
-                  {nota.nota}
-                  <span className="ml-2 text-base font-normal text-muted-foreground">
-                    ({nota.inferior}–{nota.superior})
-                  </span>
-                </p>
+      {/* Nota + simulado à esquerda; o que falta para "pronto" à direita */}
+      <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+        <div className="flex flex-col gap-4">
+          <Card data-testid="card-nota">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-base">
+                Nota estimada <Badge variant="outline">estimativa</Badge>
+              </CardTitle>
+              <CardDescription>
+                EAP com prior N(0, 1), só itens oficiais com parâmetros TRI do INEP. Escala 500 + 100·θ, intervalo de 95%. Não é a equalização oficial.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              {nota && nota.itens > 0 ? (
+                <>
+                  <p className="tabular text-4xl font-semibold">
+                    {nota.nota}
+                    <span className="ml-2 text-base font-normal text-muted-foreground">
+                      ({nota.inferior}–{nota.superior})
+                    </span>
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    θ = {formatarDecimal(nota.theta, 2)} ± {formatarDecimal(nota.erroPadrao, 2)} · {plural(nota.itens, "item oficial", "itens oficiais")} com TRI
+                    {estado && ` · meta ${estado.perfil.metaNota}`}
+                  </p>
+                </>
+              ) : (
                 <p className="text-sm text-muted-foreground">
-                  θ = {formatarDecimal(nota.theta, 2)} ± {formatarDecimal(nota.erroPadrao, 2)} · {plural(nota.itens, "item oficial", "itens oficiais")} com TRI
-                  {estado && ` · meta ${estado.perfil.metaNota}`}
+                  Ainda sem itens oficiais com TRI respondidos. A estimativa aparece depois da primeira questão oficial de um sprint.
                 </p>
-              </>
-            ) : (
-              <p className="text-sm text-muted-foreground">
-                Ainda sem itens oficiais com TRI respondidos. A estimativa aparece depois da primeira questão oficial de um sprint.
+              )}
+            </CardContent>
+          </Card>
+          <Card data-testid="card-simulado">
+            <CardHeader>
+              <CardTitle className="text-base">Simulado de {TAMANHO_SIMULADO_FACEIS} fáceis inéditos</CardTitle>
+              <CardDescription>
+                Itens oficiais do tercil fácil (pelo b do INEP) que você nunca fez, 3 minutos por item. Vale para o critério “pronto nos fáceis”.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-sm">
+              <p className="text-muted-foreground">
+                {disponiveisSimulado === null
+                  ? "Contando as questões inéditas…"
+                  : disponiveisSimulado >= TAMANHO_SIMULADO_FACEIS
+                    ? `${disponiveisSimulado}+ questões fáceis inéditas disponíveis.`
+                    : `Só ${plural(disponiveisSimulado, "questão fácil inédita", "questões fáceis inéditas")} disponíveis: não dá para montar um simulado completo.`}
               </p>
-            )}
-          </CardContent>
-        </Card>
-
+              {simuladosFaceis.length > 0 && (
+                <ul className="flex flex-col gap-1" data-testid="historico-simulados">
+                  {simuladosFaceis
+                    .slice()
+                    .reverse()
+                    .slice(0, 5)
+                    .map((s) => (
+                      <li key={s.id} className="flex flex-wrap items-center gap-2">
+                        <span className="tabular font-medium">
+                          {s.acertos} de {s.total}
+                        </span>
+                        <span className="text-muted-foreground">
+                          · maior tempo {Math.round(s.maiorTempoItem)} s · {new Date(s.terminadoEm).toLocaleDateString("pt-BR")}
+                        </span>
+                        {simuladoValeParaFaceis(s) ? <Badge variant="success">vale</Badge> : <Badge variant="outline">não vale</Badge>}
+                      </li>
+                    ))}
+                </ul>
+              )}
+              {melhorSimulado && <p className="text-success">Critério do simulado cumprido.</p>}
+              <div className="pt-1">
+                <Button variant="secondary" asChild>
+                  <Link href="/simulado">
+                    Começar o simulado <ArrowRight />
+                  </Link>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         <Card data-testid="card-pronto">
           <CardHeader>
             <CardTitle className="text-base">O que falta para “pronto”</CardTitle>
@@ -180,52 +225,6 @@ export function TelaMapa() {
           </CardContent>
         </Card>
       </div>
-
-      {/* Simulado */}
-      <Card data-testid="card-simulado">
-        <CardHeader className="flex-row flex-wrap items-start justify-between gap-3">
-          <div className="flex flex-col gap-1">
-            <CardTitle className="text-base">Simulado de {TAMANHO_SIMULADO_FACEIS} fáceis inéditos</CardTitle>
-            <CardDescription>
-              Itens oficiais do tercil fácil (pelo b do INEP) que você nunca fez, 3 minutos por item. Vale para o critério “pronto nos fáceis”.
-            </CardDescription>
-          </div>
-          <Button variant="secondary" asChild>
-            <Link href="/simulado">
-              Começar <ArrowRight />
-            </Link>
-          </Button>
-        </CardHeader>
-        <CardContent className="text-sm">
-          <p className="text-muted-foreground">
-            {disponiveisSimulado === null
-              ? "Contando as questões inéditas…"
-              : disponiveisSimulado >= TAMANHO_SIMULADO_FACEIS
-                ? `${disponiveisSimulado}+ questões fáceis inéditas disponíveis.`
-                : `Só ${plural(disponiveisSimulado, "questão fácil inédita", "questões fáceis inéditas")} disponíveis: não dá para montar um simulado completo.`}
-          </p>
-          {simuladosFaceis.length > 0 && (
-            <ul className="flex flex-col gap-1" data-testid="historico-simulados">
-              {simuladosFaceis
-                .slice()
-                .reverse()
-                .slice(0, 5)
-                .map((s) => (
-                  <li key={s.id} className="flex flex-wrap items-center gap-2">
-                    <span className="tabular font-medium">
-                      {s.acertos} de {s.total}
-                    </span>
-                    <span className="text-muted-foreground">
-                      · maior tempo {Math.round(s.maiorTempoItem)} s · {new Date(s.terminadoEm).toLocaleDateString("pt-BR")}
-                    </span>
-                    {simuladoValeParaFaceis(s) ? <Badge variant="success">vale</Badge> : <Badge variant="outline">não vale</Badge>}
-                  </li>
-                ))}
-            </ul>
-          )}
-          {melhorSimulado && <p className="text-success">Critério do simulado cumprido.</p>}
-        </CardContent>
-      </Card>
 
       {/* Calor por competência */}
       <section className="flex flex-col gap-3" aria-labelledby="calor-titulo">

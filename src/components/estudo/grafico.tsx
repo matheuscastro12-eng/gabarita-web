@@ -76,7 +76,7 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
       {erro ? (
         <p className="text-sm text-danger">{erro}</p>
       ) : !compilar ? (
-        <div className="animate-pulse rounded-md bg-surface-2" style={{ height: altura }} aria-busy="true" aria-label="Carregando o gráfico" />
+        <div className="rounded-md bg-surface-2" style={{ height: altura }} aria-busy="true" aria-label="Carregando o gráfico" />
       ) : (
         <div className="mafs-tema overflow-hidden rounded-md" style={{ height: altura }}>
           <Mafs height={altura} viewBox={{ x: [spec.xMin, spec.xMax], y: yAuto }} preserveAspectRatio={false} pan zoom>

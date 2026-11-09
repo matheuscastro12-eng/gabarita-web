@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport, lastAssistantMessageIsCompleteWithToolCalls } from "ai";
-import { Lightbulb, SendHorizontal, Sparkles, Square, Unlock, X } from "lucide-react";
+import { Lightbulb, SendHorizontal, Sparkles, Square, Unlock, WifiOff, X } from "lucide-react";
 import Link from "next/link";
 import type { Questao, Letra } from "@/data/tipos";
 import type { DegrauDica, Perfil } from "@/lib/dominio/tipos";
@@ -12,7 +12,7 @@ import type { MensagemTutor } from "@/lib/tutor/ferramentas";
 import { aberturaOffline, AVISO_OFFLINE, responderOffline, type EstadoOffline, type Sugestao } from "@/lib/tutor/offline";
 import { calcularNoCliente } from "@/lib/tutor/mathjs-cliente";
 import { marcarIADesligada, useStatusIA } from "@/lib/tutor/status-cliente";
-import { pyodideCliente } from "@/lib/pyodide/cliente";
+import { rodarPython } from "@/lib/pyodide/rodar";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { Badge } from "@/components/ui/badge";
@@ -49,6 +49,8 @@ export interface PropsPainelTutor {
 }
 
 const NOMES_DEGRAU = ["pergunta", "conceito", "primeiro passo", "quase lá", "resolução"];
+/** O aviso tem a chave no meio; aqui ela vira <code>. */
+const AVISO_OFFLINE_PARTES = AVISO_OFFLINE.split("ANTHROPIC_API_KEY") as [string, string];
 const ABERTURA = "Antes de calcular: o que a questão está pedindo, com as suas palavras?";
 
 /** Painel do tutor: IA (useChat + ferramentas) ou modo guiado offline, com a mesma casca. */
@@ -139,9 +141,13 @@ function Casca({
       <div ref={listaRef} className="min-h-0 flex-1 overflow-y-auto px-4 py-4" data-testid="conversa">
         <div className="flex flex-col gap-3">
           {modo === "guiado" && (
-            <p className="rounded-lg border border-warning/30 bg-warning-soft px-3 py-2 text-sm text-foreground" role="note">
-              {AVISO_OFFLINE.replace("ANTHROPIC_API_KEY", "")}
-              <code className="font-mono text-xs">ANTHROPIC_API_KEY</code>.
+            <p className="flex items-start gap-2 rounded-md border border-warning/30 bg-warning-soft px-3 py-2 text-sm leading-snug text-foreground" role="note">
+              <WifiOff className="mt-0.5 size-4 shrink-0 text-warning" aria-hidden />
+              <span>
+                {AVISO_OFFLINE_PARTES[0]}
+                <code className="font-mono text-[0.8em]">ANTHROPIC_API_KEY</code>
+                {AVISO_OFFLINE_PARTES[1]}
+              </span>
             </p>
           )}
           {children}
@@ -165,25 +171,28 @@ function Casca({
             )}
           </div>
         )}
-        <div className="flex items-center justify-between gap-2 text-sm">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-sm">
           <div className="flex items-center gap-2">
             <span className="text-muted-foreground">Dica</span>
             <EscadaDicas degrau={degrau} />
             <span className="sr-only">{NOMES_DEGRAU[degrau]}</span>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="ml-auto flex min-w-0 items-center gap-1">
             <Button
               variant="ghost"
               size="sm"
+              className="px-2"
               onClick={aoPedirRespostaDireta}
               disabled={!aoPedirRespostaDireta || pediuResposta || ocupado}
-              title="Pede a resolução completa agora; o pedido fica registrado"
+              title={pediuResposta ? "Resposta pedida" : "Pede a resolução completa agora; o pedido fica registrado (⌥R)"}
+              aria-label={pediuResposta ? "Resposta pedida" : "Resposta direta"}
               data-testid="resposta-direta"
             >
-              <Unlock /> {pediuResposta ? "Resposta pedida" : "Resposta direta"} <Kbd>⌥R</Kbd>
+              <Unlock /> <span className="hidden sm:inline">{pediuResposta ? "Resposta pedida" : "Resposta direta"}</span>
+              <Kbd className="hidden lg:inline-flex">⌥R</Kbd>
             </Button>
             <Button variant="secondary" size="sm" onClick={aoPedirDica} disabled={!aoPedirDica || degrau >= 4 || ocupado} data-testid="dica">
-              <Lightbulb /> {degrau >= 4 ? "Resolução mostrada" : "Próximo degrau"} <Kbd>H</Kbd>
+              <Lightbulb /> {degrau >= 4 ? "Resolução mostrada" : "Próximo degrau"} <Kbd className="hidden sm:inline-flex">H</Kbd>
             </Button>
           </div>
         </div>
@@ -219,7 +228,7 @@ function Casca({
                 enviar();
               }
             }}
-            placeholder={modo === "guiado" ? "peça dica, resolução, gráfico ou conta… (/)" : "pergunte do seu jeito… (/)"}
+            placeholder={modo === "guiado" ? "peça dica, resolução ou conta…" : "pergunte do seu jeito…"}
             disabled={modo === "carregando"}
             className="min-h-11 max-h-40 flex-1 resize-none rounded-md border border-input bg-background px-3 py-2.5 text-base placeholder:text-muted-foreground"
           />
@@ -329,7 +338,7 @@ function ChatIA(props: PropsPainelTutor & { modelo: string | null }) {
     async onToolCall({ toolCall }) {
       if (toolCall.dynamic) return;
       if (toolCall.toolName === "run_python") {
-        const saida = await pyodideCliente().rodar(toolCall.input.codigo);
+        const saida = await rodarPython(toolCall.input.codigo);
         void chat.addToolOutput({ tool: "run_python", toolCallId: toolCall.toolCallId, output: saida });
       } else if (toolCall.toolName === "record_event") {
         const { tipo, detalhe, degrau: d } = toolCall.input;
