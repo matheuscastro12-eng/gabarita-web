@@ -14,7 +14,7 @@ export function AvisoArmazenamento() {
     <div
       role="status"
       data-testid="aviso-armazenamento"
-      className="flex items-start gap-3 border-b border-aviso/30 bg-aviso-suave px-4 py-2 text-sm text-foreground"
+      className="flex items-start gap-3 border-b border-border bg-aviso-suave px-4 py-2 text-sm text-aviso"
     >
       <HardDriveDownload className="mt-0.5 size-4 shrink-0 text-aviso" aria-hidden />
       <p className="min-w-0 flex-1">
@@ -27,7 +27,7 @@ export function AvisoArmazenamento() {
         type="button"
         onClick={() => setFechado(true)}
         aria-label="Fechar o aviso"
-        className="-m-1 inline-flex size-8 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:bg-card hover:text-foreground"
+        className="-m-1 inline-flex size-8 shrink-0 items-center justify-center rounded-md text-aviso transition-colors hover:bg-background"
       >
         <X className="size-4" />
       </button>

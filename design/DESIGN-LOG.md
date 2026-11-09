@@ -37,3 +37,22 @@ Treino pedido pelo Matheus em 2026-11-09: criar um design system novo passando p
 
 Pago usado? não.
 Publicação/deploy: não (sem push, PR, merge ou deploy neste treino).
+
+## 2026-11-09 — todas as telas do app — base-de-design
+
+0. **Direção:** copiada de `design/DESIGN.md` (seção "Direção").
+1. **Design system:** completo (`design/DESIGN.md` + tokens em `src/app/globals.css` + `src/components/ui`), criado hoje pela iniciar. Segue sem trocar fonte, cor ou raio.
+2. **Referências abertas** (só anotadas):
+   - https://www.404s.design (aberta com Playwright e olhada na captura) → (a) o "404" vira um objeto do mundo do produto, não um número gigante genérico (um site de vídeo mostra um timecode "0:04.04"; outro, um jogo da velha); (b) uma frase curta + uma ação; (c) nada de ilustração de astronauta. Virou: 404 como "questão anulada" do cartão-resposta.
+   - https://www.unsection.com (aberta do mesmo jeito) → só seções de landing (hero, CTA, rodapé de marca). **Nada aplicável** a telas de app; anotado como limite da lista de galerias.
+   - As outras galerias da `referencias.md` (navbar.gallery, footer.design, cta.gallery, bentogrids, land-book, lapa.ninja, minimal.gallery, scrolltide) são de site e landing; não foram abertas porque nenhuma tela daqui é landing. Mobbin (telas de app) é "só se o Matheus pedir".
+   - Lucian (`search`): #015 rádio em cartão (o marcador entra com pop; o preço só ganha força no selecionado) → alternativa marcada; #042 assistente em passos (linha enche até o próximo círculo, feitos viram check) → fila do sprint e passos do "Aprender"; #046 paleta de comandos (barra de destaque desliza até o item) → paleta; #151 grade de contribuição (célula marcada + valor embaixo) → calor por habilidade com detalhe ao lado; #047 controle segmentado → filtros do caderno e tema.
+   - motion-prompt (`list --pack ui`, `get 049 068`): #068 indicador de passos, 300ms easeInOutCubic por passo → progresso do sprint; #049 diálogo, abre em 320ms easeOutCubic com escala 0,9→1 e véu a 42%, fecha em 280ms → diálogos e gaveta; #057 abas com sublinhado que desliza → abas Questão/Tutor; #056 toast. Links: https://showheyohtaki.github.io/motion-prompt/#068 · #049 · #057 · #056.
+3. **Direções mostradas** (composição, mesmos tokens; `design/mockups/composicao-{1,2,3}.html` e `.png`, com Hoje e IDE em 1440 e em 375):
+   - **1 "Folha"**: cabeçalho com "Começar" à direita, faixa de quatro números, duas colunas 62/38; alternativas como linhas separadas por fio.
+   - **2 "Uma coisa por vez"**: o sprint é o protagonista da primeira dobra (fila como fileira de bolhas numeradas, "Começar" grande logo abaixo), os números viram apoio, plano à direita; alternativas em caixas separadas de 48px.
+   - **3 "Painel"**: três colunas densas, tudo à vista; alternativas compactas de 40px; rodapé do tutor numa linha só.
+
+   **Escolhida: 2**, pelo orquestrador (não pelo Matheus), em 2026-11-09. Por quê: é a única em que a primeira dobra tem uma ação só, que é o que o brief pede para TDAH; a fileira de bolhas usa a assinatura do sistema onde ela faz mais sentido (uma sequência); as alternativas em caixa têm alvo de toque de 48px e o estado marcado mais claro no celular. **Ajuste na escolha:** no mockup os quatro números viraram uma frase corrida; no app eles ficam como faixa de quatro colunas (rótulo, número, detalhe), porque o detalhe de cada um ("262–520 · estimativa", lista de revisões) não cabe numa frase e os testes contam quatro `stat`.
+   **Descartadas:** a 1 é a mais fiel à folha de prova e a mais equilibrada, mas põe "Começar" num canto e dá o mesmo peso a tudo; as alternativas em linha têm alvo menor. A 3 mostra tudo sem rolar em 1440, mas é a que mais pesa para quem perde o foco com muita coisa na tela, a barra de ferramentas do tutor numa linha só estoura abaixo de 1280px (já aperta no mockup) e no celular os números cortam na borda.
+4. **Plano:** uma spec por grupo de telas em `design/specs/` (00 regras comuns; 03 Hoje, Aprender e 404; 04 Estudar; 05 Mapa e Simulado; 06 Caderno, Ajustes e Laboratório), cada uma com seções, tokens (do repo), função que não pode sumir e verificação. Animações: as que já existiam (entrada 220ms, assenta/shake 240ms, pop 220ms, barras 240ms, tudo com `cubic-bezier(.2,0,0,1)`), sem nenhuma nova; transições de cor em 160ms. Estados: os seis da tabela do DESIGN.md em cada tela (permissão não se aplica: sem login).

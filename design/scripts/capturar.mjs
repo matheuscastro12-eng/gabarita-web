@@ -66,7 +66,7 @@ const TELAS = [
     nome: "atalhos",
     rota: "/",
     preparar: async (page) => {
-      await page.keyboard.press("?");
+      await page.keyboard.press("Shift+Slash");
       await page.waitForTimeout(400);
     },
   },
@@ -132,7 +132,20 @@ for (const largura of LARGURAS) {
             .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)}`),
         }));
         const arquivo = join(DIR, `${PREFIXO}-${tela.nome}-${largura}.png`);
+        // O conteúdo rola dentro do <main> (a casca tem altura da janela): cresce a janela até caber tudo.
+        const alturaBase = largura < 700 ? 812 : 900;
+        const extra = await page.evaluate(() =>
+          Math.max(0, ...[...document.querySelectorAll("body *")].map((el) => {
+            const o = getComputedStyle(el).overflowY;
+            return (o === "auto" || o === "scroll") && el.clientHeight > 200 ? el.scrollHeight - el.clientHeight : 0;
+          })),
+        );
+        if (extra > 0 && !tela.semCrescer) {
+          await page.setViewportSize({ width: largura, height: Math.min(alturaBase + extra, 6000) });
+          await page.waitForTimeout(250);
+        }
         await page.screenshot({ path: arquivo, fullPage: true });
+        await page.setViewportSize({ width: largura, height: alturaBase });
         const overflow = medida.sw > medida.iw || medida.vazando.length > 0;
         if (overflow) falhas++;
         console.log(`${overflow ? "OVERFLOW" : "ok      "} ${tela.nome}@${largura} scrollWidth=${medida.sw} innerWidth=${medida.iw} ${medida.vazando.join(" | ")}`);

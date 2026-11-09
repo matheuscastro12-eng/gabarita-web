@@ -1,12 +1,12 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
-/** Card do original: branco, raio 20px, padding 20px, sombra dupla suave (no escuro ganha uma linha). */
+/** Card: papel com linha fina de 1px, raio 10px, sem sombra. */
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card"
-      className={cn("flex flex-col gap-4 rounded-xl border border-border bg-card p-5 text-foreground", className)}
+      className={cn("flex flex-col gap-4 rounded-lg border border-border bg-card p-5 text-foreground", className)}
       {...props}
     />
   );
@@ -17,7 +17,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 function CardTitle({ className, ...props }: React.ComponentProps<"h2">) {
-  return <h2 data-slot="card-title" className={cn("text-lg font-semibold leading-tight tracking-tight", className)} {...props} />;
+  return <h2 data-slot="card-title" className={cn("text-base font-semibold leading-tight", className)} {...props} />;
 }
 
 function CardDescription({ className, ...props }: React.ComponentProps<"p">) {

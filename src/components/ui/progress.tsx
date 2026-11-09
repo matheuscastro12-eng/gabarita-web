@@ -18,7 +18,7 @@ const tons = {
   neutral: "bg-muted-foreground/50",
 };
 
-/** Barra do original: 11px de altura, pílula, trilho no cinza da página. */
+/** Barra fina: 6px, raio 3px, trilho muted forte. */
 function Progress({ className, value = 0, tom = "destaque", ...props }: ProgressProps) {
   const v = Math.max(0, Math.min(100, value));
   // Começa vazia e cresce até o valor depois de montar (transform; 0ms com reduced motion).
@@ -30,13 +30,13 @@ function Progress({ className, value = 0, tom = "destaque", ...props }: Progress
   return (
     <ProgressPrimitive.Root
       data-slot="progress"
-      className={cn("relative h-[11px] w-full overflow-hidden rounded-full bg-muted", className)}
+      className={cn("relative h-1.5 w-full overflow-hidden rounded-[3px] bg-muted-forte", className)}
       value={v}
       {...props}
     >
       <ProgressPrimitive.Indicator
         data-slot="progress-indicator"
-        className={cn("h-full w-full rounded-full transition-transform duration-[240ms] ease-(--curva)", tons[tom])}
+        className={cn("h-full w-full transition-transform duration-[240ms] ease-(--curva)", tons[tom])}
         style={{ transform: `translateX(-${100 - (montada ? v : 0)}%)` }}
       />
     </ProgressPrimitive.Root>

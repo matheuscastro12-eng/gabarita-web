@@ -69,7 +69,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
                 if (!aberto) remover(t.id);
               }}
               className={cn(
-                "group pointer-events-auto relative flex w-full items-start gap-3 rounded-lg border border-border bg-card p-4 pr-10 shadow-flutua",
+                "group pointer-events-auto relative flex w-full items-start gap-3 rounded-lg border border-border bg-popover p-4 pr-10 text-popover-foreground shadow-flutua",
                 "data-[state=open]:anim-slide-in-right data-[state=closed]:anim-fade-out",
                 "data-[swipe=move]:translate-x-(--radix-toast-swipe-move-x) data-[swipe=end]:translate-x-(--radix-toast-swipe-end-x) data-[swipe=cancel]:translate-x-0",
               )}
@@ -85,7 +85,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
               </div>
               <ToastPrimitive.Close
                 aria-label="Fechar"
-                className="absolute top-2 right-2 inline-flex size-8 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground"
+                className="absolute top-2 right-2 inline-flex size-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               >
                 <X className="size-4" />
               </ToastPrimitive.Close>

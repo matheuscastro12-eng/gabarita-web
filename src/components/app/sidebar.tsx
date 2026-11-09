@@ -16,13 +16,13 @@ function ItemLateral({ item, ativo }: { item: ItemNavegacao; ativo: boolean }) {
       aria-current={ativo ? "page" : undefined}
       title={`${item.rotulo} (Alt+${item.indice})`}
       className={cn(
-        "flex w-full items-center gap-2.5 rounded-[10px] px-3 py-2.5 text-sm font-medium text-muted-foreground",
-        "transition-[background-color,color] duration-(--duracao) ease-(--curva)",
-        "hover:bg-muted hover:text-foreground",
-        ativo && "bg-accent font-semibold text-primaria-texto hover:bg-accent hover:text-primaria-texto",
+        "group relative flex h-9 w-full items-center gap-2.5 rounded-md px-2.5 text-sm text-texto-2",
+        "transition-colors duration-(--duracao) ease-(--curva) hover:bg-muted",
+        ativo &&
+          "bg-muted font-semibold text-foreground before:absolute before:top-2 before:bottom-2 before:left-0 before:w-0.5 before:rounded-full before:bg-primary",
       )}
     >
-      <Icone className="size-[18px] shrink-0" strokeWidth={1.8} />
+      <Icone className={cn("size-4 shrink-0", ativo ? "text-foreground" : "text-muted-foreground")} strokeWidth={1.5} />
       <span className="truncate">{item.rotulo}</span>
     </Link>
   );
@@ -41,18 +41,15 @@ function AtalhoNavegacao({ item }: { item: ItemNavegacao }) {
   return null;
 }
 
-/** Barra lateral do original: 210px, branca, marca com capelo, rótulo MENU e itens com ícone de traço. */
+/** Barra lateral: 232px, papel branco com linha à direita, marca com capelo e itens com ícone de traço. */
 export function Sidebar() {
   const pathname = usePathname();
   return (
-    <nav aria-label="Principal" className="flex h-full w-[210px] shrink-0 flex-col bg-card px-3 pt-7 pb-4 dark:border-r dark:border-border">
+    <nav aria-label="Principal" className="flex h-full w-[232px] shrink-0 flex-col border-r border-border bg-background px-3 pt-5 pb-3">
       {NAVEGACAO.map((item) => (
         <AtalhoNavegacao key={item.href} item={item} />
       ))}
       <Marca className="px-2.5 pb-6" />
-      <p className="px-2.5 pb-2 text-[10px] font-semibold tracking-[1px] text-muted-foreground uppercase" aria-hidden>
-        Menu
-      </p>
       <ul className="flex flex-col gap-0.5">
         {NAVEGACAO.map((item) => (
           <li key={item.href}>
@@ -60,22 +57,22 @@ export function Sidebar() {
           </li>
         ))}
       </ul>
-      <div className="mt-auto flex flex-col gap-1">
+      <div className="mt-auto flex flex-col gap-1 border-t border-border pt-2">
         <ThemeToggle />
       </div>
     </nav>
   );
 }
 
-/** Marca: capelo azul + "Gabarita" em fonte arredondada, peso 800. */
+/** Marca: capelo azul + "Gabarita" 16px/600. */
 export function Marca({ className, compacta = false }: { className?: string; compacta?: boolean }) {
   return (
     <Link
       href="/"
       aria-label="Gabarita, início"
-      className={cn("flex items-center gap-2 font-semibold text-foreground", compacta ? "text-base" : "text-xl", className)}
+      className={cn("flex items-center text-base font-semibold text-foreground", compacta ? "gap-1.5" : "gap-2", className)}
     >
-      <Logo className={compacta ? "size-5" : "size-[22px]"} />
+      <Logo className="size-5" />
       <span>Gabarita</span>
     </Link>
   );
@@ -107,20 +104,21 @@ export function BarraSuperior() {
   return (
     <nav
       aria-label="Principal"
-      className="flex h-[52px] shrink-0 items-center gap-0.5 overflow-x-auto bg-card px-2 [scrollbar-width:none] dark:border-b dark:border-border"
+      className="flex h-12 shrink-0 items-stretch gap-0.5 overflow-x-auto border-b border-border bg-background px-2 [scrollbar-width:none]"
     >
       <Marca compacta className="shrink-0 px-2" />
-      <ul className="flex items-center gap-0.5">
+      <ul className="flex items-stretch">
         {NAVEGACAO.map((item) => {
           const ativo = itemAtivo(pathname, item.href);
           return (
-            <li key={item.href} className="shrink-0">
+            <li key={item.href} className="flex shrink-0">
               <Link
                 href={item.href}
                 aria-current={ativo ? "page" : undefined}
                 className={cn(
-                  "flex items-center rounded-[10px] px-2.5 py-2 text-[12.5px] font-medium text-muted-foreground",
-                  ativo && "bg-accent font-semibold text-primaria-texto",
+                  "relative flex h-full items-center px-2.5 text-sm text-muted-foreground transition-colors hover:text-foreground",
+                  ativo &&
+                    "font-semibold text-foreground after:absolute after:inset-x-2.5 after:bottom-0 after:h-0.5 after:bg-primary",
                 )}
               >
                 {item.rotulo}
@@ -129,7 +127,7 @@ export function BarraSuperior() {
           );
         })}
       </ul>
-      <div className="ml-auto shrink-0 pl-1">
+      <div className="ml-auto flex shrink-0 items-center pl-1">
         <ThemeToggle compacto />
       </div>
     </nav>
