@@ -271,6 +271,7 @@ function QuestaoDoSprint({
       aoProxima={aoAvancar}
       ehUltima={ehUltima}
       aoPerguntarSobre={perguntarSobre}
+      comVisual
     />
   );
   const painelTutor = (

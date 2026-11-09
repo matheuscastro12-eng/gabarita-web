@@ -516,3 +516,44 @@ mark {
 .anim-questao {
   animation: gab-questao-entra 220ms var(--ease) both;
 }
+/* Grades que fazem stagger dentro de uma página que já faz: o contêiner não anima de novo. */
+.entrada-stagger > .entrada-stagger {
+  animation: none;
+}
+@keyframes gab-barra {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+.anim-barra {
+  animation: gab-barra 240ms var(--ease) 120ms both;
+}
+/* Grades que fazem stagger dentro de uma página que já faz: o contêiner não anima de novo. */
+.entrada-stagger > .entrada-stagger {
+  animation: none;
+}
+@keyframes gab-barra {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+.anim-barra {
+  animation: gab-barra 240ms var(--ease) 120ms both;
+}
+@keyframes gab-traco-eixo {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.anim-traco-eixo {
+  animation: gab-traco-eixo 240ms var(--ease) both;
+}

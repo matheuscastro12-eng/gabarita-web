@@ -50,10 +50,11 @@ export function BarraSprint({ bolinhas, indice, rotuloHabilidade, segundos, most
         <span className="flex items-center gap-1.25" role="img" aria-label={`questão ${indice + 1} de ${bolinhas.length}`}>
           {bolinhas.map((b, i) => (
             <span
-              key={i}
+              key={`${i}-${b}`}
               aria-hidden
               className={cn(
                 "size-2.5 rounded-full border-[1.5px]",
+                (b === "acertou" || b === "errou") && "anim-pop",
                 b === "acertou" && "border-success bg-success",
                 b === "errou" && "border-danger bg-danger",
                 b === "atual" && "border-accent bg-[linear-gradient(90deg,var(--accent)_50%,transparent_50%)]",

@@ -29,7 +29,7 @@ export function CabecalhoPagina({
 export function ConteudoPagina({ className, children, semRodape = false, ...props }: React.ComponentProps<"div"> & { semRodape?: boolean }) {
   return (
     <div className="min-h-0 flex-1 overflow-y-auto">
-      <div className={cn("flex w-full max-w-[1060px] flex-col gap-5 px-3 pt-4 pb-10 md:px-7 md:pt-6.5", className)} {...props}>
+      <div className={cn("entrada-stagger flex w-full max-w-[1060px] flex-col gap-5 px-3 pt-4 pb-10 md:px-7 md:pt-6.5", className)} {...props}>
         {children}
       </div>
       {!semRodape && <RodapeFonte />}
