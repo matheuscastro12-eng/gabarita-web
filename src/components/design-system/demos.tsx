@@ -22,12 +22,13 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { useToast } from "@/components/ui/toast";
+import { TUTOR_VISIVEL } from "@/lib/tutor/visivel";
 
 /* ------------------------------ Cores ------------------------------ */
 
 const CORES: { token: string; papel: string }[] = [
   { token: "--background", papel: "fundo da página, trilho das barras" },
-  { token: "--surface", papel: "cards, sidebar, tutor" },
+  { token: "--surface", papel: TUTOR_VISIVEL ? "cards, sidebar, tutor" : "cards e sidebar" },
   { token: "--surface-2", papel: "hover sobre o card" },
   { token: "--foreground", papel: "texto" },
   { token: "--muted-foreground", papel: "texto suave, ícones do menu" },
@@ -167,11 +168,11 @@ export function DemoInterativos() {
         <Tabs defaultValue="questao">
           <TabsList>
             <TabsTrigger value="questao">Questão</TabsTrigger>
-            <TabsTrigger value="tutor">Tutor</TabsTrigger>
+            {TUTOR_VISIVEL && <TabsTrigger value="tutor">Tutor</TabsTrigger>}
             <TabsTrigger value="lab">Laboratório</TabsTrigger>
           </TabsList>
           <TabsContent value="questao" className="text-sm text-muted-foreground">O enunciado e as alternativas.</TabsContent>
-          <TabsContent value="tutor" className="text-sm text-muted-foreground">A conversa com o tutor.</TabsContent>
+          {TUTOR_VISIVEL && <TabsContent value="tutor" className="text-sm text-muted-foreground">A conversa com o tutor.</TabsContent>}
           <TabsContent value="lab" className="text-sm text-muted-foreground">Python e o plotador.</TabsContent>
         </Tabs>
       </div>
@@ -226,7 +227,17 @@ export function DemoInterativos() {
           <Button variant="outline" size="sm" onClick={() => notificar({ tipo: "erro", titulo: "Não consegui salvar.", descricao: "Confira o espaço do navegador e tente de novo." })}>
             Toast erro
           </Button>
-          <Button variant="outline" size="sm" onClick={() => notificar({ tipo: "aviso", titulo: "Tutor em modo guiado.", descricao: "Sem chave da API: só dicas prontas." })}>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() =>
+              notificar(
+                TUTOR_VISIVEL
+                  ? { tipo: "aviso", titulo: "Tutor em modo guiado.", descricao: "Sem chave da API: só dicas prontas." }
+                  : { tipo: "aviso", titulo: "Cronômetro escondido.", descricao: "O tempo da questão continua sendo medido." },
+              )
+            }
+          >
             Toast aviso
           </Button>
         </div>

@@ -111,7 +111,7 @@ test.describe("Tutor oculto no site", () => {
     expect(rota.status()).toBe(404);
 
     const proibido = /tutor|modo guiado|ANTHROPIC_API_KEY|inteligência artificial/i;
-    for (const caminho of ["/", "/estudar?questao=enem-2012-148", "/ajustes", "/resumos/porcentagem", "/simulado", "/caderno"]) {
+    for (const caminho of ["/", "/estudar?questao=enem-2012-148", "/ajustes", "/resumos/porcentagem", "/simulado", "/caderno", "/design-system"]) {
       await page.goto(caminho);
       await expect(page.locator("main, [role=main], body").first()).toBeVisible({ timeout: 20_000 });
       const visivel = await page.locator("body").innerText();

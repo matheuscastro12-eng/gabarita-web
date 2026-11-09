@@ -191,7 +191,7 @@ export default function PaginaDesignSystem() {
         </CardHeader>
         <CardContent className="sm:flex-row sm:flex-wrap sm:gap-6">
           <label className="flex flex-col gap-1 text-sm">
-            <span className="text-muted-foreground">Como o tutor te chama</span>
+            <span className="text-muted-foreground">Como te chamamos</span>
             <input defaultValue="Matheus" className={cn(CAMPO, "max-w-xs")} />
           </label>
           <label className="flex flex-col gap-1 text-sm">
