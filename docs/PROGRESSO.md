@@ -198,3 +198,16 @@ Branch `feat/design-polish-animacoes`.
 ### Pendências
 - Revisão humana do texto dos resumos (a matemática foi conferida, a didática não).
 - Mapa mental em telas médias (768 a 1024px) não foi fotografado.
+
+## Resumos: legenda das fórmulas e Tirar dúvida (09/11/2026, branch feat/resumos-duvidas-legendas)
+
+### O que foi feito
+- **Legendas:** as 56 fórmulas dos 18 resumos ganharam "quando usar" e a lista de símbolos com significado e unidade (`src/lib/resumos/legendas.ts`), mostradas embaixo de cada fórmula (símbolo em KaTeX à esquerda). Símbolos menos óbvios explicados: Δ, Σ, σ, n!, C(n,p) e binomial, log, π, r, θ, sen/cos/tg, q, a₁, Ω, ∪, ∩, |, ±.
+- **Tirar dúvida** em `/resumos/<id>`: painel ao lado no desktop e gaveta no celular. `/api/tutor` aceita `contexto: { tipo: "resumo", resumoId, perfil? }` (união com o contrato de questão, que não mudou). O servidor monta o prompt com o resumo inteiro (mapa, fórmulas com legendas, como cobra, exemplo, pegadinhas, truque, margem), usa só `calc` e `plot_function` (as duas rodam no servidor, então funcionam no claude-local via MCP) e não aplica a guarda de vazamento. Resumo inexistente → 404 `resumo_not_found`. Sem IA, estado vazio dizendo como ligar.
+- Refatoração: `ferramentasGerais()` (calc, plot) reaproveitada por `ferramentasTutor` e `ferramentasResumo`; `claude-local` aceita qualquer `ToolSet`; o stream do servidor virou `transmitir()`, comum aos dois modos; as peças visuais do chat saíram de `painel-tutor.tsx` para `tutor-comum.tsx`.
+- Testes: `legendas.test.ts` (58 casos: toda fórmula tem legenda, toda letra coberta e nenhuma sobrando, KaTeX compila), e casos novos em `servidor.test.ts` (schema, 404, prompt, ferramentas, sem guarda, claude-local sem aviso), `prompt.test.ts`, `ferramentas.test.ts` e `claude-local.test.ts`; `e2e/resumos.spec.ts` ganhou 4 testes (legendas, painel no desktop sem IA, chips com IA simulada mandando o contexto do resumo, gaveta no celular).
+- Teste real com `TUTOR_PROVIDER=claude-local` (build de produção): "o que é o p na fórmula do aumento e desconto?" → resposta coerente ("p é a porcentagem… o número que vem antes do %"), com 2 chamadas a `calc`.
+
+### Pendências
+- Tutor no modo resumo com `anthropic` e `gateway` só testado com modelo simulado (o caminho de código é o mesmo da questão).
+- Revisão humana das legendas.

@@ -275,6 +275,19 @@ mark {
 .anim-slide-in-right {
   animation: gab-slide-in-right var(--duration) var(--ease) both;
 }
+@keyframes gab-slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.anim-slide-in-up {
+  animation: gab-slide-in-up var(--duration) var(--ease) both;
+}
 
 /* Separador dos painéis redimensionáveis. */
 [data-separator] {

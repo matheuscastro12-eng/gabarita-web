@@ -3,8 +3,7 @@
 import * as React from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport, lastAssistantMessageIsCompleteWithToolCalls } from "ai";
-import { Lightbulb, SendHorizontal, Sparkles, Square, Unlock, WifiOff, X } from "lucide-react";
-import Link from "next/link";
+import { Lightbulb, Unlock, WifiOff, X } from "lucide-react";
 import type { Questao, Letra } from "@/data/tipos";
 import type { DegrauDica, Perfil } from "@/lib/dominio/tipos";
 import type { EntradaEvento } from "@/lib/dominio/eventos";
@@ -15,8 +14,8 @@ import { marcarIADesligada, useStatusIA } from "@/lib/tutor/status-cliente";
 import { rodarPython } from "@/lib/pyodide/rodar";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
-import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { CabecalhoTutor, CampoPergunta, ChipsSugestao, ErroTutor, ListaConversa } from "./tutor-comum";
 import type { RespostaGemea } from "./gemea-card";
 import { Balao, contarVerificacoes, MensagemGuiadaView, MensagemTutorView, type MensagemGuiada } from "./mensagem-tutor";
 
@@ -98,79 +97,26 @@ function Casca({
   aoLimparSelecao,
   inputRef,
 }: PropsCasca) {
-  const [texto, setTexto] = React.useState("");
-  const fimRef = React.useRef<HTMLDivElement | null>(null);
-  const listaRef = React.useRef<HTMLDivElement | null>(null);
-
-  // Rola para o fim quando chega conteúdo novo.
-  React.useEffect(() => {
-    const lista = listaRef.current;
-    if (!lista) return;
-    const obs = new MutationObserver(() => fimRef.current?.scrollIntoView({ block: "end" }));
-    obs.observe(lista, { childList: true, subtree: true, characterData: true });
-    return () => obs.disconnect();
-  }, []);
-
-  const enviar = () => {
-    const t = texto.trim();
-    if (!t || !aoEnviar || ocupado) return;
-    aoEnviar(t);
-    setTexto("");
-  };
-
   return (
     <section className="flex h-full min-h-0 flex-col bg-surface" aria-label="Tutor">
-      <header className="flex items-center gap-2 border-b border-border px-4 py-3">
-        <Sparkles className="size-4 text-accent" strokeWidth={1.8} />
-        <h2 className="text-sm font-bold">Tutor</h2>
-        {modo === "ia" ? (
-          <Badge variant="accent" className="ml-auto" title={modelo ? `Modelo: ${modelo}` : undefined}>
-            IA
-          </Badge>
-        ) : modo === "guiado" ? (
-          <Badge variant="warning" className="ml-auto">
-            modo guiado
-          </Badge>
-        ) : (
-          <Badge variant="outline" className="ml-auto">
-            conectando…
-          </Badge>
-        )}
-      </header>
+      <CabecalhoTutor titulo="Tutor" modo={modo} modelo={modelo} />
 
-      <div ref={listaRef} className="min-h-0 flex-1 overflow-y-auto px-4 py-4" data-testid="conversa">
-        <div className="flex flex-col gap-3">
-          {modo === "guiado" && (
-            <p className="flex items-start gap-2 rounded-md bg-warning-soft px-3 py-2 text-[13px] leading-snug text-foreground" role="note">
-              <WifiOff className="mt-0.5 size-4 shrink-0 text-warning-text" aria-hidden />
-              <span>
-                {AVISO_OFFLINE_PARTES[0]}
-                <code className="font-mono text-[0.8em]">ANTHROPIC_API_KEY</code>
-                {AVISO_OFFLINE_PARTES[1]}
-              </span>
-            </p>
-          )}
-          {children}
-          <div ref={fimRef} />
-        </div>
-      </div>
+      <ListaConversa>
+        {modo === "guiado" && (
+          <p className="flex items-start gap-2 rounded-md bg-warning-soft px-3 py-2 text-[13px] leading-snug text-foreground" role="note">
+            <WifiOff className="mt-0.5 size-4 shrink-0 text-warning-text" aria-hidden />
+            <span>
+              {AVISO_OFFLINE_PARTES[0]}
+              <code className="font-mono text-[0.8em]">ANTHROPIC_API_KEY</code>
+              {AVISO_OFFLINE_PARTES[1]}
+            </span>
+          </p>
+        )}
+        {children}
+      </ListaConversa>
 
       <footer className="flex flex-col gap-2.5 border-t border-border px-4 py-3">
-        {sugestoes && sugestoes.length > 0 && (
-          <div className="flex flex-wrap gap-1.5" aria-label="Sugestões">
-            {sugestoes.map((s) =>
-              s.rotulo === "Laboratório" ? (
-                <Button key={s.rotulo} variant="outline" size="sm" asChild>
-                  <Link href="/laboratorio">{s.rotulo}</Link>
-                </Button>
-              ) : (
-                <Button key={s.rotulo} variant="outline" size="sm" onClick={() => aoSugestao?.(s)} disabled={ocupado}>
-                  {s.rotulo}
-                </Button>
-              ),
-            )}
-          </div>
-        )}
+        {sugestoes && <ChipsSugestao sugestoes={sugestoes} aoSugestao={aoSugestao} ocupado={ocupado} />}
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-sm">
           <div className="flex items-center gap-2">
             <span className="text-muted-foreground">Dica</span>
@@ -206,42 +152,15 @@ function Casca({
             </button>
           </div>
         )}
-        <form
-          className="flex items-end gap-2"
-          onSubmit={(e) => {
-            e.preventDefault();
-            enviar();
-          }}
-        >
-          <label htmlFor="pergunta-tutor" className="sr-only">
-            Pergunte do seu jeito
-          </label>
-          <textarea
-            id="pergunta-tutor"
-            ref={inputRef}
-            rows={1}
-            value={texto}
-            onChange={(e) => setTexto(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) {
-                e.preventDefault();
-                enviar();
-              }
-            }}
-            placeholder={modo === "guiado" ? "peça dica, resolução ou conta…" : "pergunte do seu jeito…"}
-            disabled={modo === "carregando"}
-            className="min-h-11 max-h-40 flex-1 resize-none rounded-lg border-[1.5px] border-input bg-surface px-3.5 py-2.5 text-[15px] placeholder:text-muted-foreground focus-visible:border-accent focus-visible:outline-none"
-          />
-          {ocupado && aoParar ? (
-            <Button type="button" size="icon" variant="secondary" aria-label="Parar" onClick={aoParar}>
-              <Square />
-            </Button>
-          ) : (
-            <Button type="submit" size="icon" aria-label="Enviar" disabled={!texto.trim() || !aoEnviar || modo === "carregando"}>
-              <SendHorizontal />
-            </Button>
-          )}
-        </form>
+        <CampoPergunta
+          id="pergunta-tutor"
+          inputRef={inputRef}
+          aoEnviar={aoEnviar}
+          ocupado={ocupado}
+          aoParar={aoParar}
+          desabilitado={modo === "carregando"}
+          placeholder={modo === "guiado" ? "peça dica, resolução ou conta…" : "pergunte do seu jeito…"}
+        />
       </footer>
     </section>
   );
@@ -430,17 +349,7 @@ function ChatIA(props: PropsPainelTutor & { modelo: string | null }) {
           <span className="text-sm text-muted-foreground">pensando…</span>
         </Balao>
       )}
-      {erro && (
-        <div role="alert" className="flex flex-col gap-2 rounded-lg bg-danger-soft px-3 py-2 text-sm">
-          <p className="font-semibold text-danger-text">O tutor não respondeu.</p>
-          <p className="text-muted-foreground">{erro}</p>
-          <div>
-            <Button size="sm" variant="secondary" onClick={() => void chat.regenerate()}>
-              Tentar de novo
-            </Button>
-          </div>
-        </div>
-      )}
+      {erro && <ErroTutor mensagem={erro} aoTentar={() => void chat.regenerate()} />}
     </Casca>
   );
 }

@@ -13,10 +13,12 @@ import { Esqueleto } from "@/components/ui/esqueleto";
 import { NOME_HABILIDADE } from "@/data/tipos";
 import { useQuestoes } from "@/data/use-questoes";
 import { RESUMOS, type Resumo } from "@/lib/resumos/conteudo";
+import { legendaDe, type Legenda } from "@/lib/resumos/legendas";
 import { questoesDoResumo } from "@/lib/resumos/logica";
 import { infoVisual } from "@/lib/visuais/catalogo";
 import { cn } from "@/lib/utils";
 import { MapaMental } from "./mapa-mental";
+import { GavetaDuvida, PainelDuvida, useDesktop } from "./painel-duvida";
 import { SeloIncidencia } from "./selo";
 import { useEstudados } from "./use-estudados";
 import "katex/dist/katex.min.css";
@@ -24,6 +26,36 @@ import "katex/dist/katex.min.css";
 function Formula({ tex }: { tex: string }) {
   const html = React.useMemo(() => katex.renderToString(tex, { displayMode: true, throwOnError: false }), [tex]);
   return <div className="overflow-x-auto py-1 text-[1.05em]" dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+function SimboloTex({ tex }: { tex: string }) {
+  const html = React.useMemo(() => katex.renderToString(tex, { displayMode: false, throwOnError: false }), [tex]);
+  return <span dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+/** "Quando usar" + o que cada letra significa, embaixo da fórmula. */
+function LegendaFormula({ legenda }: { legenda: Legenda }) {
+  return (
+    <div className="flex flex-col gap-2 border-t border-accent-soft pt-2.5" data-testid="legenda-formula">
+      <p className="text-[13px] leading-snug text-muted-foreground">
+        <span className="font-bold text-foreground">Quando usar: </span>
+        {legenda.quandoUsar}
+      </p>
+      <dl className="grid grid-cols-[minmax(3.5rem,auto)_minmax(0,1fr)] gap-x-3 gap-y-1 text-[13px] leading-snug">
+        {legenda.itens.map((it) => (
+          <React.Fragment key={it.simbolo}>
+            <dt className="text-right text-foreground">
+              <SimboloTex tex={it.simbolo} />
+            </dt>
+            <dd>
+              {it.significado}
+              {it.unidade && <span className="text-muted-foreground"> · {it.unidade}</span>}
+            </dd>
+          </React.Fragment>
+        ))}
+      </dl>
+    </div>
+  );
 }
 
 function Secao({ titulo, children, className, testid }: { titulo: string; children: React.ReactNode; className?: string; testid?: string }) {
@@ -45,6 +77,7 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
   const ligadas = React.useMemo(() => (questoes ? questoesDoResumo(resumo, questoes) : null), [questoes, resumo]);
   const indice = RESUMOS.findIndex((r) => r.id === resumo.id);
   const proximo = RESUMOS[(indice + 1) % RESUMOS.length]!;
+  const desktop = useDesktop();
 
   return (
     <ConteudoPagina>
@@ -78,7 +111,7 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
         </Button>
       </header>
 
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-3.5 lg:grid-cols-[minmax(0,1fr)_220px] lg:items-start">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-3.5 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start xl:grid-cols-[minmax(0,1fr)_400px]">
         <div className="flex flex-col gap-3.5">
           <Card className="gap-3">
             <CardTitle className="text-[17px]">Mapa mental</CardTitle>
@@ -91,6 +124,10 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
                 <li key={f.rotulo} className="rounded-[14px] border-[1.5px] border-accent-soft bg-surface px-4 py-2.5">
                   <p className="text-xs font-bold text-accent-text">{f.rotulo}</p>
                   <Formula tex={f.tex} />
+                  {(() => {
+                    const legenda = legendaDe(resumo.id, f.rotulo);
+                    return legenda ? <LegendaFormula legenda={legenda} /> : null;
+                  })()}
                 </li>
               ))}
             </ul>
@@ -170,17 +207,26 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
           </Card>
         </div>
 
-        <aside aria-label="Anotações na margem" className="flex flex-wrap gap-2 lg:sticky lg:top-4 lg:flex-col lg:gap-3 lg:border-l-2 lg:border-accent-soft lg:pl-4" data-testid="margem">
-          <p className="hidden text-[10px] font-bold tracking-[1px] text-muted-foreground uppercase lg:block">Na margem</p>
-          {resumo.margem.map((m) => (
-            <p key={m} className="rounded-sm bg-background px-2.5 py-1 text-[13px] font-semibold text-muted-foreground lg:bg-transparent lg:p-0 lg:text-sm dark:bg-surface-2 lg:dark:bg-transparent">
-              {m}
-            </p>
-          ))}
-          <Link href={`/resumos/${proximo.id}`} className="hidden pt-4 text-sm font-semibold text-accent-text hover:underline lg:block">
-            Próximo: {proximo.titulo}
-          </Link>
-        </aside>
+        {/* Desktop: coluna da direita com a margem e o chat, colada no topo como o tutor da IDE. */}
+        <div className="flex flex-col gap-3.5 lg:sticky lg:top-4 lg:h-[calc(100dvh-2.5rem)]">
+          <aside aria-label="Anotações na margem" className="flex flex-wrap gap-2 lg:border-l-2 lg:border-accent-soft lg:pl-4" data-testid="margem">
+            <p className="hidden w-full text-[10px] font-bold tracking-[1px] text-muted-foreground uppercase lg:block">Na margem</p>
+            {resumo.margem.map((m) => (
+              <p key={m} className="rounded-sm bg-background px-2.5 py-1 text-[13px] font-semibold text-muted-foreground dark:bg-surface-2">
+                {m}
+              </p>
+            ))}
+            <Link href={`/resumos/${proximo.id}`} className="hidden w-full text-sm font-semibold text-accent-text hover:underline lg:block">
+              Próximo: {proximo.titulo}
+            </Link>
+          </aside>
+          {desktop && (
+            <div className="min-h-0 flex-1 overflow-hidden rounded-xl border border-card-borda shadow-card">
+              <PainelDuvida resumo={resumo} />
+            </div>
+          )}
+        </div>
+        {desktop === false && <GavetaDuvida resumo={resumo} />}
       </div>
     </ConteudoPagina>
   );

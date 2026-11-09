@@ -4,7 +4,7 @@ import { MockLanguageModelV4 } from "ai/test";
 import type { LanguageModelV4StreamPart } from "@ai-sdk/provider";
 import type { Questao } from "@/data/tipos";
 import { questaoFake } from "@/lib/dominio/teste-fixtures";
-import { responderTutor } from "./servidor";
+import { corpoSchema, ehContextoResumo, responderTutor } from "./servidor";
 
 const questao: Questao = questaoFake({
   id: "enem-2022-154",
@@ -314,5 +314,62 @@ describe("responderTutor com imagens na questão", () => {
     const usuario = prompt.find((m) => m.role === "user");
     expect(JSON.stringify(usuario)).toContain("image/png");
     expect(JSON.stringify(prompt.filter((m) => m.role === "system"))).toContain("Você as vê");
+  });
+});
+
+describe("modo resumo (Tirar dúvida)", () => {
+  const env = { ANTHROPIC_API_KEY: "sk-teste" };
+  const corpoResumo = (resumoId = "porcentagem") => ({ messages: [mensagem("o que é o p na fórmula?")], contexto: { tipo: "resumo", resumoId } });
+
+  it("schema: aceita {tipo:'resumo', resumoId} e mantém o contrato da questão", () => {
+    expect(corpoSchema.safeParse(corpoResumo()).success).toBe(true);
+    expect(corpoSchema.safeParse(corpo()).success).toBe(true);
+    expect(corpoSchema.safeParse({ messages: [mensagem("x")], contexto: { tipo: "resumo" } }).success).toBe(false);
+    expect(corpoSchema.safeParse({ messages: [mensagem("x")], contexto: { tipo: "outro", resumoId: "porcentagem" } }).success).toBe(false);
+    const p = corpoSchema.parse(corpoResumo());
+    expect(ehContextoResumo(p.contexto)).toBe(true);
+    expect(ehContextoResumo(corpoSchema.parse(corpo()).contexto)).toBe(false);
+  });
+
+  it("resumo inexistente → 404", async () => {
+    const res = await responderTutor({ corpo: corpoResumo("nao-existe"), env, buscarQuestao, modelo: mock([]) });
+    expect(res.status).toBe(404);
+    expect(((await res.json()) as { codigo: string }).codigo).toBe("resumo_not_found");
+  });
+
+  it("sem chave também responde missing_key", async () => {
+    const res = await responderTutor({ corpo: corpoResumo(), env: {}, buscarQuestao });
+    expect(res.status).toBe(503);
+  });
+
+  it("monta o prompt do resumo, só com calc e plot_function, e não redige nada", async () => {
+    const buscar = vi.fn(buscarQuestao);
+    const modelo = mock([
+      [chamada("calc", { expressao: "20/100 * 250" }), fim("tool-calls")],
+      [...texto("O p é a porcentagem: 20% de 250 dá 50, então a alternativa C seria 50."), fim("stop")],
+    ]);
+    const res = await responderTutor({ corpo: corpoResumo(), env, buscarQuestao: buscar, modelo });
+    expect(res.status).toBe(200);
+    const chunks = await lerChunks(res);
+    expect(buscar).not.toHaveBeenCalled();
+    expect(chunks.find((c) => c.type === "tool-output-available")?.output).toMatchObject({ ok: true });
+    const t = textoDe(chunks);
+    expect(t).toContain("alternativa C seria 50");
+    expect(t).not.toContain("▮");
+    expect(chunks.some((c) => c.type === "data-guarda")).toBe(false);
+
+    const ferramentas = (modelo.doStreamCalls[0]?.tools ?? []).map((f) => f.name).sort();
+    expect(ferramentas).toEqual(["calc", "plot_function"]);
+    const sistema = JSON.stringify(modelo.doStreamCalls[0]?.prompt.filter((m) => m.role === "system"));
+    expect(sistema).toContain("Porcentagem e fator multiplicativo");
+    expect(sistema).toContain("a porcentagem, o número antes do %");
+    expect(sistema).not.toContain("GABARITO");
+    expect(sistema).not.toContain("ESCADA DE DICAS");
+  });
+
+  it("no claude-local não manda o aviso das ferramentas de questão", async () => {
+    const modelo = mock([[...texto("ok"), fim("stop")]]);
+    await lerChunks(await responderTutor({ corpo: corpoResumo(), env: { TUTOR_PROVIDER: "claude-local" }, buscarQuestao, modelo }));
+    expect(JSON.stringify(modelo.doStreamCalls[0]?.prompt)).not.toContain("não estão disponíveis");
   });
 });
