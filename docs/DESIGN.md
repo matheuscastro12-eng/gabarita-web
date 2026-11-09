@@ -52,3 +52,19 @@ Button, Card, Badge, Kbd, Progress, Tabs, Dialog, Tooltip, Toast, ScrollArea em 
 
 ## 6. Checagem anti-"cara de IA"
 Sem gradiente roxo→azul, sem glassmorphism, sem blobs, sem emoji em rótulos, sem caixa alta espaçada, sem hero centralizado sobre gradiente, sem cards dentro de cards, sem animação de scroll.
+
+## 7. Revisão da etapa 4 (09/11/2026)
+Screenshots de todas as telas (escuro e claro, 1440×900 e 390×844) a partir do build de produção. Auditoria de slop: nenhum gradiente, brilho, emoji, caixa alta espaçada ou card dentro de card; **unslop: ok** (modo polimento). Correções: aviso offline, rodapé do tutor no celular, grade do Mapa, `Markdown` inline, chips da fila na tela Hoje, esqueletos estáticos, 404.
+
+Nota 0–10 depois das correções (1 exemplo e 1 correção feita em cada):
+- **Cor 9** — uma só cor de destaque; verde/vermelho só em acerto/erro. Correção: nota do mathjs usa o `warning` já existente.
+- **Tipografia 9** — Inter única, escala fixa, números tabulares. Correção: `code` no aviso em `0.8em` para não saltar a linha.
+- **Espaçamento 8** — escala 4/8/16; Mapa deixou de ter card esticado. Correção: chips com `gap-2` e `px-2.5`.
+- **Consistência 9** — mesmos cards, badges e botões em todas as telas. Correção: o botão do simulado passou para dentro do card.
+- **Responsivo 8** — abas no celular, rodapé do tutor sem corte. Correção: `Kbd` escondidos abaixo de `sm`.
+- **Acessibilidade 9** — foco visível, `aria-label` nos botões-ícone, `role=status/note/alert`, AA nos tokens. Correção: `aria-label` em "Resposta direta" quando vira só ícone.
+- **Animação 9** — só transform/opacity, zero com `prefers-reduced-motion`, nada piscando. Correção: esqueleto do gráfico sem `animate-pulse`.
+- **Densidade 8** — denso sem apertar; chat com espaço para respirar. Correção: descrição longa da fila virou uma frase + chips.
+- **Acabamento 9** — hover, disabled, estados vazio/carregando/erro/parcial em todas as telas. Correção: imagem quebrada, Pyodide fora, IndexedDB bloqueado.
+
+Não testado: leitor de tela real (só a semântica ARIA), Safari/Firefox (só Chromium do Playwright), tutor com chave real.

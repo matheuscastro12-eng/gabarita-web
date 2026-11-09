@@ -39,3 +39,23 @@ Um requisito por linha, com a evidência (arquivo, teste ou comando). Atualizado
 | 11 | Ajustes: perfil "explica do meu jeito" (texto + presets), data da prova, meta, tema, estado do tutor via /api/status (nunca a chave), export/import, zerar com confirmação | `perfil.ts` + teste; `tela-ajustes.tsx`; `e2e/ajustes.spec.ts` (inclui `not.toContainText(/sk-/)`) | feito |
 | 12 | Testes vitest + e2e para cada tela (navegação, simulado, caderno após um erro, export/import) | `pnpm test`: 270 em 34 arquivos; `pnpm e2e`: 20 | feito |
 | 13 | `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e` | 09/11/2026: lint ok (0 problemas), typecheck ok, 270 testes ok com cobertura (domínio/store/atalhos/utils/aleatório/laboratório 100%), build ok (rotas /, /ajustes, /caderno, /estudar, /laboratorio, /mapa, /simulado, /api/status, /api/tutor), 20 e2e ok | feito |
+
+# Checks — Etapa 4 (polimento, robustez, README, testes finais)
+
+| # | Requisito | Evidência | Estado |
+|---|---|---|---|
+| 1 | Revisão visual de todas as telas, escuro/claro, 1440×900 e 390×844, com screenshots lidos e iterados | `.tmp/shots4.mjs` (fora do repo), `/workspace/gabarita/screens/*.png`, docs/DESIGN.md §7 | feito |
+| 2 | Aviso do modo guiado com texto correto | `src/components/estudo/painel-tutor.tsx` (`AVISO_OFFLINE_PARTES`), e2e `tutor.spec.ts` (`role=note`) | feito |
+| 3 | Rodapé do tutor cabe no celular (390 px) | `painel-tutor.tsx` (flex-wrap, Kbd `hidden sm:`/`lg:`), screenshot 09-celular-ide | feito |
+| 4 | Mapa sem card esticado; Caderno sem quebra em "Marcou B · texto" | `tela-mapa.tsx` (grid `items-start`), `markdown.tsx` (`<span>` inline), screenshots 05/06 | feito |
+| 5 | Esqueletos estáveis (sem piscar) em Hoje, Caderno, Mapa, Ajustes, IDE, gráfico | `src/components/ui/esqueleto.tsx`, `tela-hoje.tsx`, `tela-caderno.tsx`, `grafico.tsx` | feito |
+| 6 | 404 bonita, centralizada, com ação principal | `src/app/not-found.tsx`, e2e `robustez.spec.ts` ("página inexistente") | feito |
+| 7 | IndexedDB indisponível → memória + aviso | `src/lib/store/navegador.ts` + `navegador.test.ts` (100%), `aviso-armazenamento.tsx`, e2e "IndexedDB bloqueado" | feito |
+| 8 | Pyodide (CDN) falha → mensagem + fallback mathjs; timeout de carga separado | `src/lib/pyodide/fallback.ts` + teste (100%), `cliente.ts` (`TIMEOUT_CARGA_MS`), `rodar.ts`, `editor-python.tsx`, e2e "CDN do Pyodide fora do ar" | feito |
+| 9 | Imagens quebradas das questões | `src/components/estudo/imagem-questao.tsx`, `markdown.tsx`, `alternativas.tsx`, e2e "imagem da questão fora do ar" | feito |
+| 10 | Questões sem curadoria no modo guiado | `src/lib/tutor/offline.ts` (`textoDegrau`), e2e "questão sem curadoria" | feito |
+| 11 | Metadados/SEO, ícone, manifest PWA | `src/app/layout.tsx`, `manifest.ts`, `icon.svg`, `apple-icon.png`, `public/icons/*`, e2e "manifest e ícones" | feito |
+| 12 | README completo em pt-BR | `README.md` | feito |
+| 13 | `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e` verdes | saída dos comandos no resumo final da etapa (logs em `/tmp/final-*.log` na sessão) | feito |
+| 14 | Screenshots finais nomeadas em `/workspace/gabarita/screens/` | 01-hoje … 10-claro-ide | feito |
+| 15 | Tutor conferido com chave real | sem chave na sandbox | pendente |

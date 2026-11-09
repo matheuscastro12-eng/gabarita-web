@@ -101,3 +101,39 @@ pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
 - **Simulado completo de 45 itens** (critério "pronto para a prova") ainda não tem tela; `prontoProva` já conta `Simulado` do tipo `completo-45`.
 - **Etapa 4:** acabamento (revisão de todas as telas com dados reais acumulados, celular), relatório semanal pela Reason Network, conferir o tutor ao vivo com chave (10 conversas dos critérios 3–7 do BRAINSTORM §10), e2e do Pyodide (hoje conferido à mão porque baixa 15 MB do CDN).
 - `theta` continua sem influenciar a ordem da fila do sprint (aceito e ignorado em `montarFila`).
+
+## Etapa 4 de 4 — Polimento de design, robustez, README e testes finais (09/11/2026)
+
+### O que foi feito
+- **Revisão visual com screenshots** (Playwright contra `pnpm build && pnpm start`, escuro e claro, 1440×900 e 390×844, todas as telas; script em `.tmp/shots4.mjs`, fora do repo). Diagnóstico: slop leve, "modo polimento" (sem mudar direção, paleta ou tipografia). Correções:
+  - Aviso do modo guiado no tutor estava com o texto quebrado ("falta a chave . Usando dicas verificadas.ANTHROPIC_API_KEY."); agora é uma nota com ícone e a chave em `<code>` no lugar certo.
+  - Rodapé do tutor estourava no celular (botão "Próximo degrau" cortado): a linha "Dica ▮▯▯▯ · Resposta direta · Próximo degrau" quebra quando precisa, os `Kbd` somem abaixo de `sm`/`lg` e "Resposta direta" vira só ícone (com `aria-label`) no celular. Placeholder do campo encurtado para caber numa linha.
+  - Mapa: o card da nota esticava até a altura do card "pronto". Agora a coluna esquerda empilha Nota + Simulado (`items-start`) e a direita fica com os três níveis de "pronto".
+  - Caderno: "Marcou B · 86 700" quebrava a linha porque o `Markdown inline` era um `<div>`; virou `<span>`.
+  - Hoje: a fila do sprint aparece como 5 chips (habilidade, nome a partir de `md`, fácil/média/difícil), com esqueletos enquanto carrega; a frase longa "Próximas: …" virou "Próximas: 5 questões oficiais em n habilidades, fáceis primeiro." Esqueletos também na nota e nas revisões.
+  - Caderno: esqueleto estático enquanto o estado não chega (antes, só o cabeçalho). Gráfico: esqueleto deixou de pulsar (`animate-pulse` removido; "nada piscando").
+  - 404 redesenhada: logo, "Erro 404", título, texto que tranquiliza ("nada do seu progresso se perdeu"), ação principal + secundária e dica dos atalhos; centralizada de verdade na área de conteúdo.
+- **Robustez:**
+  - **IndexedDB indisponível** → `src/lib/store/navegador.ts` (puro, 100% coberto): persistência com fallback que tenta o IndexedDB e, à primeira falha (ou se `indexedDB` não existe/lança), passa a memória levando o último estado e avisa uma vez. `StoreProvider` expõe `aviso`; `AvisoArmazenamento` mostra uma faixa discreta com link para os Ajustes (exportar backup) e botão de fechar.
+  - **Pyodide fora do ar** → `src/lib/pyodide/fallback.ts` (puro, 100% coberto): erro de carga reconhecível (`ERRO_CARGA_PREFIXO`), tradução da última linha do Python para o mathjs (`Rational(a,b)`, `**`, comentários; recusa atribuições, imports e chamadas do SymPy) e `comFallbackMathjs`. O cliente do worker separou o **timeout de carga (120 s)** do de execução (30 s) e devolve `mensagemErroCarga` em vez de "tempo esgotado". `rodarPython` (`src/lib/pyodide/rodar.ts`) aplica o fallback no Laboratório e no `run_python` do tutor. O Laboratório mostra um alerta com o motivo resumido, "Tentar carregar de novo" e selo `mathjs` na saída quando a conta saiu pelo fallback.
+  - **Imagens quebradas** → `ImagemQuestao` (`onError`): bloco tracejado "Imagem da questão não carregou", explicação, link "Abrir a imagem original"; usado no Markdown do enunciado e nas alternativas com imagem.
+  - **Questões sem curadoria**: já tratadas no modo guiado (dicas genéricas, gabarito oficial, Laboratório); agora com e2e que garante o rótulo "(sem curadoria)" e o link do Laboratório.
+  - **PWA e metadados**: `src/app/manifest.ts` (standalone, cores grafite, atalhos para Estudar/Mapa/Caderno), `src/app/icon.svg` (losango com check), PNGs 192/512/maskable em `public/icons` e `apple-icon.png` gerados a partir do SVG pelo Chromium do Playwright (`.tmp/icones.mjs`), metadados completos no layout (descrição, keywords, Open Graph, Twitter, Apple Web App, ícones, `viewportFit: cover`).
+- **README.md** completo em pt-BR: o que é, funcionalidades, como rodar, variáveis, arquitetura (árvore comentada e fluxo de uma tentativa), fontes de dados (INEP, espelho Zenodo, enem.dev, PROVAS), testes e limitações.
+- **Testes:** 286 unitários em 36 arquivos (novos: `navegador.test.ts`, `fallback.test.ts`; limiar 100% em `src/lib/pyodide/fallback.ts`). **26 e2e** (os 20 anteriores + `robustez.spec.ts`: IndexedDB bloqueado, imagem fora do ar, CDN do Pyodide fora do ar com fallback do mathjs e erro claro para código SymPy, questão sem curadoria, 404, manifest e ícones).
+- **Screenshots finais** em `/workspace/gabarita/screens/` (01-hoje … 10-claro-ide), tiradas do servidor de produção local.
+
+### Decisões desta etapa
+- Modo polimento: a direção (grafite + âmbar, Inter, uma ação por tela) fica; nada de gradiente, brilho ou nova fonte. Chips da fila na tela Hoje são o "detalhe memorável" junto da barra ●●◐○○.
+- Esqueletos são estáticos (sem pulsar) por causa do "nada piscando"; os únicos movimentos contínuos são os `Loader2` com `motion-reduce:animate-none`.
+- O fallback do Pyodide cobre só expressões puras na última linha; código com `=`/`import`/`solve` mantém o erro de carga explícito (melhor um erro honesto do que um resultado errado).
+- A faixa de aviso de armazenamento é `role="status"` e pode ser fechada; o `aviso` vive fora do React porque o fallback pode cair antes do primeiro render.
+- Metadados: indexação não foi bloqueada (sem `robots: noindex`); se o deploy for público, revisar junto com a questão de direitos do BRAINSTORM §7.
+- `Markdown inline` renderiza `<span>`: `react-markdown` continua gerando `<p>`, que vira `inline` por CSS.
+- E2E: no dev server (React 19 + Turbopack), `fill` antes da hidratação concatena o valor com o estado inicial; os testes esperam `toHaveValue` do exemplo antes de digitar.
+
+### Pendências
+- Conferir o tutor **com chave real** (critérios 3–7 do BRAINSTORM §10): nenhuma chave disponível na sandbox.
+- Simulado completo de 45 itens (tela), relatório semanal pela Reason Network, `theta` na ordem da fila: continuam da etapa 3.
+- Teste automatizado de contraste e de `prefers-reduced-motion` (hoje conferidos por script de tokens e à mão).
+- Se o produto abrir para outros alunos: `robots`, direitos das questões (BRAINSTORM §7) e backend atrás de `StudentStore`.
