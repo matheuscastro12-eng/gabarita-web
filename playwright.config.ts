@@ -13,6 +13,9 @@ export default defineConfig({
     baseURL,
     locale: "pt-BR",
     trace: "retain-on-failure",
+    // Os testes antigos são da versão Matemática: entram direto, sem a tela de entrada.
+    // (e2e/versoes.spec.ts limpa isto para testar a escolha.)
+    storageState: { cookies: [], origins: [{ origin: baseURL, localStorage: [{ name: "gabarita:versao", value: "matematica" }] }] },
   },
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },

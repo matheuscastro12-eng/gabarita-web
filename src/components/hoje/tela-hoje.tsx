@@ -213,7 +213,7 @@ export function TelaHoje() {
               <Badge>{textoApostas(versao)}</Badge>
             </div>
             <p className="text-sm text-muted-foreground">
-              Apostas do curso Edcley Teixeira (questões inéditas, não oficiais), com a resolução do autor. Simulado com cronômetro ou treino com o tutor; não contam na nota TRI nem no domínio.
+              Apostas do curso Edcley Teixeira (questões inéditas, não oficiais), com a resolução do autor. Simulado com cronômetro ou treino; não contam na nota TRI nem no domínio.
             </p>
           </div>
           <Button asChild variant="secondary" className="shrink-0">

@@ -205,8 +205,8 @@ function MapaDaArea({ area, comTitulo }: { area: Area; comTitulo: boolean }) {
           <CardContent className="gap-4">
             <NivelPronto
               titulo="Habilidades da semana"
-              dica="Clique numa habilidade para ver todos os critérios."
-              pronto={!!celulas && celulas.filter((c) => c.daSemana).every((c) => c.pronto)}
+              dica={celulas && !celulas.some((c) => c.daSemana) ? `Nenhuma habilidade de ${nomeArea} na semana: escolha nos Ajustes.` : "Clique numa habilidade para ver todos os critérios."}
+              pronto={!!celulas && celulas.some((c) => c.daSemana) && celulas.filter((c) => c.daSemana).every((c) => c.pronto)}
               itens={
                 celulas
                   ? celulas

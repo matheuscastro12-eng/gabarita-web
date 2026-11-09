@@ -21,6 +21,7 @@ export function SeletorVersao({ className, compacto = false }: { className?: str
       <span className="sr-only">Versão do Gabarita</span>
       <select
         data-testid="seletor-versao"
+        title="Trocar a versão do Gabarita"
         value={versao}
         onChange={(e) => {
           const v = e.target.value as Versao;
@@ -91,7 +92,7 @@ export function Sidebar() {
         <AtalhoNavegacao key={item.href} item={item} />
       ))}
       <Marca className="px-2.5 pb-2" />
-      <SeletorVersao className="px-2.5 pb-5" />
+      <SeletorVersao className="px-2.5 pb-5 pl-[38px]" />
       <p className="px-2.5 pb-2 text-[10px] font-bold tracking-[1px] text-muted-foreground uppercase" aria-hidden>
         Menu
       </p>
@@ -120,11 +121,6 @@ export function Marca({ className, compacta = false }: { className?: string; com
     >
       <Logo className={compacta ? "size-5" : "size-[22px]"} />
       <span>Gabarita</span>
-      {versao && !compacta && (
-        <span className="font-sans text-[13px] font-semibold text-muted-foreground" data-testid="versao-marca">
-          · {INFO_VERSAO[versao].nome}
-        </span>
-      )}
     </Link>
   );
 }

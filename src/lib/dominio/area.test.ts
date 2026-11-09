@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { estadoInicial } from "./estado";
+import { novoEstadoHabilidade } from "./evidencia";
 import { filtrarEstadoPorArea, montarFilaDasAreas, notaDaArea } from "./area";
 import { corrigirProva, lerAndamento, montarBloco45, montarBlocoAssunto, montarProvaDia2, novoAndamento, serializarAndamento } from "./prova";
 import { questaoFake, tentativaFake } from "./teste-fixtures";
@@ -93,5 +94,53 @@ describe("simulados longos", () => {
     expect(lerAndamento("{")).toBeNull();
     expect(lerAndamento(JSON.stringify({ ...a, escolhas: [] }))).toBeNull();
     expect(lerAndamento(null)).toBeNull();
+  });
+});
+
+describe("cobertura dos ramos de área", () => {
+  it("sprints por área (antigos = matemática; misto conta onde tem tentativa)", async () => {
+    const { iniciarSprint } = await import("./estado");
+    let e = estadoInicial(agora);
+    e = iniciarSprint(e, ["enem-2020-136"], agora).estado;
+    e = iniciarSprint(e, ["enem-2020-91"], agora, undefined, "natureza").estado;
+    e = iniciarSprint(e, ["enem-2020-92"], agora, undefined, "misto").estado;
+    const misto = e.sprints[2]!;
+    e = { ...e, sprints: e.sprints.map((s) => (s.id === misto.id ? { ...s, tentativaIds: ["t9"] } : s)), tentativas: [tentativaFake({ id: "t9", habilidade: "CN-H1" })] };
+    expect(filtrarEstadoPorArea(e, ["natureza"]).sprints.map((s) => s.area)).toEqual(["natureza", "misto"]);
+    expect(filtrarEstadoPorArea(e, ["matematica"]).sprints.map((s) => s.area ?? "antigo")).toEqual(["antigo"]);
+    expect(e.sprints[1]!.area).toBe("natureza");
+  });
+
+  it("limiar por área e relógio do andamento", async () => {
+    const { limiarDaArea, questoesDaArea } = await import("./area");
+    const { restanteSegundos } = await import("./prova");
+    const qs = [cn(91, 2020, { tri: { a: 1, b: 2, c: 0.2 } }), mt(136, 2020, { tri: { a: 1, b: -1, c: 0.2 } }), cn(92, 2020, { tri: null })];
+    expect(limiarDaArea(qs, "natureza")).toBe(2);
+    expect(limiarDaArea(qs, "matematica")).toBe(-1);
+    expect(questoesDaArea(qs, "natureza")).toHaveLength(2);
+    const a = novoAndamento({ tipo: "completo-45", titulo: "x", questoes: qs, ano: null, duracaoSegundos: 100, agora });
+    expect(restanteSegundos({ ...a, usadosSegundos: 40.4 })).toBe(60);
+    expect(restanteSegundos({ ...a, usadosSegundos: 200 })).toBe(0);
+  });
+
+  it("encerrarSimulado grava áreas e ano", async () => {
+    const { encerrarSimulado } = await import("./simulado");
+    const r = encerrarSimulado(estadoInicial(agora), { tipo: "prova-dia2", iniciadoEm: agora.toISOString(), tentativaIds: [], areas: ["natureza", "matematica"], ano: 2020 }, agora);
+    expect(r.simulado).toMatchObject({ areas: ["natureza", "matematica"], ano: 2020 });
+    const s = encerrarSimulado(estadoInicial(agora), { tipo: "faceis-15", iniciadoEm: agora.toISOString(), tentativaIds: [] }, agora).simulado;
+    expect(s.areas).toBeUndefined();
+    expect(s.ano).toBeUndefined();
+  });
+});
+
+describe("caderno e assunto", () => {
+  it("caderno separado por área e bloco por assunto em matemática", () => {
+    const entrada = { id: "c1", tentativaId: "t1", questaoId: "enem-2020-91", habilidade: "CN-H1" as const, escolha: null, gabarito: "A" as const, porQue: null, em: agora.toISOString(), resolvidaEm: null };
+    const e = { ...estadoInicial(agora), caderno: [entrada], habilidades: { "CN-H1": novoEstadoHabilidade("CN-H1", agora), H2: novoEstadoHabilidade("H2", agora) } };
+    expect(Object.keys(filtrarEstadoPorArea(e, ["natureza"]).habilidades)).toEqual(["CN-H1"]);
+    expect(filtrarEstadoPorArea(e, ["natureza"]).caderno).toHaveLength(1);
+    expect(filtrarEstadoPorArea(e, ["matematica"]).caderno).toHaveLength(0);
+    const qs = [mt(136, 2020, { assuntos: ["porcentagem"] }), mt(137, 2020, { assuntos: ["probabilidade"] })];
+    expect(montarBlocoAssunto({ questoes: qs, area: "matematica", chave: "porcentagem" }).map((q) => q.numero)).toEqual([136]);
   });
 });
