@@ -10,3 +10,6 @@ export * from "./fila";
 export * from "./caderno";
 export * from "./estado";
 export * from "./eventos";
+export * from "./simulado";
+export * from "./mapa";
+export * from "./perfil";
