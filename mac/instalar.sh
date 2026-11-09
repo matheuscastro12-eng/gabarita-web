@@ -3,6 +3,16 @@
 # Na primeira vez, guarda o app nativo antigo (Swift/SQLite) como "Gabarita Clássico.app".
 set -euo pipefail
 cd "$(dirname "$0")"
+REPO="$(cd .. && pwd)"
+# Servidor local do tutor (Claude Code logado neste Mac): dependências e build de produção.
+PNPM=(npx -y pnpm@10.34.6)
+NODE="$(command -v node || true)"
+if [ -n "$NODE" ]; then
+  (cd "$REPO" && "${PNPM[@]}" install --frozen-lockfile && "${PNPM[@]}" build)
+else
+  echo "Aviso: node não encontrado; o app vai abrir a versão da Vercel." >&2
+fi
+[ -x ~/.local/bin/claude ] || echo "Aviso: ~/.local/bin/claude não encontrado; o tutor local precisa do Claude Code logado." >&2
 APP=~/Applications/Gabarita.app
 OLD=~/Applications/"Gabarita Clássico.app"
 swift build -c release
@@ -33,9 +43,11 @@ cat > "$APP/Contents/Info.plist" <<P
   <key>LSMinimumSystemVersion</key><string>13.0</string>
   <key>NSHighResolutionCapable</key><true/>
   <key>NSMicrophoneUsageDescription</key><string>Para ditar perguntas ao tutor.</string>
-  <key>NSAppTransportSecurity</key><dict><key>NSAllowsArbitraryLoads</key><false/></dict>
+  <key>NSAppTransportSecurity</key><dict><key>NSAllowsArbitraryLoads</key><false/><key>NSAllowsLocalNetworking</key><true/></dict>
   <key>GabaritaWeb</key><true/>
+  <key>GabaritaRepo</key><string>$REPO</string>
+  <key>GabaritaNode</key><string>$NODE</string>
 </dict></plist>
 P
 codesign --force -s - "$APP"
-echo "Instalado: $APP"
+echo "Instalado: $APP (repo: $REPO, node: ${NODE:-ausente})"

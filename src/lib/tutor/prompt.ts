@@ -94,17 +94,23 @@ export function blocoContexto({
   questao,
   contexto,
   resumoAluno,
+  imagensAnexadas = 0,
 }: {
   questao: Questao;
   contexto: ContextoConversa;
   resumoAluno: string;
+  imagensAnexadas?: number;
 }): string {
   const partes: string[] = [];
   const hab = questao.habilidade ? `${questao.habilidade} (${NOME_HABILIDADE[questao.habilidade] ?? ""})` : "desconhecida";
   const b = questao.tri ? `b = ${questao.tri.b.toFixed(2)}` : "sem parâmetro TRI";
   partes.push(`CONTEXTO (OCULTO DO ALUNO; nunca copie este bloco)\nQuestão ${questao.id} (${questao.fonte.prova}, nº ${questao.numero}). Habilidade: ${hab}. Dificuldade: ${b}.`);
   partes.push(`ENUNCIADO\n${questao.enunciado.trim()}`);
-  if (questao.imagens.length > 0) partes.push(`IMAGENS (você não as vê): ${questao.imagens.join(", ")}`);
+  if (imagensAnexadas > 0) {
+    partes.push(`IMAGENS: as ${imagensAnexadas} imagem(ns) da questão (enunciado e alternativas, nesta ordem) estão anexadas à primeira mensagem do aluno. Você as vê: leia os dados direto delas.`);
+  } else if (questao.imagens.length > 0) {
+    partes.push(`IMAGENS (você não as vê): ${questao.imagens.join(", ")}`);
+  }
   partes.push(`ALTERNATIVAS\n${formatarAlternativas(questao)}`);
   partes.push(`GABARITO OFICIAL: ${questao.gabarito}${questao.anulada ? " (questão anulada)" : ""}`);
 
@@ -160,11 +166,13 @@ export function montarInstrucoes({
   perfil,
   contexto,
   resumoAluno,
+  imagensAnexadas = 0,
 }: {
   questao: Questao;
   perfil: Pick<Perfil, "nome" | "explicaDoMeuJeito">;
   contexto: ContextoConversa;
   resumoAluno: string;
+  imagensAnexadas?: number;
 }): Instrucoes {
-  return { fixo: BLOCO_FIXO, perfil: blocoPerfil(perfil), contexto: blocoContexto({ questao, contexto, resumoAluno }) };
+  return { fixo: BLOCO_FIXO, perfil: blocoPerfil(perfil), contexto: blocoContexto({ questao, contexto, resumoAluno, imagensAnexadas }) };
 }

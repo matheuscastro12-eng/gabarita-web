@@ -290,7 +290,7 @@ function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
             <>
               <Badge variant="success">sim</Badge>
               <span className="text-muted-foreground">
-                {status.provedor === "gateway" ? "AI Gateway" : "Anthropic"} · {status.modelo}
+                {status.provedor === "gateway" ? "AI Gateway" : status.provedor === "claude-local" ? "Claude local (assinatura)" : "Anthropic"} · {status.modelo}
               </span>
             </>
           ) : (

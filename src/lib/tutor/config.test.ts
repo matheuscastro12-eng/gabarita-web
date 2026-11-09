@@ -32,3 +32,19 @@ describe("configuracaoTutor", () => {
     expect(JSON.stringify(s)).not.toContain("secreta");
   });
 });
+
+describe("TUTOR_PROVIDER=claude-local", () => {
+  it("liga o provedor local sem chave nenhuma", () => {
+    expect(configuracaoTutor({ TUTOR_PROVIDER: "claude-local" })).toEqual({ provedor: "claude-local", modelo: MODELO_PADRAO, esforco: "low" });
+  });
+  it("tem prioridade sobre as duas chaves", () => {
+    expect(configuracaoTutor({ TUTOR_PROVIDER: " Claude-Local ", ANTHROPIC_API_KEY: "x", AI_GATEWAY_API_KEY: "y" }).provedor).toBe("claude-local");
+  });
+  it("valor desconhecido é ignorado e cai nas chaves", () => {
+    expect(configuracaoTutor({ TUTOR_PROVIDER: "openai", ANTHROPIC_API_KEY: "x" }).provedor).toBe("anthropic");
+    expect(configuracaoTutor({ TUTOR_PROVIDER: "" }).provedor).toBeNull();
+  });
+  it("statusPublico informa a IA ligada com o provedor local", () => {
+    expect(statusPublico(configuracaoTutor({ TUTOR_PROVIDER: "claude-local" }))).toEqual({ ia: true, provedor: "claude-local", modelo: MODELO_PADRAO });
+  });
+});

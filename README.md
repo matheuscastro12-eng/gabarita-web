@@ -56,6 +56,8 @@ Documentadas em [`.env.example`](.env.example). Nenhuma é obrigatória.
 |---|---|
 | `ANTHROPIC_API_KEY` | Chave da API da Anthropic usada pelo tutor. Nunca é logada nem enviada ao navegador. |
 | `AI_GATEWAY_API_KEY` | Alternativa: Vercel AI Gateway (usada se a anterior estiver vazia). |
+| `TUTOR_PROVIDER` | `claude-local`: o tutor usa o Claude Code logado no computador (assinatura) em vez da API. Tem prioridade sobre as chaves. Usado pelo app do Mac; não serve na Vercel. |
+| `CLAUDE_CODE_PATH` | Caminho da CLI no modo `claude-local` (padrão `~/.local/bin/claude`). |
 | `TUTOR_MODEL` | ID do modelo (padrão `claude-sonnet-5-5`). Confira o ID atual na documentação da Anthropic. |
 | `TUTOR_EFFORT` | `low` (padrão), `medium` ou `high`. |
 | `PROVAS_DIR`, `PROVAS_GIT_REF` | Origem do banco de questões para `pnpm sync-provas`. |
@@ -110,6 +112,12 @@ pnpm e2e         # Playwright (Chromium): sprint pelo teclado, tutor offline, ma
 
 O e2e sobe o dev server em `localhost:3100` sem herdar `ANTHROPIC_API_KEY` do ambiente. A rota do tutor com IA é coberta por testes unitários com modelo simulado (`MockLanguageModelV4`).
 
+## App do Mac com o Claude local
+
+`mac/instalar.sh` roda `pnpm install` e `pnpm build` neste repositório, compila o app (SwiftPM) e instala `~/Applications/Gabarita.app`, gravando no `Info.plist` o caminho do repo (`GabaritaRepo`) e do node (`GabaritaNode`). Ao abrir, o app sobe `next start` em `127.0.0.1:3917` com `TUTOR_PROVIDER=claude-local` e `~/.local/bin` no PATH, espera `/api/status` responder e carrega a página local; ao fechar, encerra o servidor. A porta é fixa porque o progresso fica no armazenamento do WebKit por origem. Se o servidor não subir (sem node, sem build), o app abre a Vercel e mostra "Tutor pela internet" no subtítulo da janela. Log em `~/Library/Logs/Gabarita-servidor.log`. Depois de mudar o código, rode `mac/instalar.sh` de novo para refazer o build.
+
+No modo `claude-local`, as ferramentas do servidor (`calc`, `verify_answer`, `plot_function`, `get_hint`, `make_twin`) vão para a CLI como um servidor MCP em processo; as ferramentas internas do Claude Code (Bash, Read, Write, WebFetch…) ficam desligadas, sem settings do usuário nem sessão gravada. `run_python` e `record_event` rodam no navegador e não atravessam a CLI: ficam fora nesse modo (o prompt avisa o modelo). O prompt e a guarda de vazamento são os mesmos.
+
 ## Limitações
 
 - **Sem login e sem servidor de dados**: tudo fica no IndexedDB do navegador. Troque de máquina pelo backup JSON dos Ajustes. A interface `StudentStore` está pronta para um backend depois.
@@ -118,4 +126,5 @@ O e2e sobe o dev server em `localhost:3100` sem herdar `ANTHROPIC_API_KEY` do am
 - **Nota TRI é estimativa**: não replica a equalização oficial do INEP; serve para acompanhar tendência e o critério de "pronto".
 - **Habilidade estimada** em algumas questões antigas (marcadas "(estimada)"); **60 curadas** de 636, o resto usa dicas genéricas e o gabarito.
 - **Simulado completo de 45 itens** ainda não tem tela (o critério "pronto para a prova" já o espera).
+- **Imagens para o tutor**: o servidor baixa as imagens do enunciado e das alternativas (até 6, cache em memória) e as anexa à primeira mensagem do aluno, em todos os provedores. Se o download falhar, o prompt diz que o tutor não as vê.
 - **Imagens** vêm do enem.dev; se o serviço sair do ar, a questão mostra o aviso e o texto `dados_da_imagem` quando curado.
