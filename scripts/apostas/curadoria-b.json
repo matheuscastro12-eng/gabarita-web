@@ -1,0 +1,209 @@
+[
+  {
+    "numero": 26,
+    "materia": "natureza",
+    "assunto": "parasitoses-esquistossomose",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** prevenir transmissão significa quebrar o ciclo do *Schistosoma mansoni*.\n\n1. **Entenda o ciclo.** A pessoa infectada elimina ovos nas fezes. Sem esgoto tratado, os ovos chegam à lagoa, liberam miracídios que infectam o caramujo *Biomphalaria*. O caramujo libera cercárias, que penetram ativamente na pele de quem entra na água.\n2. **Ache os pontos de corte.** Há dois elos frágeis: o esgoto que chega à água (cortado pelo saneamento básico) e o contato humano com a água contaminada (cortado evitando o banho em lagoas com caramujos).\n3. **Escolha a medida que atua nos dois.** A alternativa C combina saneamento e evitar contato, rompendo o ciclo nas duas pontas.\n\n**Por que as outras erram:**\n- **A:** conhecer sintomas ajuda no diagnóstico, mas não impede a infecção.\n- **B:** repelente afasta insetos; a cercária não é inseto e atravessa a pele mesmo assim.\n- **D:** remédio em massa trata quem já está infectado e não é a estratégia central de prevenção; a água continua contaminada.\n- **E:** barreiras físicas limitam o acesso, mas a lagoa segue contaminada e o problema volta.\n\n**Resposta: C.**"
+  },
+  {
+    "numero": 27,
+    "materia": "natureza",
+    "assunto": "energia-e-emissao-de-co2",
+    "gabarito_conferido": true,
+    "flags": [
+      "Alternativa E diz 'Soja e mamona, empatadas', mas a resolução do autor descreve a pegadinha como empate de energia útil entre mamona e dendê; o distrator citado na resolução não corresponde ao texto da alternativa E.",
+      "Texto da tabela saiu bagunçado no apoio extraído; conferir a renderização da tabela (Soja 9.200/82/2.800; Milho 8.700/90/2.700; Mamona 8.600/88/2.500; Dendê 8.800/86/2.900)."
+    ],
+    "explicacao_detalhada": "**Ideia central:** comparar gramas de CO₂ por MJ de energia **útil**, cruzando três colunas.\n\n1. **Energia útil por kg** = poder calorífico × eficiência.\n   - Soja: $9200 \\times 0{,}82 = 7544$ kcal\n   - Milho: $8700 \\times 0{,}90 = 7830$ kcal\n   - Mamona: $8600 \\times 0{,}88 = 7568$ kcal\n   - Dendê: $8800 \\times 0{,}86 = 7568$ kcal\n2. **Converta para MJ** ($1$ kcal $= 4{,}18$ kJ): Soja $\\approx 31{,}53$ MJ; Milho $\\approx 32{,}73$ MJ; Mamona e Dendê $\\approx 31{,}63$ MJ.\n3. **Divida a emissão pela energia útil:**\n   - Soja: $2800 / 31{,}53 \\approx 88{,}8$ g/MJ\n   - Milho: $2700 / 32{,}73 \\approx 82{,}5$ g/MJ\n   - Mamona: $2500 / 31{,}63 \\approx 79{,}0$ g/MJ\n   - Dendê: $2900 / 31{,}63 \\approx 91{,}7$ g/MJ\n4. O menor valor é o da mamona.\n\n**Por que as outras erram:**\n- **A (Soja):** maior poder calorífico, mas baixa eficiência; fica com 88,8 g/MJ.\n- **B (Milho):** maior energia útil, porém emite mais por kg; 82,5 g/MJ.\n- **D (Dendê):** mesma energia útil da mamona e a maior emissão; pior resultado.\n- **E (empate):** soja e mamona não empatam em nenhum critério relevante.\n\n**Resposta: C.**"
+  },
+  {
+    "numero": 28,
+    "materia": "natureza",
+    "assunto": "eletrodinamica-associacao-de-resistores",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** o resistor em série absorve a sobra de tensão e precisa aguentar o calor gerado.\n\n1. **Corrente nominal da carga:** $I = P/U = 10/127 \\approx 0{,}0787$ A.\n2. **Tensão no resistor em série:** $220 - 127 = 93$ V.\n3. **Resistência (Lei de Ohm):** $R = 93 / 0{,}0787 \\approx 1181\\ \\Omega$. O valor comercial mais próximo é $1{,}2$ kΩ.\n4. **Potência dissipada no resistor:** $P = U \\cdot I = 93 \\times 0{,}0787 \\approx 7{,}3$ W.\n5. **Potência nominal mínima:** o componente precisa suportar mais que 7,3 W. Entre as opções, 10 W atende; 5 W não.\n\n**Por que as outras erram:**\n- **B (1,2 kΩ e 5 W):** resistência certa, mas o resistor dissiparia 7,3 W e queimaria.\n- **C (1,8 kΩ):** resistência alta demais; a carga receberia bem menos que 127 V.\n- **D (980 Ω):** resistência baixa; a carga receberia tensão acima da nominal.\n- **E (2,3 kΩ e 5 W):** erra a resistência e a potência.\n\n**Resposta: A.**"
+  },
+  {
+    "numero": 29,
+    "materia": "matematica",
+    "assunto": "area-e-custo",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** custo total = área × preço por m².\n\n1. **Áreas:**\n   - Terreno X: $20 \\times 15 = 300$ m²\n   - Terreno Y: $25 \\times 12 = 300$ m²\n   As áreas são iguais.\n2. **Custos totais:**\n   - X: $300 \\times 250 = R\\$\\ 75.000{,}00$\n   - Y: $300 \\times 230 = R\\$\\ 69.000{,}00$\n3. **Comparação:** Y custa R$ 6.000,00 a menos. Como as áreas empatam, quem decide é o preço unitário, menor em Y.\n\n**Por que as outras erram:**\n- **A:** X não tem área menor; as duas medem 300 m².\n- **B:** o metro quadrado de X (R$ 250) é o mais caro.\n- **C:** Y tem preço unitário menor, mas não tem área menor.\n- **D:** X não tem área maior, e custa mais.\n\n**Resposta: E.**"
+  },
+  {
+    "numero": 30,
+    "materia": "matematica",
+    "assunto": "operacoes-basicas",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** somar a parte fixa com as duas partes variáveis.\n\n1. **Fixo:** R$ 1.000,00.\n2. **Eventos:** $6 \\times 200 = R\\$\\ 1.200{,}00$.\n3. **Drinques:** $20 \\times 15 = R\\$\\ 300{,}00$.\n4. **Total:** $1000 + 1200 + 300 = R\\$\\ 2.500{,}00$.\n\n**Por que as outras erram:**\n- **A (R$ 1.000):** considera só o fixo.\n- **B (R$ 1.600):** soma o fixo a uma parcela errada (por exemplo, 3 eventos ou 40 drinques), deixando parte de fora.\n- **C (R$ 2.000):** esquece uma das parcelas variáveis ou calcula os eventos pela metade.\n- **E (R$ 3.000):** valor acima do que os dados permitem.\n\n**Dica:** em problemas de remuneração, liste cada parcela separadamente antes de somar; isso evita esquecer termos.\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 31,
+    "materia": "matematica",
+    "assunto": "operacoes-basicas",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** comparar o valor total da compra, e não o preço de um item isolado.\n\n1. **Loja X:** $6 \\times 80 + 5 \\times 50 = 480 + 250 = R\\$\\ 730{,}00$.\n2. **Loja Y:** $6 \\times 70 + 5 \\times 60 = 420 + 300 = R\\$\\ 720{,}00$.\n3. **Diferença:** a Loja Y sai R$ 10,00 mais barata.\n4. **Por que isso acontece:** a calça, comprada em maior quantidade (6), é R$ 10 mais barata em Y, economizando R$ 60. A camisa (5 unidades) é R$ 10 mais cara em Y, custando R$ 50 a mais. Saldo: R$ 10 a favor de Y.\n\n**Por que as outras erram:**\n- **A:** a camisa é mais barata em X, mas olhar um só item ignora as quantidades.\n- **B:** escolhe a loja certa pelo motivo errado; a justificativa precisa ser o total.\n- **C:** o total em X é maior (R$ 730).\n- **E:** os totais diferem (730 e 720).\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 32,
+    "materia": "natureza",
+    "assunto": "diluicao-de-solucoes",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** na diluição, a quantidade de soluto não muda; só o volume aumenta.\n\n1. **Soluto inicial:** 80% de 100 ml $= 0{,}80 \\times 100 = 80$ ml de princípio ativo.\n2. **Volume final para 50%:** $0{,}50 \\cdot V = 80 \\Rightarrow V = 160$ ml.\n3. **Água adicionada:** $160 - 100 = 60$ ml.\n\nAtalho: $C_1 V_1 = C_2 V_2 \\Rightarrow 80 \\times 100 = 50 \\times V_2 \\Rightarrow V_2 = 160$ ml.\n\n**Por que as outras erram:**\n- **A (20 ml):** volume final de 120 ml daria $80/120 \\approx 66{,}7\\%$.\n- **B (40 ml):** 140 ml daria $\\approx 57{,}1\\%$.\n- **D (80 ml):** confunde o volume de soluto com a água a adicionar; 180 ml daria $\\approx 44{,}4\\%$.\n- **E (100 ml):** dobra o volume e leva a 40%, abaixo do pedido.\n\n**Resposta: C.**"
+  },
+  {
+    "numero": 33,
+    "materia": "matematica",
+    "assunto": "conversao-de-unidades",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** passar de metros para quilômetros é dividir por 1.000.\n\n1. **Valor dado:** $1\\ \\text{UA} = 149.597.870.700$ m.\n2. **Divida por 1.000:** a vírgula anda três casas para a esquerda.\n   $$149.597.870.700 \\div 1000 = 149.597.870{,}7\\ \\text{km}$$\n3. **Precisão:** nenhum algarismo foi perdido; o 7 final vira a casa decimal.\n\n**Por que as outras erram:**\n- **B:** mantém o número e só troca a unidade, multiplicando a distância por 1.000.\n- **C:** divide por $10^6$ (três casas a mais que o necessário).\n- **D:** divide por 100 em vez de 1.000 (uma casa a menos).\n- **E:** valor arredondado e alterado, que não corresponde à conversão exata.\n\n**Dica:** lembre que o quilômetro é maior que o metro, então o número em km precisa ser menor. Isso elimina B e D de imediato pela ordem de grandeza (D ainda é maior que o correto).\n\n**Resposta: A.**"
+  },
+  {
+    "numero": 34,
+    "materia": "matematica",
+    "assunto": "probabilidade",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** cada giro cai em um de 10 setores equiprováveis; dois giros geram $10 \\times 10 = 100$ pares igualmente prováveis. O peso de cada par é o produto das quantidades de setores.\n\nSetores: número 1 (1), número 2 (2), número 3 (3), número 4 (4).\n\n1. **Pares iguais (vale o dobro):**\n   - (1,1): $1\\times1=1$ caso, nota 2\n   - (2,2): $2\\times2=4$, nota 4\n   - (3,3): $3\\times3=9$, nota 6\n   - (4,4): $4\\times4=16$, nota 8\n2. **Pares diferentes (vale o produto), contando as duas ordens:**\n   - (1,2): $2\\times2=4$, nota 2\n   - (1,3): $2\\times3=6$, nota 3\n   - (1,4): $2\\times4=8$, nota 4\n   - (2,3): $2\\times6=12$, nota 6\n   - (2,4): $2\\times8=16$, nota 8\n   - (3,4): $2\\times12=24$, nota 12\n3. **Agrupe por nota:** 2 → 5; 3 → 6; 4 → 12; 6 → 21; **8 → 32**; 12 → 24. Total: 100.\n4. A nota 8 é a mais provável ($32\\%$).\n\n**Por que as outras erram:**\n- **A (4):** só 12 casos.\n- **B (6):** 21 casos.\n- **D (12):** 24 casos; é o maior grupo de produtos isolado, mas a regra do dobro faz (4,4) somar ao 8.\n- **E (16):** impossível, pois (4,4) vale o dobro, 8, e não $4\\times4$.\n\n**Resposta: C.**"
+  },
+  {
+    "numero": 35,
+    "materia": "matematica",
+    "assunto": "funcao-quadratica",
+    "gabarito_conferido": true,
+    "flags": [
+      "Esquema do quadrilátero saiu bagunçado no apoio extraído; conferir a figura na renderização."
+    ],
+    "explicacao_detalhada": "**Ideia central:** área do quadrilátero = área do retângulo menos os quatro triângulos dos cantos.\n\n1. **Retângulo:** $20 \\times 14 = 280$ cm².\n2. **Catetos de cada canto:**\n   - Inferior esquerdo: $x$ (até P) e $x$ (até S).\n   - Superior direito: $x$ (até R) e $14-(14-x) = x$ (até Q).\n   - Inferior direito: $20-x$ e $14-x$.\n   - Superior esquerdo: $20-x$ e $14-x$.\n3. **Soma dos triângulos:**\n   - Dois com catetos $x, x$: $2 \\cdot \\frac{x^2}{2} = x^2$.\n   - Dois com catetos $(20-x),(14-x)$: $(20-x)(14-x) = 280 - 34x + x^2$.\n4. **Área:** $A(x) = 280 - x^2 - (280 - 34x + x^2) = -2x^2 + 34x$.\n5. **Máximo:** parábola com $a = -2 < 0$; vértice em $x_v = -\\frac{b}{2a} = -\\frac{34}{-4} = 8{,}5$ cm, dentro de $0 < x < 14$. Área máxima: $A(8{,}5) = 144{,}5$ cm².\n\n**Por que as outras erram:**\n- **A (7):** metade de 14, palpite pelo lado menor; $A(7)=140$.\n- **B (7,5):** $A = 142{,}5$, menor que o máximo.\n- **C (8):** $A = 144$, perto, mas abaixo.\n- **E (9):** $A = 144$, já depois do vértice.\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 36,
+    "materia": "matematica",
+    "assunto": "grandezas-e-medidas",
+    "gabarito_conferido": true,
+    "flags": [
+      "Tabela dos vãos saiu bagunçada no apoio extraído; conferir renderização (Vão 1: 0,70 x 1,00; Vão 2: 0,68 x 1,05; Vão 3: 0,80 x 0,90)."
+    ],
+    "explicacao_detalhada": "**Ideia central:** primeiro eliminar os vãos onde o móvel não cabe com folga; só depois comparar áreas.\n\n1. **Medidas mínimas exigidas:**\n   - Largura: $0{,}65 + 0{,}01 + 0{,}01 = 0{,}67$ m (folga nos dois lados).\n   - Profundidade: $0{,}95 + 0{,}01 = 0{,}96$ m (folga só no fundo).\n2. **Teste cada vão:**\n   - Vão 1: $0{,}70 \\ge 0{,}67$ e $1{,}00 \\ge 0{,}96$ → atende.\n   - Vão 2: $0{,}68 \\ge 0{,}67$ e $1{,}05 \\ge 0{,}96$ → atende.\n   - Vão 3: $0{,}80 \\ge 0{,}67$, mas $0{,}90 < 0{,}96$ → reprovado.\n3. **Compare as áreas dos aprovados:**\n   - Vão 1: $0{,}70 \\times 1{,}00 = 0{,}70$ m²\n   - Vão 2: $0{,}68 \\times 1{,}05 = 0{,}714$ m²\n4. O menor espaço adequado é o Vão 1.\n\n**Por que as outras erram:**\n- **B:** o Vão 2 atende, mas tem área maior.\n- **C:** o Vão 3 não comporta a profundidade; sua área de 0,72 m² nem entra na disputa.\n- **D:** dois vãos são adequados.\n- **E:** o Vão 3 falha e as áreas são diferentes.\n\n**Resposta: A.**"
+  },
+  {
+    "numero": 37,
+    "materia": "humanas",
+    "assunto": "brasil-imperio-escravidao",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** identificar o que contradizia o discurso de \"civilização\" das elites imperiais.\n\n1. **O discurso:** na segunda metade do século XIX, as elites queriam um Brasil \"moderno\", inspirado na Europa: cafés, bailes, teatros, ferrovias, ideias de progresso.\n2. **A realidade:** a economia e a sociedade continuavam apoiadas no trabalho escravo, abolido só em 1888. Para os padrões europeus da época, a escravidão era marca de atraso.\n3. **O descompasso:** modernização de fachada convivendo com uma estrutura escravista. É isso que a alternativa B descreve.\n\n**Por que as outras erram:**\n- **A:** não houve política de inclusão escolar da população negra; ao contrário, havia exclusão.\n- **C:** a Lei de Terras (1850) dificultou o acesso à terra; libertos não receberam lotes.\n- **D:** as religiões de matriz africana eram reprimidas e perseguidas.\n- **E:** o voto era censitário, o que afastava as camadas populares do Parlamento.\n\n**Resposta: B.**"
+  },
+  {
+    "numero": 38,
+    "materia": "humanas",
+    "assunto": "patrimonio-cultural-imaterial",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** reconhecer a transmissão de um saber tradicional entre gerações.\n\n1. **Pistas do texto:** ingredientes específicos, modos de preparo com rituais e conhecimentos \"transmitidos por mulheres negras ao longo do tempo\". No relato, dona Detinha diz que recebeu o saber da mãe de santo, que o recebeu da dela.\n2. **O que isso caracteriza:** um saber coletivo, ligado a identidade, religiosidade e memória afro-brasileira. O ofício das baianas de acarajé é, inclusive, registrado como patrimônio imaterial pelo IPHAN.\n3. **Conclusão:** a prática representa a perpetuação de um saber tradicional enraizado em práticas coletivas.\n\n**Por que as outras erram:**\n- **A:** o texto fala de rituais herdados, sem padronização para turistas.\n- **B:** a tradição aparece preservada, sem redução por globalização.\n- **D:** não há técnica industrial; o preparo é artesanal e ritual.\n- **E:** o texto valoriza a especificidade da prática, sem uniformização.\n\n**Resposta: C.**"
+  },
+  {
+    "numero": 39,
+    "materia": "humanas",
+    "assunto": "racismo-e-mercado-de-trabalho",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** isolar a causa da exclusão pela sequência dos fatos.\n\n1. **Etapa do currículo:** a candidata foi elogiada pela formação e experiência. Logo, escolaridade e qualificação não eram o problema.\n2. **Entrevista por vídeo:** só quando sua aparência ficou visível veio a fala de que clientes \"não estavam acostumados a ser atendidos por mulheres negras em cargos de liderança\".\n3. **Desfecho:** foi excluída, e a vaga ficou com pessoa branca menos qualificada.\n4. **Conclusão:** a decisão foi motivada pela raça da candidata, o que configura preconceito étnico-racial no ambiente de trabalho (no Brasil, prática que pode ser enquadrada como crime de racismo).\n\n**Por que as outras erram:**\n- **A:** a escolaridade foi elogiada.\n- **B:** a qualificação era superior à da contratada.\n- **D:** o gênero aparece na fala, mas o \"exclusivamente\" falha, pois a dimensão racial é explícita.\n- **E:** não há competição regular quando um critério alheio à capacidade decide a vaga.\n\n**Resposta: C.**"
+  },
+  {
+    "numero": 40,
+    "materia": "humanas",
+    "assunto": "clima-e-agricultura",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** relacionar latitude, tipo de clima e cultivo do trigo.\n\n1. **Exigência do trigo segundo o texto:** verões ensolarados e clima temperado.\n2. **Onde estão os grandes produtores:** Rússia, Ucrânia, Canadá e Estados Unidos, todos em médias latitudes do hemisfério norte.\n3. **Ligação:** a latitude é o principal fator que define a zona climática. As médias latitudes concentram o clima temperado, com estações bem definidas e boa insolação no verão, condições ideais para o trigo.\n4. **Conclusão:** o fator que mais contribui é a localização em faixas de latitude com clima propício.\n\n**Por que as outras erram:**\n- **A:** planícies aluviais ajudam localmente, mas o texto não as menciona como critério.\n- **B:** a continentalidade afeta umidade e amplitude térmica, sem explicar sozinha o padrão citado.\n- **C:** correntes oceânicas influenciam regiões costeiras, não o padrão geral desses países.\n- **E:** relevo montanhoso atrapalha lavouras extensas e mecanizadas.\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 41,
+    "materia": "humanas",
+    "assunto": "movimento-operario-seculo-xix",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** entender o efeito dos encontros públicos sobre a participação política no século XIX.\n\n1. **O que o texto descreve:** industrialização e urbanização criaram problemas sociais (jornada, saneamento, educação, pobreza). Trabalhadores, médicos, jornalistas e reformadores passaram a discuti-los em conferências e assembleias.\n2. **Consequências citadas:** circulação de ideias, reivindicações coletivas e pressão sobre governos, na Europa e também na América Latina.\n3. **Ressalva do texto:** esses espaços não acabaram com as desigualdades, mas aproximaram grupos sociais das decisões públicas.\n4. **Conclusão:** ampliaram o envolvimento popular nos debates sobre políticas sociais.\n\n**Por que as outras erram:**\n- **A:** o texto fala de debate livre, sem controle governamental dos discursos.\n- **B:** não há menção a partidos autoritários; a direção é de participação.\n- **C:** o processo descrito fortalece as associações, sem relatar aumento de repressão.\n- **D:** o interesse coletivo cresceu, o oposto da redução.\n\n**Resposta: E.**"
+  },
+  {
+    "numero": 42,
+    "materia": "humanas",
+    "assunto": "questao-indigena-e-territorio",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** escolher a ação que enfrenta diretamente a grilagem.\n\n1. **O problema:** grileiros ocupam terras indígenas com registros falsos. Trata-se de uma disputa fundiária e jurídica.\n2. **A garantia legal:** a Constituição de 1988 (art. 231) reconhece aos indígenas direitos originários sobre as terras que tradicionalmente ocupam e atribui à União o dever de demarcá-las.\n3. **A ação eficaz:** demarcar e reconhecer legalmente o território define seus limites, dá segurança jurídica e base para retirar invasores e anular registros falsos.\n4. **Conclusão:** políticas de demarcação e reconhecimento legal.\n\n**Por que as outras erram:**\n- **A:** urbanização vizinha aumenta a pressão sobre o território.\n- **C:** ecoturismo não resolve a posse da terra e pode expor as comunidades.\n- **D:** maquinário agrícola não enfrenta a ocupação ilegal e ignora os modos de vida tradicionais.\n- **E:** migrar para as cidades esvazia o território e facilita a grilagem.\n\n**Resposta: B.**"
+  },
+  {
+    "numero": 43,
+    "materia": "humanas",
+    "assunto": "identidade-e-cultura-afro-brasileira",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** reconhecer um processo de afirmação de identidade a partir da cultura ancestral.\n\n1. **Ponto de partida:** Onorata viveu dificuldades sociais e econômicas.\n2. **Virada:** no coletivo, retomou indumentárias tradicionais, culinária ancestral e ensinamentos de matriz africana.\n3. **Efeitos:** fortalecimento da autoestima, atuação comunitária e reconhecimento como referência de saber, resistência e pertencimento.\n4. **Continuidade:** ela transmite esses saberes às gerações mais jovens.\n5. **Conclusão:** trata-se de afirmação identitária baseada na valorização de saberes ancestrais. A frase do cartaz, \"eu lembrei quem eu era\", reforça a ideia de reencontro com as raízes.\n\n**Por que as outras erram:**\n- **A:** ela não abandona a identidade afrodescendente; ela a retoma.\n- **B:** as tradições são revividas e difundidas, sem apagamento.\n- **D:** a liderança surge do reconhecimento espontâneo de outras mulheres, sem imposição.\n- **E:** o texto valoriza a especificidade dos saberes, sem padronização.\n\n**Resposta: C.**"
+  },
+  {
+    "numero": 44,
+    "materia": "humanas",
+    "assunto": "sociedade-contemporanea-e-tecnologia",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** interpretar a metáfora do aluno à luz da vida digital.\n\n1. **A metáfora:** a escola seria um \"aplicativo lento\" cujo \"sistema de aprendizado\" demora anos para carregar.\n2. **De onde vem a comparação:** do cotidiano digital, em que tudo é instantâneo: buscas, mensagens, vídeos, entregas.\n3. **O que ela revela:** o jovem transfere para a educação a expectativa de rapidez e eficiência típica da tecnologia. É a chamada cultura do imediatismo.\n4. **O contraponto da professora:** o conhecimento exige tempo e não se \"instala\" como um programa.\n5. **Conclusão:** a crítica expressa a expectativa por agilidade e eficácia na aprendizagem.\n\n**Por que as outras erram:**\n- **A:** a fala não trata de afeto ou relações no ambiente escolar.\n- **B:** não há saudade de métodos antigos; a queixa é contra o ritmo lento.\n- **C:** formação ética e cidadã não aparece na metáfora.\n- **E:** memorização não é mencionada; o foco é a velocidade.\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 45,
+    "materia": "linguagens",
+    "assunto": "arte-releitura-e-cultura-popular",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** entender a releitura como diálogo entre uma obra universal e a cultura local.\n\n1. **A obra de partida:** a *Pietà* de Michelangelo, escultura renascentista em mármore, tema religioso central no Ocidente.\n2. **A recriação:** um artista nordestino usa barro e formas da arte popular da região, imprimindo marcas da cultura brasileira.\n3. **O que acontece:** ele não copia nem rejeita a obra europeia. Ele se apropria do tema e o reelabora com materiais, formas e valores locais.\n4. **Conclusão:** a recriação expressa valores culturais locais em diálogo com um repertório artístico universal.\n\n**Por que as outras erram:**\n- **A:** o objetivo não é competir em técnica com Michelangelo; o barro e as formas populares marcam outra proposta.\n- **B:** não há reprodução fiel; o texto destaca a transformação da cena.\n- **C:** a obra parte justamente de uma referência estrangeira, o oposto de desinteresse.\n- **E:** a releitura aproxima as duas tradições, em vez de distanciá-las.\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 46,
+    "materia": "linguagens",
+    "assunto": "interpretacao-intertextualidade",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** achar o tema comum aos dois textos.\n\n1. **Texto 1 (Luiz Gonzaga):** fala dos \"últimos anos\" do artista (fim da vida) e de como ele eternizou sons, paisagens e sentimentos pela arte (permanência).\n2. **Texto 2 (Garrincha):** fala da \"ausência\" sentida e de um talento \"que o tempo não apaga, mas a vida levou\" (vida que passa, memória que fica).\n3. **A oposição comum:** a vida é passageira, mas a obra e a lembrança permanecem.\n4. **Conclusão:** o ponto de convergência é a reflexão sobre a efemeridade da vida e a permanência da memória.\n\n**Por que as outras erram:**\n- **A:** os textos celebram os ídolos; não denunciam esquecimento.\n- **B:** a cultura nordestina aparece só no texto 1, e o futebol só no texto 2.\n- **C:** o estilo artístico não é o foco; Garrincha nem é artista.\n- **E:** a linguagem poética é um recurso, não o tema que os une.\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 47,
+    "materia": "linguagens",
+    "assunto": "linguagem-poetica",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** identificar como o fragmento define o fazer poético.\n\n1. **Palavras-chave:** o poeta \"escolhe palavras, ritmos e imagens com precisão\", buscando entre \"infinitas possibilidades\" as que \"melhor expressam\" um sentimento ou ideia.\n2. **A metáfora:** \"decifrar um mapa do invisível\" sugere trabalho atento e consciente para dar forma ao que não se vê.\n3. **Síntese:** escrever poesia é selecionar de modo intencional e cuidadoso os elementos da linguagem para produzir sentido.\n4. **Conclusão:** alternativa C.\n\n**Por que as outras erram:**\n- **A:** o texto fala de ritmo, mas não impõe métrica clássica nem rima.\n- **B:** \"com precisão\" contradiz a ideia de criação espontânea e sem estrutura.\n- **D:** imagens e ritmos são justamente elementos simbólicos e sonoros valorizados.\n- **E:** buscar entre \"infinitas possibilidades\" vai além da linguagem cotidiana.\n\n**Resposta: C.**"
+  },
+  {
+    "numero": 48,
+    "materia": "linguagens",
+    "assunto": "funcoes-da-linguagem",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** reconhecer a função da linguagem centrada na própria mensagem.\n\n1. **O sentido de \"porta\":** no texto, a porta não é o objeto físico. Ela representa decisões, desafios e oportunidades que levam a \"novos caminhos\". É uma metáfora.\n2. **A organização:** frases curtas e paralelas (\"Algumas portas... Outras...\"), gradação (\"coragem, paciência e um pouco de fé\") e fechamento em tom de reflexão.\n3. **Função poética:** ocorre quando a mensagem chama atenção para sua própria construção, com escolhas expressivas, figuras de linguagem e cuidado formal. Esse é o caso.\n4. **Conclusão:** predomina a função poética.\n\n**Por que as outras erram:**\n- **A (referencial):** não há explicação técnica sobre fechaduras ou dobradiças.\n- **B (metalinguística):** o texto não define a palavra \"porta\"; ele a usa figuradamente.\n- **C (conativa):** não há instruções nem apelo direto ao leitor para abrir portas.\n- **E (fática):** não há teste do canal de comunicação, como \"alô\" ou \"está me ouvindo?\".\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 49,
+    "materia": "linguagens",
+    "assunto": "naturalismo",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** associar a animalização do personagem ao Naturalismo.\n\n1. **O que o trecho mostra:** um personagem dominado por impulsos sexuais incontroláveis, comparado a animais, com a natureza vencendo a razão.\n2. **A escola literária:** *O Cortiço* (1890), de Aluísio Azevedo, é o principal romance naturalista brasileiro.\n3. **A visão de ser humano no Naturalismo:** influenciada pelo cientificismo (Darwin, Taine), vê o indivíduo como produto da hereditariedade, da biologia e do meio social. A zoomorfização é um recurso típico para mostrar isso.\n4. **Conclusão:** trata-se de uma perspectiva determinista.\n\n**Por que as outras erram:**\n- **A:** natureza idealizada e pureza emocional são traços do Romantismo.\n- **B:** o subjetivismo como guia de conduta também é romântico; no Naturalismo o indivíduo é determinado por forças externas.\n- **C:** culto da forma sem preocupação social lembra o Parnasianismo; o Naturalismo é marcado pela crítica social.\n- **E:** o Naturalismo expõe os instintos de forma objetiva, sem pregar moral.\n\n**Resposta: D.**"
+  },
+  {
+    "numero": 50,
+    "materia": "linguagens",
+    "assunto": "interpretacao-identidade",
+    "gabarito_conferido": true,
+    "flags": [],
+    "explicacao_detalhada": "**Ideia central:** seguir a progressão do relato até a mensagem principal.\n\n1. **Ponto de partida:** a atriz enfrentou pobreza extrema e preconceito racial.\n2. **Virada:** a reconexão com suas raízes africanas é descrita como \"passo fundamental\" para o fortalecimento pessoal e a construção da identidade.\n3. **Resultado:** esse fortalecimento permitiu que ela enfrentasse uma indústria marcada por exclusão e desigualdade.\n4. **Conclusão:** a mensagem central é o fortalecimento identitário promovido pela valorização cultural das raízes.\n\n**Por que as outras erram:**\n- **A:** ela se reconecta com as origens; não as nega.\n- **B:** o texto não menciona mérito acadêmico como caminho do reconhecimento.\n- **D:** ela enfrenta a indústria e permanece nela; não abandona a carreira.\n- **E:** o fortalecimento vem de dentro, pela identidade, e não da aprovação de outros.\n\n**Resposta: C.**"
+  }
+]

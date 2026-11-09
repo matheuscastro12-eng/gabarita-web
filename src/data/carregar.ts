@@ -8,6 +8,7 @@
 import { arquivoQuestoesSchema, manifestoSchema, type Questao } from "./tipos";
 import manifestoJson from "./provas/manifesto.json";
 import { anos, carregarAno, usaFixture } from "./provas";
+import { carregarAposta, ehIdAposta } from "./apostas";
 
 const manifesto = manifestoSchema.parse(manifestoJson);
 // `anos` é uma tupla literal gerada; alargar evita comparações "impossíveis" no TS.
@@ -48,8 +49,11 @@ export function carregarQuestoes(): Promise<Questao[]> {
   return cache;
 }
 
-/** Uma questão pelo id (ex.: "enem-2023-143"), ou undefined se não existir. */
+/** Uma questão pelo id (ex.: "enem-2023-143" ou "apostas-2026-07"), ou undefined se não existir. */
 export async function carregarQuestao(id: string): Promise<Questao | undefined> {
+  // Apostas (não oficiais) só são achadas pelo id: o tutor funciona nelas, mas elas não
+  // entram em carregarQuestoes() e, portanto, em nenhuma estatística oficial.
+  if (ehIdAposta(id)) return carregarAposta(id);
   if (!porId) {
     const questoes = await carregarQuestoes();
     porId = new Map(questoes.map((q) => [q.id, q]));

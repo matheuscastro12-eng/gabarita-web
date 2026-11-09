@@ -1,0 +1,224 @@
+[
+ {
+  "numero": 1,
+  "materia": "natureza",
+  "assunto": "metabolismo-energetico",
+  "gabarito_conferido": true,
+  "flags": [
+   "Enunciado ambíguo: pede processo 'possível logo após' o uso de ATP, mas B e E tratam do ciclo de Krebs; a distinção entre elas depende de leitura fina e a premissa evolutiva (Krebs logo após o ATP) é discutível."
+  ],
+  "explicacao_detalhada": "**Ideia central:** julgar qual descrição de via metabólica é bioquimicamente correta.\n\n1. **Glicólise (A):** a fase preparatória gasta 2 ATP por glicose e depois produz 4, saldo de $+2$. Logo, ela não ocorre \"na ausência de ATP\".\n2. **Fermentação (C):** começa pela glicólise, portanto depende do ATP investido no início.\n3. **Fotossíntese (D):** o ciclo de Calvin consome ATP (e NADPH) para fixar o CO₂. Depende do ATP, sim.\n4. **Ciclo de Krebs (B x E):** o ciclo oxida o acetil-CoA a CO₂ e gera NADH, FADH₂ e GTP/ATP. Ele não consome ATP como fonte de energia, então chamá-lo de \"dependente da energia do ATP\" (B) inverte o papel da via.\n5. Sobra a descrição fiel: o ciclo de Krebs oxida acetil-CoA para gerar energia, que depois a célula usa na forma de ATP.\n\n**Distratores:**\n- A: a glicólise investe ATP logo no começo.\n- B: o Krebs produz energia, e o ATP não é o que move a via.\n- C: a fermentação inclui a glicólise, que usa ATP.\n- D: o ciclo de Calvin consome ATP.\n\n**Resposta: E.**"
+ },
+ {
+  "numero": 2,
+  "materia": "matematica",
+  "assunto": "probabilidade",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** Arthur vence só se o maior dos seus dois dados for estritamente maior que o dado de João.\n\n1. Espaço amostral: $6^3 = 216$ resultados equiprováveis.\n2. Fixe o valor $j$ de João. O máximo de dois dados é $\\le j$ em $j^2$ dos 36 pares. Então Arthur vence em $36 - j^2$ pares.\n3. Some para $j = 1$ a $6$:\n$35 + 32 + 27 + 20 + 11 + 0 = 125$.\n4. $P(\\text{Arthur}) = \\dfrac{125}{216} \\approx 58\\%$, e João fica com $\\dfrac{91}{216}$.\n5. Repare que o empate a favor de João pesa: sem ele, a vantagem de Arthur seria maior.\n\n**Distratores:**\n- A (81/216): conta errada dos casos de Arthur.\n- B (45/216): não corresponde a João, que tem 91/216.\n- C (100/216): esquece parte dos casos favoráveis.\n- D (35/216): é só a parcela de $j = 1$, ou vem de usar a soma no lugar do máximo.\n\n**Resposta: E.**"
+ },
+ {
+  "numero": 3,
+  "materia": "matematica",
+  "assunto": "probabilidade",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** num sorteio sem reposição, as probabilidades das etapas se multiplicam.\n\n1. O 1º funcionário erra: $\\frac{4}{5}$.\n2. O 2º erra entre as 4 chaves que sobraram: $\\frac{3}{4}$.\n3. O 3º acerta entre as 3 restantes: $\\frac{1}{3}$.\n4. Multiplicando: $\\frac{4}{5}\\cdot\\frac{3}{4}\\cdot\\frac{1}{3} = \\frac{12}{60} = \\frac{1}{5}$.\n5. **Atalho:** a chave certa tem a mesma chance de cair em qualquer uma das 5 posições da fila. Então cada posição tem $\\frac{1}{5}$.\n\n**Distratores:**\n- B (4/5): é a chance de o 1º errar, não do evento completo.\n- C (1/4): é a chance condicional de o 2º acertar depois que o 1º errou.\n- D (3/5) e E (2/5): somam ou acumulam posições sem critério.\n\n**Resposta: A.**"
+ },
+ {
+  "numero": 4,
+  "materia": "natureza",
+  "assunto": "tensoativos-e-oxidacao",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** cada agente tem um papel. O tensoativo solubiliza e o peróxido oxida.\n\n1. **Tensoativo:** a molécula é anfifílica, com cauda apolar e cabeça polar. As caudas envolvem o hidrocarboneto (apolar) e formam **micelas**, que se dispersam na água e saem do solo junto com ela.\n2. **Peróxido de hidrogênio (H₂O₂):** é **oxidante**. Ele ataca as cadeias de hidrocarboneto e as quebra em compostos menores e menos nocivos, chegando no limite a CO₂ e H₂O.\n3. Juntando: as micelas tornam o contaminante solúvel e o H₂O₂ oxida as cadeias. É o que diz a alternativa C.\n\n**Distratores:**\n- A: chama o H₂O₂ de redutor, quando ele é oxidante.\n- B: inverte os papéis, pondo o tensoativo como oxidante e o peróxido formando micelas.\n- D: a micela solubiliza o contaminante (não serve de \"barreira\"), e o H₂O₂ não age como solvente.\n- E: o tensoativo não é redutor, e o H₂O₂ não é solvente.\n\n**Resposta: C.**"
+ },
+ {
+  "numero": 5,
+  "materia": "matematica",
+  "assunto": "principio-multiplicativo",
+  "gabarito_conferido": true,
+  "flags": [
+   "Alternativas C e E são idênticas (4⁶ × 10²) no material de origem."
+  ],
+  "explicacao_detalhada": "**Ideia central:** pelo princípio multiplicativo, multiplique o número de opções de cada posição.\n\n1. Posições 1 a 3 são fixas: fator $1$.\n2. Posições 4 a 9 são 6 posições com 4 opções cada: $4^6$.\n3. Posições 10 a 12 são 3 posições com 10 opções cada: $10^3$.\n4. A posição 13 é o dígito verificador, calculado a partir dos anteriores: fator $1$.\n5. Total: $1\\cdot 4^6 \\cdot 10^3 \\cdot 1 = 4^6 \\times 10^3 = 4\\,096\\,000$ códigos.\n\n**Distratores:**\n- B ($4^5\\times10^4$): passa uma posição do grupo restrito para o grupo amplo.\n- C e E ($4^6\\times10^2$, repetidas): esquecem uma das três posições livres.\n- D ($4^7\\times10^3$): conta uma posição restrita a mais.\n\n**Resposta: A.**"
+ },
+ {
+  "numero": 6,
+  "materia": "natureza",
+  "assunto": "calorimetria",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** a energia cinética do carro vira o calor sensível absorvido pelo aço.\n\n1. **Energia cinética:**\n$E_c = \\dfrac{m v^2}{2} = \\dfrac{1500 \\cdot 20^2}{2} = \\dfrac{1500\\cdot400}{2} = 300\\,000\\ \\text{J}$.\n2. **Variação de temperatura:** $\\Delta T = 120 - 20 = 100\\ ^\\circ\\text{C}$.\n3. **Calor sensível:** $Q = m_{aço}\\, c\\, \\Delta T$.\n4. **Igualando:** $300\\,000 = m_{aço}\\cdot 460 \\cdot 100 = 46\\,000\\, m_{aço}$, então\n$m_{aço} = \\dfrac{300\\,000}{46\\,000} \\approx 6{,}52\\ \\text{kg}$.\n\n**Distratores:**\n- A: a energia de 150 000 J é a metade da correta.\n- C: a energia está certa, mas a massa dobrou (13,04 kg).\n- D e E: usam $E_c = m v^2$ (600 000 J), esquecendo o ½. Mesmo com essa energia a massa daria 13,04 kg, então 3,26 kg e 6,52 kg também não fecham.\n\n**Resposta: B.**"
+ },
+ {
+  "numero": 7,
+  "materia": "natureza",
+  "assunto": "forcas-intermoleculares",
+  "gabarito_conferido": true,
+  "flags": [
+   "O apoio afirma que a sublimação 'envolve a ruptura de ligações químicas' e cita 'decomposição' do gelo seco; isso é conceitualmente impreciso (sublimação rompe só interações intermoleculares)."
+  ],
+  "explicacao_detalhada": "**Ideia central:** mudança de estado físico não quebra a molécula. Ela só afasta as moléculas umas das outras.\n\n1. Na sublimação, $\\text{CO}_2(s) \\to \\text{CO}_2(g)$. A molécula O=C=O continua inteira.\n2. O que se rompe é a atração **entre** as moléculas.\n3. O CO₂ é linear e apolar, porque os dipolos das duas ligações C=O se anulam. Entre moléculas apolares atuam apenas as **forças de dispersão de London**, que são forças de Van der Waals.\n4. Essas forças são fracas, e por isso o gelo seco sublima à pressão ambiente, a cerca de $-78\\ ^\\circ\\text{C}$.\n5. Observação: o texto fala em \"ruptura de ligações químicas\", mas o correto é falar em interações intermoleculares.\n\n**Distratores:**\n- A: o CO₂ é molecular e não tem ligações iônicas.\n- B: romper as ligações covalentes destruiria a molécula, o que não acontece na mudança de estado.\n- C: não existe ligação metálica nem rede de carbono no gelo seco.\n- E: o CO₂ não tem hidrogênio, então não forma ligação de hidrogênio.\n\n**Resposta: D.**"
+ },
+ {
+  "numero": 8,
+  "materia": "linguagens",
+  "assunto": "estrangeirismos",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** o aportuguesamento de estrangeirismos.\n\n1. \"Mozzarella\" chegou do italiano com um som (o \"zz\", pronunciado /ts/) e uma grafia que o português não usa.\n2. Quando uma palavra estrangeira entra na língua, os falantes adaptam a pronúncia ao sistema sonoro do português e a escrita às regras ortográficas locais.\n3. Há mais de um jeito de registrar o som adaptado (ç, ss, z). Daí a convivência de \"muçarela\", \"mussarela\" e \"mozarela\".\n4. A variação nasce, portanto, da adaptação fonética e ortográfica do empréstimo. É a alternativa A.\n\n**Distratores:**\n- B: não houve mediação do espanhol nessa entrada.\n- C: a grafia não muda conforme o tipo de queijo.\n- D: ortografia não depende de \"legislação específica\" para cada palavra.\n- E: a pronúncia é praticamente a mesma no país inteiro, e a variação está na escrita.\n\n**Resposta: A.**"
+ },
+ {
+  "numero": 9,
+  "materia": "natureza",
+  "assunto": "enzimas-e-ph",
+  "gabarito_conferido": true,
+  "flags": [
+   "Questão tem só 4 alternativas (A a D)."
+  ],
+  "explicacao_detalhada": "**Ideia central:** enzimas têm um pH ótimo. Afastar o pH desse valor reduz a atividade delas.\n\n1. O texto diz que as enzimas do escurecimento (polifenoloxidases) funcionam melhor com pH **próximo do neutro**.\n2. Para frear a reação, basta tirar o meio dessa faixa.\n3. O suco de limão tem ácido cítrico e baixa o pH da superfície da fruta, para cerca de 2 a 3. Com isso a enzima perde atividade.\n4. Bônus: o limão também tem vitamina C (ácido ascórbico), que é antioxidante e reforça o efeito.\n\n**Distratores:**\n- B: o mel tem algum efeito antioxidante, mas a pergunta pede algo que interfira na enzima, e o mecanismo dado no texto é o pH.\n- C: a própria alternativa diz que o sal cria ambiente \"favorável\" à enzima, o contrário do objetivo.\n- D: a água só dilui e não muda o pH de forma relevante.\n\n**Resposta: A.**"
+ },
+ {
+  "numero": 10,
+  "materia": "natureza",
+  "assunto": "unidades-de-medida",
+  "gabarito_conferido": true,
+  "flags": [
+   "Alternativa E ('fluxo de informações por segundo') é semanticamente próxima de C; a distinção depende de considerar E redundante, o que torna a questão discutível."
+  ],
+  "explicacao_detalhada": "**Ideia central:** identificar qual grandeza a unidade \"MB/s\" mede.\n\n1. MB (megabyte) é **quantidade de dados**.\n2. s (segundo) é **tempo**.\n3. Quantidade de dados dividida por tempo é a **taxa de transferência de dados**, o nome técnico usado em redes e armazenamento.\n4. Aplicação: $5\\ \\text{GB} \\approx 5000\\ \\text{MB}$, e $5000 \\div 456 \\approx 11\\ \\text{s}$ de cópia.\n\n**Distratores:**\n- A: \"velocidade por segundo\" seria uma aceleração, ideia de cinemática.\n- B: \"distância por segundo\" é velocidade, e MB não é distância.\n- D: volume é capacidade de armazenamento, não ritmo de transferência.\n- E: \"fluxo\" já é uma quantidade por tempo, então \"fluxo por segundo\" é redundante e não é o nome técnico da grandeza.\n\n**Resposta: C.**"
+ },
+ {
+  "numero": 11,
+  "materia": "matematica",
+  "assunto": "porcentagem",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** porcentagem é a razão por 100, e o dado está por 1000.\n\n1. A taxa é $\\dfrac{15{,}6}{1000}$.\n2. Para passar a \"por 100\", divida numerador e denominador por 10:\n$\\dfrac{15{,}6}{1000} = \\dfrac{1{,}56}{100} = 1{,}56\\%$.\n3. Conferindo pela forma decimal: $15{,}6 \\div 1000 = 0{,}0156$, e $0{,}0156 \\times 100 = 1{,}56\\%$.\n\n**Distratores:**\n- A (0,0156%): é o decimal com o símbolo de % colado, sem multiplicar por 100.\n- C (15,6%): troca \"por mil\" por \"por cem\" e infla a taxa 10 vezes.\n- D (1,56‰): está em per mil e ainda erra o valor, que seria 15,6‰.\n- E (0,156%): divide por 10 uma vez a mais.\n\n**Resposta: B.**"
+ },
+ {
+  "numero": 12,
+  "materia": "matematica",
+  "assunto": "perimetro",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** uma volta é o perímetro do retângulo. Depois é só multiplicar e converter.\n\n1. Dimensões mínimas: 90 m × 45 m.\n2. Perímetro: $2(90 + 45) = 2 \\cdot 135 = 270\\ \\text{m}$.\n3. 12 voltas: $12 \\cdot 270 = 3240\\ \\text{m}$.\n4. Conversão: $3240 \\div 1000 = 3{,}24\\ \\text{km}$.\n\n**Distratores:**\n- A (1,8 km): $12 \\cdot 150$, um perímetro que não corresponde às medidas do campo.\n- B (2,7 km): equivale a 10 voltas, ou a 270 lido como 2,7.\n- D (4,5 km) e E (5,4 km): usam medidas máximas ou misturam as dimensões.\n\n**Resposta: C.**"
+ },
+ {
+  "numero": 13,
+  "materia": "matematica",
+  "assunto": "operacoes-com-tabelas",
+  "gabarito_conferido": true,
+  "flags": [
+   "Comando confuso: pede 'a configuração que gerará a menor diferença de preço', mas as alternativas comparam qual configuração custa mais; leitura exige interpretação."
+  ],
+  "explicacao_detalhada": "**Ideia central:** calcular o total de cada configuração e comparar.\n\n1. **Cláudia 1º e Nelson 2º:**\n - Cláudia (mulher, 23 anos): R\\$ 300.\n - Nelson (homem, 35 anos) como 2º nome: $450 + 100 = 550$.\n - Total: $300 + 550 = \\text{R\\$ } 850$.\n2. **Nelson 1º e Cláudia 2º:**\n - Nelson: R\\$ 450.\n - Cláudia como 2º nome: $300 + 200 = 500$.\n - Total: $450 + 500 = \\text{R\\$ } 950$.\n3. **Diferença:** $950 - 850 = \\text{R\\$ } 100$. A configuração 2, com Nelson primeiro, sai R\\$ 100 mais cara.\n4. Conclusão prática: o casal economiza colocando Cláudia como primeiro nome.\n\n**Distratores:**\n- A e B: atribuem o valor maior à configuração com Cláudia primeiro, que na verdade é a mais barata.\n- C: a configuração está certa, mas a diferença de R\\$ 200 vem de somar o acréscimo de forma errada.\n- E: as configurações custam valores diferentes.\n\n**Resposta: D.**"
+ },
+ {
+  "numero": 14,
+  "materia": "natureza",
+  "assunto": "estequiometria",
+  "gabarito_conferido": true,
+  "flags": [
+   "As equações químicas não são fornecidas no enunciado; a proporção 2 NH₃ : 1 Na₂CO₃ e a massa molar do Na₂CO₃ (106 g/mol) precisam ser supostas pelo aluno."
+  ],
+  "explicacao_detalhada": "**Ideia central:** mol de amônia → mol de carbonato → massa teórica → aplicar o rendimento.\n\n1. **Mols de NH₃:** $\\dfrac{340}{17} = 20\\ \\text{mol}$.\n2. **Proporção global:** no processo Solvay, cada NH₃ gera um NaHCO₃, e $2\\,\\text{NaHCO}_3 \\to \\text{Na}_2\\text{CO}_3 + \\text{CO}_2 + \\text{H}_2\\text{O}$. Por isso a 1ª reação é multiplicada por 2, e a relação fica $2\\ \\text{NH}_3 : 1\\ \\text{Na}_2\\text{CO}_3$.\n3. **Mols de Na₂CO₃:** $20 \\div 2 = 10\\ \\text{mol}$.\n4. **Massa molar:** $2(23) + 12 + 3(16) = 106\\ \\text{g/mol}$.\n5. **Massa teórica:** $10 \\cdot 106 = 1060\\ \\text{g}$.\n6. **Rendimento de 90%:** $1060 \\cdot 0{,}90 = 954\\ \\text{g}$.\n\n**Distratores:**\n- A (900 g): aplica 90% sobre um valor arredondado (1000 g).\n- C (1020 g): conta sem base estequiométrica.\n- D (1060 g): é o valor teórico, esquecendo o rendimento.\n- E (1100 g): fica acima do teórico, o que é impossível.\n\n**Resposta: B.**"
+ },
+ {
+  "numero": 15,
+  "materia": "matematica",
+  "assunto": "mmc",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** a menor altura comum às duas colunas é o MMC das espessuras.\n\n1. Trabalhe em centésimos de mm: 2,85 mm vira 285 e 1,95 mm vira 195.\n2. Fatore: $285 = 3\\cdot5\\cdot19$ e $195 = 3\\cdot5\\cdot13$.\n3. MMC: $3\\cdot5\\cdot13\\cdot19 = 3705$, ou seja, **37,05 mm**.\n4. Moedas de R\\$ 1: $37{,}05 \\div 2{,}85 = 13$ moedas, R\\$ 13,00.\n5. Moedas de R\\$ 0,50: $37{,}05 \\div 1{,}95 = 19$ moedas, $19 \\cdot 0{,}50 = \\text{R\\$ } 9{,}50$.\n6. Total: $13 + 9{,}50 = \\text{R\\$ } 22{,}50$.\n\n**Distratores:**\n- A (R\\$ 20,00): não corresponde a nenhuma altura comum.\n- C (R\\$ 25,00): costuma vir de contar as duas colunas com o mesmo valor de moeda.\n- D (R\\$ 30,00) e E (R\\$ 35,00): seriam alturas comuns maiores, ou contas erradas. A pergunta pede o mínimo.\n\n**Resposta: B.**"
+ },
+ {
+  "numero": 16,
+  "materia": "matematica",
+  "assunto": "proporcionalidade",
+  "gabarito_conferido": true,
+  "flags": [
+   "Enunciado inconsistente: renda mensal atual (4 × 400 = R$ 1.600) já supera a meta de R$ 792/mês; só se chega à alternativa C lendo R$ 792 como meta semanal, e mesmo assim 392 ÷ 12 × 4 ≈ 130,7 h (não exato). Questão defeituosa."
+  ],
+  "explicacao_detalhada": "**Ideia central:** achar o valor da hora e a quantidade de horas extras que falta. Atenção: ver aviso, porque os dados do enunciado não fecham de forma literal.\n\nSeguindo a leitura do autor:\n1. **Valor da hora:** o autor divide 400 pelas 50 horas trabalhadas e chega a R\\$ 8,00 por hora. A hora extra, com 50% de acréscimo, vale $8 \\cdot 1{,}5 = \\text{R\\$ } 12{,}00$.\n2. **Meta:** para haver algo a complementar, o autor trata os R\\$ 792 como meta **semanal**. Faltam $792 - 400 = \\text{R\\$ } 392$ por semana.\n3. **Horas extras por semana:** $392 \\div 12 \\approx 32{,}7$ h.\n4. **No mês (4 semanas):** $32{,}7 \\cdot 4 \\approx 130$ horas extras adicionais.\n\n**Por que os dados não fecham:** lida ao pé da letra, a renda mensal de Maria já é $4 \\cdot 400 = \\text{R\\$ } 1600$, maior que a \"meta\" de R\\$ 792. Além disso, a conta não dá um número inteiro (≈ 130,7 h).\n\n**Distratores:** 10, 15, 30 e 100 horas não saem de nenhuma combinação coerente dos dados.\n\n**Resposta (do autor): C.**"
+ },
+ {
+  "numero": 17,
+  "materia": "humanas",
+  "assunto": "urbanizacao-e-enchentes",
+  "gabarito_conferido": true,
+  "flags": [
+   "O apoio não traz o diagnóstico técnico citado; a resposta depende só de conhecimento prévio."
+  ],
+  "explicacao_detalhada": "**Ideia central:** a impermeabilização do solo urbano.\n\n1. Num terreno natural, boa parte da chuva **infiltra** no solo e abastece o lençol freático.\n2. Com asfalto, concreto e ocupação desordenada, inclusive das várzeas dos rios, a água não infiltra e **escoa pela superfície**.\n3. O escoamento é rápido e volumoso. Ele chega de uma vez aos rios canalizados e às galerias, que transbordam.\n4. Em São Paulo, isso se soma à ocupação das planícies de inundação dos rios Tietê e Pinheiros. O resultado são enchentes recorrentes.\n\n**Distratores:**\n- A: parques e lagos de retenção ajudam a reduzir as enchentes, não as causam.\n- C: a mata ciliar protege as margens e retém água.\n- D: vegetação na várzea favorece a infiltração.\n- E: diques e barreiras são medidas de contenção, não causas do problema.\n\n**Resposta: B.**"
+ },
+ {
+  "numero": 18,
+  "materia": "natureza",
+  "assunto": "chuva-acida",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** a chuva ácida ligada ao diesel vem sobretudo do **enxofre**.\n\n1. O diesel fóssil contém enxofre. Na queima: $\\text{S} + \\text{O}_2 \\to \\text{SO}_2$.\n2. Na atmosfera: $\\text{SO}_2 \\to \\text{SO}_3$, e $\\text{SO}_3 + \\text{H}_2\\text{O} \\to \\text{H}_2\\text{SO}_4$, que é ácido forte.\n3. O biodiesel é feito de óleos vegetais e gorduras e é praticamente **isento de enxofre**. A redução de emissão chega a cerca de 98%.\n4. Com menos SO₂, forma-se menos ácido sulfúrico, e a contribuição para a chuva ácida cai.\n\n**Distratores:**\n- A: ser renovável tem a ver com o ciclo do carbono e não explica a queda do enxofre.\n- C: inverte o fato, pois o biodiesel tem menos enxofre.\n- D: a produção e a queima do biodiesel ainda emitem poluentes (NOx, CO₂).\n- E: o biodiesel não tem papel de neutralizar a acidez.\n\n**Resposta: B.**"
+ },
+ {
+  "numero": 19,
+  "materia": "matematica",
+  "assunto": "area-do-circulo",
+  "gabarito_conferido": true,
+  "flags": [
+   "Enunciado confuso: chama de 'área estimada' a fração A/B = 256/81 (coeficiente de R²); a diferença real com π (3,14159) é ≈ 0,019, não 0,0205 (que usa π = 3,14). Classificação não muda."
+  ],
+  "explicacao_detalhada": "**Ideia central:** comparar o coeficiente de $R^2$ da área do quadrado com $\\pi$.\n\n1. Lado do quadrado: $\\frac{16}{9}R$.\n2. Área do quadrado: $\\left(\\frac{16}{9}R\\right)^2 = \\frac{256}{81}R^2$.\n3. Área do círculo: $\\pi R^2$. Basta comparar $\\frac{256}{81}$ com $\\pi$.\n4. $\\frac{256}{81} \\approx 3{,}1605$.\n5. Diferença absoluta: $|3{,}1605 - 3{,}14| = 0{,}0205$. Com $\\pi = 3{,}1416$, a diferença seria cerca de 0,019, e a conclusão não muda.\n6. Como $0{,}0205 < 0{,}5$, o método é **satisfatório**. É a antiga aproximação egípcia do papiro de Rhind.\n\n**Distratores:**\n- B, C e E: dizem \"insatisfatório\" e usam diferenças (1,2; 0,6; 0,7) que não saem da conta. Por exemplo, quem esquece de elevar ao quadrado obtém $16/9 \\approx 1{,}78$, uma diferença de 1,36.\n- D: a classificação está certa, mas o valor 0,3 está errado.\n\n**Resposta: A.**"
+ },
+ {
+  "numero": 20,
+  "materia": "matematica",
+  "assunto": "geometria-plana",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** reconhecer como a área depende do lado.\n\n1. Área do triângulo equilátero: $A = \\dfrac{\\sqrt{3}}{4}\\, l^2$.\n2. O fator $\\frac{\\sqrt3}{4}$ é constante, então $A = k\\, l^2$.\n3. Isso é a definição de **proporcionalidade direta com o quadrado** de $l$.\n4. Teste: se $l$ dobra, $A$ multiplica por $2^2 = 4$. Se $l$ triplica, $A$ multiplica por 9.\n5. É isso que explica a chapa acabar antes do previsto: um tampo \"um pouco maior\" no lado pede bem mais material.\n\n**Distratores:**\n- B: \"inversamente\" diria que a área diminui quando o lado aumenta, o que é falso.\n- C: a raiz quadrada subestima o crescimento.\n- D: \"inversamente\" e raiz, dois erros ao mesmo tempo.\n- E: proporcionalidade simples valeria para o perímetro ($3l$), não para a área.\n\n**Resposta: A.**"
+ },
+ {
+  "numero": 21,
+  "materia": "matematica",
+  "assunto": "equacao-do-segundo-grau",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** montar a equação a partir da diferença entre as parcelas.\n\n1. Parcela da opção 1: $\\frac{60000}{N}$. Parcela da opção 2: $\\frac{60000}{N+6}$.\n2. Condição: $\\dfrac{60000}{N} - \\dfrac{60000}{N+6} = 500$.\n3. Multiplique tudo por $N(N+6)$:\n$60000(N+6) - 60000N = 500N(N+6)$, logo $360000 = 500N^2 + 3000N$.\n4. Divida por 500: $N^2 + 6N - 720 = 0$.\n5. Discriminante: $\\Delta = 36 + 2880 = 2916 = 54^2$.\n6. Raiz positiva: $N = \\dfrac{-6 + 54}{2} = 24$.\n7. Verificação: $60000/24 = 2500$ e $60000/30 = 2000$. A diferença é exatamente 500.\n\n**Distratores:**\n- A (12): dá parcelas de 5000 e 3333, diferença de 1667.\n- B (18): diferença de 833.\n- D (30): é $N+6$, o número de parcelas da opção 2.\n- E (36): diferença de 238.\n\n**Resposta: C.**"
+ },
+ {
+  "numero": 22,
+  "materia": "linguagens",
+  "assunto": "linguagem-literaria",
+  "gabarito_conferido": true,
+  "flags": [
+   "Citação de Os Sertões está deturpada no material: a frase repete a mesma oração duas vezes ('a caatinga estende sobre a terra as ramagens de espinhos'), o que não corresponde ao texto original."
+  ],
+  "explicacao_detalhada": "**Ideia central:** identificar a função poética e os recursos expressivos do trecho.\n\n1. **Comparação:** \"como um cilício dilacerador\". O cilício é um instrumento de penitência, e a imagem associa a caatinga ao sofrimento.\n2. **Personificação:** a caatinga \"estende\" suas ramagens, como se agisse por vontade própria.\n3. **Vocabulário raro e expressivo:** \"cilício\", \"dilacerador\".\n4. **Ritmo e repetição:** a frase é construída para produzir efeito estético, e não só para informar.\n5. Quando o foco está no **modo de dizer**, a linguagem é **literária**. Euclides da Cunha mistura observação e arte, e esse traço consagrou *Os Sertões*.\n\n**Distratores:**\n- B (coloquial): o registro é elevado, distante da fala do dia a dia.\n- C (científica): a linguagem científica é denotativa e objetiva, sem metáforas.\n- D (técnica): a técnica usa termos precisos de uma área, sem carga expressiva.\n- E (jornalística): o jornalismo prioriza informar o fato de forma direta.\n\n**Resposta: A.**"
+ },
+ {
+  "numero": 23,
+  "materia": "humanas",
+  "assunto": "doutrina-monroe",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** \"A América para os americanos\".\n\n1. **Contexto (1823):** as colônias espanholas tinham acabado de se tornar independentes, e a Santa Aliança europeia ameaçava restaurar o domínio colonial.\n2. **Mensagem de Monroe:** o continente americano estava fechado a **novas colonizações** europeias.\n3. Qualquer **interferência europeia** nos assuntos dos países americanos seria vista como ameaça aos EUA.\n4. Em troca, os EUA não interviriam nos assuntos internos da Europa.\n5. Na prática, a doutrina abriu caminho para a hegemonia dos EUA no continente. Mais tarde, o Corolário Roosevelt reforçou esse uso.\n\n**Distratores:**\n- A: inverte o sentido, já que a doutrina rejeitava a intervenção europeia.\n- B: a doutrina não prometia libertar as colônias que ainda existiam, apenas vetava novas.\n- D: ela se opunha à colonização europeia.\n- E: não houve aliança militar com a Europa. Ao contrário, a doutrina buscava afastá-la.\n\n**Resposta: C.**"
+ },
+ {
+  "numero": 24,
+  "materia": "natureza",
+  "assunto": "ecologia-e-toxinas",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** **sequestro de toxinas** a partir da dieta.\n\n1. O texto explica o mecanismo: os sapos comem insetos que contêm substâncias tóxicas.\n2. Essas substâncias são **acumuladas** e depois **secretadas** na pele. O sapo não as fabrica do zero.\n3. No cativeiro, a dieta é de moscas comuns, que não contêm esses compostos.\n4. Sem a matéria-prima química, a pele não fica tóxica. A diferença vem do ambiente (dieta) e não dos genes, como Carla suspeitava.\n5. Exemplo real: os sapos-ponta-de-flecha (dendrobatídeos) perdem a toxicidade quando criados em cativeiro.\n\n**Distratores:**\n- B: diz que a dieta estimula a produção, o oposto do que se observa.\n- C: \"diminui a produção\" supõe uma síntese própria do sapo, que o texto nega.\n- D: contradiz o fenômeno, pois a dieta interfere diretamente.\n- E: o texto não fala em cor, e a toxicidade não aumenta.\n\n**Resposta: A.**"
+ },
+ {
+  "numero": 25,
+  "materia": "natureza",
+  "assunto": "epigenetica",
+  "gabarito_conferido": true,
+  "flags": [],
+  "explicacao_detalhada": "**Ideia central:** marcas epigenéticas passam de geração em geração pelos gametas, sem mudar a sequência do DNA.\n\n1. **Definição:** epigenética é a mudança na **expressão** dos genes sem alterar a **sequência** de bases.\n2. **Mecanismos:** metilação do DNA, modificação de histonas e pequenos RNAs. Eles ligam ou desligam genes.\n3. **Herança:** para chegar ao filho, a marca precisa estar nas **células germinativas** (óvulo e espermatozoide) e escapar da reprogramação que ocorre na formação dos gametas e no embrião.\n4. Por isso, os netos de pessoas que passaram fome podem ter padrões de saúde alterados sem nenhuma mutação.\n\n**Distratores:**\n- A: contradiz a definição, pois a epigenética não altera a sequência do DNA.\n- B: o próprio texto diz que, em alguns casos, as marcas são transmitidas.\n- D: as marcas não são necessariamente permanentes, e o texto admite a transmissão.\n- E: a epigenética é justamente sobre impacto na expressão gênica.\n\n**Resposta: C.**"
+ }
+]
