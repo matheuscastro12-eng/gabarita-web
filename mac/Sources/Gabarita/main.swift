@@ -14,6 +14,8 @@ let localURL = URL(string: "http://127.0.0.1:\(portaLocal)")!
 /// Sobe e derruba o `next start` do repositório local.
 final class ServidorLocal {
     private var processo: Process?
+    /// Chamado quando o servidor cai sozinho com o app aberto.
+    var aoCair: (() -> Void)?
     private let info = Bundle.main.infoDictionary ?? [:]
 
     var repo: String? {
@@ -66,6 +68,14 @@ final class ServidorLocal {
                 let log = home + "/Library/Logs/Gabarita-servidor.log"
                 FileManager.default.createFile(atPath: log, contents: nil)
                 if let h = FileHandle(forWritingAtPath: log) { p.standardOutput = h; p.standardError = h }
+                p.terminationHandler = { [weak self] proc in
+                    // Morreu sozinho (não fomos nós que paramos): avisa para subir de novo.
+                    DispatchQueue.main.async {
+                        guard let self = self, self.processo === proc else { return }
+                        self.processo = nil
+                        self.aoCair?()
+                    }
+                }
                 do { try p.run() } catch { fim(false); return }
                 self.processo = p
                 self.esperar(tentativas: 100, fim)          // até ~30 s
@@ -118,6 +128,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         buildMenu()
         carregando()
         NSApp.activate(ignoringOtherApps: true)
+        servidor.aoCair = { [weak self] in self?.religarLocal() }
         servidor.iniciar { [weak self] ok in
             guard let self = self else { return }
             if ok {
@@ -133,6 +144,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
 
     func applicationWillTerminate(_ n: Notification) { servidor.parar() }
 
+    /// Sobe o servidor local de novo (caiu, ou a página falhou) e recarrega.
+    private var religando = false
+    func religarLocal() {
+        guard siteURL == localURL, !religando else { return }
+        religando = true
+        carregando()
+        servidor.iniciar { [weak self] ok in
+            guard let self = self else { return }
+            self.religando = false
+            if !ok {
+                self.siteURL = remotaURL
+                self.window.subtitle = "Tutor pela internet: o servidor local não subiu"
+            }
+            self.load()
+        }
+    }
+
     func carregando() {
         web.loadHTMLString("""
         <html><body style="font:15px -apple-system;background:#F5F7FA;color:#6E6E73;display:flex;
@@ -147,6 +175,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     // Links para fora do Gabarita abrem no navegador padrão.
     func webView(_ w: WKWebView, decidePolicyFor action: WKNavigationAction,
                  decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if action.request.url?.scheme == "gabarita" {      // botão "Tentar de novo"
+            decisionHandler(.cancel)
+            if siteURL == localURL { religarLocal() } else { load() }
+            return
+        }
         if let url = action.request.url, let host = url.host,
            host != siteURL.host, action.navigationType == .linkActivated {
             NSWorkspace.shared.open(url); decisionHandler(.cancel); return
@@ -182,7 +215,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     }
 
     // Sem internet: página simples com "Tentar de novo".
-    func webView(_ w: WKWebView, didFailProvisionalNavigation n: WKNavigation!, withError e: Error) { offline(e) }
+    func webView(_ w: WKWebView, didFailProvisionalNavigation n: WKNavigation!, withError e: Error) {
+        // Servidor local fora do ar: sobe de novo em vez de mostrar "sem conexão".
+        if siteURL == localURL, !religando { religarLocal(); return }
+        offline(e)
+    }
     func webView(_ w: WKWebView, didFail n: WKNavigation!, withError e: Error) {
         if (e as NSError).code != NSURLErrorCancelled { offline(e) }
     }
@@ -194,7 +231,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         box-shadow:0 1px 3px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.04)">
         <h2 style="margin:0 0 8px;font-weight:800">Sem conexão com o Gabarita</h2>
         <p style="color:#6E6E73;margin:0 0 18px">Confira a internet e tente de novo. Seu progresso continua salvo neste Mac.</p>
-        <a href="\(siteURL.absoluteString)" style="background:#0A84FF;color:#fff;text-decoration:none;
+        <a href="gabarita://tentar" style="background:#0A84FF;color:#fff;text-decoration:none;
         padding:11px 24px;border-radius:999px;font-weight:700">Tentar de novo</a></div></body></html>
         """
         web.loadHTMLString(html, baseURL: nil)
