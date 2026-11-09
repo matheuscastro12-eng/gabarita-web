@@ -211,3 +211,20 @@ Branch `feat/design-polish-animacoes`.
 ### Pendências
 - Tutor no modo resumo com `anthropic` e `gateway` só testado com modelo simulado (o caminho de código é o mesmo da questão).
 - Revisão humana das legendas.
+
+## Apostas 2026 e resolução depois de responder (09/11/2026, branch feat/apostas-2026)
+
+### O que foi feito
+- **Coleção "Apostas 2026"** (`/apostas`): as 50 questões inéditas do material "Apostas de Edcley Teixeira ENEM 2026" (matemática 18, natureza 14, humanas 10, linguagens 8). Rótulo fixo "Apostas do curso Edcley Teixeira (questões inéditas, não oficiais)" com crédito ao autor; selo "não oficial" no card da questão e fonte sem citar INEP.
+  - Extração: `scripts/apostas/extrair.py` (pdftotext -layout + PyMuPDF; texto de apoio, referência, comando, alternativas, gabarito da folha, resolução do fim do PDF ligada pelo número; recorte PNG da figura da Q35 em `public/apostas-2026/`). `scripts/apostas/montar.py` junta com a curadoria (`curadoria-a/b.json`: matéria, assunto, flags, explicação passo a passo) e grava `src/data/apostas-2026.json` com ids `apostas-2026-NN`. Tabelas das Q27 e Q36 viram tabela em markdown.
+  - Gabarito sempre do autor (bate com a folha e com a resolução nas 50). Contas refeitas nas de matemática/física/química. Flags (aviso âmbar na resolução, gabarito não muda): Q01, Q05, Q07, Q09, Q10, Q13, Q14, Q16, Q17, Q19, Q22, Q27.
+  - Modos: **Simulado** (todas ou por matéria, cronômetro de 3 min por questão, correção só no fim com "Ver resolução" por questão) e **Treino** (a IDE com tutor; correção ao confirmar e resolução do autor + explicação detalhada).
+  - Isolamento: as apostas não entram em `carregarQuestoes()`; só `carregarQuestao(id)` as acha (para o tutor). Não gravam tentativa, evento do tutor, domínio, TRI nem mapa. `tri` e `habilidade` são null.
+  - Tutor: recebe a resolução do autor, a explicação, os avisos e os dados da figura como contexto oculto; a guarda de vazamento é a mesma.
+  - Entradas: card "Apostas 2026" no Hoje e no Simulado.
+- **Resolução das questões oficiais:** `scripts/explicacoes/importar.py` lê (só leitura, `mode=ro`) a tabela `explanation` do app antigo e mapeia por ano + número com gabarito igual: **630 de 636** com "Explicação gerada por IA" (`src/data/explicacoes-ia.json`, carregado sob demanda). 17 marcadas como divergentes mostram "A explicação pode divergir do gabarito oficial, que vale". Faltam 6 (gabarito do app antigo diferente do INEP, explicação descartada): enem-2010-139, 2012-165, 2021-139, 2021-145, 2021-152, 2022-143.
+  - Botão "Ver resolução" (recolhido por padrão) depois de confirmar no sprint/treino e na correção do fim do simulado oficial (durante o simulado, não).
+
+### Pendências
+- Gerar explicação para as 6 oficiais sem explicação (só com aval do Matheus).
+- Q35 mostra a figura recortada; o tutor não vê imagem local, recebe a descrição em texto.
