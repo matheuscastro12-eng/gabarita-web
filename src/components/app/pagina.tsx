@@ -45,7 +45,7 @@ export function RodapeFonte({ className }: { className?: string }) {
     <footer className={cn("mx-auto max-w-[1400px] px-4 pb-8 text-center text-[11.5px] leading-relaxed text-muted-foreground md:px-7", className)}>
       {origem.fixture
         ? `Dados de desenvolvimento (fixture): ${origem.total} questões reais do ENEM 2023, via enem.dev`
-        : `${origem.total} questões oficiais do INEP (transcrição enem.dev)`}
+        : `${origem.total} questões oficiais do INEP (${origem.matematica} de matemática e ${origem.natureza} de natureza; transcrição enem.dev)`}
       {TUTOR_VISIVEL
         ? " · nota TRI sempre estimada · explicações do tutor podem conter erros · seu progresso fica salvo neste navegador"
         : " · nota TRI sempre estimada · seu progresso fica salvo neste navegador"}

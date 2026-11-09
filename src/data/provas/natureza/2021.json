@@ -1,0 +1,2982 @@
+[
+{
+"id": "enem-2021-91",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 91,
+"area": "natureza",
+"enunciado": "No cultivo por hidroponia, são utilizados soluções nutritivas contendo macronutrientes e micronutrientes essenciais. Além dos nutrientes, o pH é um parâmetro de extrema importância, uma vez que ele afeta a preparação da solução nutritiva e a absorção dos nutrientes pelas plantas. Para o cultivo de alface, valores de pH entre 5,5 e 6,5 são ideais para o seu desenvolvimento. As correções de pH são feitas pela adição de compostos ácidos ou básicos, mas não devem introduzir elementos nocivos às plantas. Na tabela, são apresentados alguns dados da composição da solução nutritiva de referência para esse cultivo. Também é apresentada a composição de uma solução preparada por um produtor de cultivo hidropônico.\n\n![](/questoes/natureza/8b3a0b951c031dd8.png)\n\nLENZI, E; FAVERO, L. O. B; LUCHESE, E. B. **Introdução à química da água:** ciência, vida e sobrevivência. Rio de Janeiro: LTC, 2012 (adaptado).\n\nPara correção do pH da solução nutritiva preparada, esse produtor pode empregar uma solução de",
+"imagens": [
+"/questoes/natureza/8b3a0b951c031dd8.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/a4347e32567901e9.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/a4e0f06289b5fa1c.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/cf6c3da6fb97332c.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/6f7b06329b600189.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/e833d16ccbd87c69.png"
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.57831,
+"b": 1.34841,
+"c": 0.19923,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 91",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/91",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-92",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 92,
+"area": "natureza",
+"enunciado": "O sino dos ventos é composto por várias barras metálicas de mesmo material e espessura, mas de comprimentos diferentes, conforme a figura.\n\n![](/questoes/natureza/4e68170f52d1d37e.png)\n\nConsidere f1 e v1, respectivamente, como a frequência fundamental e a velocidade de propagação do som emitido pela barra de menor comprimento, e f2 e v2 são essas mesmas grandezas para o som emitido pela barra de maior comprimento.\n\nAs relações entre as frequências fundamentais e entre as velocidades de propagação são, respectivamente,",
+"imagens": [
+"/questoes/natureza/4e68170f52d1d37e.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "F1< f2 e v1 < v2.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "F1 < f2 e v1 = v2.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "F1< f2 e v1 > v2.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "F1 > f2 e v1 = v2.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "F1 > f2 e v1 > v2.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.01758,
+"b": 1.65693,
+"c": 0.15293,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 92",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/92",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-93",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 93,
+"area": "natureza",
+"enunciado": "O polvo mimético apresenta padrões cromáticos e comportamentos muito curiosos. Frequentemente, muda a orientação de seus tentáculos, assemelhando-se a alguns animais. As imagens 1, 3, e 5 apresentam polvos mimetizando, respectivamente, um peixe-linguado (2), um peixe-leão (4) e uma serpente-marinha (6).\n\n![](/questoes/natureza/85e8f8b683217cf4.png)\n\nNORMAN, M. D.; FINN, J.; TREGENZA, T. Dynamic mimicry in an Indo-Malayan octopus. In: Proceedings of the Royal Society B: Biological Sciences, n. 268, out. 2021.\n\nDisponível em: www.researchgate.net. Acesso em: 15 mar. 2014 (adaptado).\n\nDo ponto de vista evolutivo, a capacidade apresentada se estabeleceu porque os polvos",
+"imagens": [
+"/questoes/natureza/85e8f8b683217cf4.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Originaram-se do mesmo ancestral que esses animais.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Passaram por mutações similares a esses organismos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Observaram esses animais em seus nichos ecológicos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Resultaram de convergência adaptativa com essas espécies.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Sobrevivem às pressões seletivas com esses comportamentos",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.89221,
+"b": 0.64628,
+"c": 0.16333,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 93",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/93",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-94",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 94,
+"area": "natureza",
+"enunciado": "A figura foi extraída de um antigo jogo de computadores, chamado _Bang! Bang!_\n\n![](/questoes/natureza/b4ad8697b4697b98.png)\n\nNo jogo, dois competidores controlam os canhões  **A**  e  **B**  , disparando balas alternadamente com o objetivo de atingir o canhão do adversário; para isso, atribuem valores estimados para o módulo de velocidade inicial de disparo ![](/questoes/natureza/3b7bf2830b94365c.png)   e para o ângulo de disparo ![](/questoes/natureza/ec82fdc11eff8ef3.png).\n\nEm determinado momento de uma partida, o competidor  **B**  deve disparar; ele sabe que a bala disparada anteriormente, = 53 °, Passou tangenciando o Ponto  **P**  .\n\nNo jogo,  ![](/questoes/natureza/e2d1c51950ee5149.png) é igual a 10 m / s 2. Considere sen 53 ° = 0,8, cos 53 ° = 0,6 e desprezível a ação de dissipativas.\n\nDisponível em:  [http://mebdownloads.butzke.net.br](http://mebdownloads.butzke.net.br/) . Acesso em: 18 abr. 2015 (adaptado).\n\nCom base nas distâncias dadas e mantendo o último ângulo de disparo, qual deveria ser, aproximadamente, o menor valor de   ![](/questoes/natureza/3fa27acf7d655336.png) que permitiria ao disparo pelo canhão  **B**  atingir o canhão  **A?**\n\nCom base nas distâncias dadas e mantendo o último ângulo de disparo, qual deveria ser, aproximadamente, o menor valor de que permitiria ao disparo pelo canhão  B  atingir o canhão  A?",
+"imagens": [
+"/questoes/natureza/b4ad8697b4697b98.png",
+"/questoes/natureza/3b7bf2830b94365c.png",
+"/questoes/natureza/ec82fdc11eff8ef3.png",
+"/questoes/natureza/e2d1c51950ee5149.png",
+"/questoes/natureza/3fa27acf7d655336.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "30 m/s",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "35 m/s",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "40 m/s",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "45 m/s",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "50 m/s",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.77238,
+"b": 3.24395,
+"c": 0.19069,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 94",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/94",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-95",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 95,
+"area": "natureza",
+"enunciado": "Os pesticidas organoclorados foram amplamente empregados na agricultura, contudo, em razão das suas elevadas toxicidades e persistências no meio ambiente, eles foram banidos. Considere a aplicação de 500 g de um pesticida organoclorado em uma cultura e que, em certas condições, o tempo de meia-vida do pesticida no solo seja de 5 anos.\n\nA massa do pesticida no decorrer de 35 anos será mais próxima de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "3,9 g.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "31, 2 g.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "62,5 g.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "125,0 g.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "250,0 g.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.13911,
+"b": 0.76309,
+"c": 0.13487,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 95",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/95",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-96",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 96,
+"area": "natureza",
+"enunciado": "A sequência de nucleotídeos do RNA mensageiro presentes em um gene de um fungo, constituída de sete códons, está escrita a seguir\n\n![](/questoes/natureza/553e1a4fb958523c.png)\n\nPesquisadores submeteram a sequência a mutações independentes. Sabe-se que os códons UAG e UAA são terminais, ou seja, indicam a interrupção da tradução.\n\nQual mutação produzirá a menor proteína?",
+"imagens": [
+"/questoes/natureza/553e1a4fb958523c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Deleção de G no códon 3.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Substituição de C por U no códon 4.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Substituição de G por C no códon 6.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Substituição de A por G no códon 7.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Deleção dos dois primeiros nucleotídeos no códon 5.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.78598,
+"b": 1.12828,
+"c": 0.24608,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 96",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/96",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-97",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 97,
+"area": "natureza",
+"enunciado": "A simples atitude de não jogar direto no lixo ou no ralo da pia o óleo de cozinha usado pode contribuir para a redução da poluição ambiental. Mas o que fazer com o óleo vegetal que não será mais usado? Não existe um modelo ideal de descarte, mas uma alternativa simples tem sido reaproveitá-lo para fazer sabão. Para isso, são necessários, além do próprio óleo, água e soda cáustica.\n\nLOBO, I. **Sabão feito com óleo de cozinha**. Disponível em: http://pga.pgr.mpf.gov.br. Acesso em: 29 fev. 2012 (adaptado).\n\nCom base no texto, a reação química que permite o reaproveitamento do óleo vegetal é denominada",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Redução.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Epoxidação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Substituição.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Esterificação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Saponificação.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.83234,
+"b": 0.97623,
+"c": 0.19551,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 97",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/97",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-98",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 98,
+"area": "natureza",
+"enunciado": "Durante o desenvolvimento embrionário humano ocorre uma comunicação entre os átrios direito e esquerdo através do forame oval (ou forame de Botal). Essa comunicação não causa prejuízos à circulação do bebê em formação, exceto se ela perdurar após o nascimento.\n\nOs prejuízos no período embrionário são evitados porque a circulação fetal se assemelha à dos (as)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aves, porque a pequena circulação e a grande circulação estão presentes.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Répteis, porque a mistura de sangue é minimizada por um metabolismo lento.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Crocodilianos, porque a separação dos ventrículos impede a mistura sanguínea.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Peixes, porque a circulação é simples, ocorrendo uma passagem única pelo coração.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Anfíbios, porque pressões diferenciais isolam temporalmente o sangue venoso do arterial.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.7292,
+"b": 3.81485,
+"c": 0.10881,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 98",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/98",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-99",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 99,
+"area": "natureza",
+"enunciado": "Na cidade de São Paulo, as ilhas de calor são responsáveis pela alteração da direção do fluxo da brisa marítima que deveria atingir a região de mananciais. Mas, ao cruzar a ilha de calor, a brisa marítima agora encontra um fluxo de ar vertical, que transfere para ela energia térmica absorvidas das superfícies quentes da cidade, deslocando-a para altas altitudes. Dessa maneira, há condensação e chuvas fortes no centro da cidade, em vez de na região de mananciais. A imagem apresenta os três subsistemas que trocam energia nesse fenômeno.\n\nNo processo de fortes chuvas no centro da cidade de São Paulo,  há dois mecanismos dominantes de transferência de calor: entre o Sol e ilha de calor, e entre a ilha de calor e a brisa marítima.\n\nVIVEIROS, M. **Ilhas de calor afastam chuvas de represas.**\n\nDisponível em: www2.feis.unesp.br. Acesso em: 3 de dez. 2019 (adaptado).\n\n![](/questoes/natureza/14e9145135a1ddba.png)\n\nEsses mecanismos são, respectivamente,",
+"imagens": [
+"/questoes/natureza/14e9145135a1ddba.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Irradiação e convecção.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Irradiação e irradiação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Condução e irradiação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Convecção e irradiação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Convecção e convecção.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.7664,
+"b": 0.51395,
+"c": 0.30712,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 99",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/99",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-100",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 100,
+"area": "natureza",
+"enunciado": "No seu estudo sobre a queda dos corpos, Aristóteles afirmava que se abandonarmos corpos leves e pesados de uma mesma altura, o mais pesado chegaria mais rápido ao solo. Essa ideia está apoiada em algo que é difícil de refutar, a observação direta da realidade baseada no senso comum.\n\nApós, uma aula de física, dois colegas estavam discutindo sobre a queda dos corpos, e um tentava convencer o outro de que tinha razão:\n\nColega A: “O corpo mais pesado cai mais rápido que um menos pesado, quando largado de uma mesma altura. Eu provo, largando uma pedra e uma rolha. A pedra chega antes. Pronto! Tá provado!”.\n\nColega B: “Eu não acho! Peguei uma folha de papel esticado e deixei cair. Quando amassei, ela caiu mais rápido. Como isso é possível? Se era a mesma folha de papel, deveria cair do mesmo jeito. Tem que ter outra explicação!”.\n\nHÜLSENDEGER, M. Uma análise das concepções dos alunos sobre a queda dos corpos. Caderno Brasileiro de Ensino de Física, n. 3, dez. 2004 (adaptado).\n\nO aspecto físico comum que explica a diferença de comportamento dos corpos em queda nessa discussão é o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Peso dos corpos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Resistência do ar.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Massa dos corpos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Densidade dos corpos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aceleração da gravidade.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.68999,
+"b": 0.6514,
+"c": 0.15907,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 100",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/100",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-101",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 101,
+"area": "natureza",
+"enunciado": "A obtenção de etanol utilizando a cana-de-açúcar envolve a fermentação dos monossacarídeos formadores da sacarose contida no melaço. Um desses formadores é a glicose (C6H12O6), cuja fermentação produz cerca de 50 g de etanol a partir de 100 g de glicose, conforme a equação química descrita.\n\n![](/questoes/natureza/fac7cd29ff6d8599.png)\n\nEm uma condição específica de fermentação, obtém-se 80% de conversão em etanol que, após sua purificação, apresenta densidade igual a 0,80 g/mL. O melaço utilizado apresentou 50 kg de monossacarídeos na forma de glicose.\n\nO volume de etanol, em litro, obtido nesse processo é mais próximo de",
+"imagens": [
+"/questoes/natureza/fac7cd29ff6d8599.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "16.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "20.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "25.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "64.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "100.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.98857,
+"b": 1.61387,
+"c": 0.29096,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 101",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/101",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-102",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 102,
+"area": "natureza",
+"enunciado": "É possível ligar aparelhos elétricos de baixa corrente utilizando materiais comuns de laboratório no lugar das tradicionais pilhas. A ilustração apresenta uma montagem que faz funcionar um cronômetro digital.\n\n![](/questoes/natureza/e8fe532a78b84fe1.jpg)\n\nUtilizando a representação de projetos elétricos, o circuito equivalente a esse sistema é",
+"imagens": [
+"/questoes/natureza/e8fe532a78b84fe1.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/893d17ee98e604d5.jpg"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/a973757e73ea5271.jpg"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/dd75afc568cc899b.jpg"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/e17e729d8adfda49.jpg"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/32800457a62c4a7d.jpg"
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.00296,
+"b": 1.17427,
+"c": 0.16918,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 102",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/102",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-103",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 103,
+"area": "natureza",
+"enunciado": "Um técnico analisou um lote de analgésicos que supostamente estava fora das especificações. A composição prevista era 100mg de ácido acetilsalicílico por comprimido (princípio ativo, cuja estrutura está apresentada na figura), além do amido e da celulosa (componentes inertes). O técnico realizou os seguintes testes:\n\n1) obtenção da massa do comprimido;  \n2) medição da densidade do comprimido;  \n3) verificação do pH com papel indicador;  \n4) determinação da temperatura de fusão do comprimido;  \n5) titulação com solução aquosa de NaOH.\n\nApós a realização dos testes, o lote do medicamento foi reprovado porque a quantidade de ácido acetilsalicílico por comprimido foi de apenas 40% da esperada.\n\n![](/questoes/natureza/69c807d6d6157901.png)\n\nO teste permitiu reprovar o lote de analgésicos foi o de número",
+"imagens": [
+"/questoes/natureza/69c807d6d6157901.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.12286,
+"b": 1.66345,
+"c": 0.22982,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 103",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/103",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-104",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 104,
+"area": "natureza",
+"enunciado": "O rompimento da barragem de rejeitos de mineração no município mineiro de Mariana e o derramamento de produtos tóxicos nas águas do Rio Doce, ocorridos em 2015, ainda têm consequências para os organismos que habitam o Parque Nacional Marinho de Abrolhos, localizado a mais de 1 000 quilômetros de distância. Esse desastre ambiental afetou o fitoplâncton, as esponjas, as algas macroscópicas, os peixes herbívoros e os golfinhos.\n\nFRAINER, G.; SICILIANO, S.; TAVARES, D. C. Fransciscana calls for help: \\[…\\]. **International Whaling Commission, Conference Paper**, jun. 2016 (adaptado)\n\nConcentrações mais elevadas dos compostos citados são encontradas em",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Esponjas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Golfinhos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Fitoplâncton.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Peixes herbívoros.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Algas macroscópicas.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.24877,
+"b": 1.21839,
+"c": 0.09433,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 104",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/104",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-105",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 105,
+"area": "natureza",
+"enunciado": "Duas esferas carregadas com cargas iguais em módulo e sinais contrários estão ligadas por uma haste rígida isolante na forma de haltere. O sistema se movimenta sob ação da gravidade numa região que tem um campo magnético horizontal uniforme  ![](/questoes/natureza/4d0b52fb5d559e9c.jpg), da esquerda para a direita. A imagem apresenta o sistema visto de cima para baixo, no mesmo sentido da aceleração da gravidade ![](/questoes/natureza/cf167592d3e304cf.jpg) que atua na região.\n\n![](/questoes/natureza/c2c44c079bd87d99.jpg)\n\nVisto de cima, o diagrama esquemático das forças magnéticas que atuam no sistema, no momento inicial em que as cargas penetram na região de campo magnético, está representado em",
+"imagens": [
+"/questoes/natureza/4d0b52fb5d559e9c.jpg",
+"/questoes/natureza/cf167592d3e304cf.jpg",
+"/questoes/natureza/c2c44c079bd87d99.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/e0475fd6866d705c.jpg"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/289620a8cd0af27b.jpg"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/a649c99bfefdab58.jpg"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/49cad5d93f9a65a4.jpg"
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.3659,
+"b": 2.02542,
+"c": 0.14126,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 105",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/105",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": true,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-106",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 106,
+"area": "natureza",
+"enunciado": "A icterícia, popularmente conhecida por amarelão, é uma patologia frequente em recém-nascidos. Um bebê com icterícia não consegue metabolizar e excretar de forma eficiente a bilirrubina. Com isso, o acúmulo dessa substância deixa-o com a pele amarelada. A fototerapia é um tratamento de icterícia neonatal, que consiste na irradiação de luz no bebê. Na presença de luz, a bilirrubina é convertida no seu isômero lumirrubina que, por ser mais solúvel em água, é excretada pela bile ou pela urina. A imagem ilustra o que ocorre nesse tratamento.\n\nMOREIRA, M. et. al. O recém-nascido de alto risco: teoria e prática do cuidar \\[on-line\\]. Rio de Janeiro: Fiocruz, 2004 (adaptado).\n\n![](/questoes/natureza/d44ab0195d316301.png)\n\nNa fototerapia, a luz provoca a conversão de bilirrubina no seu isômero",
+"imagens": [
+"/questoes/natureza/d44ab0195d316301.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ótico",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Funcional",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "De cadeia",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "De posição",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Geométrico",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.81733,
+"b": 2.29106,
+"c": 0.15388,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 106",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/106",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-107",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 107,
+"area": "natureza",
+"enunciado": "Analisando a ficha técnica de um automóvel popular, verificam-se algumas características em relação ao seu desempenho. Considerando o mesmo automóvel em duas versões, uma delas funcionando a álcool e outra, a gasolina, tem-se os dados apresentados no quadro, em relação ao desempenho de cada motor.\n\nConsiderando desprezível a resistência do ar, qual versão apresenta a maior potência?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Como a versão a gasolina consegue a maior aceleração, esta é a que desenvolve a maior potência.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Como a versão a gasolina atinge a maior valor de energia cinética, esta é a que desenvolve a maior potência.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Como a versão a álcool apresenta a maior taxa de variação de energia cinética, esta é a que desenvolve a maior potência.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Como ambas as versões apresentam a mesma variação de velocidade no cálculo da aceleração, a potência desenvolvida é a mesma.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Como a versão a gasolina fica com o motor trabalhando por mais tempo para atingir os 100 km/h, esta é a que desenvolve a maior potência.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.89764,
+"b": 1.77374,
+"c": 0.22707,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 107",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/107",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-108",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 108,
+"area": "natureza",
+"enunciado": "**TEXTO I**\n\nNo cordel intitulado Senhor dos Anéis, de autoria de Gonçalo Ferreira da Silva, lê-se a sextilha:\n\nA distância em relação  \nAo nosso planeta amado  \nPouco menos que a do Sol  \nEle está distanciado  \nE menos denso que a água  \nQuando no normal estado\n\nMEDEIROS, A.; AGRA, J. T. M., A astronomia na literatura de cordel,\n\n**Física na Escola,** n. 1, abr. 2010 (fragmento)\n\n**TEXTO II**\n\nDistâncias médias dos planetas ao Sol e suas densidades médias\n\n**Características dos planetas.** Disponível em: www.astronoo.com.\n\nAcesso em: 8 de nov. 2019 (adaptado)\n\nConsiderando os versos de sextilha e as informações da tabela, a qual planeta o cordel faz referência?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Mercúrio",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Júpiter",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Urano",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Saturno",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Netuno",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.76968,
+"b": 0.71695,
+"c": 0.24269,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 108",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/108",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-109",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 109,
+"area": "natureza",
+"enunciado": "Cientistas da Universidade de New South Wales, na Austrália, demonstraram em 2012 que a Lei de Ohm é válida mesmo para fios finíssimos, cuja área da seção reta compreende alguns poucos átomos. A tabela apresenta as áreas e comprimentos de alguns dos fios construídos (respectivamente com as mesmas unidades de medida). Considere que a resistividade mantém-se constante para todas as geometrias (uma aproximação confirmada pelo estudo).\n\n![](/questoes/natureza/a86b372143bce353.jpg)\n\nWEBER, S. B. et al. Ohm1s Law Survivers to the atomice sacle.\n\n**Science**, n. 335, jan. 2012 (adaptado)\n\nAs resistências elétricas dos fios, em ordem crescente, são",
+"imagens": [
+"/questoes/natureza/a86b372143bce353.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "R1 < R2 < R3< R4",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "R2 < R1 < R3< R4",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "R2 < R3 < R1< R4",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "R4 < R1 < R3< R2",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "R4 < R3 < R2< R1",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.59028,
+"b": 1.66716,
+"c": 0.26726,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 109",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/109",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-110",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 110,
+"area": "natureza",
+"enunciado": "Organismos autótrofos e heterótrofos realizam processos complementares que associam os ciclos do carbono e do oxigênio. O carbono fixado pela energia luminosa ou a partir de compostos inorgânicos é eventualmente degradado pelos organismos, resultando em fontes de carbono como metano ou gás carbônico. Ainda, outros compostos orgânicos são catabolizados pelos seres, com menor rendimento energético, produzindo compostos secundários (subprodutos) que podem funcionar como combustíveis ambientais.\n\nO processo metabólico associado à expressão combustíveis ambientais é a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fotossíntese.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fermentação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Quimiossíntese.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Respiração aeróbica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Fosforilação oxidativa.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.5914,
+"b": 1.40589,
+"c": 0.13998,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 110",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/110",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-111",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 111,
+"area": "natureza",
+"enunciado": "Uma escola iniciou o processo educativo para implantação da coleta seletiva e destino de materiais recicláveis. Para atingir seus objetivos, a instituição planejou:\n\n1) Sensibilizar a comunidade escolar, desenvolvendo atividades em sala e extraclasse de maneira contínua;\n\n2) capacitar o pessoal responsável pela limpeza da escola quanto aos novos procedimentos adotados com a coleta seletiva; e\n\n3) distribuir coletores de materiais recicláveis específicos nas salas, pátio e outros ambientes para acondicionamento dos resíduos.\n\nPara completar a ação proposta no ambiente escolar, o que falta ser inserido no planejamento?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Realizar campanhas educativas de sensibilização em bairros vizinhos para fortalecer a coleta seletiva.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Filmar parceria com a prefeitura ou cooperativa de catadores para recolhimento dos materiais recicláveis e destinação apropriada.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Organizar visitas ao lixão ou aterro local para identificar aspectos importantes sobre a disposição final do lixo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Divulgar na rádio local, no local impresso e nas redes sociais que a escola está realizando a coleta seletiva.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Colocar recipientes coletores de lixo reciclável fora da escola para entrega voluntária pela população.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.41618,
+"b": 0.30941,
+"c": 0.07884,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 111",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/111",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-112",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 112,
+"area": "natureza",
+"enunciado": "Os búfalos são animais considerados rústicos pelos criadores e, por isso, são deixados no campo sem controle reprodutivo. Por causa desse tipo de criação, a consanguinidade é favorecida, proporcionando o aparecimento de enfermidades, como o albinismo, defeitos cardíacos, entre outros. Separar os animais de forma adequada minimizaria a ocorrência desses problemas.\n\nDAME,M. C. F. RIET-CORREA, F: SCHILF, A. L; **Pesq. Vet. Bras.**, n. 7. 2013 (adaptado).\n\nQual procedimento biotecnológico prévio é recomendado nessa situação?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Transgenia.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Terapia gênica.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Vacina de DNA.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Clonagem terapêutica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Mapeamento genético.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.92989,
+"b": -0.72714,
+"c": 0.02105,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 112",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/112",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-113",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 113,
+"area": "natureza",
+"enunciado": "O ciclo do cobre é um experimento didático em que o cobre metálico é utilizado como reagente de partida. Após uma sequência de reações (I, II, III, IV e V), o cobre retorna ao seu estado inicial ao final do ciclo.\n\n![](/questoes/natureza/35acd74b92615f22.png)\n\nA reação de redução do cobre ocorre na etapa",
+"imagens": [
+"/questoes/natureza/35acd74b92615f22.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "II.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "III.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "IV.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "V.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.2481,
+"b": 1.38461,
+"c": 0.17112,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 113",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/113",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-114",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 114,
+"area": "natureza",
+"enunciado": "Um dos exames clínicos mais tradicionais para medir a capacidade reflexa dos indivíduos é o exame do reflexo patelar. Esse exame consiste na estimulação da patela, um pequeno osso localizado na parte anterior da articulação do joelho, com um pequeno martelo. A resposta reflexa ao estímulo é caracterizada pelo levantamento da perna em que o estímulo foi aplicado.\n\nQual região específica do sistema nervoso coordena essa resposta?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ponte.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Medula.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Cerebelo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Hipotálamo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Neuro-hipófise.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.39928,
+"b": 1.65732,
+"c": 0.14967,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 114",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/114",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-115",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 115,
+"area": "natureza",
+"enunciado": "Na montagem de uma cozinha para um restaurante, a escolha do material correto para as panelas é importante, pois a panela que conduz mais calor é capaz de cozinhar os alimentos mais rapidamente e, com isso, há economia de gás. A taxa de condução do calor depende da condutividade k do material da sua área A, da diferença de temperatura ![](/questoes/natureza/c74d553eb49a7e1a.png)T e da espessura d do material, sendo dada pela relação ![](/questoes/natureza/015460b863e7f7be.jpg). Em panelas com dois materiais, a taxa de condução é dada por ![](/questoes/natureza/6a07910420a90ce3.jpg), em que ![](/questoes/natureza/850a847c66743c36.jpg) e ![](/questoes/natureza/e0bf3ccf5cb2ea16.jpg) são as espessuras dos dois materiais, e ![](/questoes/natureza/05d9337e3e0e83c0.jpg) e ![](/questoes/natureza/830614aa521ba4a2.jpg) são as condutividades de cada material. Os materiais mais comuns no mercado para panelas são o alumínio (k = 20 W/m K), o ferro (k = 8 W/m K) e ao aço (k = 5 W/m K) combinado com o cobre (k = 40 W/m K).\n\nCompara-se uma panela de ferro, uma de alumínio e uma composta de ![](/questoes/natureza/95731b8aa973b215.jpg) da espessura em cobre e ![](/questoes/natureza/470522754a40b61b.jpg) da espessura em aço, todas com a mesma espessura total e com a mesma área de fundo.\n\nA ordem crescente da mais econômica para a menos econômica é",
+"imagens": [
+"/questoes/natureza/c74d553eb49a7e1a.png",
+"/questoes/natureza/015460b863e7f7be.jpg",
+"/questoes/natureza/6a07910420a90ce3.jpg",
+"/questoes/natureza/850a847c66743c36.jpg",
+"/questoes/natureza/e0bf3ccf5cb2ea16.jpg",
+"/questoes/natureza/05d9337e3e0e83c0.jpg",
+"/questoes/natureza/830614aa521ba4a2.jpg",
+"/questoes/natureza/95731b8aa973b215.jpg",
+"/questoes/natureza/470522754a40b61b.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Cobre-aço, alumínio e ferro.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Alumínio, cobre-aço e ferro",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Cobre-aço, ferro e alumínio",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Alumínio, ferro e cobre-aço",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ferro, alumínio e cobre-aço",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.72669,
+"b": 1.99105,
+"c": 0.20284,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 115",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/115",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-116",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 116,
+"area": "natureza",
+"enunciado": "As águas subterrâneas têm sido contaminadas pelo uso de pesticidas na agricultura. Entre as várias substâncias usualmente encontradas, algumas são apresentadas na figura. A distinção dessas substâncias pode ser feita por meio de uma análise química qualitativa, ou seja, determinando sua presença mediante a adição de um reagente específico. O hidróxido de sódio é capaz de identificar a presença de um desses pesticidas pela reação ácido-base de Brönsted-Lowry.\n\n![](/questoes/natureza/fca538e4d9508483.png)\n\nO teste positivo será observado com o pesticida",
+"imagens": [
+"/questoes/natureza/fca538e4d9508483.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "II",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "III",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "IV",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "V",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.1616,
+"b": 2.43316,
+"c": 0.3388,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 116",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/116",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-117",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 117,
+"area": "natureza",
+"enunciado": "Com o aumento da população de suínos no Brasil, torna-se necessária a adoção de métodos para reduzir o potencial poluidor dos resíduos dessa agroindústria, uma vez que, comparativamente ao esgoto doméstico, os dejetos suínos são 200 vezes mais poluentes. Sendo assim, a utilização desses resíduos como matéria-prima na obtenção de combustíveis é uma alternativa que permite diversificar a matriz energética nacional, ao mesmo tempo em que parte dos recursos hídricos do país são preservados.\n\nBECK, A. M. Resíduos suínos como alternativa energética sustentável. XXVII Encontro Nacional de Engenharia de Produção. Anais ENEGEP, Foz do Iguaçu, 2007 (adaptado).\n\nO biocombustível a que se refere o texto é o",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Etanol",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Biogás",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Butano",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Metanol",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Biodiesel",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.36007,
+"b": 1.79781,
+"c": 0.13996,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 117",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/117",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-118",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 118,
+"area": "natureza",
+"enunciado": "A curcumina, uma das substâncias que confere a cor alaranjada ao açafrão, pode auxiliar no combate à dengue quando adicionada à água de criadouros do mosquito transmissor. Essa substância acumula-se no intestino do inseto após ser ingerida com a água do criadouro e, quando ativada pela luz, induz a produção de espécies reativas de oxigênio que danificam de forma fatal o tecido do tubo digestório.\n\nTOLEDO, K. Corante do açafrão pode ser útil no combate à dengue. Disponível em: http://agencia.fapesp.br. Acesso em: 25 abr. 2015. (adaptado).\n\nA forma de combate relatada tem como atividade o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Morte do indivíduo adulto.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Redução da eclosão dos ovos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Comprometimento da metamorfose.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Impedimento do desenvolvimento da larva.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Repelência da forma transmissora da doença.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 118",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/118",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-119",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 119,
+"area": "natureza",
+"enunciado": "Com o objetivo de identificar a melhor espécie produtora de madeira para construção 9com resistência mecânica e à degradação), foram analisadas as estruturas anatômicas de cinco espécies, conforme o quadro.\n\n![](/questoes/natureza/fe65c8a1c558aca0.png)\n\nQual espécie corresponde ao objetivo proposto?",
+"imagens": [
+"/questoes/natureza/fe65c8a1c558aca0.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.53465,
+"b": 2.4095,
+"c": 0.0954,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 119",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/119",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-120",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 120,
+"area": "natureza",
+"enunciado": "No outono, as folhas de árvores mudam de cor, de verde para tons de amarelo, castanho, laranja e vermelho. A cor de verde das folhas deve-se ao pigmento clorofila. Nas plantas de folhas caducas, a produção de clorofila diminui e o tom verde desvanece, permitindo assim que outros pigmentos, como o caroteno, de coloração amarelo-alaranjado, e a antocianina, de tons avermelhados, passem a dominar a tonalidade das folhas. A coloração observada se dá em função da interação desses pigmentos com a radiação solar.\n\nConforme apresentado no espectro de absorção, as moléculas de clorofila absorvem a radiação solar nas regiões do azul e do vermelho, assim a luz refletida pelas folhas tem falta desses dois tons e as vemos na cor verde. Já as antocianinas absorvem a luz desde o azul até o verde. Nesse caso, a luz refletida pelas folhas que contêm antocianinas aparece conforme as cores complementares, ou seja, vermelho-alaranjado.\n\n![](/questoes/natureza/892bfeddc981897b.png)\n\nDisponível em: https://vidauniversoydemas.wordpress.com. Acesso em: 6 dez. 2017 (adaptado)\n\nEm qual faixa do espectro visível os carotenos absorvem majoritariamente?",
+"imagens": [
+"/questoes/natureza/892bfeddc981897b.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Entre o violeta e o azul.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Entre o azul e o verde.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Entre o verde e o amarelo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Entre o amarelo e o laranja.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Entre o laranja e o vermelho.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.35776,
+"b": 1.39005,
+"c": 0.14902,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 120",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/120",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-121",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 121,
+"area": "natureza",
+"enunciado": "Entre 2014 e 2016, as regiões central e oeste da África sofreram um grave epidemia de febre hemorrágica causada pelo vírus ebola, que se manifesta em até 21 dias após a infecção e cuja taxa de letalidade (enfermos que vão a óbito) pode chegar a 90%. Em regiões de clima tropical e subtropical, um outro vírus também pode causar febre hemorrágica: o vírus da dengue, que, embora tenha período de incubação menor (até 10 dias), apresenta taxa de letalidade abaixo de 1%.\n\nDisponível em: www.who.int. Acesso em: 1 fev. 2017 (adaptado).\n\nSegundo as informações do texto e aplicando princípios de evolução biológica às relações do tipo patógeno-hospedeiro, qual dos dois vírus infecta seres humanos há mais tempo?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ebola, pois o maior período de incubação reflete duração mais longa do processo de coevolução patógeno-hospedeiro.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Dengue, pois o menor período de incubação reflete duração mais longa do processo de coevolução patógeno-hospedeiro.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ebola, cuja alta letalidade indica maior eficiência do vírus em parasitar seus hospedeiros, estabelecida ao longo de sua evolução.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ebola, cujos surtos epidêmicos concentram-se no continente africano, reconhecido como berço da origem evolutiva dos seres humanos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Dengue, cuja baixa letalidade indica maior eficiência do vírus em parasitar seus hospedeiros, estabelecida ao longo da coevolução patógeno-hospedeiro.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.27392,
+"b": 1.76469,
+"c": 0.13413,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 121",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/121",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-122",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 122,
+"area": "natureza",
+"enunciado": "A imagem apresenta as etapas do funcionamento de uma estação individual para tratamento do esgoto residencial.\n\n![](/questoes/natureza/2c706ea165461d3d.png)\n\nTAVARES, K. **Estações de tratamento de esgoto individuais permitem a reutilização da água.** Disponível em: https://extra.globo.com. Acesso em: 18 nov 2014 (adaptado).\n\nEm qual etapa decanta-se o lodo a ser separado do esgoto residencial?",
+"imagens": [
+"/questoes/natureza/2c706ea165461d3d.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "5",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "6",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.63278,
+"b": 0.67271,
+"c": 0.32905,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 122",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/122",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-123",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 123,
+"area": "natureza",
+"enunciado": "O plantio por estaquia é um método de propagação de plantas no qual partes de um espécime são colocadas no solo para produzir novas gerações. Na floricultura, é comum utilizar o caule das roseiras para estaquia, pois a propagação da planta é positiva em razão da aplicação de auxinas na porção inferior do caule.\n\nA utilização de auxinas no método de estaquia das roseiras contribui para",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Floração da planta.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Produção de gemas laterais.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Formação de folhas maiores.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Formação de raízes adventícias.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Produção de compostos energéticos.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.49099,
+"b": 1.72446,
+"c": 0.02266,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 123",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/123",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-124",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 124,
+"area": "natureza",
+"enunciado": "O emprego de células de combustível a hidrogênio pode ser uma tecnologia adequada ao transporte automotivo. O quadro apresenta características de cinco tecnologias mais proeminentes de células de combustível.\n\n![](/questoes/natureza/d0b06ba9cf571fab.png)\n\nTestes operacionais com esses tipos de células têm indicado que as melhores alternativas para veículos são as que operam em baixos níveis de energia térmica, são formadas por membranas de eletrólitos poliméricos e ocorrem em meio ácido.\n\nTHOMAS, S; ZALBOWITZ, M. **Full cells**: green power. Losalamos National Laboratory. Los Alamos, NM, 1999 (adaptado).\n\nA tecnologia testada mais adequada para o emprego em veículos automotivos é a célula de combustível",
+"imagens": [
+"/questoes/natureza/d0b06ba9cf571fab.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "AFC.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "MSFC.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "PEM.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "PAFC.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "SOFC.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.28165,
+"b": 0.59099,
+"c": 0.22224,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 124",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/124",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-125",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 125,
+"area": "natureza",
+"enunciado": "Considere a tirinha, na situação em que a temperatura do ambiente é inferior à temperatura corporal dos personagens.\n\n![](/questoes/natureza/502118f2c7cc1907.png)\n\nO incômodo mencionado pelo personagem da tirinha deve-se ao fato de que, em dias úmidos,",
+"imagens": [
+"/questoes/natureza/502118f2c7cc1907.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A temperatura do vapor-d'água presente no ar é alta.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O suor apresenta maior dificuldade para evaporar do corpo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A taxa de absorção de radiação pelo corpo torna-se maior.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O ar torna-se mau condutor e dificulta o processo de liberação de calor.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "O vapor-d'água presente no ar condensa-se ao entrar em contato com a pele.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.7041,
+"b": 1.93672,
+"c": 0.18178,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 125",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/125",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-126",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 126,
+"area": "natureza",
+"enunciado": "Um garoto precisa montar um circuito que acenda três lâmpadas de cores diferentes, uma de cada vez. Ele dispõe das lâmpadas, de fios, uma bateria e dois interruptores, como ilustrado, junto com seu símbolo de três pontos. Quando esse interruptor fecha AB, abre BC e vice-versa.\n\n![](/questoes/natureza/8daf5bf38b734ed8.png)\n\nO garoto fez cinco circuitos elétricos usando os dois interruptores, mas apenas um satisfaz a sua necessidade. Esse circuito é representado por",
+"imagens": [
+"/questoes/natureza/8daf5bf38b734ed8.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/3b7ea31b792c71b4.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/6beaf17cf7030757.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/4c40c00646dfbcb2.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/63aaae9524e4c745.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/03b829116612fa57.png"
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.20474,
+"b": 2.12158,
+"c": 0.23447,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 126",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/126",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-127",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 127,
+"area": "natureza",
+"enunciado": "Estudo aponta que a extinção de preguiças-gigantes, cuja base da dieta eram frutos e sementes, provocou impactos consideráveis na vegetação do Pantanal brasileiro. A flora, embora não tenha desaparecido, tornou-se menos abundante que no passado, além de ocupar áreas mais restritas.\n\nBICUDO, F. Jardineiro da pesada. Ecologia. **Pesquisa Fapesp**, ed. 231, maio 2015 (adaptado).\n\nO evento descrito com a flora ocorreu em razão da redução",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Da produção de flores.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Do tamanho das plantas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "De fatores de disseminação das sementes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Da quantidade de semente por fruto.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Dos hábitats disponíveis para as plantas.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.73579,
+"b": -0.23373,
+"c": 0.13306,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 127",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/127",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-128",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 128,
+"area": "natureza",
+"enunciado": "Carros elétricos estão cada vez mais baratos, no entanto, os órgãos governamentais e a indústria se preocupam com o tempo de recarga das baterias, que é muito mais  lento quando comparado ao tempo gasto para encher o tanque de combustível. Portanto, os usuários de transporte individual precisam se conscientizar dos ganhos ambientais dessa mudança e planejar com antecedência seus percursos, pensando em pausas necessárias para recargas.\n\nApós realizar um percurso de 110km, um motorista pretende recarregar as baterias de seu carro elétrico, que tem um desempenho médio de 5,0 km/kWh, usando um carregador ideal que opera a uma tensão de 220 V e é percorrido por uma corrente de 20 A.\n\nQuantas horas são necessárias para recarregar a energia utilizadas nesse percurso?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,005",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "0,125",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "2,5",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "5,0",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "8,0",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.28052,
+"b": 1.65567,
+"c": 0.21068,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 128",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/128",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-129",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 129,
+"area": "natureza",
+"enunciado": "Nas angiospermas, além da fertilização da oosfera, existe uma segunda fertilização que resulta num tecido triploide.\n\nEssa segunda fertilização foi importante evolutivamente, pois viabilizou a formação de um tecido de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Nutrição para o fruto.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Reserva para o embrião.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Revestimento para a semente.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Proteção para o megagametófito.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Vascularização para a planta jovem.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.29305,
+"b": 1.87858,
+"c": 0.17777,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 129",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/129",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-130",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 130,
+"area": "natureza",
+"enunciado": "Com o objetivo de proporcionar aroma e sabor a diversos alimentos, a indústria alimentícia se utiliza de flavorizantes. Em geral, essas substâncias são ésteres, como as apresentadas no quadro.\n\n![](/questoes/natureza/1d6629394b165c2e.png)\n\nO aroma do flavorizante derivado do ácido etanoico e que apresenta cadeia carbônica saturada é de",
+"imagens": [
+"/questoes/natureza/1d6629394b165c2e.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Kiwi.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Banana.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Pêssego.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Rum.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Uva.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.87694,
+"b": 1.86924,
+"c": 0.19867,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 130",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/130",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-131",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 131,
+"area": "natureza",
+"enunciado": "O eletrocardiograma é um exame cardíaco que mede a intensidade dos sinais elétricos advindo do coração.\n\n![](/questoes/natureza/b6bd08727b1a378f.png)\n\nDe acordo com o eletrocardiograma apresentado, qual foi o número de batimentos cardíacos por minuto desse paciente durante o exame?",
+"imagens": [
+"/questoes/natureza/b6bd08727b1a378f.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "30",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "60",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "100",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "120",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "180",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.15669,
+"b": 1.23172,
+"c": 0.29573,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 131",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/131",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-132",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 132,
+"area": "natureza",
+"enunciado": "A deficiência de lipase ácida lisossômica é uma doença hereditária associada a um gene do cromossomo 10. Os pais dos pacientes podem não saber que são portadores dos genes da doença até o nascimento do primeiro filho afetado. Quando ambos os progenitores são portadores, existe uma chance, em quatro, de que seu bebê possa nascer com essa doença.\n\nANDERSON, R. A. et. al. In: Situ Localization of the Genetic Locus Encoding the Lysosomal Acid Lipase/Cholesteryl Esterase (LIPA) Deficient in Wolman Disease to Chromosome 10q23.2-q23.3. **Genomics**, n. 1, jan, 1993 (adaptado).\n\nEssa é uma doença hereditária de caráter",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Recessivo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Dominante.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Codominante.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Poligênico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Polialélico.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.45876,
+"b": 0.44934,
+"c": 0.19743,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 132",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/132",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2021-133",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 133,
+"area": "natureza",
+"enunciado": "O quadro lista alguns dispositivos eletrônicos que estão presentes no dia a dia, bem como a faixa de força eletromotriz necessária ao seu funcionamento.\n\n![](/questoes/natureza/7da411aef87f63ea.png)\n\nConsidere que uma bateria é construída pela associação em série de três pilhas de lítio-iodo, nas condições-padrão, conforme as semiequações de redução apresentadas.\n\n![](/questoes/natureza/3a13e9b8d92d1afa.png)\n\nEssa bateria é adequada para o funcionamento de qual dispositivo eletrônico?",
+"imagens": [
+"/questoes/natureza/7da411aef87f63ea.png",
+"/questoes/natureza/3a13e9b8d92d1afa.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "II",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "III",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "IV",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "V",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.9738,
+"b": 1.96749,
+"c": 0.12076,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 133",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/133",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-134",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 134,
+"area": "natureza",
+"enunciado": "O alcoolômetro Gay Lussac é um instrumento destinado a medir o teor de álcool, em porcentagem de volume (v/v), de soluções de água e álcool na faixa de 0º GL a 100ºGL, com divisões de 0,1ºGL. A concepção do alcoolômetro se baseia no princípio de flutuabilidade de Arquimedes, semelhante ao funcionamento de um densímetro. A escala do instrumento é aferida a 20ºC, sendo necessária a correção da medida, caso a temperatura da solução não esteja na temperatura de aferição. É apresentada parte da tabela de correção de um alcoolômetro, com a temperatura.\n\n![](/questoes/natureza/40b0737f22db11c5.png)\n\n**Manual alcoolômetro Gay Lussac**. Disponível em: www.incoterm.com.br. Acesso em: 4 dez. 2018 (adaptado).\n\nÉ necessário a correção da medida do instrumento, pois um aumento na temperatura promove o(a)",
+"imagens": [
+"/questoes/natureza/40b0737f22db11c5.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aumento da dissociação da água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aumento da densidade da água e do álcool.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Mudança do volume dos materiais por dilatação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumento da concentração de álcool durante a medida.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Alteração das propriedades químicas da mistura álcool e água.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.7383,
+"b": 1.40697,
+"c": 0.1367,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 134",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/134",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2021-135",
+"ano": 2021,
+"dia": 2,
+"caderno": "azul",
+"numero": 135,
+"area": "natureza",
+"enunciado": "O Prêmio Nobel de Química de 2000 deveu-se à descoberta e ao desenvolvimento de polímeros condutores. Esses materiais têm ampla aplicação em novos dispositivos eletroluminescentes (LEDs), células fotovoltaicas etc. Uma propriedade-chave de um polímero condutor é a presença de ligações duplas conjugadas ao longo da cadeia principal do polímero.\n\nROCHA FILHO, R. C. Polímeros condutores: descoberta e aplicações. **Química Nova na Escola**. n. 12, 2000 (adaptado).\n\nUm exemplo desse polímero é representado pela estrutura",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/cd531c1cd6d452ab.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/dd7935c4f53f5803.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/540603d1da94f38b.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/94afc1ea050baefb.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/b2d4b7a2c4124e62.png"
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.76737,
+"b": 1.53283,
+"c": 0.1128,
+"fonte": "INEP, microdados do ENEM 2021 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2021, caderno azul (aplicação regular), questão 135",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2021/questions/135",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2021.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+}
+]

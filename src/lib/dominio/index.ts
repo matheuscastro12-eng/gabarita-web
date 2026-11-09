@@ -13,3 +13,5 @@ export * from "./eventos";
 export * from "./simulado";
 export * from "./mapa";
 export * from "./perfil";
+export * from "./area";
+export * from "./prova";

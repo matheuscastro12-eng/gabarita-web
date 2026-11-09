@@ -1,6 +1,6 @@
 # Gabarita
 
-IDE agêntica de estudo de matemática do ENEM. A questão oficial fica de um lado, um tutor que confere cada conta fica do outro, e um mapa de domínio diz quando você está pronto.
+IDE agêntica de estudo do 2º dia do ENEM (matemática e ciências da natureza). A questão oficial fica de um lado, um tutor que confere cada conta fica do outro, e um mapa de domínio diz quando você está pronto.
 
 Feito para uso pessoal (um aluno, sem login), com atenção a quem tem TDAH: sprints curtos de 5 questões, uma ação principal por tela, ritmo visível, nada piscando.
 
@@ -12,14 +12,15 @@ Feito para uso pessoal (um aluno, sem login), com atenção a quem tem TDAH: spr
 | **Estudar (IDE)** | Questão à esquerda, tutor à direita, painéis redimensionáveis. Alternativas A–E, escada de dicas em 4 degraus, "por que errei?", resposta direta registrada, modo foco, atalhos completos. No celular vira abas. |
 | **Fim do sprint** | Os 5 resultados e quanto o domínio de cada habilidade mudou. |
 | **Mapa** | Calor H1–H30 agrupado por competência e por assunto, nota TRI estimada com intervalo e os três níveis de "pronto" com o que falta em cada um. |
-| **Simulado** | 15 itens fáceis inéditos, 3 minutos por item, sem tutor. Vale para o critério "pronto nos fáceis". |
+| **Versões** | Na primeira abertura: **Gabarita Matemática**, **Gabarita Natureza** ou **Gabarita Geral**. Troca pela sidebar (perto da marca) ou nos Ajustes. Quem já tinha progresso entra direto em Matemática. O progresso é um só, separado por área. |
+| **Simulado** | Prova completa do 2º dia (Geral: CN + MT do ano, ordem oficial, 5h), bloco de 45 de uma área (2h15, um ano ou anos misturados), bloco curto por assunto/competência e 15 fáceis inéditos (3 min por item, vale para "pronto nos fáceis"). Folha de respostas, progresso salvo para continuar depois, correção com nota TRI estimada por área e a resolução por IA de cada questão. |
 | **Caderno de erros** | Todo erro entra sozinho com a alternativa marcada, o gabarito e o equívoco diagnosticado. Refazer, gêmea, filtros. |
 | **Laboratório** | Python com SymPy no navegador (Pyodide num Web Worker) e gráficos de função com sliders (Mafs). Abre como gaveta dentro da IDE com `L`. |
 | **Ajustes** | Perfil "explica do meu jeito", data da prova, meta de nota, habilidades da semana, estado do tutor, tema e backup JSON. |
 
 ## Funcionalidades
 
-- **Banco oficial**: 636 questões de matemática do ENEM 2009–2023, 614 com parâmetros TRI (a, b, c) dos microdados do INEP, habilidade e gabarito oficiais, 60 com resolução curada e verificada no SymPy.
+- **Banco oficial**: 1.308 questões do ENEM 2009–2023: 636 de matemática (614 com parâmetros TRI dos microdados do INEP, 60 com resolução curada e verificada no SymPy) e 672 de ciências da natureza (45 por ano, 42 em 2019; 610 com TRI e habilidade da matriz CN, todas com explicação gerada por IA). Natureza vem do banco do app antigo (`scripts/natureza/importar.py`, só leitura), com a área derivada da posição na prova.
 - **Fila "fáceis primeiro"** pelo parâmetro *b* real, com revisões vencidas (FSRS) no meio e no máximo 2 itens por habilidade.
 - **Tutor socrático** (Claude via Vercel AI SDK): nunca revela a resposta antes do degrau 4 ou de um pedido explícito, usa no máximo 3 frases, confere todo número com `run_python` (SymPy) ou `verify_answer` (mathjs) e ganha o selo "✓ conferido" quando bate com o gabarito. Um filtro no servidor redige vazamentos (letra ou valor do gabarito).
 - **Modo guiado offline**: sem chave de API o app funciona inteiro com as dicas, erros comuns e resoluções curadas do banco, questões gêmeas e cálculo pelo mathjs.
@@ -125,7 +126,7 @@ No modo `claude-local`, as ferramentas do servidor (`calc`, `verify_answer`, `pl
 - **Tutor de IA só com chave**: a rota foi validada com modelo simulado; os critérios de aceite com conversas reais (nunca revelar a resposta, ≤ 3 frases, 100% das contas conferidas) ainda precisam ser rodados com uma chave.
 - **Pyodide pesa ~15 MB** na primeira carga (CDN jsdelivr, fica em cache). Sem internet o SymPy não roda; contas simples caem para o mathjs.
 - **Nota TRI é estimativa**: não replica a equalização oficial do INEP; serve para acompanhar tendência e o critério de "pronto".
-- **Habilidade estimada** em algumas questões antigas (marcadas "(estimada)"); **60 curadas** de 636, o resto usa dicas genéricas e o gabarito.
-- **Simulado completo de 45 itens** ainda não tem tela (o critério "pronto para a prova" já o espera).
+- **Habilidade estimada** em algumas questões antigas (marcadas "(estimada)"); **60 curadas** de 636 de matemática, o resto usa dicas genéricas e o gabarito.
+- **Resumos e Aprender** são só de matemática; nas versões Natureza e Geral aparecem como "ainda não existem".
 - **Imagens para o tutor**: o servidor baixa as imagens do enunciado e das alternativas (até 6, cache em memória) e as anexa à primeira mensagem do aluno, em todos os provedores. Se o download falhar, o prompt diz que o tutor não as vê.
 - **Imagens** vêm do enem.dev; se o serviço sair do ar, a questão mostra o aviso e o texto `dados_da_imagem` quando curado.

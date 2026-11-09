@@ -3,7 +3,7 @@
  * Tudo aqui é serializável em JSON (datas em ISO 8601) para persistir no StudentStore.
  */
 import type { Card as CartaoFSRS } from "ts-fsrs";
-import type { Habilidade, Letra } from "@/data/tipos";
+import type { Area, Habilidade, Letra } from "@/data/tipos";
 
 export type { Habilidade, Letra };
 
@@ -77,9 +77,15 @@ export interface Sprint {
   terminadoEm: string | null;
   questaoIds: string[];
   tentativaIds: string[];
+  /** Área do sprint (ausente nos antigos = matemática; "misto" no treino do Geral). */
+  area?: Area | "misto";
 }
 
-export type TipoSimulado = "faceis-15" | "completo-45";
+/**
+ * faceis-15 = 15 fáceis inéditos; completo-45 = bloco de 45 de uma área; prova-dia2 = prova
+ * completa do 2º dia (CN + MT, 90 questões, 5h); assunto = bloco menor por assunto/competência.
+ */
+export type TipoSimulado = "faceis-15" | "completo-45" | "prova-dia2" | "assunto";
 
 export interface Simulado {
   id: string;
@@ -91,6 +97,10 @@ export interface Simulado {
   /** Maior tempo gasto num item, em segundos. */
   maiorTempoItem: number;
   tentativaIds: string[];
+  /** Áreas cobertas (ausente nos antigos = só matemática). */
+  areas?: Area[];
+  /** Ano da prova, quando o simulado é de um ano só. */
+  ano?: number;
 }
 
 export interface Perfil {

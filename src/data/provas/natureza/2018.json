@@ -1,0 +1,2991 @@
+[
+{
+"id": "enem-2018-91",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 91,
+"area": "natureza",
+"enunciado": "Pesquisas demonstram que nanodispositivos baseados em movimentos de dimensões atômicas, induzidos por luz, poderão ter aplicações em tecnologias futuras, substituindo micromotores, sem a necessidade de componentes mecânicos. Exemplo de movimento molecular induzido pela luz pode ser observado pela flexão de uma lâmina delgada de silício, ligado a um polímero de azobenzeno e a um material suporte, em dois comprimentos de onda, conforme ilustrado na figura. Com a aplicação de luz ocorrem reações reversíveis da cadeia do polímero, que promovem o movimento observado:\n\nTOMA, H. E. A nanotecnologia das moléculas. **Química Nova na Escola**, n.21, maio 2005 (adaptado).\n\n![](/questoes/natureza/c11f9d070bae8f5e.png)\n\nO fenômeno de movimento molecular, promovido pela incidência de luz, decorre do(a)",
+"imagens": [
+"/questoes/natureza/c11f9d070bae8f5e.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Movimento vibracional dos átomos, que leva ao encurtamento e à relaxação das ligações",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Isomerização das ligações N=N, sendo a forma cis do polímero mais compacta que a trans.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Tautomerização das unidades monoméricas do polímero, que leva a um composto mais compacto.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ressonância entre os elétrons π do grupo azo e os do anel aromático que encurta as ligações duplas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Variação conformacional das ligações N=N, que resulta em estruturas com diferentes áreas de superfície.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.92339,
+"b": 1.76478,
+"c": 0.08431,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 91",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/91",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-92",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 92,
+"area": "natureza",
+"enunciado": "O carro flex é uma realidade no Brasil. Estes veículos estão equipados com motor que tem a capacidade de funcionar com mais de um tipo de combustível. No entanto, as pessoas que têm esse tipo de veículo, na hora  \ndo abastecimento, têm sempre a dúvida: álcool ou gasolina? Para avaliar o consumo desses combustíveis, realizou-se um percurso com um veículo flex, consumindo 40 itros de gasolina e no percurso de volta utilizou-se etanol.  \nFoi considerado o mesmo consumo de energia tanto no percurso de ida quanto no de volta.  \nO quadro resume alguns dados aproximados sobre esses combustíveis.\n\n![](/questoes/natureza/eb9f06135cc43e54.png)\n\nO volume de etanol combustível, em litro, consumido no percurso de volta é mais próximo de",
+"imagens": [
+"/questoes/natureza/eb9f06135cc43e54.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "27.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "32.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "37.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "58.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "67.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.18742,
+"b": 1.54804,
+"c": 0.13671,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 92",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/92",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-93",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 93,
+"area": "natureza",
+"enunciado": "Em 1938 o arqueólogo alemão WIlhelm Kõnlg, diretor do Museu Nacional do Iraque, encontrou um objeto estranho na coleção da Instituição, que poderia ter sido usado como uma pilha, similar às utilizadas em nossos dias. A suposta pilha, datada de cerca de 200 a.C., é constituída de um pequeno vaso de barro (argila) no qual foram instalados um tubo de cobre, uma barra de ferro (aparentemente corroída por ácido) e uma tampa de betume (asfalto), conforme ilustrado. Considere os potenciais-padrão de redução: ![](/questoes/natureza/b9f618bd18d7b8ad.png) (Fe^+|Fe) = -0,4: 4 V; ![](/questoes/natureza/cbfb298334db119f.png) (H+|H.) = 0,00 V; e  ![](/questoes/natureza/1129a0a0ad3e6244.png) (Cu^+|Cu) = +0,34 V.\n\n![](/questoes/natureza/95beac663d54befc.png)\n\nNessa suposta pilha, qual dos componentes atuaria como cátodo?",
+"imagens": [
+"/questoes/natureza/b9f618bd18d7b8ad.png",
+"/questoes/natureza/cbfb298334db119f.png",
+"/questoes/natureza/1129a0a0ad3e6244.png",
+"/questoes/natureza/95beac663d54befc.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A tampa de betume.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O vestígio de ácido.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A barra de ferro.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O tubo de cobre.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "O vaso de barro.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.07227,
+"b": 1.12818,
+"c": 0.2408,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 93",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/93",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-94",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 94,
+"area": "natureza",
+"enunciado": "Anabolismo e catabolismo são processos celulares antagônicos, que são controlados principalmente pela ação hormonal. Por exemplo, no fígado a insulina atua como um hormônio com ação anabólica, enquanto o glucagon tem ação catabólica e ambos são secretados em resposta ao nível de glicose sanguínea.\n\nEm caso de um indivíduo com hipoglicemia, o hormônio citado que atua no catabolismo induzirá o organismo a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Realizar a fermentação lática.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Metabolizar aerobicamente a glicose.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Produzir aminoácidos a partir de ácidos graxos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Transformar ácidos graxos em glicogênio.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Estimular a utilização do glicogênio.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.8637,
+"b": 1.5452,
+"c": 0.17661,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 94",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/94",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-95",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 95,
+"area": "natureza",
+"enunciado": "Usando um densímetro cuja menor divisão da escala, isto é, a diferença entre duas marcações consecutivas, é de![](/questoes/natureza/ac362be1a8c7171d.png), um estudante realizou um teste de densidade: colocou este instrumento na água pura e observou que ele atingiu o repouso na posição mostrada.\n\n![](/questoes/natureza/5588aecaa1c8b790.png)\n\nEm dois outros recipientes A e B contendo 2 litros de água pura, em cada um, ele adicionou 100 g e 200 g de NaCl, respectivamente.\nQuando o cloreto de sódio é adicionado à água pura ocorre sua dissociação formando os íons e . Considere que esses íons ocupam os espaços\nintermoleculares na solução.\nNestes recipientes, a posição de equilíbrio do densímetro\nestá representada em:",
+"imagens": [
+"/questoes/natureza/ac362be1a8c7171d.png",
+"/questoes/natureza/5588aecaa1c8b790.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/3bdb1a07012eda3e.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/d52f9ee3cc9f74fe.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/fbf7473af35cd461.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/266063bedc19f38c.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/91f958dc7ac63649.png"
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.44722,
+"b": 1.54204,
+"c": 0.09725,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 95",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/95",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-96",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 96,
+"area": "natureza",
+"enunciado": "Para serem absorvidos pelas células do intestino humano, os lipídios ingeridos precisam ser primeiramente emulsificados. Nessa etapa da digestão, torna-se necessária a ação dos ácidos biliares, visto que os lipídios apresentam uma natureza apoiar e são insolúveis em água.\n\nEsses ácidos atuam no processo de modo a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Hidrolisar os lipídios.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Agir como detergentes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Tornar os lipídios anfifílicos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Promover a secreção de lipases.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Estimular o trânsito intestinal dos lipídios.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.85116,
+"b": 1.38202,
+"c": 0.14086,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 96",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/96",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-97",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 97,
+"area": "natureza",
+"enunciado": "A tecnologia de comunicação da etiqueta RFID (chamada de etiqueta inteligente) é usada há anos para rastrear gado, vagões de trem, bagagem aérea e carros nos pedágios. Um modelo mais barato dessas etiquetas pode funcionar sem baterias e é constituído por três componentes: um microprocessador de silício; uma bobina de metal, feita de cobre ou de alumínio, que é enrolada em um padrão circular; e um encapsulador, que é um material de vidro ou polímero envolvendo o microprocessador e a bobina. Na presença de um campo de radiofrequência gerado pelo leitor, a etiqueta transmite sinais. A distância de leitura é determinada pelo tamanho da bobina e pela potência da onda de rádio emitida pelo leitor.\n\nDisponível em: http://eletronicos.hsw.uol.com.br. Acesso em: 27 fev. 2012 (adaptado)\n\nA etiqueta funciona sem pilhas porque o campo",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Elétrico da onda de rádio agita elétrons da bobina.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Elétrico da onda de rádio cria uma tensão na bobina.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Magnético da onda de rádio induz corrente na bobina.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Magnético da onda de rádio aquece os fios da bobina.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Magnético da onda de rádio diminui a ressonância no interior da bobina.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.62341,
+"b": 0.557,
+"c": 0.27893,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 97",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/97",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-98",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 98,
+"area": "natureza",
+"enunciado": "Corredores ecológicos visam mitigar os efeitos da fragmentação dos ecossistemas promovendo a ligação entre diferentes áreas, com o objetivo de proporcionar o deslocamento de animais, a dispersão de sementes e o aumento da cobertura vegetal. São instituídos com base em informações como estudos sobre o deslocamento de espécies, sua área de vida (área necessária para o suprimento de suas necessidades vitais e reprodutivas) e a distribuição de suas populações.\n\nDisponível em: www.mma.gov.br. Acesso em: 30 nov. 2017 (adaptado).\n\nNessa estratégia, a recuperação da biodiversidade é efetiva porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Propicia o fluxo gênico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Intensifica o manejo de espécies.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Amplia o processo de ocupação humana.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumenta o número de indivíduos nas populações.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Favorece a formação de ilhas de proteção integral.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.87928,
+"b": 1.01563,
+"c": 0.07272,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 98",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/98",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-99",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 99,
+"area": "natureza",
+"enunciado": "A identificação de riscos de produtos perigosos para o transporte rodoviário é obrigatória e realizada por meio da sinalização composta por um painel de segurança, de cor alaranjada, e um rótulo de risco. As informações inseridas no painel de segurança e no rótulo de risco, conforme determina a legislação, permitem que se identifique o produto transportado e os perigos a ele associados.\n\nA sinalização mostrada identifica uma substância que está sendo transportada em um caminhão.\n\n![](/questoes/natureza/0726bb797f3530eb.png)\n\nOs três algarismos da parte superior do painel indicam o “Número de risco”. O número 268 indica tratar-se de um gás (2), tóxico (6) e corrosivo (8). Os quatro dígitos da parte inferior correspondem ao “Número ONU”, que identifica o produto transportado.\n\nBRASIL. **Resolução n. 420**, de 12/02/2004, da Agência Nacional de Transportes Terrestres (ANTT)/Ministério dos Transportes (adaptado).\n\nABNT. **NBR 7500**: identificação para o transporte terrestre, manuseio, movimentação e  \narmazenamento de produtos. Rio de Janeiro, 2004 (adaptado).\n\nConsiderando a identificação apresentada no caminhão, o código 1005 corresponde à substância",
+"imagens": [
+"/questoes/natureza/0726bb797f3530eb.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/1198cda059c6e582.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/54392137038a4605.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/68a592b29257884f.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/b9377835c6818699.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/5ce944b27e82cf7c.png"
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.24846,
+"b": 1.46128,
+"c": 0.08248,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 99",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/99",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-100",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 100,
+"area": "natureza",
+"enunciado": "No ciclo celular atuam moléculas reguladoras. Dentre elas, a proteína p53 é ativada em resposta a mutações no DNA, evitando a progressão do ciclo até que os danos sejam reparados, ou induzindo a célula ã autodestruição.\n\nALBERTS, B. et ai. **Fundamentos da biologia celular.** Porto Alegre: Artmed, 2011 (adaptado).\n\nA ausência dessa proteína poderá favorecer a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Redução da síntese de DNA, acelerando o ciclo celular.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Saída imediata do ciclo celular, antecipando a proteção do DNA.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ativação de outras proteínas reguladoras, induzindo a apoptose.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Manutenção da estabilidade genética, favorecendo a longevidade.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Proliferação celular exagerada, resultando na formação de um tumor.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.38835,
+"b": 0.44914,
+"c": 0.13382,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 100",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/100",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-101",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 101,
+"area": "natureza",
+"enunciado": "O deserto é um bioma que se localiza em regiões de pouca umidade. A fauna é, predominantemente, composta por animais roedores, aves, répteis e artrópodes.\n\nUma adaptação, associada a esse bioma, presente nos seres vivos dos grupos citados é o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Existência de numerosas glândulas sudoríparas na epiderme.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Eliminação de excretas nitrogenadas de forma concentrada.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Desenvolvimento do embrião no interior de ovo com casca.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Capacidade de controlar a temperatura corporal.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Respiração realizada por pulmões foliáceos.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.53397,
+"b": 1.35731,
+"c": 0.08292,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 101",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/101",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-102",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 102,
+"area": "natureza",
+"enunciado": "O sulfeto de mercúrio(ll) foi usado como pigmento vermelho para pinturas de quadros e murais. Esse pigmento, conhecido como _vermilion_, escurece com o passar dos anos, fenômeno cuja origem é alvo de pesquisas. Aventou-se a hipótese de que o _vermilion_ seja decomposto sob a ação da luz, produzindo uma fina camada de mercúrio metálico na superfície. Essa reação seria catalisada por íon cloreto presente na umidade do ar\n\nWOGAN, T. **Mercury’s Dark Influence on Art.** Disponível em: www.chemistryworld.com. Acesso em: 26 abr. 2018 (adaptado).\n\nSegundo a hipótese proposta, o íon cloreto atua na decomposição fotoquímica do vermilion",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Reagindo como agente oxidante.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Deslocando o equilíbrio químico.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diminuindo a energia de ativação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Precipitando cloreto de mercúrio.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Absorvendo a energia da luz visível.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.9208,
+"b": 1.41415,
+"c": 0.11735,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 102",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/102",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-103",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 103,
+"area": "natureza",
+"enunciado": "O sonorizador é um dispositivo físico implantado sobre a superfície de uma rodovia de modo que provoque uma trepidação e ruído quando da passagem de um veículo sobre ele, alertando para uma situação atípica à frente, como obras, pedágios ou travessia de pedestres.\n\nAo passar sobre os sonorizadores, a suspensão do veículo sofre vibrações que produzem ondas sonoras, resultando em um barulho peculiar. Considere um veículo que passe com velocidade constante igual a 108 km/h  sobre um sonorizador cujas faixas são separadas por uma distância de 8 cm.\n\nDisponível em: www.denatran.gov.br. Acesso em: 2 set. 2015 (adaptado).\n\nA frequência da vibração do automóvel percebida pelo condutor durante a passagem nesse sonorizador é mais próxima de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "8,6 hertz.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "13,5 hertz.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "375 hertz.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "1 350 hertz.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "4 860 hertz.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.08723,
+"b": 1.42925,
+"c": 0.18667,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 103",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/103",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-104",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 104,
+"area": "natureza",
+"enunciado": "As pessoas que utilizam objetos cujo princípio de funcionamento é o mesmo do das alavancas aplicam uma força, chamada de força potente, em um dado ponto da barra, para superar ou equilibrar uma segunda força, chamada de resistente, em outro ponto da barra. Por causa das diferentes distâncias entre os pontos de aplicação das forças, potente e resistente, os seus efeitos também são diferentes. Afigura mostra alguns exemplos desses objetos.\n\n![](/questoes/natureza/30dc84a707114a78.png)\n\nEm qual dos objetos a força potente é maior que a força resistente?",
+"imagens": [
+"/questoes/natureza/30dc84a707114a78.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Pinça.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Alicate.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Quebra-nozes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Carrinho de mão.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Abridor de garrafa.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.37076,
+"b": 2.55861,
+"c": 0.08688,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 104",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/104",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-105",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 105,
+"area": "natureza",
+"enunciado": "Na mitologia grega, Nióbia era a filha de Tãntalo, dois personagens conhecidos pelo sofrimento. O elemento químico de número atômico (Z) igual a 41 tem propriedades químicas e físicas tão parecidas com as do elemento de número atômico 73 que chegaram a ser confundidos.  \nPor isso, em homenagem a esses dois personagens da mitologia grega, foi conferido a esses elementos os nomes de nióbio (Z = 41) e tãntalo (Z = 73). Esses dois elementos químicos adquiriram grande importância econômica na metalurgia, na produção de supercondutores e em outras aplicações na indústria de ponta, exatamente pelas propriedades químicas e físicas comuns aos dois.\n\nKEAN, S. **A colher que desaparece:** e outras histórias reais de loucura, amor e morte a partir dos elementos químicos. Rio de Janeiro: Zahar, 2011 (adaptado).\n\nA importância econômica e tecnológica desses elementos, pela similaridade de suas propriedades químicas e físicas, deve-se a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Terem elétrons no subnível f",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Serem elementos de transição interna.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Pertencerem ao mesmo grupo na tabela periódica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Terem seus elétrons mais externos nos níveis 4 e 5, respectivamente.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Estarem localizados na família dos alcalinos terrosos e alcalinos, respectivamente.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.58095,
+"b": 2.06279,
+"c": 0.24535,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 105",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/105",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-106",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 106,
+"area": "natureza",
+"enunciado": "O processo de formação de novas espécies é lento e repleto de nuances e estágios intermediários, havendo uma diminuição da viabilidade entre cruzamentos. Assim, plantas originalmente de uma mesma espécie que não cruzam mais entre si podem ser consideradas como uma espécie se diferenciando. Um pesquisador realizou cruzamentos entre nove populações — denominadas de acordo com a localização onde são encontradas — de uma espécie de orquídea (_Epidendrum denticulatum_). No diagrama estão os resultados dos cruzamentos entre as populações.  \nConsidere que o doador fornece o pólen para o receptor\n\nFIORAVANTI, C. Os primeiros passos de novas espécies: plantas e animais se diferenciam por meio de mecanismos surpreendentes. **Pesquisa Fapesp**, out. 2013 (adaptado).\n\n![](/questoes/natureza/2748ebd935545ad3.png)\n\nEm populações de quais localidades se observa um processo de especiação evidente?",
+"imagens": [
+"/questoes/natureza/2748ebd935545ad3.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Bertioga e Marambaia; Alcobaça e Olivença.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Itirapina e Itapeva; Marambaia e Massambaba.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Itirapina e Marambaia; Alcobaça e Itirapina.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Itirapina e Peti; Alcobaça e Marambaia.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Itirapina e Olivença; Marambaia e Peti.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.20508,
+"b": 1.25772,
+"c": 0.17322,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 106",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/106",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-107",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 107,
+"area": "natureza",
+"enunciado": "O cruzamento de duas espécies da família das Anonáceas, a cherimoia (_Annona cherimola_) com a fruta-pinha (_Annona squamosa_), resultou em uma planta híbrida denominada de atemoia. Recomenda-se que o seu plantio seja por meio de enxertia.\n\nUm dos benefícios dessa forma de plantio é a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ampliação da variabilidade genética.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Produção de frutos das duas espécies.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Manutenção do genótipo da planta híbrida.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Reprodução de clones das plantas parentais.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Modificação do genoma decorrente da transgenia.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.17373,
+"b": 2.03465,
+"c": 0.14095,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 107",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/107",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-108",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 108,
+"area": "natureza",
+"enunciado": "Ao pesquisar um resistor feito de um novo tipo de material, um cientista observou o comportamento mostrado no gráico tensão _versus_ corrente.\n\n![](/questoes/natureza/49b9bb1eaff7b265.png)\n\nApós a análise do gráfico, ele concluiu que a tensão em função da corrente é dada pela equação \nO gráfico da resistência elétrica (R) do resistor em função\nda corrente (i) é",
+"imagens": [
+"/questoes/natureza/49b9bb1eaff7b265.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/1d490665ae0b7932.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/ce2e914789a26ad6.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/2594f1f34c1a4bd1.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/2c99414f8f701ef0.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/0521472efcf2286f.png"
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.76937,
+"b": 1.50273,
+"c": 0.18595,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 108",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/108",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-109",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 109,
+"area": "natureza",
+"enunciado": "A hidroxilamina ![](/questoes/natureza/b39065acff1b82fd.png) é extremamente reativa em reações de substituição nucleofílica, justificando sua utilização em diversos processos. A reação de substituição nucleofílica entre o anidrido acético e a hidroxilamina está representada.\n\n![](/questoes/natureza/c20ab4f0fc08523c.png)\n\nO produto A é favorecido em relação ao B, por um fator de![](/questoes/natureza/ec68d957de6be402.png). Em um estudo de possível substituição do uso de hidroxilamina, foram testadas as moléculas numeradas de 1 a 5.\n\n![](/questoes/natureza/bbcb7e3c09c825bd.png)\n\nDentre as moléculas testadas, qual delas apresentou menor reatividade?",
+"imagens": [
+"/questoes/natureza/b39065acff1b82fd.png",
+"/questoes/natureza/c20ab4f0fc08523c.png",
+"/questoes/natureza/ec68d957de6be402.png",
+"/questoes/natureza/bbcb7e3c09c825bd.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.57501,
+"b": 2.57259,
+"c": 0.3311,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 109",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/109",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-110",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 110,
+"area": "natureza",
+"enunciado": "Um estudante relatou que o mapeamento do DNA da cevada foi quase todo concluído e seu código genético desvendado. Chamou atenção para o número de genes que compõem esse código genético e que a semente da cevada, apesar de pequena, possui um genoma mais complexo que o humano, sendo boa parte desse código constituída de sequências repetidas. Nesse contexto, o conceito de código genético está abordado de forma equivocada.\n\nCientificamente esse conceito é definido como",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Trincas de nucleotídeos que codificam os aminoácidos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Localização de todos os genes encontrados em um genoma.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Codificação de sequências repetidas presentes em um genoma.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Conjunto de todos os RNAs mensageiros transcritos em um organismo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Todas as sequências de pares de bases presentes em um organismo.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.50152,
+"b": 1.93822,
+"c": 0.08461,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 110",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/110",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-111",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 111,
+"area": "natureza",
+"enunciado": "A polinização, que viabiliza o transporte do grão de pólen de uma planta até o estigma de outra, pode ser realizada biótica ou abioticamente. Nos processos abióticos, as plantas dependem de fatores como o vento e a água.\n\nA estratégia evolutiva que resulta em polinização mais eficiente quando esta depende do vento é o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Diminuição do cálice.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Alongamento do ovário.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Disponibilização do néctar.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Intensificação da cor das pétalas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aumento do número de estames.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.71388,
+"b": 1.29656,
+"c": 0.10169,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 111",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/111",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-112",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 112,
+"area": "natureza",
+"enunciado": "Muitos _smartphones_ e _tablets_ não precisam mais de teclas, uma vez que todos os comandos podem ser dados ao se pressionar a própria tela. Inicialmente essa tecnologia foi proporcionada por meio das telas resistivas, formadas basicamente por duas camadas de material condutor transparente que não se encostam até que alguém as pressione, modificando a resistência total do circuito de acordo com o ponto onde ocorre o toque.\n\nA imagem é uma simplificação do circuito formado pelas placas, em que **A** e **B** representam pontos onde o circuito pode ser fechado por meio do toque\n\n![](/questoes/natureza/f6de6076e69d119c.png)\n\nQual é a resistência equivalente no circuito provocada por um toque que fecha o circuito no ponto A?",
+"imagens": [
+"/questoes/natureza/f6de6076e69d119c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/eb8fcb121ad219b4.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/b076167901dc0050.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/e033e3f7b6e4781d.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/51ce9764f5c45ec8.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/d10befdd0bfbd408.png"
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.91646,
+"b": 1.31695,
+"c": 0.14694,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 112",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/112",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-113",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 113,
+"area": "natureza",
+"enunciado": "Companhias que fabricam jeans usam cloro para o clareamento, seguido de lavagem. Algumas estão substituindo o cloro por substâncias ambientalmente mais seguras como peróxidos, que podem ser degradados por enzimas chamadas peroxidases. Pensando nisso, pesquisadores inseriram genes codificadores de peroxidases em leveduras cultivadas nas condições de clareamento e lavagem dos _jeans_ e selecionaram as sobreviventes para produção dessas enzimas.\n\nTORTORA, G. J.; FUNKE, B. R.; CASE, C. L. **Microbiologia**. Rio de Janeiro: Artmed, 2016 (adaptado).\n\nNesse caso, o uso dessas leveduras modificadas objetiva",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Reduzir a quantidade de resíduos tóxicos nos efluentes da lavagem.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Eliminar a necessidade de tratamento da água consumida.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Elevar a capacidade de clareamento dos jeans.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumentar a resistência do jeans a peróxidos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Associar ação bactericida ao clareamento.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.11154,
+"b": 0.37898,
+"c": 0.09388,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 113",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/113",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-114",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 114,
+"area": "natureza",
+"enunciado": "Por meio de reações químicas que envolvem carboidratos, lipídeos e proteínas, nossas células obtêm energia e produzem gás carbônico e água. A oxidação da glicose no organismo humano libera energia, conforme ilustra a equação química, sendo que aproximadamente 40% dela é disponibilizada para atividade muscular.\n\n![](/questoes/natureza/d34db9c52693aaa0.png)\n\nNa oxidação de 1,0 grama de glicose, a energia obtida para atividade muscular, em quilojoule, é mais próxima de",
+"imagens": [
+"/questoes/natureza/d34db9c52693aaa0.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "6,2.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "15,6.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "70,0.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "622,2.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "1 120,0.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.48757,
+"b": 1.61171,
+"c": 0.17521,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 114",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/114",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-115",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 115,
+"area": "natureza",
+"enunciado": "Alguns peixes, como o poraquê, a enguia-elétrica da Amazônia, podem produzir uma corrente elétrica quando se encontram em perigo. Um poraquê de 1 metro de comprimento, em perigo, produz uma corrente em torno de 2 ampères e uma voltagem de 600 volts.\n\nO quadro apresenta a potência aproximada de  \nequipamentos elétricos.\n\n![](/questoes/natureza/d269b4d4f24bacb1.png)\n\nO equipamento elétrico que tem potência similar àquela produzida por esse peixe em perigo é o(a)",
+"imagens": [
+"/questoes/natureza/d269b4d4f24bacb1.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Exaustor.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Computador.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aspirador de pó.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Churrasqueira elétrica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Secadora de roupas.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.34738,
+"b": 0.81755,
+"c": 0.28074,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 115",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/115",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-116",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 116,
+"area": "natureza",
+"enunciado": "Células solares à base de![](/questoes/natureza/e07ca4ee050b60c0.png) sensibilizadas por corantes (S) são promissoras e poderão vir a substituir as células de silício. Nessas células, o corante adsorvido sobre o ![](/questoes/natureza/acbb97c710846643.png) é responsável por absorver a energia luminosa ![](/questoes/natureza/191608637407f773.png), e o corante excitado (S\\*) é capaz de transferir elétrons para o ![](/questoes/natureza/167abf5971b0984d.png). Um esquema dessa célula e os processos envolvidos estão ilustrados na figura. A conversão de energia solar em elétrica ocorre por meio da sequência de reações apresentadas.\n\n![](/questoes/natureza/17b7d2787d3e012f.png)\n\nA reação 3 é fundamental para o contínuo funcionamento da célula solar, pois",
+"imagens": [
+"/questoes/natureza/e07ca4ee050b60c0.png",
+"/questoes/natureza/acbb97c710846643.png",
+"/questoes/natureza/191608637407f773.png",
+"/questoes/natureza/167abf5971b0984d.png",
+"/questoes/natureza/17b7d2787d3e012f.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/62dde06f11f00588.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/115531aaf9ea78eb.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/7779274f011755b6.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/3bce129698843e73.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/3c0c0a27a2e744a9.png"
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.2733,
+"b": 1.82425,
+"c": 0.09321,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 116",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/116",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-117",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 117,
+"area": "natureza",
+"enunciado": "O nível metabólico de uma célula pode ser determinado pela taxa de síntese de RNAs e proteínas, processos dependentes de energia. Essa diferença na taxa de síntese de biomoléculas é refletida na abundância e características morfológicas dos componentes celulares. Em uma empresa de produção de hormônios proteicos a partir do cultivo de células animais, um pesquisador deseja selecionar uma linhagem com o metabolismo de síntese mais elevado, dentre as cinco esquematizadas na figura.\n\n![](/questoes/natureza/113502d3097c62cd.png)\n\nQual linhagem deve ser escolhida pelo pesquisador?",
+"imagens": [
+"/questoes/natureza/113502d3097c62cd.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "II",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "III",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "IV",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "V",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.33756,
+"b": 1.05073,
+"c": 0.2738,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 117",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/117",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-118",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 118,
+"area": "natureza",
+"enunciado": "Alguns materiais sólidos são compostos por átomos que interagem entre si formando ligações que podem ser covalentes, iônicas ou metálicas. A figura apresenta a energia potencial de ligação em função da distância interatômica em um sólido cristalino. Analisando essa figura, observa-se que, na temperatura de zero kelvin, a distância de equilíbrio da ligação entre os átomos ![](/questoes/natureza/81c2de8fece00d3f.png) corresponde ao valor mínimo de energia potencial. Acima dessa temperatura, a energia térmica fornecida aos átomos aumenta sua energia cinética e faz com que eles oscilem em torno de uma posição de equilíbrio média (círculos cheios), que é diferente para cada temperatura. A distância de ligação pode variar sobre toda a extensão das linhas horizontais, identificadas com o valor da temperatura, de ![](/questoes/natureza/b6d516cdef3eb720.png) a ![](/questoes/natureza/7b97749f55b9015e.png), (temperaturas crescentes).\n\n![](/questoes/natureza/564bc86746d7c14c.png)\n\nO deslocamento observado na distância média revela o fenômeno da",
+"imagens": [
+"/questoes/natureza/81c2de8fece00d3f.png",
+"/questoes/natureza/b6d516cdef3eb720.png",
+"/questoes/natureza/7b97749f55b9015e.png",
+"/questoes/natureza/564bc86746d7c14c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ionização.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Dilatação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Dissociação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Quebra de ligações covalentes.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Formação de ligações metálicas.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.89006,
+"b": 1.7307,
+"c": 0.23529,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 118",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/118",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-119",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 119,
+"area": "natureza",
+"enunciado": "A utilização de extratos de origem natural tem recebido a atenção de pesquisadores em todo o mundo, principalmente nos países em desenvolvimento que são altamente acometidos por doenças infecciosas e parasitárias. Um bom exemplo dessa utilização são os produtos de origem botânica que combatem insetos.\n\nO uso desses produtos pode auxiliar no controle da",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Esquistossomose.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Leptospirose.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Leishmaniose.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Hanseníase.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aids.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.03842,
+"b": 1.28024,
+"c": 0.1488,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 119",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/119",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-120",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 120,
+"area": "natureza",
+"enunciado": "Nos manuais de instalação de equipamentos de som há o alerta aos usuários para que observem a correta polaridade dos fios ao realizarem as conexões das caixas de som. As figuras ilustram o esquema de conexão das caixas de som de um equipamento de som mono, no qual os alto-falantes emitem as mesmas ondas. No primeiro caso, a ligação obedece às especificações do fabricante e no segundo mostra uma ligação na qual a polaridade está invertida.\n\n![](/questoes/natureza/73a4c36992ed6b4e.png)\n\nO que ocorre com os alto-falantes E e D se forem conectados de acordo com o segundo esquema?",
+"imagens": [
+"/questoes/natureza/73a4c36992ed6b4e.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O alto-falante E funciona normalmente e o D entra em curto-circuito e não emite som.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O alto-falante E emite ondas sonoras com frequências ligeiramente diferentes do alto-falante D provocando o fenômeno de batimento.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "O alto-falante E emite ondas sonoras com frequências e fases diferentes do alto-falante D provocando o fenômeno conhecido como ruído.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O alto-falante E emite ondas sonoras que apresentam um lapso de tempo em relação às emitidas pelo alto-falante D provocando o fenômeno de reverberação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "O alto-falante E emite ondas sonoras em oposição de fase às emitidas pelo alto-falante D provocando o fenômeno de interferência destrutiva nos pontos equidistantes aos alto-falantes.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.74195,
+"b": 2.00253,
+"c": 0.12818,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 120",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/120",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-121",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 121,
+"area": "natureza",
+"enunciado": "O manejo adequado do solo possibilita a manutenção de sua fertilidade à medida que as trocas de nutrientes entre matéria orgânica, água, solo e o ar são mantidas para garantir a produção. Algumas espécies iônicas de alumínio são tóxicas, não só para a planta, mas para muitos organismos como as bactérias responsáveis pelas transformações no ciclo do nitrogênio. O alumínio danifica as membranas das células das raízes e restringe a expansão de suas paredes, com isso, a planta não cresce adequadamente. Para promover benefícios para a produção agrícola, é recomendada a remediação do solo utilizando calcário ![](/questoes/natureza/c874572d4aaa267c.png)\n\nBRADY, N. C.; WEIL, R. R. **Elementos da natureza e propriedades dos solos**. Porto Alegre: Bookman, 2013 (adaptado)\n\nEssa remediação promove no solo o(a)",
+"imagens": [
+"/questoes/natureza/c874572d4aaa267c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Diminuição do pH, deixando-o fértil.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Solubilização do alumínio, ocorrendo sua lixiviação pela chuva.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Interação do íon cálcio com o íon alumínio, produzindo uma liga metálica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Reação do carbonato de cálcio com os íons alumínio, formando alumínio metálico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aumento da sua alcalinidade, tornando os íons alumínio menos disponíveis.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.04034,
+"b": 1.92499,
+"c": 0.21775,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 121",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/121",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-122",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 122,
+"area": "natureza",
+"enunciado": "Visando a melhoria estética de um veículo, o vendedor de uma loja sugere ao consumidor que ele troque as rodas de seu automóvel de aro 15 polegadas para aro 17 polegadas, o que corresponde a um diâmetro maior do conjunto roda e pneu.\n\nDuas consequências provocadas por essa troca de\naro são:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Elevar a posição do centro de massa do veículo tornando-o mais instável e aumentar a velocidade do automóvel em relação à indicada no velocímetro.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Abaixar a posição do centro de massa do veículo tornando-o mais instável e diminuir a velocidade do automóvel em relação à indicada no velocímetro.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Elevar a posição do centro de massa do veículo tornando-o mais estável e aumentar a velocidade do automóvel em relação à indicada no velocímetro.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Abaixar a posição do centro de massa do veículo tornando-o mais estável e diminuir a velocidade do automóvel em relação à indicada no velocímetro.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Elevar a posição do centro de massa do veículo tornando-o mais estável e diminuir a velocidade do automóvel em relação à indicada no velocímetro.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.03133,
+"b": 1.98006,
+"c": 0.20358,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 122",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/122",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-123",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 123,
+"area": "natureza",
+"enunciado": "As células e os organismos precisam realizar trabalho para permanecerem vivos e se reproduzirem. A energia metabólica necessária para a realização desse trabalho é oriunda da oxidação de combustíveis, gerados no ciclo do carbono, por meio de processos capazes de interconverter diferentes formas da energia.\n\n![](/questoes/natureza/db5c4a44a450752a.png)\n\nNesse ciclo, a formação de combustíveis está vinculada à conversão de energia",
+"imagens": [
+"/questoes/natureza/db5c4a44a450752a.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Térmica em cinética.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Química em térmica.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Eletroquímica em calor.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Cinética em eletromagnética.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Eletromagnética em química.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.65752,
+"b": 1.59508,
+"c": 0.15058,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 123",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/123",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-124",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 124,
+"area": "natureza",
+"enunciado": "O petróleo é uma fonte de energia de baixo custo e de larga utilização como matéria-prima para uma grande variedade de produtos. É um óleo formado de várias substâncias de origem orgânica, em sua maioria hidrocarbonetos de diferentes massas molares.\n\nSão utilizadas técnicas de separação para obtenção dos componentes comercializáveis do petróleo.  \nAlém disso, para aumentar a quantidade de frações comercializáveis, otimizando o produto de origem fóssil, utiliza-se o processo de craqueamento.\n\nO que ocorre nesse processo?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Transformação das frações do petróleo em outras moléculas menores.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Reação de óxido-redução com transferência de elétrons entre as moléculas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Solubilização das frações do petróleo com a utilização de diferentes solventes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Decantação das moléculas com diferentes massas molares pelo uso de centrífugas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Separação dos diferentes componentes do petróleo em função de suas temperaturas de ebulição.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.95113,
+"b": 0.77702,
+"c": 0.26199,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 124",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/124",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-125",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 125,
+"area": "natureza",
+"enunciado": "Afigura representa um prisma óptico, constituído de um material transparente, cujo índice de refração é crescente com a frequência da luz que sobre ele incide. Um feixe luminoso, composto por luzes vermelha, azul e verde, incide na face A, emerge na face B e, após ser refletido por um espelho. Incide num flime para fotografia colorida, revelando três pontos.\n\n![](/questoes/natureza/54e9721fb37b169c.png)\n\nObservando os pontos luminosos revelados no flime, de baixo para cima, constatam-se as seguintes cores:",
+"imagens": [
+"/questoes/natureza/54e9721fb37b169c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Vermelha, verde, azul.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Verde, vermelha, azul.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Azul, verde, vermelha.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Verde, azul, vermelha.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Azul, vermelha, verde.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.7303,
+"b": 2.07699,
+"c": 0.24838,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 125",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/125",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-126",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 126,
+"area": "natureza",
+"enunciado": "Tensoativos são compostos orgânicos que possuem comportamento anfifílico. Isto é, possuem duas regiões,  \numa hidrofóbica e outra hidrofílica. O principal tensoativo aniônico sintético surgiu na década de 1940 e teve grande  \naceitação no mercado de detergentes em razão do melhor desempenho comparado ao do sabão. No entanto, o uso desse produto provocou grandes problemas ambientais, dentre eles a resistência ã degradação biológica, por causa dos diversos carbonos terciários na cadela que compõe a porção hidrofóbica desse tensoativo aniônico. As ramificações na cadela dificultam sua degradação, levando ã persistência no melo ambiente por longos períodos. Isso levou a sua substituição na maioria dos países por tensoativos biodegradáveis, ou seja, com cadeias alquílicas lineares.\n\nPENTEADO, J. C. P.; EL SEOUD, O. A.; CARVALHO, L. R. F. \\[…\\]: uma abordagem ambiental e analítica. **Química Nova**, n. 5, 2006 (adaptado).\n\nQual a fórmula estrutural do tensoativo persistente no ambiente mencionado no texto?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/214b2784d032523a.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/43d8d7713b016491.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/e3a7b93416e1e68f.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/d0de92977c4d917b.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/167ffca5e34a4c36.png"
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.25858,
+"b": 0.79603,
+"c": 0.19389,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 126",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/126",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-127",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 127,
+"area": "natureza",
+"enunciado": "Considere, em um fragmento ambiental, uma árvore matriz com frutos (M) e outras cinco que produziram flores e são apenas doadoras de pólen (DP1, DP2, DP3, DP4 e DP5). Foi excluída a capacidade de autopolinização das árvores. Os genótipos da matriz, da semente (S1) e das prováveis fontes de pólen foram obtidos pela análise de dois locos (loco A e loco B) de marcadores de DNA, conforme a figura.\n\n![](/questoes/natureza/99591bee30167f42.png)\n\nA progênie S1 recebeu o pólen de qual doadora?",
+"imagens": [
+"/questoes/natureza/99591bee30167f42.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "DP1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "DP2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "DP3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "DP4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "DP5",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.869,
+"b": 0.91258,
+"c": 0.12516,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 127",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/127",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-128",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 128,
+"area": "natureza",
+"enunciado": "Em desenhos animados é comum vermos a personagem tentando impulsionar um barco soprando ar contra a vela para compensar a falta de vento. Algumas vezes usam o próprio fôlego, foles ou ventiladores. Estudantes de um laboratório didático resolveram investigar essa possibilidade. Para isso, usaram dois pequenos carros de plástico, **A** e **B**, instalaram sobre estes pequenas ventoinhas e fixaram verticalmente uma cartolina de curvatura  \nparabólica para desempenhar uma função análoga á vela de um barco. No carro **B** inverteu-se o sentido da ventoinha e manteve-se a vela, a fim de manter as características físicas do barco, massa e formato da cartolina. As figuras representam os carros produzidos. A montagem do carro **A** busca simular a situação dos desenhos  \nanimados, pois a ventoinha está direcionada para a vela.\n\n![](/questoes/natureza/88d55a5c8b12e564.png)\n\nCom os carros orientados de acordo com as figuras, os estudantes ligaram as ventoinhas, aguardaram o fluxo de ar ficar permanente e determinaram os módulos das velocidades médias dos carros ![](/questoes/natureza/ff828d1e648798bf.png) e ![](/questoes/natureza/ca10622c44934115.png) para o mesmo intervalo de tempo.\n\nA respeito das intensidades das velocidades médias e do sentido de movimento do carro A, os estudantes observaram que:",
+"imagens": [
+"/questoes/natureza/88d55a5c8b12e564.png",
+"/questoes/natureza/ff828d1e648798bf.png",
+"/questoes/natureza/ca10622c44934115.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/85057cfb43785c24.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/924accb32460c9f0.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/e7dc6e2a7a689cb2.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/7e8a22525f83e5e2.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/e79b50f251970b8b.png"
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.5965,
+"b": 1.16868,
+"c": 0.11844,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 128",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/128",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-129",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 129,
+"area": "natureza",
+"enunciado": "Muitos primatas, incluindo nós humanos, possuem visão tricromática: têm três pigmentos visuais na retina sensíveis à luz de uma determinada faixa de comprimentos de onda. Informalmente, embora os pigmentos em si não possuam cor, estes são conhecidos como pigmentos“azul”, “verde” e “vermelho” e estão associados ã cor que causa grande excitação (ativação). A sensação que temos ao observar um objeto colorido decorre da ativação relativa dos três pigmentos. Ou seja, se estimulássemos a retina com uma luz na faixa de 530 nm (retângulo I no gráfico), não excitaríamos o pigmento “azul”, o pigmento “verde” seria ativado ao máximo e o “vermelho” seria ativado em aproximadamente 75%, e Isso nos daria a sensação de ver uma cor amarelada. Já uma luz na faixa de comprimento de onda de 600 nm (retângulo II) estimularia o pigmento “verde” um pouco e o “vermelho” em cerca de 75%, e Isso nos daria a sensação de ver laranja-avermelhado. No entanto, há características genéticas presentes em alguns indivíduos, conhecidas coletivamente como Daltonismo, em que um ou mais pigmentos não funcionam perfeitamente.\n\n![](/questoes/natureza/29aae3bb62328fc2.png)\n\nCaso estimulássemos a retina de um indivíduo com essa característica, que não possuísse o pigmento conhecido como “verde”, com as luzes de 530 nm e 600 nm na mesma intensidade luminosa, esse indivíduo seria incapaz de",
+"imagens": [
+"/questoes/natureza/29aae3bb62328fc2.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Identificar o comprimento de onda do amarelo, uma vez que não possui o pigmento “verde”.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ver o estímulo de comprimento de onda laranja, pois não haveria estimulação de um pigmento visual.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Detectar ambos os comprimentos de onda, uma vez que a estimulação dos pigmentos estaria prejudicada.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Visualizar o estímulo do comprimento de onda roxo, já que este se encontra na outra ponta do espectro.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Distinguir os dois comprimentos de onda, pois ambos estimulam o pigmento “vermelho” na mesma intensidade.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.67211,
+"b": 1.96584,
+"c": 0.24188,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 129",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/129",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-130",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 130,
+"area": "natureza",
+"enunciado": "O grafeno é uma forma alotrópica do carbono constituído por uma folha planar (arranjo bidimensional) de átomos de carbono compactados e com a espessura de apenas um átomo. Sua estrutura é hexagonal, conforme a figura.\n\n![](/questoes/natureza/f3ef5ca3b926c520.png)\n\nNesse arranjo, os átomos de carbono possuem hibridação",
+"imagens": [
+"/questoes/natureza/f3ef5ca3b926c520.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/aafdf1682075366b.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/4df2147e9203648c.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/4ef4efb624488831.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/d6dce4199556323b.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/c4f1aaa27d6d5750.png"
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.40632,
+"b": 1.8928,
+"c": 0.12094,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 130",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/130",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-131",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 131,
+"area": "natureza",
+"enunciado": "Um projetista deseja construir um brinquedo que lance um pequeno cubo ao longo de um trilho horizontal, e o dispositivo precisa oferecer a opção de mudar a velocidade de lançamento. Para isso, ele utiliza uma mola e um trilho onde o atrito pode ser desprezado, conforme a figura.\n\n![](/questoes/natureza/0b349c9b4dbb0ca3.png)\n\nPara que a velocidade de lançamento do cubo seja aumentada quatro vezes, o projetista deve",
+"imagens": [
+"/questoes/natureza/0b349c9b4dbb0ca3.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Manter a mesma mola e aumentar duas vezes a sua deformação.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Manter a mesma mola e aumentar quatro vezes a sua deformação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Manter a mesma mola e aumentar dezesseis vezes a sua deformação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Trocar a mola por outra de constante elástica duas vezes maior e manter a deformação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Trocar a mola por outra de constante elástica quatro vezes maior e manter a deformação.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 8.00279,
+"b": 2.09568,
+"c": 0.33632,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 131",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/131",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2018-132",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 132,
+"area": "natureza",
+"enunciado": "As abelhas utilizam a sinalização química para distinguir a abelha-rainha de uma operária, sendo capazes de reconhecer diferenças entre moléculas. A rainha produz o sinalizador químico conhecido como ácido _9-hidroxidec-2-enoico_, enquanto as abelhas-operárias produzem ácido _10-hidroxidec-2-enoico_.  \nNós podemos distinguir as abelhas-operárias e rainhas  \npor sua aparência, mas, entre si, elas usam essa  \nsinalização química para perceber a diferença. Pode-se  \ndizer que veem por meio da química.\n\nLE COUTEUR, R; BURRESON, J. **Os botões de Napoleão**: as 17 moléculas que mudaram a história. Rio de Janeiro: Jorge Zahar, 2006 (adaptado).\n\nAs moléculas dos sinalizadores químicos produzidas pelas abelhas rainha e operária possuem diferença na",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fórmula estrutural.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fórmula molecular.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Identificação dos tipos de ligação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Contagem do número de carbonos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Identificaçáo dos grupos funcionais.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.89268,
+"b": 0.97872,
+"c": 0.15829,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 132",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/132",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-133",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 133,
+"area": "natureza",
+"enunciado": "Insetos podem apresentar três tipos de desenvolvimento. Um deles, a holometabolia (desenvolvimento completo), é constituído pelas fases de ovo, larva, pupa e adulto sexualmente maduro, que ocupam diversos hábitats. Os insetos com holometabolia pertencem às ordens mais numerosas em termos de espécies conhecidas.\n\nEsse tipo de desenvolvimento está relacionado a um maior número de espécies em razão da",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Proteção na fase de pupa, favorecendo a sobrevivência de adultos férteis.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Produção de muitos ovos, larvas e pupas, aumentando o número de adultos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Exploração de diferentes nichos, evitando a competição entre as fases da vida.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ingestão de alimentos em todas as fases de vida, garantindo o surgimento do adulto.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Utilização do mesmo alimento em todas as fases, otimizando a nutrição do organismo.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.8199,
+"b": 1.42382,
+"c": 0.13254,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 133",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/133",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-134",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 134,
+"area": "natureza",
+"enunciado": "Talvez você já tenha bebido suco usando dois canudinhos iguais. Entretanto, pode-se verificar que, se colocar um canudo imerso no suco e outro do lado de fora do líquido, fazendo a sucção simultaneamente em ambos, você terá dificuldade em bebê-lo.\n\nEssa dificuldade ocorre porque o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Força necessária para a sucção do ar e do suco simultaneamente dobra de valor",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Densidade do ar é menor que a do suco, portanto, o volume de ar aspirado é muito maior que o volume de suco.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Velocidade com que o suco sobe deve ser constante nos dois canudos, o que é impossível com um dos canudos de fora.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Peso da coluna de suco é consideravelmente maior que o peso da coluna de ar, o que dificulta a sucção do líquido.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Pressão no interior da boca assume praticamente o mesmo valor daquela que atua sobre o suco.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.3472,
+"b": 1.81929,
+"c": 0.05895,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 134",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/134",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2018-135",
+"ano": 2018,
+"dia": 2,
+"caderno": "azul",
+"numero": 135,
+"area": "natureza",
+"enunciado": "O alemão Fritz Haber recebeu o Prêmio Nobel de química de 1918 pelo desenvolvimento de um processo viável para a síntese da amônia (NH3). Em seu discurso de premiação, Haber justificou a importância do feito dizendo que:  \n“Desde a metade do século passado, tornou-se  \nconhecido que um suprimento de nitrogênio é uma  \nnecessidade básica para o aumento das safras de  \nalimentos; entretanto, também se sabia que as plantas  \nnão podem absorver o nitrogênio em sua forma simples,  \nque é o principal constituinte da atmosfera. Elas precisam  \nque o nitrogênio seja combinado \\[…\\] para poderem  \nassimilá-lo.  \nEconomias agrícolas basicamente mantêm o balanço do nitrogênio ligado. No entanto, com o advento da era industrial, os produtos do solo são levados de onde cresce a colheita para lugares distantes, onde são consumidos, fazendo com que o nitrogênio ligado não retorne ã terra da qual foi retirado.  \nIsso tem gerado a necessidade econômica mundial de abastecer o solo com nitrogênio ligado. \\[…\\] A demanda por nitrogênio, tal como a do carvão, indica quão diferente nosso modo de vida se tornou com relação ao das pessoas que, com seus próprios corpos, fertilizam o solo que cultivam.  \nDesde a metade do último século, nós vínhamos aproveitando o suprimento de nitrogênio do salitre que a natureza tinha depositado nos desertos montanhosos do Chile. Comparando o rápido crescimento da demanda com a extensão calculada desses depósitos, ficou claro que em meados do século atual uma emergência seríssima seria inevitável, a menos que a química encontrasse uma saída.”\n\nHABER, F. **The Synthesis of Ammonia from its Elements.** Disponível em: www.nobelprize.org. Acesso em: 13jul. 2013 (adaptado)\n\nDe acordo com os argumentos de Haber, qual fenômeno teria provocado o desequilíbrio no “balanço do nitrogênio ligado”?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O esgotamento das reservas de salitre no Chile.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O aumento da exploração de carvão vegetal e carvão mineral.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A redução da fertilidade do solo nas economias agrícolas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A intensificação no fluxo de pessoas do campo para as cidades.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A necessidade das plantas de absorverem sais de nitrogênio disponíveis no solo.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.51059,
+"b": 1.777,
+"c": 0.06851,
+"fonte": "INEP, microdados do ENEM 2018 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2018, caderno azul (aplicação regular), questão 135",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2018/questions/135",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2018.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+}
+]

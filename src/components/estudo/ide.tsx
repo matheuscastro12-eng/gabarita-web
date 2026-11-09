@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Group, Panel, Separator } from "react-resizable-panels";
 import type { Questao, Letra } from "@/data/tipos";
-import { ehAposta, NOME_HABILIDADE } from "@/data/tipos";
+import { ehAposta, exibirHabilidade, NOME_HABILIDADE } from "@/data/tipos";
 import { NOME_AREA } from "@/data/apostas";
 import type { DegrauDica } from "@/lib/dominio/tipos";
 import type { EntradaEvento } from "@/lib/dominio/eventos";
@@ -241,7 +241,7 @@ function QuestaoDoSprint({
   useAtalho({ id: "proxima", combinacao: "n", descricao: "Próxima questão", grupo: "Sprint", ativo: confirmada, acao: aoAvancar });
 
   const rotuloHabilidade = questao.habilidade
-    ? `${NOME_HABILIDADE[questao.habilidade] ?? "Habilidade"} · ${questao.habilidade}`
+    ? `${NOME_HABILIDADE[questao.habilidade] ?? "Habilidade"} · ${exibirHabilidade(questao.habilidade)}`
     : ehAposta(questao)
       ? `Apostas 2026 · ${NOME_AREA[questao.area]}`
       : null;

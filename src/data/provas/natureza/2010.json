@@ -1,0 +1,2936 @@
+[
+{
+"id": "enem-2010-46",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 46,
+"area": "natureza",
+"enunciado": "A vacina, o soro e os antibióticos submetem os organismos a processos biológicos diferentes. Pessoas que viajam para regiões em que ocorrem altas incidências de febre amarela, de picadas de cobras peçonhentas e de leptospirose e querem evitar ou tratar problemas de saúde relacionados a essas ocorrências devem seguir determinadas orientações.\n\nAo procurar um posto de saúde, um viajante deveria ser orientado por um médico a tomar preventivamente ou como medida de tratamento",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Antibiótico contra o vírus da febre amarela, soro antiofídico caso seja picado por uma cobra e vacina contra a leptospirose.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Vacina contra o vírus da febre amarela, soro antiofídico caso seja picado por uma cobra e antibiótico caso entre em contato com a Leptospira sp.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Soro contra o vírus da febre amarela, antibiótico caso seja picado por uma cobra e soro contra toxinas bacterianas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Antibiótico ou soro, tanto contra o vírus da febre amarela como para veneno de cobras, e vacina contra a leptospirose.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Soro antiofídico e antibiótico contra a Leptospira sp e vacina contra a febre amarela caso entre em contato com o vírus causador da doença.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.03651,
+"b": -0.19844,
+"c": 0.18555,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 46",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/46",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-47",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 47,
+"area": "natureza",
+"enunciado": "As ondas eletromagnéticas, como a luz visível e as ondas de rádio, viajam em linha reta em um meio homogêneo. Então, as ondas de rádio emitidas na região litorânea do Brasil não alcançariam a região amazônica do Brasil por causa da curvatura da Terra. Entretanto sabemos que é possível transmitir ondas de rádio entre essas localidades devido à ionosfera.\n\nCom ajuda da ionosfera, a transmissão de ondas planas entre o litoral do Brasil e a região amazônica é possível por meio da",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Reflexão.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Refração.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Difração.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Polarização.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Interferência.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.28839,
+"b": 1.59673,
+"c": 0.12545,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 47",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/47",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-48",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 48,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/a3e20657881732e7.png)\n\nUm farol usa uma lâmpada de gás halogênio de 55 W de potência que opera com 36 V. Os dois faróis são ligados separadamente, com um fusível para cada um, mas, após um mau funcionamento, o motorista passou a conectá-los em paralelo, usando apenas um fusível. Dessa forma, admitindo-se que a fiação suporte a carga dos dois faróis, o menor valor de fusível adequado para proteção desse novo circuito é o",
+"imagens": [
+"/questoes/natureza/a3e20657881732e7.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Azul.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Preto.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Laranja.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Amarelo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Vermelho.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.64471,
+"b": 1.69985,
+"c": 0.15605,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 48",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/48",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-49",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 49,
+"area": "natureza",
+"enunciado": "A cárie dental resulta da atividade de bactérias que degradam os açúcares e os transformam em ácidos que corroem a porção mineralizada dos dentes. O flúor, juntamente com o cálcio e um açúcar chamado xilitol, agem inibindo esse processo. Quando não se escovam os dentes corretamente e neles acumulam-se restos de alimentos, as bactérias que vivem na boca aderem aos dentes, formando a placa bacteriana ou biofilme. Na placa, elas transformam o açúcar dos restos de alimentos em ácidos, que corroem o esmalte do dente formando uma cavidade, que é a cárie. Vale lembrar que a placa bacteriana se forma mesmo na ausência de ingestão de carboidratos fermentáveis, pois as bactérias possuem polissacarídeos intracelulares de reserva.\n\nDisponível em: http://www.diariodasaude.com.br. Acesso em: 11 ago. 2010 (adaptado).\n\n**cárie 1.** destruição de um osso por corrosão progressiva.  \n\\* cárie dentária: efeito da destruição da estrutura dentária por bactérias.\n\nHOUAISS, Antônio. Dicionário eletrônico. Versão 1.0. Editora  \nObjetiva, 2001 (adaptado).\n\nA partir da leitura do texto, que discute as causas do aparecimento de cáries, e da sua relação com as informações do dicionário, conclui-se que a cárie dental resulta, principalmente, de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Falta de flúor e de cálcio na alimentação diária da população brasileira.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Consumo exagerado do xilitol, um açúcar, na dieta alimentar diária do indivíduo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Redução na proliferação bacteriana quando a saliva é desbalanceada pela má alimentação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Uso exagerado do flúor, um agente que em alta quantidade torna-se tóxico à formação dos dentes.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Consumo excessivo de açúcares na alimentação e má higienizaçao bucal, que contribuem para a proliferação de bactérias.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.3956,
+"b": -1.05106,
+"c": 0.10029,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 49",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/49",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-50",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 50,
+"area": "natureza",
+"enunciado": "Em nosso cotidiano, utilizamos as palavras “calor” e “temperatura” de forma diferente de como elas são usadas no meio científico. Na linguagem corrente, calor é identificado como “algo quente” e temperatura mede a “quantidade de calor de um corpo”. Esses significados, no entanto, não conseguem explicar diversas situações que podem ser verificadas na prática.\n\nDo ponto de vista científico, que situação prática mostra a limitação dos conceitos corriqueiros de calor e temperatura?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A temperatura da água pode ficar constante durante o tempo em que estiver fervendo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Uma mãe coloca a mão na água da banheira do bebê para verificar a temperatura da água.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A chama de um fogão pode ser usada para aumentar a temperatura da água em uma panela.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A água quente que está em uma caneca é passada para outra caneca a fim de diminuir sua temperatura.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Um forno pode fornecer calor para uma vasilha de água que está em seu interior com menor temperatura do que a dele.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.32188,
+"b": 2.22673,
+"c": 0.17118,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 50",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/50",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-51",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 51,
+"area": "natureza",
+"enunciado": "O texto “O vôo das Folhas” traz uma visão dos índios  \nTicunas para um fenômeno usualmente observado na  \nnatureza:\n\n**O vôo das Folhas**  \nCom o vento  \nas folhas se movimentam.  \nE quando caem no chão  \nficam paradas em silêncio.  \nAssim se forma o ngaura. O ngaura cobre o chão da  \nfloresta, enriquece a terra e alimenta as árvores.\\]  \nAs folhas velhas morrem para ajudar o crescimento das  \nfolhas novas.\\]  \nDentro do ngaura vivem aranhas, formigas, escorpiões,  \ncentopeias, minhocas, cogumelos e vários tipos de outros  \nseres muito pequenos.\\]  \nAs folhas também caem nos lagos, nos igarapés e igapós.\n\nA natureza segundo os Ticunas/Livro das Árvores.  \nOrganização Geral dos Professores Bilíngues Ticunas, 2000\n\nNa visão dos índios Ticunas, a descrição sobre o ngaura permite classificá-lo como um produto diretamente relacionado ao ciclo",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Da água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Do oxigênio.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Do fósforo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Do carbono.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Do nitrogênio.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.26426,
+"b": 1.65221,
+"c": 0.05915,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 51",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/51",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-52",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 52,
+"area": "natureza",
+"enunciado": "Com o objetivo de se testar a eficiência de fornos de micro-ondas, planejou-se o aquecimento em 10°C de amostras de diferentes substâncias, cada uma com determinada massa, em cinco fornos de marcas distintas. Nesse teste, cada forno operou à potência máxima.\n\nO forno mais eficiente foi aquele que",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Forneceu a maior quantidade de energia às amostras.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Cedeu energia à amostra de maior massa em mais tempo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Forneceu a maior quantidade de energia em menos tempo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Cedeu energia à amostra de menor calor específico mais lentamente.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Forneceu a menor quantidade de energia às amostras em menos tempo.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.16861,
+"b": -0.67482,
+"c": 0.05898,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 52",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/52",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-53",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 53,
+"area": "natureza",
+"enunciado": "O fósforo, geralmente representado pelo íon de fosfato (PO4−3), é um ingrediente insubstituível da vida, já que é parte constituinte das membranas celulares e das moléculas do DNA e do trifosfato de adenosina (ATP), principal forma de armazenamento de energia das células. O fósforo utilizado nos fertilizantes agrícolas é extraído de minas, cujas reservas estão cada vez mais escassas. Certas práticas agrícolas aceleram a erosão do solo, provocando o transporte de fósforo para sistemas aquáticos, que fica imobilizado nas rochas. Ainda, a colheita das lavouras e o transporte dos restos alimentares para os lixões diminuem a disponibilidade dos íons no solo. Tais fatores têm ameaçado a sustentabilidade desse íon.\n\nUma medida que amenizaria esse problema seria:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Incentivar a reciclagem de resíduos biológicos, utilizando dejetos animais e restos de culturas para produção de adubo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Repor o estoque retirado das minas com um íon sintético de fósforo para garantir o abastecimento da indústria de fertilizantes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aumentar a importação de íons fosfato dos países ricos para suprir as exigências das indústrias nacionais de fertilizantes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Substituir o fósforo dos fertilizantes por outro elemento com a mesma função para suprir as necessidades do uso de seus íons.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Proibir, por meio de lei federal, o uso de fertilizantes com fósforo pelos agricultores, para diminuir sua extração das reservas naturais.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.61747,
+"b": 0.76122,
+"c": 0.18006,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 53",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/53",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-54",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 54,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/e4af9422d12194a3.png)\n\nA aparência de Júpiter é tipicamente marcada por duas faixas escuras em sua atmosfera – uma no hemisfério norte e outra no hemisfério sul. Como o gás está constantemente em movimento, o desaparecimento da faixa no planeta relaciona-se ao movimento das diversas camadas de nuvens em sua atmosfera. A luz do Sol, refletida nessas nuvens, gera a imagem que é captada pelos telescópios, no espaço ou na Terra.\n\nO desaparecimento da faixa sul pode ter sido determinado por uma alteração",
+"imagens": [
+"/questoes/natureza/e4af9422d12194a3.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Na temperatura da superfície do planeta.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "No formato da camada gasosa do planeta.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "No campo gravitacional gerado pelo planeta.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Na composição química das nuvens do planeta.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Na densidade das nuvens que compõem o planeta.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.56819,
+"b": 1.41425,
+"c": 0.00586,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 54",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/54",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-55",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 55,
+"area": "natureza",
+"enunciado": "Em visita a uma usina sucroalcooleira, um grupo de alunos pôde observar a série de processos de beneficiamento da cana-de-açúcar, entre os quais se destacam:  \n1\\. A cana chega cortada da lavoura por meio de caminhões e é despejada em mesas alimentadoras que a conduzem para as moendas. Antes de ser esmagada  \npara a retirada do caldo açucarado, toda a cana é transportada por esteiras e passada por um eletroímã para a retirada de materiais metálicos.  \n2\\. Após se esmagar a cana, o bagaço segue para as caldeiras, que geram vapor e energia para toda a usina.  \n3\\. O caldo primário, resultante do esmagamento, é passado por filtros e sofre tratamento para transformar-se em açúcar refinado e etanol.\n\nCom base nos destaques da observação dos alunos, quais operações físicas de separação de materiais foram realizadas nas etapas de beneficiamento da cana-de-açúcar?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Separação mecânica, extração, decantação.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Separação magnética, combustão, filtração.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Separação magnética, extração, filtração.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Imantação, combustão, peneiração.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Imantação, destilação, filtração.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 55",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/55",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-56",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 56,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/b53e9210f901737f.png)\n\nA fonte de energia representada na figura, considerada uma das mais limpas e sustentáveis do mundo, é extraída do calor gerado",
+"imagens": [
+"/questoes/natureza/b53e9210f901737f.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Pela circulação do magma no subsolo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Pelas erupções constantes dos vulcões.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Pelo sol que aquece as águas com radiação ultravioleta.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Pela queima do carvão e combustível fósseis.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Pelos detritos e cinzas vulcânicas.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.06202,
+"b": -0.20791,
+"c": 0.14685,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 56",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/56",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-57",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 57,
+"area": "natureza",
+"enunciado": "O despejo de dejetos de esgotos domésticos e industriais vem causando sérios problemas aos rios brasileiros. Esses poluentes são ricos em substâncias que contribuem para a eutrofização de ecossistemas, que é um enriquecimento da água por nutrientes, o que provoca um grande crescimento bacteriano e, por fim, pode promover escassez de oxigênio.\n\nUma maneira de evitar a diminuição da concentração de oxigênio no ambiente é:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aquecer as águas dos rios para aumentar a velocidade de decomposição dos dejetos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Retirar do esgoto os materiais ricos em nutrientes para diminuir a sua concentração nos rios.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Adicionar bactérias anaeróbicas às águas dos rios para que elas sobrevivam mesmo sem oxigênio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Substituir produtos não degradáveis por biodegradáveis para que as bactérias possam utilizar os nutrientes.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aumentar a solubilidade dos dejetos no esgoto para que os nutrientes fiquem mais acessíveis às bactérias.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.55259,
+"b": 0.9479,
+"c": 0.26359,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 57",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/57",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-58",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 58,
+"area": "natureza",
+"enunciado": "Sob pressão normal (ao nível do mar), a água entra em ebulição à temperatura de 100 °C. Tendo por base essa afirmação, um garoto residente em uma cidade litorânea fez a seguinte experiência:\n\n*   – Colocou uma caneca metálica contendo água no fogareiro do fogão de sua casa.\n*   – Quando a água começou a ferver, encostou, cuidadosamente, a extremidade mais estreita de uma seringa de injeção, desprovida de agulha, na superfície do líquido e, erguendo o êmbolo da seringa, aspirou certa quantidade de água para seu interior, tampando-a em seguida.\n*   – Verificando após alguns instantes que a água da seringa havia parado de ferver, ele ergueu o êmbolo da seringa, constatando, intrigado, que a água voltou a ferver após um pequeno deslocamento do êmbolo.\n\nConsiderando o procedimento anterior, a água volta a ferver porque esse deslocamento",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Permite a entrada de calor do ambiente externo para o interior da seringa.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Provoca, por atrito, um aquecimento da água contida na seringa.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Produz um aumento de volume que aumenta o ponto de ebulição da água.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Proporciona uma queda de pressão no interior da seringa que diminui o ponto de ebulição da água.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Possibilita uma diminuição da densidade da água que facilita sua ebulição.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.47034,
+"b": 0.64308,
+"c": 0.16107,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 58",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/58",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-59",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 59,
+"area": "natureza",
+"enunciado": "As cidades industrializadas produzem grandes proporções de gases como o CO2. o principal gás causador de efeito estufa. Isso ocorre por causa da quantidade de combustíveis fósseis queimados, principalmente no transporte, mas também em caldeiras industriais. Além disso, nessas cidades concentram-se as maiores áreas com solos asfaltados e concretados, o que aumenta a retenção de calor, formando o que se conhece por “ilhas de calor”. Tal fenômeno ocorre porque esses materiais absorvem o calor e o devolvem para o ar sob a forma de radiação térmica.\n\nEm áreas urbanas, devido à atuação conjunta do efeito estufa e das “ilhas de calor”, espera-se que o consumo de energia elétrica",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Diminua devido a utilização de caldeiras por indústrias metalúrgicas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aumente devido ao bloqueio da luz do sol pelos gases do efeito estufa.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diminua devido à não necessidade de aquecer a água utilizada em indústrias.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumente devido à necessidade de maior refrigeração de indústrias e residências.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Diminua devido à grande quantidade de radiação térmica reutilizada.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.62967,
+"b": 0.03807,
+"c": 0.12663,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 59",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/59",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-60",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 60,
+"area": "natureza",
+"enunciado": "A lavoura arrozeira na planície costeira da região sul do Brasil comumente sofre perdas elevadas devido a salinização da água de irrigação, que ocasiona prejuízos diretos, como a redução de produção da lavoura. Solos com processo de salinização avançado não são indicados, por exemplo, para o cultivo de arroz. As plantas retiram a água do solo quando as forças de embebição dos tecidos das raízes são superiores às forças com que a água é retida no solo.\n\nWINKEL, H.L.; TSCHIEDEL, M. Cultura do arroz: salinização de solos em cultivo do arroz.  \nDisponível em: http://agropage.tripod.com/saliniza.hml. Acesso em: 25 jun. 2010 (adaptado).\n\nA presença de sais na solução do solo faz com que seja dificultada a absorção de água pelas plantas, o que provoca o fenômeno conhecido por seca fisiológica, caracterizado pelo(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aumento da salinidade, em que a água do solo atinge uma concentração de sais maior que a das células das raízes das plantas, impedindo, assim, que a água seja absorvida.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aumento da salinidade, em que o solo atinge um nível muito baixo de água, e as plantas não tem força de sucção para absorver a água.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diminuição da salinidade, que atinge um nível em que as plantas não têm força de sucção, fazendo com que a água não seja absorvida.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumento da salinidade, que atinge um nível em que as plantas têm muita sudação, não tendo força de sucção para superá-la.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Diminuição da salinidade, que atinge um nível em que as plantas ficam túrgidas e não têm força de sudação para superá-la.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.66301,
+"b": 0.50663,
+"c": 0.15029,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 60",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/60",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-61",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 61,
+"area": "natureza",
+"enunciado": "No ano de 2000, um vazamento em um duto de óleo na baía de Guanabara (RJ) causou um dos maiores acidentes ambientais do Brasil. Além de afetar a fauna e a flora, o acidente abalou o equilíbrio da cadeia alimentar de toda a baía. O petróleo forma uma película na superfície da água, o que prejudica as trocas gasosas da atmosfera com a água e desfavorece a realização de fotossíntese pelas algas, que estão na base da cadeia alimentar hídrica. Além disso, o derramamento de óleo contribuiu para o envenenamento das árvores e, consequentemente, para a intoxicação da fauna e flora aquáticas, bem como conduziu à morte diversas espécies de animais, entre outras formas de vida, afetando também a atividade pesqueira.\n\nLAUBIER, L. Diversidade da Maré Negra. In: Scientific American Brasil. 4(39), ago. 2005 (adaptado).\n\nA situação exposta no texto e suas implicações",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Indicam a independência da espécie humana com relação ao ambiente marinho.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Alertam para a necessidade do controle da poluição ambiental para a redução do efeito estufa.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ilustram a interdependência das diversas formas de vida (animal, vegetal e outras) e o seu habitat.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Indicam a alta resistência do meio ambiente à ação do homem, além de evidenciar a sua sustentabilidade  mesmo em condições extremas de poluição.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Evidenciam a grande capacidade animal de se adaptar às mudanças ambientais, em contraste com a baixa capacidade das espécies vegetais, que estão na base da cadeia alimentar hídrica.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.51367,
+"b": 0.58856,
+"c": 0.18597,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 61",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/61",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-62",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 62,
+"area": "natureza",
+"enunciado": "Para explicar a absorção de nutrientes, bem como a função das microvilosidades das membranas das células que revestem as paredes internas do intestino delgado, um estudante realizou o seguinte experimento:\n\nColocou 200 ml de água em dois recipientes. No primeiro recipiente, mergulhou, por 5 segundos, um pedaço de papel liso, como na FIGURA 1; no segundo recipiente, fez o mesmo com um pedaço de papel com dobras simulando as microvilosidades, conforme FIGURA 2. Os dados obtidos foram: a quantidade de água absorvida pelo papel liso foi de 8 ml, enquanto pelo papel dobrado foi de 12 ml.\n\n![](/questoes/natureza/cc0a43d5b503e14b.png)\n\nCom base nos dados obtidos, infere-se que a função das microvilosidades intestinais com relação à absorção de nutrientes pelas células das paredes internas do intestino é a de",
+"imagens": [
+"/questoes/natureza/cc0a43d5b503e14b.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Manter o volume de absorção.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aumentar a superfície de absorção.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diminuir a velocidade de absorção.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumentar o tempo da absorção.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Manter a seletividade na absorção.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.97303,
+"b": 0.16906,
+"c": 0.20131,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 62",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/62",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-63",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 63,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/76e13aef5c61d8b6.jpg)\n\nCom base no texto e na figura, a produção de energia elétrica por meio da célula a combustível hidrogênio/oxigênio diferencia-se dos processos convencionais porque",
+"imagens": [
+"/questoes/natureza/76e13aef5c61d8b6.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Transforma energia química em energia elétrica, sem causar danos ao meio ambiente, porque o principal subproduto formado é a água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Converte a energia química contida nas moléculas dos componentes em energia térmica, sem que ocorra a produção de gases poluentes nocivos ao meio ambiente.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Transforma energia química em energia elétrica, porém emite gases poluentes da mesma forma que a produção de energia a partir dos combustíveis fósseis.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Converte energia elétrica proveniente dos combustíveis fósseis em energia química, retendo os gases poluentes produzidos no processo sem alterar a qualidade do meio ambiente.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Converte a energia potencial acumulada nas moléculas de água contidas no sistema em energia química, sem que ocorra a produção de gases poluentes nocivos ao meio ambiente.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.11428,
+"b": 0.54328,
+"c": 0.23964,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 63",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/63",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-64",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 64,
+"area": "natureza",
+"enunciado": "Alguns anfíbios e répteis são adaptados à vida subterrânea. Nessa situação, apresentam algumas características corporais como, por exemplo, ausência de patas, corpo anelado que facilita o deslocamento no subsolo e, em alguns casos, ausência de olhos.\n\nSuponha que um biólogo tentasse explicar a origem das adaptações mencionadas no texto utilizando conceitos da teoria evolutiva de Lamark. Ao adotar esse ponto de vista, ele diria que",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "As características citadas no texto foram originadas pela seleção natural.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A ausência de olhos teria sido causada pela falta de uso dos mesmos, segundo a lei do uso e desuso.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "O corpo anelado é uma característica fortemente adaptativa, mas transmitida apenas à primeira geração de descendentes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "As patas teriam sido perdidas pela falta de uso e, em seguida, essa característica foi incorporada ao patrimônio genético e então transmitidas aos descendentes.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "As características citadas no texto foram adquiridas por meio de mutações e depois, ao longo do tempo, foram selecionadas por serem mais adaptadas ao ambiente em que os organismos se encontram.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.82018,
+"b": 1.12506,
+"c": 0.10753,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 64",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/64",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-65",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 65,
+"area": "natureza",
+"enunciado": "As misturas efervescentes, em pó ou comprimidos, são comuns para a administração de vitamina C ou de medicamentos para azia. Essa forma farmacêutica sólida foi desenvolvida para facilitar o transporte, aumentar a estabilidade de substâncias e, quando em solução, acelerar a absorção do fármaco pelo organismo.  \nAs matérias primas que atuam na efervescência são, em geral, o ácido tartárico ou ácido cítrico que reagem como um sal de caráter básico, como o bicarbonato de sódio (NaHCO3), quando em contato com a água. A partir do contato da mistura efervescente com a água, ocorre uma série de reações químicas simultâneas: liberação de íons, formação de ácido e liberação de gás carbônico – gerando a efervescência.  \nAs equações a seguir representam as etapas da reação da mistura efervescente na água, em que foram omitidos os estados de agregação dos reagentes, e H3A representa o ácido cítrico.  \nI – NaHCO3 → NA+ + HCO3  \nII – H2CO3 ↔H2O + CO2  \nIII – HCO3 + H+ ↔ H2CO3  \nIV – H3A ↔ 3H+ + A−\n\nA ionização, a dissociação iônica, a formação do ácido e a liberação do gás ocorrem, respectivamente, nas seguintes etapas:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "IV, I, II e III.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "I, IV, III e II.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "IV, III, I e II.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "I, IV, II e III.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "IV, I, III e II.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.74003,
+"b": 1.27345,
+"c": 0.10099,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 65",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/65",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-66",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 66,
+"area": "natureza",
+"enunciado": "Um ambiente capaz de asfixiar todos os animais conhecidos do planeta foi colonizado por pelo menos três espécies diferentes de invertebrados marinhos. Descobertos a mais de 3.000 m de profundidade no Mediterrâneo, eles são os primeiros membros do reino animal a prosperar mesmo diante da ausência total de oxigênio. Até agora, achava-se que só bactérias pudessem ter esse estilo de vida. Não admira que os bichos pertençam a um grupo pouco conhecido, o dos loriciferos, que mal chegam a 1,0 mm. Apesar do tamanho, possuem cabeça, boca, sistema digestivo e carapaça. A adaptação dos bichos à vida no sufoco é tão profunda que suas células dispensaram as chamadas mitocôndrias.\n\nLOPES, R. J. Italianos descobrem animal que vive em água sem oxigênio. Disponível em: http://www1.folha.uol.com.br. Acesso em: 10 abr. 2010 (adaptado).\n\nQue substâncias poderiam ter a mesma função do O<sub>2</sub> na respiração celular realizada pelos loricíferos?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "S e CH4",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "S e NO3-",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "H2 e NO3-",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "CO2 e CH4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "H2 e CO2",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.42432,
+"b": 2.05262,
+"c": 0.09776,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 66",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/66",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-67",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 67,
+"area": "natureza",
+"enunciado": "O abastecimento de nossas necessidades energéticas futuras dependerá certamente do desenvolvimento de tecnologias para aproveitar a energia solar com maior eficiência. A energia solar é a maior fonte de energia mundial. Num dia ensolarado, por exemplo, aproximadamente 1 kJ de energia solar atinge cada metro quadrado de superfície terrestre por segundo. No entanto, o aproveitamento dessa energia é difícil porque ela é diluída (distribuída por uma área muito extensa) e oscila com o horário e as condições climáticas. O uso efetivo da energia solar depende de formas de estocar a energia coletada para o uso posterior.\n\nBROWN, T. **Química e Ciência Central**. São Paulo: Pearson Prentice Hall, 2005.\n\nAtualmente, uma das formas de se utilizar a energia solar tem sido armazená-la por meio de processos químicos endotérmicos que mais tarde podem ser revertidos para liberar calor. Considerando a reação: CH4(g)+ H2O(v) + calor ↔CO(g) + 3H2(g) e analisando-a como potencial mecanismo para aproveitamento posterior da energia solar, conclui-se que se trata de uma estratégia",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Insatisfatória, pois a reação apresentada não permite que a energia presente no meio externo seja absorvida pelo sistema para ser utilizada posteriormente.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Insatisfatória, uma vez que há formação de gases poluentes e com potencial poder explosivo, tornando-a uma reação perigosa e de difícil controle.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Insatisfatória, uma vez que a a formação do gás CO que não possui conteúdo energético passível de ser aproveitado posteriormente e é considerado um gás poluente.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Satisfatória, uma vez que a reação direta ocorre com absorção de calor e promove a formação das substâncias combustíveis que poderão ser utilizadas posteriormente para a obtenção de energia e realização de trabalho útil.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Satisfatória, uma vez que a reação direta ocorre com liberação de calor havendo ainda a formação das substâncias combustíveis que poderão ser utilizadas posteriormente para a obtenção de energia a realização de trabalho útil.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 67",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/67",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-68",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 68,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/bd22d0dbbbfbda63.png)\n\nO valor a ser pago pelo consumo de energia elétrica registrado seria de",
+"imagens": [
+"/questoes/natureza/bd22d0dbbbfbda63.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "R$ 42,80.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "R$ 42,00.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "R$ 43,00.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "R$ 43,80.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "R$ 44,00.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.86418,
+"b": 1.68423,
+"c": 0.10585,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 68",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/68",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-69",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 69,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/1bb527a1b7d04842.jpg)\n\nConsidere que, em pequenos volumes, o custo de produção de ambos os alcoóis seja o mesmo. Dessa forma, do ponto de vista econômico, é mais vantajoso utilizar",
+"imagens": [
+"/questoes/natureza/1bb527a1b7d04842.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Metanol, pois sua combustão completa fornece, aproximadamente, 22,7 kJ de energia por litro de combustível queimado.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Etanol, pois sua combustão completa fornece, aproximadamente, 29,7 kJ de energia por litro de combustível queimado.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Metanol, pois sua combustão completa fornece, aproximadamente, 17,9 MJ de energia por litro de combustível queimado.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Etanol, pois sua combustão completa fornece, aproximadamente, 23,5 MJ de energia por litro de combustível queimado.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Etanol, pois sua combustão completa fornece, aproximadamente, 33,7 MJ de energia por litro de combustível queimado.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.31643,
+"b": 1.74716,
+"c": 0.17746,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 69",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/69",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-70",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 70,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/fb8c79588c17a621.png)\n\nConsiderando que o modelo de maior potência da versão 220 V da torneira suprema foi inadvertidamente conectada a uma rede com tensão nominal de 127 V, e que o aparelho está configurado para trabalhar em sua máxima potência. Qual o valor aproximado da potência ao ligar a torneira?",
+"imagens": [
+"/questoes/natureza/fb8c79588c17a621.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1.830 W.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2.800 W.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3.200 W.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4.030 W.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5.500 W.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 70",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/70",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-71",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 71,
+"area": "natureza",
+"enunciado": "O uso prolongado de lentes de contato, sobretudo durante a noite, aliado a condições precárias de higiene representam fatores de risco para o aparecimento de uma infecção denominada ceratite microbiana, que causa ulceração inflamatória na córnea. Para interromper o processo da doença, é necessário tratamento antibiótico. De modo geral, os fatores de risco provocam a diminuição da oxigenação corneana e determinam mudanças no seu metabolismo, de um estado aeróbico para anaeróbico. Como decorrência, observa-se a diminuição no número e na velocidade de mitoses do epitélio, o que predispõe ao aparecimento de defeitos epiteliais e à invasão bacteriana.\n\nCRESTA, F. Lente de contato e infecção ocular. Revista Sinopse de Oftalmologia. São Paulo: Moreira Jr., v.04, n.04, 2002 (adaptado).\n\nA instalação das bactérias e o avanço do processo infeccioso na córnea estão relacionados a algumas características gerais desses micro-organismos, tais como:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A grande capacidade de adaptação, considerando as constantes mudanças no ambiente em que se reproduzem e o processo aeróbico como a melhor opção desses micro-organismos para a obtenção de energia.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A grande capacidade de sofrer mutações, aumentando a probabilidade do aparecimento de formas resistentes e o processo anaeróbico da fermentação como a principal via de obtenção de energia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A diversidade morfológica entre as bactérias, aumentando a variedade de tipos de agentes infecciosos e a nutrição heterotrófica, como forma de esses micro-organismos obterem matéria-prima e energia.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O alto poder de reprodução, aumentando a variabilidade genética dos milhares de indivíduos e a nutrição heterotrófica, como única forma de obtenção de matéria-prima e energia desses micro-organismos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "O alto poder de reprodução, originando milhares de descendentes geneticamente idênticos entre si e a diversidade metabólica, considerando processos aeróbicos e anaeróbicos para a obtenção de energia.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.791,
+"b": 2.21444,
+"c": 0.06663,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 71",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/71",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-72",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 72,
+"area": "natureza",
+"enunciado": "Todos os organismos necessitam de água e grande parte deles vive em rios, lagos e oceanos. Os processos biológicos, como respiração e fotossíntese, exercem profunda influência na química das águas naturais em todo o planeta. O oxigênio é ator dominante na química e na bioquímica da hidrosfera. Devido a sua baixa solubilidade em água (9,0 mg/l a 20 °C) a disponibilidade de oxigênio nos ecossistemas aquáticos estabelece o limite entre a vida aeróbica e anaeróbica. Nesse contexto, um parâmetro chamado Demanda Bioquímica de Oxigênio (DBO) foi definido para medir a quantidade de matéria orgânica presente em um sistema hídrico. A DBO corresponde à massa de O2 em miligramas necessárias para realizar a oxidação total do carbono orgânico em um litro de água.  \n**BAIRD, C. **Química Ambiental**. Ed. Bookmam, 2005 (adaptado).**\n\nDados: Massas molares em g/mol: C = 12; H = 1; O = 16.\n\nSuponha que 10 mg de açúcar (fórmula mínima CH2O e massa molar a 30 g/mol) são dissolvidos em um litro de água; em quanto a DBO será aumentada?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,4 mg de O2/litro",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "1,7 mg de O2/litro",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "2,7 mg de O2/litro",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "9,4 mg de O2/litro",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "10,7 mg de O2/litro",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 72",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/72",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-73",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 73,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/a1548a44ce022492.jpg)\n\nSegundo as condições do processo apresentado para a obtenção de carbonato de chumbo (II) por meio da lixiviação por carbonato de sódio e considerando uma massa de pasta residual de uma bateria de 6 kg, qual quantidade aproximada, em quilogramas, de PbCO3 é obtida?",
+"imagens": [
+"/questoes/natureza/a1548a44ce022492.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1,7 kg.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "1,9 Kg.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "2,9 Kg.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "3,3 Kg.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "3,6 Kg.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.47205,
+"b": 4.43681,
+"c": 0.17507,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 73",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/73",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-74",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 74,
+"area": "natureza",
+"enunciado": "A eletrólise é muito empregada na indústria com o objetivo de reaproveitar parte dos metais sucateados. O cobre, por exemplo, é um dos metais com maior rendimento no processo de eletrólise, com uma recuperação de aproximadamente 99,9%. Por ser um metal de alto valor comercial e de múltiplas aplicações, sua recuperação torna-se viável economicamente.\n\nSuponha que, em um processo de recuperação de cobre puro, tenha-se eletrolisado uma solução de sulfato de cobre (II) (CuSO4) durante 3h, empregando-se uma corrente elétrica de intensidade igual a 10A. A massa de cobre puro recuperada é de aproximadamente\nDados: Constante de Faraday F = 96500C/mol; Massa molar em g/mol: Cu = 63,5",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,02 g",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "0,04 g",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "2,40 g",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "35,5 g",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "71,0 g",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.42556,
+"b": 2.1523,
+"c": 0.04743,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 74",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/74",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-75",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 75,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/9aeb74eff86e7883.jpg)\n\nDois pesquisadores percorreram os trajetos marcados no mapa. A tarefa deles foi analisar os ecossistemas e, encontrando problemas, relatar e propor medidas de recuperação. A seguir, são reproduzidos trechos aleatórios extraídos dos relatórios desses dois pesquisadores.\n\nTrechos aleatórios extraídos do relatório do pesquisador P1:\n\nI. “Por causa da diminuição drástica das espécies vegetais deste ecossistema, como os pinheiros, a gralha azul também está em processo de extinção”.  \nII. “As árvores de troncos tortuosos e cascas grossas que predominam nesse ecossistema estão sendo utilizadas em carvoarias”.  \nTrechos aleatórios extraídos do relatório do pesquisador P2:  \nIII. “Das palmeiras que predominam nesta região podem ser extraídas substâncias importantes para a economia regional”,  \nIV. “Apesar da aridez desta região, em que encontramos muitas plantas espinhosas, não se pode desprezar a sua biodiversidade”. Ecossistemas brasileiros: mapa de distribuição de ecossistemas.\n\nDisponível em: http://educacao.uol.com.br/ciencias/ult1686u52.jhtm. Acesso em: 20 abr. 2010 (adaptado).\n\nOs trechos I, II, III e IV referem-se, pela ordem, aos seguintes ecossistemas:",
+"imagens": [
+"/questoes/natureza/9aeb74eff86e7883.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Caatinga, Cerrado, Zona dos Cocais e Floresta Amazônica.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Mata de Araucárias, Cerrado, Zona dos Cocais e Caatinga.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Manguezais, Zona dos Cocais, Cerrado e Mata Atlântica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Floresta Amazônica, Cerrado, Mata Atlântica e Pampas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Mata Atlântica, Cerrado, Zona dos Cocais e Pantanal.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.804,
+"b": 0.02055,
+"c": 0.1459,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 75",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/75",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-76",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 76,
+"area": "natureza",
+"enunciado": "Investigadores das Universidades de Oxford e da Califórnia desenvolveram uma variedade de Aedes aegypti geneticamente modificada que é candidata para uso na busca de redução na transmissão do vírus da dengue. Nessa nova variedade de mosquito, as fêmeas não conseguem voar devido à interrupção do desenvolvimento do músculo das asas. A modificação genética introduzida é um gene dominante condicional, isso é, o gene tem  \nexpressão dominante (basta apenas uma cópia do alelo) e este só atua nas fêmeas.\n\nFU, G. et al. Female-specific flightless phenotype for mosquito control.  \nPNAS 107 (10): 4550-4554, 2010.\n\nPrevê-se, porém, que a utilização dessa variedade de Aedes aegypti demore ainda anos para ser implementada, pois há demanda de muitos estudos com relação ao impacto ambiental. A liberação de machos de Aedes aegypti dessa variedade geneticamente modificada reduziria o número de casos de dengue em uma determinada região porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Diminuiria o sucesso reprodutivo desses machos transgênicos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Restringiria a área geográfica de voo dessa espécie de mosquito.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Dificultaria a contaminação e reprodução do vetor natural da doença.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Tornaria o mosquito menos resistente ao agente etiológico da doença.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Dificultaria a obtenção de alimentos pelos machos geneticamente modificados.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.93223,
+"b": 1.88168,
+"c": 0.17707,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 76",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/76",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-77",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 77,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/a3cdc9e377694ab6.jpg)\n\nO monofluoracetato de sódio pode ser obtido pela",
+"imagens": [
+"/questoes/natureza/a3cdc9e377694ab6.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Desidratação do ácido monofluoracético com liberação de água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Hidrólise do ácido monofluoracético sem formação de água.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Perda de íons hidroxila do ácido monofluoracético, com liberação de hidróxido de sódio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Neutralização do ácido monofluoracético usando hidróxido de sódio, com liberação de água.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Substituição dos íons hidrogênio por sódio na estrutura do ácido monofluoracético, sem formação de água.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.5052,
+"b": 1.42331,
+"c": 0.18609,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 77",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/77",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-78",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 78,
+"area": "natureza",
+"enunciado": "Duas irmãs que dividem o mesmo quarto de estudos combinaram de comprar duas caixas com tampas para guardarem seus pertences dentro de suas caixas, evitando, assim, a bagunça sobre a mesa de estudos. Uma delas comprou uma metálica, e a outra, uma caixa de madeira de área e espessura lateral diferentes, para facilitar a identificação. Um dia as meninas foram estudar para a prova de Física e, ao se acomodarem na mesa de estudos, guardarem seus celulares ligados dentro de suas caixas. Ao longo desse dia, uma delas recebeu ligações telefônicas, enquanto os amigos da outra tentavam ligar e recebiam a mensagem de que o celular estava fora da área de cobertura ou desligado.\n\nPara explicar essa situação, um físico deveria afirmar que o material da caixa, cujo telefone celular não recebeu as ligações é de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Madeira, e o telefone não funcionava porque a madeira não é um bom condutor de eletricidade.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Metal, e o telefone não funcionava devido à blindagem eletrostática que o metal proporcionava.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Metal, e o telefone não funcionava porque o metal refletia todo tipo de radiação que nele incidia.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Metal, e o telefone não funcionava porque a área lateral da caixa de metal era maior.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Madeira, e o telefone não funcionava porque a espessura desta caixa era maior que a espessura da caixa de metal.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.76591,
+"b": 0.52326,
+"c": 0.00875,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 78",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/78",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-79",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 79,
+"area": "natureza",
+"enunciado": "As mobilizações para promover um planeta melhor para as futuras gerações são cada vez frequentes. A maior parte dos meios de transporte de massa é atualmente movida pela queima de um combustível fóssil. A título de exemplificação do ônus causado por essa prática, basta saber que um carro produz, em média, cerca de 200g de dióxido de carbono por km percorrido.\n\nRevista Aquecimento Global. Ano 2, no 8. Publicação do Instituto Brasileiro de Cultura Ltda.\n\nUm dos principais constituintes da gasolina é o octano (C8H18). Por meio da combustão do octano é possível a liberação de energia, permitindo que o carro entre em movimento. A equação que representa a reação química desse processo demonstra que",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "No processo há liberação de oxigênio, sob a forma de O2",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O coeficiente estequiométrico para a água é de 8 para 1 do octano.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "No processo há consumo de água, para que haja liberação de energia.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O coeficiente estequiométrico para o oxigênio é de 12,5 para 1 do octano.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "O coeficiente estequiométrico para o gás carbônico é de 9 para 1 do octano",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.7762,
+"b": 1.36488,
+"c": 0.15192,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 79",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/79",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-80",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 80,
+"area": "natureza",
+"enunciado": "Os pesticidas modernos são divididos em várias classes, entre as quais se destacam os organofosforados, materiais que apresentam efeito tóxico agudo para os seres humanos. Esses pesticidas contêm um átomo central de fósforo ao qual estão ligados outros átomos ou grupo de átomos como oxigênio, enxofre, grupos metoxi ou etoxi ou um radical orgânico de cadeia longa. Os organofosforados são divididos em três subclasses: Tipo A, na qual o enxofre não se incorpora na molácula; Tipo B, na qual o oxigênio, que faz dupla ligação com fósforo, é substituído pelo enxofre; e Tipo C, no qual dois oxigênios são substituídos por enxofre.\n\nBAIRD, C. Química Ambiental. Bookmam. 2005.\n\nUm exemplo de pesticida organofosforado Tipo B, que apresenta grupo etoxi em sua fórmula estrutural, está representado em:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/58e86877668fda68.jpg"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/6f20c51823026572.jpg"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/6fcbb3bbca53a57c.jpg"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/665975ecc571f897.jpg"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/2f6e246fc46fad92.jpg"
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.03635,
+"b": 1.52425,
+"c": 0.11939,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 80",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/80",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-81",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 81,
+"area": "natureza",
+"enunciado": "Durante uma obra em um clube, um grupo de trabalhadores teve de remover uma escultura de ferro maciço colocada no fundo de uma piscina vazia. Cinco trabalhadores amarraram cordas à escultura e tentaram puxá-la para cima, sem sucesso.\n\nSe a piscina for preenchida com água, ficará mais fácil para os trabalhadores removerem a escultura, pois a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Escultura flutuará, desta forma, os homens não precisarão fazer força para remover a escultura do fundo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Escultura ficará como peso menor. Desta forma, a intensidade da força necessária para elevar a escultura será menor.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Água exercerá uma força na escultura proporcional a sua massa, e para cima. Esta força se somará à força que os trabalhadores fazem para anular a ação da força peso da escultura.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Água exercerá uma força na escultura para baixo, e esta passará a receber uma força ascendente do piso da piscina. Esta força ajudará a anular a ação da força peso na escultura.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Água exercerá uma força na escultura proporcional ao seu volume, e para cima. Esta força se somará à força que os trabalhadores fazem, podendo resultar em uma força ascendente maior que o peso da escultura.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.68073,
+"b": 1.19907,
+"c": 0.19493,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 81",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/81",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-82",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 82,
+"area": "natureza",
+"enunciado": "As baterias de Ni-Cd muito utilizadas no nosso cotidiano não devem ser descartadas em lixos comuns uma vez que uma considerável quantidade de cádmio é volatilizada e emitida para o meio ambiente quando as baterias gastas são incineradas como componente do lixo. Com o objetivo de evitar a emissão de cádmio para a atmosfera durante a combustão é indicada que seja feita a reciclagem dos materiais dessas baterias.\n\nUma maneira de separar o cádmio dos demais compostos presentes na bateria é realizar o processo de lixiviação ácida.Nela, tanto os metais (Cd, Ni e, eventualmente, Co) como os hidróxidos de ions metálicos Cd(OH)2(s), Ni(OH)2(s), Co(OH)2(s) presentes na bateria, reagem com uma mistura ácida e são solubilizados. Em função da baixa seletividade (todos os ions metálicos são solubilizados), após a digestão ácida, é realizada uma etapa de extração dos metais com solventes orgânicos de acordo com a reação:\n\n![](/questoes/natureza/a000f14c4eec1f13.jpg)\n\nOnde:  \nM2+ = Cd2+ , Ni2+ ou Co2+  \nHR = C16H34\\-PO2H : identificado no gráfico por X  \nHR = C12H12\\-PO2H : identificado no gráfico por Y  \nO gráfico mostra resultado de extração utilizando os solventes orgânicos X e Y em diferentes pH.\n\n![](/questoes/natureza/4f3d9186748cf874.jpg)\n\nA reação descrita no texto mostra o processo de extração dos metais por meio da reação com moléculas orgânicas, X e Y. Considerando-se as estruturas de X e Y e o processo de separação descrito, pode-se afirmar que",
+"imagens": [
+"/questoes/natureza/a000f14c4eec1f13.jpg",
+"/questoes/natureza/4f3d9186748cf874.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "As moléculas X e Y atuam como extratores catiônicos uma vez que a parte polar da molécula troca o íon H+ pelo cátion do metal.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "As moléculas X e Y atuam como extratores aniônicos uma vez que a parte polar da molécula troca o íon H+ pelo cátion do metal.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "As moléculas X e Y atuam como extratores catiônicos uma vez que a parte polar da molécula troca o íon PO2-2 pelo cátion do metal.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "As moléculas X e Y atuam como extratores aniônicos uma vez que a parte polar da molécula troca o íon PO2-2 pelo cátion do metal.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "As moléculas X e Y fazem ligações com os ions metálicos resultando em compostos com caráter apolar o que justifica a eficácia da extração.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.52576,
+"b": 1.87056,
+"c": 0.18979,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 82",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/82",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-83",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 83,
+"area": "natureza",
+"enunciado": "Ao colocar um pouco de açúcar ma água e mexer até a obtenção de uma só fase, prepara-se uma solução. O mesmo acontece ao se adicionar um pouquinho de sal à água e misturar bem. Uma substância capaz de dissolver o soluto é denominada solvente; por exemplo, a água é um solvente para o açúcar, para o sal e para várias outras substâncias. A figura a seguir ilustra essa citação.\n\n![](/questoes/natureza/80c0e5ad099bc8cb.png)\n\nSuponha que uma pessoa, para adoçar seu cafezinho, tenha utilizado 3,42 g de sacarose (massa molar igual a 342 g/mol) para uma xícara de 50 mℓ do líquido. Qual é a concentração final em mol/ℓ de sacarose nesse cafezinho?",
+"imagens": [
+"/questoes/natureza/80c0e5ad099bc8cb.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,02",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "0,2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "200",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "2000",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.33988,
+"b": 1.28868,
+"c": 0.2589,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 83",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/83",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-84",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 84,
+"area": "natureza",
+"enunciado": "Um grupo de cientistas liderado por pesquisadores do instituto de Tecnologia da Califórnia (Caltech), nos Estados Unidos, construiu o primeiro metamaterial que apresenta valor negativo do índice de refração relativo para a luz visível. Denomina-se metamaterial um material óptico artificial, tridimensional, formado por pequenas estruturas menores do que o comprimento de onda da luz, o que lhe dá propriedades e comportamentos que não são encontrados em materiais naturais. Esse material tem sido chamado de “canhoto”.\n\nDisponível em: http://www.invocaçãotecnologica.com.br. Acesso em: 28 abr. (adaptado).\n\nConsiderando o comportamento atípico desse metamaterial, qual é a figura que representa a refração da luz ao passar do ar para esse meio?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/53b00412b9c86e62.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/96050f66cd1ff674.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/f9c9d4c73fbe3e48.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/e03d42a117a8c810.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/bdad10fdc4263db2.png"
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.47945,
+"b": 1.29973,
+"c": 0.0971,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 84",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/84",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-85",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 85,
+"area": "natureza",
+"enunciado": "Decisão de asfaltamento da rodovia MG-010, acompanha da introdução de espécies exóticas, e a prática de incêndios criminosos, ameaçam o sofisticado ecossistema do campo rupestre da reserva da Serra do Espinhaço. As plantas nativas desta região, altamente adaptadas a uma alta concentração de alumínio, que inibe o crescimento das raízes e dificultam a absorção de nutrientes e água, estão sendo substituídas por espécies invasoras que não teriam naturalmente adaptação para este ambiente, no entanto elas estão dominando as margens da rodovia, equivocadamente chamada de “estrada ecológica”. Possivelmente a entrada de espécies de plantas exóticas neste ambiente foi provocada pelo uso, neste empreendimento, de um tipo de asfalto (cimento-solo), que possui uma mistura rica em cálcio, que causou modificações químicas aos solos adjacentes à rodovia MG-010.\n\nScientific American. Brasil. Ano 7, nº 79. 2008 (adaptado).\n\nEssa afirmação baseia-se no uso de cimento-solo, mistura rica em cálcio que",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Inibe a toxicidade do alumínio, elevando o pH dessas áreas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Inibe a toxicidade do alumínio, reduzindo o pH dessas áreas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aumenta a toxicidade do alumínio, elevando o pH dessas áreas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumenta a toxicidade do alumínio, reduzindo o pH dessas áreas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Neutraliza a toxicidade do alumínio, reduzindo o pH dessas áreas.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.23867,
+"b": 1.6399,
+"c": 0.14187,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 85",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/85",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-86",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 86,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/3705dfb15729da1b.png)\n\nTrês dos quatro tipos de testes atualmente empregados para a detecção de príons patogênicos, em tecidos cerebrais do gado morto, são mostrados nas figuras a seguir. Uma vez identificados um animal morto infectado, funcionários das agências de saúde pública e fazendeiros podem removê-lo do suprimento alimentar ou rastrear os alimentos infectados que o animal possa ter consumido.\n\nAnalisando os testes I, II e III, para a detecção de príons patogênicos, identifique as condições em que os resultados foram positivos para a presença de príons nos três testes:",
+"imagens": [
+"/questoes/natureza/3705dfb15729da1b.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Animal A, lâmina B e gel A.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Animal A, lâmina A e gel B.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Animal B, lâmina A e gel B.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Animal B, lâmina B e gel A.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Animal A, lâmina B e gel B.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.04719,
+"b": 0.92652,
+"c": 0.1801,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 86",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/86",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2010-87",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 87,
+"area": "natureza",
+"enunciado": "De 15% a 20% da área de um canavial precisa ser renovada anualmente. Entre o período de corte e o de plantação de novas canas, os produtores estão optando por plantar leguminosas, pois elas fixam nitrogênio no solo, um adubo natural para a cana. Essa opção de rotação é agronomicamente favorável, de forma que municípios canavieiros são hoje grandes produtores de soja, amendoim e feijão.\n\nAs encruzilhadas da fome. Planeta. São Paulo, ano 36, no 430, jul. 2008 (adaptado).\n\nA rotação de culturas citada no texto pode beneficiar economicamente os produtores de cana porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A decomposição da cobertura morta dessas culturas resulta em economia na aquisição de adubos industrializados.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O plantio de cana-de-açúcar propicia um solo mais adequado para o cultivo posterior da soja, do amendoim e do feijão.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "As leguminosas absorvem do solo elementos químicos diferentes dos absorvidos pela cana, restabelecendo o equilíbrio do solo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A queima dos restos de vegetais do cultivo da cana-de-açúcar transforma-se em cinzas, sendo reincorporadas ao solo, o que gera economia na aquisição de adubo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A soja, o amendoim e o feijão, além de possibilitarem a incorporação ao solo de determinadas moléculas disponíveis na atmosfera, são grãos comercializados no mercado produtivo.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.27028,
+"b": 1.01961,
+"c": 0.18727,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 87",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/87",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-88",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 88,
+"area": "natureza",
+"enunciado": "Diversos comportamentos e funções fisiológicas do nosso corpo são periódicos, sendo assim, são classificados como ritmo biológico. Quando o ritmo biológico responde a um período aproximado de 24 horas, ele é denominado ritmo circadiano. Esse ritmo diário é mantido pelas pistas ambientais de claro-escuro e determina comportamentos como o ciclo do sono-vigília e o da alimentação. Uma pessoa, em condições normais, acorda às 8 h e vai dormir às 21 h, mantendo seu ciclo de sono dentro do ritmo dia e noite. Imagine que essa mesma pessoa tenha sido mantida numa sala totalmente escura por mais de quinze dias. Ao sair de lá, ela dormia às 18 h e acordava às 3 h da manhã. Além disso, dormia mais vezes durante o dia, por curtos períodos de tempo, e havia perdido a noção da contagem dos dias, pois, quando saiu, achou que havia passado muito mais tempo no escuro.\n\nBrandão, M. L. Psicofisiologia. São Paulo: Atheneu, 2000 (adaptado).\n\nEm função das características observadas, conclui-se que a pessoa",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Apresentou aumento do seu período de sono contínuo e passou a dormir durante o dia, pois seu ritmo biológico foi alterado apenas no período noturno.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Apresentou pouca alteração do seu ritmo circadiano, sendo que sua noção de tempo foi alterada somente pela sua falta de atenção à passagem do tempo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Estava com seu ritmo já alterado antes de entrar na sala, o que significa que apenas progrediu para um estado mais avançado de perda do ritmo biológico no escuro.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Teve seu ritmo biológico alterado devido à ausência de luz e de contato com o mundo externo, no qual a noção de tempo de um dia é modulada pela presença ou ausência do sol.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Deveria não ter apresentado nenhuma mudança do seu período de sono porque, na realidade, continua com seu ritmo normal, independentemente do ambiente em que seja colocada.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.88952,
+"b": -0.19051,
+"c": 0.23446,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 88",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/88",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-89",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 89,
+"area": "natureza",
+"enunciado": "Deseja-se instalar uma estação de geração de energia elétrica em um município localizado no interior de um pequeno vale cercado de altas montanhas de difícil acesso. A cidade é cruzada por um rio, que é fonte de água para consumo, irrigação das lavouras de subsistência e pesca. Na região, que possui pequena extensão territorial, a incidência solar é alta o ano todo. A estação em questão irá abastecer apenas o município apresentado.\n\nQual forma de obtenção de energia, entre as apresentadas, é a mais indicada para ser implantada nesse município de modo a causar o menor impacto ambiental?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Termoelétrica, pois é possível utilizar a água do rio no sistema de refrigeração.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Eólica, pois a geografia do local é própria para a captação desse tipo de energia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Nuclear, pois o modo de resfriamento de seus sistemas não afetariam a população.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Fotovoltaica, pois é possível aproveitar a energia solar que chega à superfície do local.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Hidrelétrica, pois o rio que corta o município é suficiente para abastecer a usina construída.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.775,
+"b": 0.43465,
+"c": 0.11501,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 89",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/89",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2010-90",
+"ano": 2010,
+"dia": 2,
+"caderno": "azul",
+"numero": 90,
+"area": "natureza",
+"enunciado": "O lixão que recebia 130 toneladas de lixo e contaminava a região com seu chorume (líquido derivado da decomposição de compostos orgânicos) foi recuperado, transformando-se em um aterro sanitário controlado, mudando a qualidade de vida e a paisagem e proporcionando condições dignas de trabalho para os que dele subsistiam.\n\nRevista Promoção da Saúde da Secretaria de Políticas da Saúde. Ano 1, nº 4, dez. 2000 (adaptado).\n\nQuais procedimentos técnicos tornam o aterro sanitário mais vantajoso que o lixão, em relação às problemáticas abordadas no texto?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O lixo é recolhido e incinerado pela combustão a altas temperaturas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O lixo hospitalar é separado para ser enterrado e sobre ele, colocada cal virgem.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "O lixo orgânico e inorgânico é encoberto, e o chorume canalizado para ser tratado e neutralizado.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O lixo orgânico é completamente separado do lixo inorgânico, evitando a formação de chorume.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "O lixo industrial é separado e acondicionado de forma adequada, formando uma bolsa de resíduos.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.92617,
+"b": 0.71518,
+"c": 0.13916,
+"fonte": "INEP, microdados do ENEM 2010 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2010, caderno azul (aplicação regular), questão 90",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2010/questions/90",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2010.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+}
+]

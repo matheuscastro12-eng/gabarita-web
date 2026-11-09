@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ArrowRight, Check, CircleDashed, RotateCcw, Timer } from "lucide-react";
 import { useStore } from "@/lib/store/provider";
 import { useQuestoes } from "@/data/use-questoes";
+import { exibirHabilidade, NOME_AREA, rotuloHabilidade, SIGLA_AREA, type Area } from "@/data/tipos";
+import { useEstadoArea, useVersao } from "@/components/app/versao";
 import {
   agruparPorCompetencia,
   dominioPorAssunto,
@@ -30,18 +32,47 @@ import { Progress } from "@/components/ui/progress";
 import { CabecalhoPagina, ConteudoPagina } from "@/components/app/pagina";
 import { cn } from "@/lib/utils";
 
-/** Tela Mapa: calor H1–H30 por competência e por assunto, nota TRI estimada e os três níveis de "pronto". */
+/** Tela Mapa: um mapa por área da versão (no Geral, natureza e matemática, em seções). */
 export function TelaMapa() {
-  const { estado, erro: erroStore } = useStore();
-  const { questoes, porId, erro: erroQuestoes } = useQuestoes();
-  const agora = React.useMemo(() => (estado ? new Date() : null), [estado]);
-  const [selecionada, setSelecionada] = React.useState<string>("H24");
+  const { areas } = useVersao();
+  const varias = areas.length > 1;
+  return (
+    <ConteudoPagina>
+      <CabecalhoPagina
+        titulo="Mapa"
+        descricao={
+          varias
+            ? "Domínio por habilidade da matriz de cada área, nota estimada pela TRI (separada por área) e o que ainda falta para estar pronto."
+            : "Domínio por habilidade (H1 a H30), nota estimada pela TRI e o que ainda falta para estar pronto."
+        }
+        acoes={
+          <Button asChild data-testid="ir-simulado">
+            <Link href="/simulado">
+              <Timer /> Simulados
+            </Link>
+          </Button>
+        }
+      />
+      {areas.map((a) => (
+        <MapaDaArea key={a} area={a} comTitulo={varias} />
+      ))}
+    </ConteudoPagina>
+  );
+}
 
-  const celulas = React.useMemo(() => (estado && agora ? mapaHabilidades(estado, agora) : null), [estado, agora]);
-  const grupos = React.useMemo(() => (celulas ? agruparPorCompetencia(celulas) : null), [celulas]);
+/** Calor H1–H30 por competência (e por assunto, em matemática), nota TRI estimada e os três níveis de "pronto". */
+function MapaDaArea({ area, comTitulo }: { area: Area; comTitulo: boolean }) {
+  const { erro: erroStore } = useStore();
+  const estado = useEstadoArea([area]);
+  const { questoes, porId, erro: erroQuestoes } = useQuestoes([area]);
+  const agora = React.useMemo(() => (estado ? new Date() : null), [estado]);
+  const [selecionada, setSelecionada] = React.useState<string>(area === "natureza" ? "CN-H17" : "H24");
+
+  const celulas = React.useMemo(() => (estado && agora ? mapaHabilidades(estado, agora, area) : null), [estado, agora, area]);
+  const grupos = React.useMemo(() => (celulas ? agruparPorCompetencia(celulas, area) : null), [celulas, area]);
   const assuntos = React.useMemo(
-    () => (celulas && estado && porId ? dominioPorAssunto(celulas, estado, porId) : null),
-    [celulas, estado, porId],
+    () => (area === "matematica" && celulas && estado && porId ? dominioPorAssunto(celulas, estado, porId) : null),
+    [celulas, estado, porId, area],
   );
 
   const nota = React.useMemo(() => {
@@ -76,19 +107,10 @@ export function TelaMapa() {
   const simuladosFaceis = estado?.simulados.filter((s) => s.tipo === "faceis-15") ?? [];
   const melhorSimulado = simuladosFaceis.find(simuladoValeParaFaceis) ?? null;
 
+  const nomeArea = NOME_AREA[area].toLowerCase();
   return (
-    <ConteudoPagina>
-      <CabecalhoPagina
-        titulo="Mapa"
-        descricao="Domínio por habilidade (H1 a H30), nota estimada pela TRI e o que ainda falta para estar pronto."
-        acoes={
-          <Button asChild data-testid="ir-simulado">
-            <Link href="/simulado">
-              <Timer /> Simulado de {TAMANHO_SIMULADO_FACEIS} fáceis
-            </Link>
-          </Button>
-        }
-      />
+    <section className="flex flex-col gap-5" data-testid={`mapa-area-${area}`} aria-label={`Mapa de ${nomeArea}`}>
+      {comTitulo && <h2 className="border-b border-border pb-2 text-xl font-extrabold">{area === "natureza" ? "Ciências da Natureza" : "Matemática"}</h2>}
 
       {erro && (
         <div role="alert" className="rounded-lg bg-danger-soft px-4 py-3 text-sm">
@@ -103,7 +125,7 @@ export function TelaMapa() {
           <Card data-testid="card-nota">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                Nota estimada <Badge variant="outline">estimativa</Badge>
+                Nota estimada de {nomeArea} <Badge variant="outline">estimativa</Badge>
               </CardTitle>
               <CardDescription>
                 EAP com prior N(0, 1), só itens oficiais com parâmetros TRI do INEP. Escala 500 + 100·θ, intervalo de 95%. Não é a equalização oficial.
@@ -178,13 +200,13 @@ export function TelaMapa() {
         <Card data-testid="card-pronto">
           <CardHeader>
             <CardTitle>O que falta para “pronto”</CardTitle>
-            <CardDescription>Três níveis: cada habilidade da semana, os fáceis da semana e a prova de matemática.</CardDescription>
+            <CardDescription>Três níveis: cada habilidade da semana, os fáceis da semana e a prova de {nomeArea}.</CardDescription>
           </CardHeader>
           <CardContent className="gap-4">
             <NivelPronto
               titulo="Habilidades da semana"
-              dica="Clique numa habilidade para ver todos os critérios."
-              pronto={!!celulas && celulas.filter((c) => c.daSemana).every((c) => c.pronto)}
+              dica={celulas && !celulas.some((c) => c.daSemana) ? `Nenhuma habilidade de ${nomeArea} na semana: escolha nos Ajustes.` : "Clique numa habilidade para ver todos os critérios."}
+              pronto={!!celulas && celulas.some((c) => c.daSemana) && celulas.filter((c) => c.daSemana).every((c) => c.pronto)}
               itens={
                 celulas
                   ? celulas
@@ -193,7 +215,7 @@ export function TelaMapa() {
                         chave: c.habilidade,
                         ok: c.pronto,
                         // Só o primeiro critério que falta; o detalhe da célula lista todos.
-                        texto: c.pronto ? `${c.habilidade}: pronto` : `${c.habilidade}: ${c.faltas[0]}${c.faltas.length > 1 ? ` (+${c.faltas.length - 1})` : ""}`,
+                        texto: c.pronto ? `${rotuloHabilidade(c.habilidade)}: pronto` : `${rotuloHabilidade(c.habilidade)}: ${c.faltas[0]}${c.faltas.length > 1 ? ` (+${c.faltas.length - 1})` : ""}`,
                       }))
                   : []
               }
@@ -206,19 +228,19 @@ export function TelaMapa() {
                 faceis
                   ? faceis.pronto
                     ? [{ chave: "ok", ok: true, texto: "Todas as habilidades da semana prontas e um simulado de 15 fáceis com ≥ 90% em até 3 min por item." }]
-                    : faceis.faltas.filter((f) => !/^H\d+:/.test(f)).map((f, i) => ({ chave: `f${i}`, ok: false, texto: f }))
+                    : faceis.faltas.filter((f) => !/^(CN-)?H\d+:/.test(f)).map((f, i) => ({ chave: `f${i}`, ok: false, texto: f }))
                   : []
               }
               extra={
-                faceis && !faceis.pronto && faceis.faltas.some((f) => /^H\d+:/.test(f)) ? (
+                faceis && !faceis.pronto && faceis.faltas.some((f) => /^(CN-)?H\d+:/.test(f)) ? (
                   <p className="text-sm text-muted-foreground">
-                    Mais {plural(faceis.faltas.filter((f) => /^H\d+:/.test(f)).length, "habilidade da semana que ainda não está pronta", "habilidades da semana que ainda não estão prontas")} (lista acima).
+                    Mais {plural(faceis.faltas.filter((f) => /^(CN-)?H\d+:/.test(f)).length, "habilidade da semana que ainda não está pronta", "habilidades da semana que ainda não estão prontas")} (lista acima).
                   </p>
                 ) : null
               }
             />
             <NivelPronto
-              titulo="Prova de matemática"
+              titulo={`Prova de ${nomeArea}`}
               pronto={!!prova?.pronto}
               itens={prova ? (prova.pronto ? [{ chave: "ok", ok: true, texto: "Nota, erro nos fáceis e simulados completos dentro da meta." }] : prova.faltas.map((f, i) => ({ chave: `p${i}`, ok: false, texto: f }))) : []}
             />
@@ -227,10 +249,10 @@ export function TelaMapa() {
       </div>
 
       {/* Calor por competência */}
-      <section className="flex flex-col gap-3" aria-labelledby="calor-titulo">
+      <section className="flex flex-col gap-3" aria-label={`Calor por habilidade de ${nomeArea}`}>
         <div className="flex flex-wrap items-end justify-between gap-2">
-          <h2 id="calor-titulo" className="text-lg font-bold">
-            Calor por habilidade
+          <h2 className="text-lg font-bold">
+            Calor por habilidade{comTitulo ? ` · ${SIGLA_AREA[area]}` : ""}
           </h2>
           <Legenda />
         </div>
@@ -259,7 +281,8 @@ export function TelaMapa() {
         </div>
       </section>
 
-      {/* Por assunto de foco */}
+      {/* Por assunto de foco (só matemática tem assuntos na taxonomia) */}
+      {area === "matematica" && (
       <section className="flex flex-col gap-3" aria-labelledby="assuntos-titulo">
         <h2 id="assuntos-titulo" className="text-lg font-bold">
           Por assunto de foco
@@ -284,7 +307,8 @@ export function TelaMapa() {
             : null}
         </Card>
       </section>
-    </ConteudoPagina>
+      )}
+    </section>
   );
 }
 
@@ -315,7 +339,7 @@ function NivelPronto({
         {itens.map((it) => (
           <li key={it.chave} className={cn("flex gap-2", it.ok ? "text-muted-foreground" : "")}>
             <span aria-hidden className={cn("mt-2 size-1.5 shrink-0 rounded-full", it.ok ? "bg-success" : "bg-accent")} />
-            {aoClicar && /^H\d+$/.test(it.chave) ? (
+            {aoClicar && /^(CN-)?H\d+$/.test(it.chave) ? (
               <button type="button" className="text-left hover:underline" onClick={() => aoClicar(it.chave)}>
                 {it.texto}
               </button>
@@ -341,7 +365,7 @@ const CLASSE_NIVEL: Record<0 | 1 | 2 | 3 | 4, string> = {
 
 function CelulaCalor({ celula, selecionada, aoSelecionar }: { celula: CelulaMapa; selecionada: boolean; aoSelecionar: () => void }) {
   const nivel = nivelCalor(celula.semDados ? null : celula.dominioEfetivo);
-  const rotulo = `${celula.habilidade}, ${celula.nome}, ${celula.semDados ? "sem dados" : `domínio efetivo ${formatarDecimal(celula.dominioEfetivo, 2)}`}${celula.pronto ? ", pronta" : ""}${celula.revisaoVencida ? ", revisão vencida" : ""}`;
+  const rotulo = `${exibirHabilidade(celula.habilidade)}, ${celula.nome}, ${celula.semDados ? "sem dados" : `domínio efetivo ${formatarDecimal(celula.dominioEfetivo, 2)}`}${celula.pronto ? ", pronta" : ""}${celula.revisaoVencida ? ", revisão vencida" : ""}`;
   return (
     <button
       type="button"
@@ -358,7 +382,7 @@ function CelulaCalor({ celula, selecionada, aoSelecionar }: { celula: CelulaMapa
         celula.daSemana && !selecionada && "shadow-[inset_0_0_0_1.5px_var(--accent)]",
       )}
     >
-      {celula.habilidade}
+      {rotuloHabilidade(celula.habilidade)}
       {celula.pronto && <Check aria-hidden className="absolute top-1 right-1 size-3" />}
       {celula.revisaoVencida && <RotateCcw aria-hidden className="absolute bottom-1 right-1 size-3" />}
     </button>
@@ -393,7 +417,7 @@ function DetalheCelula({ celula }: { celula: CelulaMapa | null }) {
     <Card data-testid="detalhe-habilidade" aria-live="polite">
       <CardHeader>
         <CardTitle className="flex flex-wrap items-center gap-2">
-          <span className="num">{celula.habilidade}</span>
+          <span className="num">{exibirHabilidade(celula.habilidade)}</span>
           <span className="font-normal text-muted-foreground">{celula.nome}</span>
           {celula.daSemana && <Badge variant="accent">da semana</Badge>}
           {celula.pronto && <Badge variant="success">pronta</Badge>}

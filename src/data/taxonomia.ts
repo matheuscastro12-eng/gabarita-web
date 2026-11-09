@@ -4,7 +4,7 @@
  * "fáceis primeiro"). Copiado à mão em 09/11/2026: a taxonomia muda raramente e o app
  * precisa dela sem I/O. Ao mudar no PROVAS, atualize aqui.
  */
-import type { Competencia, Habilidade } from "./tipos";
+import type { Area, Competencia, Habilidade } from "./tipos";
 
 export interface CompetenciaInfo {
   id: Competencia;
@@ -62,6 +62,66 @@ export const COMPETENCIAS: CompetenciaInfo[] = [
     habilidades: ["H27", "H28", "H29", "H30"],
   },
 ];
+
+/**
+ * Matriz de Referência de Ciências da Natureza e suas Tecnologias (INEP, ENEM): C1–C8, H1–H30.
+ * Separada da de matemática; as chaves das habilidades levam o prefixo "CN-".
+ */
+export const COMPETENCIAS_CN: CompetenciaInfo[] = [
+  {
+    id: "C1",
+    nome: "Ciência como construção humana",
+    descricao: "Compreender as ciências naturais e as tecnologias a elas associadas como construções humanas, percebendo seus papéis nos processos de produção e no desenvolvimento econômico e social da humanidade.",
+    habilidades: ["CN-H1", "CN-H2", "CN-H3", "CN-H4"],
+  },
+  {
+    id: "C2",
+    nome: "Tecnologias no cotidiano",
+    descricao: "Identificar a presença e aplicar as tecnologias associadas às ciências naturais em diferentes contextos.",
+    habilidades: ["CN-H5", "CN-H6", "CN-H7"],
+  },
+  {
+    id: "C3",
+    nome: "Ambiente e produção",
+    descricao: "Associar intervenções que resultam em degradação ou conservação ambiental a processos produtivos e sociais e a instrumentos ou ações científico-tecnológicos.",
+    habilidades: ["CN-H8", "CN-H9", "CN-H10", "CN-H11", "CN-H12"],
+  },
+  {
+    id: "C4",
+    nome: "Organismos, ambiente e saúde",
+    descricao: "Compreender interações entre organismos e ambiente, em particular aquelas relacionadas à saúde humana, relacionando conhecimentos científicos, aspectos culturais e características individuais.",
+    habilidades: ["CN-H13", "CN-H14", "CN-H15", "CN-H16"],
+  },
+  {
+    id: "C5",
+    nome: "Métodos das ciências",
+    descricao: "Entender métodos e procedimentos próprios das ciências naturais e aplicá-los em diferentes contextos.",
+    habilidades: ["CN-H17", "CN-H18", "CN-H19"],
+  },
+  {
+    id: "C6",
+    nome: "Física",
+    descricao: "Apropriar-se de conhecimentos da física para, em situações problema, interpretar, avaliar ou planejar intervenções científico-tecnológicas.",
+    habilidades: ["CN-H20", "CN-H21", "CN-H22", "CN-H23"],
+  },
+  {
+    id: "C7",
+    nome: "Química",
+    descricao: "Apropriar-se de conhecimentos da química para, em situações problema, interpretar, avaliar ou planejar intervenções científico-tecnológicas.",
+    habilidades: ["CN-H24", "CN-H25", "CN-H26", "CN-H27"],
+  },
+  {
+    id: "C8",
+    nome: "Biologia",
+    descricao: "Apropriar-se de conhecimentos da biologia para, em situações problema, interpretar, avaliar ou planejar intervenções científico-tecnológicas.",
+    habilidades: ["CN-H28", "CN-H29", "CN-H30"],
+  },
+];
+
+/** Matriz da área (matemática C1–C7, natureza C1–C8). */
+export function competenciasDaArea(area: Area): CompetenciaInfo[] {
+  return area === "natureza" ? COMPETENCIAS_CN : COMPETENCIAS;
+}
 
 export interface AssuntoInfo {
   /** Slug usado em `questao.assuntos`. */

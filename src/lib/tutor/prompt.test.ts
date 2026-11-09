@@ -145,3 +145,14 @@ describe("prompt do modo resumo", () => {
     expect(inst.perfil).toContain("futebol");
   });
 });
+
+describe("tutor por área", () => {
+  it("natureza tem o bloco da área, com as mesmas regras de vazamento", async () => {
+    const { BLOCO_FIXO_NATUREZA, blocoFixoDaArea } = await import("./prompt");
+    expect(blocoFixoDaArea("matematica")).toBe(BLOCO_FIXO);
+    expect(BLOCO_FIXO_NATUREZA).toMatch(/Ciências da Natureza \(física, química e biologia\)/);
+    expect(BLOCO_FIXO_NATUREZA).not.toMatch(/estudo de matemática/);
+    expect(BLOCO_FIXO_NATUREZA).toMatch(/NUNCA revele a alternativa/);
+    expect(BLOCO_FIXO_NATUREZA).toMatch(/0 pergunta socrática .* 4 a resolução completa/s);
+  });
+});

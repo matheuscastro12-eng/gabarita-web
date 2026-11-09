@@ -1,5 +1,5 @@
 /** Fila de questões do sprint e resumo do dia. */
-import type { Questao } from "@/data/tipos";
+import { ordemHabilidade, type Questao } from "@/data/tipos";
 import { DOMINIO_INICIAL } from "./evidencia";
 import { dataLocal, MS_POR_DIA } from "./formato";
 import { precisaRevisao } from "./revisao";
@@ -127,7 +127,7 @@ export function resumoDoDia(estado: EstadoAluno, agora: Date): ResumoDoDia {
     sprintsHoje: estado.sprints.filter((s) => dataLocal(new Date(s.iniciadoEm)) === hoje).length,
     habilidadesVencidas: vencidas
       .map((h) => h.habilidade)
-      .sort((a, b) => Number(a.slice(1)) - Number(b.slice(1))),
+      .sort((a, b) => ordemHabilidade(a) - ordemHabilidade(b)),
     proximaRevisao: proximas[0] ?? null,
   };
 }

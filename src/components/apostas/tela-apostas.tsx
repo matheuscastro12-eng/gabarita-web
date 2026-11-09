@@ -6,6 +6,7 @@ import { ArrowLeft, Check, GraduationCap, Minus, Timer, X } from "lucide-react";
 import type { Area, Letra, Questao } from "@/data/tipos";
 import { AREAS, CREDITO_APOSTAS } from "@/data/tipos";
 import { carregarApostas, contarPorArea, filtrarPorArea, NOME_AREA } from "@/data/apostas";
+import { useVersao } from "@/components/app/versao";
 import { useStore } from "@/lib/store/provider";
 import { useAtalho } from "@/lib/atalhos/provider";
 import { resumirAluno } from "@/lib/tutor/prompt";
@@ -23,7 +24,7 @@ import { Logo } from "@/components/app/sidebar";
 import { cn } from "@/lib/utils";
 import { corrigirSimulado, SEGUNDOS_POR_QUESTAO_APOSTAS } from "./logica";
 
-type Filtro = Area | "todas";
+type Filtro = Area | "todas" | "cn-mt";
 
 type Fase =
   | { tipo: "intro" }
@@ -62,7 +63,10 @@ function useApostas() {
 export function TelaApostas() {
   const { questoes, erro } = useApostas();
   const { estado } = useStore();
-  const [filtro, setFiltro] = React.useState<Filtro>("todas");
+  const { versao } = useVersao();
+  // Natureza abre filtrada em natureza; Geral, nas duas áreas do 2º dia; Matemática, em todas.
+  const [filtroEscolhido, setFiltro] = React.useState<Filtro | null>(null);
+  const filtro: Filtro = filtroEscolhido ?? (versao === "natureza" ? "natureza" : versao === "geral" ? "cn-mt" : "todas");
   const [fase, setFase] = React.useState<Fase>({ tipo: "intro" });
 
   if (erro) {
@@ -131,9 +135,9 @@ export function TelaApostas() {
         </CardHeader>
         <CardContent className="gap-5">
           <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Filtrar por matéria">
-            {(["todas", ...AREAS] as const).map((a) => {
+            {(["todas", "cn-mt", ...AREAS] as const).map((a) => {
               const ativo = filtro === a;
-              const qtd = contagem ? (a === "todas" ? questoes!.length : contagem[a]) : null;
+              const qtd = contagem ? (a === "todas" ? questoes!.length : a === "cn-mt" ? contagem.natureza + contagem.matematica : contagem[a]) : null;
               return (
                 <button
                   key={a}
@@ -147,7 +151,7 @@ export function TelaApostas() {
                     ativo ? "border-accent bg-accent text-accent-foreground" : "border-border bg-surface hover:border-accent hover:text-accent-text",
                   )}
                 >
-                  {a === "todas" ? "Todas" : NOME_AREA[a]}
+                  {a === "todas" ? "Todas" : a === "cn-mt" ? "Natureza + Matemática" : NOME_AREA[a]}
                   {qtd !== null && <span className={cn("num", ativo ? "text-white/85" : "text-muted-foreground")}>{qtd}</span>}
                 </button>
               );

@@ -34,9 +34,11 @@ export async function carregarAposta(id: string): Promise<Questao | undefined> {
   return (await carregarApostas()).find((q) => q.id === id);
 }
 
-/** Filtra por área ("todas" = as 50). */
-export function filtrarPorArea(questoes: readonly Questao[], area: Area | "todas"): Questao[] {
-  return area === "todas" ? [...questoes] : questoes.filter((q) => q.area === area);
+/** Filtra por área ("todas" = as 50; "cn-mt" = natureza e matemática, as do 2º dia). */
+export function filtrarPorArea(questoes: readonly Questao[], area: Area | "todas" | "cn-mt"): Questao[] {
+  if (area === "todas") return [...questoes];
+  if (area === "cn-mt") return questoes.filter((q) => q.area === "natureza" || q.area === "matematica");
+  return questoes.filter((q) => q.area === area);
 }
 
 export function contarPorArea(questoes: readonly Questao[]): Record<Area, number> {

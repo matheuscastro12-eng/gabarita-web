@@ -6,6 +6,8 @@ import { AjudaAtalhos } from "./ajuda-atalhos";
 import { PaletaComandos } from "./paleta-comandos";
 import { BarraSuperior, Sidebar } from "./sidebar";
 import { AvisoArmazenamento } from "./aviso-armazenamento";
+import { TelaEntrada } from "./tela-entrada";
+import { useVersao } from "./versao";
 
 /**
  * Casca do app: barra lateral (desktop) ou barra superior (celular), conteúdo,
@@ -26,6 +28,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     window.addEventListener("gabarita:foco", aoMudar);
     return () => window.removeEventListener("gabarita:foco", aoMudar);
   }, []);
+
+  const { versao, carregada } = useVersao();
+  if (carregada && versao === null) return <TelaEntrada />;
 
   return (
     <div className="flex h-dvh w-full flex-col bg-background md:flex-row">

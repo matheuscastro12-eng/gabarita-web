@@ -4,14 +4,24 @@ import * as React from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check, Timer, X } from "lucide-react";
 import type { Letra, Questao } from "@/data/tipos";
-import { NOME_HABILIDADE } from "@/data/tipos";
+import { exibirHabilidade, NOME_AREA, NOME_HABILIDADE } from "@/data/tipos";
+import { useEstadoArea, useVersao } from "@/components/app/versao";
+import { useMontado } from "@/lib/use-cliente";
+import { textoApostas } from "@/lib/versao";
+import { formatarRelogio, ProvaLonga, salvarAndamento } from "./prova-longa";
+import { OpcoesSimulado } from "./opcoes-simulado";
 import { useQuestoes } from "@/data/use-questoes";
 import { useStore } from "@/lib/store/provider";
 import { useAtalho } from "@/lib/atalhos/provider";
 import {
+  CHAVE_ANDAMENTO,
   encerrarSimulado,
-  limiarFacil,
+  lerAndamento,
+  limiarDaArea,
   montarSimuladoFaceis,
+  questoesDaArea,
+  restanteSegundos,
+  type Andamento,
   plural,
   registrarTentativa,
   SEGUNDOS_POR_ITEM_SIMULADO,
@@ -41,23 +51,47 @@ interface Resposta {
 type Fase =
   | { tipo: "intro" }
   | { tipo: "rodando"; iniciadoEm: string; questoes: Questao[]; indice: number; respostas: (Resposta | null)[] }
-  | { tipo: "fim"; simulado: Simulado; questoes: Questao[]; respostas: (Resposta | null)[] };
+  | { tipo: "fim"; simulado: Simulado; questoes: Questao[]; respostas: (Resposta | null)[] }
+  | { tipo: "longa"; andamento: Andamento; questoes: Questao[] };
 
-/** Simulado de 15 fáceis inéditos: 3 min por item, sem tutor; conta para "pronto nos fáceis". */
+/**
+ * Simulados: prova completa do 2º dia (Geral), bloco de 45 por área, blocos menores por
+ * assunto/competência e os 15 fáceis inéditos (3 min por item; conta para "pronto nos fáceis").
+ */
 export function TelaSimulado() {
-  const { estado, atualizar, erro: erroStore } = useStore();
+  const { atualizar, erro: erroStore } = useStore();
+  const estado = useEstadoArea();
+  const { versao, areas } = useVersao();
   const { questoes, porId, erro: erroQuestoes } = useQuestoes();
+  const montado = useMontado();
+  const [releitura, setReleitura] = React.useState(0);
+  // Simulado longo em andamento (localStorage): lido só no cliente, relido ao descartar.
+  const salvo = React.useMemo(() => {
+    void releitura;
+    if (!montado) return null;
+    try {
+      return lerAndamento(window.localStorage.getItem(CHAVE_ANDAMENTO));
+    } catch {
+      return null;
+    }
+  }, [montado, releitura]);
   const { notificar } = useToast();
   const [fase, setFase] = React.useState<Fase>({ tipo: "intro" });
   // Ids das tentativas gravadas, preenchidos dentro da fila serializada do store
   // (quando o encerramento rodar, todas as gravações anteriores já terminaram).
   const tentativaIdsRef = React.useRef<string[]>([]);
 
+  // Fáceis: só nas versões de uma área (o limiar de fácil é da área).
+  const areaUnica = areas.length === 1 ? areas[0]! : null;
   const fila = React.useMemo(() => {
-    if (!estado || !questoes) return null;
-    const bs = questoes.flatMap((q) => (q.tri ? [q.tri.b] : []));
-    return montarSimuladoFaceis({ questoes, estado, limiarFacil: limiarFacil(bs) });
-  }, [estado, questoes]);
+    if (!estado || !questoes || !areaUnica) return null;
+    return montarSimuladoFaceis({ questoes: questoesDaArea(questoes, areaUnica), estado, limiarFacil: limiarDaArea(questoes, areaUnica) });
+  }, [estado, questoes, areaUnica]);
+
+  const iniciarLonga = React.useCallback((andamento: Andamento, qs: Questao[]) => {
+    salvarAndamento(andamento);
+    setFase({ tipo: "longa", andamento, questoes: qs });
+  }, []);
 
   const comecar = React.useCallback(() => {
     if (!fila || fila.length < TAMANHO_SIMULADO_FACEIS) return;
@@ -99,7 +133,7 @@ export function TelaSimulado() {
     const { iniciadoEm, questoes: qs, respostas } = fase;
     const ref: { simulado: Simulado | null } = { simulado: null };
     atualizar((e) => {
-      const r = encerrarSimulado(e, { tipo: "faceis-15", iniciadoEm, tentativaIds: tentativaIdsRef.current }, agora);
+      const r = encerrarSimulado(e, { tipo: "faceis-15", iniciadoEm, tentativaIds: tentativaIdsRef.current, areas: [...new Set(qs.map((q) => q.area))] }, agora);
       ref.simulado = r.simulado;
       return r.estado;
     })
@@ -120,15 +154,68 @@ export function TelaSimulado() {
     );
   }
 
+  if (fase.tipo === "longa") {
+    return (
+      <ProvaLonga
+        inicial={fase.andamento}
+        questoes={fase.questoes}
+        aoSair={() => {
+          setReleitura((n) => n + 1);
+          setFase({ tipo: "intro" });
+        }}
+      />
+    );
+  }
+
   if (fase.tipo === "intro") {
     const n = fila?.length ?? null;
     const suficiente = n !== null && n >= TAMANHO_SIMULADO_FACEIS;
+    const salvoQuestoes = salvo && porId ? salvo.questaoIds.map((id) => porId.get(id)) : null;
+    const salvoOk = salvoQuestoes && salvoQuestoes.every((q): q is Questao => !!q) ? salvoQuestoes : null;
     return (
-      <ConteudoPagina className="max-w-[760px]">
-        <CabecalhoPagina titulo={`Simulado de ${TAMANHO_SIMULADO_FACEIS} fáceis`} descricao="Itens oficiais do tercil fácil que você nunca fez. Sem dicas: só você e o cronômetro." />
-        <Card className="gap-5 md:p-6">
+      <ConteudoPagina className="max-w-[860px]">
+        <CabecalhoPagina
+          titulo="Simulados"
+          descricao={
+            versao === "geral"
+              ? "Prova completa do 2º dia, blocos de 45 por área e blocos curtos por assunto. Cronômetro, folha de respostas e correção no fim."
+              : `Simulados de ${NOME_AREA[areaUnica ?? "matematica"].toLowerCase()}: bloco de 45 com cronômetro, blocos curtos e os ${TAMANHO_SIMULADO_FACEIS} fáceis inéditos.`
+          }
+        />
+        {salvo && (
+          <Card className="border-accent" data-testid="card-andamento">
+            <CardHeader>
+              <CardTitle className="text-lg">Simulado em andamento</CardTitle>
+              <CardDescription>
+                {salvo.titulo} · {salvo.escolhas.filter(Boolean).length} de {salvo.questaoIds.length} marcadas · faltam {formatarRelogio(restanteSegundos(salvo))}.
+                O relógio só corre com a tela aberta.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex-row flex-wrap gap-2">
+              <Button onClick={() => salvoOk && setFase({ tipo: "longa", andamento: salvo, questoes: salvoOk })} disabled={!salvoOk} data-testid="continuar-andamento">
+                Continuar
+              </Button>
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  if (!window.confirm("Descartar o simulado em andamento? As respostas marcadas se perdem.")) return;
+                  salvarAndamento(null);
+                  setReleitura((x) => x + 1);
+                }}
+                data-testid="descartar-andamento"
+              >
+                Descartar
+              </Button>
+            </CardContent>
+          </Card>
+        )}
+        {questoes && estado && (
+          <OpcoesSimulado questoes={questoes} estado={estado} areas={areas} geral={versao === "geral"} bloqueado={!!salvo} aoIniciar={iniciarLonga} />
+        )}
+        {areaUnica && (
+        <Card className="gap-5 md:p-6" data-testid="card-faceis">
           <CardHeader>
-            <CardTitle className="text-xl">Como funciona</CardTitle>
+            <CardTitle className="text-xl">{TAMANHO_SIMULADO_FACEIS} fáceis inéditos</CardTitle>
             <CardDescription>
               {TAMANHO_SIMULADO_FACEIS} questões fáceis pelo parâmetro b do INEP, todas inéditas para você. Até 3 minutos por item: quando o tempo acaba, a questão fecha sem resposta e a próxima entra.
               Para valer como “pronto nos fáceis” é preciso acertar pelo menos 90% (14 de 15) sem estourar o tempo em nenhum item.
@@ -152,11 +239,12 @@ export function TelaSimulado() {
             </p>
           </CardContent>
         </Card>
+        )}
         <Card data-testid="card-apostas-simulado">
           <CardHeader>
             <CardTitle className="text-lg">Apostas 2026</CardTitle>
             <CardDescription>
-              Apostas do curso Edcley Teixeira (questões inéditas, não oficiais): 50 questões de todas as áreas, em simulado com cronômetro ou treino. Não contam para o critério acima.
+              Apostas do curso Edcley Teixeira (questões inéditas, não oficiais): {textoApostas(versao)}, em simulado com cronômetro ou treino. Não contam para o domínio nem para a nota.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -194,7 +282,7 @@ export function TelaSimulado() {
         </span>
         <Progress value={(fase.indice / fase.questoes.length) * 100} className="hidden max-w-48 sm:block" aria-label="Progresso do simulado" />
         <span className="hidden truncate text-muted-foreground md:inline">
-          {questao.habilidade ? `${NOME_HABILIDADE[questao.habilidade]} · ${questao.habilidade}` : ""}
+          {questao.habilidade ? `${NOME_HABILIDADE[questao.habilidade]} · ${exibirHabilidade(questao.habilidade)}` : ""}
         </span>
         <span className="ml-auto flex items-center gap-3">
           <span className="num text-muted-foreground">
@@ -209,7 +297,7 @@ export function TelaSimulado() {
 
 function resumirHabilidades(fila: Questao[]): string {
   const hs = [...new Set(fila.map((q) => q.habilidade).filter((h): h is string => !!h))];
-  return `${plural(hs.length, "habilidade", "habilidades")} (${hs.join(", ")})`;
+  return `${plural(hs.length, "habilidade", "habilidades")} (${hs.map(exibirHabilidade).join(", ")})`;
 }
 
 /** Um item do simulado: cronômetro regressivo de 3 min; ao zerar, fecha sem resposta. */
@@ -333,7 +421,7 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
                 <span className="num w-5 text-muted-foreground">{i + 1}.</span>
                 <span className="min-w-0 flex-1 truncate font-medium">
                   ENEM {q.ano} · Q{q.numero}
-                  <span className="font-normal text-muted-foreground"> · {q.habilidade}</span>
+                  <span className="font-normal text-muted-foreground"> · {q.habilidade ? exibirHabilidade(q.habilidade) : "—"}</span>
                 </span>
                 <span className="num text-[13px] text-muted-foreground">
                   {r?.tempoEsgotado ? "tempo esgotado" : r?.escolha ? `marcou ${r.escolha}` : "pulou"}

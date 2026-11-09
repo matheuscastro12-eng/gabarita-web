@@ -1,0 +1,2970 @@
+[
+{
+"id": "enem-2017-91",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 91,
+"area": "natureza",
+"enunciado": "A toxicidade de algumas substâncias é normalmente representada por um índice conhecido como DL50 (dose letal mediana). Ele representa a dosagem aplicada a uma população de seres vivos que mata 50% desses indivíduos e é normalmente medido utilizando-se ratos como cobaias. Esse índice é muito importante para os seres humanos, pois ao se extrapolar os dados obtidos com o uso de cobaias, pode-se determinar o nível tolerável de contaminação de alimentos, para que possam ser consumidos de forma segura pelas pessoas. O quadro apresenta três pesticidas e suas toxicidades. A unidade mg/kg indica a massa da substância ingerida pela massa da cobaia.\n\n![](/questoes/natureza/d2547f5c7c04b365.png)\n\nSessenta ratos, com massa de 200 g cada, foram divididos em três grupos de vinte. Três amostras de ração, contaminadas, cada uma delas com um dos pesticidas indicados no quadro, na concentração de 3 mg por grama de ração, foram administradas para cada grupo de cobaias. Cada rato consumiu 100g de ração.\n\nQual(ais) grupo(s) terá(ão) uma mortalidade mínima de 10 ratos?",
+"imagens": [
+"/questoes/natureza/d2547f5c7c04b365.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O grupo que se contaminou somente com atrazina.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O grupo que se contaminou somente com diazinon.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Os grupos que se contaminaram com atrazina e malation.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Os grupos que se contaminaram com diazinon e malation.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Nenhum dos grupos contaminados com atrazina, diazinon e malation.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.15611,
+"b": 1.606,
+"c": 0.17345,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 91",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/91",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-92",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 92,
+"area": "natureza",
+"enunciado": "Os medicamentos são rotineiramente utilizados pelo ser humano com o intuito de diminuir ou, por muitas vezes, curar possíveis transtornos de saúde. Os antibióticos são grupos de fármacos inseridos no tratamento de doenças causadas por bactérias.\n\nNa terapêutica das doenças mencionadas, alguns desses fármacos atuam",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ativando o sistema imunológico do hospedeiro.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Interferindo na cascata bioquímica da inflamação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Removendo as toxinas sintetizadas pelas bactérias",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Combatendo as células hospedeiras das bactérias.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Danificando estruturas específicas da célula bacteriana.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.62645,
+"b": 1.11215,
+"c": 0.11193,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 92",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/92",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-93",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 93,
+"area": "natureza",
+"enunciado": "Dispositivos eletrônicos que utilizam materiais de baixo custo, como polímeros semicondutores, têm sido desenvolvidos para monitorar a concentração de amônia (gás tóxico e incolor) em granjas avícolas. A polianilina é um polímero semicondutor que tem o valor de sua resistência elétrica nominal quadruplicado quando exposta a altas concentrações de amônia. Na ausência de amônia, a polianilina se comporta como um resistor ôhmico e a sua resposta elétrica é mostrada no gráfico.\n\n![](/questoes/natureza/15483ecaa2cad07d.png)\n\nO valor da resistência elétrica da polianilina na presença de altas concentrações de amônia, em ohm, é igual a",
+"imagens": [
+"/questoes/natureza/15483ecaa2cad07d.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,5 x 100",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2,0 x 100",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "2,5 x 105",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "5,0 x 105",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "2,0 x 106",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.23639,
+"b": 1.65616,
+"c": 0.24685,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 93",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/93",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-94",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 94,
+"area": "natureza",
+"enunciado": "Pesquisadores conseguiram estimular a absorção de energia luminosa em plantas graças ao uso de nanotubos de carbono. Para isso, nanotubos de carbono “se inseriram” no interior dos cloroplastos por uma montagem espontânea, através das membranas dos cloroplastos. Pigmentos da planta absorvem as radiações luminosas, os elétrons são “excitados” e se deslocam no interior de membranas dos cloroplastos, e a planta utiliza em seguida essa energia elétrica para a fabricação de açúcares. Os nanotubos de carbono podem absorver comprimentos de onda habitualmente não utilizados pelos cloroplastos, e os pesquisadores tiveram a ideia de utilizá-los como “antenas”, estimulando a conversão de energia solar pelos cloroplastos, com o aumento do transporte de elétrons. Nanotubos de carbono incrementam a fotossíntese de plantas.\n\nDisponível em: http://lqes.iqm.unicamp.br. Acesso em: 14 nov. 2014 (adaptado).\n\nO aumento da eficiência fotossintética ocorreu pelo fato de os nanotubos de carbono promoverem diretamente a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Utilização de água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Absorção de fótons.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Formação de gás oxigênio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Proliferação dos cloroplastos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Captação de dióxido de carbono.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.3139,
+"b": 0.81902,
+"c": 0.15681,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 94",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/94",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-95",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 95,
+"area": "natureza",
+"enunciado": "A eletrólise é um processo não espontâneo de grande importância para a indústria química. Uma de suas aplicações é a obtenção do gás cloro e do hidróxido de sódio, a partir de uma solução aquosa de cloreto de sódio. Nesse procedimento, utiliza-se uma célula eletroquímica, como ilustrado.\n\n![](/questoes/natureza/a09a8ab64975b533.png)\n\nNo processo eletrolítico ilustrado, o produto secundário obtido é o",
+"imagens": [
+"/questoes/natureza/a09a8ab64975b533.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Vapor de água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Oxigênio molecular.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Hipoclorito de sódio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Hidrogênio molecular.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Cloreto de hidrogênio.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.50872,
+"b": 1.66775,
+"c": 0.12154,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 95",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/95",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-96",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 96,
+"area": "natureza",
+"enunciado": "Uma grande virada na moderna história da agricultura ocorreu depois da Segunda Guerra Mundial. Após a guerra, os governos haviam se deparado com um enorme excedente de nitrato de amônio, ingrediente usado na fabricação de explosivos. A partir daí as fábricas de munição foram adaptadas para começar a produzir fertilizantes tendo como componente principal os nitratos.\n\nSOUZA, F. A. **Agricultura natural/orgânica como instrumento de fixação biológica e manutenção do nitrogênio no solo: um modelo sustentável de MDL.**  \nDisponível em: www.planetaorganico.com.br. Acesso em: 17 jul. 2015 (adaptado).\n\nNo ciclo natural do nitrogênio, o equivalente ao principal componente desses fertilizantes industriais é produzido na etapa de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Nitratação.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Nitrosação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Amonificação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Desnitrificação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Fixação biológica do N2.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.48688,
+"b": 1.61043,
+"c": 0.26684,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 96",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/96",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-97",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 97,
+"area": "natureza",
+"enunciado": "Um fato corriqueiro ao se cozinhar arroz é o derramamento de parte da água de cozimento sobre a chama azul do fogo, mudando-a para uma chama amarela. Essa mudança de cor pode suscitar interpretações diversas, relacionadas às substâncias presentes na água de cozimento. Além do sal de cozinha (NaCl), nela se encontram carboidratos, proteínas e sais minerais.\n\nCientificamente, sabe-se que essa mudança de cor da chama ocorre pela",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Reação do gás de cozinha com o sal, volatilizando gás cloro.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Emissão de fótons pelo sódio, excitado por causa da chama.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Produção de derivado amarelo, pela reação com o carboidrato.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Reação do gás de cozinha com a água, formando gás hidrogênio.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Excitação das moléculas de proteínas, com formação de luz amarela.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.52396,
+"b": 1.35265,
+"c": 0.14168,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 97",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/97",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-98",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 98,
+"area": "natureza",
+"enunciado": "A classificação biológica proposta por Whittaker permite distinguir cinco grandes linhas evolutivas utilizando, como critérios de classificação, a organização celular e o modo de nutrição. Woese e seus colaboradores, com base na comparação das sequências que codificam o RNA ribossômico dos seres vivos, estabeleceram relações de ancestralidade entre os grupos e concluíram que os procariontes do reino Monera não eram um grupo coeso do ponto de vista evolutivo.\n\n![](/questoes/natureza/edc613ade58b242b.png)\n\nA diferença básica nas classificações citadas é que a mais recente se baseia fundamentalmente em",
+"imagens": [
+"/questoes/natureza/edc613ade58b242b.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Tipos de células.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aspectos ecológicos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Relações filogenéticas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Propriedades fisiológicas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Características morfológicas.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.89534,
+"b": 2.03182,
+"c": 0.0696,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 98",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/98",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-99",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 99,
+"area": "natureza",
+"enunciado": "Em uma colisão frontal entre dois automóveis, a força que o cinto de segurança exerce sobre o tórax e abdômen do motorista pode causar lesões graves nos órgãos internos. Pensando na segurança do seu produto, um fabricante de automóveis realizou testes em cinco modelos diferentes de cinto. Os testes simularam uma colisão de 0,30 segundo de duração, e os bonecos que representavam os ocupantes foram equipados com acelerômetros. Esse equipamento registra o módulo da desaceleração do boneco em função do tempo. Os parâmetros como massa dos bonecos, dimensões dos cintos e velocidade imediatamente antes e após o impacto foram os mesmos para todos os testes. O resultado final obtido está no gráfico de aceleração por tempo.\n\n![](/questoes/natureza/b920c8709c369b5b.jpg)\n\nQual modelo de cinto oferece menor risco de lesão interna ao motorista?",
+"imagens": [
+"/questoes/natureza/b920c8709c369b5b.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.47709,
+"b": 0.91191,
+"c": 0.34312,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 99",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/99",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-100",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 100,
+"area": "natureza",
+"enunciado": "Pesquisadores criaram um tipo de plaqueta artificial, feita com um polímero gelatinoso coberto de anticorpos, que promete agilizar o processo de coagulação quando injetada no corpo. Se houver sangramento, esses anticorpos fazem com que a plaqueta mude sua forma e se transforme em uma espécie de rede que gruda nas lesões dos vasos sanguíneos e da pele.\n\nMOUTINHO, S. **Coagulação acelerada.** Disponível em: http://cienciahoje.uol.com.br.  \nAcesso em: 19 fev. 2013 (adaptado).\n\nQual a doença cujos pacientes teriam melhora de seu estado de saúde com o uso desse material?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Filariose.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Hemofilia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aterosclerose.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Doença de Chagas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Síndrome da imunodeficiência adquirida.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.12666,
+"b": 0.69737,
+"c": 0.13978,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 100",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/100",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-101",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 101,
+"area": "natureza",
+"enunciado": "A figura mostra como é a emissão de radiação eletromagnética para cinco tipos de lâmpada: haleto metálico, tungstênio, mercúrio, xênon e LED (diodo emissor de luz). As áreas marcadas em cinza são proporcionais à intensidade da energia liberada pela lâmpada. As linhas pontilhadas mostram a sensibilidade do olho humano aos diferentes comprimentos de onda. UV e IV são as regiões do ultravioleta e do infravermelho, respectivamente.\n\nUm arquiteto deseja iluminar uma sala usando uma lâmpada que produza boa iluminação, mas que não aqueça o ambiente.\n\n![](/questoes/natureza/47dcec1c77cf164c.jpg)\n\nQual tipo de lâmpada melhor atende ao desejo do arquiteto?",
+"imagens": [
+"/questoes/natureza/47dcec1c77cf164c.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Haleto metálico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Tungstênio.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Mercúrio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Xênon.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "LED",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.85925,
+"b": 0.12588,
+"c": 0.04274,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 101",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/101",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-102",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 102,
+"area": "natureza",
+"enunciado": "Partículas microscópicas existentes na atmosfera funcionam como núcleos de condensação de vapor de água que, sob condições adequadas de temperatura e pressão, propiciam a formação das nuvens e consequentemente das chuvas. No ar atmosférico, tais partículas são formadas pela reação de ácidos (H X  \ncom a base NH3, de forma natural ou antropogênica, dando origem a sais de amônio (NH4X , de acordo com a  \nequação química genérica:\n\nHX (g) + NH3 (g) –> NH4X (s)\n\nFELIX, E. P.; CARDOSO, A. A. F**atores ambientais que afetam a precipitação úmida.**  \nQuímica Nova na Escola, n. 21, maio 2005 (adaptado).\n\nA fixação de moléculas de vapor de água pelos núcleos de condensação ocorre por",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ligações iônicas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Interações dipolo-dipolo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Interações dipolo-dipolo induzido.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Interações íon-dipolo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ligações covalentes.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.88725,
+"b": 2.23369,
+"c": 0.10286,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 102",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/102",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-103",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 103,
+"area": "natureza",
+"enunciado": "Em uma linha de transmissão de informações por fibra óptica, quando um sinal diminui sua intensidade para valores inferiores a 10 dB, este precisa ser retransmitido. No entanto, intensidades superiores a 100 dB não podem ser transmitidas adequadamente. A figura apresenta como se dá a perda de sinal (perda óptica) para diferentes comprimentos de onda para certo tipo de fibra óptica.\n\n![](/questoes/natureza/e9b9889fcd79b28d.jpg)\n\nQual é a máxima distância, em km, que um sinal pode ser enviado nessa fibra sem ser necessária uma retransmissão?",
+"imagens": [
+"/questoes/natureza/e9b9889fcd79b28d.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "6",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "18",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "60",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "90",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "100",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.6712,
+"b": 2.46941,
+"c": 0.13636,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 103",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/103",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-104",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 104,
+"area": "natureza",
+"enunciado": "A técnica do carbono-14 permite a datação de fósseis pela medição dos valores de emissão beta desse isótopo presente no fóssil. Para um ser em vida, o máximo são 15 emissões beta/(min g). Após a morte, a quantidade de 14C se reduz pela metade a cada 5 730 anos.\n\nA prova do carbono 14. Disponível em: http://noticias.terra.com.br. Acesso em: 9 nov. 2013 (adaptado).\n\nConsidere que um fragmento fóssil de massa igual a 30 g foi encontrado em um sítio arqueológico, e a medição de radiação apresentou 6 750 emissões beta por hora. A idade desse fóssil, em anos, é",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "450.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "1 433.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "11 460.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "17 190.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "27 000.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.90393,
+"b": 1.8785,
+"c": 0.27172,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 104",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/104",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-105",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 105,
+"area": "natureza",
+"enunciado": "A figura mostra o funcionamento de uma estação híbrida de geração de eletricidade movida a energia eólica e biogás. Essa estação possibilita que a energia gerada no parque eólico seja armazenada na forma de gás hidrogênio, usado no fornecimento de energia para a rede elétrica comum e para abastecer células a combustível.\n\n![](/questoes/natureza/12db0bb0e15049af.jpg)\n\nMesmo com ausência de ventos por curtos períodos, essa estação continua abastecendo a cidade onde está\ninstalada, pois o(a)",
+"imagens": [
+"/questoes/natureza/12db0bb0e15049af.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Planta mista de geração de energia realiza eletrólise para enviar energia à rede de distribuição elétrica.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Hidrogênio produzido e armazenado é utilizado na combustão com o biogás para gerar calor e eletricidade.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Conjunto de turbinas continua girando com a mesma velocidade, por inércia, mantendo a eficiência anterior.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Combustão da mistura biogás-hidrogênio gera diretamente energia elétrica adicional para a manutenção da estação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Planta mista de geração de energia é capaz de utilizar todo o calor fornecido na combustão para a geração de eletricidade.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.03532,
+"b": 1.01157,
+"c": 0.21543,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 105",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/105",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-106",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 106,
+"area": "natureza",
+"enunciado": "Na Idade Média, para elaborar preparados a partir de plantas produtoras de óleos essenciais, as coletas das espécies eram realizadas ao raiar do dia. Naquela época, essa prática era fundamentada misticamente pelo efeito mágico dos raios lunares, que seria anulado pela emissão dos raios solares. Com a evolução da ciência,  \nfoi comprovado que a coleta de algumas espécies ao raiar do dia garante a obtenção de material com maiores quantidades de óleos essenciais.\n\nA explicação científica que justifica essa prática se baseia na",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Volatilização das substâncias de interesse.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Polimerização dos óleos catalisada pela radiação solar.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Solubilização das substâncias de interesse pelo orvalho.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Oxidação do óleo pelo oxigênio produzido na fotossíntese.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Liberação das moléculas de óleo durante o processo de fotossíntese.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.31314,
+"b": 1.03504,
+"c": 0.27747,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 106",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/106",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-107",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 107,
+"area": "natureza",
+"enunciado": "A epilação a laser (popularmente conhecida como depilação a laser) consiste na aplicação de uma fonte de luz para aquecer e causar uma lesão localizada e controlada nos folículos capilares. Para evitar que outros tecidos sejam danificados, selecionam-se comprimentos de onda que são absorvidos pela melanina presente nos pelos, mas que não afetam a oxi-hemoglobina do sangue e a água dos tecidos da região em que o tratamento será aplicado. A figura mostra como é a absorção de diferentes comprimentos de onda pela melanina, oxi-hemoglobina e água.\n\n![](/questoes/natureza/4a3003c62da6b623.jpg)\n\nQual é o comprimento de onda, em nm, ideal para a epilação a laser?",
+"imagens": [
+"/questoes/natureza/4a3003c62da6b623.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "400",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "700",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "1100",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "900",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "500",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.43217,
+"b": 2.43127,
+"c": 0.10862,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 107",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/107",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-108",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 108,
+"area": "natureza",
+"enunciado": "O brinquedo pula-pula (cama elástica) é composto por uma lona circular flexível horizontal presa por molas à sua borda. As crianças brincam pulando sobre ela, alterando e alternando suas formas de energia. Ao pular verticalmente, desprezando o atrito com o ar e os movimentos de rotação do corpo enquanto salta, uma criança realiza um movimento periódico vertical em torno da posição de equilíbrio da lona (h = 0), passando pelos pontos de máxima e de mínima alturas, hmáx e hmin, respectivamente.\n\nEsquematicamente, o esboço do gráfico da energia cinética da criança em função de sua posição vertical na situação descrita é:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/20af46b3aee08db9.jpg"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/ea6a01980b6b1e53.jpg"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/bdbbb3b657f7f197.jpg"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/7372b0be072ab34a.jpg"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/1ed730bad00686a4.jpg"
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.90199,
+"b": 2.46786,
+"c": 0.0832,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 108",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/108",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-109",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 109,
+"area": "natureza",
+"enunciado": "O fenômeno da piracema (subida do rio) é um importante mecanismo que influencia a reprodução de algumas espécies de peixes, pois induz o processo que estimula a queima de gordura e ativa mecanismos hormonais complexos, preparando-os para a reprodução. Intervenções antrópicas nos ambientes aquáticos, como a construção de barragens, interferem na reprodução desses animais.\n\nMALTA, P **Impacto ambiental das barragens hidrelétricas**. Disponível em: http://futurambiental.com. Acesso em: 10 maio 2013 (adaptado).\n\nEssa intervenção antrópica prejudica a piracema porque reduz o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Percurso da migração.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Longevidade dos indivíduos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Disponibilidade de alimentos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Período de migração da espécie.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Número de espécies de peixes no local.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.35058,
+"b": 0.85071,
+"c": 0.01215,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 109",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/109",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-110",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 110,
+"area": "natureza",
+"enunciado": "Fusível é um dispositivo de proteção contra sobrecorrente em circuitos. Quando a corrente que passa por esse componente elétrico é maior que sua máxima corrente nominal, o fusível queima. Dessa forma, evita que a corrente elevada danifique os aparelhos do circuito. Suponha que o circuito elétrico mostrado seja alimentado por uma fonte de tensão U e que o fusível suporte uma corrente nominal de 500 mA.\n\n![](/questoes/natureza/a88d43e4cbf32cf7.jpg)\n\nQual é o máximo valor da tensão U para que o fusível não queime?",
+"imagens": [
+"/questoes/natureza/a88d43e4cbf32cf7.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "20 V",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "40 V",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "60 V",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "120 V",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "185 V",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.73264,
+"b": 1.18769,
+"c": 0.12778,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 110",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/110",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-111",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 111,
+"area": "natureza",
+"enunciado": "Os botos-cinza (Sotalia guianensis), mamíferos da família dos golfinhos, são excelentes indicadores da poluição das áreas em que vivem, pois passam toda a sua vida — cerca de 30 anos — na mesma região. Além disso, a espécie acumula mais contaminantes em seu organismo, como o mercúrio, do que outros animais da sua cadeia alimentar.\n\nMARCOLINO, B. **Sentinelas do mar.** Disponível em:  http://cienciahoje.uol.com.br. Acesso em: 1 ago. 2012 (adaptado).\n\nOs botos-cinza acumulam maior concentração dessas substâncias porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "São animais herbívoros.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "São animais detritívoros.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "São animais de grande porte.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Digerem o alimento lentamente",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Estão no topo da cadeia alimentar",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.04515,
+"b": 2.77185,
+"c": 0.14751,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 111",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/111",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-112",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 112,
+"area": "natureza",
+"enunciado": "O trombone de Quincke é um dispositivo experimental utilizado para demonstrar o fenômeno da interferência de ondas sonoras. Uma fonte emite ondas sonoras de determinada frequência na entrada do dispositivo. Essas ondas se dividem pelos dois caminhos (ADC e AEC) e se encontram no ponto C, a saída do dispositivo, onde se posiciona um detector. O trajeto ADC pode ser aumentado pelo deslocamento dessa parte do dispositivo. Com o trajeto ADC igual ao AEC, capta-se um som muito intenso na saída. Entretanto, aumentando-se gradativa mente o trajeto ADC, até que ele fique como mostrado na figura, a intensidade do som na saída fica praticamente nula. Desta forma, conhecida a velocidade do som no interior do tubo (320 m/s), é possível determinar o valor da frequência do som produzido pela fonte.\n\n![](/questoes/natureza/e633c57ff90ea74b.jpg)\n\nO valor da frequência, em hertz, do som produzido pela fonte sonora é",
+"imagens": [
+"/questoes/natureza/e633c57ff90ea74b.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "3200",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "1600",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "800",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "640",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "400",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.32516,
+"b": 1.62067,
+"c": 0.21273,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 112",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/112",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-113",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 113,
+"area": "natureza",
+"enunciado": "A farinha de linhaça dourada é um produto natural que oferece grandes benefícios para o nosso organismo. A maior parte dos nutrientes da linhaça encontra-se no óleo desta semente, rico em substâncias lipossolúveis com massas moleculares elevadas. A farinha também apresenta altos teores de fibras proteicas insolúveis em água, celulose, vitaminas lipossolúveis e sais minerais hidrossolúveis.\n\nConsidere o esquema, que resume um processo de separação dos componentes principais da farinha de linhaça dourada.\n\n![](/questoes/natureza/5af38bd3e8aa5cac.jpg)\n\nO óleo de linhaça será obtido na fração",
+"imagens": [
+"/questoes/natureza/5af38bd3e8aa5cac.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Destilado 1.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Destilado 2.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Resíduo 2.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Resíduo 3.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Resíduo 4.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.45789,
+"b": 2.60783,
+"c": 0.11336,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 113",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/113",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-114",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 114,
+"area": "natureza",
+"enunciado": "O biodiesel é um biocombustível obtido a partir de fontes renováveis, que surgiu como alternativa ao uso do diesel de petróleo para motores de combustão interna. Ele pode ser obtido pela reação entre triglicerídeos, presentes em óleos vegetais e gorduras animais, entre outros, e álcoois de baixa massa molar, como o metanol ou etanol, na presença de um catalisador, de acordo com a equação química:\n\n![](/questoes/natureza/1abd045c6e0e1089.jpg)\n\nA função química presente no produto que representa o biodiesel é",
+"imagens": [
+"/questoes/natureza/1abd045c6e0e1089.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Éter.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Éster.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Álcool.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Cetona.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ácido carboxílico",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.56093,
+"b": 1.66137,
+"c": 0.12886,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 114",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/114",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-115",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 115,
+"area": "natureza",
+"enunciado": "As centrífugas são equipamentos utilizados em laboratórios, clínicas e indústrias. Seu funcionamento faz uso da aceleração centrífuga obtida pela rotação de um recipiente e que serve para a separação de sólidos em suspensão em líquidos ou de líquidos misturados entre si.\n\nRODITI, I. **Dicionário Houaiss de física.** Rio de Janeiro: Objetiva, 2005 (adaptado).\n\nNesse aparelho, a separação das substâncias ocorre em função",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Das diferentes densidades.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Dos diferentes raios de rotação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Das diferentes velocidades angulares.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Das diferentes quantidades de cada substância.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Da diferente coesão molecular de cada substância.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.96096,
+"b": 0.49314,
+"c": 0.02466,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 115",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/115",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-116",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 116,
+"area": "natureza",
+"enunciado": "Visando explicar uma das propriedades da membrana plasmática, fusionou-se uma célula de camundongo com uma célula humana, formando uma célula híbrida. Em seguida, com o intuito de marcar as proteínas de membrana, dois anticorpos foram inseridos no experimento, um específico para as proteínas de membrana do camundongo e outro para as proteínas de membrana humana. Os anticorpos foram visualizados ao microscópio por meio de fluorescência de cores diferentes.\n\n![](/questoes/natureza/65cf44bf17fe0572.jpg)\n\nA mudança observada da etapa 3 para a etapa 4 do experimento ocorre porque as proteínas",
+"imagens": [
+"/questoes/natureza/65cf44bf17fe0572.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Movimentam-se livremente no plano da bicamada lipídica.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Permanecem confinadas em determinadas regiões da bicamada.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Auxiliam o deslocamento dos fosfolipídios da membrana plasmática.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "São mobilizadas em razão da inserção de anticorpos",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "São bloqueadas pelos anticorpos.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.34472,
+"b": 1.92451,
+"c": 0.17733,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 116",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/116",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-117",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 117,
+"area": "natureza",
+"enunciado": "A distrofia muscular Duchenne (DMD) é uma doença causada por uma mutação em um gene localizado no cromossomo X. Pesquisadores estudaram uma família na qual gêmeas monozigóticas eram portadoras de um alelo mutante recessivo para esse gene (heterozigóticas). O interessante é que uma das gêmeas apresentava o fenótipo relacionado ao alelo mutante, isto é, DMD, enquanto a sua irmã apresentava fenótipo normal.\n\nRICHARDS, C. S. et al. The American Journal of Human Genetics, n. 4, 1990 (adaptado).\n\nA diferença na manifestação da DMD entre as gêmeas pode ser explicada pela",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Dominância incompleta do alelo mutante em relação ao alelo normal.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Falha na separação dos cromossomos X no momento da separação dos dois embriões.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Recombinação cromossômica em uma divisão celular embrionária anterior à separação dos dois embriões.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Inativação aleatória de um dos cromossomos X em fase posterior à divisão que resulta nos dois embriões.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Origem paterna do cromossomo portador do alelo mutante em uma das gêmeas e origem materna na outra.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.45481,
+"b": 0.81755,
+"c": 0.26187,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 117",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/117",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-118",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 118,
+"area": "natureza",
+"enunciado": "Para se adequar às normas ambientais atuais, as construtoras precisam prever em suas obras a questão do uso de materiais de modo a minimizar os impactos causados no local. Entre esses materiais está o chamado concregrama ou pisograma, que é um tipo de revestimento composto por peças de concreto com áreas vazadas, preenchidas com solo gramado. As figuras apresentam essas duas formas de piso feitos de concreto.\n\n![](/questoes/natureza/be0b3cbd31096670.jpg)\n\nA utilização desse tipo de piso em uma obra tem o objetivo de evitar, no solo, a",
+"imagens": [
+"/questoes/natureza/be0b3cbd31096670.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Impermeabilização.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Diminuição da temperatura.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Acumulação de matéria orgânica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Alteração do pH.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Salinização.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.62376,
+"b": 2.04059,
+"c": 0.13436,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 118",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/118",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-119",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 119,
+"area": "natureza",
+"enunciado": "Diversos produtos naturais podem ser obtidos de plantas por processo de extração. O lapachol é da classe das naftoquinonas. Sua estrutura apresenta uma hidroxila enólica (pKa = 6,0) que permite que este composto seja isolado da serragem dos ipês por extração com solução adequada, seguida de filtração simples. Considere que pKa = -log Ka, em que Ka é a constante ácida da reação de ionização do lapachol.\n\n![](/questoes/natureza/a4eefd13b5eaff32.jpg)\n\nQual solução deve ser usada para extração do lapachol da serragem do ipê com maior eficiência?",
+"imagens": [
+"/questoes/natureza/a4eefd13b5eaff32.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Solução de Na2CO3 para formar um sal de lapachol.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Solução-tampão ácido acético/acetato de sódio (pH = 4,5).",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Solução de NaCI a fim de aumentar a força iônica do meio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Solução de Na2SO4 para formar um par iônico com lapachol.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Solução de HCI a fim de extraí-lo por meio de reação ácido-base.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.11856,
+"b": 1.34402,
+"c": 0.12344,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 119",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/119",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-120",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 120,
+"area": "natureza",
+"enunciado": "Alguns tipos de dessalinizadores usam o processo de osmose reversa para obtenção de água potável a partir da água salgada. Nesse método, utiliza-se um recipiente contendo dois compartimentos separados por uma membrana semipermeável: em um deles coloca-se água salgada e no outro recolhe-se a água potável. A aplicação de pressão mecânica no sistema faz a água fluir de um compartimento para o outro. O movimento das moléculas de água através da membrana é controlado pela pressão osmótica e pela pressão mecânica aplicada.\n\nPara que ocorra esse processo é necessário que as resultantes das pressões osmótica e mecânica apresentem",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Mesmo sentido e mesma intensidade.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Sentidos opostos e mesma intensidade.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Sentidos opostos e maior intensidade da pressão osmótica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Mesmo sentido e maior intensidade da pressão osmótica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Sentidos opostos e maior intensidade da pressão mecânica.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.57613,
+"b": 2.91532,
+"c": 0.05134,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 120",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/120",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-121",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 121,
+"area": "natureza",
+"enunciado": "A invenção do LED azul, que permite a geração de outras cores para compor a luz branca, permitiu a construção de lâmpadas energeticamente mais eficientes e mais duráveis do que as incandescentes e fluorescentes. Em um experimento de laboratório, pretende-se associar duas pilhas em série para acender um LED azul que requer 3,6 volts para o seu funcionamento. Considere as semirreações de redução e seus respectivos potenciais mostrados no quadro.\n\n![](/questoes/natureza/2ed37b3c1eb492dc.jpg)\n\nQual associação em série de pilhas fornece diferença de potencial, nas condições-padrão, suficiente para acender o LED azul?",
+"imagens": [
+"/questoes/natureza/2ed37b3c1eb492dc.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/c93f6f48d20f9929.jpg"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/82f192b09c47cd72.jpg"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/2ee0ce5b9ddd930b.jpg"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/82a6d344ebb38a62.jpg"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/96f29c4d280a81b7.jpg"
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.89479,
+"b": 1.7348,
+"c": 0.11597,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 121",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/121",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-122",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 122,
+"area": "natureza",
+"enunciado": "O ácido acetilsalicílico, AAS (massa molar igual a 180 g/mol), é sintetizado a partir da reação do ácido salicílico (massa molar igual a 138 g/mol) com anidrido acético, usando-se ácido sulfúrico como catalisador, conforme a equação química:\n\n![](/questoes/natureza/d34e7ef736e819f6.jpg)\n\nApós a síntese, o AAS é purificado e o rendimento flnal é de aproximadamente 50%. Devido às suas propriedades farmacológicas (antitérmico, analgésico, anti-inflamatório e antitrombótico), o AAS é utilizado como medicamento na forma de comprimidos, nos quais se emprega tipicamente uma massa de 500 mg dessa substância.\n\nUma indústria farmacêutica pretende fabricar um lote de 900 mil comprimidos, de acordo com as especificações do texto. Qual é a massa de ácido salicílico, em kg, que deve ser empregada para esse fim?",
+"imagens": [
+"/questoes/natureza/d34e7ef736e819f6.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "293",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "345",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "414",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "690",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "828",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.35927,
+"b": 2.68155,
+"c": 0.19738,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 122",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/122",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-123",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 123,
+"area": "natureza",
+"enunciado": "A Mata Atlântica caracteriza-se por uma grande diversidade de epífitas, como as bromélias. Essas plantas estão adaptadas a esse ecossistema e conseguem captar luz, água e nutrientes mesmo vivendo sobre as árvores.\n\nDisponível em: www.ib.usp.br. Acesso em: 23 fev. 2013 (adaptado).\n\nEssas espécies captam água do(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Organismo das plantas vizinhas",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Solo através de suas longas raízes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Chuva acumulada entre suas folhas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Seiva bruta das plantas hospedeiras.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Comunidade que vive em seu interior.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.63826,
+"b": 2.25847,
+"c": 0.23489,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 123",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/123",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-124",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 124,
+"area": "natureza",
+"enunciado": "O ferro é encontrado na natureza na forma de seus minérios, tais como a hematita (α\\-Fe2O3), a magnetita (Fe3O4) e a wustita (FeO). Na siderurgia, o ferro gusa é obtido pela fusão de minérios de ferro em altos fornos em condições adequadas. Uma das etapas nesse processo é a formação de monóxido de carbono. O CO (gasoso) é utilizado para reduzir o FeO (sólido), conforme a equação química:  \n\nFeO (s) + CO (g) –>  Fe (s) + CO2 (g)  \n\nConsidere as seguintes equações termoquímicas:  \nFe2O3 (s) + 3 CO (g) –> 2 Fe (s) + 3 CO2 (g) ∆rH = –25 kJ/mol de Fe2O3  \n3 FeO (s) + CO2 (g) –> Fe3O4 (s) + CO (g) ∆rH = –36 kJ/mol de CO2  \n2 Fe3O4 (s) + CO2 (g)  –> 3 Fe2O3 (s) + CO (g) ∆rH = +47 kJ/mol de CO2\n\nO valor mais próximo de ∆rH em kJ/mol de FeO, para a reação indicada do FeO (sólido) com o CO (gasoso) é",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "-14",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "-17",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "-50",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "-64",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "-100",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.76039,
+"b": 2.1206,
+"c": 0.13709,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 124",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/124",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-125",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 125,
+"area": "natureza",
+"enunciado": "A reação em cadeia da polimerase (PCR, na sigla em inglês) é uma técnica de biologia molecular que permite replicação in vitro do DNA de forma rápida. Essa técnica surgiu na década de 1980 e permitiu avanços científicos em todas as áreas de investigação genômica. A dupla hélice é estabilizada por ligações hidrogênio, duas entre as bases adenina (A) e timina (T) e três entre as bases guanina (G) e citosina (C). Inicialmente, para que o DNA possa ser replicado, a dupla hélice precisa ser totalmente desnaturada (desenrolada) pelo aumento da temperatura, quando são desfeitas as ligações hidrogênio entre as diferentes bases nitrogenadas.\n\nQual dos segmentos de DNA será o primeiro a desnaturar totalmente durante o aumento da temperatura na reação de PCR?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/16f716f8d4d9806f.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/f4dbc3553ea3ab27.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/770a794f6df5f64c.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/f1fb63bac51a40a4.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/89d9db612657534b.png"
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 5.00249,
+"b": 0.92951,
+"c": 0.15259,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 125",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/125",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-126",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 126,
+"area": "natureza",
+"enunciado": "No ar que respiramos existem os chamados “gases inertes”. Trazem curiosos nomes gregos, que significam “o Novo”, “o Oculto”, “o Inativo”. E de fato são de tal modo inertes, tão satisfeitos em sua condição, que não interferem em nenhuma reação química, não se combinam com nenhum outro elemento e justamente por esse motivo ficaram sem ser observados durante séculos: só em 1962 um químico, depois de longos e engenhosos esforços, conseguiu forçar “o Estrangeiro” (o xenônio) a combinar-se fugazmente com o flúor ávido e vivaz, a façanha pareceu tão  extraordinária que lhe foi conferido o Prêmio Nobel.\n\nLEVI, P. **A tabela periódica**. Rio de Janeiro: Relume-Dumará, 1994 (adaptado)\n\nQual propriedade do flúor justifica sua escolha como reagente para o processo mencionado?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Densidade.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Condutância.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Eletronegatividade.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Estabilidade nuclear.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Temperatura de ebulição.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.89955,
+"b": 2.39752,
+"c": 0.20382,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 126",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/126",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-127",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 127,
+"area": "natureza",
+"enunciado": "No manual fornecido pelo fabricante de uma ducha elétrica de 220V é apresentado um gráfico com a variação da temperatura da água em função da vazão para três condições (morno, quente e superquente). Na condição superquente, a potência dissipada é de 6500 W.\n\nConsidere o calor específico da água igual a 4200 J/(kg C) e a densidade da água igual a 1 kg/L.\n\n![](/questoes/natureza/e1bff34beec9cb68.png)\n\nCom base nas informações dadas, a potência na condição morno corresponde a que fração da potência na condição superquente?",
+"imagens": [
+"/questoes/natureza/e1bff34beec9cb68.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1/3.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "1/5.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3/5.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "3/8.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5/8.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.93511,
+"b": 1.20198,
+"c": 0.19216,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 127",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/127",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-128",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 128,
+"area": "natureza",
+"enunciado": "A retina é um tecido sensível à luz, localizado na parte posterior do olho, onde ocorre o processo de formação de imagem. Nesse tecido, encontram-se vários tipos celulares específicos. Um desses tipos celulares são cones, os quais convertem os diferentes comprimentos de onda da luz visível em sinais elétricos, que são transmitidos pelo nervo óptico até o cérebro.\n\nDisponível em: www.portaldaretina.com.br. Acesso em: 13 jun. 2012 (adaptado)\n\nEm relação à visão, a degeneração desse tipo celular irá",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Comprometer a capacidade de visão em cores.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Impedir a projeção dos raios luminosos na retina.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Provocar a formação de imagens invertidas na retina.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Causar dificuldade de visualização de objetos próximos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Acarretar a perda da capacidade de alterar o diâmetro da pupila.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.77928,
+"b": 1.67212,
+"c": 0.20189,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 128",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/128",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-129",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 129,
+"area": "natureza",
+"enunciado": "Em algumas residências, cercas eletrificadas são utilizadas com o objetivo de afastar possíveis invasores. Uma cerca eletrificada funciona com uma diferença de potencial elétrico de aproximadamente 10 000 V. Para que não seja letal, a corrente que pode ser transmitida através de uma pessoa não deve ser maior do que 0,01 A. Já a resistência elétrica corporal entre as mãos e os pés de uma pessoa é da ordem de 1000 Ω\n\nPara que a corrente não seja letal a uma pessoa que toca a cerca eletrificada, o gerador de tensão deve possuir uma resistência interna que, em relação à do corpo humano, é",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Praticamente nula.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aproximadamente igual.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Milhares de vezes maior.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Da ordem de 10 vezes maior.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Da ordem de 10 vezes menor.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.16303,
+"b": 1.26972,
+"c": 0.22316,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 129",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/129",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-130",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 130,
+"area": "natureza",
+"enunciado": "A cromatografia em papel é um método de separação que se baseia na migração diferencial dos componentes de uma mistura entre duas fases imiscíveis. Os componentes da amostra são separados entre a fase estacionária e a fase móvel em movimento no papel. A fase estacionária consiste de celulose praticamente pura, que pode absorver até 22% de água. É a água absorvida que funciona como fase estacionária líquida e que interage com a fase móvel, também líquida (partição líquido-líquido). Os componentes capazes de formar interações intermoleculares mais fortes com a fase estacionária migram mais lentamente.\n\nUma mistura de hexano com 5% (v/v) de acetona foi utilizada como fase móvel na separação dos componentes de um extrato vegetal obtido a partir de pimentões. Considere que esse extrato contém as substâncias representadas.\n\nRIBEIRO, N.M.; NUNES, C. R. Análise de pigmentos de pimentões por cromatografia em papel, **Química Nova na Escola**, n.29, ago. 2008 (adaptado).\n\n![](/questoes/natureza/38ac065231e61fcb.png)\n\nA substância presente na mistura que migra mais lentamente é o(a)",
+"imagens": [
+"/questoes/natureza/38ac065231e61fcb.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Licopeno.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Α-caroteno.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Γ-caroteno.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Capsorubina.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Α-criptoxantina.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.57306,
+"b": 1.33759,
+"c": 0.27353,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 130",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/130",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-131",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 131,
+"area": "natureza",
+"enunciado": "Um motorista que atende a uma chamada de celular é levado à desatenção, aumentando a possibilidade de acidentes ocorrerem em razão do aumento de seu tempo de reação. Considere dois motoristas, o primeiro atento e o segundo utilizando o celular enquanto dirige. Eles aceleram seus carros inicialmente a 1,00 m/s². Em resposta a uma emergência, freiam com uma desaceleração igual a 5,00 m/s². O motorista atento aciona o freio à velocidade de 14,0 m/s, enquanto o desatento, em situação análoga, leva 1,00 segundo a mais para iniciar a frenagem.\n\nQue distância o motorista desatento percorre a mais do que o motorista atento, até a parada total dos carros?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "2,90 m.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "14,0 m.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "14,5 m.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "15,0 m.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "17,4 m.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.27457,
+"b": 0.56765,
+"c": 0.22036,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 131",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/131",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-132",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 132,
+"area": "natureza",
+"enunciado": "Uma das estratégias para conservação de alimentos é o salgamento, adição de cloreto de sódio (NaCl), historicamente utilizado por tropeiros, vaqueiros e sertanejos para conservar carnes de boi, porco e peixe.\n\nO que ocorre com as células presentes nos alimentos preservados com essa técnica?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O sal adicionado diminui a concentração de solutos em seu interior.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O sal adicionado desorganiza e destrói suas membranas plasmáticas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A adição de sal altera as propriedades de suas membranas plasmáticas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Os íons Na+ e CI- provenientes da dissociação do sal entram livremente nelas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A grande concentração de sal no meio extracelular provoca a saída de água de dentro delas.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.29682,
+"b": 2.03245,
+"c": 0.05236,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 132",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/132",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-133",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 133,
+"area": "natureza",
+"enunciado": "Para demonstrar o processo de transformação de energia mecânica em elétrica, um estudante constrói um pequeno gerador utilizando:\n\n*   \\-um fio de cobre de diâmetro D enrolado em N espiras circulares de área A;\n*   \\-dois ímãs que criam no espaço entre eles um campo magnético uniforme de intensidade B; e\n*   \\-um sistema de engrenagens que lhe permite girar as espiras em torno de um eixo com uma frequência f.\n\nAo fazer o gerador funcionar, o estudante obteve uma tensão máxima V e uma corrente de curto-circuito i.\n\nPara dobrar o valor da tensão máxima V do gerador mantendo constante o Valor da corrente de Curto i, o estudante deve dobrar o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Número de espiras.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Frequência de giro.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Intensidade do campo magnético.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Área das espiras.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Diâmetro do fio.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.90081,
+"b": 1.45295,
+"c": 0.15165,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 133",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/133",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2017-134",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 134,
+"area": "natureza",
+"enunciado": "A ozonólise, reação utilizada na indústria madeireira para a produção de papel, é utilizada em escala de laboratório na síntese de aldeídos e cetonas. As duplas ligações dos alcenos são clivadas pela oxidação com o ozônio (O3), em presença de água e zinco metálico, e a reação produz aldeídos e/ou cetonas, dependendo do grau de substituição da ligação dupla. Ligações duplas dissubstituídas geram cetonas, enquanto as ligações duplas terminais ou monossubstituídas dão origem a aldeídos, como mostra o esquema.\n\n![](/questoes/natureza/5a3cd8e530abbcb5.png)\n\nConsidere a ozonólise do composto 1-fenil-2-metilprop-1-eno:\n\n![](/questoes/natureza/99f4fcb60ea7f7de.png)\n\nMARTINO, A. **Química, a ciência global.** Goiânia: Editora W, 2014 (adaptado)\n\nQuais são os produtos formados nessa reação?",
+"imagens": [
+"/questoes/natureza/5a3cd8e530abbcb5.png",
+"/questoes/natureza/99f4fcb60ea7f7de.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Benzaldeído e propanona.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Propanal e benzaldeído.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "2-fenil-etanal e metanal.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Benzeno e propanona.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Benzaldeído e etanal.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.70478,
+"b": 1.41041,
+"c": 0.14995,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 134",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/134",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2017-135",
+"ano": 2017,
+"dia": 2,
+"caderno": "azul",
+"numero": 135,
+"area": "natureza",
+"enunciado": "A terapia celular tem sido amplamente divulgada como revolucionária, por permitir a regeneração de tecidos a partir de células novas. Entretanto, a técnica de se introduzirem novas células em um tecido, para o tratamento de enfermidades em indivíduos, já era aplicada rotineiramente em hospitais.\n\nA que técnica refere-se o texto?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Vacina.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Biópsia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Hemodiálise.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Quimioterapia.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Transfusão de sangue.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.57627,
+"b": 1.63399,
+"c": 0.08793,
+"fonte": "INEP, microdados do ENEM 2017 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2017, caderno azul (aplicação regular), questão 135",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2017/questions/135",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2017.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+}
+]

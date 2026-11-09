@@ -148,6 +148,7 @@ export function iniciarSprint(
   questaoIds: string[],
   agora: Date,
   idFn: GeradorId = geradorPadrao,
+  area?: Sprint["area"],
 ): { estado: EstadoAluno; sprint: Sprint } {
   const sprint: Sprint = {
     id: idFn("sprint"),
@@ -155,6 +156,7 @@ export function iniciarSprint(
     terminadoEm: null,
     questaoIds: [...questaoIds],
     tentativaIds: [],
+    ...(area ? { area } : {}),
   };
   return {
     estado: { ...estado, sprints: [...estado.sprints, sprint], atualizadoEm: agora.toISOString() },

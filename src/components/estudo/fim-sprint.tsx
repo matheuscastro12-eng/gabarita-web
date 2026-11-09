@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { ArrowRight, Check, RotateCcw, X } from "lucide-react";
 import type { Questao } from "@/data/tipos";
-import { NOME_HABILIDADE } from "@/data/tipos";
+import { exibirHabilidade, NOME_HABILIDADE } from "@/data/tipos";
 import type { Tentativa } from "@/lib/dominio/tipos";
 import { formatarDecimal } from "@/lib/dominio";
 import { Button } from "@/components/ui/button";
@@ -77,7 +77,7 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
                 <span className="num w-5 text-muted-foreground">{i + 1}.</span>
                 <span className="min-w-0 flex-1 truncate font-medium">
                   {q ? `ENEM ${q.ano} · Q${q.numero}` : t.questaoId}
-                  <span className="font-normal text-muted-foreground"> · {t.habilidade}</span>
+                  <span className="font-normal text-muted-foreground"> · {exibirHabilidade(t.habilidade)}</span>
                 </span>
                 <span className="num text-[13px] text-muted-foreground">
                   {t.escolha ? `marcou ${t.escolha}` : "pulou"}
@@ -102,7 +102,7 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
               <div key={h} className="flex flex-col gap-1.5" data-testid="delta-habilidade">
                 <div className="flex items-center justify-between gap-3 text-sm">
                   <span>
-                    <span className="num font-bold">{h}</span> <span className="text-muted-foreground">{NOME_HABILIDADE[h]}</span>
+                    <span className="num font-bold">{exibirHabilidade(h)}</span> <span className="text-muted-foreground">{NOME_HABILIDADE[h]}</span>
                   </span>
                   <span className="num">
                     {formatarDecimal(d.antes, 2)} → {formatarDecimal(d.depois, 2)}{" "}

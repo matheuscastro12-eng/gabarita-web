@@ -144,7 +144,7 @@ export function prontoProva({
 
   const desde = agora.getTime() - JANELA_SIMULADOS_DIAS * MS_POR_DIA;
   const recentes = simulados.filter(
-    (s) => s.tipo === "completo-45" && new Date(s.terminadoEm).getTime() >= desde,
+    (s) => (s.tipo === "completo-45" || s.tipo === "prova-dia2") && new Date(s.terminadoEm).getTime() >= desde,
   ).length;
   const faltamSimulados = SIMULADOS_COMPLETOS_MIN - recentes;
   if (faltamSimulados > 0) {

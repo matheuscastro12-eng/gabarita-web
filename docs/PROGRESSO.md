@@ -228,3 +228,16 @@ Branch `feat/design-polish-animacoes`.
 ### Pendências
 - Gerar explicação para as 6 oficiais sem explicação (só com aval do Matheus).
 - Q35 mostra a figura recortada; o tutor não vê imagem local, recebe a descrição em texto.
+
+## Natureza e versões (09/11/2026)
+
+### O que foi feito
+- 672 questões de Ciências da Natureza (2009–2023; 45 por ano, 42 em 2019), 610 com TRI, 609 imagens locais, 672 explicações de IA (5 divergentes). `scripts/natureza/importar.py`.
+- Versões Matemática, Natureza e Geral (tela de entrada, seletor na sidebar e nos Ajustes). Hoje, Estudar, Mapa, Caderno, Ajustes e Simulado por versão.
+- Simulado: prova completa do 2º dia, bloco de 45, bloco curto por assunto/competência, 15 fáceis por área; progresso salvo; correção com nota por área e resolução por IA.
+- Tutor com bloco fixo da área. Apostas filtradas pela versão.
+- Testes: contagem por ano/área, área pela posição, matriz CN, versões, recorte do estado, simulados longos; e2e `e2e/versoes.spec.ts`.
+
+### Pendências
+- Resumos e Aprender de natureza (não gerados de propósito).
+- Questões de natureza não têm assuntos na taxonomia: os blocos curtos usam as competências (C6 física, C7 química, C8 biologia).

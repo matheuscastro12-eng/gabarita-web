@@ -3,8 +3,10 @@
 import * as React from "react";
 import { useTheme } from "next-themes";
 import { Bot, Check, Download, Moon, Sun, Trash2, Upload } from "lucide-react";
-import { HABILIDADES, NOME_HABILIDADE } from "@/data/tipos";
-import { COMPETENCIAS } from "@/data/taxonomia";
+import { areaDaHabilidade, HABILIDADES, NOME_HABILIDADE, ordemHabilidade, rotuloHabilidade, SIGLA_AREA } from "@/data/tipos";
+import { competenciasDaArea } from "@/data/taxonomia";
+import { useVersao } from "@/components/app/versao";
+import { INFO_VERSAO, VERSOES } from "@/lib/versao";
 import { useStore } from "@/lib/store/provider";
 import { exportarBackup, importarBackup } from "@/lib/store/backup";
 import { useStatusIA } from "@/lib/tutor/status-cliente";
@@ -89,6 +91,7 @@ function Formularios({ estado }: { estado: EstadoAluno }) {
             : "Quando é a prova, qual é a meta e onde ficam os seus dados."
         }
       />
+      <CardVersao />
       {TUTOR_VISIVEL ? <CardPerfil perfil={perfil} salvar={salvarPerfil} /> : <CardNome perfil={perfil} salvar={salvarPerfil} />}
       <CardProva perfil={perfil} salvar={salvarPerfil} />
       <CardSemana perfil={perfil} salvar={salvarPerfil} />
@@ -253,14 +256,53 @@ function CardProva({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
   );
 }
 
+/* ------------------------------ Versão ------------------------------ */
+
+function CardVersao() {
+  const { versao, definir } = useVersao();
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Versão do Gabarita</CardTitle>
+        <CardDescription>Escolhe o que as telas mostram. O progresso de cada área fica salvo, qualquer que seja a versão.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <div role="radiogroup" aria-label="Versão do Gabarita" className="flex flex-wrap gap-2">
+          {VERSOES.map((v) => (
+            <button
+              key={v}
+              type="button"
+              role="radio"
+              aria-checked={versao === v}
+              onClick={() => definir(v)}
+              data-testid={`ajustes-versao-${v}`}
+              title={INFO_VERSAO[v].descricao}
+              className={cn(
+                "h-9 rounded-full border-[1.5px] px-4 text-[13px] font-bold transition-colors duration-(--duration)",
+                versao === v ? "border-accent bg-accent-solid text-white" : "border-border bg-surface text-muted-foreground hover:border-accent hover:text-accent-text",
+              )}
+            >
+              {INFO_VERSAO[v].nome}
+            </button>
+          ))}
+        </div>
+        {versao && <p className="text-xs text-muted-foreground">{INFO_VERSAO[versao].descricao}</p>}
+      </CardContent>
+    </Card>
+  );
+}
+
 /* ------------------------------ Semana ------------------------------ */
 
 function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Perfil>, msg?: string) => void }) {
   const semana = new Set<string>(perfil.habilidadesDaSemana);
+  const { areas } = useVersao();
+  const grupos = areas.flatMap((a) => competenciasDaArea(a).map((c) => ({ ...c, area: a })));
   const alternar = (h: Habilidade) => {
     const nova = semana.has(h) ? perfil.habilidadesDaSemana.filter((x) => x !== h) : [...perfil.habilidadesDaSemana, h];
-    nova.sort((a, b) => Number(a.slice(1)) - Number(b.slice(1)));
-    salvar({ habilidadesDaSemana: nova }, semana.has(h) ? `${h} saiu da semana.` : `${h} entrou na semana.`);
+    nova.sort((a, b) => ordemHabilidade(a) - ordemHabilidade(b));
+    const r = `${SIGLA_AREA[areaDaHabilidade(h)]} ${rotuloHabilidade(h)}`;
+    salvar({ habilidadesDaSemana: nova }, semana.has(h) ? `${r} saiu da semana.` : `${r} entrou na semana.`);
   };
   return (
     <Card>
@@ -271,9 +313,10 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
         </CardDescription>
       </CardHeader>
       <CardContent>
-        {COMPETENCIAS.map((c) => (
-          <div key={c.id} className="flex flex-wrap items-center gap-1.5">
+        {grupos.map((c) => (
+          <div key={`${c.area}-${c.id}`} className="flex flex-wrap items-center gap-1.5">
             <span className="w-full shrink-0 text-xs text-muted-foreground sm:w-40">
+              {areas.length > 1 ? `${SIGLA_AREA[c.area]} ` : ""}
               {c.id} · {c.nome}
             </span>
             {c.habilidades.map((h) => {
@@ -292,13 +335,13 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                     ativa ? "border-accent bg-accent-solid text-white" : "border-border bg-surface text-muted-foreground hover:border-accent hover:text-accent-text",
                   )}
                 >
-                  {h}
+                  {rotuloHabilidade(h)}
                 </button>
               );
             })}
           </div>
         ))}
-        <p className="text-xs text-muted-foreground">{HABILIDADES.length} habilidades da Matriz de Referência do INEP; passe o mouse para ver o nome.</p>
+        <p className="text-xs text-muted-foreground">{HABILIDADES.length} habilidades por área na Matriz de Referência do INEP; passe o mouse para ver o nome.</p>
       </CardContent>
     </Card>
   );

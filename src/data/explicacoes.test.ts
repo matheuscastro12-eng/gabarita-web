@@ -22,3 +22,19 @@ describe("explicações de IA das questões oficiais", () => {
     expect(await carregarExplicacao("enem-2021-139")).toBeUndefined();
   }, 30_000);
 });
+
+describe("explicações de IA de natureza", () => {
+  it("cobrem as 672 de CN, sem erro do CLI, e marcam as divergentes", async () => {
+    const { carregarExplicacoesNatureza } = await import("./explicacoes");
+    const todas = await carregarExplicacoesNatureza();
+    const ids = new Set((await carregarQuestoes(["natureza"])).map((q) => q.id));
+    const chaves = Object.keys(todas);
+    expect(chaves.length).toBe(672);
+    for (const k of chaves) {
+      expect(ids.has(k)).toBe(true);
+      expect(todas[k]!.texto).not.toMatch(/^(You've hit your|API Error:)/);
+    }
+    expect(Object.values(todas).filter((e) => e.divergente)).toHaveLength(5);
+    expect((await carregarExplicacao("enem-2020-100"))?.texto.length).toBeGreaterThan(50);
+  }, 30_000);
+});
