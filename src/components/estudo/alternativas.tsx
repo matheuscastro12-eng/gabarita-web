@@ -18,10 +18,13 @@ interface Props {
   aoMarcar: (letra: Letra) => void;
 }
 
-/** Lista A–E com radio semântico, atalho visível e estado pós-confirmação. */
+/**
+ * Lista A–E como no original: cartões com borda 1,5px e raio 14px, texto serifado,
+ * letra num círculo de 29px. Marcada = azul; certa = verde; errada = vermelha.
+ */
 export function Alternativas({ alternativas, marcada, gabarito, confirmada, desabilitada, aoMarcar }: Props) {
   return (
-    <div role="radiogroup" aria-label="Alternativas" className="flex flex-col gap-2">
+    <div role="radiogroup" aria-label="Alternativas" className="flex flex-col gap-2.25">
       {alternativas.map((alt) => {
         const selecionada = marcada === alt.letra;
         const ehGabarito = confirmada && gabarito === alt.letra;
@@ -36,35 +39,31 @@ export function Alternativas({ alternativas, marcada, gabarito, confirmada, desa
             onClick={() => aoMarcar(alt.letra)}
             data-letra={alt.letra}
             className={cn(
-              "group flex min-h-12 w-full items-start gap-3 rounded-md border border-border bg-surface px-3 py-2.5 text-left",
+              "group flex w-full items-start gap-3 rounded-lg border-[1.5px] border-border bg-surface px-3.25 py-3 text-left font-serif text-[15px] leading-normal text-foreground",
               "transition-[background-color,border-color,color] duration-(--duration) ease-(--ease)",
-              "hover:bg-surface-2 disabled:cursor-default disabled:hover:bg-surface",
-              selecionada && !confirmada && "border-accent bg-accent-soft",
-              ehGabarito && "border-success bg-success-soft",
-              ehErro && "border-danger bg-danger-soft",
+              "hover:border-accent/60 disabled:cursor-default disabled:hover:border-border",
+              selecionada && !confirmada && "border-accent hover:border-accent",
+              ehGabarito && "border-success bg-success-tint disabled:hover:border-success",
+              ehErro && "border-danger bg-danger-tint disabled:hover:border-danger",
             )}
           >
             <span
               aria-hidden
               className={cn(
-                "mt-0.5 inline-flex size-7 shrink-0 items-center justify-center rounded-sm border text-sm font-semibold",
-                selecionada && !confirmada
-                  ? "border-accent bg-accent text-accent-foreground"
-                  : "border-border bg-surface-2 text-muted-foreground",
-                ehGabarito && "border-success bg-success text-background",
-                ehErro && "border-danger bg-danger text-background",
+                "inline-flex size-[29px] shrink-0 items-center justify-center rounded-full border-[1.5px] font-sans text-[13px] font-extrabold",
+                selecionada && !confirmada ? "border-accent bg-accent text-white" : "border-border bg-surface text-foreground",
+                ehGabarito && "border-success bg-success text-white",
+                ehErro && "border-danger bg-danger text-white",
               )}
             >
-              {ehGabarito ? <Check className="size-4" /> : ehErro ? <X className="size-4" /> : alt.letra}
+              {ehGabarito ? <Check className="size-4" strokeWidth={2.5} /> : ehErro ? <X className="size-4" strokeWidth={2.5} /> : alt.letra}
             </span>
-            <span className="min-w-0 flex-1 pt-0.5">
+            <span className="min-w-0 flex-1 pt-0.75">
               {alt.texto && <Markdown inline>{alt.texto}</Markdown>}
               {alt.imagem && <ImagemQuestao src={alt.imagem} alt={`Alternativa ${alt.letra}`} className="my-1 max-h-40 rounded-sm" />}
             </span>
             {!confirmada && (
-              <Kbd className="mt-1 opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
-                {alt.letra}
-              </Kbd>
+              <Kbd className="mt-1 font-sans opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">{alt.letra}</Kbd>
             )}
           </button>
         );

@@ -53,7 +53,7 @@ export function AjudaAtalhos({ aberta, aoMudar }: Props) {
         <div className="grid max-h-[60vh] gap-6 overflow-y-auto pr-1 sm:grid-cols-2">
           {grupos.map(([grupo, lista]) => (
             <section key={grupo} className="flex flex-col gap-2">
-              <h3 className="text-xs font-semibold tracking-wide text-muted-foreground">{grupo}</h3>
+              <h3 className="text-[10px] font-bold tracking-[1px] text-muted-foreground uppercase">{grupo}</h3>
               <ul className="flex flex-col divide-y divide-border">
                 {lista.map((a) => (
                   <li key={a.id} className="flex items-center justify-between gap-4 py-1.5 text-sm">

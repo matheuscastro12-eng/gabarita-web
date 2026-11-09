@@ -25,7 +25,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Progress } from "@/components/ui/progress";
 import { CabecalhoPagina, ConteudoPagina, EstadoVazio } from "@/components/app/pagina";
 import { useToast } from "@/components/ui/toast";
-import { formatarTempo } from "@/components/estudo/barra-sprint";
+import { CaixaTempo, formatarTempo } from "@/components/estudo/barra-sprint";
 import { QuestaoView } from "@/components/estudo/questao-view";
 import { Logo } from "@/components/app/sidebar";
 import { cn } from "@/lib/utils";
@@ -123,9 +123,9 @@ export function TelaSimulado() {
     const n = fila?.length ?? null;
     const suficiente = n !== null && n >= TAMANHO_SIMULADO_FACEIS;
     return (
-      <ConteudoPagina className="max-w-3xl">
+      <ConteudoPagina className="max-w-[760px]">
         <CabecalhoPagina titulo={`Simulado de ${TAMANHO_SIMULADO_FACEIS} fáceis`} descricao="Itens oficiais do tercil fácil que você nunca fez. Sem tutor, sem dicas: só você e o cronômetro." />
-        <Card className="gap-5 p-6 md:p-8">
+        <Card className="gap-5 md:p-6">
           <CardHeader>
             <CardTitle className="text-xl">Como funciona</CardTitle>
             <CardDescription>
@@ -166,12 +166,12 @@ export function TelaSimulado() {
   const resposta = fase.respostas[fase.indice] ?? null;
   return (
     <div className="flex h-full min-h-0 flex-col">
-      <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border px-4 text-sm">
-        <span className="flex items-center gap-2 font-semibold">
-          <Logo className="size-5 text-accent-text" />
+      <header className="flex h-12 shrink-0 items-center gap-4 border-b border-border bg-surface px-4 text-sm">
+        <span className="flex items-center gap-2 font-rounded text-base font-extrabold">
+          <Logo className="size-5" />
           <span className="hidden sm:inline">Simulado</span>
         </span>
-        <span className="tabular text-muted-foreground" data-testid="progresso-simulado">
+        <span className="num text-muted-foreground" data-testid="progresso-simulado">
           {fase.indice + 1}/{fase.questoes.length}
         </span>
         <Progress value={(fase.indice / fase.questoes.length) * 100} className="hidden max-w-48 sm:block" aria-label="Progresso do simulado" />
@@ -179,7 +179,7 @@ export function TelaSimulado() {
           {questao.habilidade ? `${NOME_HABILIDADE[questao.habilidade]} · ${questao.habilidade}` : ""}
         </span>
         <span className="ml-auto flex items-center gap-3">
-          <span className="tabular text-muted-foreground">
+          <span className="num text-muted-foreground">
             {fase.respostas.filter((r) => r?.acertou).length} acertos
           </span>
         </span>
@@ -253,16 +253,16 @@ function ItemSimulado({
   const pouco = restante <= 30;
   return (
     <div className="relative flex min-h-0 flex-1 flex-col">
-      <div className="pointer-events-none absolute top-3 right-5 z-10">
-        <span
-          className={cn("tabular rounded-md border border-border bg-surface/90 px-2 py-0.5 text-sm", pouco && !confirmada ? "text-warning" : "text-muted-foreground")}
-          aria-label="tempo restante neste item"
-          data-testid="cronometro"
-        >
-          {confirmada ? (resposta?.tempoEsgotado ? "tempo esgotado" : formatarTempo(resposta?.segundos ?? 0)) : formatarTempo(restante)}
-        </span>
-      </div>
       <QuestaoView
+        canto={
+          <CaixaTempo
+            className={cn(pouco && !confirmada && "bg-warning-soft text-warning-text")}
+            aria-label="tempo restante neste item"
+            data-testid="cronometro"
+          >
+            {confirmada ? (resposta?.tempoEsgotado ? "tempo esgotado" : formatarTempo(resposta?.segundos ?? 0)) : formatarTempo(restante)}
+          </CaixaTempo>
+        }
         questao={questao}
         marcada={confirmada ? (resposta?.escolha ?? null) : marcada}
         confirmada={confirmada}
@@ -280,7 +280,7 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
   const vale = simuladoValeParaFaceis(simulado);
   const taxa = simulado.total > 0 ? simulado.acertos / simulado.total : 0;
   return (
-    <ConteudoPagina className="max-w-3xl gap-6">
+    <ConteudoPagina className="max-w-[760px] gap-4">
       <CabecalhoPagina
         titulo={`${simulado.acertos} de ${simulado.total}`}
         descricao={
@@ -299,7 +299,7 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
       </div>
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">Questões</CardTitle>
+          <CardTitle>Questões</CardTitle>
         </CardHeader>
         <CardContent className="gap-0 divide-y divide-border">
           {questoes.map((q, i) => {
@@ -307,15 +307,15 @@ function FimSimulado({ simulado, questoes, respostas }: { simulado: Simulado; qu
             const acertou = !!r?.acertou;
             return (
               <div key={q.id} className="flex items-center gap-3 py-2.5 text-sm" data-testid="resultado-simulado">
-                <span className={cn("inline-flex size-7 shrink-0 items-center justify-center rounded-sm", acertou ? "bg-success-soft text-success" : "bg-danger-soft text-danger")} aria-label={acertou ? "acertou" : "errou"}>
-                  {acertou ? <Check className="size-4" /> : <X className="size-4" />}
+                <span className={cn("inline-flex size-7 shrink-0 items-center justify-center rounded-full text-white", acertou ? "bg-success" : "bg-danger")} aria-label={acertou ? "acertou" : "errou"}>
+                  {acertou ? <Check className="size-4" strokeWidth={2.5} /> : <X className="size-4" strokeWidth={2.5} />}
                 </span>
-                <span className="w-6 text-muted-foreground">{i + 1}.</span>
-                <span className="min-w-0 flex-1 truncate">
+                <span className="num w-5 text-muted-foreground">{i + 1}.</span>
+                <span className="min-w-0 flex-1 truncate font-medium">
                   ENEM {q.ano} · Q{q.numero}
-                  <span className="text-muted-foreground"> · {q.habilidade}</span>
+                  <span className="font-normal text-muted-foreground"> · {q.habilidade}</span>
                 </span>
-                <span className="tabular text-muted-foreground">
+                <span className="num text-[13px] text-muted-foreground">
                   {r?.tempoEsgotado ? "tempo esgotado" : r?.escolha ? `marcou ${r.escolha}` : "pulou"}
                   {r && !r.tempoEsgotado ? ` · ${formatarTempo(r.segundos)}` : ""}
                 </span>

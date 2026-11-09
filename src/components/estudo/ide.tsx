@@ -324,7 +324,7 @@ function QuestaoDoSprint({
             {painelQuestao}
           </Panel>
           <Separator className="w-1.5 cursor-col-resize" aria-label="Redimensionar painéis" />
-          <Panel id="tutor" defaultSize="42%" minSize="28%" className="min-w-0 bg-background">
+          <Panel id="tutor" defaultSize="42%" minSize="28%" className="min-w-0 bg-surface">
             {painelTutor}
           </Panel>
         </Group>
@@ -333,7 +333,7 @@ function QuestaoDoSprint({
       {/* Celular: abas. */}
       <div className="flex min-h-0 flex-1 flex-col md:hidden">
         <Tabs value={aba} onValueChange={(v) => setAba(v as "questao" | "tutor")} className="min-h-0 flex-1 gap-0">
-          <TabsList className="mx-4 mt-3 w-[calc(100%-2rem)]">
+          <TabsList className="mx-3 mt-3 w-[calc(100%-1.5rem)] flex-nowrap">
             <TabsTrigger value="questao" className="flex-1">
               Questão
             </TabsTrigger>
@@ -341,16 +341,16 @@ function QuestaoDoSprint({
               Tutor
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="questao" className="min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
+          <TabsContent value="questao" className="mt-1 min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
             {painelQuestao}
           </TabsContent>
-          <TabsContent value="tutor" className="min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
+          <TabsContent value="tutor" className="mt-1 min-h-0 data-[state=active]:flex data-[state=active]:flex-col">
             {painelTutor}
           </TabsContent>
         </Tabs>
       </div>
 
-      {rodape && <footer className="shrink-0 border-t border-border px-4 py-2 text-sm">{rodape}</footer>}
+      {rodape && <footer className="shrink-0 border-t border-border bg-surface px-4 py-2 text-sm">{rodape}</footer>}
     </div>
   );
 }

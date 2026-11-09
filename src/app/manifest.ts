@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-/** PWA simples: instalável, abre em janela própria, cores do tema grafite. */
+/** PWA simples: instalável, abre em janela própria, cores do tema claro (fundo #F5F7FA, azul #0A84FF). */
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Gabarita",
@@ -11,8 +11,8 @@ export default function manifest(): MetadataRoute.Manifest {
     scope: "/",
     display: "standalone",
     orientation: "any",
-    background_color: "#16181c",
-    theme_color: "#16181c",
+    background_color: "#f5f7fa",
+    theme_color: "#0a84ff",
     categories: ["education"],
     icons: [
       { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },

@@ -7,7 +7,7 @@ import type { PlotSpec } from "@/lib/tutor/plot";
 import { compiladorNoCliente, type Compilador } from "@/lib/tutor/mathjs-cliente";
 import { cn } from "@/lib/utils";
 
-const CORES = [Theme.yellow, Theme.blue, Theme.green, Theme.pink];
+const CORES = [Theme.blue, Theme.green, Theme.orange, Theme.pink];
 
 interface Props {
   spec: PlotSpec;
@@ -71,16 +71,19 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
   }, [funcoes, spec, valores]);
 
   return (
-    <figure className={cn("flex flex-col gap-3 rounded-lg border border-border bg-surface p-3", className)} data-testid="grafico">
-      {spec.titulo && <figcaption className="text-sm font-semibold">{spec.titulo}</figcaption>}
+    <figure className={cn("flex flex-col gap-3 rounded-lg border-[1.5px] border-border bg-surface p-3", className)} data-testid="grafico">
+      {spec.titulo && <figcaption className="text-sm font-bold">{spec.titulo}</figcaption>}
       {erro ? (
-        <p className="text-sm text-danger">{erro}</p>
+        <p className="text-sm text-danger-text">{erro}</p>
       ) : !compilar ? (
-        <div className="rounded-md bg-surface-2" style={{ height: altura }} aria-busy="true" aria-label="Carregando o gráfico" />
+        <div className="rounded-md bg-background dark:bg-surface-2" style={{ height: altura }} aria-busy="true" aria-label="Carregando o gráfico" />
       ) : (
         <div className="mafs-tema overflow-hidden rounded-md" style={{ height: altura }}>
           <Mafs height={altura} viewBox={{ x: [spec.xMin, spec.xMax], y: yAuto }} preserveAspectRatio={false} pan zoom>
-            <Coordinates.Cartesian />
+            <Coordinates.Cartesian
+              xAxis={{ lines: passoEixo(spec.xMax - spec.xMin), labels: (n) => formatar(n) }}
+              yAxis={{ lines: passoEixo(yAuto[1] - yAuto[0]), labels: (n) => formatar(n) }}
+            />
             {funcoes.map((f) => (f.fn ? <Plot.OfX key={f.rotulo} y={(x) => f.fn!({ x, ...valores })} color={f.cor} /> : null))}
             {spec.pontos.map((p, i) => (
               <React.Fragment key={`${p.x}-${p.y}-${i}`}>
@@ -99,7 +102,7 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
         {funcoes.map((f) => (
           <li key={f.rotulo} className="flex items-center gap-2">
             <span aria-hidden className="inline-block h-0.5 w-5 rounded" style={{ background: f.cor }} />
-            <span className={cn("font-mono text-xs", f.erro && "text-danger")}>{f.erro ? `${f.rotulo}: ${f.erro}` : f.rotulo}</span>
+            <span className={cn("font-mono text-xs", f.erro && "text-danger-text")}>{f.erro ? `${f.rotulo}: ${f.erro}` : f.rotulo}</span>
           </li>
         ))}
       </ul>
@@ -126,6 +129,15 @@ export function Grafico({ spec, className, altura = 280 }: Props) {
       )}
     </figure>
   );
+}
+
+/** Passo "bonito" (1, 2 ou 5 × 10^k) para uns 8 rótulos por eixo, em vez de um por unidade. */
+export function passoEixo(intervalo: number): number {
+  if (!Number.isFinite(intervalo) || intervalo <= 0) return 1;
+  const bruto = intervalo / 8;
+  const mag = 10 ** Math.floor(Math.log10(bruto));
+  const r = bruto / mag;
+  return (r < 1.5 ? 1 : r < 3.5 ? 2 : r < 7.5 ? 5 : 10) * mag;
 }
 
 function formatar(n: number): string {

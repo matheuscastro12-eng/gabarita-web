@@ -38,8 +38,8 @@ export function TelaAjustes() {
     return (
       <ConteudoPagina>
         <CabecalhoPagina titulo="Ajustes" />
-        <div role="alert" className="rounded-lg border border-danger/30 bg-danger-soft px-4 py-3 text-sm">
-          <p className="font-medium text-danger">Não consegui carregar seus dados.</p>
+        <div role="alert" className="rounded-lg bg-danger-soft px-4 py-3 text-sm">
+          <p className="font-semibold text-danger-text">Não consegui carregar seus dados.</p>
           <p className="text-muted-foreground">{erro}</p>
         </div>
       </ConteudoPagina>
@@ -50,7 +50,7 @@ export function TelaAjustes() {
       <ConteudoPagina aria-busy="true">
         <CabecalhoPagina titulo="Ajustes" descricao="Carregando…" />
         {[0, 1, 2].map((i) => (
-          <div key={i} className="h-40 rounded-lg bg-surface-2" />
+          <div key={i} className="h-40 rounded-xl bg-surface shadow-card" />
         ))}
       </ConteudoPagina>
     );
@@ -74,7 +74,7 @@ function Formularios({ estado }: { estado: EstadoAluno }) {
   );
 
   return (
-    <ConteudoPagina className="max-w-3xl">
+    <ConteudoPagina className="max-w-[760px]">
       <CabecalhoPagina titulo="Ajustes" descricao="Como o tutor explica, quando é a prova, qual é a meta e onde ficam os seus dados." />
       <CardPerfil perfil={perfil} salvar={salvarPerfil} />
       <CardProva perfil={perfil} salvar={salvarPerfil} />
@@ -101,7 +101,7 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-base">Explica do meu jeito</CardTitle>
+        <CardTitle>Explica do meu jeito</CardTitle>
         <CardDescription>Vai junto com cada mensagem para o tutor (em cache). Escolha presets, escreva do seu jeito, ou os dois.</CardDescription>
       </CardHeader>
       <CardContent>
@@ -115,7 +115,7 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
               setNome(n);
               if (n !== perfil.nome) salvar({ nome: n });
             }}
-            className="h-11 max-w-xs rounded-md border border-input bg-background px-3"
+            className="h-11 max-w-xs rounded-md border-[1.5px] border-input bg-surface px-3.5 font-medium focus-visible:border-accent focus-visible:outline-none"
             data-testid="campo-nome"
           />
         </label>
@@ -130,9 +130,9 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                 onClick={() => alternarPreset(p)}
                 data-testid={`preset-${p.id}`}
                 className={cn(
-                  "inline-flex h-9 items-center gap-1.5 rounded-md border px-3 text-sm font-medium",
+                  "inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] px-3.5 text-[13px] font-semibold",
                   "transition-[background-color,border-color,color] duration-(--duration) ease-(--ease)",
-                  ativo ? "border-accent bg-accent-soft text-accent-text" : "border-border bg-surface text-foreground hover:bg-surface-2",
+                  ativo ? "border-accent bg-accent text-white" : "border-border bg-surface text-foreground hover:border-accent",
                 )}
               >
                 {ativo && <Check className="size-4" />}
@@ -151,7 +151,7 @@ function CardPerfil({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
             }}
             rows={4}
             placeholder="Ex.: prefiro exemplos com dinheiro; não gosto quando repetem o enunciado; me pergunte antes de dar a conta."
-            className="w-full resize-y rounded-md border border-input bg-background px-3 py-2.5 leading-relaxed"
+            className="w-full resize-y rounded-md border-[1.5px] border-input bg-surface px-3.5 py-2.5 text-[15px] leading-relaxed focus-visible:border-accent focus-visible:outline-none"
             data-testid="campo-explica"
           />
           <span className="text-xs text-muted-foreground">{texto.length} caracteres · salva ao sair do campo</span>
@@ -172,7 +172,7 @@ function CardProva({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-base">Prova e meta</CardTitle>
+        <CardTitle>Prova e meta</CardTitle>
         <CardDescription>A meta entra no critério “pronto para a prova”: o limite inferior da nota estimada precisa passar dela.</CardDescription>
       </CardHeader>
       <CardContent className="sm:flex-row sm:flex-wrap sm:gap-6">
@@ -183,7 +183,7 @@ function CardProva({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
             value={perfil.dataProva ?? ""}
             min={dataLocal(agora)}
             onChange={(e) => salvar({ dataProva: e.target.value || null }, e.target.value ? "Data da prova salva." : "Data da prova removida.")}
-            className="h-11 rounded-md border border-input bg-background px-3"
+            className="h-11 rounded-md border-[1.5px] border-input bg-surface px-3.5 font-medium focus-visible:border-accent focus-visible:outline-none"
             data-testid="campo-data-prova"
           />
           <span className="text-xs text-muted-foreground" data-testid="prazo-prova">
@@ -206,10 +206,10 @@ function CardProva({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
               setMeta(String(metaValida));
             }}
             aria-invalid={metaValida === null}
-            className={cn("h-11 w-32 rounded-md border bg-background px-3 tabular", metaValida === null ? "border-danger" : "border-input")}
+            className={cn("num h-11 w-32 rounded-md border-[1.5px] bg-surface px-3.5 font-semibold focus-visible:border-accent focus-visible:outline-none", metaValida === null ? "border-danger" : "border-input")}
             data-testid="campo-meta"
           />
-          <span className={cn("text-xs", metaValida === null ? "text-danger" : "text-muted-foreground")}>
+          <span className={cn("text-xs", metaValida === null ? "font-medium text-danger-text" : "text-muted-foreground")}>
             {metaValida === null ? `Use um número entre ${META_NOTA_MIN} e ${META_NOTA_MAX}.` : "Escala do ENEM (500 é a média de referência)."}
           </span>
         </label>
@@ -230,7 +230,7 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-base">Habilidades da semana</CardTitle>
+        <CardTitle>Habilidades da semana</CardTitle>
         <CardDescription>
           Meta “pronto nos fáceis”: todas estas prontas e um simulado de 15 fáceis. Hoje: {plural(perfil.habilidadesDaSemana.length, "habilidade", "habilidades")}.
         </CardDescription>
@@ -253,8 +253,8 @@ function CardSemana({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Pe
                   onClick={() => alternar(h)}
                   data-testid={`semana-${h}`}
                   className={cn(
-                    "h-8 rounded-md border px-2 text-sm font-medium",
-                    ativa ? "border-accent bg-accent text-accent-foreground" : "border-border bg-surface text-muted-foreground hover:bg-surface-2",
+                    "num h-8 rounded-full border-[1.5px] px-2.5 text-[13px] font-bold transition-colors duration-(--duration)",
+                    ativa ? "border-accent bg-accent text-white" : "border-border bg-surface text-muted-foreground hover:border-accent hover:text-accent-text",
                   )}
                 >
                   {h}
@@ -276,8 +276,8 @@ function CardTutor({ perfil, salvar }: { perfil: Perfil; salvar: (p: Partial<Per
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-base">
-          <Bot className="size-4 text-accent-text" /> Tutor
+        <CardTitle className="flex items-center gap-2">
+          <Bot className="size-4 text-accent" strokeWidth={1.8} /> Tutor
         </CardTitle>
         <CardDescription>O estado vem de /api/status. A chave nunca sai do servidor nem aparece aqui.</CardDescription>
       </CardHeader>
@@ -324,9 +324,9 @@ function Interruptor({ id, rotulo, descricao, ligado, aoMudar }: { id: string; r
         role="switch"
         aria-checked={ligado}
         onClick={() => aoMudar(!ligado)}
-        className={cn("relative mt-0.5 h-6 w-11 shrink-0 rounded-full border transition-colors duration-(--duration)", ligado ? "border-accent bg-accent" : "border-border bg-surface-2")}
+        className={cn("relative mt-0.5 h-[26px] w-[46px] shrink-0 rounded-full transition-colors duration-(--duration)", ligado ? "bg-success" : "bg-border dark:bg-surface-2")}
       >
-        <span aria-hidden className={cn("absolute top-0.5 left-0.5 size-[1.125rem] rounded-full bg-background transition-transform duration-(--duration)", ligado && "translate-x-5")} />
+        <span aria-hidden className={cn("absolute top-[3px] left-[3px] size-5 rounded-full bg-white shadow-[0_1px_3px_rgba(0,0,0,0.25)] transition-transform duration-(--duration)", ligado && "translate-x-5")} />
       </button>
       <label htmlFor={id} className="flex flex-col text-sm">
         <span>{rotulo}</span>
@@ -341,19 +341,19 @@ function Interruptor({ id, rotulo, descricao, ligado, aoMudar }: { id: string; r
 function CardAparencia() {
   const { resolvedTheme, setTheme } = useTheme();
   const montado = useMontado();
-  const atual = montado ? (resolvedTheme === "light" ? "light" : "dark") : "dark";
+  const atual = montado ? (resolvedTheme === "dark" ? "dark" : "light") : "light";
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-base">Aparência</CardTitle>
-        <CardDescription>Escuro grafite por padrão; claro se preferir. Fica salvo neste navegador.</CardDescription>
+        <CardTitle>Aparência</CardTitle>
+        <CardDescription>Claro por padrão, como o Gabarita original; o escuro usa o mesmo azul de sistema. Fica salvo neste navegador.</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="inline-flex rounded-md bg-surface-2 p-1" role="radiogroup" aria-label="Tema">
+        <div className="inline-flex gap-1.75" role="radiogroup" aria-label="Tema">
           {(
             [
-              { v: "dark", rotulo: "Escuro", Icone: Moon },
               { v: "light", rotulo: "Claro", Icone: Sun },
+              { v: "dark", rotulo: "Escuro", Icone: Moon },
             ] as const
           ).map(({ v, rotulo, Icone }) => (
             <button
@@ -363,7 +363,7 @@ function CardAparencia() {
               aria-checked={atual === v}
               onClick={() => setTheme(v)}
               data-testid={`tema-${v}`}
-              className={cn("inline-flex h-9 items-center gap-1.5 rounded-sm px-3 text-sm font-medium text-muted-foreground", atual === v && "bg-surface text-foreground shadow-[0_0_0_1px_var(--border)]")}
+              className={cn("inline-flex h-9 items-center gap-1.5 rounded-full border-[1.5px] border-border bg-surface px-3.5 text-[13px] font-semibold text-foreground transition-colors duration-(--duration)", atual === v && "border-accent bg-accent text-white")}
             >
               <Icone className="size-4" /> {rotulo}
             </button>
@@ -432,7 +432,7 @@ function CardDados({ estado, store }: { estado: EstadoAluno; store: ReturnType<t
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-base">Seus dados</CardTitle>
+        <CardTitle>Seus dados</CardTitle>
         <CardDescription>
           Tudo fica neste navegador (IndexedDB), sem conta e sem servidor. Hoje: {plural(estado.tentativas.length, "tentativa", "tentativas")},{" "}
           {plural(estado.sprints.length, "sprint", "sprints")}, {plural(estado.simulados.length, "simulado", "simulados")}, {plural(estado.caderno.length, "erro no caderno", "erros no caderno")}; desde{" "}

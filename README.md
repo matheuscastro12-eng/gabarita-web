@@ -28,7 +28,7 @@ Feito para uso pessoal (um aluno, sem login), com atenção a quem tem TDAH: spr
 - **Nota TRI estimada**: 3PL, EAP com prior N(0, 1), só itens oficiais, escala 500 + 100θ com intervalo de 95% e rótulo "estimativa".
 - **Tudo pelo teclado**: `A`–`E`, `Enter`, `N`, `H`, `/`, `F`, `L`, `⌥R`, `Alt+1…6`, `Ctrl/⌘+K` (paleta) e `?` (ajuda).
 - **Robustez**: Pyodide fora do ar cai para o mathjs em contas simples e avisa; imagens quebradas viram um bloco explicativo com link; IndexedDB bloqueado cai para memória com aviso; questões sem curadoria recebem dicas genéricas, o gabarito oficial e o Laboratório; 404 com a casca do app; PWA instalável.
-- **Design**: escuro grafite com uma cor de destaque (âmbar), modo claro, Inter vendorizada, corpo 17–18 px, contraste AA, foco visível, `prefers-reduced-motion`.
+- **Design**: o design system original do Gabarita ENEM (claro, cards brancos de raio 20 px, azul de sistema, fonte do sistema na interface e serifa no enunciado), modo escuro opcional em azul, foco visível, `prefers-reduced-motion`. Tokens em `docs/DESIGN.md`.
 
 ## Como rodar
 

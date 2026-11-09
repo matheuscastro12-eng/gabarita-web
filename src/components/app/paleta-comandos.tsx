@@ -44,13 +44,13 @@ export function PaletaComandos({ aberta, aoMudar, abrirAjuda }: Props) {
 
   return (
     <Dialog open={aberta} onOpenChange={aoMudar}>
-      <DialogContent semFechar className="top-[18%] translate-y-0 gap-0 p-0 overflow-hidden" aria-describedby={undefined}>
+      <DialogContent semFechar className="top-[18%] translate-y-0 gap-0 overflow-hidden p-0" aria-describedby={undefined}>
         <DialogTitle className="sr-only">Paleta de comandos</DialogTitle>
         <Command label="Paleta de comandos" className="flex flex-col">
           <Command.Input
             autoFocus
             placeholder="O que você quer fazer?"
-            className="h-13 w-full border-b border-border bg-transparent px-4 text-base outline-none placeholder:text-muted-foreground"
+            className="h-13 w-full border-b border-border bg-transparent px-5 text-base font-medium outline-none placeholder:text-muted-foreground"
           />
           <Command.List className="max-h-[50vh] overflow-y-auto p-2">
             <Command.Empty className="px-3 py-6 text-center text-sm text-muted-foreground">

@@ -26,21 +26,39 @@ interface Props {
 /** Fim do sprint: os 5 resultados e quanto o domínio mudou. */
 export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNovoSprint }: Props) {
   useAtalho({ id: "novo-sprint", combinacao: "n", descricao: "Novo sprint", grupo: "Sprint", acao: aoNovoSprint });
+  const limpo = acertos === tentativas.length;
 
   return (
-    <ConteudoPagina className="max-w-3xl gap-6">
+    <ConteudoPagina className="max-w-[760px] gap-4">
       <CabecalhoPagina
         titulo={`${acertos} de ${tentativas.length}`}
-        descricao={
-          acertos === tentativas.length
-            ? "Sprint limpo. Faça uma pausa curta antes do próximo."
-            : "Cada erro já está no caderno. Faça uma pausa curta antes do próximo."
-        }
+        descricao={limpo ? "Sprint limpo. Faça uma pausa curta antes do próximo." : "Cada erro já está no caderno. Faça uma pausa curta antes do próximo."}
       />
+
+      <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-3">
+        <div className="hero-azul flex min-h-[104px] flex-col rounded-xl p-4.5">
+          <span className="text-[13px] font-semibold text-white/90">Acertos</span>
+          <span className="num mt-auto text-3xl font-extrabold">
+            {acertos}
+            <span className="text-lg font-bold text-white/80">/{tentativas.length}</span>
+          </span>
+        </div>
+        <div className="flex min-h-[104px] flex-col rounded-xl border border-card-borda bg-surface p-4.5 shadow-card">
+          <span className="text-[13px] font-semibold">Dicas usadas</span>
+          <span className="num mt-auto text-3xl font-extrabold">{tentativas.filter((t) => t.degrauMaximo > 0).length}</span>
+        </div>
+        <div className="col-span-2 flex min-h-[104px] flex-col rounded-xl border border-card-borda bg-surface p-4.5 shadow-card sm:col-span-1">
+          <span className="text-[13px] font-semibold">Tempo total</span>
+          <span className="num mt-auto text-3xl font-extrabold">
+            {Math.round(tentativas.reduce((s, t) => s + t.segundos, 0) / 60)}
+            <span className="text-lg font-bold text-muted-foreground"> min</span>
+          </span>
+        </div>
+      </div>
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">Questões</CardTitle>
+          <CardTitle>Questões</CardTitle>
         </CardHeader>
         <CardContent className="gap-0 divide-y divide-border">
           {tentativas.map((t, i) => {
@@ -49,19 +67,19 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
               <div key={t.id} className="flex items-center gap-3 py-2.5 text-sm" data-testid="resultado-questao">
                 <span
                   className={cn(
-                    "inline-flex size-7 shrink-0 items-center justify-center rounded-sm",
-                    t.acertou ? "bg-success-soft text-success" : "bg-danger-soft text-danger",
+                    "inline-flex size-7 shrink-0 items-center justify-center rounded-full text-white",
+                    t.acertou ? "bg-success" : "bg-danger",
                   )}
                   aria-label={t.acertou ? "acertou" : "errou"}
                 >
-                  {t.acertou ? <Check className="size-4" /> : <X className="size-4" />}
+                  {t.acertou ? <Check className="size-4" strokeWidth={2.5} /> : <X className="size-4" strokeWidth={2.5} />}
                 </span>
-                <span className="w-6 text-muted-foreground">{i + 1}.</span>
-                <span className="min-w-0 flex-1 truncate">
+                <span className="num w-5 text-muted-foreground">{i + 1}.</span>
+                <span className="min-w-0 flex-1 truncate font-medium">
                   {q ? `ENEM ${q.ano} · Q${q.numero}` : t.questaoId}
-                  <span className="text-muted-foreground"> · {t.habilidade}</span>
+                  <span className="font-normal text-muted-foreground"> · {t.habilidade}</span>
                 </span>
-                <span className="tabular text-muted-foreground">
+                <span className="num text-[13px] text-muted-foreground">
                   {t.escolha ? `marcou ${t.escolha}` : "pulou"}
                   {t.degrauMaximo > 0 ? ` · dica ${t.degrauMaximo}` : ""}
                   {t.chuteSuspeito ? " · rápido demais" : ""}
@@ -74,7 +92,7 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">Domínio</CardTitle>
+          <CardTitle>Domínio</CardTitle>
           <CardDescription>Como cada habilidade mudou neste sprint (de 0 a 1).</CardDescription>
         </CardHeader>
         <CardContent>
@@ -84,12 +102,11 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
               <div key={h} className="flex flex-col gap-1.5" data-testid="delta-habilidade">
                 <div className="flex items-center justify-between gap-3 text-sm">
                   <span>
-                    <span className="font-semibold">{h}</span>{" "}
-                    <span className="text-muted-foreground">{NOME_HABILIDADE[h]}</span>
+                    <span className="num font-bold">{h}</span> <span className="text-muted-foreground">{NOME_HABILIDADE[h]}</span>
                   </span>
-                  <span className="tabular">
+                  <span className="num">
                     {formatarDecimal(d.antes, 2)} → {formatarDecimal(d.depois, 2)}{" "}
-                    <span className={delta >= 0 ? "text-success" : "text-danger"}>
+                    <span className={cn("font-bold", delta >= 0 ? "text-success-text" : "text-danger-text")}>
                       ({delta >= 0 ? "+" : "−"}
                       {formatarDecimal(Math.abs(delta), 2)})
                     </span>
@@ -104,7 +121,7 @@ export function FimSprint({ tentativas, acertos, deltaPorHabilidade, porId, aoNo
 
       <div className="flex flex-wrap items-center gap-3">
         <Button size="lg" onClick={aoNovoSprint} data-testid="novo-sprint">
-          <RotateCcw /> Novo sprint <Kbd className="border-accent-foreground/30 bg-transparent text-accent-foreground">N</Kbd>
+          <RotateCcw /> Novo sprint <Kbd className="border-white/40 bg-transparent text-white">N</Kbd>
         </Button>
         <Button variant="ghost" asChild>
           <Link href="/">

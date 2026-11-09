@@ -1,70 +1,91 @@
 # Design do Gabarita
 
-Direção decidida em docs/DECISOES.md e no gosto registrado do Matheus (fundo neutro, cinzas, Inter, uma cor de destaque; sem bege, sem serifa). Este arquivo é a referência dos tokens e das regras visuais. O design system do repo manda sobre qualquer referência externa.
+**Origem:** este é o design system original do "Gabarita ENEM", feito pelo próprio Matheus (projeto Vercel `gabarita`, deploy `gabarita-2131tgc4s`, 25/08/2026). A fonte está em `/workspace/gabarita/design-system-original/` (`DESIGN-SYSTEM.md`, `original-2131tgc4s.css`, `2131tgc4s.html`) e as capturas em `/workspace/gabarita/screens/original/`. Em 09/11/2026 ele foi reaplicado no gabarita-web no lugar do grafite com âmbar da v1 (que o Matheus achou feio). Este arquivo é a referência dos tokens e das regras visuais; o design system do repo manda sobre qualquer referência externa.
 
 ## 0. Direção
 1. **Propósito:** ferramenta de uso diário para resolver questões do ENEM com um tutor ao lado e ver o domínio subir.
-2. **Público:** uma pessoa (Matheus, TDAH), várias sessões curtas por dia. Precisa ver primeiro: o botão "Começar" e onde está no sprint.
-3. **Tom:** utilitário, quieto, denso sem ser apertado. Nada de cara de landing page.
-4. **Detalhe memorável:** a barra do sprint (●●◐○○) e o domínio por habilidade que muda na hora, em âmbar sobre grafite.
-5. **Restrições:** Next.js + Tailwind v4 + Radix; AA (texto ≥ 4,5:1); `prefers-reduced-motion`; fontes vendorizadas (sem CDN); pt-BR; nada piscando.
+2. **Público:** uma pessoa (Matheus, TDAH), várias sessões curtas por dia. Precisa ver primeiro: "Começar" e onde está no sprint.
+3. **Tom:** claro e limpo, no estilo Apple/iOS. Cards brancos arredondados flutuam sobre um fundo cinza-azulado, com azul de sistema como destaque, sombra suave e títulos grandes em peso 800. Números em fonte arredondada; enunciado em serifa, com cara de prova impressa.
+4. **Detalhe memorável:** o hero em gradiente azul no Hoje e as alternativas em cartões com a letra num círculo, sobre o enunciado serifado.
+5. **Restrições:** Next.js + Tailwind v4 + Radix; `prefers-reduced-motion`; sem CDN (fontes do sistema, Inter vendorizada só como reserva); pt-BR; nada piscando; todos os atalhos e o layout questão | tutor mantidos.
 
-## 1. Paleta (OKLCH, contraste conferido por script)
-| Token | Escuro (padrão) | Claro | Uso |
+## 1. Paleta (tokens exatos do original)
+| Token | Claro (padrão) | Escuro (opcional) | Uso |
 |---|---|---|---|
-| `--background` | `#16181c` (grafite, não preto) | `#fdfdfd` | fundo da página |
-| `--surface` | `#1f2226` | `#f5f7f9` | cards, painéis |
-| `--surface-2` | `#282b30` | `#eceef1` | hover, áreas elevadas |
-| `--foreground` | `#edeef1` (15:1) | `#171b20` (17:1) | texto |
-| `--muted-foreground` | `#a0a5ac` (7,1:1) | `#595e66` (6,4:1) | texto secundário |
-| `--border` | `#34383e` | `#d5d8db` | bordas 1px |
-| `--accent` | `#fcb442` âmbar | `#b55700` | botão principal, foco, domínio |
-| `--accent-foreground` | `#23190a` (9,7:1) | `#fdfdfd` (4,8:1) | texto sobre o acento |
-| `--accent-text` | `#fcb442` (9,9:1) | `#a44100` (6,2:1) | acento como texto |
-| `--success` | `#6ed889` | `#007f35` | acerto, "✓ conferido" |
-| `--danger` | `#ff958d` | `#be222a` | erro |
-| `--warning` | `#f1c955` | `#8a6d00` | aviso (tutor desligado) |
+| `--background` | `#F5F7FA` (`--bg`) | `#0F1217` | fundo da página, trilho das barras, tags neutras |
+| `--surface` | `#FFFFFF` (`--card`) | `#181C23` | cards, sidebar, painel do tutor |
+| `--surface-2` | `#EEF2F7` | `#222833` | hover sobre o card |
+| `--foreground` | `#1D1D1F` (`--ink`) | `#F2F2F7` | texto |
+| `--muted-foreground` | `#6E6E73` (`--muted`) | `#9A9FA8` | texto secundário, ícones do menu |
+| `--border` | `#E3E8EF` (`--line`), sempre **1,5px** | `#2A313C` | bordas de alternativas, chips, inputs |
+| `--accent` | `#0A84FF` (`--blue`) | `#0A84FF` | botão primário, chip ativo, marca, foco |
+| `--accent-soft` | `#E5F1FF` (`--blue-soft`) | `#15304F` | item ativo do menu, tag de habilidade, balão do aluno |
+| `--accent-deep` | `#0058CC` | `#0058CC` | fim do gradiente do hero, hover do primário |
+| `--success` / `-soft` / `-tint` | `#30A46C` / `#E7F6EE` / `#F0FAF5` | `#30A46C` / `#143524` / `#12271B` | alternativa certa, acerto |
+| `--danger` / `-soft` / `-tint` | `#E5484D` / `#FDEBEC` / `#FDF3F3` | `#E5484D` / `#3A1F21` / `#2C1A1B` | alternativa errada, erro |
+| `--warning` / `-soft` | `#E8960C` / `#FCF2DF` | `#E8960C` / `#3A2C12` | aviso (tutor desligado, cronômetro no fim, "reta final") |
+| `--marca-texto` | `#FFE9A8` | `#5A4A1A` | `<mark>` |
+| hero | `linear-gradient(135deg, #0A84FF, #0058CC)`, texto branco | igual | primeiro stat card do Hoje e do fim do sprint |
+| sombra do card | `0 1px 3px rgba(16,24,40,.06), 0 8px 24px rgba(16,24,40,.04)` | sombra preta + linha `--border` | todos os cards |
 
-Uma única cor de destaque (âmbar). Verde e vermelho só para estado de resposta. Sem gradientes, sem glassmorphism, sem brilho.
+**Texto de estado em AA.** O azul `#0A84FF` em texto pequeno dá 3,6:1 sobre branco, igual ao original; ele fica nos preenchimentos, na marca, no menu ativo e nas tags (12px/700). Para texto corrido de estado existem as variantes `--success-text #1A7F4F`, `--danger-text #D2302F`, `--warning-text #9A5B00` (≥ 4,5:1 sobre branco), usadas em "Acertou.", "Não foi dessa vez", "Reta final" e nos badges. O âmbar nunca é destaque: só estado de aviso.
+
+**Escuro** é o mesmo sistema (azul de sistema, cards elevados com linha, mesmos raios e fontes), não o grafite com âmbar antigo. Padrão é claro; o escuro fica nos Ajustes e no fim da barra lateral.
 
 ## 2. Tipografia
-- Família única: **Inter** variável (vendorizada em `src/fonts`, `next/font/local`). Monoespaçada do sistema só em `<Kbd>` e código. KaTeX traz a própria fonte matemática (etapa 2).
-- Corpo **17px** (18px a partir de 1280px). Escala: 13 / 15 / 17 / 20 / 24 / 30 / 38. Altura de linha 1,55 no corpo, 1,2 nos títulos.
-- Números tabulares (`font-variant-numeric: tabular-nums`) em timer, nota e domínio.
+- **Interface:** `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, var(--font-inter), sans-serif` (SF no Mac, Segoe no Windows, Roboto no Android/Linux; Inter vendorizada é só a reserva, sem CDN).
+- **Marca e números** (`.num`, `font-rounded`): `ui-rounded, -apple-system, …` com `tabular-nums`. Stat 40px/800 (30px no celular), marca 20px/800.
+- **Enunciado e alternativas** (`.qtext`, `font-serif`): `"New York", "Times New Roman", Georgia, serif`, 16,5px, altura de linha 1,62; alternativas 15px. KaTeX usa as próprias fontes (1,06em dentro do enunciado).
+- **Cronômetro:** `ui-monospace` numa tag (`CaixaTempo`).
+- Escala: 12 / 14 / 16 / 19 / 24 / 28 / 40. H1 28px/800 com `letter-spacing -0,4px` (22px no celular); H2 19px/700; rótulo "MENU" 10px/700 em caixa alta com `letter-spacing 1px`; texto pequeno 12px; rodapé 11,5px. Corpo 16px.
 
-## 3. Espaço, raio, movimento
-- Escala de espaço 4 / 8 / 12 / 16 / 24 / 32 / 48. Raio 6px em controles, 10px em cards; nada de "tudo arredondado".
-- Movimento: só `transform` e `opacity`, 150–200ms, `ease-out`. Com `prefers-reduced-motion: reduce`, duração 0.
-- Foco visível: anel de 2px em `--accent` com 2px de offset, em tudo que recebe foco.
+## 3. Forma e espaçamento
+- Cards: raio **20px**, padding 20px, gap de grid 14px, sem borda no claro (sombra dupla), linha no escuro.
+- Alternativa: raio 14px, borda 1,5px, padding 12px 13px, letra em círculo de 29px (fonte do sistema, 13px/800). Marcada = borda e círculo azuis; certa = verde com `--success-tint`; errada = vermelha com `--danger-tint`.
+- Botão primário: pílula azul, 14px/700, padding 11px 24px; `secondary` é pílula no cinza do fundo; `outline` é o chip (borda 1,5px, branco; hover azul). `Kbd` dentro do primário é branco translúcido.
+- Chips (filtros, presets, abas no celular, tema): pílula, borda 1,5px, 13px/600; ativo = fundo azul, texto branco.
+- Tags (`Badge`): fundo `--background`, texto muted, raio 8px, padding 3px 9px, 12px/700; `accent` azul suave; `success`/`warning`/`danger` suaves.
+- Barras (`Progress`): **11px**, pílula, trilho no cinza do fundo, preenchimento azul.
+- Inputs, select e textarea: raio 12px, borda 1,5px, fundo branco; foco = borda azul.
+- Células do mapa de calor: 38px de altura, raio 8px, fonte arredondada; cinza = sem dados, vermelho/âmbar/verde suaves por nível, verde cheio no máximo; contorno azul = habilidade da semana.
+- Main: padding 26px 28px, largura máxima 1060px, alinhado à esquerda (como o original). Celular: 16px 12px.
+- Movimento: só `transform`, `opacity` e cores, 180ms, `cubic-bezier(.2,0,0,1)`; 0ms com `prefers-reduced-motion`. Foco visível: anel de 2px azul.
 
-## 4. Componentes (shadcn-style, Radix)
-Button, Card, Badge, Kbd, Progress, Tabs, Dialog, Tooltip, Toast, ScrollArea em `src/components/ui`. Layout em `src/components/app`: AppShell (barra lateral com Hoje, Estudar, Mapa, Caderno, Laboratório, Ajustes), paleta de comandos (Ctrl/Cmd+K), ajuda de atalhos (?).
+## 4. Layout e componentes
+- **Sidebar** (≥ 768px): 210px, branca, padding 28px 12px; marca (capelo azul em traço + "Gabarita"); rótulo MENU; itens com ícone Lucide 18px/1,8 em traço, 14px/500 muted, raio 10px; ativo = `--accent-soft` + azul + 600. Alternar tema no fim, como item de menu.
+- **Celular** (< 768px): barra superior branca com sombra, marca compacta e os destinos em linha rolável (texto só), como no original; o tema vira um ícone no fim.
+- **Hoje** (estilo Dashboard): linha de 4 stat cards (hero azul "Dias até a prova", "Resolvidas hoje", "Nota estimada", "Revisões vencidas"); card "Sprint de 5 questões" com a fila em chips e "Começar" em pílula; "Plano de hoje" com checklist (feito riscado em verde, pendente com seta) e a linha "Reta final" em âmbar; "Questões por dia" (7 barras azuis) e "Domínio por habilidade" com barras de 11px.
+- **IDE** (estilo Resolver): barra do sprint branca (marca, ●●◐○○, habilidade, cronômetro em tag, Laboratório, modo foco); à esquerda, o card da questão sobre o fundo cinza (tags ENEM ano · Qn · dificuldade · Hn, enunciado serifado, alternativas, fonte) e o rodapé com "Pular" e "Confirmar" em pílula à direita; à direita, o painel do tutor branco (balões do tutor no cinza do fundo, do aluno em azul suave, chips de sugestão em pílula, escada de dicas em azul, campo com raio 14). Painéis redimensionáveis; abas em chips no celular.
+- **Fim do sprint:** três stat cards (hero com os acertos), lista com círculos verde/vermelho, delta de domínio com barras.
+- **Mapa, Caderno, Laboratório, Ajustes, Simulado, 404, diálogos, paleta, toasts:** mesma linguagem (cards brancos de raio 20, chips, tags, pílulas, inputs de raio 12). Diálogos e gaveta do Laboratório são cards flutuantes com sombra maior; overlay `rgba(29,29,31,.35)`.
+- **Rodapé** em toda tela rolável: "636 questões oficiais do INEP (transcrição enem.dev) · nota TRI sempre estimada · explicações do tutor podem conter erros · seu progresso fica salvo neste navegador".
+- **Mafs:** fundo branco, grade na cor da linha, curvas em azul/verde/âmbar/rosa, rótulos dos eixos com passo "bonito". **Realce de código:** palavras-chave em `--accent-deep`, strings em verde, números em vermelho, comentários muted.
+- Ícone do app e manifest: capelo branco sobre azul `#0A84FF`, fundo `#F5F7FA`.
 
 ## 5. Estados obrigatórios
 | Estado | O que mostrar |
 |---|---|
-| Loading | esqueleto estável (sem spinner grande) |
-| Empty | por que está vazio + próxima ação ("Comece um sprint") |
-| Error | erro específico em pt-BR + como resolver |
-| Partial | o que carregou + aviso do que falta (ex.: "sem parâmetro TRI") |
-| Success | confirmação curta + próximo passo |
+| Loading | esqueleto estático no cinza do fundo, dentro do card branco |
+| Empty | card branco com ícone em quadrado azul suave, por que está vazio + próxima ação |
+| Error | caixa `--danger-soft` com texto `--danger-text` e como resolver |
+| Partial | o que carregou + aviso (ex.: "sem parâmetro TRI", tutor em modo guiado em `--warning-soft`) |
+| Success | confirmação curta (verde) + próximo passo |
 | Permission | não se aplica na v1 (sem login) |
 
-## 6. Checagem anti-"cara de IA"
-Sem gradiente roxo→azul, sem glassmorphism, sem blobs, sem emoji em rótulos, sem caixa alta espaçada, sem hero centralizado sobre gradiente, sem cards dentro de cards, sem animação de scroll.
+## 6. Revisão do redesign (09/11/2026)
+Screenshots de todas as telas a partir de `pnpm build && pnpm start`, 1440×900 e 390×844, claro e escuro, comparadas lado a lado com `/workspace/gabarita/screens/original/`; finais em `/workspace/gabarita/screens/redesign/`.
 
-## 7. Revisão da etapa 4 (09/11/2026)
-Screenshots de todas as telas (escuro e claro, 1440×900 e 390×844) a partir do build de produção. Auditoria de slop: nenhum gradiente, brilho, emoji, caixa alta espaçada ou card dentro de card; **unslop: ok** (modo polimento). Correções: aviso offline, rodapé do tutor no celular, grade do Mapa, `Markdown` inline, chips da fila na tela Hoje, esqueletos estáticos, 404.
+**unslop: polimento.** Auditoria: nenhum degradê roxo, brilho, emoji, blob, `transition-all` ou animação em loop (só o `Loader2` em estados vivos, com `motion-reduce`). Corrigido: exclamação na linha "Reta final" e `hover:scale` nas células do mapa. Mantido de propósito, porque é o sistema original pedido pelo Matheus: títulos em 800, rótulo "MENU" em caixa alta com tracking, botões e chips em pílula, hero em gradiente azul e a saudação "Bom dia, Matheus." (o e2e depende dela).
 
-Nota 0–10 depois das correções (1 exemplo e 1 correção feita em cada):
-- **Cor 9** — uma só cor de destaque; verde/vermelho só em acerto/erro. Correção: nota do mathjs usa o `warning` já existente.
-- **Tipografia 9** — Inter única, escala fixa, números tabulares. Correção: `code` no aviso em `0.8em` para não saltar a linha.
-- **Espaçamento 8** — escala 4/8/16; Mapa deixou de ter card esticado. Correção: chips com `gap-2` e `px-2.5`.
-- **Consistência 9** — mesmos cards, badges e botões em todas as telas. Correção: o botão do simulado passou para dentro do card.
-- **Responsivo 8** — abas no celular, rodapé do tutor sem corte. Correção: `Kbd` escondidos abaixo de `sm`.
-- **Acessibilidade 9** — foco visível, `aria-label` nos botões-ícone, `role=status/note/alert`, AA nos tokens. Correção: `aria-label` em "Resposta direta" quando vira só ícone.
-- **Animação 9** — só transform/opacity, zero com `prefers-reduced-motion`, nada piscando. Correção: esqueleto do gráfico sem `animate-pulse`.
-- **Densidade 8** — denso sem apertar; chat com espaço para respirar. Correção: descrição longa da fila virou uma frase + chips.
-- **Acabamento 9** — hover, disabled, estados vazio/carregando/erro/parcial em todas as telas. Correção: imagem quebrada, Pyodide fora, IndexedDB bloqueado.
+Nota 0–10 (1 exemplo e 1 correção em cada):
+- **Cor 9** — tokens exatos; um acento. Correção: variantes `-text` para texto de estado em AA.
+- **Tipografia 9** — sistema / arredondada / serifa como no original. Correção: `Kbd` em 11px mono sem destoar da pílula.
+- **Espaçamento 8** — cards 20px, grid 14px, main 26/28. Correção: detalhe do stat card com `line-clamp-2` no celular.
+- **Consistência 9** — os mesmos cards, tags, chips e pílulas em todas as telas, inclusive diálogos e gaveta. Correção: cronômetro do simulado virou `CaixaTempo` dentro da linha de tags.
+- **Responsivo 8** — barra superior rolável, stat cards 2×2, abas em chips. Correção: texto da sprint bar só com a marca no celular.
+- **Acessibilidade 8** — foco azul visível, `aria-*` mantidos, estado em AA; o azul em texto pequeno (3,6:1) é herdado do original e documentado.
+- **Animação 9** — só cores/transform/opacity, 180ms. Correção: `hover:scale` removido do mapa.
+- **Densidade 8** — denso sem apertar; enunciado com respiro de prova. Correção: card da questão limitado a 760px.
+- **Acabamento 9** — hover azul nos chips, disabled a 40%, estados vazio/carregando/erro. Correção: eixos do Mafs com passo bonito (antes um rótulo por unidade).
 
-Não testado: leitor de tela real (só a semântica ARIA), Safari/Firefox (só Chromium do Playwright), tutor com chave real.
+Não testado: leitor de tela real, Safari/Firefox (só Chromium do Playwright), fontes SF/New York de verdade (na máquina de teste caem em Roboto e Tinos), tutor com chave real.

@@ -15,7 +15,7 @@ function DialogOverlay({ className, ...props }: React.ComponentProps<typeof Dial
     <DialogPrimitive.Overlay
       data-slot="dialog-overlay"
       className={cn(
-        "fixed inset-0 z-50 bg-black/55 data-[state=open]:anim-fade-in data-[state=closed]:anim-fade-out",
+        "fixed inset-0 z-50 bg-[rgba(29,29,31,0.35)] data-[state=open]:anim-fade-in data-[state=closed]:anim-fade-out dark:bg-black/60",
         className,
       )}
       {...props}
@@ -28,6 +28,7 @@ type DialogContentProps = React.ComponentProps<typeof DialogPrimitive.Content> &
   semFechar?: boolean;
 };
 
+/** Diálogo como um card branco flutuante (raio 20px, sombra). */
 function DialogContent({ className, children, semFechar = false, ...props }: DialogContentProps) {
   return (
     <DialogPortal>
@@ -36,7 +37,7 @@ function DialogContent({ className, children, semFechar = false, ...props }: Dia
         data-slot="dialog-content"
         className={cn(
           "fixed top-1/2 left-1/2 z-50 flex w-[calc(100%-2rem)] max-w-lg -translate-x-1/2 -translate-y-1/2 flex-col gap-4",
-          "rounded-lg border border-border bg-surface p-6 text-foreground shadow-2xl shadow-black/30",
+          "rounded-xl border border-card-borda bg-surface p-6 text-foreground shadow-flutuante",
           "data-[state=open]:anim-pop-in data-[state=closed]:anim-pop-out",
           className,
         )}
@@ -46,12 +47,12 @@ function DialogContent({ className, children, semFechar = false, ...props }: Dia
         {!semFechar && (
           <DialogPrimitive.Close
             className={cn(
-              "absolute top-3 right-3 inline-flex size-9 items-center justify-center rounded-md text-muted-foreground",
-              "hover:bg-surface-2 hover:text-foreground",
+              "absolute top-3.5 right-3.5 inline-flex size-8 items-center justify-center rounded-full bg-background text-muted-foreground",
+              "hover:bg-surface-2 hover:text-foreground dark:bg-surface-2",
             )}
             aria-label="Fechar"
           >
-            <X className="size-5" />
+            <X className="size-4" />
           </DialogPrimitive.Close>
         )}
       </DialogPrimitive.Content>
@@ -64,44 +65,15 @@ function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 function DialogFooter({ className, ...props }: React.ComponentProps<"div">) {
-  return (
-    <div
-      data-slot="dialog-footer"
-      className={cn("flex flex-col-reverse gap-2 sm:flex-row sm:justify-end", className)}
-      {...props}
-    />
-  );
+  return <div data-slot="dialog-footer" className={cn("flex flex-col-reverse gap-2 sm:flex-row sm:justify-end", className)} {...props} />;
 }
 
 function DialogTitle({ className, ...props }: React.ComponentProps<typeof DialogPrimitive.Title>) {
-  return (
-    <DialogPrimitive.Title
-      data-slot="dialog-title"
-      className={cn("text-lg font-semibold leading-tight", className)}
-      {...props}
-    />
-  );
+  return <DialogPrimitive.Title data-slot="dialog-title" className={cn("text-lg font-bold leading-tight", className)} {...props} />;
 }
 
 function DialogDescription({ className, ...props }: React.ComponentProps<typeof DialogPrimitive.Description>) {
-  return (
-    <DialogPrimitive.Description
-      data-slot="dialog-description"
-      className={cn("text-sm text-muted-foreground", className)}
-      {...props}
-    />
-  );
+  return <DialogPrimitive.Description data-slot="dialog-description" className={cn("text-sm text-muted-foreground", className)} {...props} />;
 }
 
-export {
-  Dialog,
-  DialogTrigger,
-  DialogPortal,
-  DialogClose,
-  DialogOverlay,
-  DialogContent,
-  DialogHeader,
-  DialogFooter,
-  DialogTitle,
-  DialogDescription,
-};
+export { Dialog, DialogTrigger, DialogPortal, DialogClose, DialogOverlay, DialogContent, DialogHeader, DialogFooter, DialogTitle, DialogDescription };

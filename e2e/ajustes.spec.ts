@@ -29,11 +29,12 @@ test.describe("Ajustes", () => {
     await expect(tutor).toContainText("não");
     await expect(tutor).not.toContainText(/sk-/);
 
-    // Tema claro/escuro.
-    await page.getByTestId("tema-light").click();
+    // Tema: claro por padrão; escuro opcional e de volta ao claro.
     await expect(page.locator("html")).toHaveClass(/light/);
     await page.getByTestId("tema-dark").click();
     await expect(page.locator("html")).toHaveClass(/dark/);
+    await page.getByTestId("tema-light").click();
+    await expect(page.locator("html")).toHaveClass(/light/);
 
     // Exportar: baixa um JSON válido com o estado atual.
     const download = page.waitForEvent("download");

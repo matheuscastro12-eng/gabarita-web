@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Matheus Castro" }],
   creator: "Matheus Castro",
   formatDetection: { telephone: false },
-  appleWebApp: { capable: true, title: "Gabarita", statusBarStyle: "black-translucent" },
+  appleWebApp: { capable: true, title: "Gabarita", statusBarStyle: "default" },
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#16181c" },
-    { media: "(prefers-color-scheme: light)", color: "#fdfdfd" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f1217" },
+    { media: "(prefers-color-scheme: light)", color: "#f5f7fa" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full">
         <a
           href="#conteudo"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:rounded-md focus:bg-accent focus:px-3 focus:py-2 focus:text-accent-foreground"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:font-bold focus:text-accent-foreground"
         >
           Pular para o conteúdo
         </a>

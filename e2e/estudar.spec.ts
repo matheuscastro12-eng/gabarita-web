@@ -50,11 +50,27 @@ test.describe("Estudar", () => {
     expect((depois?.x ?? 0) < caixa.x - 50).toBe(true);
   });
 
-  test("no celular, questão e tutor viram abas", async ({ page }) => {
+  test("no celular, questão e tutor viram abas e a navegação é a barra superior", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await abrirEstudar(page);
+    const nav = page.getByRole("navigation", { name: "Principal" }).first();
+    await expect(nav).toBeVisible();
+    const caixaNav = await nav.boundingBox();
+    expect(caixaNav?.y).toBe(0);
     await expect(page.getByRole("tab", { name: "Questão" })).toBeVisible();
     await page.getByRole("tab", { name: "Tutor" }).click();
     await expect(page.getByRole("button", { name: /Próximo degrau/ })).toBeVisible();
+  });
+
+  test("a questão usa fonte serifada e as alternativas têm a letra em círculo", async ({ page }) => {
+    await abrirEstudar(page);
+    const enunciado = page.getByTestId("enunciado").first().locator("p").first();
+    await expect(enunciado).toHaveCSS("font-family", /New York|Times New Roman|Georgia|serif/);
+    const alternativa = page.getByRole("radio").first();
+    await expect(alternativa).toHaveCSS("border-radius", "14px");
+    // 1,5px no CSS; em DPR 1 o Chromium arredonda para 1px, em telas retina fica 1,5px.
+    await expect(alternativa).toHaveCSS("border-top-width", /^1(\.5)?px$/);
+    await page.keyboard.press("a");
+    await expect(alternativa).toHaveCSS("border-top-color", "rgb(10, 132, 255)");
   });
 });

@@ -24,7 +24,7 @@ export function ImagemQuestao({ src, alt, className, descricao }: Props) {
         role="img"
         aria-label={alt || "Imagem da questão indisponível"}
         data-testid="imagem-quebrada"
-        className={cn("my-3 flex flex-col gap-2 rounded-md border border-dashed border-border bg-surface px-4 py-3 text-sm text-muted-foreground", className)}
+        className={cn("my-3 flex flex-col gap-2 rounded-md border-[1.5px] border-dashed border-border bg-background px-4 py-3 text-sm text-muted-foreground dark:bg-surface-2", className)}
       >
         <span className="flex items-center gap-2">
           <ImageOff className="size-4 shrink-0" aria-hidden />
@@ -51,7 +51,7 @@ export function ImagemQuestao({ src, alt, className, descricao }: Props) {
       loading="lazy"
       decoding="async"
       onError={() => setQuebrada(true)}
-      className={cn("my-3 max-h-[28rem] max-w-full rounded-md bg-white object-contain", className)}
+      className={cn("my-2 block max-h-[28rem] max-w-full rounded-[10px] bg-white object-contain", className)}
     />
   );
 }

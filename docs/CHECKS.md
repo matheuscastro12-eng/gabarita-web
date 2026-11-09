@@ -59,3 +59,22 @@ Um requisito por linha, com a evidência (arquivo, teste ou comando). Atualizado
 | 13 | `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e` verdes | saída dos comandos no resumo final da etapa (logs em `/tmp/final-*.log` na sessão) | feito |
 | 14 | Screenshots finais nomeadas em `/workspace/gabarita/screens/` | 01-hoje … 10-claro-ide | feito |
 | 15 | Tutor conferido com chave real | sem chave na sandbox | pendente |
+
+# Checks — Redesign: design system original do Gabarita ENEM (09/11/2026)
+
+| # | Requisito | Evidência | Estado |
+|---|---|---|---|
+| 1 | Tema claro padrão com os tokens exatos (#F5F7FA, branco r20 + sombra dupla, #0A84FF, #E5F1FF, #1D1D1F, #6E6E73, #E3E8EF 1,5px) | `src/app/globals.css`, e2e `hoje.spec.ts` ("usa o design system original") | feito |
+| 2 | Fontes: sistema na interface, ui-rounded na marca/números, serifa no enunciado e alternativas | `globals.css` (`--font-sans`, `--font-rounded`, `--font-serif`), `questao-view.tsx`, `alternativas.tsx`; e2e `estudar.spec.ts` ("fonte serifada") | feito |
+| 3 | Sidebar branca de 210px (capelo + Gabarita, MENU, ativo azul suave); barra superior no celular | `src/components/app/sidebar.tsx`; e2e `hoje.spec.ts`, `estudar.spec.ts` (celular) | feito |
+| 4 | Hoje no estilo Dashboard: stat cards com hero em gradiente, Plano de hoje, questões por dia | `src/components/hoje/tela-hoje.tsx`; screenshot 01-hoje | feito |
+| 5 | IDE no estilo Resolver: tags, card da questão, alternativas com letra em círculo, Confirmar em pílula | `questao-view.tsx`, `alternativas.tsx`, `barra-sprint.tsx`; screenshots 02/03 | feito |
+| 6 | Chips em pílula, barras de 11px, rodapé com a fonte | `ui/tabs.tsx`, `ui/progress.tsx`, `app/pagina.tsx` (`RodapeFonte`) | feito |
+| 7 | Tutor, Mapa, Caderno, Laboratório, Ajustes, Simulado, fim do sprint, 404 e diálogos na mesma linguagem | arquivos das telas + `ui/dialog.tsx`; screenshots 04–08, 12–16 | feito |
+| 8 | Layout questão \| tutor e todos os atalhos mantidos | `ide.tsx` sem mudança de lógica; e2e completo | feito |
+| 9 | Mafs, KaTeX e realce coerentes com o claro (e com o escuro) | `globals.css` (`.mafs-tema`, `.tok-*`), `grafico.tsx` (`passoEixo`) | feito |
+| 10 | Escuro opcional coerente (azul), padrão claro | `globals.css` (`.dark`), `providers.tsx`; e2e `hoje.spec.ts` confere o botão azul no escuro; screenshot 11 | feito |
+| 11 | docs/DESIGN.md descreve o sistema e cita a origem | `docs/DESIGN.md` | feito |
+| 12 | Testes atualizados sem perder cobertura | `e2e/hoje.spec.ts`, `e2e/ajustes.spec.ts`, `e2e/estudar.spec.ts` (+3 testes); `pnpm test` 286 verdes | feito |
+| 13 | Screenshots finais 01–11 em `/workspace/gabarita/screens/redesign/` | `ls /workspace/gabarita/screens/redesign` | feito |
+| 14 | `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e` | resumo final da sessão | feito |

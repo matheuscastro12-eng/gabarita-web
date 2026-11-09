@@ -13,13 +13,13 @@ const componentes: Components = {
   // Imagens das questões vêm do enem.dev; o tamanho real varia, então usamos <img> com limite.
   img: ({ src, alt }) => <ImagemQuestao src={typeof src === "string" ? src : undefined} alt={alt ?? ""} />,
   a: ({ href, children }) => (
-    <a href={href} target="_blank" rel="noreferrer" className="text-accent-text underline underline-offset-4">
+    <a href={href} target="_blank" rel="noreferrer" className="font-semibold text-accent-text underline underline-offset-4">
       {children}
     </a>
   ),
   table: ({ children }) => (
     <div className="my-3 overflow-x-auto">
-      <table className="w-full border-collapse text-sm [&_td]:border [&_td]:border-border [&_td]:px-2 [&_td]:py-1 [&_th]:border [&_th]:border-border [&_th]:bg-surface-2 [&_th]:px-2 [&_th]:py-1">
+      <table className="w-full border-collapse text-sm [&_td]:border [&_td]:border-border [&_td]:px-2 [&_td]:py-1 [&_th]:border [&_th]:border-border [&_th]:bg-background dark:[&_th]:bg-surface-2 [&_th]:px-2 [&_th]:py-1">
         {children}
       </table>
     </div>
