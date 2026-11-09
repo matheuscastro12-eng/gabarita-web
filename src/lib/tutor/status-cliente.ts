@@ -10,6 +10,12 @@ export interface StatusIA {
   modelo: string | null;
 }
 
+/**
+ * Site público sem tutor: com NEXT_PUBLIC_SEM_TUTOR=1 (definido só na Vercel) o painel do tutor,
+ * o "Tirar dúvida" e o card do tutor nos Ajustes não aparecem. O app do Mac e o dev não definem.
+ */
+export const TUTOR_OCULTO = process.env.NEXT_PUBLIC_SEM_TUTOR === "1";
+
 const INICIAL: StatusIA = { ia: null, provedor: null, modelo: null };
 let atual: StatusIA = INICIAL;
 let promessa: Promise<void> | null = null;

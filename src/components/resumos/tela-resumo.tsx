@@ -18,6 +18,7 @@ import { questoesDoResumo } from "@/lib/resumos/logica";
 import { infoVisual } from "@/lib/visuais/catalogo";
 import { cn } from "@/lib/utils";
 import { MapaMental } from "./mapa-mental";
+import { TUTOR_OCULTO } from "@/lib/tutor/status-cliente";
 import { GavetaDuvida, PainelDuvida, useDesktop } from "./painel-duvida";
 import { SeloIncidencia } from "./selo";
 import { useEstudados } from "./use-estudados";
@@ -78,6 +79,8 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
   const indice = RESUMOS.findIndex((r) => r.id === resumo.id);
   const proximo = RESUMOS[(indice + 1) % RESUMOS.length]!;
   const desktop = useDesktop();
+  // Sem IA configurada (site público), o painel "Tirar dúvida" não aparece.
+  const comTutor = !TUTOR_OCULTO;
 
   return (
     <ConteudoPagina>
@@ -220,13 +223,13 @@ export function TelaResumo({ resumo }: { resumo: Resumo }) {
               Próximo: {proximo.titulo}
             </Link>
           </aside>
-          {desktop && (
+          {desktop && comTutor && (
             <div className="min-h-0 flex-1 overflow-hidden rounded-xl border border-card-borda shadow-card">
               <PainelDuvida resumo={resumo} />
             </div>
           )}
         </div>
-        {desktop === false && <GavetaDuvida resumo={resumo} />}
+        {desktop === false && comTutor && <GavetaDuvida resumo={resumo} />}
       </div>
     </ConteudoPagina>
   );

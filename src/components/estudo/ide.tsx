@@ -12,6 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { GavetaLaboratorio } from "@/components/laboratorio/gaveta-laboratorio";
 import { BarraSprint, type EstadoBolinha } from "./barra-sprint";
 import type { RespostaGemea } from "./gemea-card";
+import { TUTOR_OCULTO } from "@/lib/tutor/status-cliente";
 import { PainelTutor, type AcoesTutor, type ContextoAluno } from "./painel-tutor";
 import { QuestaoView } from "./questao-view";
 
@@ -164,6 +165,8 @@ function QuestaoDoSprint({
   const [selecao, setSelecao] = React.useState<string | null>(null);
   const [segundos, setSegundos] = React.useState(0);
   const [aba, setAba] = React.useState<"questao" | "tutor">("questao");
+  // Site público (NEXT_PUBLIC_SEM_TUTOR=1): o tutor some e a questão ocupa a tela.
+  const semTutor = TUTOR_OCULTO;
   const [inicio] = React.useState(() => Date.now());
   const inputTutorRef = React.useRef<HTMLTextAreaElement | null>(null);
   const acoesRef = React.useRef<AcoesTutor | null>(null);
@@ -306,6 +309,10 @@ function QuestaoDoSprint({
         aoAbrirLaboratorio={aoAbrirLaboratorio}
       />
 
+      {semTutor ? (
+        <div className="flex min-h-0 flex-1 flex-col">{painelQuestao}</div>
+      ) : (
+      <>
       {/* Desktop: painéis lado a lado. */}
       <div className="hidden min-h-0 flex-1 md:block">
         <Group
@@ -350,6 +357,8 @@ function QuestaoDoSprint({
           </TabsContent>
         </Tabs>
       </div>
+      </>
+      )}
 
       {rodape && <footer className="shrink-0 border-t border-border bg-surface px-4 py-2 text-sm">{rodape}</footer>}
     </div>

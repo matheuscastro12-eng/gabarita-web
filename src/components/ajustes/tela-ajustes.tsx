@@ -7,7 +7,7 @@ import { HABILIDADES, NOME_HABILIDADE } from "@/data/tipos";
 import { COMPETENCIAS } from "@/data/taxonomia";
 import { useStore } from "@/lib/store/provider";
 import { exportarBackup, importarBackup } from "@/lib/store/backup";
-import { useStatusIA } from "@/lib/tutor/status-cliente";
+import { TUTOR_OCULTO, useStatusIA } from "@/lib/tutor/status-cliente";
 import { useMontado } from "@/lib/use-cliente";
 import {
   aplicarPreset,
@@ -73,13 +73,15 @@ function Formularios({ estado }: { estado: EstadoAluno }) {
     [atualizar, notificar],
   );
 
+  // Sem IA (site público) o card do tutor não aparece.
+  const iaLigada = !TUTOR_OCULTO;
   return (
     <ConteudoPagina className="max-w-[760px]">
       <CabecalhoPagina titulo="Ajustes" descricao="Como o tutor explica, quando é a prova, qual é a meta e onde ficam os seus dados." />
       <CardPerfil perfil={perfil} salvar={salvarPerfil} />
       <CardProva perfil={perfil} salvar={salvarPerfil} />
       <CardSemana perfil={perfil} salvar={salvarPerfil} />
-      <CardTutor perfil={perfil} salvar={salvarPerfil} />
+      {iaLigada && <CardTutor perfil={perfil} salvar={salvarPerfil} />}
       <CardAparencia />
       <CardDados estado={estado} store={store} />
     </ConteudoPagina>
