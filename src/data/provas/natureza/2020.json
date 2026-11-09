@@ -1,0 +1,2961 @@
+[
+{
+"id": "enem-2020-91",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 91,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/ef50602ed2eafc62.png)\n\nDAVIS, J. Disponível em: http://garfield.com. Acesso em: 10 fev. 2015.\n\nPor qual motivo ocorre a eletrização ilustrada na tirinha?",
+"imagens": [
+"/questoes/natureza/ef50602ed2eafc62.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Troca de átomos entre a calça e os pelos do gato.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Diminuição do número de prótons nos pelos do gato.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Criação de novas partículas eletrizadas nos pelos do gato.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Movimentação de elétrons entre a calça e os pelos do gato.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Repulsão entre partículas elétricas da calça e dos pelos do gato.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.85393,
+"b": 0.63073,
+"c": 0.178,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 91",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/91",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-92",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 92,
+"area": "natureza",
+"enunciado": "A enorme quantidade de resíduos gerados pelo consumo crescente da sociedade traz para a humanidade uma preocupação socioambiental, em especial pela quantidade de lixo produzido. Além da reciclagem e do reúso, pode-se melhorar ainda mais a qualidade de vida, substituindo polímeros convencionais por polímeros biodegradáveis.\n\nEsses polímeros têm grandes vantagens socioambientais em relação aos convencionais porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Não são tóxicos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Não precisam ser reciclados.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Não causam poluição ambiental quando descartados.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "São degradados em um tempo bastante menor que os convencionais.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Apresentam propriedades mecânicas semelhantes aos convencionais.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.71246,
+"b": -0.07547,
+"c": 0.17405,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 92",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/92",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-93",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 93,
+"area": "natureza",
+"enunciado": "Uma pessoa percebe que a bateria de seu veículo fica descarregada após cinco dias sem uso. No início desse período, a bateria funcionava normalmente e estava com o total de sua carga nominal, de 60 Ah. Pensando na possibilidade de haver uma corrente de fuga, que se estabelece mesmo com os dispositivos elétricos do veículo desligados, ele associa um amperímetro digital ao circuito do veículo.\n\nQual dos esquemas indica a maneira com que o amperímetro deve ser ligado e a leitura por ele realizada?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/b14ba4f4af44ef65.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/0f2b26318c1645e0.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/74fe0d8fdd83229f.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/2527acee7f8303dd.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/a6a1942b49c1da5e.png"
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.74421,
+"b": 1.55431,
+"c": 0.18593,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 93",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/93",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-94",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 94,
+"area": "natureza",
+"enunciado": "Um microempresário do ramo de cosméticos utiliza óleos essenciais e quer produzir um creme com fragrância de rosas. O principal componente do óleo de rosas tem cadeia poli-insaturada e hidroxila em carbono terminal. O catálogo dos óleos essenciais apresenta, para escolha da essência, estas estruturas químicas:\n\n![](/questoes/natureza/7c4aae572c2f1330.png)\n\nQual substância o empresário deverá utilizar?",
+"imagens": [
+"/questoes/natureza/7c4aae572c2f1330.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.35472,
+"b": 1.09202,
+"c": 0.14701,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 94",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/94",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-95",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 95,
+"area": "natureza",
+"enunciado": "A fragmentação dos hábitats é caracterizada pela formação de ilhas da paisagem original, circundadas por áreas transformadas. Esse tipo de interferência no ambiente ameaça a biodiversidade. Imagine que uma população de onças foi isolada em uma mata pequena. Elas se extinguiriam mesmo sem terem sido abatidas. Diversos componentes da ilha de hábitat, como o tamanho, a heterogeneidade, o seu entorno, a sua conectividade e o efeito de borda são determinantes para a persistência ou não das espécies originais.\nUma medida que auxilia na conservação da biodiversidade nas ilhas mencionadas no texto compreende a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Formação de micro-hábitats.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ampliação do efeito de borda.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Construção de corredores ecológicos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Promoção da sucessão ecológica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Introdução de novas espécies de animais e vegetais.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.91476,
+"b": 1.12362,
+"c": 0.11243,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 95",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/95",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-96",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 96,
+"area": "natureza",
+"enunciado": "A sacarase (ou invertase) é uma enzima que atua no intestino humano hidrolisando o dissacarídeo sacarose nos monossacarídeos glicose e frutose. Em um estudo cinético da reação de hidrólise da sacarose (C12H22O11), foram dissolvidos 171 g de sacarose em 500 mL de água. Observou-se que, a cada 100 minutos de reação, a concentração de sacarose foi reduzida à metade, qualquer que fosse o momento escolhido como tempo inicial. As massas molares dos elementos H, C e O são iguais a 1, 12 e 16 g mo1–1, respectivamente.\n\nQual é a concentração de sacarose depois de 400 minutos do início da reação de hidrólise?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "2,50 x 10–3 mol L–1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "6,25 x 10–2 mol L–1",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "1,25 x 10–1 mol L–1",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "2,50 x 10–1 mol L–1",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "4,27 x 10–1 mol L–1",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.01205,
+"b": 1.50249,
+"c": 0.18745,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 96",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/96",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-97",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 97,
+"area": "natureza",
+"enunciado": "Grandes reservatórios de óleo leve de melhor qualidade e que produz petróleo mais fino foram descobertos no litoral brasileiro numa camada denominada pré-sal, formada há 150 milhões de anos.\n\nA utilização desse recurso energético acarreta para o ambiente um desequilíbrio no ciclo do",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Nitrogênio, devido à nitrificação ambiental transformando amônia em nitrito.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Nitrogênio, devido ao aumento dos compostos nitrogenados no ambiente terrestre.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Carbono, devido ao aumento dos carbonatos dissolvidos no ambiente marinho.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Carbono, devido à liberação das cadeias carbônicas aprisionadas abaixo dos sedimentos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Fósforo, devido à liberação dos fosfatos acumulados no ambiente marinho.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.99076,
+"b": 0.67442,
+"c": 0.18662,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 97",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/97",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-98",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 98,
+"area": "natureza",
+"enunciado": "Em uma usina geradora de energia elétrica, seja através de uma queda-d’água ou através de vapor sob pressão, as pás do gerador são postas a girar. O movimento relativo de um ímã em relação a um conjunto de bobinas produz um fluxo magnético variável através delas, gerando uma diferença de potencial em seus terminais. Durante o funcionamento de um dos geradores, o operador da usina percebeu que houve um aumento inesperado da diferença de potencial elétrico nos terminais das bobinas.\n\nNessa situação, o aumento do módulo da diferença de potencial obtida nos terminais das bobinas resulta do aumento do(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Intervalo de tempo em que as bobinas ficam imersas no campo magnético externo, por meio de uma diminuição de velocidade no eixo de rotação do gerador.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fluxo magnético através das bobinas, por meio de um aumento em sua área interna exposta ao campo magnético aplicado.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Intensidade do campo magnético no qual as bobinas estão imersas, por meio de aplicação de campos magnéticos mais intensos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Rapidez com que o fluxo magnético varia através das bobinas, por meio de um aumento em sua velocidade angular.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Resistência interna do condutor que constitui as bobinas, por meio de um aumento na espessura dos terminais.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.29781,
+"b": 1.5026,
+"c": 0.13077,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 98",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/98",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-99",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 99,
+"area": "natureza",
+"enunciado": "Você foi contratado para sincronizar os quatro semáforos de uma avenida, indicados pelas letras O, A, B e C, conforme a figura.\n\n![](/questoes/natureza/128b1cdb64fde685.png)\n\nOs semáforos estão separados por uma distância de 500m. Segundo os dados estatísticos da companhia controladora de trânsito, um veículo, que está inicialmente parado no semáforo O, tipicamente parte com aceleração constante de 1 m s–2 até atingir a velocidade de 72 km h–1 e, a partir daí, prossegue com velocidade constante. Você deve ajustar os semáforos A, B e C de modo que eles mudem para a cor verde quando o veículo estiver a 100 m de cruzá-los, para que ele não tenha que reduzir a velocidade em nenhum momento.\n\nConsiderando essas condições, aproximadamente quanto tempo depois da abertura do semáforo O os semáforos A, B e C devem abrir, respectivamente?",
+"imagens": [
+"/questoes/natureza/128b1cdb64fde685.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "20s, 45s e 70s.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "25s, 50s e 75s.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "28s, 42s e 53s.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "30s, 55s e 80s.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "35s, 60s e 85s.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.21388,
+"b": 1.90806,
+"c": 0.17205,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 99",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/99",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-100",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 100,
+"area": "natureza",
+"enunciado": "Nos dias atuais, o amplo uso de objetos de plástico gera bastante lixo, que muitas vezes é eliminado pela população por meio da queima. Esse procedimento é prejudicial ao meio ambiente por lançar substâncias poluentes. Para constatar esse problema, um estudante analisou a decomposição térmica do policloreto de vinila (PVC), um tipo de plástico, cuja estrutura é representada na figura.\n\n![](/questoes/natureza/b8fcd7c722f5414a.png)\n\nPara realizar esse experimento, o estudante colocou uma amostra de filme de PVC em um tubo de ensaio e o aqueceu, promovendo a decomposição térmica. Houve a liberação majoritária de um gás diatômico heteronuclear que foi recolhido em um recipiente acoplado ao tubo de ensaio. Esse gás, quando borbulhado em solução alcalina diluída contendo indicador ácido-base, alterou a cor da solução. Além disso, em contato com uma solução aquosa de carbonato de sódio (Na2CO3), liberou gás carbônico.\n\nQual foi o gás liberado majoritariamente na decomposição térmica desse tipo de plástico?",
+"imagens": [
+"/questoes/natureza/b8fcd7c722f5414a.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "H2",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Cl2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "CO",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "CO2",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "HCl",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.39814,
+"b": 1.69946,
+"c": 0.19017,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 100",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/100",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-101",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 101,
+"area": "natureza",
+"enunciado": "Uma população (momento A) sofre isolamento em duas subpopulações (momento B) por um fator de isolamento (I). Passado um tempo, essas subpopulações apresentam características fenotípicas e genotípicas que as distinguem (momento C), representadas na figura pelas tonalidades de cor. O posterior desaparecimento do fator de isolamento I pode levar, no momento D, às situações Dl e D2.\n\n![](/questoes/natureza/e8cb4e53ed29c501.png)\n\nA representação indica que, no momento D, na situação",
+"imagens": [
+"/questoes/natureza/e8cb4e53ed29c501.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Dl ocorre um novo fator de isolamento geográfico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Dl existe uma única população distribuída em gradiente.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Dl ocorrem duas populações separadas por isolamento reprodutivo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "D2 coexistem duas populações com características fenotípicas distintas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "D2 foram preservadas as mesmas características fenotípicas da população original A.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.40418,
+"b": 0.72028,
+"c": 0.21294,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 101",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/101",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-102",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 102,
+"area": "natureza",
+"enunciado": "A obtenção de óleos vegetais, de maneira geral, passa pelas etapas descritas no quadro.\n\n![](/questoes/natureza/fbe0ccc3a222b186.png)\n\nQual das subetapas do processo é realizada em função apenas da polaridade das substâncias?",
+"imagens": [
+"/questoes/natureza/fbe0ccc3a222b186.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Trituração.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Cozimento.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Prensagem.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Extração.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Destilação.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.31199,
+"b": 1.88363,
+"c": 0.1386,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 102",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/102",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-103",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 103,
+"area": "natureza",
+"enunciado": "O dióxido de carbono passa para o estado sólido (gelo seco) a –78 °C e retorna ao estado gasoso à temperatura ambiente. O gás é facilmente solubilizado em água, capaz de absorver radiação infravermelha da superfície da terra e não conduz eletricidade. Ele é utilizado como maté – ria-prima para a fotossíntese até o limite de saturação. Após a fixação pelos organismos autotróficos, o gás retorna ao meio ambiente pela respiração aeróbica, fermentação, decomposição ou por resíduos industriais, queima de combustíveis fósseis e queimadas. Apesar da sua importância ecológica, seu excesso causa perturbações no equilíbrio ambiental.\n\nConsiderando as propriedades descritas, o aumento atmosférico da substância afetará os organismos aquáticos em razão da",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Redução do potencial hidrogeniônico da água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Restrição da aerobiose pelo excesso de poluentes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diminuição da emissão de oxigênio pelos autótrofos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Limitação de transferência de energia entre os seres vivos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Retração dos oceanos pelo congelamento do gás nos polos.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.27533,
+"b": 1.8581,
+"c": 0.2625,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 103",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/103",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-104",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 104,
+"area": "natureza",
+"enunciado": "Grupos de proteção ao meio ambiente conseguem resgatar muitas aves aquáticas vítimas de vazamentos de petróleo. Essas aves são lavadas com água e detergente neutro para a retirada completa do óleo de seu corpo e, posteriormente, são aquecidas, medicadas, desintoxicadas e alimentadas. Mesmo após esses cuidados, o retorno ao ambiente não pode ser imediato, pois elas precisam recuperar a capacidade de flutuação.\n\nPara flutuar, essas aves precisam",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Recuperar o tônus muscular.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Restaurar a massa corporal.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Substituir as penas danificadas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Restabelecer a capacidade de homeotermia.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Refazer a camada de cera impermeabilizante das penas.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.0376,
+"b": 0.62392,
+"c": 0.2084,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 104",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/104",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-105",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 105,
+"area": "natureza",
+"enunciado": "Os manuais de refrigerador apresentam a recomendação de que o equipamento não deve ser instalado próximo a fontes de calor, como fogão e aquecedores, ou em local onde incida diretamente a luz do sol. A instalação em local inadequado prejudica o funcionamento do refrigerador e aumenta o consumo de energia.\n\nO não atendimento dessa recomendação resulta em aumento do consumo de energia porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O fluxo de calor por condução no condensador sofre considerável redução.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A temperatura da substância refrigerante no condensador diminui mais rapidamente.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "O fluxo de calor promove significativa elevação da temperatura no interior do refrigerador.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A liquefação da substância refrigerante no condensador exige mais trabalho do compressor.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "As correntes de convecção nas proximidades do condensador ocorrem com maior dificuldade.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.29544,
+"b": 3.80025,
+"c": 0.02691,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 105",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/105",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-106",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 106,
+"area": "natureza",
+"enunciado": "Um mergulhador fica preso ao explorar uma caverna no oceano. Dentro da caverna formou-se um bolsão de ar, como mostrado na figura, onde o mergulhador se abrigou.\n\n![](/questoes/natureza/ca38eed16dc31bad.png)\n\nDurante o resgate, para evitar danos a seu organismo, foi necessário que o mergulhador passasse por um processo de descompressão antes de retornar à superfície para que seu corpo ficasse novamente sob pressão atmosférica. O gráfico mostra a relação entre os tempos de descompressão recomendados para indivíduos nessa situação e a variação de pressão.\n\n![](/questoes/natureza/e35014a23078274a.png)\n\nConsidere que a aceleração da gravidade seja igual a ![](/questoes/natureza/1214beda88ce81eb.png) e que a densidade da água seja de ![](/questoes/natureza/aa78067b5770ab8e.png).\n\nEm minutos, qual é o tempo de descompressão a que o mergulhador deverá ser submetido?",
+"imagens": [
+"/questoes/natureza/ca38eed16dc31bad.png",
+"/questoes/natureza/e35014a23078274a.png",
+"/questoes/natureza/1214beda88ce81eb.png",
+"/questoes/natureza/aa78067b5770ab8e.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "100.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "80.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "60.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "40.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "20.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.17216,
+"b": 1.35723,
+"c": 0.2178,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 106",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/106",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-107",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 107,
+"area": "natureza",
+"enunciado": "A Torre Eiffel, com seus 324 metros de altura, feita com treliças de ferro, pesava 7 300 toneladas quando terminou de ser construída em 1889. Um arquiteto resolve construir um protótipo dessa torre em escala 1:100, usando os mesmos materiais (cada dimensão linear em escala de 1:100 do monumento real).  Considere que a torre real tenha uma massa Mtorre e exerça na fundação sobre a qual foi erguida uma pressão Ptorre. O modelo construído pelo arquiteto terá uma massa Mmodelo e exercerá uma pressão Pmodelo .\n\n![](/questoes/natureza/b4c71460aadceb7c.png)\n\nComo a pressão exercida pela torre se compara com a pressão exercida pelo protótipo? Ou seja, qual é a razão entre as pressões (Ptorre)/(Pmodelo)?",
+"imagens": [
+"/questoes/natureza/b4c71460aadceb7c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "100",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "101",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "102",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "104",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "106",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.50541,
+"b": 0.95758,
+"c": 0.04207,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 107",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/107",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-108",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 108,
+"area": "natureza",
+"enunciado": "“Na indústria farmacêutica, é muito comum o emprego de substâncias de revestimento em medicamentos de uso oral, pois trazem uma série de benefícios como alteração de sabor em medicamentos que tenham gosto ruim, melhoria da assimilação do composto, entre outras ações. Alguns compostos poliméricos à base do polissacarídeo celulose são utilizados para garantir que o fármaco somente seja liberado quando em contato com soluções aquosas cujo pH se encontre próximo da faixa da neutralidade.”\n\n(BORTOLINI, K. et al. Análise de perfil de dissolução de cápsulas gastrorresistentes utilizando polímeros industriais com aplicação em farmácias magistrais, Revista da Unifebe, n. 12, 2013. Adaptado.)\n\nQual é a finalidade do uso desse revestimento à base de celulose?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Diminuir a absorção do princípio ativo no intestino.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Impedir que o fármaco seja solubilizado no intestino.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Garantir que o fármaco não seja afetado pelas secreções gástricas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Permitir a liberação do princípio ativo pela ação das amilases salivares.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Facilitar a liberação do fármaco pela ação dos sais biliares sobre o revestimento.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.29492,
+"b": 1.17942,
+"c": 0.15943,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 108",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/108",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-109",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 109,
+"area": "natureza",
+"enunciado": "As panelas de pressão reduzem o tempo de cozimento dos alimentos por elevar a temperatura de ebulição da água. Os usuários conhecedores do utensílio normalmente abaixam a intensidade do fogo em panelas de pressão após estas iniciarem a saída dos vapores.\n\nAo abaixar o fogo, reduz-se a chama, pois assim evita-se o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aumento da pressão interna e os riscos de explosão.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Dilatação da panela e a desconexão com sua tampa.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Perda da qualidade nutritiva do alimento.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Deformação da borracha de vedação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Consumo de gás desnecessário.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.45425,
+"b": 1.67689,
+"c": 0.14048,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 109",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/109",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-110",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 110,
+"area": "natureza",
+"enunciado": "A nanotecnologia pode ser caracterizada quando os compostos estão na ordem de milionésimos de milímetros, como na utilização de nanomateriais catalíticos nos processos industriais. O uso desses materiais aumenta a eficiência da produção, consome menos energia e gera menores quantidades de resíduos. O sucesso dessa aplicação tecnológica muitas vezes está relacionado ao aumento da velocidade da reação química envolvida.\n\nO êxito da aplicação dessa tecnologia é por causa da realização de reações químicas que ocorrem em condições de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Alta pressão.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Alta temperatura.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Excesso de reagentes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Maior superfície de contato.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Elevada energia de ativação.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.11734,
+"b": 1.59379,
+"c": 0.09209,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 110",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/110",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-111",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 111,
+"area": "natureza",
+"enunciado": "Os fones de ouvido tradicionais transmitem a música diretamente para os nossos ouvidos. Já os modelos dotados de tecnologia redutora de ruído — Cancelamento de Ruído (CR) — além de transmitirem música, também reduzem todo ruído inconsistente à nossa volta, como o barulho de turbinas de avião e aspiradores de pó. Os fones de ouvido CR não reduzem realmente barulhos irregulares como discursos e choros de bebês. Mesmo assim, a supressão do ronco das turbinas do avião contribui para reduzir a “fadiga de ruído”, um cansaço persistente provocado pela exposição a um barulho alto por horas a fio. Esses aparelhos também permitem que nós ouçamos músicas ou assistamos a vídeos no trem ou no avião a um volume muito menor (e mais seguro).\n\nDisponível em: http://tecnologia.uol.com.br, Acesso em: 21 abr, 2015 (adaptado).\n\nA tecnologia redutora de ruído CR utilizada na produção de fones de ouvido baseia-se em qual fenômeno ondulatório?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Absorção.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Interferência.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Polarização.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Reflexão.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Difração.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.97674,
+"b": 1.69468,
+"c": 0.29489,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 111",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/111",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-112",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 112,
+"area": "natureza",
+"enunciado": "Para garantir que produtos eletrônicos estejam armazenados de forma adequada antes da venda, algumas empresas utilizam cartões indicadores de umidade nas embalagens desses produtos. Alguns desses cartões contêm um sal de cobalto que muda de cor em presença de água, de acordo com a equação química:\n\n![](/questoes/natureza/02f70f767dde3606.png)\n\nComo você procederia para reutilizar, num curto intervalo de tempo, um cartão que já estivesse com a coloração rosa?",
+"imagens": [
+"/questoes/natureza/02f70f767dde3606.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Resfriaria no congelador.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Borrifaria com spray de água.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Envolveria com papel alumínio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aqueceria com secador de cabelos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Embrulharia em guardanapo de papel.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.64715,
+"b": 0.84954,
+"c": 0.17537,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 112",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/112",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-113",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 113,
+"area": "natureza",
+"enunciado": "Nos desenhos animados, com frequência se vê um personagem correndo na direção de um abismo, mas, ao invés de cair, ele continua andando no vazio e só quando percebe que não há nada sob seus pés é que ele para de andar e cai verticalmente. No entanto, para observar uma trajetória de queda num experimento real, pode-se lançar uma bolinha, com velocidade constante (V0), sobre a superfície de uma mesa e verificar o seu movimento de queda até o chão.\n\nQual figura melhor representa a trajetória de queda da bolinha?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/a132036b059b7033.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/9709b933b6ce514c.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/14833a170214daa9.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/287151bf04ea8327.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/6304f3b000b9ef07.png"
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.26129,
+"b": 0.47507,
+"c": 0.24933,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 113",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/113",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-114",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 114,
+"area": "natureza",
+"enunciado": "Dois engenheiros estão verificando se uma cavidade perfurada no solo está de acordo com o planejamento de uma obra, cuja profundidade requerida é de 30 m. O teste é feito por um dispositivo denominado oscilador de áudio de frequência variável, que permite relacionar a profundidade com os valores da frequência de duas ressonâncias consecutivas, assim como em um tubo sonoro fechado. A menor frequência de ressonância que o aparelho mediu foi 135 Hz. Considere que a velocidade do som dentro da cavidade perfurada é de 360 m s–1.\n\nSe a profundidade estiver de acordo com o projeto, qual será o valor da próxima frequência de ressonância que\nserá medida?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "137 Hz.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "138 Hz.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "141 Hz.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "144 Hz",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "159 Hz",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.28319,
+"b": 2.62945,
+"c": 0.24444,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 114",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/114",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-115",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 115,
+"area": "natureza",
+"enunciado": "Instituições acadêmicas e de pesquisa no mundo estão inserindo genes em genomas de plantas que possam codificar produtos de interesse farmacológico. No Brasil, está sendo desenvolvida uma variedade de soja com um viricida ou microbicida capaz de prevenir a contaminação pelo vírus causador da aids. Essa leguminosa está sendo induzida a produzir a enzima cianovirina-N, que tem eficiência comprovada contra o vírus.\n\n(OLIVEIRA, M. Remédio na planta. Pesquisa Fapesp, n. 206, abr. 2013.)\n\nA técnica para gerar essa leguminosa é um exemplo de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Hibridismo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Transgenia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Conjugação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Terapia gênica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Melhoramento genético.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.79438,
+"b": 0.79213,
+"c": 0.20738,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 115",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/115",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-116",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 116,
+"area": "natureza",
+"enunciado": "Um estudante tem uma fonte de tensão com corrente contínua que opera em tensão fixa de 12 V. Como precisa alimentar equipamentos que operam em tensões menores, ele emprega quatro resistores de 100 para construir um divisor de tensão. Obtém-se este divisor associando os resistores, como exibido na figura. Os aparelhos podem ser ligados entre os pontos A, B, C, D e E, dependendo da tensão especificada.\n\n![](/questoes/natureza/e5b5a2a5ce44dfd8.png)\n\nEle tem um equipamento que opera em 9,0 V com uma resistência interna de 10 kΩ.\n\nEntre quais pontos do divisor de tensão esse equipamento deve ser ligado para funcionar corretamente e qual será o valor da intensidade da corrente nele estabelecida?",
+"imagens": [
+"/questoes/natureza/e5b5a2a5ce44dfd8.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Entre A e C; 30 mA.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Entre B e E; 30 mA.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Entre A e D; 1,2 mA.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Entre B e E; 0,9 mA.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Entre A e E; 0,9 mA.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.82854,
+"b": 2.08846,
+"c": 0.1837,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 116",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/116",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-117",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 117,
+"area": "natureza",
+"enunciado": "“Pesquisadores dos Estados Unidos desenvolveram uma nova técnica, que utiliza raios de luz infravermelha (invisíveis a olho nu) para destruir tumores. Primeiramente, o paciente recebe uma injeção com versões modificadas de anticorpos que têm a capacidade de “grudar” apenas nas células cancerosas. Sozinhos, eles não fazem nada contra o tumor. Entretanto, esses anticorpos estão ligados a uma molécula, denominada IR700, que funcionará como uma “microbomba”, que irá destruir o câncer. Em seguida, o paciente recebe raios infravermelhos. Esses raios penetram no corpo e chegam até a molécula IR700, que é ativada e libera uma substância que ataca a célula cancerosa.”\n\n(Disponível em: http://super.abril.com.br. Acesso em: 13 dez. 2012. Adaptado.)\n\nCom base nas etapas de desenvolvimento, o nome apropriado para a técnica descrita é:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Radioterapia.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Cromoterapia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Quimioterapia.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Fotoimunoterapia.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Terapia magnética.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.11847,
+"b": 1.57164,
+"c": 0.14442,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 117",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/117",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-118",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 118,
+"area": "natureza",
+"enunciado": "Aranhas, escorpiões, carrapatos e ácaros são representantes da classe dos _Aracnídeos_. Esses animais são terrestres em sua grande maioria e ocupam os mais variados hábitats, tais como montanhas altas, pântanos, desertos e solos arenosos. Podem ter sido os primeiros representantes do filo _Arthropoda_ a habitar a terra seca.\n\nA característica que justifica o sucesso adaptativo desse grupo na ocupação do ambiente terrestre é a presença de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Quelíceras e pedipalpos que coordenam o movimento corporal.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Excreção de ácido úrico que confere estabilidade ao pH corporal.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Exoesqueleto constituído de quitina que auxilia no controle hídrico corporal.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Circulação sanguínea aberta que impede a desidratação dos tecidos corporais.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Sistema nervoso ganglionar que promove a coordenação central do movimento corporal.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.99966,
+"b": 1.19437,
+"c": 0.21325,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 118",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/118",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-119",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 119,
+"area": "natureza",
+"enunciado": "Pesquisadores coletaram amostras de água de um rio em pontos diferentes, distantes alguns quilômetros um do outro. Ao longo do rio, há locais de águas limpas, como também locais que recebem descarga de esgoto de área urbana, e locais onde há decomposição ativa com ausência de peixes. Os pesquisadores  analisaram dois parâmetros: oxigênio dissolvido (OD) e demanda bioquímica de oxigênio (DBO) em cada ponto de coleta de água, obtendo o gráfico:\n\n![](/questoes/natureza/768ee79278cd54c7.png)\n\n> Valores limites permitidos para águas doces destinadas ao abaste cimento para o consumo humano após tratamento convencional, segundo Resolução Conama n. 357/2005: OD≥5mgL–1 e DBO ≤ 5mgL–1.\n\nO OD é proveniente da atmosfera e da fotossíntese que ocorre no curso-d’água e sua concentração é função das variáveis físicas, químicas e bioquímicas  locais. A DBO é a quantidade de oxigênio consumido por microrganismos em condições aeróbicas para degradar uma determinada quantidade de matéria orgânica, durante um período de tempo, numa temperatura de incubação específica.\n\nDisponível em: www.programaaguaazul.rn.gov.br. Acesso em: 16 ago. 2014 (adaptado)\n\nQual ponto de amostragem da água do rio está mais próximo ao local em que o rio recebe despejo de esgoto?",
+"imagens": [
+"/questoes/natureza/768ee79278cd54c7.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.7008,
+"b": 1.15068,
+"c": 0.14749,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 119",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/119",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-120",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 120,
+"area": "natureza",
+"enunciado": "O crescimento da frota de veículos em circulação no mundo tem levado à busca e desenvolvimento de tecnologias que permitam minimizar emissões de poluentes atmosféricos. O uso de veículos elétricos é uma das propostas mais propagandeadas por serem de emissão zero. Podemos comparar a emissão de carbono na forma de CO2 (massa molar igual a 44 g mol–1) para os dois tipos de carros (a combustão e elétrico). Considere que os veículos tradicionais a combustão, movidos a etanol (massa molar igual a 46 g mol–1), emitem uma média de 2,6 mol de CO2 por quilômetro rodado, e os elétricos emitem o equivalente a 0,45 mol de CO2 por quilômetro rodado (considerando as emissões na geração e transmissão da eletricidade). A reação  e combustão do etanol pode ser representada pela equação química:\n\nC2H5OH (l) + 3 O2 (g) → 2 CO2 (g) + 3 H2O (g)\n\nForam analisadas as emissões de CO2 envolvidas em dois veículos, um movido a etanol e outro elétrico, em um mesmo trajeto de 1 000 km.\n\nCHIARADIA, C. A. Estudo da viabilidade da implantação de frotas de veículos elétricos e híbridos elétricos no atual cenário econômico, político, energético e ambiental brasileiro. Guaratinguetá: Unesp, 2015 (adaptado)\n\nA quantidade equivalente de etanol economizada, em quilograma, com o uso do veículo elétrico nesse trajeto, é mais próxima de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "50.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "60.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "95.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "99.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "120.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.82041,
+"b": 2.00971,
+"c": 0.12385,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 120",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/120",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-121",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 121,
+"area": "natureza",
+"enunciado": "Em uma aula sobre metabolismo energético, foi  \napresentado um experimento clássico realizado por  \nEngelmann. Um recipiente contendo bactérias aeróbias e  \numa alga verde filamentosa foi submetido à iluminação  \nde uma fonte de luz, representada pelo microespectro.  \nApós a explicação, um aluno esquematizou na lousa o  \nresultado do referido experimento.\n\n![](/questoes/natureza/79be6c31fbf0efa3.png)\n\nConsiderando a figura, a faixa do microespectro em que a\nalga possui maior taxa de realização fotossintética é a do:",
+"imagens": [
+"/questoes/natureza/79be6c31fbf0efa3.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Anil.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Verde.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Violeta.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Amarelo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Vermelho.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.88342,
+"b": 1.48748,
+"c": 0.27044,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 121",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/121",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-122",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 122,
+"area": "natureza",
+"enunciado": "O exame parasitológico de fezes é utilizado para detectar  \novos de parasitos. Um dos métodos utilizados,  \ndenominado de centrífugo-flutuação, considera a  \ndensidade dos ovos em relação a uma solução de  \ndensidade 1,15 g mL–1. Assim, ovos que flutuam na  \nsuperfície dessa solução são detectados. Os dados de  \ndensidade dos ovos de alguns parasitos estão  \napresentados na tabela.\n\n![](/questoes/natureza/8ada392f13033542.png)\n\nConsiderando-se a densidade dos ovos e da solução, ovos\nde quais parasitos podem ser detectados por esse método?",
+"imagens": [
+"/questoes/natureza/8ada392f13033542.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A. lumbricoides, A. suum e S. mansoni.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "S. mansoni, T. saginata e Ancylostoma.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ancylostoma, A. lumbricoides e A. suum.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "T. saginata, S. mansoni e A. lumbricoides.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A. lumbricoides, A. suum e T. saginata",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.9073,
+"b": 0.12756,
+"c": 0.21003,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 122",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/122",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-123",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 123,
+"area": "natureza",
+"enunciado": "Em seu laboratório, um técnico em química foi  \nincumbido de tratar um resíduo, evitando seu descarte  \ndireto no meio ambiente. Ao encontrar o frasco, observou  \na seguinte informação: “Resíduo: mistura de acetato de  \netila e água”.\n\n![](/questoes/natureza/d1c5ccfc738809f6.png)\n\nA fim de tratar o resíduo, recuperando o acetato de etila,\no técnico deve",
+"imagens": [
+"/questoes/natureza/d1c5ccfc738809f6.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Evaporar o acetato de etila sem alterar o conteúdo de água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Filtrar a mistura utilizando um funil comum e um papel de filtro.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Realizar uma destilação simples para separar a água do acetato de etila.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Proceder a uma centrifugação da mistura para remover o acetato de etila.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Decantar a mistura separando os dois componentes em um funil adequado.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.92924,
+"b": 2.72331,
+"c": 0.17678,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 123",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/123",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-124",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 124,
+"area": "natureza",
+"enunciado": "Em 2011, uma falha no processo de perfuração realizado\npor uma empresa petrolífera ocasionou derramamento de\npetróleo na bacia hidrográfica de Campos, no Rio de\nJaneiro.\nOs impactos decorrentes desse derramamento ocorrem\nporque os componentes do petróleo",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Reagem com a água do mar e sofrem degradação, gerando compostos com elevada toxicidade.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Acidificam o meio, promovendo o desgaste das conchas calcárias de moluscos e a morte de corais.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Dissolvem-se na água, causando a mortandade dos seres marinhos por ingestão da água contaminada.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Têm caráter hidrofóbico e baixa densidade, impedindo as trocas gasosas entre o meio aquático e a atmosfera.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Têm cadeia pequena e elevada volatilidade, conta - minando a atmosfera local e regional em função dos ventos nas orlas marítimas.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.54499,
+"b": 0.32436,
+"c": 0.18403,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 124",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/124",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-125",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 125,
+"area": "natureza",
+"enunciado": "Uma população encontra-se em equilíbrio genético  \nquanto ao sistema ABO, em que 25% dos indivíduos  \npertencem ao grupo O e 16%, ao grupo A homozigotos.  \nConsiderando que: p = frequência de 1A; q = frequência  \nde IB; e r = frequência de i, espera-se encontrar:\n\n![](/questoes/natureza/28dc9165a47742c6.png)\n\nA porcentagem de doadores compatíveis para alguém do\ngrupo B nessa população deve ser de",
+"imagens": [
+"/questoes/natureza/28dc9165a47742c6.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "11%.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "19%",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "26%",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "36%",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "60%.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.57481,
+"b": 1.65344,
+"c": 0.22044,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 125",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/125",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-126",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 126,
+"area": "natureza",
+"enunciado": "Embora a energia nuclear possa ser utilizada para fins\npacíficos, recentes conflitos geopolíticos têm trazido\npreocupações em várias partes do planeta e estimulado\ndiscussões visando o combate ao uso de armas de\ndestruição em massa. Além do potencial destrutivo da\nbomba atômica, uma grande preocupação associada ao\nemprego desse artefato bélico é a poeira radioativa\ndeixada após a bomba ser detonada.\nQual é o processo envolvido na detonação dessa bomba?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fissão nuclear do urânio, provocada por nêutrons.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fusão nuclear do hidrogênio, provocada por prótons.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Desintegração nuclear do plutônio, provocada por elétrons.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Associação em cadeia de chumbo, provocada por pósitrons.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Decaimento radioativo do carbono, provocado por partículas beta.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.21526,
+"b": 0.67088,
+"c": 0.17268,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 126",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/126",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-127",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 127,
+"area": "natureza",
+"enunciado": "Plantas pioneiras são as que iniciam o processo natural de cicatrização de uma área desprovida de vegetação. Em geral, têm pequeno porte e crescem muito rápido, desenvolvem-se a pleno sol e são pouco exigentes quanto às condições do solo. Produzem grande quantidade de sementes e possuem ciclo de vida curto.\n\n(BLUM, C. T. Lista preliminar de espécies vegetais pioneiras nativas do Paraná – versão 2005. Disponível em: www.chaua.org.br. Acesso em: 10 fev. 2015.)\n\nEssas plantas são importantes em um projeto de restauração ambiental, pois promovem, no solo,",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aumento da incidência de luz solar.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Diminuição da absorção de água.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Estabilização da umidade",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Elevação de temperatura.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Liberação de oxigênio.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.74154,
+"b": 0.63222,
+"c": 0.01071,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 127",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/127",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-128",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 128,
+"area": "natureza",
+"enunciado": "Mesmo para peixes de aquário, como o peixe arco-íris, a temperatura da água fora da faixa ideal (26°C a 28°C), bem como sua variação brusca, pode afetar a saúde do animal. Para manter a temperatura da água dentro do aquário na média desejada, utilizam-se dispositivos de aquecimento com termostato. Por exemplo, para um aquário de 50 L, pode-se utilizar um sistema de aquecimento de 50 W otimizado para suprir sua taxa de resfriamento. Essa taxa pode ser considerada praticamente constante, já que a temperatura externa ao aquário é mantida pelas estufas. Utilize para a água o calor específico 4,0 kJ kg–1 K–1 e a densidade 1 kg L–1.\n\nSe o sistema de aquecimento for desligado por 1 h, qual o valor mais próximo para a redução da temperatura da água do aquário?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "4,0ºC",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "3,6°C",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "0,9°C",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "0,6°C",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "0,3°C",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.93991,
+"b": 1.73038,
+"c": 0.232,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 128",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/128",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-129",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 129,
+"area": "natureza",
+"enunciado": "Em uma pesquisa estão sendo testados cinco quimioterápicos quanto à sua capacidade antitumoral. No entanto, para o tratamento de pacientes, sabe-se que é necessário verificar também o quanto cada composto agride células normais. Para o experimento, partiu-se de cultivos de células tumorais  colunas escuras na figura) e células normais (colunas claras) com o mesmo número de células iniciais. Dois grupos-controle não receberam quimioterápicos: controle de células  tumorais (CT) e de células normais (CN). As colunas I, II, III, IV e V correspondem aos grupos tratados com os cinco compostos. O número de células viáveis após os tratamentos está representado pelas colunas.\n\n![](/questoes/natureza/40c3b5380d125354.png)\n\nQual quimioterápico deve ser escolhido desse tipo de tumor?",
+"imagens": [
+"/questoes/natureza/40c3b5380d125354.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "II",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "III",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "IV",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "V",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.6178,
+"b": 0.81621,
+"c": 0.05772,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 129",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/129",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-130",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 130,
+"area": "natureza",
+"enunciado": "Herschel, em 1880, começou a escrever sobre a condensação da luz solar no foco de uma lente e queria verificar de que maneira os raios coloridos contribuem para o aquecimento. Para isso, ele projetou sobre um anteparo o espectro solar obtido com um prisma, colocou termômetros nas diversas faixas de cores e verificou nos dados obtidos que um dos termômetros iluminados indicou um aumento de  temperatura maior para uma determinada faixa de frequências.\n\nSAYURI, M.; GASPAR, M. B. Infravermelho na sala de aula. Disponível em: www.cienciamao.usp.br. Acesso em: 15 ago. 2016 (adaptado).\n\nPara verificar a hipótese de Herschel, um estudante montou o dispositivo apresentado na figura. Nesse aparato, cinco recipientes contendo água, à mesma temperatura inicial, e separados por um material isolante térmico e refletor são posicionados lado a lado (A, B, C, D e E) no interior de uma caixa de material isolante térmico e opaco. A luz solar, ao entrar na caixa, atravessa o prisma e incide sobre os recipientes. O estudante aguarda até que ocorra o aumento da temperatura e a afere em cada recipiente.\n\n![](/questoes/natureza/b1596eed02233381.png)\n\nEm qual dos recipientes a água terá maior temperatura ao final do experimento?",
+"imagens": [
+"/questoes/natureza/b1596eed02233381.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "B.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "C.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "D.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "E.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.0062,
+"b": 2.26887,
+"c": 0.12084,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 130",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/130",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-131",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 131,
+"area": "natureza",
+"enunciado": "A Química Verde é um ramo da química que prega o desenvolvimento de processos eficientes, que transformem a maior parte do reagente em produto, de  forma mais rápida e seletiva, que utilizem poucos reagentes, que produzam somente o produto desejado, evitando a formação de coprodutos, e que utilizem solventes não agressivos ao meio ambiente. Assim, as indústrias contornariam problemas relacionados à poluição ambiental e ao desperdício de água e energia.\n\nO perfil de um processo que segue todos os princípios desse ramo da química pode ser representado por:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A + B + C → D (a reação ocorre a altas pressões).",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A + B → C + D (a reação é fortemente endotérmica).",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A +3B → C (a reação ocorre com uso de solvente orgânico).",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "3A + 2B → 2C → 3D + 2E (a reação ocorre sob pressão atmosférica).",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A + 1/2 B → C (a reação ocorre com o uso de um catalisador contendo um metal não tóxico).",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.99324,
+"b": 0.94637,
+"c": 0.16656,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 131",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/131",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-132",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 132,
+"area": "natureza",
+"enunciado": "Megaespetáculos com queima de grande quantidade de fogos de artifício em festas de final de ano são muito comuns no Brasil. Após a queima, grande quantidade de material particulado permanece suspensa no ar. Entre os  \nresíduos, encontram-se compostos de sódio, potássio, bário, cálcio, chumbo, antimônio, cromo, além de percloratos e gases, como os dióxidos de nitrogênio e  \nenxofre.\n\n(BRUNNING, A. The Chemistry of Firework Pollution. Disponível em: www.compoundchem.com. Acesso em: 1 dez. 2017. Adaptado.)\n\nEsses espetáculos promovem riscos ambientais, porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "As substâncias resultantes da queima de fogos de artifício são inflamáveis.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Os resíduos produzidos na queima de fogos de artifício ainda são explosivos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "O sódio e o potássio são os principais responsáveis pela toxicidade do produto da queima.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Os produtos da queima contêm metais pesados e gases tóxicos que resultam em poluição atmosférica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "O material particulado gerado se deposita na superfície das folhas das plantas impedindo os processos de respiração celular.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.46882,
+"b": -0.23526,
+"c": 0.19946,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 132",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/132",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-133",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 133,
+"area": "natureza",
+"enunciado": "Há muitos mitos em relação a como se proteger de raios, cobrir espelhos e não pegar em facas, garfos e outros objetos metálicos, por exemplo. Mas, de fato, se houver uma tempestade com raios, alguns cuidados são importantes, como evitar ambientes abertos. Um bom abrigo para proteção é o interior de um automóvel, desde que este não seja conversível.\n\nOLIVEIRA, A. Raios nas tempestades de verão. Disponível em: http://cienciahoje.uol.com.br. Acesso em: 10 dez, 2014 (adaptado).\n\nQual o motivo físico da proteção fornecida pelos automóveis, conforme citado no texto?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Isolamento elétrico dos pneus.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Efeito de para-raios da antena.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Blindagem pela carcaça metálica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Escoamento da água pela lataria.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aterramento pelo fio terra da bateria.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.95498,
+"b": 1.28416,
+"c": 0.16449,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 133",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/133",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2020-134",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 134,
+"area": "natureza",
+"enunciado": "As moedas despertam o interesse de colecionadores, numismatas e investidores há bastante tempo. Uma moeda de 100% cobre, circulante no período do Brasil Colônia, pode ser bastante valiosa. O elevado valor gera  \na necessidade de realização de testes que validem a procedência da moeda, bem como a veracidade de sua composição. Sabendo que a densidade do cobre metálico é próxima de 9 g cm–3, um investidor negocia a aquisição  \nde um lote de quatro moedas A, B, C e D fabricadas supostamente de 100% cobre e massas 26 g, 27 g, 10g e 36 g, respectivamente. Com o objetivo de testar a densidade das moedas, foi realizado um procedimento em que elas foram sequencialmente inseridas em uma proveta contendo 5 mL de água, conforme  \nesquematizado.\n\n![](/questoes/natureza/81d2f348738898fd.png)\n\nCom base nos dados obtidos, o investidor adquiriu as moedas",
+"imagens": [
+"/questoes/natureza/81d2f348738898fd.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A e B",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A e C.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "B e C.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "B e D.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "C e D.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.46972,
+"b": 0.95056,
+"c": 0.13112,
+"fonte": "INEP, microdados do ENEM 2020 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 134",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/134",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2020-135",
+"ano": 2020,
+"dia": 2,
+"caderno": "azul",
+"numero": 135,
+"area": "natureza",
+"enunciado": "Os diferentes tipos de café que consumimos nem sempre vêm da mesma espécie de planta. As duas espécies de café mais utilizadas são _Coffea canephora_ e _Coffea arabica_. A primeira é diploide (2n = 22) e a segunda é tetraploide (2n  \n\\= 44). Acredita-se que a espécie tetraploide surgiu de um cruzamento natural entre _C. canephora_ e _C. eugenioides_, ambas diploides, há milhões de anos. De fato, as análises genéticas atuais nos cromossomos de _C. arabica_ detectam os alelos de ambas as origens.\n\nA alteração cromossômica que poderia explicar o surgimento do café da espécie C. arabica é:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Duplicação em uma das plantas parentais antes do cruzamento.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Inversão durante a meiose gamética em ambas as plantas parentais.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Separação desigual na meiose gamética de uma das plantas parentais.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Falha na separação durante a meiose gamética em ambas as plantas parentais.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Deleções durante as primeiras mitoses zigóticas na planta descendente C. arabica",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2020, caderno azul (aplicação regular), questão 135",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2020/questions/135",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2020.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+}
+]

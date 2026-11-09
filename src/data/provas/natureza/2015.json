@@ -1,0 +1,2968 @@
+[
+{
+"id": "enem-2015-46",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 46,
+"area": "natureza",
+"enunciado": "Hipoxia ou mal das alturas consiste na diminuição de oxigênio (O2) no sangue arterial do organismo. Por essa razão, muitos atletas apresentam mal-estar (dores de cabeça, tontura, falta de ar etc.) ao praticarem atividade física em altitudes elevadas. Nessas condições, ocorrerá uma diminuição na concentração de hemoglobina oxigenada (HbO2) em equilíbrio no sangue, conforme a relação:\n\n![](/questoes/natureza/ffa3ed12096163a6.png)\n\n**Mal da montanha**. Disponível em: www.feng.pucrs.br. Acesso em: 11 fev. 2015 (adaptado).\n\nA alteração da concentração de hemoglobina oxigenada no sangue ocorre por causa do(a)",
+"imagens": [
+"/questoes/natureza/ffa3ed12096163a6.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Elevação da pressão arterial.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aumento da temperatura corporal.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Redução da temperatura do ambiente.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Queda da pressão parcial de oxigênio.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Diminuição da quantidade de hemácias.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.50853,
+"b": 0.76055,
+"c": 0.30935,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 46",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/46",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-47",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 47,
+"area": "natureza",
+"enunciado": "A indústria têxtil utiliza grande quantidade de corantes no processo de tingimento dos tecidos. O escurecimento das águas dos rios causado pelo despejo desses corantes pode desencadear uma série de problemas no ecossistema aquático.\n\n![](/questoes/natureza/inep_2015_47.png)\n\nConsiderando esse escurecimento das águas, o impacto negativo inicial que ocorre é o(a)",
+"imagens": [
+"/questoes/natureza/inep_2015_47.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Eutrofização.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Proliferação de algas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Inibição da fotossíntese.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Fotodegradação da matéria orgânica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aumento da quantidade de gases dissolvidos.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.32469,
+"b": 0.72457,
+"c": 0.20376,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 47",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/47",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-48",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 48,
+"area": "natureza",
+"enunciado": "Muitos estudos de síntese e endereçamento de proteínas utilizam aminoácidos marcados radioativamente para acompanhar as proteínas, desde fases iniciais de sua produção até seu destino final. Esses ensaios foram muito empregados para estudo e caracterização de células secretoras.\n\nApós esses ensaios de radioatividade, qual o gráfico que representa a evolução temporal da produção de proteínas e sua localização em uma célula secretora?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/5d8794e3ff473086.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/425b86493f2c5f3e.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/1a0ec3acdc7c2c51.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/6db09566795e1bd2.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/b05181c2212b661f.png"
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.63796,
+"b": 0.87889,
+"c": 0.18468,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 48",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/48",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-49",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 49,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/cfb75c7c30cd297a.png)\n\nConsidere uma região plana onde a insolação (energia solar por unidade de tempo e de área que chega à superfície da Terra) seja de 1 000 W/m² , que o carro solar possua massa de 200 kg e seja construído de forma que o painel fotovoltaico em seu topo tenha uma área de 9,0 m² e rendimento de 30%.\n\nDesprezando as forças de resistência do ar, o tempo que esse carro solar levaria, a partir do repouso, para atingir a velocidade de 108 km/h é um valor mais próximo de",
+"imagens": [
+"/questoes/natureza/cfb75c7c30cd297a.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1,0 s.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "4,0 s.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "10 s.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "33 s.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "300 s.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.5518,
+"b": 1.28254,
+"c": 0.0645,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 49",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/49",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-50",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 50,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/557a85dee8c674da.png)\n\nPara selecionar um filtro solar que apresente absorção máxima na faixa UV-B, uma pessoa analisou os espectros de absorção da radiação UV de cinco filtros solares:\n\n![](/questoes/natureza/61bd9dae493368d9.png)\n\nConsidere: velocidade da luz = 3,0×108 m/s e 1 nm = 1,0×10\\-9 m.\n\nO filtro solar que a pessoa deve selecionar é o",
+"imagens": [
+"/questoes/natureza/557a85dee8c674da.png",
+"/questoes/natureza/61bd9dae493368d9.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "V.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "IV.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "III.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "II.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "I.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.77559,
+"b": 1.51824,
+"c": 0.17321,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 50",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/50",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-51",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 51,
+"area": "natureza",
+"enunciado": "Um grupo de pesquisadores desenvolveu um método simples, barato e eficaz de remoção de petróleo contaminante na água, que utiliza um plástico produzido a partir do líquido da castanha-de-caju (LCC). A composição química do LCC é muito parecida com a do petróleo e suas moléculas, por suas características, interagem formando agregados com o petróleo. Para retirar os agregados da água, os pesquisadores misturam ao LCC nanopartículas magnéticas.\n\nKIFFER, D. **Novo método para remoção de petróleo usa óleo de mamona e castanha-de-caju**. Disponível em: www.faperj.br. Acesso em: 31 jul. 2012 (adaptado).\n\nEssa técnica considera dois processos de separação de misturas, sendo eles, respectivamente,",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Flotação e decantação.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Decomposição e centrifugação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Floculação e separação magnética.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Destilação fracionada e peneiração.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Dissolução fracionada e magnetização.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.53298,
+"b": 0.90084,
+"c": 0.19471,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 51",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/51",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-52",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 52,
+"area": "natureza",
+"enunciado": "A soda cáustica pode ser usada no desentupimento de encanamentos domésticos e tem, em sua composição, o hidróxido de sódio como principal componente, além de algumas impurezas. A soda normalmente é comercializada na forma sólida, mas que apresenta aspecto “derretido”\n\nquando exposta ao ar por certo período.\n\n![](/questoes/natureza/inep_2015_52.png)\n\nO fenômeno de “derretimento” decorre da",
+"imagens": [
+"/questoes/natureza/inep_2015_52.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Absorção da umidade presente no ar atmosférico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fusão do hidróxido pela troca de calor com o ambiente.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Reação das impurezas do produto com o oxigênio do ar.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Adsorção de gases atmosféricos na superfície do sólido.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Reação do hidróxido de sódio com o gás nitrogênio presente no ar.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.60247,
+"b": 1.64071,
+"c": 0.16849,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 52",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/52",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-53",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 53,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/e65d9e5487e537d3.png)\n\nExpressa em termos do comprimento de onda (λ), a espessura mínima é igual a",
+"imagens": [
+"/questoes/natureza/e65d9e5487e537d3.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Λ / 4.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Λ / 2.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3λ / 4.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Λ.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "2λ.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.59574,
+"b": 4.16126,
+"c": 0.08549,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 53",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/53",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-54",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 54,
+"area": "natureza",
+"enunciado": "Um importante princípio da biologia, relacionado à transmissão de caracteres e à embriogênese humana, foi quebrado com a descoberta do microquimerismo fetal. Microquimerismo é o nome dado ao fenômeno biológico referente a uma pequena população de células ou DNA presente em um indivíduo, mas derivada de um organismo geneticamente distinto. Investigando-se a presença do cromossomo Y, foi revelado que diversos tecidos de mulheres continham células masculinas. A análise do histórico médico revelou uma correlação extremamente curiosa: apenas as mulheres que antes tiveram filhos homens apresentaram microquimerismo masculino. Essa correlação levou à interpretação de que existe uma troca natural entre células do feto e maternas durante a gravidez.\n\nMUOTRI, A. **Você não é só você**: carregamos células maternas na maioria de nossos órgãos. Disponível em: http://g1.globo.com. Acesso em: 4 dez. 2012 (adaptado).\n\nO princípio contestado com essa descoberta, relacionado ao desenvolvimento do corpo humano, é o de que",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O fenótipo das nossas células pode mudar por influência do meio ambiente.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A dominância genética determina a expressão de alguns genes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "As mutações genéticas introduzem variabilidade no genoma.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "As mitocôndrias e o seu DNA provêm do gameta materno.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "As nossas células corporais provêm de um único zigoto.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.27378,
+"b": 1.23988,
+"c": 0.10045,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 54",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/54",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-55",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 55,
+"area": "natureza",
+"enunciado": "A hidroponia pode ser definida como uma técnica de produção de vegetais sem necessariamente a presença de solo. Uma das formas de implementação é manter as plantas com suas raízes suspensas em meio líquido, de onde retiram os nutrientes essenciais.\n\nSuponha que um produtor de rúcula hidropônica precise ajustar a concentração do íon nitrato (NO3 −) para 0,009 mol/L em um tanque de 5 000 litros e, para tanto, tem em mãos uma solução comercial nutritiva de nitrato de cálcio 90 g/L. As massas molares dos elementos N, O e Ca são iguais a 14 g/mol, 16 g/mol e 40 g/mol, respectivamente.\n\n![](/questoes/natureza/inep_2015_55.png)\n\nQual o valor mais próximo do volume da solução nutritiva, em litros, que o produtor deve adicionar ao tanque?",
+"imagens": [
+"/questoes/natureza/inep_2015_55.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "26",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "41",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "45",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "51",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "82",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.31392,
+"b": 3.10608,
+"c": 0.1913,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 55",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/55",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-56",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 56,
+"area": "natureza",
+"enunciado": "Algumas raças de cães domésticos não conseguem copular entre si devido à grande diferença em seus tamanhos corporais. Ainda assim, tal dificuldade reprodutiva não ocasiona a formação de novas espécies (especiação).\n\nEssa especiação não ocorre devido ao(à)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Oscilação genética das raças.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Convergência adaptativa das raças.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Isolamento geógrafico entre as raças.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Seleção natural que ocorre entre as raças.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Manutenção do fluxo gênico entre as raças.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.09189,
+"b": 1.62993,
+"c": 0.09788,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 56",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/56",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-57",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 57,
+"area": "natureza",
+"enunciado": "O ar atmosférico pode ser utilizado para armazenar o excedente de energia gerada no sistema elétrico, diminuindo seu desperdício, por meio do seguinte processo: água e gás carbônico são inicialmente removidos do ar atmosférico e a massa de ar restante é resfriada ate -198°C. Presente na proporção de 78% dessa massa de ar, o nitrogênio gasoso é liquefeito, ocupando um volume 700 vezes menor. A energia excedente do sistema elétrico é utilizada nesse processo, sendo parcialmente recuperada quando o nitrogênio líquido, exposto à temperatura ambiente, entra em ebulição e se expande, fazendo girar turbinas que convertem energia mecânica em energia elétrica.\n\nMACHADO, R. Disponível em: www.correiobraziliense.com.br. Acesso em: 9 set. 2013 (adaptado).\n\nNo processo descrito, o excedente de energia elétrica é armazenado pela",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Expansão do nitrogênio durante a ebulição.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Absorção de calor pelo nitrogênio durante a ebulição.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Realização de trabalho sobre o nitrogênio durante a liquefação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Retirada de água e gás carbônico da atmosfera antes do resfriamento.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Liberação de calor do nitrogênio para a vizinhança durante a liquefação",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.0418,
+"b": 1.58166,
+"c": 0.15275,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 57",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/57",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-58",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 58,
+"area": "natureza",
+"enunciado": "Alimentos em conserva são frequentemente armazenados em latas metálicas seladas, fabricadas com um material chamado folha de flandres, que consiste de uma chapa de aço revestida com uma fina camada de estanho, metal brilhante e de difícil oxidação. É comum que a superfície interna seja ainda revestida por uma camada de verniz à base de epóxi, embora também existam latas sem esse revestimento, apresentando uma camada de estanho mais espessa.\n\nSANTANA, V. M. S. A leitura e a química das substâncias. **Cadernos PDE**. Ivaiporã: Secretaria de Estado da Educação do Paraná (SEED); Universidade Estadual de Londrina, 2010 (adaptado).\n\nComprar uma lata de conserva amassada no supermercado é desaconselhável porque o amassado pode",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Alterar a pressão no interior da lata, promovendo a degradação acelerada do alimento.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Romper a camada de estanho, permitindo a corrosão do ferro e alterações do alimento.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Prejudicar o apelo visual da embalagem, apesar de não afetar as propriedades do alimento.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Romper a camada de verniz, fazendo com que o metal tóxico estanho contamine o alimento.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Desprender camadas de verniz, que se dissolverão no meio aquoso, contaminando o alimento.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.97347,
+"b": 0.82194,
+"c": 0.21998,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 58",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/58",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-59",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 59,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/fe20a2fb611bb497.png)\n\nAs funções orgânicas que caracterizam os feromônios de trilha e de alarme são, respectivamente,",
+"imagens": [
+"/questoes/natureza/fe20a2fb611bb497.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Álcool e éster.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aldeído e cetona.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Éter e hidrocarboneto.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Enol e ácido carboxílico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ácido carboxílico e amida.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.29756,
+"b": 1.06404,
+"c": 0.21395,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 59",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/59",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-60",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 60,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/2e870934651c9a80.png)\n\nOs produtos obtidos na oxidação do alceno representado, em solução aquosa de KMnO4, são:",
+"imagens": [
+"/questoes/natureza/2e870934651c9a80.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ácido benzoico e ácido etanoico",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ácido benzoico e ácido propanoico.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ácido etanoico e ácido 2-feniletanoico.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ácido 2-feniletanoico e ácido metanoico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ácido 2-feniletanoico e ácido propanoico.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.97312,
+"b": 2.11423,
+"c": 0.1322,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 60",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/60",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-61",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 61,
+"area": "natureza",
+"enunciado": "O nitrogênio é essencial para a vida e o maior reservatório global desse elemento, na forma de N2, é a atmosfera. Os principais responsáveis por sua incorporação na matéria orgânica são microrganismos fixadores de N2, que ocorrem de forma livre ou simbiontes com plantas.\n\nADUAN, R. E. et al. **Os grandes ciclos biogeoquímicos do planeta**. Planaltina: Embrapa, 2004 (adaptado).\n\nAnimais garantem suas necessidades metabólicas desse elemento pela",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Absorção do gás nitrogênio pela respiração.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ingestão de moléculas de carboidratos vegetais.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Incorporação de nitritos dissolvidos na água consumida.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Transferência da matéria orgânica pelas cadeias tróficas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Protocooperação com microrganismos fixadores de nitrogênio.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.68585,
+"b": 1.34192,
+"c": 0.13539,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 61",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/61",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-62",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 62,
+"area": "natureza",
+"enunciado": "Em um experimento, colocou-se água até a metade da capacidade de um frasco de vidro e, em seguida, adicionaram-se três gotas de solução alcoólica de fenolftaleína. Adicionou-se bicarbonato de sódio comercial, em pequenas quantidades, até que a solução se tornasse rosa. Dentro do frasco, acendeu-se um palito de fósforo, o qual foi apagado assim que a cabeça terminou de queimar. Imediatamente, o frasco foi tampado. Em seguida, agitou-se o frasco tampado e observou-se o desaparecimento da cor rosa.\n\nMATEUS, A. L. **Química na cabeç**a. Belo Horizonte: UFMG, 2001 (adaptado).\n\nA explicação para o desaparecimento da cor rosa é que, com a combustão do palito de fósforo, ocorreu o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Formação de óxidos de caráter ácido.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Evaporação do indicador fenolftaleína.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Vaporização de parte da água do frasco.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Vaporização dos gases de caráter alcalino.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aumento do pH da solução no interior do frasco.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.94609,
+"b": 1.43237,
+"c": 0.12312,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 62",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/62",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-63",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 63,
+"area": "natureza",
+"enunciado": "Uma pessoa abre sua geladeira, verifica o que há dentro e depois fecha a porta dessa geladeira. Em seguida, ela tenta abrir a geladeira novamente, mas só consegue fazer isso depois de exercer uma força mais intensa do que a habitual.\n\nA dificuldade extra para reabrir a geladeira ocorre porque o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Volume de ar dentro da geladeira diminuiu.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Motor da geladeira está funcionando com potência máxima.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Força exercida pelo imã fixado na porta da geladeira aumenta.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Pressão no interior da geladeira está abaixo da pressão externa.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Temperatura no interior da geladeira é inferior ao valor existente antes de ela ser aberta.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.42594,
+"b": 0.40984,
+"c": 0.03604,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 63",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/63",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-64",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 64,
+"area": "natureza",
+"enunciado": "Uma análise criteriosa do desempenho de Usain Bolt na quebra do recorde mundial dos 100 metros rasos mostrou que, apesar de ser o último dos corredores a reagir ao tiro e iniciar a corrida, seus primeiros 30 metros foram os mais velozes já feitos em um recorde mundial, cruzando essa marca em 3,78 segundos. Até se colocar com o corpo reto, foram 13 passadas, mostrando sua potência durante a aceleração, o momento mais importante da corrida. Ao final desse percurso, Bolt havia atingido a velocidade máxima de 12 m/s.\n\nDisponível em: http://esporte.uol.com.br. Acesso em: 5 ago. 2012 (adaptado)\n\nSupondo que a massa desse corredor seja igual a 90 kg, o trabalho total realizado nas 13 primeiras passadas é mais próximo de:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "5,4 x 10² J.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "6,5 x 10³ J.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "8,6 x 10³ J.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "1,3 x 104 J.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "3,2 x 104 J.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.11834,
+"b": 2.74381,
+"c": 0.24085,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 64",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/64",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-65",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 65,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/4ca7c256f7417ae2.png)\n\nPara atribuir uma categoria a um modelo de garrafa térmica, são preparadas e misturadas, em uma garrafa, duas amostras de água, uma a 10°C e outra a 40°C, na proporção de um terço de água fria para dois terços de água quente. A garrafa é fechada. Seis horas depois, abre-se a garrafa e mede-se a temperatura da água, obtendo-se 16°C.\n\nQual selo deveria ser posto na garrafa térmica testada?",
+"imagens": [
+"/questoes/natureza/4ca7c256f7417ae2.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "B",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "C",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "D",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "E",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.6716,
+"b": 1.44219,
+"c": 0.18525,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 65",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/65",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-66",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 66,
+"area": "natureza",
+"enunciado": "A cariotipagem é um método que analisa células de um indivíduo para determinar seu padrão cromossômico. Essa técnica consiste na montagem fotográfica, em sequência, dos pares de cromossomos e permite identificar um indivíduo normal (46, XX ou 46, XY) ou com alguma alteração cromossômica. A investigação do cariótipo de uma criança do sexo masculino com alterações morfológicas e comprometimento cognitivo verificou que ela apresentava fórmula cariotípica 47, XY, +18.\n\nA alteração cromossômica da criança pode ser classificada como",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Estrutural, do tipo deleção.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Numérica, do tipo euploidia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Numérica, do tipo poliploidia.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Estrutural, do tipo duplicação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Numérica, do tipo aneuploidia.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.40327,
+"b": 2.65294,
+"c": 0.10534,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 66",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/66",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-67",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 67,
+"area": "natureza",
+"enunciado": "Durante uma expedição, um grupo de estudantes perdeu-se de seu guia. Ao longo do dia em que esse grupo estava perdido, sem água e debaixo de sol, os estudantes passaram a sentir cada vez mais sede. Consequentemente, o sistema excretor desses indivíduos teve um acréscimo em um dos seus processos funcionais.\n\nNessa situação o sistema excretor dos estudantes",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aumentou a filtração glomerular.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Produziu maior volume de urina.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Produziu urina com menos ureia.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Produziu urina com maior concentração de sais.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Reduziu a reabsorção de glicose e aminoácidos.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.12476,
+"b": 0.26042,
+"c": 0.00964,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 67",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/67",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-68",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 68,
+"area": "natureza",
+"enunciado": "“O circuito deve ser tal que as tomadas e a lâmpada devem estar submetidas à tensão nominal da rede elétrica e a lâmpada deve poder ser ligada ou desligada por um interruptor sem afetar os outros dispositivos” – pensou.\n\nSímbolos adotados:\n\n![](/questoes/natureza/436028aced630b4e.png)\n\nQual dos circuitos esboçados atende às exigências?",
+"imagens": [
+"/questoes/natureza/436028aced630b4e.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/3c0a0870941d5a41.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/3bf495ae0d41bc0e.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/a21e27ca2dc5340b.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/86a3a88371e317f7.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/cf5053474d2bf9ca.png"
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.93234,
+"b": 0.47118,
+"c": 0.16976,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 68",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/68",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-69",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 69,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/49e69f5682dce29b.png)\n\nQual curva representa o perfil de consumo de glicose, para manutenção da homeostase de uma célula que inicialmente está em uma condição anaeróbica e é submetida a um aumento gradual da concentração de oxigênio?",
+"imagens": [
+"/questoes/natureza/49e69f5682dce29b.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.09921,
+"b": 1.64836,
+"c": 0.12058,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 69",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/69",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-70",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 70,
+"area": "natureza",
+"enunciado": "Um garoto foi à loja comprar um estilingue e encontrou dois modelos: um com borracha mais “dura” e outro com borracha mais “mole”. O garoto concluiu que o mais adequado seria o que proporcionasse maior alcance horizontal, _D_, para as mesmas condições de arremesso, quando submetidos à mesma força aplicada. Sabe-se que a constante elástica _kd_ (do estilingue mais “duro”) é o dobro da constante elástica _Km_ (do estilingue mais “mole”).\n\nA razão entre os alcances Dd  / Dm, referentes aos estilingues com borrachas “dura” e “mole”, respectivamente, é igual a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1 / 4.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "1 / 2.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "1.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "2.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "4.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.01929,
+"b": 61.05459,
+"c": 0.21513,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 70",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/70",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-71",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 71,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/b11ea406b7e2d2ab.png)\n\nCom base nos valores das constantes de equilíbrio das reações II, III e IV a 25 oC, qual é o valor numérico da constante de equilíbrio da reação I?",
+"imagens": [
+"/questoes/natureza/b11ea406b7e2d2ab.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "4,5x10-26",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "5x105",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "0,8x10-9",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "0,2x105",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "2,2x1026",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.28578,
+"b": 2.26051,
+"c": 0.2274,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 71",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/71",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-72",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 72,
+"area": "natureza",
+"enunciado": "Tanto a febre amarela quanto a dengue são doenças causadas por vírus do grupo dos arbovírus, pertencentes ao gênero _Flavivirus_, existindo quatro sorotipos para o vírus causador da dengue. A transmissão de ambas acontece por meio da picada de mosquitos, como o _Aedes aegypti_. Entretanto, embora compartilhem essas características, hoje somente existe vacina, no Brasil, para a febre amarela e nenhuma vacina efetiva para a dengue.\n\nMINISTÉRIO DA SAÚDE. Fundação Nacional de Saúde. **Dengue**: Instruções para pessoal de combate ao vetor. Manual de Normas Técnicas. Disponível em: http://portal.saude.gov.br. Acesso em: 7 ago. 2012 (adaptado).\n\nEsse fato pode ser atribuído à",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Maior taxa de mutação do vírus da febre amarela do que do vírus da dengue.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Alta variabilidade antigênica do vírus da dengue em relação ao vírus da febre amarela.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Menor adaptação do vírus da dengue à população humana do que do vírus da febre amarela.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Presença de dois tipos de ácidos nucleicos no vírus da dengue e somente um tipo no vírus da febre amarela.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Baixa capacidade de indução da resposta imunológica pelo vírus da dengue em relação ao da febre amarela.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.44387,
+"b": 0.55025,
+"c": 0.22037,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 72",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/72",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-73",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 73,
+"area": "natureza",
+"enunciado": "A bomba  \nreduz neutros e neutrinos, e abana-se com o leque da  \nreação em cadeia\n\nANDRADE, C. D. **Poesia completa e prosa**. Rio de Janeiro: Aguilar, 1973 (fragmento)\n\nNesse fragmento de poema, o autor refere-se à bomba atômica de urânio. Essa reação é dita “em cadeia” porque na",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fissão do 235U ocorre liberação de grande quantidade de calor, que dá continuidade à reação.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fissão do 235U ocorre liberação de energia, que vai desintegrando o isótopo 238U, enriquecendo-o em mais 235U.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Fissão do 235U ocorre uma liberação de nêutrons, que bombardearão outros núcleos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Fusão do 235U com 238U ocorre formação de neutrino, que bombardeará outros núcleos radioativos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Fusão do 235U com 238U ocorre formação de outros elementos radioativos mais pesados, que desencadeiam novos processos de fusão.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.55499,
+"b": 1.34587,
+"c": 0.1744,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 73",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/73",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-74",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 74,
+"area": "natureza",
+"enunciado": "A palavra “biotecnologia” surgiu no século XX, quando o cientista Herbert Boyer introduziu a informação responsável pela fabricação da insulina humana em uma bactéria, para que ela passasse a produzir a substância.\n\nDisponível em: www.brasil.gov.br. Acesso em: 28 jul. 2012 (adaptado).\n\nAs bactérias modificadas por Herbert Boyer passaram a produzir insulina humana porque receberam",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A sequência de DNA codificante de insulina humana.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A proteína sintetizada por células humanas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Um RNA recombinante de insulina humana.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O RNA mensageiro de insulina humana.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Um cromossomo da espécie humana.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.37114,
+"b": 1.52381,
+"c": 0.2353,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 74",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/74",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-75",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 75,
+"area": "natureza",
+"enunciado": "Será que uma miragem ajudou a afundar o Titanic? O fenômeno ótico conhecido como Fata Morgana pode fazer com que uma falsa parede de água apareça sobre o horizonte molhado. Quando as condições são favoráveis, a luz refletida pela água fria pode ser desviada por uma camada incomum de ar quente acima, chegando até o observador, vinda de muitos ângulos diferentes. De acordo com estudos de pesquisadores da Universidade de San Diego, uma Fata Morgana pode ter obscurecido os icebergs da visão da tripulação que estava a bordo do Titanic. Dessa forma, a certa distancia, o horizonte verdadeiro fica encoberto por uma névoa escurecida, que se parece muito com águas calmas no escuro.\n\nDisponível em: http://apod.nasa.gov. Acesso em: 6 set. 2012 (adaptado).\n\nO fenômeno ótico que, segundo os pesquisadores, provoca a Fata Morgana é a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ressonância.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Refração.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Difração.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Reflexão.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Difusão.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.42096,
+"b": 1.65967,
+"c": 0.22314,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 75",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/75",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-76",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 76,
+"area": "natureza",
+"enunciado": "Considere as massas molares: ZnS (97 g/mol); O2 (32 g/mol); ZnO (81 g/mol); SO2 (64 g/mol); CO (28 g/mol); CO2 (44 g/mol); e Zn (65 g/mol).\n\nQue valor mais próximo de massa de zinco metálico, em quilogramas, será produzido a partir de 100 kg de esfalerita?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "25",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "33",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "40",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "50",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "54",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.32423,
+"b": 2.06056,
+"c": 0.21201,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 76",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/76",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-77",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 77,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/b483ad410d2e88ba.png)\n\nCom base nesse processo, o hidrocarboneto produzido na eletrólise do ácido 3,3-dimetil-butanoico é o",
+"imagens": [
+"/questoes/natureza/b483ad410d2e88ba.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "2,2,7,7-tetrametil-octano.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "3,3,4,4-tetrametil-hexano.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "2,2,5,5-tetrametil-hexano.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "3,3,6,6-tetrametil-octano.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "2,2,4,4-tetrametil-hexano.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.61633,
+"b": 2.02938,
+"c": 0.16653,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 77",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/77",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-78",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 78,
+"area": "natureza",
+"enunciado": "A definição de queimadura é bem ampla, porém, basicamente, é a lesão causada pela ação direta ou indireta produzida pela transferência de calor para o corpo. A sua manifestação varia desde bolhas (flictenas) até formas mais graves, capazes de desencadear respostas sistêmicas proporcionais à gravidade da lesão e sua respectiva extensão. Muitas vezes, os primeiros socorros prestados à vítima, ao invés de ajudar, acabam agravando ainda mais a situação do paciente.\n\nDisponível em: www.bombeiros-bm.rs.gov.br. Acesso em: 28 fev. 2012 (adaptado).\n\nAo se deparar com um indivíduo que sofreu queimadura com formação de flictena, o procedimento de primeiros socorros que deve ser realizado antes de encaminhar o paciente ao hospital é",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Colocar gelo sobre a flictena para amenizar o ardor.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Utilizar manteiga para evitar o rompimento da flictena.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Passar creme dental para diminuir a ardência da flictena.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Perfurar a flictena para que a água acumulada seja liberada.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Cobrir a flictena com gazes molhadas para evitar a desidratação.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.49684,
+"b": -0.34227,
+"c": 0.03024,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 78",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/78",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-79",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 79,
+"area": "natureza",
+"enunciado": "As altas temperaturas de combustão e o atrito entre suas peças móveis são alguns dos fatores que provocam o aquecimento dos motores à combustão interna. Para evitar o superaquecimento e consequentes danos a esses motores, foram desenvolvidos os atuais sistemas de refrigeração, em que um fluido arrefecedor com propriedades especiais circula pelo interior do motor, absorvendo o calor que, ao passar pelo radiador, é transferido para a atmosfera.\n\nQual propriedade o fluido arrefecedor deve possuir para cumprir seu objetivo com maior eficiência?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Alto calor específico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Alto calor latente de fusão.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Baixa condutividade térmica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Baixa temperatura de ebulição.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Alto coeficiente de dilatação térmica.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.54575,
+"b": 1.19904,
+"c": 0.08842,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 79",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/79",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-80",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 80,
+"area": "natureza",
+"enunciado": "Pesticidas são substâncias utilizadas para promover o controle de pragas. No entanto, após sua aplicação em ambientes abertos, alguns pesticidas organoclorados são arrastados pela água até lagos e rios e, ao passar pelas guelras dos peixes, podem difundir-se para seus tecidos lipídicos e lá se acumularem.\n\nA característica desses compostos, responsável pelo processo descrito no texto, é o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Baixa polaridade.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Baixa massa molecular.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ocorrência de halogênios.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Tamanho pequeno das moléculas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Presença de hidroxilas nas cadeias.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.23508,
+"b": 1.61903,
+"c": 0.18711,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 80",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/80",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-81",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 81,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/a9a558caa5c20ba1.png)\n\nA equação química que representa a reação de formação da mancha avermelhada é:",
+"imagens": [
+"/questoes/natureza/a9a558caa5c20ba1.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ca2+(aq) +  2Cu+(aq) --> Ca(s) + 2Cu2+(aq)).",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ca2+(aq) + 2Fe2+(aq) --> Ca(s) + 2Fe3+(aq).",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Cu2+(aq) + 2 Fe2+(aq) --> Cu(s) + 2Fe3+(aq).",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "3Ca2+(aq) + 2 Fe(s) --> 3 Ca(s) + 2Fe3+(aq).",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "3 Cu2+(aq) + 2 Fe(s) --> 3 Cu(s) + 2 Fe3+(aq).",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.6703,
+"b": 1.8796,
+"c": 0.13692,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 81",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/81",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-82",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 82,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/74531b2d02459ad4.png)\n\nNessa situação, qual foi a massa da barra obtida pelos alunos?",
+"imagens": [
+"/questoes/natureza/74531b2d02459ad4.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "3,00 kg",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "3,75 kg",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "5,00 kg",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "6,00 kg",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "15,00 kg",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.40728,
+"b": 1.11505,
+"c": 0.16506,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 82",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/82",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-83",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 83,
+"area": "natureza",
+"enunciado": "Os anfíbios representam o primeiro grupo de vertebrados que, evolutivamente, conquistou o ambiente terrestre. Apesar disso, a sobrevivência do grupo ainda permanece restrita a ambientes úmidos ou aquáticos, devido à manutenção de algumas características fisiológicas relacionadas à água.\n\nUma das características a que o texto se refere é a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Reprodução por viviparidade.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Respiração pulmonar nos adultos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Regulação térmica por endotermia.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Cobertura corporal delgada e altamente permeável.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Locomoção por membros anteriores e posteriores desenvolvidos.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.37617,
+"b": 1.47135,
+"c": 0.17221,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 83",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/83",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-84",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 84,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/596d5baf4af921a0.png)\n\nA variação de entalpia, em kJ, para a queima de 5 g desse bio-óleo resultando em CO2 (gasoso) e H2O (gasoso) é:",
+"imagens": [
+"/questoes/natureza/596d5baf4af921a0.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "-106.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "-94,0.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "-82,0.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "-21,2.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "-16,4.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.18005,
+"b": 1.34983,
+"c": 0.19742,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 84",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/84",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-85",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 85,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/e4e6692bd65e967d.png)\n\nSe fizermos uma analogia entre a ilustração e o olho humano, o tecido corresponde ao(à)",
+"imagens": [
+"/questoes/natureza/e4e6692bd65e967d.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Íris.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Retina.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Pupila.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Córnea.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Cristalino.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.51647,
+"b": 0.92887,
+"c": 0.16028,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 85",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/85",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-86",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 86,
+"area": "natureza",
+"enunciado": "Ao ouvir uma flauta e um piano emitindo a mesma nota musical, consegue-se diferenciar esses instrumentos um do outro.\n\nEssa diferenciação se deve principalmente ao(à)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Intensidade sonora do som de cada instrumento musical.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Potência sonora do som emitido pelos diferentes instrumentos musicais.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diferente velocidade de propagação do som emitido por cada instrumento musical.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Timbre do som, que faz com que os formatos das ondas de cada instrumento sejam diferentes.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Altura do som, que possui diferentes frequências para diferentes instrumentos musicais.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.94851,
+"b": 0.17176,
+"c": 0.216,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 86",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/86",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-87",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 87,
+"area": "natureza",
+"enunciado": "O formato das células de organismos pluricelulares é extremamente variado. Existem células discoides, como é o caso das hemácias, as que lembram uma estrela, como os neurônios, e ainda algumas alongadas, como as musculares.\n\nEm um mesmo organismo, a diferenciação dessas células ocorre por",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Produzirem mutações específicas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Possuírem DNA mitocondrial diferentes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Apresentarem conjunto de genes distintos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Expressarem porções distintas do genoma.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Terem um número distinto de cromossomos.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.01163,
+"b": 1.43934,
+"c": 0.09562,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 87",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/87",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-88",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 88,
+"area": "natureza",
+"enunciado": "Para obter a posição de um telefone celular, a polícia baseia-se em informações do tempo de resposta do aparelho em relação às torres de celular da região de onde se originou a ligação. Em uma região, um aparelho está na área de cobertura de cinco torres, conforme o esquema\n\n![](/questoes/natureza/da811def10ccfad3.png)\n\nConsiderando que as torres e o celular são puntiformes e que estão sobre um mesmo plano, qual o número mínimo de torres necessárias para se localizar a posição do do telefone celular que originou a ligação?",
+"imagens": [
+"/questoes/natureza/da811def10ccfad3.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Uma.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Duas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Três.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Quatro.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Cinco.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.29289,
+"b": 1.95236,
+"c": 0.12244,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 88",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/88",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2015-89",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 89,
+"area": "natureza",
+"enunciado": "_Euphorbia milii_ é uma planta ornamental amplamente disseminada no Brasil e conhecida como coroa-de-cristo. O estudo químico do látex dessa espécie forneceu o mais potente produto natural moluscicida, a miliamina L.\n\nMOREIRA, C. P. S.; ZANI, C. L.; ALVES, T. M. A. Atividade moluscicida do látex de Synadenium carinatum boiss. (Euphorbiaceae) sobre Biomphalaria glabrata e isolamento do constituinte majoritário. **Revista Eletrônica de Farmácia**, n. 3, 2010 (adaptado).\n\nO uso desse látex em água infestada por hospedeiros intermediários tem potencial para atuar no controle da",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Dengue.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Malária.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Elefantíase.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ascaridíase.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Esquistossomose.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.27244,
+"b": 1.11652,
+"c": 0.11401,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 89",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/89",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2015-90",
+"ano": 2015,
+"dia": 2,
+"caderno": "azul",
+"numero": 90,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/34240e6bcbfbcf52.png)\n\nQue fator contribui positivamente para que a segunda rota de síntese seja verde em comparação com a primeira?",
+"imagens": [
+"/questoes/natureza/34240e6bcbfbcf52.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Etapa única na síntese.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Obtenção do produto puro.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ausência de reagentes oxidantes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ausência de elementos metálicos no processo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Gasto de energia nulo na separação do produto.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.41738,
+"b": 4.03288,
+"c": 0.01314,
+"fonte": "INEP, microdados do ENEM 2015 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2015, caderno azul (aplicação regular), questão 90",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2015/questions/90",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2015.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+}
+]

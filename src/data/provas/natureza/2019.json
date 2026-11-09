@@ -1,0 +1,2768 @@
+[
+{
+"id": "enem-2019-91",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 91,
+"area": "natureza",
+"enunciado": "Para realizar o desentupimento de tubulações de esgotos residenciais, é utilizada uma mistura sólida comercial que contém hidróxido de sódio (NaOH) e outra espécie química pulverizada. Quando é adicionada água a essa mistura, ocorre uma reação que libera gás hidrogênio e energia na forma de calor, aumentando a eficiência do processo de desentupimento. Considere os potenciais padrão de redução (E0) da água e de outras espécies em meio básico, expresso no quadro.\n\n![](/questoes/natureza/ca28600324a13bb8.png)\n\nQual é a outra espécie que está presente na composição da mistura sólida comercial para aumentar sua eficiência?",
+"imagens": [
+"/questoes/natureza/ca28600324a13bb8.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Al",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Co",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Cu(OH)2",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Fe(OH)2",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Pb",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.43167,
+"b": 1.13773,
+"c": 0.22233,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 91",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/91",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-92",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 92,
+"area": "natureza",
+"enunciado": "As redes de alta tensão para transmissão de energia elétrica geram campo magnético variável o suficiente para induzir corrente elétrica no arame das cercas. Tanto os animais quanto os funcionários das propriedades rurais ou das concessionárias de energia devem ter muito cuidado ao se aproximarem de uma cerca quando esta estiver próxima a uma rede de alta tensão, pois, se tocarem no arame da cerca, poderão sofrer choque elétrico.\n\nPara minimizar este tipo de problema, deve-se:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fazer o aterramento dos arames da cerca.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Acrescentar fusível de segurança na cerca.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Realizar o aterramento da rede de alta tensão.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Instalar fusível de segurança na rede de alta tensão.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Utilizar fios encapados com isolante na rede de alta tensão.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.87838,
+"b": 1.45214,
+"c": 0.07496,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 92",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/92",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-93",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 93,
+"area": "natureza",
+"enunciado": "A esquistossomose (barriga-d’água) caracteriza-se pela inflamação do fígado e do baço causada pelo verme Schistosoma mansoni (esquistossomo). O contágio ocorre depois que larvas do verme são liberadas na água pelo caramujo do gênero Biomphalaria, seu hospedeiro intermediário, e penetram na pela humana. Após o diagnóstico, o tratamento tradicional utiliza medicamentos por via oral para matar o parasita dentro do corpo. Uma nova estratégia terapêutica baseia-se na utilização de uma vacina, feita a partir de uma proteína extraída do verme, que induz o organismo humano a produzir anticorpos para combater e prevenir a doença.\n\n**Instituto Oswaldo Cruz/Fundação Oswaldo Cruz (IOC/Fiocruz)**. _Fiocruz anuncia nova fase de vacina para esquistossomose_.  \n**Disponível em:** http://agencia.fiocruz.br. Acesso em: 3 maio 2019 (adaptado).\n\nUma vantagem da vacina em relação ao tratamento tradicional é que ela poderá",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Impedir a penetração do parasita pela pele.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Eliminar o caramujo para que não haja contágio.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Impedir o acesso do esquistossomo especificamente para o fígado.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Eliminar o esquistossomo antes que ocorra contato com o organismo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Eliminar o esquistossomo dentro do organismo antes da manifestação de sintomas.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.80865,
+"b": 0.58402,
+"c": 0.21207,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 93",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/93",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-94",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 94,
+"area": "natureza",
+"enunciado": "Em 1962, um _jingle_ (vinheta musical) criado por Heitor Carillo fez tanto sucesso que extrapolou as fronteiras do rádio e chegou à televisão ilustrado por um desenho animado. Nele, uma pessoa respondia ao fantasma que batia em sua porta, personificando o “frio”, que não o deixaria entrar, pois não abriria a porta e compraria lãs e cobertores para aquecer sua casa. Apesar de memorável, tal comercial televisivo continha incorreções a respeito de conceitos físicos relativos à calorimetria.\n\nDUARTE, M. **Jingle é a alma do negócio: livro revela os bastidores das músicas de propagandas.** Disponível em: https://guiadoscuriosos.uol.com.br. Acesso em: 24 abr. 2019 adaptado).\n\nPara solucionar essas incorreções, deve-se associar à porta e aos cobertores, respectivamente, as funções de:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aquecer a casa e os corpos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Evitar a entrada do frio na casa e nos corpos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Minimizar a perda de calor pela casa e pelos corpos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Diminuir a entrada do frio na casa e aquecer os corpos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aquecer a casa e reduzir a perda de calor pelos corpos.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.76618,
+"b": 0.41535,
+"c": 0.10709,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 94",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/94",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-95",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 95,
+"area": "natureza",
+"enunciado": "Glicólise é um processo que ocorre nas células, convertendo glicose em piruvato. Durante a prática de exercícios físicos que demandam grande quantidade de esforço, a glicose é completamente oxidada na presença de O2. Entretanto, em alguns casos, as células musculares podem sofrer um déficit de O2 e a glicose ser convertida em duas moléculas de ácido lático. As equações termoquí micas para a combustão dá glicose e do ácido lático são, respectivamente, mostradas a seguir:\n\n![](/questoes/natureza/cbda886b1f6793e7.png)\n\nO processo anaeróbico é menos vantajoso energeticamente porque",
+"imagens": [
+"/questoes/natureza/cbda886b1f6793e7.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Libera 112 kJ por mol de glicose.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Libera 467 kJ por mol de glicose.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Libera 2 688 kJ por mol de glicose.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Absorve 1 344 kJ por mol de glicose.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Absorve 2 800 kJ por mol de glicose.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.2139,
+"b": 2.21432,
+"c": 0.09924,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 95",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/95",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-96",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 96,
+"area": "natureza",
+"enunciado": "No quadro estão apresentadas informações sobre duas estratégias de sobrevivência que podem ser adotadas por algumas espécies de seres vivos.\n\n![](/questoes/natureza/fc115dbe94a0a968.png)\n\nNa recuperação de uma área desmatada deveriam ser reintroduzidas primeiramente as espécies que adotam qual estratégia?",
+"imagens": [
+"/questoes/natureza/fc115dbe94a0a968.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Estratégia 1, pois essas espécies produzem descendentes pequenos, o que diminui a competição com outras espécies.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Estratégia 2, pois essas espécies têm uma longa duração da vida, o que favorece a produção de muitos descendentes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Estratégia 1, pois essas espécies apresentam um elevado potencial biótico, o que facilita a rápida recolonização da área desmatada.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Estratégia 2, pois essas espécies estão adaptadas a hábitats mais estáveis, o que corresponde ao ambiente de uma área desmatada.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Estratégia 2, pois essas espécies apresentam um tamanho populacional constante, o que propicia uma recolonização mais estável da área desmatada.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.71979,
+"b": 0.25498,
+"c": 0.14498,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 96",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/96",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-97",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 97,
+"area": "natureza",
+"enunciado": "As cutias, pequenos roedores das zonas tropicais, transportam pela boca as sementes que caem das árvores, mas, em vez de comê-las, enterram-nas em outro lugar. Esse procedimento lhes permite salvar a maioria de suas sementes enterradas para as épocas mais secas, quando não há frutos maduros disponíveis. Cientistas descobriram que as cutias roubam as sementes enterradas por outra, e esse comportamento de “ladroagem” faz com que uma mesma semente possa ser enterrada dezenas de vezes.\n\n**Disponível em:** http://chc.cienciahoje.uol.com.br. Acesso em: 30 jul. 2012.\n\nEssa “ladroagem” está associada à relação de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Sinfilia.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Predatismo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Parasitismo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Competição.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Comensalismo.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.90483,
+"b": 0.48421,
+"c": 0.21286,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 97",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/97",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-99",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 99,
+"area": "natureza",
+"enunciado": "A cada safra, a quantidade de café beneficiado é igual à quantidade de resíduos gerados pelo seu beneficiamento. O resíduo pode ser utilizado como fertilizante, pois contém cerca de 6,5% de pectina (um polissacarídeo), aproximadamente 25% de açúcares fermentáveis (frutose, sacarose e galactose), bem como resíduos de alcaloides (compostos aminados) que não foram extraídos no processo.\n\nLIMA, L. K. S. et. al. Utilização de resíduo oriundo da torrefação do café na agricultura em substituição à adubação convencional. **ACSA – Agropecuária Científica no Semi-Árido**, v. 10, n. 1, jan.-mar., 2014 (adaptado).\n\nEsse resíduo contribui para a fertilidade do solo, pois",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Possibilita a reciclagem de carbono e nitrogênio.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Promove o deslocamento do alumínio, que é tóxico.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Melhora a compactação do solo por causa da presença de pectina.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "D eleva o pH do solo em função da degradação dos componentes do resíduo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Apresenta efeitos inibidores de crescimento para a maioria das espécies vegetais pela cafeína.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.11909,
+"b": 0.80483,
+"c": 0.08561,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 99",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/99",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-101",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 101,
+"area": "natureza",
+"enunciado": "A eritropoetina (EPO) é um hormônio endógeno secretado pelos rins que influencia a maturação dos eritrócitos. Suas formas recombinantes, sintetizadas em laboratório, têm sido usadas por alguns atletas em esportes de resistência na busca por melhores resultados. No entanto, a administração da EPO recombinante no esporte foi proibida pelo Comitê Olímpico Internacional e seu uso considerado _doping_.\n\nMARTELLI, A. Eritropoetina: síntese e liberação fisiológica e o uso de sua forma recombinante no esporte. **Perspectivas Online**: biológicas & saúde, v. 10, n. 3, 2013 (adaptado).\n\nUma influência que esse doping poderá exercer na melhoria da capacidade física desses atletas está relacionada ao transporte de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Lipídios, para aumento do gasto calórico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "ATP, para aumento da síntese hormonal.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Oxigênio, para aumento da produção de ATP.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "D proteínas, para aumento da massa muscular.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Vitamina C, para aumento da integridade dos vasos sanguíneos.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.39212,
+"b": 0.70901,
+"c": 0.165,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 101",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/101",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-102",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 102,
+"area": "natureza",
+"enunciado": "O objetivo de recipientes isolantes térmicos é minimizar as trocas de calor com o ambiente externo. Essa troca de calor é proporcional à condutividade térmica k e à área interna das faces do recipiente, bem como à diferença de temperatura entre o ambiente externo e o interior do recipiente, além de ser inversamente proporcional à espessura das faces.\n\nA fim de avaliar a qualidade de dois recipientes **A** (40 cm x 40 cm x 40 cm) e **B** (60 cm x 40 cm x 40 cm) de faces de mesma espessura, uma estudante compara suas condutividades térmicas k**A** e k**B**. Para isso suspende, dentro de cada recipiente, blocos idênticos de gelo a 0°C, de modo que suas superfícies estejam em contato apenas com o ar. Após um intervalo de tempo, ela abre os recipientes enquanto ambos ainda contêm um pouco de gelo e verifica que a massa de gelo que se fundiu no recipiente **B** foi o dobro da que se fundiu no recipiente **A**.\n\nA razão kA/kB é mais próxima de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,50.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "0,67.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "0,75.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "1,33.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "2,00.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.38139,
+"b": 3.36471,
+"c": 0.06869,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 102",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/102",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-103",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 103,
+"area": "natureza",
+"enunciado": "Estudos mostram o desenvolvimento de biochips utilizados para auxiliar o diagnóstico de diabetes melito, doença evidenciada pelo excesso de glicose no organismo. O teste é simples e consiste em duas reações sequenciais na superfície do biochip, entre a amostra de soro sanguíneo do paciente, enzimas específicas e reagente (iodeto de potássio, KI), conforme mostrado na imagem.\n\n![](/questoes/natureza/9292255b39632108.png)\n\n  Após a adição de soro sanguíneo, o fluxo desloca-se espontaneamente da esquerda para a direita (ii) promovendo reações sequenciais, conforme as equações 1 e 2. Na primeira, há conversão de glicose do sangue em ácido glucônico, gerando peróxido de hidrogênio:\n\n![](/questoes/natureza/45100530f4635d42.png)\n\nO tipo de reação que ocorre na superfície do biochip, nas duas reações do processo, é",
+"imagens": [
+"/questoes/natureza/9292255b39632108.png",
+"/questoes/natureza/45100530f4635d42.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Análise.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Síntese.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Oxirredução.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Complexação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ácido-base.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.75058,
+"b": 1.02204,
+"c": 0.23374,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 103",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/103",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-104",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 104,
+"area": "natureza",
+"enunciado": "Algumas toneladas de medicamentos para uso humano e veterinário são produzidas por ano. Os fármacos são desenvolvidos para serem estáveis, mantendo suas propriedades químicas de forma a atender a um propósito terapêutico. Após o consumo de fármacos, parte de sua dosagem é excretada de forma inalterada, persistindo no meio ambiente. Em todo o mundo, antibióticos, hormônios, anestésicos, anti-inflamatórios, entre outros, são detectados em concentrações preocupantes no esgoto doméstico, em águas superficiais e de subsolo. Dessa forma, a ocorrância de fármacos residuais no meio ambiente pode apresentar efeitos adversos em organismos aquáticos e terrestres.\n\nBILA, D. M.; DEZOTTI, M. Fármacos no meio ambiente. **Química Nova**, v. 26, n. 4, ago. 2003 (adaptado).\n\nQual ação minimiza a permanência desses contaminantes nos recursos hídricos?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Utilização de esterco como fertilizante na agricultura.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ampliação das redes de coleta de esgoto na zona urbana.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Descarte dos medicamentos fora do prazo de validade em lixões.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Desenvolvimento de novos processos nas estações de tratamento de efluentes.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Reúso dos lodos provenientes das estações de tratamento de esgoto na agricultura.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.03081,
+"b": -0.00312,
+"c": 0.01163,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 104",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/104",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-105",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 105,
+"area": "natureza",
+"enunciado": "Um teste de laboratório permite identificar alguns cátions metálicos ao introduzir uma pequena quantidade do material de interesse em uma chama de bico de Bunsen para, em seguida, observar a cor da luz emitida.\n\nA cor observada é proveniente da emissão de radiação eletromagnética ao ocorrer a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Mudança da fase sólida para a fase líquida do elemento metálico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Combustão dos cátions metálicos provocada pelas moléculas de oxigênio da atmosfera.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diminuição da energia cinética dos elétrons em uma mesma órbita na eletrosfera atômica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Transição eletrônica de um nível mais externo para outro mais interno na eletrosfera atômica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Promoção dos elétrons que se encontram no estado fundamental de energia para níveis mais energéticos.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.77263,
+"b": 1.28601,
+"c": 0.13618,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 105",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/105",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-106",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 106,
+"area": "natureza",
+"enunciado": "_Slackline_ é um esporte no qual o atleta deve se equilibrar e executar manobras estando sobre uma fita esticada. Para a prática do esporte, as duas extremidades da fita são fixadas de forma que ela fique a alguns centímetros do solo. Quando uma atleta de massa igual a 80 kg está exata mente no meio da fita, essa se desloca verticalmente, formando um ângulo de 10º com a horizontal, como es que matizado na figura. Sabe-se que a aceleração da gravidade é igual a 10 m s–2, cos (10º) = 0,98 e sen(10º) = 0,17.\n\n![](/questoes/natureza/08a0522d85184114.png)\n\nQual é a força que a fita exerce em cada uma das árvores por causa da presença da atleta?",
+"imagens": [
+"/questoes/natureza/08a0522d85184114.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "4,0 × 10² N",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "4,1 × 10² N",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "8,0 × 10² N",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "2,4 × 10³ N",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "4,7 × 10³ N",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 4.60881,
+"b": 1.94111,
+"c": 0.12462,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 106",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/106",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-107",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 107,
+"area": "natureza",
+"enunciado": "Na piscicultura, costumam-se usar larvas de _Artemia_ (crustáceo) para alimentar larvas de peixes. Ovos de _Artemia_ são colocados em garrafas com água salgada e, sob condições ótimas de temperatura, luz e oxigênio, eles eclodem, liberando suas larvas, também conhecidas como náuplios. Para recolher os náuplios, coloca-se uma lâmpada branca fluorescente na boca da garrafa e estes começam a subir em direção ao gargalo.\n\nEsse comportamento das artêmias é chamado de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Geotropismo positivo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fototropismo positivo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Hidrotropismo negativo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Termotropismo negativo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Quimiotropismo negativo.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.06769,
+"b": -0.11974,
+"c": 0.19742,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 107",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/107",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-108",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 108,
+"area": "natureza",
+"enunciado": "Por terem camada de valência completa, alta energia de ionização e afinidade eletrônica praticamente nula, considerou-se por muito tempo que os gases nobres não formariam compostos químicos. Porém, em 1962, foi realizada com sucesso a reação entre o xenônio (camada de valência 5s25p6) e o hexafluoreto de platina e, desde então, mais compostos novos de gases nobres vêm sendo sintetizados. Tais compostos demonstram que não se pode aceitar acriticamente a regra do octeto, na qual se considera que, numa ligação química, os átomos tendem a adquirir estabilidade assumindo a configuração eletrônica de gás nobre. Dentre os compostos conhecidos, um dos mais estáveis é o difluoreto de xenônio, no qual dois átomos do halogênio flúor (camada de valência 2s22p5) se ligam covalentemente ao átomo de gás nobre para ficarem com oito elétrons de valência.\n\nAo se escrever a fórmula de Lewis do composto de xenônio citado, quantos elétrons na camada de valência haverá no átomo do gás nobre?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "6",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "8",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "10",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "12",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "14",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.20779,
+"b": 1.67408,
+"c": 0.16383,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 108",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/108",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-109",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 109,
+"area": "natureza",
+"enunciado": "Na madrugada de 11 de março de 1978, partes de um foguete soviético reentraram na atmosfera acima da cidade do Rio de Janeiro e caíram no Oceano Atlântico. Foi um belo espetáculo, os inúmeros fragmentos entrando em ignição devido ao atrito com a atmosfera brilharam intensamente, enquanto “cortavam o céu”. Mas se a reentrada tivesse acontecido alguns minutos depois, teríamos uma tragédia, pois a queda seria na área urbana do Rio de Janeiro e não no oceano.\n\n![](/questoes/natureza/716d2e8f60319430.png)\n\nDe acordo com os fatos relatados, a velocidade angular do foguete em relação à Terra no ponto de reentrada era",
+"imagens": [
+"/questoes/natureza/716d2e8f60319430.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Igual à da Terra e no mesmo sentido.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Superior à da Terra e no mesmo sentido.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Inferior à da Terra e no sentido oposto.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Igual à da Terra e no sentido oposto.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Superior à da Terra e no sentido oposto.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.75316,
+"b": 1.83643,
+"c": 0.10672,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 109",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/109",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-110",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 110,
+"area": "natureza",
+"enunciado": "Com base nos experimentos de plantas de Mendel, foram estabelecidos três princípios básicos, que são conhecidos como leis da uniformidade, segregação e distribuição independente. A lei da distribuição independente refere-se ao fato de que os membros de pares diferentes de genes segregam-se independentemente, uns dos outros, para a prole.\n\nTURNPENNY, P. D. **Genética médica**. Rio de Janeiro: ELsevier, 2009 (adaptado).\n\nHoje, sabe-se que isso nem sempre é verdade. Por quê?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A distribuição depende do caráter de dominância ou recessividade do gene.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Os organismos nem sempre herdam cada um dos genes de cada um dos genitores.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "As alterações cromossômicas podem levar a falhas na segregação durante a meiose.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Os genes localizados fisicamente próximos no mesmo cromossomo tendem a ser herdados juntos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "O cromossomo que contém dois determinados genes pode não sofrer a disjunção na primeira fase da meiose.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.90297,
+"b": 2.19782,
+"c": 0.05798,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 110",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/110",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-111",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 111,
+"area": "natureza",
+"enunciado": "Em qualquer obra de construção civil é fundamental a utilização de equipamentos de proteção individual, tal como capacetes. Por exemplo, a queda livre de um tijolo de massa 2,5kg de uma altura de 5m, cujo impacto contra um capacete pode durar até 0,5s, resulta em uma força impulsiva média maior do que o peso do tijolo. Suponha que a aceleração gravitacional seja 10 m s–2 e que o efeito de resistência do ar seja desprezível.\n\nA força impulsiva média gerada por esse impacto equivale ao peso de quantos tijolos iguais?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "5",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "10",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "20",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "50",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 5.93339,
+"b": 1.98881,
+"c": 0.13188,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 111",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/111",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-112",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 112,
+"area": "natureza",
+"enunciado": "Os hidrocarbonetos são moléculas orgânicas com uma série de aplicações industriais. Por exemplo, eles estão presentes em grande quantidade nas diversas frações do petróleo e normalmente são separados por destilação fracionada, com base em suas temperaturas de ebulição. O quadro apresenta as principais frações obtidas na destilação do petróleo em diferentes faixas de temperaturas.\n\n![](/questoes/natureza/2b0f847999c5c4ce.png)\n\nNa fração 4, a separação dos compostos ocorre em temperaturas mais elevadas porque",
+"imagens": [
+"/questoes/natureza/2b0f847999c5c4ce.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Suas densidades são maiores.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O número de ramificações é maior.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Sua solubilidade no petróleo é maior.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "As forças intermoleculares são mais intensas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A cadeia carbônica é mais difícil de ser quebrada.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.14904,
+"b": 2.36402,
+"c": 0.1148,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 112",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/112",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-113",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 113,
+"area": "natureza",
+"enunciado": "O espectrômetro de massa de tempo de voo é um dispositivo utilizado para medir a massa de íons. Nele, um íon de carga elétrica q é lançado em uma região de campo magnético constante B, descrevendo uma trajetória helicoidal, conforme a figura. Essa trajetória é formada pela composição de um movimento circular uniforme no plano yz e uma translação ao longo do eixo x. A vantagem desse dispositivo é que a velocidade angular do movimento helicoidal do íon é independente de sua velocidade inicial. O dispositivo então mede o tempo t de voo para N voltas do íon. Logo, com base nos valores q, B, N e t, pode-se determinar a massa do íon.\n\n![](/questoes/natureza/8f878b673d0b1636.png)\n\nA massa do íon medida por esse dispositivo será",
+"imagens": [
+"/questoes/natureza/8f878b673d0b1636.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/dc317535f29f9a26.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/58cded9bfe6ca851.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/07f8d35a9a30e0f5.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/7099ce88c3da1d4a.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/f6978c867a2eb4ac.png"
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.66258,
+"b": 1.3767,
+"c": 0.17468,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 113",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/113",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-114",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 114,
+"area": "natureza",
+"enunciado": "Na família Retroviridae encontram-se diversos vírus que infectam aves e mamíferos, sendo caracterizada pela produção de DNA a partir de uma molécula de RNA. Alguns retrovírus infectam exclusivamente humanos, não necessitando de outros hospedeiros, reservatórios ou vetores biológicos. As infecções ocasionadas por esses vírus vêm causando mortes e grandes prejuízos ao desenvolvimento social e econômico. Nesse contexto, pesquisadores têm produzido medicamentos que contribuem para o tratamento dessas doenças.\n\nQue avanços tecnológicos têm contribuído para o tratamento dessas infecções virais?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Melhoria dos métodos de controle dos vetores desses vírus.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fabricação de soros mutagênicos para combate desses vírus.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Investimento da indústria em equipamentos de proteção individual.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Produção de vacinas que evitam a infecção das células hospedeiras.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Desenvolvimento de antirretrovirais que dificultam a reprodução desses vírus.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.00073,
+"b": 0.8684,
+"c": 0.16452,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 114",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/114",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-115",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 115,
+"area": "natureza",
+"enunciado": "O concreto utilizado na construção civil é um material formado por cimento misturado a areia, a brita e a água.\n\nA areia é normalmente extraída de leitos de rios e a brita, oriunda da fragmentação de rochas. Impactos ambientais gerados no uso do concreto estão associados à extração de recursos minerais e ao descarte indiscriminado desse material. Na tentativa de reverter esse quadro, foi proposta a utilização de concreto reciclado moído em substituição ao particulado rochoso graúdo na fabricação de novo concreto, obtendo um material com as mesmas propriedades que o anterior.\n\nO benefício ambiental gerado nessa proposta é a redução do(a):",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Extração da brita.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Extração da areia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Consumo de água.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Consumo de concreto.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Fabricação de cimento.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.02022,
+"b": 0.29761,
+"c": 0.0167,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 115",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/115",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-116",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 116,
+"area": "natureza",
+"enunciado": "A fluidez da membrana celular é caracterizada pela capacidade de movimento das moléculas componentes dessa estrutura. Os seres vivos mantêm essa propriedade de duas formas: controlando a temperatura e/ou alterando a composição lipídica da membrana. Neste último aspecto, o tamanho e o grau de insaturação das caudas hidrocarbônicas dos fosfolipídios, conforme representados na figura, influenciam significativamente a fluidez. Isso porque quanto maior for a magnitude das interações entre os fosfolipídios, menor será a fluidez da membrana.\n\n![](/questoes/natureza/a61871db825f6005.png)\n\nQual das bicamadas lipídicas apresentadas possui maior fluidez?",
+"imagens": [
+"/questoes/natureza/a61871db825f6005.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "II",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "III",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "IV",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "V",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.54974,
+"b": 0.97948,
+"c": 0.05877,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 116",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/116",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-117",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 117,
+"area": "natureza",
+"enunciado": "Em uma aula experimental de calorimetria, uma professora queimou 2,5 g de castanha-de-caju crua para aquecer 350 g de água, em um recipiente apropriado para diminuir as perdas de calor. Com base na leitura da tabela nutricional a seguir e da medida da temperatura da água, após a queima total do combustível, ela concluiu que 50% da energia disponível foi aproveitada. O calor específico da água é 1 cal g−1 °C−1, e sua temperatura inicial era de 20 °C.\n\n![](/questoes/natureza/d50d0aadbdfc76f6.png)\n\nQual foi a temperatura da água, em grau Celsius, medida ao final do experimento?",
+"imagens": [
+"/questoes/natureza/d50d0aadbdfc76f6.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "25",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "27",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "45",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "50",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "70",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.14647,
+"b": 1.67856,
+"c": 0.32644,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 117",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/117",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-118",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 118,
+"area": "natureza",
+"enunciado": "Grupos de pesquisa em todo o mundo vêm buscando soluções inovadoras, visando à produção de dispositivos para a geração de energia elétrica. Dentre eles, pode-se destacar as baterias de zinco-ar, que combinam o oxigênio atmosférico e o metal zinco em um eletrólito aquoso de caráter alcalino. O esquema de funcionamento da bateria zinco-ar está apresentado na figura.\n\n![](/questoes/natureza/4ec5282cf3c5c25c.png)\n\nNo funcionamento da bateria, a espécie química formada no ânodo é:",
+"imagens": [
+"/questoes/natureza/4ec5282cf3c5c25c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "H2 (g).",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O2 (g).",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "H2O (l).",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "OH− (aq).",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Zn(OH)4 2− (aq).",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.05808,
+"b": 8.96186,
+"c": 0.22071,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 118",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/118",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-119",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 119,
+"area": "natureza",
+"enunciado": "Dois amigos se encontram em um posto de gasolina para calibrar os pneus de suas bicicletas. Uma das bicicletas é de corrida (bicicleta **A**) e a outra, de passeio (bicicleta **B**). Os pneus de ambas as bicicletas têm as mesmas características, exceto que a largura dos pneus de **A** é menor que a largura dos pneus de **B**. Ao calibrarem os pneus das bicicletas **A** e **B**, respectivamente com pressões de calibração p**A** e p**B**, os amigos observam que o pneu da bicicleta **A** deforma, sob mesmos esforços, muito menos que o pneu da bicicleta **B**. Pode-se considerar que as massas de ar comprimido no pneu da bicicleta **A**, m**A**, e no pneu da bicicleta **B**, m**B**, são diretamente proporcionais aos seus volumes.\n\nComparando as pressões e massas de ar comprimido nos pneus das bicicletas, temos:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "PA < pB e mA < mB",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "PA > pB e mA < mB",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "PA > pB e mA = mB",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "PA < pB e mA = mB",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "PA > pB e mA > mB",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.85268,
+"b": 0.99689,
+"c": 0.12401,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 119",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/119",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-120",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 120,
+"area": "natureza",
+"enunciado": "A utilização de corantes na indústria de alimentos é bastante difundida e a escolha por corantes naturais vem sendo mais explorada por diversas razões. A seguir são mostradas três estruturas de corantes naturais.\n\n![](/questoes/natureza/24f7b75b17411d60.png)\n\nA propriedade comum às estruturas que confere cor a esses compostos é a presença de",
+"imagens": [
+"/questoes/natureza/24f7b75b17411d60.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Cadeia conjugada.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Cadeia ramificada.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Átomos de carbonos terciários.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ligações duplas de configuração cis.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Átomos de carbonos de hibridação sp³.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.20714,
+"b": 2.14905,
+"c": 0.08067,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 120",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/120",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-121",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 121,
+"area": "natureza",
+"enunciado": "Numa feira de ciências, um estudante utilizará o disco de Maxwell (ioiô) para demonstrar o princípio da conservação da energia. A apresentação consistirá em duas etapas.\n\nEtapa 1 – a explicação de que, à medida que o disco desce, parte de sua energia potencial gravitacional é transformada em energia cinética de translação e energia cinética de rotação;\n\nEtapa 2 – o cálculo da energia cinética de rotação do disco no ponto mais baixo de sua trajetória, supondo o sistema conservativo.\n\nAo preparar a segunda etapa, ele considera a aceleração da gravidade igual a 10 ms–2 e a velocidade linear do centro de massa do disco desprezível em comparação com a velocidade angular. Em seguida, mede a altura do topo do disco em relação ao chão no ponto mais baixo de sua trajetória, obtendo da altura da haste do brinquedo. As especificações de tamanho do brinquedo, isto é, de comprimento ( C ), largura (L) e altura (A), assim como da massa de seu disco de metal, foram encontradas pelo estudante no recorte de manual ilustrado a seguir.\n\n![](/questoes/natureza/dd5ad42b5cd6d6e0.png)\n\nO resultado do cálculo da etapa 2, em joule, é:",
+"imagens": [
+"/questoes/natureza/dd5ad42b5cd6d6e0.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "4,10 x 10^{ -2}​−2​​",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "8,20 x 10^{-2 }​−2​​",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "1,23 x 10^{ -1}​−1​​",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "8,20 x 10^{4 }​4​​",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "1,23 x 10^{ 5}​5​​",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.19339,
+"b": 2.04675,
+"c": 0.26041,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 121",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/121",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-122",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 122,
+"area": "natureza",
+"enunciado": "O odor que permanece nas mãos após o contato com alho pode ser eliminado pela utilização de um “sabonete de aço inoxidável”, constituído de aço inox (74%), cromo e níquel. A principal vantagem desse “sabonete” é que ele não se desgasta com o uso. Considere que a principal substância responsável pelo odor de alho é a alicina (estrutura I) e que, para que o odor seja eliminado, ela seja transformada na estrutura II.\n\n![](/questoes/natureza/178749cbdf060f7a.png)\n\nNa conversão de I em II, o “sabonete” atuará como um:",
+"imagens": [
+"/questoes/natureza/178749cbdf060f7a.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ácido.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Redutor.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Eletrólito.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Tensoativo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Catalisador.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 122",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/122",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-123",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 123,
+"area": "natureza",
+"enunciado": "A poluição radioativa compreende mais de 200 nuclídeos, sendo que, do ponto de vista de impacto ambiental, destacam-se o césio-137 e o estrôncio-90. A maior contribuição de radionuclídeos antropogênicos no meio marinho ocorreu durante as décadas de 1950 e 1960, como resultado dos testes nucleares realizados na atmosfera. O estrôncio-90 pode se acumular nos organismos vivos e em cadeias alimentares e, em razão de sua semelhança química, pode participar no equilíbrio com carbonato e substituir cálcio em diversos processos biológicos.\n\n**FIGUEIRA, R. C. L.; CUNHA, I. I. L. A contaminação dos oceanos por radionuclídeos antropogênicos. Química Nova, n. 21, 1998 (adaptado).**\n\nAo entrar numa cadeia alimentar da qual o homem faz parte, em qual tecido do organismo humano o estrôncio 90 será acumulado predominantemente?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Cartilaginoso.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Sanguíneo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Muscular.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Nervoso.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ósseo.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.79351,
+"b": 0.15609,
+"c": 0.14102,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 123",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/123",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-124",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 124,
+"area": "natureza",
+"enunciado": "Uma das técnicas de reciclagem química do polímero PET \\[poli(tereftalato de etileno)\\] gera o tereftalato de metila e o etanodiol, conforme o esquema de reação, e ocorre por meio de uma reação de transesterificação.\n\n![](/questoes/natureza/1c426dd14b315c5c.png)\n\nO composto A, representado no esquema de reação, é o:",
+"imagens": [
+"/questoes/natureza/1c426dd14b315c5c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Metano.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Metanol.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Éter metílico.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ácido etanoico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ácido etanoico.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.37739,
+"b": 1.59193,
+"c": 0.20921,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 124",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/124",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-125",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 125,
+"area": "natureza",
+"enunciado": "Durante sua evolução, as plantas apresentaram grande diversidade de características, as quais permitiram sua sobrevivência em diferentes ambientes. Na imagem, cinco dessas características estão indicadas por números.\n\n![](/questoes/natureza/1825926d7c3cec65.png)\n\nA aquisição evolutiva que permitiu a conquista definitiva do ambiente terrestre pelas plantas está indicada pelo número:",
+"imagens": [
+"/questoes/natureza/1825926d7c3cec65.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.62997,
+"b": 1.70518,
+"c": 0.1628,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 125",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/125",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-126",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 126,
+"area": "natureza",
+"enunciado": "Uma casa tem um cabo elétrico mal dimensionado, de resistência igual a 10, que a conecta à rede elétrica de 120V. Nessa casa, cinco lâmpadas, de resistência igual a 200, estão conectadas ao mesmo circuito que uma televisão de resistência igual a 50, conforme ilustrado no esquema. A televisão funciona apenas com tensão entre 90V e 130V.\n\n![](/questoes/natureza/7dd6e3f60d75d144.png)\n\nO número máximo de lâmpadas que podem ser ligadas sem que a televisão pare de funcionar é:",
+"imagens": [
+"/questoes/natureza/7dd6e3f60d75d144.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 7.09582,
+"b": 2.42384,
+"c": 0.23686,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 126",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/126",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-127",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 127,
+"area": "natureza",
+"enunciado": "O 2,4-dinitrofenol (DNP) é conhecido como desacoplador da cadeia de elétrons na mitocôndria e apresenta um efeito emagrecedor. Contudo, por ser perigoso e pela ocorrência de casos letais, seu uso como medicamento é proibido em diversos países, inclusive no Brasil. Na mitocôndria, essa substância captura, no espaço intermembranas, prótons (H+) provenientes da atividade das proteínas da cadeia respiratória, retornando-os à matriz mitocondrial. Assim, esses prótons não passam pelo transporte enzimático, na membrana interna.\n\n**GRUNDLINGH, J. et. al. 2,4-Dinitrophenol (DNP): a Weight Loss Agent with Significant Acute Toxicity and Risk of Death. Journal of Medical Toxicology, v. 7, 2011 (adaptado).**\n\nO efeito emagrecedor desse composto está relacionado ao(à):",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Obstrução da cadeia respiratória, resultando em maior consumo celular de ácidos graxos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Bloqueio das reações do ciclo de Krebs, resultando em maior gasto celular de energia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diminuição da produção de acetil CoA, resultando em maior gasto celular de piruvato.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Inibição da glicólise de ATP, resultando em maior gasto celular de nutrientes.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Redução da produção de ATP, resultando em maior gasto celular de nutrientes.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.54124,
+"b": 3.79854,
+"c": 0.17374,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 127",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/127",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-129",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 129,
+"area": "natureza",
+"enunciado": "Um dos parâmetros de controle de qualidade de polpas de frutas destinadas ao consumo como bebida é a acidez total expressa em ácido cítrico, que corresponde à massa dessa substância em 100 gramas de polpa de fruta. O ácido cítrico é uma molécula orgânica que apresenta três hidrogênios ionizáveis (ácido triprótico) e massa molar 192 g mol^{-1 }​−1​​. O quadro indica o valor mínimo desse parâmetro de qualidade para polpas comerciais de algumas frutas.\n\nA acidez total expressa em ácido cítrico de uma amostra comercial de polpa de fruta foi determinada. No procedimento, adicionou-se água destilada a 2,2 g da amostra e, após a solubilização do ácido cítrico, o sólido remanescente foi filtrado. A solução obtida foi titulada com solução de hidróxido de sódio 0,01 mol L–1, em que se consumiram 24 mL da solução básica (titulante).\n\n**BRASIL. Ministério da Agricultura e do Abastecimento. Instrução normativa n. 1, de 7 de janeiro de 2000. Disponível em: [www.agricultura.gov.br](http://www.agricultura.gov.br/). Acesso em: 9 maio 2019 (adaptado).**\n\n![](/questoes/natureza/90b788dce736f398.png)\n\nEntre as listadas, a amostra analisada pode ser de qual polpa de fruta?",
+"imagens": [
+"/questoes/natureza/90b788dce736f398.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Apenas caju.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Apenas maracujá.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Caju ou graviola.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Acerola ou cupuaçu.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Cupuaçu ou graviola.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.67587,
+"b": 1.59601,
+"c": 0.02169,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 129",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/129",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-130",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 130,
+"area": "natureza",
+"enunciado": "Uma cozinheira colocou sal a mais no feijão que estava cozinhando. Para solucionar o problema, ela acrescentou batatas cruas e sem tempero dentro da panela. Quando terminou de cozinhá-lo, as batatas estavam salgadas, porque absorveram parte do caldo com excesso de sal. Finalmente, ela adicionou água para completar o caldo do feijão.\n\nO sal foi absorvido pelas batatas por:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Osmose, por envolver apenas o transporte do solvente.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fagocitose, porque o sal transportado é uma substância sólida.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Exocitose, uma vez que o sal foi transportado da água para a batata.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Pinocitose, porque o sal estava diluído na água quando foi transportado.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Difusão, porque o transporte ocorreu a favor do gradiente de concentração.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.41094,
+"b": 1.15715,
+"c": 0.16829,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 130",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/130",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-131",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 131,
+"area": "natureza",
+"enunciado": "A agricultura de precisão reúne técnicas agrícolas que consideram particularidades locais do solo ou lavoura a fim de otimizar o uso de recursos. Uma das formas de adquirir informações sobre essas particularidades é a fotografia aérea de baixa altitude realizada por um veículo aéreo não tripulado (vant). Na fase de aquisição é importante determinar o nível de sobreposição entre as fotografias. A figura ilustra como uma sequência de imagens é coletada por um vant e como são formadas as sobreposições frontais.\n\nO operador do vant recebe uma encomenda na qual as imagens devem ter uma sobreposição frontal de 20% em um terreno plano. Para realizar a aquisição das imagens, seleciona uma altitude H fixa de voo de 1 000 m, a uma velocidade constante de 50 m s–1. A abertura da câmera fotográfica do vant é de 90º. Considere tg (45°) = 1.\n\n**Natural Resources Canada. Concepts of Aerial Photography. Disponível em: [www.nrcan.gc.ca](http://www.nrcan.gc.ca/). Acesso em: 26 abr. 2019 (adaptado).**\n\n![](/questoes/natureza/851fd0a70187ecd5.png)\n\nCom que intervalo de tempo o operador deve adquirir duas imagens consecutivas?",
+"imagens": [
+"/questoes/natureza/851fd0a70187ecd5.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "40 segundos",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "32 segundos",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "28 segundos",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "16 segundos",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "8 segundos",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.78669,
+"b": 1.78124,
+"c": 0.20473,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 131",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/131",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-132",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 132,
+"area": "natureza",
+"enunciado": "A maioria das pessoas fica com a visão embaçada ao abrir os olhos debaixo d’água. Mas há uma exceção: o povo moken, que habita a costa da Tailândia. Essa característica se deve principalmente à adaptabilidade do olho e à plasticidade do cérebro, o que significa que você também, com algum treinamento, poderia enxergar relativamente bem debaixo d’água. Estudos mostraram que as pupilas de olhos de indivíduos moken sofrem redução significativa debaixo d’água, o que faz com que os raios luminosos incidam quase paralelamente ao eixo óptico da pupila.\n\n**GISLÉN, A. et al. Visual Training Improves Underwater Vision in Children. Vision Research, n. 46, 2006 (adaptado).**\n\nA acuidade visual associada à redução das pupilas é fisicamente explicada pela diminuição",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Da intensidade luminosa incidente na retina.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Da difração dos feixes luminosos que atravessam a pupila.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Da intensidade dos feixes luminosos em uma direção por polarização.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Do desvio dos feixes luminosos refratados no interior do olho.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Das reflexões dos feixes luminosos no interior do olho.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.78539,
+"b": 1.58564,
+"c": 0.13602,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 132",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/132",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-133",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 133,
+"area": "natureza",
+"enunciado": "O “The Kidney Project” é um projeto realizado por cientistas que pretendem desenvolver um rim biônico que executará a maioria das funções biológicas do órgão. O rim biônico possuirá duas partes que incorporam recentes avanços de nanotecnologia, filtração de membrana e biologia celular. Esse projeto significará uma grande melhoria na qualidade de vida para aquelas pessoas que dependem da hemodiálise para sobrevivência.\n\n**Disponível em: [https://pharm.ucsf.edu](https://pharm.ucsf.edu/). Acesso em: 26 abr. 2019 (adaptado).**\n\nO dispositivo criado promoverá diretamente a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Remoção de ureia.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Excreção de lipídios.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Síntese de vasopressina.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Transformação de amônia.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Fabricação de aldosterona.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.92967,
+"b": 1.07472,
+"c": 0.22014,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 133",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/133",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2019-134",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 134,
+"area": "natureza",
+"enunciado": "Um experimento simples, que pode ser realizado com materiais encontrados em casa, é realizado da seguinte forma: adiciona-se um volume de etanol em um copo de vidro e, em seguida, uma folha de papel. Com o passar do tempo, observa-se um comportamento peculiar: o etanol se desloca sobre a superfície do papel, superando a gravidade que o atrai no sentido oposto, como mostra a imagem. Para parte dos estudantes, isso ocorre por causa da absorção do líquido pelo papel.\n\n![](/questoes/natureza/a2fe325ab0193a10.png)\n\nDo ponto de vista científico, o que explica o movimento do líquido é a",
+"imagens": [
+"/questoes/natureza/a2fe325ab0193a10.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Evaporação do líquido.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Diferença de densidades.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Reação química com o papel.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Capilaridade nos poros do papel.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Resistência ao escoamento do líquido.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.96175,
+"b": 0.58267,
+"c": 0.11175,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 134",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/134",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2019-135",
+"ano": 2019,
+"dia": 2,
+"caderno": "azul",
+"numero": 135,
+"area": "natureza",
+"enunciado": "Quando se considera a extrema velocidade com que a luz se espalha por todos os lados e que, quando vêm de diferentes lugares, mesmo totalmente opostos, os raios luminosos se atravessam uns aos outros sem se atrapalharem, compreende-se que, quando vemos um objeto luminoso, isso não poderia ocorrer pelo transporte de uma matéria que venha do objeto até nós, como uma flecha ou bala atravessa o ar; pois certamente isso repugna bastante a essas duas propriedades da luz, principalmente a última.\n\n**HUYGENS, C. in: MARTINS, R. A. Tratado sobre a luz, de Cristian Huygens. Caderno de História e Filosofia da Ciência, supl. 4, 1986.**\n\nO texto contesta que concepção acerca do comportamento da luz?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O entendimento de que a luz precisa de um meio de propagação, difundido pelos defensores da existência do éter.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O modelo ondulatório para a luz, o qual considera a possibilidade de interferência entre feixes luminosos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "O modelo corpuscular defendido por Newton, que descreve a luz como um feixe de partículas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A crença na velocidade infinita da luz, defendida pela maioria dos filósofos gregos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A ideia defendida pelos gregos de que a luz era produzida pelos olhos.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.42831,
+"b": 1.66707,
+"c": 0.29842,
+"fonte": "INEP, microdados do ENEM 2019 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2019, caderno azul (aplicação regular), questão 135",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2019/questions/135",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2019.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+}
+]

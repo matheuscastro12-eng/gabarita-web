@@ -1,0 +1,2766 @@
+[
+{
+"id": "enem-2016-46",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 46,
+"area": "natureza",
+"enunciado": "Em sua formulação, o spray de pimenta contém porcentagens variadas de oleorresina de Capsicum, cujo princípio ativo é a capsaicina, e um solvente (um álcool como etanol ou isopropanol). Em contato com os olhos, pele ou vias respiratórias, a capsaicina causa um efeito inflamatório que gera uma sensação de dor e ardor, levando à cegueira temporária. O processo é desencadeado pela liberação de neuropeptídios das terminações nervosas.\n\n**Como funciona o gás de pimenta**. Disponível em: http://pessoas.hsw.uol.com.br. Acesso em: 1 mar. 2012 (adaptado).\n\nQuando uma pessoa é atingida com o spray de pimenta nos olhos ou na pele, a lavagem da região atingida com água é ineficaz porque a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Reação entre etanol e água libera calor, intensificando o ardor.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Solubilidade do princípio ativo em água é muito baixa, dificultando a sua remoção.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Permeabilidade da água na pele é muito alta, não permitindo a remoção do princípio ativo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Solubilização do óleo em água causa um maior espalhamento além das áreas atingidas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ardência faz evaporar rapidamente a água, não permitindo que haja contato entre o óleo e o solvente.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 46",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/46",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-47",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 47,
+"area": "natureza",
+"enunciado": "A usina de Itaipu é uma das maiores hidrelétricas do mundo em geração de energia. Com 20 unidades geradoras e 14 000 MW de potência total instalada, apresenta uma queda de 118,4 m e vazão nominal de 690 m³/s por unidade geradora. O cálculo da potência teórica leva em conta a altura da massa de água represada pela barragem, a gravidade local (10 m/s²) e a densidade da água (1 000 kg/m³). A diferença entre a potência teórica e a instalada é a potência não aproveitada.\n\nDisponível em: www.itaipu.gov.br. Acesso em: 11 maio 2013 (adaptado).\n\nQual é a potência, em MW, não aproveitada em cada unidade geradora de Itaipu?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1,18",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "116,96",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "816,96",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "13 183,04",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 47",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/47",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": true,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-48",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 48,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/db2e31992590aa46.jpg)\n\nA Figura 2 ilustra o Projeto Park Spark, desenvolvido em Cambridge, MA (EUA), em que as fezes dos animais domésticos são recolhidas em sacolas biodegradáveis e jogadas em um biodigestor instalado em parques públicos; e os produtos são utilizados em equipamentos no próprio parque.\n\n![](/questoes/natureza/b4c79d7cd569d27e.jpg)\n\nUma inovação desse projeto é possibilitar o(a)",
+"imagens": [
+"/questoes/natureza/db2e31992590aa46.jpg",
+"/questoes/natureza/b4c79d7cd569d27e.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Queima de gás metano.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Armazenamento de gás carbônico.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Decomposição aeróbica das fezes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Uso mais eficiente de combustíveis fósseis.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Fixação de carbono em moléculas orgânicas.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 48",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/48",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-49",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 49,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/d54a0876c446ee54.png)\n\nQual esboço gráfico representa a frequência fo (t) detectada pelo observador?",
+"imagens": [
+"/questoes/natureza/d54a0876c446ee54.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/351710fcb4355ab1.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/e41ddc63806608ca.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/b8819c54a3a4c76d.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/b9bba469082a647c.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/a85d4df6e7c13333.png"
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 49",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/49",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-50",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 50,
+"area": "natureza",
+"enunciado": "O benzeno, um importante solvente para a indústria química, é obtido industrialmente pela destilação do petróleo. Contudo, também pode ser sintetizado pela trimerização do acetileno catalisada por ferro metálico sob altas temperaturas, conforme a equação química:\n\n3 C2H2 (g) → C6H6 (l) A energia envolvida nesse processo pode ser calculada indiretamente pela variação de entalpia das reações de combustão das substâncias participantes, nas mesmas condições experimentais:\n\nI. C2H2 (g) + O2 (g) → 2 CO2 (g) + H2O (l) ∆Hc° = −310 kcal/mol 2 II. C6H6 (l) + O2 (g) → 6 CO2 (g) + 3 H2O (l) ∆Hc° = −780 kcal/mol\n\n![](/questoes/natureza/inep_2016_50.png)\n\nA variação de entalpia do processo de trimerização, em kcal, para a formação de um mol de benzeno é mais próxima de",
+"imagens": [
+"/questoes/natureza/inep_2016_50.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "-1090.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "-150.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "-50.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "+157.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "+470.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 50",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/50",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-51",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 51,
+"area": "natureza",
+"enunciado": "Em meados de 2003, mais de 20 pessoas morreram no Brasil após terem ingerido uma suspensão de sulfato de bário utilizada como contraste em exames radiológicos. O sulfato de bário é um sólido pouquíssimo solúvel em água, que não se dissolve mesmo na presença de ácidos. As mortes ocorreram porque um laboratório farmacêutico forneceu o produto contaminado com carbonato de bário, que é solúvel em meio ácido. Um simples teste para verificar a existência de íons bário solúveis poderia ter evitado a tragédia. Esse teste consiste em tratar a amostra com solução aquosa de HCl e, após filtrar para separar os compostos insolúveis de bário, adiciona-se solução aquosa de H2SO4 sobre o filtrado e observa-se por 30 minutos\n\nTUBINO, M.; SIMONI, J.A. **Refletindo sobre o caso _celobar_®** Química Nova, n. 2, 2007 (adaptado).\n\nA presença de íons bário solúveis na amostra é indicada pela",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Liberação de calor.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Alteração da cor para rosa.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Precipitação de um sólido branco.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Formação de gás hidrogênio.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Volatilização de gás cloro.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 51",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/51",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-52",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 52,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/b2d957150d49d77b.png)\n\nO uso de feromônios em ações de controle de insetos-praga está de acordo com o modelo preconizado para a agricultura do futuro. São agentes altamente específicos e seus compostos químicos podem ser empregados em determinados cultivos, conforme ilustrado no quadro.\n\n![](/questoes/natureza/c21b6c54352dcc0e.png)\n\nConsiderando essas estruturas químicas, o tipo de estereoisomeria apresentada pelo bombicol é também apresentada pelo feromônio utilizado no controle do inseto",
+"imagens": [
+"/questoes/natureza/b2d957150d49d77b.png",
+"/questoes/natureza/c21b6c54352dcc0e.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Sitophilus spp.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Migdolus fryanus.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Anthonomus rubi.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Grapholita molesta.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Scrobipalpuloides absoluta.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 52",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/52",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-53",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 53,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/9e199edb0aa1f294.jpg)\n\nA etapa de hidrólise na produção de etanol a partir do milho é fundamental para que",
+"imagens": [
+"/questoes/natureza/9e199edb0aa1f294.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A glicose seja convertida em sacarose.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "As enzimas dessa planta sejam ativadas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A maceração favoreçа a solubilização em águа.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O amido seja transformado em substratos utilizáveis pela levedura.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Os grãos com diferentes composições químicas sejam padronizados.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 53",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/53",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-54",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 54,
+"area": "natureza",
+"enunciado": "Durante a primeira fase do projeto de uma usina de geração de energia elétrica, os engenheiros da equipe de avaliação de impactos ambientais procuram saber se esse projeto está de acordo com as normas ambientais.\n\nA nova planta estará localizada à beira de um rio, cuja temperatura média da água é de 25 °C, e usará a sua água somente para refrigeração. O projeto pretende que a usina opere com 1,0 MW de potência elétrica e, em razão de restrições técnicas, o dobro dessa potência será dissipada por seu sistema de arrefecimento, na forma de calor. Para atender a resolução número 430, de 13 de maio de 2011, do Conselho Nacional do Meio Ambiente, com uma ampla margem de segurança, os engenheiros determinaram que a água só poderá ser devolvida ao rio com um aumento de temperatura de, no máximo, 3 °C em relação à temperatura da água do rio captada pelo sistema de arrefecimento. Considere o calor específico da água igual a 4 kJ/(kg °C).\n\n![](/questoes/natureza/inep_2016_54.png)\n\nPara atender essa determinação, o valor minimo do fluxo de água, em kg/s, para a refrigeração da usina deve ser mais próximo de",
+"imagens": [
+"/questoes/natureza/inep_2016_54.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "42.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "84.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "167.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "250.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "500.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 54",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/54",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-55",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 55,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/861db427354f3fda.png)\n\n![](/questoes/natureza/177d3054354e9378.png)\n\nRelacionando as informações presentes nas figuras 1 e 2, como a intensidade sonora percebida é afetada pelo aumento da distância do microfone ao alto-falante?",
+"imagens": [
+"/questoes/natureza/861db427354f3fda.png",
+"/questoes/natureza/177d3054354e9378.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aumenta na faixa das frequências médias.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Diminui na faixa das frequências agudas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Diminui na faixa das frequências graves.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumenta na faixa das frequências médias altas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aumenta na faixa das frequências médias baixas.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 55",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/55",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-56",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 56,
+"area": "natureza",
+"enunciado": "As proteínas de uma célula eucariótica possuem peptídeos sinais, que são sequências de aminoácidos responsáveis pelo seu endereçamento para as diferentes organelas, de acordo com suas funções. Um pesquisador desenvolveu uma nanopartícula capaz de carregar proteínas para dentro de tipos celulares específicos. Agora ele quer saber se uma nanopartícula carregada com uma proteína bloqueadora do ciclo de Krebs _in vitro_ é capaz de exercer sua atividade em uma célula cancerosa, podendo cortar o aporte energético e destruir essas células.\n\nAo escolher essa proteína bloqueadora para carregar as nanopartículas, o pesquisador deve levar em conta um peptídeo sinal de endereçamento para qual organela?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Núcleo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Mitocôndria.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Peroxissomo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Complexo golgiense.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Retículo endoplasmático.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 56",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/56",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-57",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 57,
+"area": "natureza",
+"enunciado": "O morcego emite pulsos de curta duração de ondas ultrassônicas, os quais voltam na forma de ecos após atingirem objetos no ambiente, trazendo informações a respeito das suas dimensões, suas localizações e dos seus possíveis movimentos. Isso se dá em razão da sensibilidade do morcego em detectar o tempo gasto para os ecos voltarem, bem como das pequenas variações nas frequências e nas intensidades dos pulsos ultrassônicos.\n\nEssas características lhe permitem caçar pequenas presas mesmo quando estão em movimento em relação a si. Considere uma situação unidimensional em que uma mariposa se afasta, em movimento retilíneo e uniforme, de um morcego em repouso.\n\n![](/questoes/natureza/inep_2016_57.png)\n\nA distância e velocidade da mariposa, na situação descrita, seriam detectadas pelo sistema de um morcego por quais alterações nas características dos pulsos ultrassônicos?",
+"imagens": [
+"/questoes/natureza/inep_2016_57.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Intensidade diminuída, o tempo de retorno aumentado e a frequência percebida diminuída.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Intensidade aumentada, o tempo de retorno diminuído e a frequência percebida diminuída.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Intensidade diminuída, o tempo de retorno diminuído e a frequência percebida aumentada.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Intensidade diminuída, o tempo de retorno aumentado e a frequência percebida aumentada.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Intensidade aumentada, o tempo de retorno aumentado e a frequência percebida aumentada.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 57",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/57",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-58",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 58,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/8c28304041aef99a.png)\n\nem que n corresponde ao número de mols. O metanol pode ser obtido pela reação entre brometo de metila e hidróxido de sódio, conforme a equação química:\n\n![](/questoes/natureza/55bba4bb4f47eef1.png)\n\nAs massas molares (em g/mol) desses elementos são: H = 1; C = 12; O = 16; Na = 23; Br = 80.\nO rendimento molar da reação, em que 32 g de metanol foram obtidos a partir de 142,5 g de brometo de metila e 80 g de hidróxido de sódio, é mais próximo de",
+"imagens": [
+"/questoes/natureza/8c28304041aef99a.png",
+"/questoes/natureza/55bba4bb4f47eef1.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "22%.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "40%.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "50%.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "67%.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "75%.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 58",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/58",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-59",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 59,
+"area": "natureza",
+"enunciado": "Por apresentar significativa resistividade elétrica, o grafite pode ser utilizado para simular resistores elétricos em circuitos desenhados no papel, com o uso de lápis e lapiseiras. Dependendo da espessura e do comprimento das linhas desenhadas, é possível determinar a resistência elétrica de cada traçado produzido. No esquema foram utilizados três tipos de lápis diferentes (2H, HB e 6B) para efetuar três traçados distintos.\n\n![](/questoes/natureza/386379b4b93b9674.png)\n\nMunido dessas informações, um estudante pegou uma folha de papel e fez o desenho de um sorvete de casquinha utilizando-se desses traçados. Os valores encontrados nesse experimento, para as resistências elétricas (R), medidas com o auxílio de um ohmímetro ligado nas extremidades das resistências, são mostrados na figura. Verificou-se que os resistores obedeciam à Lei de Ohm.\n\n![](/questoes/natureza/a4efc8b84b2206dd.png)\n\nNa sequência, conectou o ohmímetro nos terminais A e B do desenho e, em seguida, conectou-o nos terminais B e C, anotando as leituras RAB e RBC, respectivamente. Ao estabelecer a razão RAB / RBC, qual resultado o estudante obteve?",
+"imagens": [
+"/questoes/natureza/386379b4b93b9674.png",
+"/questoes/natureza/a4efc8b84b2206dd.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "4/7",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "10/27",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "14/81",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "4/81",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 59",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/59",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-60",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 60,
+"area": "natureza",
+"enunciado": "O carvão ativado é um material que possui elevado teor de carbono, sendo muito utilizado para a remoção de compostos orgânicos voláteis do meio, como o benzeno.\n\nPara a remoção desses compostos, utiliza-se a adsorção.\n\nEsse fenômeno ocorre por meio de interações do tipo intermoleculares entre a superfície do carvão (adsorvente) e o benzeno (adsorvato, substância adsorvida).\n\n![](/questoes/natureza/inep_2016_60.png)\n\nNo caso apresentado, entre o adsorvente e a substância adsorvida ocorre a formação de:",
+"imagens": [
+"/questoes/natureza/inep_2016_60.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ligações dissulfeto.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ligações covalentes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ligações de hidrogênio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Interações dipolo induzido – dipolo induzido.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Interações dipolo permanente – dipolo permanente.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 60",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/60",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-61",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 61,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/0f176f7e22baae41.jpg)\n\nO pesquisador concluiu corretamente que os peixes controlam a densidade dos(as)",
+"imagens": [
+"/questoes/natureza/0f176f7e22baae41.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Algas, estimulando seu crescimento.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Cracas, predando especialmente animais pequenos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Mexilhões, predando especialmente animais pequenos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Quatro espécies testadas, predando indivíduos pequenos",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ascídias, apesar de não representarem os menores organismos.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 61",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/61",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-62",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 62,
+"area": "natureza",
+"enunciado": "Ao percorrer o trajeto de uma cadeia alimentar, o carbono, elemento essencial e majoritário da matéria orgânica que compõe os indivíduos, ora se encontra em sua forma inorgânica, ora se encontra em sua forma orgânica. Em uma cadeia alimentar composta por fitoplâncton, zooplâncton, moluscos, crustáceos e peixes ocorre a transição desse elemento da forma inorgânica para a orgânica.\n\n![](/questoes/natureza/inep_2016_62.png)\n\nEm qual grupo de organismos ocorre essa transição?",
+"imagens": [
+"/questoes/natureza/inep_2016_62.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fitoplâncton.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Zooplâncton.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Moluscos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Crustáceos",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Peixes.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 62",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/62",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-63",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 63,
+"area": "natureza",
+"enunciado": "Dois veículos que trafegam com velocidade constante em uma estrada, na mesma direção e sentido, devem manter entre si uma distância mínima.\n\nIsso porque o movimento de um veículo, até que ele pare totalmente, ocorre em duas etapas, a partir do momento em que o motorista detecta um problema que exige uma freada brusca. A primeira etapa é associada à distância que o veículo percorre entre o intervalo de tempo da detecção do problema e o acionamento dos freios. Já a segunda se relaciona com a distância que o automóvel percorre enquanto os freios agem com desaceleração constante.\n\n![](/questoes/natureza/inep_2016_63.png)\n\nConsiderando a situação descrita, qual esboço gráfico representa a velocidade do automóvel em relação à distância percorrida até parar totalmente?",
+"imagens": [
+"/questoes/natureza/inep_2016_63.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/93796e48c780ff67.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/455e00491e619c25.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/078e5db506e8d013.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/ca63e72c6c118365.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/69783341737af4b1.png"
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 63",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/63",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-64",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 64,
+"area": "natureza",
+"enunciado": "TEXTO I\n\nBiocélulas combustíveis são uma alternativa tecnológica para substituição das baterias convencionais. Em uma biocélula microbiológica, bactérias catalisam reações de oxidação de substratos orgânicos. Liberam elétrons produzidos na respiração celular para um eletrodo, onde fluem por um circuito elétrico até o cátodo do sistema, produzindo corrente elétrica. Uma reação típica que ocorre em biocélulas microbiológicas utiliza o acetato como substrato.\n\nAQUINO NETO, S. **Preparação e caracterização de bioanodos para biocélula a combustível etanol/O2** . Disponível em: www.teses.usp.br. Acesso em: 23 jun. 2015 (adaptado).\n\nTEXTO II\n\nEm sistemas bioeletroquímicos, os potenciais padrão (E°’) apresentam valores característicos. Para as biocélulas de acetato, considere as seguintes semirreações de redução e seus respectivos potenciais:\n\n2 CO2 + 7H+ + 8e– → CH3COO– + 2H2O               E°’ = -0,3 V\n\nO2 + 4H+ + 4e– → 2H2O                                             E°’ = 0,8V.\n\nSCOTT, K.; YU, E. H. **Microbial electrochemical and fuel cells: fundamentals and applications**. Woodhead Publishing Series in Energy, n. 88, 2016 (adaptado).\n\nNessas condições, qual é o número mínimo de biocélulas de acetato, ligadas em série, necessárias para se obter uma diferença de potencial de 4,4 V?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "6",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "9",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "15",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 64",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/64",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-65",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 65,
+"area": "natureza",
+"enunciado": "A formação de coágulos sanguíneos em veias e artérias é um dos fatores responsáveis pela ocorrência de doenças cardiovasculares, como varizes, infarto e acidentes vasculares cerebrais. A prevenção e o tratamento dessas doenças podem ser feitos com drogas anticoagulantes. A indústria farmacêutica estimula a pesquisa de toxinas animais com essa propriedade.\n\nConsiderando as adaptações relacionadas aos hábitos alimentares, os animais adequados ao propósito dessas pesquisas são os(as)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Moluscos fitófagos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Moscas saprófagas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Pássaros carnívoros.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Morcegos frugívoros.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Mosquitos hematófagos.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 65",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/65",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-66",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 66,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/8d33d141c7eaa3be.png)\n\n![](/questoes/natureza/1ac6a07350d12c72.png)\n\nA frequência de giro do ponteiro, em RPM, é",
+"imagens": [
+"/questoes/natureza/8d33d141c7eaa3be.png",
+"/questoes/natureza/1ac6a07350d12c72.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "4.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "81.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "162.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 66",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/66",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-67",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 67,
+"area": "natureza",
+"enunciado": "Primeiro, em relação àquilo a que chamamos água, quando congela, parece-nos estar a olhar para algo que se tornou pedra ou terra, mas quando derrete e se dispersa, esta torna-se bafo e ar; o ar, quando é queimado, torna-se fogo; e, inversamente, o fogo, quando se contrai e se extingue, regressa à forma do ar; o ar, novamente concentrado e contraído, torna-se nuvem e nevoeiro, mas, a partir destes estados, se for ainda mais comprimido, torna-se água corrente, e de água torna-se novamente terra e pedras; e deste modo, como nos parece, dão geração uns aos outros de forma cíclica.\n\nPLATÃO. **Timeu-Crítias**. Coimbra: CECH, 2011.\n\nDo ponto de vista da ciência moderna, os “quatro elementos” descritos por Platão correspondem, na verdade, às fases sólida, líquida, gasosa e plasma da matéria. As transições entre elas são hoje entendidas como consequências macroscópicas de transformações sofridas pela matéria em escala microscópica.\n\nExcetuando-se a fase de plasma, essas transformações sofridas pela matéria, em nível microscópico, estão associadas a uma",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Troca de átomos entre as diferentes moléculas do material.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Transmutação nuclear dos elementos químicos do material.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Redistribuição de prótons entre os diferentes átomos do material.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Mudança na estrutura espacial formada pelos diferentes constituintes do material.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Alteração nas proporções dos diferentes isótopos de cada elemento presente no material.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 67",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/67",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-68",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 68,
+"area": "natureza",
+"enunciado": "Para cada litro de etanol produzido em uma indústria de cana-de-açúcar são gerados cerca de 18 L de vinhaça que é utilizada na irrigação das plantações de cana-de-açúcar, já que contém teores médios de nutrientes N, P e K iguais a 357 mg/L, 60 mg/L e 2 034 mg/L, respectivamente.\n\nSILVA, M. A. S.; GRIEBELER, N. P.; BORGES, L. C. Uso de vinhaça e impactos nas propriedades do solo e lençol freático. **Revista Brasileira de Engenharia Agrícola e Ambiental**, n. 1, 2007 (adaptado).\n\nNa produção de 27 000 L de etanol, a quantidade total de fósforo, em kg, disponível na vinhaça será mais próxima de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "29.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "60.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "170.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "1000.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 68",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/68",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-69",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 69,
+"area": "natureza",
+"enunciado": "Recentemente um estudo feito em campos de trigo mostrou que níveis elevados do dióxido de carbono na atmosfera prejudicam a absorção de nitrato pelas plantas. Consequentemente, a qualidade nutricional desses alimentos pode diminuir à medida que os níveis de dióxido de carbono na atmosfera atingirem as estimativas para as próximas décadas.\n\nBloom, A J et al. Nitrate assimilation is inhibited by elevated CO2 in field grown wheat. **Nature Climate Change**, n. 4., abr 2014, adaptado.\n\nNesse contexto, a qualidade nutricional do grão de trigo será modificada primeiramente pela redução de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Amido.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Frutose.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Lipídeos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Celulose.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Proteínas.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 69",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/69",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-70",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 70,
+"area": "natureza",
+"enunciado": "Pesquisadores recuperaram DNA de ossos de mamute (_Mammuthus primigenius_) encontrados na Sibéria, que tiveram sua idade de cerca de 28 mil anos confirmada pela técnica do carbono-14.\n\nFAPESP. **DNA de mamute é revelado**. Disponível em: http://agencia.fapesp.br. Acesso em: 13 ago. 2012 (adaptado).\n\nA técnica de datação apresentada no texto só é possível devido à",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Proporção conhecida entre carbono-14 e carbono-12 na atmosfera ao longo dos anos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Decomposição de todo o carbono-12 presente no organismo após a morte.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Fixação maior do carbono-14 nos tecidos de organismos após a morte.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Emissão de carbono-12 pelos tecidos de organismos após a morte.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Transformação do carbono-12 em carbono-14 ao longo dos anos.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 70",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/70",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-71",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 71,
+"area": "natureza",
+"enunciado": "A vegetação apresenta adaptações ao ambiente, como plantas arbóreas e arbustivas com raízes que se expandem horizontalmente, permitindo forte ancoragem no substrato lamacento; raízes que se expandem verticalmente, por causa da baixa oxigenação do substrato; folhas que têm glândulas para eliminar o excesso de sais; folhas que podem apresentar cutícula espessa para reduzir a perda de água por evaporação.\n\nAs características descritas referem-se a plantas adaptadas ao bioma:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Cerrado.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Pampas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Pantanal.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Manguezal.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Mata de Cocais.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 71",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/71",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-72",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 72,
+"area": "natureza",
+"enunciado": "Uma pessoa é responsável pela manutenção de uma sauna úmida. Todos os dias cumpre o mesmo ritual: colhe folhas de capim-cidreira e algumas folhas de eucalipto. Em seguida, coloca as folhas na saída do vapor da sauna, aromatizando-a, conforme mostrado na figura.\n\n![](/questoes/natureza/c61b663e4def5ae9.png)\n\nQual processo de separação é responsável pela aromatização promovida?",
+"imagens": [
+"/questoes/natureza/c61b663e4def5ae9.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Filtração simples.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Destilação simples.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Extração por arraste.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Sublimação fracionada.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Decantação sólido-líquido.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 72",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/72",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-73",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 73,
+"area": "natureza",
+"enunciado": "Os ecossistemas degradados por intensa atividade agrícola apresentam geralmente, diminuição de sua a estabilidade. Nesse contexto, o uso integrado de árvores aos sistemas agrícolas (sistemas agroflorestais) pode cumprir um papel inovador ao buscar a aceleração do processo sucessional e, ao mesmo tempo, uma produção escalonada e diversificada.\n\nDisponível em: saf.cnpgc.embrapa.br. Acesso em 21 jan. 2012 (adaptado)\n\nEssa é uma estratégia de conciliação entre recuperação ambiental e produção agrícola, pois",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Substitui gradativamente as espécies cultiváveis por espécies arbóreas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Intensifica a fertilização do solo com o uso de técnicas apropriadas e biocidas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Promove maior diversidade de vida no solo como aumento da matéria orgânica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Favorece a dispersão das sementes cultivadas pela fauna residente nas áreas florestais.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Cria condições para o estabelecimento de espécies pioneiras com a diminuição da insolação sobre o solo.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 73",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/73",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-74",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 74,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/aa6faef4ce986b56.png)\n\nO técnico concluiu que as correntes que apresentam o mesmo valor são",
+"imagens": [
+"/questoes/natureza/aa6faef4ce986b56.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "IA = IE e IC = ID.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "IA = IB = IE e IC = ID.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "IA = IB, apenas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "IA = IB = IE, apenas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "IC = IB, apenas.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 74",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/74",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-75",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 75,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/19688bafc1e4ea0c.jpg)\n\nMesmo que essa  planta viesse sofrer ação contínua do vento e sua copa crescesse voltada para baixo, essa seiva continuaria naturalmente seu percurso.\nO que garante o transporte dessa seiva é a",
+"imagens": [
+"/questoes/natureza/19688bafc1e4ea0c.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Gutação.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Gravidade.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Respiração.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Fotossíntese.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Transpiração.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 75",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/75",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-76",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 76,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/84b2c32cef243975.png)\n\nA reação de SN entre metóxido de sódio (Nu– = CH3O–) e brometo de metila fornece um composto orgânico pertencente à função",
+"imagens": [
+"/questoes/natureza/84b2c32cef243975.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Éter.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Éster.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Álcool.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Haleto.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Hidrocarboneto.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 76",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/76",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-77",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 77,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/fb26693b6ce50daf.png)\n\n![](/questoes/natureza/ed6a8e6144a6705c.png)\n\nCom base nos dados experimentais, o valor da massa do carrinho 2 é igual a",
+"imagens": [
+"/questoes/natureza/fb26693b6ce50daf.png",
+"/questoes/natureza/ed6a8e6144a6705c.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "50,0 g",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "250,0 g",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "300,0 g",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "450,0 g",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "600,0 g",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 77",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/77",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-78",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 78,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/d4a0b924ded0852d.png)\n\nDentre as substâncias listadas no quadro, aquela capaz de remover com maior eficiência os gases poluentes é o(a)",
+"imagens": [
+"/questoes/natureza/d4a0b924ded0852d.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fenol.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Piridina.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Metilamina.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Hidrogenofosfato de potássio.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Hidrogenosulfato de potássio.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 78",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/78",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-79",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 79,
+"area": "natureza",
+"enunciado": "Vários métodos são empregados para prevenção de infecções por microrganismos. Dois desses métodos utilizam microrganismos vivos e são eles: as vacinas atenuadas, constituidas por patógenos avirulentos, e os probióticos que contém bactérias benéficas. Na figura são apresentados cinco diferentes mecanismos de exclusão de patógenos pela ação dos probióticos no intestino de um animal.\n\n![](/questoes/natureza/a07dd153fba51528.jpg)\n\nQual mecanismo de ação desses probióticos promove um efeito similar ao da vacina?",
+"imagens": [
+"/questoes/natureza/a07dd153fba51528.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "5",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "1",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 79",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/79",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-80",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 80,
+"area": "natureza",
+"enunciado": "O Painel Intergovernamental de Mudanças Climáticas (na sigla em inglês, IPCC) prevê que nas próximas décadas o planeta passará por mudanças climáticas e propõe estratégias de mitigação e adaptação a elas. As _estratégias de mitigação_ são direcionadas à causa dessas mudanças, procurando reduzir a concentração de gases de efeito estufa na atmosfera. As _estratégias de adaptação_, por sua vez, são direcionadas aos efeitos dessas mudanças, procurando preparar os sistemas humanos às mudanças climáticas já em andamento, de modo a reduzir seus efeitos negativos.\n\nIPCC, 2014. **Climate Change 2014: synthesis report**. Disponível em: http://w5-syr.ipcc.ch. Acesso em: 22 out 2015 (adaptado)\n\nConsiderando as informações do texto, qual ação representa uma estratégia de adaptação?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Construção de usinas eólicas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Tratamento de resíduos sólidos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aumento da eficiência dos veículos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Adoção de agricultura sustentável de baixo carbono.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Criação de diques de contenção em regiões costeiras.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 80",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/80",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-81",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 81,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/9e21bd6913728027.png)\n\nEm relação ao coeficiente de partição da testosterona, as lipofilias dos compostos 1 e 2 são, respectivamente,",
+"imagens": [
+"/questoes/natureza/9e21bd6913728027.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Menor e menor que a lipofilia da testosterona.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Menor e maior que a lipofilia da testosterona.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Maior e menor que a lipofilia da testosterona.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Maior e maior que a lipofilia da testosterona.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Menor e igual que a lipofilia da testosterona.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 81",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/81",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-82",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 82,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/9d933a69e9c137cf.png)\n\nO número mínimo de polias móveis usadas, nessa situação, por Arquimedes foi",
+"imagens": [
+"/questoes/natureza/9d933a69e9c137cf.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "3.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "6.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "7.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "8.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "10.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 82",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/82",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-83",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 83,
+"area": "natureza",
+"enunciado": "O Brasil possui um grande número de espécies distintas entre animais, vegetais e microrganismos envoltos em uma imensa complexidade e distribuídas em uma grande variedade de ecossistemas.\n\nSANDES, A R. R. BLASI, G. **Biodiversidade e diversidade química e genética**. Disponível em: http://novastecnologias.com.br. Acesso em 22 set 2015 (adaptado).\n\nO incremento da variabilidade ocorre em razão da permuta genética, a qual propicia a troca de segmentos entre cromátides não irmãs na meiose.\nEssa troca de segmentos é determinante na",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Produção de indivíduos mais férteis.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Transmissão de novas características adquiridas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Recombinação genética na formação dos gametas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ocorrência de mutações somáticas nos descendentes.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Variação do número de cromossomos característico da espécie.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 83",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/83",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2016-84",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 84,
+"area": "natureza",
+"enunciado": "Num experimento, um professor deixa duas bandejas de mesma massa, uma de plástico e outra de alumínio, sobre a mesa do laboratório. Após algumas horas, ele pede aos alunos que avaliem a temperatura das duas bandejas, usando para isso o tato. Seus alunos afirmam, categoricamente, que a bandeja de alumínio encontra-se numa temperatura mais baixa. Intrigado, ele propõe uma segunda atividade, em que coloca um cubo de gelo sobre cada uma das bandejas, que estão em equilíbrio térmico com o ambiente, e os questiona em qual delas a taxa de derretimento do gelo será maior.\n\n![](/questoes/natureza/inep_2016_84.png)\n\nO aluno que responder corretamente ao questionamento do professor dirá que o derretimento ocorrerá",
+"imagens": [
+"/questoes/natureza/inep_2016_84.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Mais rapidamente na bandeja de alumínio, pois ela tem uma maior condutividade térmica que a de plástico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Mais rapidamente na bandeja de plástico, pois ela tem inicialmente uma temperatura mais alta que a de alumínio.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Mais rapidamente na bandeja de plástico, pois ela tem uma maior capacidade térmica que a de alumínio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Mais rapidamente na bandeja de alumínio, pois ela tem um calor específico menor que a de plástico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Com a mesma rapidez nas duas bandejas, pois apresentarão a mesma variação de temperatura.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 84",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/84",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-85",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 85,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/61f052583789fe66.png)\n\nEsse arranjo é representado esquematicamente por:",
+"imagens": [
+"/questoes/natureza/61f052583789fe66.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/739448792e2fdbfd.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/5f3126ec424b64b4.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/b2e2f02ecd3af552.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/a30d5a4be20aee93.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/4a82643a71af7320.png"
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 85",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/85",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-86",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 86,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/3bbada6ed5cfaa53.png)\n\nDe acordo com a figura, que posições correspondem a dois pontos consecutivos da manteiga derretida?",
+"imagens": [
+"/questoes/natureza/3bbada6ed5cfaa53.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I e III",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "I e V",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "II e III",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "II e IV",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "II e V",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 86",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/86",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-87",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 87,
+"area": "natureza",
+"enunciado": "Portadores de diabetes insipidus reclamam da confusão feita pelos profissionais da saúde quanto aos dois tipos de diabetes: mellitus e insipidus. Enquanto o primeiro tipo está associado aos níveis ou à ação da insulina, o segundo não está ligado à deficiência desse hormônio. O diabetes insipidus é caracterizado por um distúrbio na produção ou no funcionamento do hormônio antidiurético (na sigla em inglês, ADH), secretado pela neuro-hipófise para controlar a reabsorção de água pelos túbulos renais.\n\n![](/questoes/natureza/inep_2016_87.png)\n\nTendo em vista o papel funcional do ADH, qual é um sintoma clássico de um paciente acometido por diabetes insipidus?",
+"imagens": [
+"/questoes/natureza/inep_2016_87.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Alta taxa de glicose no sangue.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aumento da pressão arterial.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ganho de massa corporal.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Anemia crônica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Desidratação.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 87",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/87",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-88",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 88,
+"area": "natureza",
+"enunciado": "A magnetohipertermia é um procedimento terapêutico que se baseia na elevação da temperatura das células de uma região específica do corpo que estejam afetadas por um tumor. Nesse tipo de tratamento, nanopartículas magnéticas são fagocitadas pelas células tumorais, e um campo magnético alternado externo é utilizado para promover a agitação das nanopartículas e consequente aquecimento da célula.\n\n![](/questoes/natureza/inep_2016_88.png)\n\nA elevação de temperatura descrita ocorre porque",
+"imagens": [
+"/questoes/natureza/inep_2016_88.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O campo magnético gerado pela oscilação das nanopartículas é absorvido pelo tumor.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O campo magnético alternado faz as nanopartículas girarem, transferindo calor por atrito.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "As nanopartículas interagem magneticamente com as células do corpo, transferindo calor.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O campo magnético alternado fornece calor para as nanopartículas que o transfere às células do corpo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "As nanopartículas são aceleradas em um único sentido em razão da interação com o campo magnético, fazendo-as colidir com as células e transferir calor.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 88",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/88",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-89",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 89,
+"area": "natureza",
+"enunciado": "O aquecimento de um material por irradiação com micro-ondas ocorre por causa da interação da onda eletromagnética com o dipolo elétrico da molécula. Um importante atributo do aquecimento por micro-ondas é a absorção direta da energia pelo material a ser aquecido. Assim, esse aquecimento é seletivo e dependerá, principalmente, da constante dielétrica e da frequência de relaxação do material. O gráfico mostra a taxa de aquecimento de cinco solventes sob irradiação de micro-ondas.\n\nBARBOZA, A. C. R. N. et al. Aquecimento em forno de micro-ondas. Desenvolvimento de alguns conceitos fundamentais. **Química Nova**, n. 6, 2001 (adaptado).\n\n![](/questoes/natureza/f830ca12bef311dd.png)\n\nNo gráfico, qual solvente apresenta taxa média de aquecimento mais próxima de zero, no intervalo de 0 s a 40 s?",
+"imagens": [
+"/questoes/natureza/f830ca12bef311dd.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "H2O",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "CH3OH",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "CH3CH2OH",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "CH3CH2CH2OH",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "CH3CH2CH2CH2CH2CH3",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 89",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/89",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2016-90",
+"ano": 2016,
+"dia": 2,
+"caderno": "azul",
+"numero": 90,
+"area": "natureza",
+"enunciado": "Apesar da grande diversidade biológica, a hipótese de que a vida na Terra tenha tido uma única origem comum é aceita pela comunidade científica.\n\nUma evidência que apoia essa hipótese é a observação de processos biológicos comuns a todos os seres vivos atualmente existentes.\n\n![](/questoes/natureza/inep_2016_90.png)\n\nUm exemplo de tal processo é o(a)",
+"imagens": [
+"/questoes/natureza/inep_2016_90.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Desenvolvimento embrionário.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Reprodução sexuada.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Respiração aeróbica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Excreção urinária.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Síntese proteica.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2016, caderno azul (aplicação regular), questão 90",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2016/questions/90",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2016.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+}
+]

@@ -1,0 +1,2960 @@
+[
+{
+"id": "enem-2011-46",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 46,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/105917a74268f0d3.png)\n\nA explicação para a necessidade do uso da engrenagem com trava é:",
+"imagens": [
+"/questoes/natureza/105917a74268f0d3.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O travamento do motor, para que ele não se solte aleatoriamente.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A seleção da velocidade, controlada pela pressão nos dentes da engrenagem.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "O controle do sentido da velocidade tangencial, permitindo, inclusive, uma fácil leitura do seu valor.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A determinação do movimento, devido ao caráter aleatório, cuja tendência é o equilíbrio.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A escolha do ângulo a ser girado, sendo possível, inclusive, medi-lo pelo número de dentes da engrenagem.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.95998,
+"b": 2.47488,
+"c": 0.13616,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 46",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/46",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-47",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 47,
+"area": "natureza",
+"enunciado": "Os personagens da figura estão representando uma situação hipotética de cadeia alimentar.\n\n![](/questoes/natureza/3e68f5e10735b1f3.jpg)\n\nSuponha que, em cena anterior à apresentada, o homem tenha se alimentado de frutas e grãos que conseguiu coletar. Na hipótese de, nas próximas cenas, o tigre ser bem-sucedido e, posteriormente, servir de alimento aos abutres, tigre e abutres ocuparão, respectivamente, os níveis tróficos de",
+"imagens": [
+"/questoes/natureza/3e68f5e10735b1f3.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Produtor e consumidor primário.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Consumidor primário e consumidor secundário.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Consumidor secundário e consumidor terciário.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Consumidor terciário e produtor.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Consumidor secundário e consumidor primário.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.6033,
+"b": 0.07698,
+"c": 0.22333,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 47",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/47",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-48",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 48,
+"area": "natureza",
+"enunciado": "A produção de soro antiofídico é feita por meio da extração da peçonha de serpentes que, após tratamento é introduzida em um cavalo. Em seguida são feitas sangrias para avaliar a concentração de anticorpos produzidos pelo cavalo. Quando essa concentração atinge o valor desejado, é realizada a sangria final para obtenção do soro. As hemácias são devolvidas ao animal, por meio de uma técnica denominada plasmaferese, a fim de reduzir os efeitos colaterais provocados pela sangria.\n\nDisponível em: http://www.infobibos.com. Acesso em: 28 abr. 2010 (adaptado).\n\nA plasmaferese é importante, pois, se o animal ficar com uma baixa quantidade de hemácias, poderá apresentar",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Febre alta e constante.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Redução de imunidade.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aumento da pressão arterial.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Quadro de leucemia profunda.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Problemas no transporte de oxigênio.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.58475,
+"b": 0.63064,
+"c": 0.1944,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 48",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/48",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-49",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 49,
+"area": "natureza",
+"enunciado": "Um paciente deu entrada em um pronto-socorro apresentando os seguintes sintomas: cansaço, dificuldade em respirar e sangramento nasal. O médico solicitou um hemograma ao paciente para definir um diagnóstico. Os resultados estão dispostos na tabela:\n\n![](/questoes/natureza/5fc437942e090eca.jpg)\n\nRelacionando os sintomas apresentados pelo paciente com os resultados de seu hemograma, constata-se que",
+"imagens": [
+"/questoes/natureza/5fc437942e090eca.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O sangramento nasal é devido à baixa quantidade de plaquetas, que são responsáveis pela coagulação sanguínea.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O cansaço ocorreu em função da quantidade de glóbulos brancos, que são responsáveis pela coagulação sanguínea.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A dificuldade respiratória decorreu da baixa quantidade de glóbulos vermelhos, que são responsáveis pela defesa imunológica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "O sangramento nasal é decorrente da baixa quantidade de glóbulos brancos, que são responsáveis pelo transporte de gases no sangue.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A dificuldade respiratória ocorreu pela quantidade de plaquetas, que são responsáveis pelo transporte de oxigênio no sangue.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.5329,
+"b": 0.4356,
+"c": 0.25073,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 49",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/49",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-50",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 50,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/96397583e53b7167.jpg)\n\nNeste contexto, qual dos combustíveis, quando queimado completamente, libera mais dióxido de carbono no ambiente pela mesma quantidade de energia produzida?",
+"imagens": [
+"/questoes/natureza/96397583e53b7167.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Benzeno.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Metano.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Glicose.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Octano.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Etanol.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.94675,
+"b": 1.84632,
+"c": 0.05897,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 50",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/50",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-51",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 51,
+"area": "natureza",
+"enunciado": "Para evitar o desmatamento da Mata Atlântica nos arredores da cidade de Amargosa, no Recôncavo da Bahia, o Ibama tem atuado no sentido de fiscalizar, entre outras, as pequenas propriedades rurais que dependem da lenha proveniente das matas para a produção da farinha de mandioca, produto típico da região. Com isso, pequenos produtores procuram alternativas como o gás de cozinha, o que encarece a farinha.\n\nUma alternativa viável, em curto prazo, para os produtores de farinha em Amargosa, que não cause danos à Mata Atlântica nem encareça o produto é a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Construção, nas pequenas propriedades, de grandes fornos elétricos para torrar a mandioca.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Plantação, em suas propriedades, de árvores para serem utilizadas na produção de lenha.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Permissão, por parte do Ibama, da exploração da Mata Atlântica apenas pelos pequenos produtores.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Construção de biodigestores, para a produção de gás combustível a partir de resíduos orgânicos da região.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Coleta de carvão de regiões mais distantes, onde existe menor intensidade de fiscalização do Ibama.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.68497,
+"b": 0.57856,
+"c": 0.04935,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 51",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/51",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-52",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 52,
+"area": "natureza",
+"enunciado": "Belém é cercada por 39 ilhas, e suas populações convivem com ameaças de doenças. O motivo, apontado por especialistas, é a poluição da água do rio, principal fonte de sobrevivência dos ribeirinhos. A diarreia é frequente nas crianças e ocorre como consequência da falta de saneamento básico, já que a população não tem acesso à água de boa qualidade. Como não há água potável, a alternativa é consumir a do rio.\n\nO procedimento adequado para tratar a água dos rios, afim de atenuar os problemas de saúde causados por microrganismos a essas populações ribeirinhas é a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Filtração.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Cloração.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Coagulação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Fluoretação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Decantação.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.58646,
+"b": 1.13389,
+"c": 0.14651,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 52",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/52",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-53",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 53,
+"area": "natureza",
+"enunciado": "O vírus do papiloma humano (HPV, na sigla em inglês) causa o aparecimento de verrugas e infecção persistente, sendo o principal fator ambiental do câncer de colo de útero nas mulheres. O vírus pode entrar pela pele ou por mucosas do corpo, o qual desenvolve anticorpos contra a ameaça, embora em alguns casos a defesa natural do organismo não seja suficiente. Foi desenvolvida uma vacina contra o HPV, que reduz em até 90% as verrugas e 85,6% dos casos de infecção persistente em comparação com pessoas não vacinadas.\n\nDisponível em: http://g1.globo.com. Acesso em: 12 jun. 2011.\n\nO benefício da utilização dessa vacina é que pessoas vacinadas, em comparação com as não vacinadas, apresentam diferentes respostas ao vírus HPV em decorrência da",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Alta concentração de macrófagos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Elevada taxa de anticorpos específicos anti-HPV circulantes.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aumento na produção de hemácias após a infecção por vírus HPV.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Rapidez na produção de altas concentrações de linfócitos matadores.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Presença de células de memória que atuam na resposta secundária.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.08059,
+"b": 1.55768,
+"c": 0.06116,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 53",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/53",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-54",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 54,
+"area": "natureza",
+"enunciado": "Certas ligas estanho-chumbo com composição específica formam um estético simples, o que significa que uma liga com essas características se comporta como uma substância pura, com um ponto de fusão definido, no caso 183 ºC. Essa é uma temperatura inferior mesmo ao ponto de fusão dos metais que compõem esta liga (o estanho puro funde a 232 ºC e o chumbo puro a 320 ºC), o que justifica sua ampla utilização na soldagem de componentes eletrônicos, em que o excesso de aquecimento deve sempre ser evitado. De acordo com as normas internacionais, os valores mínimo e máximo das densidades para essas ligas são de 8,74 g/mL e 8,82 g/mL, respectivamente. As densidades do estanho e do chumbo são 7,3 g/mL e 11,3 g/mL, respectivamente.\n\nUm lote contendo 5 amostras de solda estanho-chumbo foi analisado por um técnico, por meio da determinação de sua composição percentual em massa, cujos resultados estão mostrados no quadro a seguir.\n\n![](/questoes/natureza/6f480860411008df.jpg)\n\nCom base no texto e na análise realizada pelo técnico, as amostras que atendem às normas internacionais são",
+"imagens": [
+"/questoes/natureza/6f480860411008df.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I e II.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "I e III.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "II e IV.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "III e V.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "IV e V.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.61308,
+"b": 1.29865,
+"c": 0.2812,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 54",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/54",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-55",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 55,
+"area": "natureza",
+"enunciado": "No processo de industrialização da mamona, além do óleo que contém vários ácidos graxos, é obtida uma massa orgânica, conhecida como torta de mamona. Esta massa tem potencial para ser utilizada como fertilizante para o solo e como complemento em rações animais devido a seu elevado valor proteico. No entanto, a torta apresenta compostos tóxicos e alergênicos diferentemente do óleo da mamona. Para que a torta possa ser utilizada na alimentação animal, é necessário um processo de descontaminação.  \nRevista Química Nova na Escola. V. 32, no1, 2010 (adaptado)\n\nA característica presente nas substâncias tóxicas e alergênicas, que inviabiliza sua solubilização no óleo de mamona, é a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Lipofilia.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Hidrofilia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Hipocromia.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Cromatofilia.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Hiperpolarização.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.06293,
+"b": 2.23506,
+"c": 0.29941,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 55",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/55",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-56",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 56,
+"area": "natureza",
+"enunciado": "O manual de funcionamento de um captador de guitarra elétrica apresenta o seguinte texto:\n\nEsse captador comum consiste de uma bobina, fios condutores enrolados em torno de um ímã permanente. O campo magnético do ímã induz o ordenamento dos polos magnéticos na corda da guitarra, que está próxima a ele. Assim, quando a corda é tocada, as oscilações produzem variações, com o mesmo padrão, no fluxo magnético que atravessa a bobina. Isso induz uma corrente elétrica na bobina, que é transmitida até o amplificador e, dai, para o alto-falante.\n\nUm guitarrista trocou as cordas originais de sua guitarra, que eram feitas de aço, por outras feitas de náilon. Com o uso dessas cordas, o amplificador ligado ao instrumento não emitia mais som, porque a corda de náilon",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Isola a passagem de corrente elétrica da bobina para o alto-falante.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Varia seu comprimento mais intensamente do que ocorre com o aço.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Apresenta uma magnetização desprezível sob a ação do ímã permanente.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Induz correntes elétricas na bobina mais intensas que a capacidade do captador.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Oscila com uma frequência menor do que a que pode ser percebida pelo captador.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.50263,
+"b": 0.97069,
+"c": 0.13153,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 56",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/56",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-57",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 57,
+"area": "natureza",
+"enunciado": "O controle biológico, técnica empregada no combate a espécies que causam danos e prejuízos aos seres humanos, é utilizado no combate à lagarta que se alimenta de folhas de algodoeiro. Algumas espécies de borboleta depositam seus ovos nessa cultura. A microvespa Trichogramma sp. introduz seus ovos nos ovos de outros insetos, incluindo os das borboletas em questão. Os embriões da vespa se alimentam do conteúdo desses ovos e impedem que as larvas de borboleta se desenvolvam. Assim, é possível reduzir a densidade populacional das borboletas até níveis que não prejudiquem a cultura.\n\nA técnica de controle biológico realizado pela microvespa Trichogramma sp. consiste na",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Introdução de um parasita no ambiente da espécie que se deseja combater.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Introdução de um gene letal nas borboletas, a fim de diminuir o número de indivíduos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Competição entre a borboleta e a microvespa para a obtenção de recursos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Modificação do ambiente para selecionar indivíduos melhor adaptados.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aplicação de inseticidas a fim de diminuir o número de indivíduos que se deseja combater.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.41684,
+"b": -0.02949,
+"c": 0.09107,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 57",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/57",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-58",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 58,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/97c9b1898f276441.jpg)\n\nA retenção de água na superfície da pele promovida pelos hidratantes é consequência da interação dos grupos hidroxila dos agentes umectantes com a umidade contida no ambiente por meio de",
+"imagens": [
+"/questoes/natureza/97c9b1898f276441.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ligações iônicas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Forças de London.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ligações covalentes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Forças dipolo-dipolo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ligações de hidrogênio.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.94387,
+"b": 1.06139,
+"c": 0.36596,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 58",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/58",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-59",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 59,
+"area": "natureza",
+"enunciado": "A cal (óxido de cálcio, CaO), cuja suspensão em água é muito usada como uma tinta de baixo custo, dá uma tonalidade branca aos troncos de árvores. Essa é uma prática muito comum em praças públicas e locais privados, geralmente usada para combater a proliferação de parasitas. Essa aplicação, também chamada de caiação, gera um problema: elimina microrganismos benéficos para a árvore.\n\nDisponível em: http://super.abril.com.br. Acesso em: 1 abr. 2010 (adaptado).\n\nA destruição do microambiente, no tronco de árvores pintadas com cal, é devida ao processo de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Difusão, pois a cal se difunde nos corpos dos seres do microambiente e os intoxica.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Osmose, pois a cal retira água do microambiente, tornando-o inviável ao desenvolvimento de microrganismos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Oxidação, pois a luz solar que incide sobre o tronco ativa fotoquimicamente a cal, que elimina os seres vivos do microambiente.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aquecimento, pois a luz do Sol incide sobre o tronco e aquece a cal, que mata os seres vivos do microambiente.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Vaporização, pois a cal facilita a volatilização da água para a atmosfera, eliminando os seres vivos do microambiente.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.06261,
+"b": 1.75071,
+"c": 0.13927,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 59",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/59",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-60",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 60,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/1d214799b617573a.png)\n\nUma pessoa adquiriu um chuveiro do modelo A e, ao ler o manual, verificou que precisava ligá-lo a um disjuntor de 50 amperes. No entanto, intrigou-se com o fato de que o disjuntor a ser utilizado para uma correte instalação de um chuveiro do modelo B devia possuir amperagem 40% menor.\n\nConsiderando-se os chuveiros de modelos A e B, funcionando à mesma potência de 4 400 W, a razão entre as suas respectivas resistências elétricas, RA e RB, que justifica a diferença de dimensionamento dos disjuntores, é mais próxima de:",
+"imagens": [
+"/questoes/natureza/1d214799b617573a.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,3.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "0,6.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "0,8.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "1,7.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "3,0.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.52119,
+"b": 1.33878,
+"c": 0.11338,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 60",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/60",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-61",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 61,
+"area": "natureza",
+"enunciado": "Nos dias de hoje, podemos dizer que praticamente todos os seres humanos já ouviram em algum momento falar sobre o DNA e seu papel na hereditariedade da maioria dos organismos. Porém, foi apenas em 1952, um ano antes da descrição do modelo do DNA em dupla hélice por Watson e Crick, que foi confirmado sem sombra de dúvidas que o DNA é material genético. No artigo em que Watson e Crick descreveram a molécula de DNA, eles sugeriram um modelo de como essa molécula deveria se replicar. Em 1958, Meselson e Stahl realizaram experimentos utilizando isótopos pesados de nitrogênio que foram incorporados às bases nitrogenadas para avaliar como se daria a replicação da molécula. A partir dos resultados, confirmaram o modelo sugerido por Watson e Crick, que tinha como premissa básica o rompimento das pontes de hidrogênio entre as bases nitrogenadas.\n\nGRIFFITHS, A. J. F. et al. Introdução à Genética. Rio de Janeiro: Guanabara Koogan, 2002.\n\nConsiderando a estrutura da molécula de DNA e a posição das pontes de hidrogênio na mesma, os experimentos realizados por Meselson e Stahl a respeito da replicação dessa molécula levaram à conclusão de que",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A replicação do DNA é conservativa, isto é, a fita dupla filha é recém sintetizada e o filamento parental é conservado.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A replicação de DNA é dispersiva, isto é, as fitas filhas contêm DNA recém-sintetizado e parentais em cada uma das fitas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A replicação é semiconservativa, isto é, as fitas filhas consistem de uma fita parental e uma recém-sintetizada.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A replicação do DNA é conservativa, isto é, as fitas filhas consistem de moléculas de DNA parental.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A replicação é semiconservativa, isto é, as fitas filhas consistem de uma fita molde e uma fita codificadora.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.28412,
+"b": 1.40218,
+"c": 0.12359,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 61",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/61",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-62",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 62,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/ebfb2ff73e417320.jpg)\n\nA análise da água de um lago que recebe a descarga de águas residuais provenientes de lavouras adubadas revelou as concentrações dos elementos carbono (21,2 mol/L), nitrogênio (1,2 mol/L) e fósforo (0,2 mol/L). Nessas condições, o nutriente limítrofe é o",
+"imagens": [
+"/questoes/natureza/ebfb2ff73e417320.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "C.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "N.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "P.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "CO2.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "PO43-.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.79887,
+"b": 1.91559,
+"c": 0.11365,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 62",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/62",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-63",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 63,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/ac50848dd9780443.png)\n\n![](/questoes/natureza/b092b64c825a2c24.png)\n\nQual a cor da substância que deu origem ao espectro da Figura 1?",
+"imagens": [
+"/questoes/natureza/ac50848dd9780443.png",
+"/questoes/natureza/b092b64c825a2c24.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Azul.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Verde.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Violeta.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Laranja.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Vermelho.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.11177,
+"b": 0.95099,
+"c": 0.18297,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 63",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/63",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-64",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 64,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/bd371d56dd578683.jpg)\n\nO mapa mostra a área de ocorrência da malária no mundo. Considerando-se sua distribuição na América do Sul, a malária pode ser classificada como",
+"imagens": [
+"/questoes/natureza/bd371d56dd578683.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Endemia, pois se concentra em uma área geográfica restrita desse continente.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Peste, já que ocorre nas regiões mais quentes do continente.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Epidemia, já que ocorre na maior parte do continente.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Surto, pois apresenta ocorrência em áreas pequenas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Pandemia, pois ocorre em todo o continente.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.04317,
+"b": 0.74057,
+"c": 0.12969,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 64",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/64",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-65",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 65,
+"area": "natureza",
+"enunciado": "Em 1999, a geneticista Emma Whitelaw desenvolveu um experimento no qual ratas prenhes foram submetidas a uma dieta rica em vitamina B12, ácido fólico e soja. Os filhotes dessas ratas, apesar de possuírem o gene para obesidade, não expressaram essa doença na fase adulta. A autora concluiu que a alimentação da mãe, durante a gestação, silenciou o gene da obesidade. Dez anos depois, as geneticistas Eva Jablonka e Gal Raz listaram 100 casos comprovados de traços adquiridos e transmitidos entre gerações de organismos, sustentando, assim, epigenética, que estuda as mudanças na atividade dos genes que não envolvem alterações na sequência do DNA.\n\nA reabilitação do herege. Época. no 610, 2010 (adaptado).\n\nAlguns cânceres esporádicos representam exemplos de alteração epigenética, pois são ocasionados por",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aneuploidia do cromossomo sexual X.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Polipoidia dos cromossomos autossômicos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Mutação em genes autossômicos com expressão dominante.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Substituição no gene da cadeia beta da hemoglobina.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Inativação de genes por meio de modificações nas bases nitrogenadas.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.53142,
+"b": 3.19792,
+"c": 0.0887,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 65",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/65",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-66",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 66,
+"area": "natureza",
+"enunciado": "Um motor só poderá realizar trabalho se receber uma quantidade de energia de outro sistema. No caso, a energia armazenada no combustível é, em parte, liberada durante a combustão para que o aparelho possa funcionar. Quando o motor funciona, parte da energia convertida ou transformada na combustão não pode ser utilizado para a realização de trabalho. Isso significa dizer que há vazamento da energia em outra forma.\n\nCARVALHO, A. X. Z. Física Térmica. Belo Horizonte: Pax, 2009 (adaptado).\n\nDe acordo com o texto, as transformações de energia que ocorrem durante o funcionamento do motor são decorrentes de a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Liberação de calor dentro do motor ser impossível.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Realização de trabalho pelo motor ser incontrolável.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Conversão integral de calor em trabalho ser impossível.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Transformação de energia térmica em cinética ser impossível.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Utilização de energia potencial do combustível ser incontrolável.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.89783,
+"b": 0.65233,
+"c": 0.1128,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 66",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/66",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-67",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 67,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/418fae9aed06589b.png)\n\nDe acordo com as curvas de assinatura espectral apresenta na figura, para que se obtenha a melhor discriminação dos alvos mostrados, convém selecionar a banda correspondente a que comprimento de onda em micrômetros (µm)?",
+"imagens": [
+"/questoes/natureza/418fae9aed06589b.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,4 a 0,5.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "0,5 a 0,6.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "0,6 a 0,7.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "0,7 a 0,8.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "0,8 a 0,9.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.14962,
+"b": 2.57131,
+"c": 0.11924,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 67",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/67",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-68",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 68,
+"area": "natureza",
+"enunciado": "Um instituto de pesquisa norte-americano divulgou recentemente ter criado uma “célula sintética”, uma bactéria chamada de _Mycoplasma mycoides_. Os pesquisadores montaram uma sequência de nucleotídeos, que formam o único cromossomo dessa bactéria, o qual foi introduzido em outra espécie de bactéria, a _Mycoplasma capricolum._ Após a introdução, o cromossomo da _M. capricolum_ foi neutralizado e o e o cromossomo artificial da _M. mycoides_ começou a gerenciar a célula, produzindo suas proteínas.\n\nGILBSON et al. Creation of a Bacterial Cell Controlled by a Chemically synthesized Genome.  \nScience v. 329, 2010 (adaptado).\n\nA importância dessa inovação tecnológica para a comunidade científica se deve à",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Possibilidade de sequenciar os genomas de bactérias para serem usados como receptoras de cromossomos artificiais.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Capacidade de criação, pela ciência, de novas formas de vida, utilizando substâncias como carboidratos e lipídios.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Possibilidade de produção em massa da bactéria Mycoplasma capricolum para sua distribuição em ambientes naturais.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Possibilidade de programar geneticamente microrganismos ou seres mais complexos para produzir medicamentos, vacinas e combustíveis.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Capacidade da bactéria Mycoplasma capricolum de expressar suas proteínas na bactéria sintética e estas serem usadas na indústria.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.89938,
+"b": 0.51757,
+"c": 0.17296,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 68",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/68",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-69",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 69,
+"area": "natureza",
+"enunciado": "Os sintomas mais sérios da Gripe A, causada pelo vírus H1N1, foram apresentados por pessoas mais idosas e por gestantes. O motivo aparente é a menor imunidade desses grupos contra o vírus. Para aumentar a imunidade populacional relativa ao vírus da gripe A, o governo brasileiro distribuiu vacinas para os grupos mais suscetíveis.\n\nA vacina contra o H1N1, assim como qualquer outra vacina contra agentes causadores de doenças infecto-contagiosas aumenta a imunidade das pessoas porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Possui anticorpos contra o agente causador da doença.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Possui proteínas que eliminam o agente causador da doença.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Estimula a produção de glóbulos vermelhos pela medula óssea.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Possui linfócitos B e T que neutralizam o agente causador da doença.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Estimula a produção de anticorpos contra o agente causador da doença.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.21866,
+"b": 0.02999,
+"c": 0.23994,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 69",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/69",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-70",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 70,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/8cb10b44a690e920.png)\n\nTendo por base os esquemas mostrados, em quais casos a lâmpada acendeu?",
+"imagens": [
+"/questoes/natureza/8cb10b44a690e920.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "(1), (3), (6).",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "(3), (4), (5).",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "(1), (3), (5).",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "(1), (3), (7).",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "(1), (2), (5).",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.64224,
+"b": 1.3984,
+"c": 0.1161,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 70",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/70",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-71",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 71,
+"area": "natureza",
+"enunciado": "Os biocombustíveis de primeira geração são derivados da soja, milho e cana-de-açúcar e sua produção ocorre através da fermentação. Biocombustíveis derivados de material celulósico ou biocombustíveis de segunda geração — coloquialmente chamados de “gasolina de capim” — são aqueles produzidos a partir de resíduos de madeira (serragem, por exemplo), talos de milho, palha de trigo ou capim de crescimento rápido e se apresentam como uma alternativa para os problemas enfrentados pelos de primeira geração, já que as matérias-primas são baratas e abundantes.\n\nDALE, B. E.; HUBER, G. W. Gasolina de capim e outros vegetais. Ago. 2009, nº 87 (adaptado).\n\nO texto mostra um dos pontos de vista a respeito do uso dos biocombustíveis na atualidade, os quais",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "São matrizes energéticas com menor carga de poluição para o ambiente e podem propiciar a geração de novos empregos, entretanto, para serem oferecidos com baixo custo, a tecnologia da degradação da celulose nos biocombustíveis de segunda geração deve ser extremamente eficiente.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Oferecem múltiplas dificuldades, pois a produção é de alto custo, sua implantação não gera empregos, e deve-se ter cuidado com o risco ambiental, pois eles oferecem os mesmos riscos que o uso de combustíveis fósseis.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Sendo de segunda geração, são produzidos por uma tecnologia que acarreta problemas sociais, sobretudo decorrente do fato de a matéria-prima ser abundante e facilmente encontrada, o que impede a geração de novos empregos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Sendo de primeira e segunda geração, são produzidos por tecnologias que devem passar por uma avaliação criteriosa quanto ao uso, pois uma enfrenta o problema da falta de espaço para plantio da matéria-prima e a outra impede a geração de novas fontes de emprego.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Sendo de primeira e segunda geração, são produzidos por tecnologias que devem passar por uma avaliação criteriosa quanto ao uso, pois uma enfrenta o problema da falta de espaço para plantio da matéria-prima e a outra impede a geração de novas fontes de emprego.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 71",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/71",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-72",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 72,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/3289c283d9e7490c.jpg)\n\nA combinação entre o ácido cólico e a glicina ou taurina origina a função amida, formada pela reação entre o grupo amina desses aminoácidos e o grupo",
+"imagens": [
+"/questoes/natureza/3289c283d9e7490c.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Carboxila do ácido cólico.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aldeído do ácido cólico.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Hidroxila do ácido cólico.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Cetona do ácido cólico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Éster do ácido cólico.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.53065,
+"b": 1.43777,
+"c": 0.18479,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 72",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/72",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-73",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 73,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/2301d2aa184ede1a.png)\n\nConsiderando que a aceleração da gravidade local é de 10 m/s², a densidade da água do lago, em g/cm³, é",
+"imagens": [
+"/questoes/natureza/2301d2aa184ede1a.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "0,6.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "1,2.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "1,5.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "2,4.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "4,8.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.68399,
+"b": 1.73884,
+"c": 0.18724,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 73",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/73",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-74",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 74,
+"area": "natureza",
+"enunciado": "Uma equipe de cientistas lançará uma expedição ao Titanic para criar um detalhado mapa 3D que “vai tirar, virtualmente, o Titanic do fundo do mar para o público”. A expedição ao local, a 4 quilômetros de profundidade no Oceano Atlântico, está sendo apresentada como a mais sofisticada expedição científica ao Titanic. Ela utilizará tecnologias de imagem e sonar que nunca tinham sido aplicadas ao navio, para obter o mais completo inventário de seu conteúdo. Esta complementação é necessária em razão das condições do navio, naufragado há um século.\n\nO Estado de São Paulo. Disponível em: http://www.estadao.com.br. Acesso em: 27 jul. 2010 (adaptado)\n\nNo problema apresentado para gerar imagens através de camadas de sedimentos depositados no navio, o sonar é mais adequado, pois a",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Propagação da luz na água ocorre a uma velocidade maior que a do som neste meio.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Absorção da luz ao longo de uma camada de água é facilitada enquanto a absorção do som não.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Refração da luz a uma grande profundidade acontece com uma intensidade menor que a do som.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Atenuação da luz nos materiais analisados é distinta da atenuação de som nestes mesmos materiais.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Reflexão da luz nas camadas de sedimento é menos intensa do que a reflexão do som neste material.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.06608,
+"b": 1.37136,
+"c": 0.17705,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 74",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/74",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-75",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 75,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/218c8ff9dd50b833.jpg)\n\nConsiderando que uma pessoa consuma refrigerantes diariamente, poderá ocorrer um processo de desmineralização dentária, devido ao aumento da concentração de",
+"imagens": [
+"/questoes/natureza/218c8ff9dd50b833.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "OH- , que reage com os íons Ca2+, deslocando o equilíbrio para a direita.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "H+, que reage com as hidroxilas OH- , deslocando o equilíbrio para a direita.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "OH- , que reage com os íons Ca2+, deslocando o equilíbrio para a esquerda.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "H+, que reage com as hidroxilas OH- , deslocando o equilíbrio para a esquerda.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ca2+, que reage com as hidroxilas OH- , deslocando o equilíbrio para a esquerda.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.33898,
+"b": 0.81039,
+"c": 0.11803,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 75",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/75",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-76",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 76,
+"area": "natureza",
+"enunciado": "Diferente do que o senso comum acredita, as lagartas de borboletas não possuem voracidade generalizada. Um estudo mostrou que as borboletas de asas transparentes da família Ithomiinae, comuns na Floresta Amazônica e na Mata Atlântica, consomem, sobretudo, plantas da família Solanaceae, a mesma do tomate. Contudo, os ancestrais dessas borboletas consumiam espécies vegetais da família Apocinaceae, mas a quantidade dessas plantas parece não ter sido suficiente para garantir o suprimento alimentar dessas borboletas. Dessa forma, as solanáceas tornaram-se uma opção de alimento, pois são abundantes na Mata Atlântica e na Floresta Amazônica.\n\nNesse texto, a ideia do senso comum é confrontada com os conhecimentos científicos, ao se entender que as larvas das borboletas Ithomiinae encontradas atualmente na Mata Atlântica e na Floresta Amazônica, apresentam",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Facilidade em digerir todas as plantas desses locais.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Interação com as plantas hospedeiras da família Apocinaceae.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Adaptação para se alimentar de todas as plantas desses locais.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Voracidade indiscriminada por todas as plantas existentes nesses locais.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Especificidade pelas plantas da família Solanaceae existentes nesses locais.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.77959,
+"b": 1.8193,
+"c": 0.12995,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 76",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/76",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-77",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 77,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/4ba9db04984807e6.png)\n\nA distância percorrida pela régua aumenta mais rapidamente que o tempo de reação porque a",
+"imagens": [
+"/questoes/natureza/4ba9db04984807e6.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Energia mecânica da régua aumenta, o que a faz cair mais rápido.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Resistência do ar aumenta, o que faz a régua cair com menor velocidade.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aceleração de queda da régua varia, o que provoca um movimento acelerado.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Força peso da régua tem valor constante, o que gera um movimento acelerado.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Velocidade da régua é constante, o que provoca uma passagem linear de tempo.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.5207,
+"b": 5.86198,
+"c": 0.13508,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 77",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/77",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-78",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 78,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/df25a4679805a2cc.png)\n\nA característica de funcionamento que garante essa economia é devida",
+"imagens": [
+"/questoes/natureza/df25a4679805a2cc.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "À altura do sifão de água.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ao volume do tanque de água.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "À altura do nível de água no vaso.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ao diâmetro do distribuidor de água.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "À eficiência da válvula de enchimento do tanque.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.97356,
+"b": 0.37435,
+"c": 0.16375,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 78",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/78",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-79",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 79,
+"area": "natureza",
+"enunciado": "Moradores sobreviventes da tragédia que destruiu aproximadamente 60 casas no Morro do Bumba, na Zona Norte de Niterói (RJ), ainda defendem a hipótese de o deslizamento ter sido causado por uma explosão provocada por gás metano, visto que esse local foi um lixão entre os anos 1960 e 1980.\n\n**Jornal Web. Disponível em: http://www.ojornalweb.com. Acesso em: 12 abr. 2010 (adaptado).**\n\nO gás mencionado no texto é produzido",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Como subproduto da respiração aeróbia bacteriana.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Pela degradação anaeróbia de matéria orgânica por bactérias.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Como produto da fotossíntese de organismos pluricelulares autotróficos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Pela transformação química do gás carbônico em condições anaeróbias.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Pela conversão, por oxidação química, do gás carbônico sob condições aeróbias.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.93948,
+"b": 2.72363,
+"c": 0.16041,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 79",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/79",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-80",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 80,
+"area": "natureza",
+"enunciado": "Segundo dados do Balanço Energético Nacional de 2008, do Ministério das Minas e Energia, a matriz energética brasileira é composta por hidrelétrica (80%), termelétrica (19,9%) e eólica (0,1%). Nas termelétricas, esse percentual é dividido conforme o combustível usado, sendo: gás natural (6,6%), biomassa (5,3%), derivados de petróleo (3,3%), energia nuclear (3,1%) e carvão mineral (1,6%). Com a geração de eletricidade da biomassa, pode-se considerar que ocorre uma compensação do carbono liberado na queima do material vegetal pela absorção desse elemento no crescimento das plantas. Entretanto, estudos indicam que as emissões de metano (CH4) das hidrelétricas podem ser comparáveis às emissões de CO2 das termelétricas.\n\n**MORET, A. S.; FERREIRA, I. A. As hidrelétricas do Rio Madeira e os impactos socioambientais. Revista Ciência Hoje. V. 45, n° 265, 2009 (adaptado).**\n\nNo Brasil, em termos do impacto das fontes de energia no crescimento do efeito estufa, quanto à emissão de gases, as hidrelétricas seriam consideradas como uma fonte",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Limpa de energia, contribuindo para minimizar os efeitos deste fenômeno.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Eficaz de energia, tomando-se o percentual de oferta e os benefícios verificados.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Limpa de energia, não afetando ou alterando os níveis dos gases do efeito estufa.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Poluidora, colaborando com níveis altos de gases de efeito estufa em função de seu potencial de oferta.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Alternativa, tomando-se por referência a grande emissão de gases de efeito estufa das demais fontes geradoras.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.94916,
+"b": 1.62683,
+"c": 0.11518,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 80",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/80",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-81",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 81,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/02265cd82984bed1.jpg)\n\nDe acordo com a estequiometria da reação descrita, a quantidade de permanganato de potássio necessária para reagir completamente com 20,0 mL de uma solução 0,1 mol/L de peróxido de hidrogênio é igual a",
+"imagens": [
+"/questoes/natureza/02265cd82984bed1.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "2,0×100  mol.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2,0×10-3 mol.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "8,0×10-1 mol.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "8,0×10-4 mol.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5,0×10-3 mol.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "transcricao",
+"anulada": false,
+"habilidade": null,
+"habilidade_origem": null,
+"competencia": null,
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": null,
+"dificuldade_estimada": null,
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 81",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/81",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-82",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 82,
+"area": "natureza",
+"enunciado": "Os vaga-lumes machos e fêmeas emitem sinais luminosos para se atraírem para o acasalamento. O macho reconhece a fêmea de sua espécie e, atraído por ela, vai ao seu encontro. Porém, existe um tipo de vaga-lume, o _Photuris_, cuja fêmea engana e atrai os machos de outro tipo, o _Photinus_, fingindo ser deste gênero. Quando o macho _Photinus_ se aproxima da fêmea _Photuris_, muito maior que ele, é atacado e devorado por ela.\n\nBERTOLDI, O. G.; VASCONCELLOS, J. R. **Ciência & sociedade**: a aventura da vida,  \na aventura da tecnologia. São Paulo: Scipione, 2000 (adaptado).\n\nA relação descrita no texto, entre a fêmea do gênero Photuris e o macho do gênero Photinus, é um exemplo de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Comensalismo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Inquilinismo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Cooperação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Predatismo.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Mutualismo.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.35631,
+"b": 2.34929,
+"c": 0.18748,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 82",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/82",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-83",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 83,
+"area": "natureza",
+"enunciado": "O etanol é considerado um biocombustível promissor, pois, sob o ponto de vista do balanço de carbono, possui uma taxa de emissão praticamente igual a zero. Entretanto, esse não é o único ciclo biogeoquímico associado à produção de etanol. O plantio da cana-de-açúcar, matéria-prima para a produção de etanol, envolve a adição de macronutrientes como enxofre, nitrogênio, fósforo e potássio, principais elementos envolvidos no crescimento de um vegetal.  \nRevista Química Nova na Escola. no 28, 2008.\n\nO nitrogênio incorporado ao solo, como consequência da atividade descrita anteriormente, é transformado em nitrogênio ativo e afetará o meio ambiente, causando",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O acúmulo de sais insolúveis, desencadeando um processo de salinificação do solo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A eliminação de microorganismos existentes no solo responsáveis pelo processo de desnitrificação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A contaminação de rios e lagos devido à alta solubilidade de íons como NO3− e NH4+ em água.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A diminuição do pH do solo pela presença de NH3, que reage com a água, formando o NH4OH(aq).",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A diminuição da oxigenação do solo, uma vez que o nitrogênio ativo forma espécies químicas do tipo NO2, NO− , N2O.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.46647,
+"b": 1.19762,
+"c": 0.13775,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 83",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/83",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-84",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 84,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/27df044267778248.png)\n\nEm qual das situações a seguir está representado o fenômeno descrito no texto?",
+"imagens": [
+"/questoes/natureza/27df044267778248.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ao se esconder atrás de um muro, um menino ouve a conversa de seus colegas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ao gritar diante de um desfiladero, uma pessoa ouve a repetição do seu próprio grito.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ao encostar o ouvido no chão, um homem percebe o som de uma locomotiva antes de ouvi-lo pelo ar.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ao ouvir uma ambulância se aproximando, uma pessoa percebe o som mais agudo do que quando aquela se afasta.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ao emitir uma nota musical muito aguda, uma cantora de ópera faz com que uma taça de cristal se despedace.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.29778,
+"b": -0.36102,
+"c": 0.15245,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 84",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/84",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-85",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 85,
+"area": "natureza",
+"enunciado": "Um dos processos usados no tratamento do lixo é a incineração, que apresenta vantagens e desvantagens. Em São Paulo, por exemplo, o lixo é queimado a altas temperaturas e parte da energia liberada é transformada em energia elétrica. No entanto, a incineração provoca a  \nemissão de poluentes na atmosfera.\n\nUma forma de minimizar a desvantagem da incineração, destacada no texto, é",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aumentar o volume do lixo incinerado para aumentar a produção de energia elétrica.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Fomentar o uso de filtros nas chaminés dos incineradores para diminuir a poluição do ar.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aumentar o volume do lixo para baratear os custos operacionais relacionados ao processo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Fomentar a coleta seletiva de lixo nas cidades para aumentar o volume de lixo incinerado.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Diminuir a temperatura de incineração do lixo para produzir maior quantidade de energia elétrica.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.1092,
+"b": 0.37061,
+"c": 0.23873,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 85",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/85",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-86",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 86,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/3004e14305926f21.png)\n\nDesprezando-se as forças dissipativas (resistência do ar e atrito), para que o salto atinja a maior altura possível, ou seja, o máximo de energia seja conservada, é necessário que",
+"imagens": [
+"/questoes/natureza/3004e14305926f21.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "A energia cinética, representada na etapa I, seja totalmente convertida em energia potencial elástica representada na etapa IV.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "A energia cinética, representada na etapa II, seja totalmente convertida em energia potencial gravitacional, representada na etapa IV.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A energia cinética, representada na etapa I, seja totalmente convertida em energia potencial gravitacional, representada na etapa III.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A energia potencial gravitacional, representada na etapa II, seja totalmente convertida em energia potencial elástica, representada na etapa IV.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A energia potencial gravitacional, representada na etapa I, seja totalmente convertida em energia potencial elástica, representada na etapa III.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.54,
+"b": 0.69393,
+"c": 0.10243,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 86",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/86",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2011-87",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 87,
+"area": "natureza",
+"enunciado": "**Os Bichinhos e O Homem**\n\nArca de Noé  \nToquinho & Vinicius de Moraes  \nNossa irmã, a mosca  \nÉ feia e tosca  \nEnquanto que o mosquito  \nÉ mais bonito  \nNosso irmão besouro  \nQue é feito de couro  \nMal sabe voar  \nNossa irmã, a barata  \nBichinha mais chata  \nÉ prima da borboleta  \nQue é uma careta  \nNosso irmão, o grilo  \nQue vive dando estrilo  \nSó pra chatear\n\n**MORAES, V. A arca de Noé: poemas infantis. São Paulo: Companhia das Letrinhas, 1991.**\n\nO poema acima sugere a existência de relações de afinidade entre os animais citados e nós, seres humanos. Respeitando a liberdade poética dos autores, a unidade taxonômica que expressa a afinidade existente entre nós e estes animais é",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "O filo.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "O reino.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "A classe.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "A família.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "A espécie.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.38451,
+"b": 0.82654,
+"c": 0.21537,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 87",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/87",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-88",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 88,
+"area": "natureza",
+"enunciado": "Certas espécies de algas são capazes de absorver rapidamente compostos inorgânicos presentes na água, acumulando-os durante seu crescimento. Essa capacidade fez com que se pensasse em usá-las como biofiltros para a limpeza de ambientes aquáticos contaminados, removendo, por exemplo, nitrogênio e fósforo de resíduos orgânicos e metais pesados provenientes de rejeitos industriais lançados nas águas. Na técnica do cultivo integrado, animais e algas crescem de forma associada, promovendo um maior equilíbrio ecológico.\n\nSORIANO, E. M. Filtros vivos para limpar a água. Revista Ciência Hoje. V. 37, nº- 219, 2005 (adaptado).\n\nA utilização da técnica do cultivo integrado de animais e algas representa uma proposta favorável a um ecossistema mais equilibrado porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Os animais eliminam metais pesados, que são usados pelas algas para a síntese de biomassa.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Os animais fornecem excretas orgânicos nitrogenados, que são transformados em gás carbônico pelas algas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "As algas usam os resíduos nitrogenados liberados pelos animais e eliminam gás carbônico na fotossíntese, usado na respiração aeróbica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "As algas usam os resíduos nitrogenados provenientes do metabolismo dos animais e, durante a síntese de compostos orgânicos, liberam oxigênio para o ambiente.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "As algas aproveitam os resíduos do metabolismo dos animais e, durante a quimiossíntese de compostos orgânicos, liberam oxigênio para o ambiente.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.65685,
+"b": -1.80092,
+"c": 0.09167,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 88",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/88",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-89",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 89,
+"area": "natureza",
+"enunciado": "Durante as estações chuvosas, aumentam no Brasil as campanhas de prevenção à dengue, que têm como objetivo a redução da proliferação do mosquito Aedes aegypti, transmissor do vírus da dengue.\n\nQue proposta preventiva poderia ser efetivada para diminuir a reprodução desse mosquito?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Colocação de telas nas portas e janelas, pois o mosquito necessita de ambientes cobertos e fechados para a sua reprodução.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Substituição das casas de barro por casas de alvenaria, haja vista que o mosquito se reproduz na parede das casas de barro.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Remoção dos recipientes que possam acumular água, porque as larvas do mosquito se desenvolvem nesse meio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Higienização adequada de alimentos, visto que as larvas do mosquito se desenvolvem nesse tipo de substrato.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Colocação de filtros de água nas casas, visto que a reprodução do mosquito acontece em águas contaminadas.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.32558,
+"b": 0.13736,
+"c": 0.22295,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 89",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/89",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2011-90",
+"ano": 2011,
+"dia": 2,
+"caderno": "azul",
+"numero": 90,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/b7844cb510d16a23.png)\n\nDe acordo com o relatório “A grande sombra da pecuária” (Livestock’s Long Shadow), feito pela Organização das Nações Unidas para a Agricultura e a Alimentação, o gado é responsável por cerca de 18% do aquecimento global, uma contribuição maior que a do setor de transportes.\n\n**Disponível em: www.conpet.gov.br. Acesso em: 22 jun. 2010. (Foto: Reprodução/Enem)**\n\nA criação de gado em larga escala contribui para o aquecimento global por meio da emissão de",
+"imagens": [
+"/questoes/natureza/b7844cb510d16a23.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Metano durante o processo de digestão.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Óxido nitroso durante o processo de ruminação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Clorofluorcarbono durante o transporte de carne.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Óxido nitroso durante o processo respiratório.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Dióxido de enxofre durante o consumo de pastagens.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.25555,
+"b": -0.07671,
+"c": 0.17605,
+"fonte": "INEP, microdados do ENEM 2011 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2011, caderno azul (aplicação regular), questão 90",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2011/questions/90",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2011.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+}
+]

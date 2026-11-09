@@ -1,0 +1,2968 @@
+[
+{
+"id": "enem-2023-91",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 91,
+"area": "natureza",
+"enunciado": "O número de abelhas encontra-se em declínio em várias regiões do mundo, inclusive no Brasil, sendo que vários fatores contribuem para o colapso de suas colmeias. Nos Estados Unidos, bombas de sementes de espécies vegetais nativas têm sido utilizadas para combater o desaparecimento desses insetos. Elas são pequenas bolinhas recheadas com sementes, adubo e argila. Quando são arremessadas e ficam expostas ao sol e à chuva, germinam até mesmo em solo pouco fértil.\n\nDARAYA, V. Disponível em: http://planetasustentavel.abril.com.br.  \nAcesso em: 2 fev. 2015 (adaptado).\n\nEsse método contribui para a preservação das abelhas porque",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Reduz sua predação",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Reduz o uso de pesticidas.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Reduz a competição por abrigo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumenta a oferta de alimento",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aumenta os locais de reprodução",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.25458,
+"b": 0.14732,
+"c": 0.00556,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 91",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/91",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-92",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 92,
+"area": "natureza",
+"enunciado": "Os mais antigos cozinhavam o feijão na panela de ferro a fim de acabar com a palidez de seus filhos. Alguns chegavam até a colocar um prego enferrujado nesse cozimento para liberar o ferro contido nele. Sabe-se que esse elemento pode ser encontrado na sua forma metálica ou iônica, sendo essencial para a manutenção da vida humana.\n\nAs estratégias citadas eram utilizadas com o objetivo de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Tratar a diarreia.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Prevenir a anemia.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Evitar as verminoses.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Remediar o raquitismo",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Combater a febre amarela.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.92829,
+"b": -1.14947,
+"c": 0.20133,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 92",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/92",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-93",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 93,
+"area": "natureza",
+"enunciado": "A utilização de tecnologia nuclear é um tema bastante controverso, por causa do risco de acidentes graves, como aqueles ocorridos em Chernobyl (1986), em Goiânia (1987) e em Fukushima (2011). Apesar de muitas desvantagens, como a geração de resíduos tóxicos, a descontaminação ambiental dispendiosa em caso de acidentes e a utilização em armas nucleares, a geração de energia nuclear apresenta vantagens em comparação a outras fontes de energia.\nA geração dessa energia tem como característica:",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Formar resíduos facilmente recicláveis.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Promover o aumento do desmatamento.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Contribuir para a produção de chuva ácida.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Emitir gases tóxicos que são lançados no ambiente.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Produzir calor sem o consumo de combustíveis fósseis.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.73097,
+"b": 0.32923,
+"c": 0.13662,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 93",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/93",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-94",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 94,
+"area": "natureza",
+"enunciado": "Em uma indústria, o controle da dureza da água é importante quando ela é utilizada em caldeiras, uma vez que sais pouco solúveis, formados a partir de sulfatos e carbonatos, podem acumular-se no interior das tubulações, causando obstruções. Para avaliar a água utilizada nessa indústria, foram realizados testes de qualidade que consideraram os seauintes parâmetros:\n\n![](/questoes/natureza/071e6960ba95f8f4.png)\n\nQual teste deve ser considerado para controlar a formação desse tipo de obstrução de tubulações?",
+"imagens": [
+"/questoes/natureza/071e6960ba95f8f4.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.0858,
+"b": 2.67412,
+"c": 0.10118,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 94",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/94",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-95",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 95,
+"area": "natureza",
+"enunciado": "As aves apresentam dois tipos de músculos em seus corpos: vermelhos e brancos. Aves migratórias como garças, gansos e patos selvagens têm os músculos vermelhos bem desenvolvidos, com ampla rede de vasos sanguíneos.\nNas viagens por grandes distâncias, tais músculos são fundamentais, pois favorecem o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Execução de manobras.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Metabolismo corpóreo elevado.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Manutenção da aerodinâmica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Deslocamento a grandes velocidades.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Capacidade de voo em grandes altitudes.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.03631,
+"b": 2.13278,
+"c": 0.24911,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 95",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/95",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-96",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 96,
+"area": "natureza",
+"enunciado": "Existe no comércio um produto antimofo constituído por uma embalagem com tampa perfurada contendo cloreto de cálcio anidro, CaCI,. Uma vez aberto o lacre, essa substância absorve a umidade ambiente, transformando-se em cloreto de cálcio di-hidratado, CaCI, 2H,0. Considere a massa molar da água igual a 18 g mol-1, e a massa molar do cloreto de cálcio anidro igual a 111 g mol-1.\nNa hidratação da substância presente no antimofo, o ganho percentual, em massa, é mais próximo de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "14%",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "16%",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "24%",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "32%",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "75%",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H26",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.97972,
+"b": 1.34607,
+"c": 0.24211,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 96",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/96",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-97",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 97,
+"area": "natureza",
+"enunciado": "Um garoto comprou vários abacates na feira, mas descobriu que eles não estavam maduros o suficiente para serem consumidos. Sua mãe recomendou que ele colocasse os abacates em um recipiente fechado, pois isso aceleraria seu amadurecimento. Com certa dúvida, o garoto realizou esta experiência: colocou alguns abacates no recipiente e deixou os demais em uma fruteira aberta. Surpreendendo-se, ele percebeu que os frutos que estavam no recipiente fechado amadureceram mais rapidamente.\nA aceleração desse processo é causada por",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Acúmulo de gás etileno.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Redução da umidade do ar.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aumento na concentração de CO2.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Diminuição da intensidade luminosa.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Isolamento do contato com O2 atmosférico.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H3",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.68114,
+"b": 1.27129,
+"c": 0.1,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 97",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/97",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-98",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 98,
+"area": "natureza",
+"enunciado": "Há muito tempo são conhecidas espécies de lesmas-do-mar com uma capacidade impar: guardar parte da maquinaria das células das algas que consomem — os cloroplastos — e mantê-los funcionais dentro das suas próprias células, obtendo assim parte do seu alimento. Investigadores portugueses descobriram que essas lesmas-do-mar podem ser mais eficientes nesse processo do que as próprias algas que consomem.\n\nDisponível em: www.cienciahoje.pt. Acesso em: 10 fev. 2015 (adaptado).\n\nEssa adaptação confere a esse organismo a capacidade de obter primariamente",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ácidos necleicos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Carboidratos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Proteínas.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Vitaminas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Lipídios.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H28",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.97355,
+"b": 1.19295,
+"c": 0.12256,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 98",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/98",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-99",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 99,
+"area": "natureza",
+"enunciado": "A leishmaniose visceral é uma zoonose causada por um protozoário do gênero Leishmania que é encontrado em diversos tecidos. Ela é transmitida ao homem de forma indireta, por vetores do ambiente doméstico. O cão é considerado um importante hospedeiro desse protozoário, podendo ou não apresentar os sintomas da doença, como perda de peso, anemia, ferimentos na pele, diarreia, conjuntivite e insuficiência renal. Em uma região que sofre com alta incidência dessa doença, uma campanha do centro de zoonoses buscou verificar a presença desse protozoário nos cães para tentar controlar a doença.",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Urina.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Saliva.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Fezes.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Sangue.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Secreção ocular.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H30",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.21757,
+"b": 2.35841,
+"c": 0.11592,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 99",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/99",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-100",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 100,
+"area": "natureza",
+"enunciado": "Um professor lança uma esfera verticalmente para cima, a qual retorna, depois de alguns segundos, ao ponto de lançamento. Em seguida, lista em um quadro todas as possibilidades para as grandezas cinemáticas.\n\n![](/questoes/natureza/e4d1675f9c6078c1.jpg)\n\nEle solicita aos alunos que analisem as grandezas cinemáticas no instante em que a esfera atinge a altura máxima, escolhendo uma combinação para os módulos e sentidos da velocidade e da aceleração. A escolha que corresponde à combinação correta é",
+"imagens": [
+"/questoes/natureza/e4d1675f9c6078c1.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "V = 0 e a ≠ 0 para cima.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "V ≠ 0 para cima e a = 0",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "V = 0 e a ≠ 0 para baixo.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "V ≠ 0 para cima e a ≠ 0 para cima.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "V ≠ 0 para baixo e a ≠ 0 para baixo.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.83841,
+"b": 1.04691,
+"c": 0.14482,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 100",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/100",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-101",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 101,
+"area": "natureza",
+"enunciado": "Muitas mulheres sofrem com desconfortos nos dias que antecedem a menstruação, a chamada tensão pré-menstrual. Entre outros sintomas, podem ocorrer alterações de humor. Atualmente, acredita-se que os sintomas são resultado da queda na concentração do neurotransmissor serotonina, que, por sua vez, está relacionado com a diminuição na produção dos hormônios ovarianos estrógeno e progesterona, observada nessa fase do ciclo feminino.\nDIMMOCK, P. W. et al. Efficacy of Selective Serotonin-Reuptake Inhibitors in Premenstrual Syndrome: a Systematic Review. The Lancet, n. 9 236, 2000 (adaptado).\nA redução da produção desses hormônios nessa fase está relacionada com o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Regressão do corpo lúteo ovariano.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Diminuição na produção de ocitocina.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Liberação do gameta feminino na ovulação.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aumento nos níveis dos hormônios LH e FSH.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Elevação nos níveis sorológicos de adrenalina.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H14",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.18942,
+"b": 2.20856,
+"c": 0.13524,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 101",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/101",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-102",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 102,
+"area": "natureza",
+"enunciado": "As cetonas fazem parte de famílias olfativas encontradas em muitos alimentos. A molécula de hexan-3-ona é um exemplo desses compostos voláteis responsáveis pelo aroma, podendo ser obtida por processos energéticos realizados em meio ácido, na presença de oxidantes como o permanganato de potássio. Para se produzir esse composto volátil em laboratório, deve-se oxidar a molécula de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Hexanal.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Hexan-1-ol.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Hexan-3-ol.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Hex-1-en-1-ol.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ácido hexanoico.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.37503,
+"b": 1.55583,
+"c": 0.25041,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 102",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/102",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-103",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 103,
+"area": "natureza",
+"enunciado": "Durante a evolução das plantas, ocorreu uma transição do ambiente aquático para o ambiente terrestre graças ao surgimento de algumas estruturas que as tornaram independentes da água. Esse fato permitiu maior dispersão desse grupo de seres vivos, sendo possível observá-los em diferentes ambientes na atualidade.\nQual estrutura possibilitou a independência da água para a fecundação dos seres vivos citados acima?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fruto.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Esporo.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Semente.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Tubo polínico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Vaso condutor.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H16",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.76985,
+"b": 1.97126,
+"c": 0.14344,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 103",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/103",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-104",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 104,
+"area": "natureza",
+"enunciado": "O vidro contendo alumínio em sua composição é um excelente material para acondicionar medicamentos e suplementos, porque pode ser esterilizado por aquecimento. No entanto, quando o medicamento ou suplemento contém substâncias que se ligam fortemente ao íon desse metal, a dissolução do alumínio é promovida em função do deslocamento do equilíbrio químico estabelecido entre a espécie imobilizada no vidro e a espécie em solução. Por essa razão, recomenda-se que suplementos de nutrição de recém-nascidos contendo gluconato de cálcio sejam acondicionados em embalagens plásticas, e não nesse tipo de vidro.\n\n**Atualização da recomendação da Sociedade Portuguesa de Neonatologia.**  \nDisponível em: www.spneonatologia.pt. Acesso em: 22 out. 2021 (adaptado).\n\nCaso esse suplemento seja acondicionado em embalagem desse tipo de vidro, o risco de contaminação por alumínio será maior se o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Vidro do frasco for translúcido.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Concentração de gluconato de cálcio for alta.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Frasco de vidro apresentar uma maior espessura.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Vidro for previamente esterilizado em altas temperaturas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Reação do alumínio com gluconato de cálcio for endotérmica.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H25",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.85476,
+"b": 1.5224,
+"c": 0.17445,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 104",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/104",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-105",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 105,
+"area": "natureza",
+"enunciado": "Barbatimão é o nome popular de uma árvore cuja casca e utilizada para fins medicinais. Essa casca é constituída principalmente de dois tecidos vegetais: periderme e floema. A extração da casca tem levado à morte muitos indivíduos dessa espécie, quando o corte retira um anel completo ao longo da circunferência do tronco. Aqueles que têm parte da casca retirada sem completar essa circunferência podem sobreviver.\n\nA morte desses indivíduos, decorrente da retirada do anel completo da casca, é provocada pela interrupção da",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fotossíntese.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Transpiração.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Troca de gases.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Formação de brotos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Nutrição das raízes.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H8",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.1809,
+"b": 1.01182,
+"c": 0.20267,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 105",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/105",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-106",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 106,
+"area": "natureza",
+"enunciado": "A tecnologia de vacinas de RNA mensageiro (RNAm) é investigada há anos. Avanços científicos em genética molecular permitiram desenvolver uma vacina para controle da pandemia da covid-19 causada pelo vírus de RNA SARS-CoV-2. A vacina de RNAm tem sequências de genes do vírus. Entretanto, por ser muito instável, o RNAm deve ser recoberto por uma capa de lipídios que evita sua degradação e favorece sua ação. Dessa forma, o RNAm desempenhará sua função especifica atuando no mesmo compartimento celular de sempre.\n\nDisponível em: https://sbim.org.br. Acesso em: 29 nov. 2021 (adaptado).\n\nA imunização produzida por esse tipo de vacina é alcançada por meio da",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Estimulação de leucócitos induzida pela capa lipídica contendo RNAm.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Atuação do RNAm como sequestrador do vírus para o meio extracelular.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Tradução do RNAm em proteína viral, desencadeando a resposta antigênica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Competição entre o RNAm vacinal e o RNA viral pelos sítios dos ribossomos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Incorporação do RNAm viral ao genoma do hospedeiro. gerando novo fenótipo.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H11",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.6872,
+"b": 0.69491,
+"c": 0.15317,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 106",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/106",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-107",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 107,
+"area": "natureza",
+"enunciado": "Na fertilização in vitro, espermatozoides são adicionados aos gametas femininos retirados de uma mulher. Após o período de incubação, a fecundação é favorecida pela ação de enzimas. Em um procedimento realizado, observou-se que nenhum dos gametas femininos foi fertilizado e, posteriormente, verificou-se que havia sido adicionado, equivocadamente, um coquetel de inibidores das enzimas do acrossomo, no lugar de um dos nutrientes constituintes do meio de cultura.\n\nO coquetel de inibidores impediu o(a)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Formação do pronúcleo masculino.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Início da divisão mitótica do zigoto.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Término da segunda divisão meiótica do ovócito.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Passagem do espermatozoide pela corona radiata e zona pelúcida.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Fusão das membranas plasmáticas do ovócito e do espermatozoide.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.82986,
+"b": 1.82071,
+"c": 0.19864,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 107",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/107",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-108",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 108,
+"area": "natureza",
+"enunciado": "O fogão por indução funciona a partir do surgimento de uma corrente elétrica induzida no fundo da panela, com consequente transformação de energia elétrica em calor por efeito Joule. A principal vantagem desses fogões é a eficiência energética, que é substancialmente maior que a dos fogões convencionais.\nA corrente elétrica mencionada é induzida por",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Radiação.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Condução.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Campo elétrico variável.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Campo magnético variável.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ressonância eletromagnética.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.78075,
+"b": 1.77929,
+"c": 0.05731,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 108",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/108",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-109",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 109,
+"area": "natureza",
+"enunciado": "Uma academia decide trocar gradualmente seus aparelhos de musculação. Agora, os frequentadores que utilizam os aparelhos do tipo 1 podem também utilizar os aparelhos do tipo 2, representados na figura, para elevar cargas correspondentes às massas M1 e M2 com velocidade constante. A fim de que o exercício seja realizado com a mesma força F, os usuários devem ser orientados a respeito da relação entre as cargas nos dois tipos de aparelhos, já que as polias fixas apenas mudam a direção das forças, enquanto a polia móvel divide as forças.\n\nEm ambos os aparelhos, considere as cordas inextensíveis, as massas das polias e das cordas desprezíveis e que não há dissipação de energia.\n\n![](/questoes/natureza/2c036cbf6a6b78fd.png)\n\nPara essa academia, qual deve ser a razão M2/M1 informada aos usuários?",
+"imagens": [
+"/questoes/natureza/2c036cbf6a6b78fd.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1/4",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "1/2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "4",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H7",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.40735,
+"b": 1.62185,
+"c": 0.13073,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 109",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/109",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-110",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 110,
+"area": "natureza",
+"enunciado": "Um assistente de laboratório precisou descartar sete frascos contendo solução de nitrato de mercúrio(l) que não foram utilizados em uma aula prática. Cada frasco continha 5,25 g de Hg2(NO3)2 dissolvidos em água. Temendo a toxidez do mercúrio e sabendo que o Hg2Cl2 tem solubilidade muito baixa, o assistente optou por retirar o mercúrio da solução por precipitação com cloreto de sódio (NaCl), conforme a equação química:\n\n![](/questoes/natureza/9198c99e640a3486.png)\n\nNa dúvida sobre a massa de NaCl a ser utilizada, o assistente aumentou gradativamente a quantidade adicionada em cada frasco, como apresentado no quadro.\n\n![](/questoes/natureza/598b0b689b3c6610.png)\n\nO produto obtido em cada experimento foi filtrado, secado e teve sua massa aferida. O assistente organizou os resultados na forma de um gráfico que correlaciona a massa de NaCl adicionada com a massa de Hg2Cl2 obtida em cada frasco. A massa molar do Hg2(NO3)2 é 525 g mol\\-1, a do NaCl é 58 g mol\\-1 e a do Hg2Cl2 é 472 g mol\\-1.\n\nQual foi o gráfico obtido pelo assistente de laboratório?",
+"imagens": [
+"/questoes/natureza/9198c99e640a3486.png",
+"/questoes/natureza/598b0b689b3c6610.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/575e5b53909c68b9.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/907bdc57cb8582cd.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/ae69c9157e0acbf2.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/dba23c01afab6f5d.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/13a7ba77ef6627b3.png"
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.20349,
+"b": 1.99265,
+"c": 0.20277,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 110",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/110",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-111",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 111,
+"area": "natureza",
+"enunciado": "![](/questoes/natureza/4cc643c78b28393f.png)\n\nSOUSA. M. Disponível em: www.monica.com.br. Acesso em: 2 out. 2012 (adaptado)\n\nNa tirinha de Mauricio de Sousa, os personagens Cebolinha e Cascão fazem uma brincadeira utilizando duas latas e um barbante. Ao perceberem que o som pode ser transmitido através do barbante, resolvem alterar o comprimento do barbante para ficar cada vez mais extenso. As demais condições permaneceram inalteradas durante a brincadeira.\nNa prática, à medida que se aumenta o comprimento do barbante, ocorre a redução de qual característica da onda sonora?",
+"imagens": [
+"/questoes/natureza/4cc643c78b28393f.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Altura.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Período.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Amplitude.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Velocidade.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Comprimento.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.82835,
+"b": 2.06704,
+"c": 0.0603,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 111",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/111",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-112",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 112,
+"area": "natureza",
+"enunciado": "Informações digitais — dados — são gravadas em discos ópticos, como CD e DVD, na forma de cavidades microscópicas. A gravação e a leitura óptica dessas informações são realizadas por um laser (fonte de luz monocromática). Quanto menores as dimensões dessas cavidades, mais dados são armazenados na mesma área do disco. O fator limitante para a leitura de dados é o espalhamento da luz pelo efeito de difração, fenômeno que ocorre quando a luz atravessa um obstáculo com dimensões da ordem de seu comprimento de onda. Essa limitação motivou o desenvolvimento de lasers com emissão em menores comprimentos de onda, possibilitando armazenar e ler dados em cavidades cada vez menores.\nEm qual região espectral se situa o comprimento de onda do laser que otimiza o armazenamento e a leitura de dados em discos de uma mesma área?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Violeta.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Azul.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Verde.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Vermelho.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Infravermelho.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H1",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.38485,
+"b": 2.02004,
+"c": 0.18168,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 112",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/112",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-113",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 113,
+"area": "natureza",
+"enunciado": "O bluetooth é uma tecnologia de comunicação sem fio, de curto alcance, presente em diferentes dispositivos eletrônicos de consumo. Ela permite que aparelhos eletrônicos diferentes se conectem e troquem dados entre si. No padrão bluetooth, denominado de Classe 2, as antenas transmitem sinais de potência igual a 2,4 mW e possibilitam conectar dois dispositivos distanciados até 10 m. Considere que essas antenas se comportam como fontes puntiformes que emitem ondas eletromagnéticas esféricas e que a intensidade do sinal é calculada pela potência por unidade de área. Considere 3 como valor aproximado para π. \nPara que o sinal de bluetooth seja detectado pelas antenas, o valor mínimo de sua intensidade, em W/m²?, e mais próximo de",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": "/questoes/natureza/1269647d5d222685.png"
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": "/questoes/natureza/24b5c8f4a75c7644.png"
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": "/questoes/natureza/d03af1c0ac889a46.png"
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": "/questoes/natureza/0da47751bdc44493.png"
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/bd57c6977b09bc1a.png"
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H23",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.66863,
+"b": 2.35839,
+"c": 0.05501,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 113",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/113",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-114",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 114,
+"area": "natureza",
+"enunciado": "Uma equipe de segurança do transporte de uma empresa avalia o comportamento das tensões que aparecem em duas cordas, 1 e 2, usadas para prender uma carga de massa M = 200 kg na carroceria, conforme a ilustração. Quando o caminhão parte do repouso, sua aceleração é constante e igual a 3 m/s2 e, quando ele é freado bruscamente, sua frenagem é constante e igual a 5 m/s2. Em ambas as situações, a carga encontra-se na iminência de movimento, e o sentido do movimento do caminhão está indicado na figura. O coeficiente de atrito estático entre a caixa e c assoalho da carroceria é igual a 0,2. Considere a aceleração da gravidade igual a 10 m/s2, as tensões iniciais nas cordas iguais a zero e as duas cordas ideais.\n\n![](/questoes/natureza/a28ea15399be45b8.png)\n\nNas situações de aceleração e frenagem do caminhão, as tensões nas cordas 1 e 2, em newton, serão",
+"imagens": [
+"/questoes/natureza/a28ea15399be45b8.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Aceleração: T1 = 0 e T2 = 200; frenagem: T1 = 600 e T2 = 0.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Aceleração: T1 = 0 e T2 = 200; frenagem: T1 = 1 400 e T2 = 0.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Aceleração: T1 = 0 e T2 = 200; frenagem: T1 = 600 e T2 = 0.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Aceleração: T1 = 560 e T2 = 0; frenagem: T1 = 0 e T2 = 960.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Aceleração: T1 = 640 e T2 = 0; frenagem: T1 = 0 e T2 = 1 040.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H17",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 0.99037,
+"b": 1.55817,
+"c": 0.20321,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 114",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/114",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-115",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 115,
+"area": "natureza",
+"enunciado": "A biorremediação designa tratamentos que usam organismos para reduzir a quantidade de substâncias tóxicas no ambiente ou degradá-las em substâncias não tóxicas ou de menor toxicidade. Uma planta aquática, o aguapé, tem sido utilizada para a biorremediação de ambientes contaminados por metais tóxicos. Sabe-se que esses poluentes serão captados para dentro do corpo do vegetal.\nDentro do corpo do vegetal, esses contaminantes serão",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Digeridos por enzimas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Acumulados nos tecidos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Eliminados pelos estômatos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Metabolizados por glândulas.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Utilizados como fonte energética.",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.33748,
+"b": 1.77344,
+"c": 0.10811,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 115",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/115",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-116",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 116,
+"area": "natureza",
+"enunciado": "O ciclo do nitrogênio é composto por várias etapas, conforme a figura, sendo cada uma desempenhada por um grupo específico de microrganismos.\n\n![](/questoes/natureza/4a7e79596823391a.png)\n\nSe o grupo dos microrganismos decompositores fosse exterminado, qual etapa não ocorreria?",
+"imagens": [
+"/questoes/natureza/4a7e79596823391a.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "1",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "2",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "3",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "4",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "5",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H9",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.05374,
+"b": 1.81691,
+"c": 0.33738,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 116",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/116",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-117",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 117,
+"area": "natureza",
+"enunciado": "Os raios cósmicos são fontes de radiação ionizante potencialmente perigosas para o organismo humano. Para quantificar a dose de radiação recebida, utiliza-se o sievert (Sv), definido como a unidade de energia recebida por unidade de massa. A exposição à radiação proveniente de raios cósmicos aumenta com a altitude, o que pode representar um problema para as tripulações de aeronaves. Recentemente, foram realizadas medições acuradas das doses de radiação ionizante para voos entre Rio de Janeiro e Roma.\nOs resultados têm indicado que a dose média de radiação recebida na fase de cruzeiro (que geralmente representa 80% do tempo total de voo) desse trecho intercontinental é 2 μSv/h. As normas internacionais da aviação civil limitam em 1 000 horas por ano o tempo de trabalho para as tripulações que atuem em voos intercontinentais. Considere que a dose de radiação ionizante para uma radiografia torácica é estimada em 0,2 mSv.\nRUAS, A. C. O tripulante de aeronaves e a radiação ionizante. São Paulo: Edição do Autor, 2019 (adaptado).\n \nA quantas radiografias torácicas corresponde a dose de radiação ionizante à qual um tripulante que atue no trecho Rio de Janeiro−Roma é exposto ao longo de um ano?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "8",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "10",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "80",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "100",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "1000",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H22",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.71433,
+"b": 1.9822,
+"c": 0.05932,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 117",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/117",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-118",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 118,
+"area": "natureza",
+"enunciado": "A gasolina é uma mistura de hidrocarbonetos de cadeias saturadas contendo de 8 a 12 átomos de carbono. Além disso, a gasolina de alto desempenho deve conter elevados teores de hidrocarbonetos de cadeias ramificadas, de forma a resistir à compressão e entrar em ignição apenas quando a vela aciona uma centelha elétrica no motor. No quadro, estão apresentados compostos que podem ser utilizados como combustíveis.\n\n![](/questoes/natureza/18c53b2fd1bf8763.png)\n\nEntre esses compostos, aquele que conferirá maior desempenho como combustível é o",
+"imagens": [
+"/questoes/natureza/18c53b2fd1bf8763.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "I.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "II.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "III.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "IV.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "V.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.51837,
+"b": 1.46881,
+"c": 0.26943,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 118",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/118",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-119",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 119,
+"area": "natureza",
+"enunciado": "De acordo com a Constituição Federal, é competencia dos municípios o gerenciamento dos serviços de limpeza e coleta dos resíduos urbanos (lixo). No entanto, há relatos de que parte desse lixo acaba sendo incinerado, liberando substâncias tóxicas para o ambiente e causando acidentes por explosões, principalmente quando ocorre a incineração de frascos de aerossóis (por exemplo: desodorantes, inseticidas e repelentes). A temperatura elevada provoca a vaporização de todo o conteúdo dentro desse tipo de frasco, aumentando a pressão em seu interior até culminar na explosão da embalagem.\n\nZVEIBIL, V. Z. et al. **Cartilha de limpeza urbana**. Disponível em: www.lbam.org.br. Acesso em: 6 jul. 2015 (adaptado).\n\nSuponha um frasco metálico de um aerossol de capacidade igual a 100 mL, contendo 0,1 mol de produtos gasosos à temperatura de 650 °C, no momento da explosão.\n\n![](/questoes/natureza/1683f56135b209d2.png)\n\nA pressão, em atm, dentro do frasco, no momento da explosão, é mais próxima de",
+"imagens": [
+"/questoes/natureza/1683f56135b209d2.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "756.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "533.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "76.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "53.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "13.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.6042,
+"b": 1.59379,
+"c": 0.26321,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 119",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/119",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-120",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 120,
+"area": "natureza",
+"enunciado": "O circuito com três lâmpadas incandescentes idênticas, representado na figura, consiste em uma associação mista de resistores. Cada lâmpada (L1, L2, e L3) é associada, em paralelo, a um resistor de resistência R, formando um conjunto. Esses conjuntos são associados em série, tendo todas as lâmpadas o mesmo brilho quando ligadas à fonte de energia. Após vários dias em uso, apenas a lâmpada L2 queima, enquanto as demais permanecem acesas.\n\n![](/questoes/natureza/776d95c69bd31dca.png)\n\nEm relação à situação em que todas as lâmpadas funcionam, após a queima de L2, os brilhos das lâmpadas serão",
+"imagens": [
+"/questoes/natureza/776d95c69bd31dca.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Os mesmos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Mais intensos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Menos intensos.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Menos intenso para L1 e o mesmo para L3.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Mais intenso para L1 e menos intenso para L3.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H5",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 5.9367,
+"b": 2.33396,
+"c": 0.11437,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 120",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/120",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-121",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 121,
+"area": "natureza",
+"enunciado": "Os solos amazônicos, ricos em silicato, não são apropriados para o cultivo por serem incapazes de reter nutrientes. Contudo, descobertas arqueológicas têm demonstrado que os antigos habitantes da Amazônia dominavam a técnica de preparo de um insumo agrícola natural, denominado terra preta. Esse insumo era constituído principalmente de uma espécie de biocarvão (biochar) obtido da queima de matéria orgânica, como troncos de árvores, pedaços de ossos e esterco, capaz de manter um solo fértil por anos.\n\nAdmite-se que o efeito do biocarvão na fertilização do solo estava, em parte, relacionado à presença de grupos orgânicos do tipo carboxilato em sua superfície, carregados negativamente (—COO–). Esses grupos atraem íons positivos necessários como nutrientes, tais quais os provenientes do potássio (K), do cálcio (Ca) e do magnésio (Mg), além de micronutrientes, como zinco (Zn) e ferro (Fe). Essa ligação no solo fertilizado é predominantemente iônica, conforme ilustra a figura, em que M\\* representa os cátions metálicos. De acordo com a escala de Pauling, a eletronegatividade do elemento oxigênio é igual a 3,44\n\n![](/questoes/natureza/a461bbfa9090eb55.png)\n\nO quadro apresenta os valores de eletronegatividade desses cinco elementos metálicos.\n\n![](/questoes/natureza/a1640005720945f5.png)\n\nMICHALOVIC, M. Ancient Soil Chemists of the Amazon. **ChemMatters**, fev. 2009 (adaptado).\n\nO cátion que resultará em uma interação de maior caráter iônico com o ânion carboxilato será aquele proveniente do elemento",
+"imagens": [
+"/questoes/natureza/a461bbfa9090eb55.png",
+"/questoes/natureza/a1640005720945f5.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Potássio.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Cálcio.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Magnésio.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Zinco.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ferro.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H4",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.53442,
+"b": 1.21479,
+"c": 0.15339,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 121",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/121",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-122",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 122,
+"area": "natureza",
+"enunciado": "Em uma indústria alimentícia, para produção de doce de leite, utiliza-se um tacho de parede oca com uma entrada para vapor de água a 120 °C e uma saída para água líquida em equilíbrio com o vapor a 100 °C. Ao passar pela parte oca do tacho, o vapor de água transforma-se em líquido, liberando energia. A parede transfere essa energia para o interior do tacho, resultando na evaporação de água e consequente concentração do produto.\nNo processo de concentração do produto, é utilizada energia proveniente",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Somente do calor latente de vaporização.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Somente do calor latente de condensação.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Do calor sensível e do calor latente de vaporização.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Do calor sensível e do calor latente de condensação.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Do calor latente de condensação e do calor latente de vaporização.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H6",
+"habilidade_origem": "inep",
+"competencia": "C2",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.78472,
+"b": 1.98863,
+"c": 0.10818,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 122",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/122",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-123",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 123,
+"area": "natureza",
+"enunciado": "Entre os medicamentos mais comuns consumidos para o alívio da dor está o ibuprofeno, um composto quiral com ação anti-inflamatória e efeito analgésico, que é comercializado como fármaco opticamente puro, ou seja, sem a mistura com outro isômero óptico. A fórmula estrutural plana do ibuprofeno é:\n\n![](/questoes/natureza/ab3b03f49f86a090.png)\n\nAlém do ibuprofeno, destacam-se também os princípios ativos a seguir, presentes em outros medicamentos para o alívio da dor:\n\n![](/questoes/natureza/9db754d31f9ecb1f.jpg)\n\nO princípio ativo que apresenta o mesmo tipo de isomeria espacial que o ibuprofeno é o(a)",
+"imagens": [
+"/questoes/natureza/ab3b03f49f86a090.png",
+"/questoes/natureza/9db754d31f9ecb1f.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Fenacetina.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Paracetamol.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Dipirona sódica.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Diclofenaco sódico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Butilbrometo de escopolamina.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H24",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.7763,
+"b": 1.61245,
+"c": 0.10238,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 123",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/123",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-124",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 124,
+"area": "natureza",
+"enunciado": "Uma concessionária é responsável por um trecho de 480 quilômetros de uma rodovia. Nesse trecho, foram construídas 10 praças de pedágio, onde funcionários recebem os pagamentos nas cabines de cobrança. Também existe o serviço automático, em que os veículos providos de um dispositivo passam por uma cancela, que se abre automaticamente, evitando filas e diminuindo o tempo de viagem. Segundo a concessionária, o tempo médio para efetuar a passagem em uma cabine é de 3 minutos, e as velocidades máximas permitidas na rodovia são 100 km/h, para veículos leves, e 80 km/h, para veículos de grande porte.\nConsidere um carro e um caminhão viajando, ambos com velocidades constantes e iguais às máximas permitidas, e que somente o caminhão tenha o serviço automático de cobrança. Comparado ao caminhão, quantos minutos a menos o carro leva para percorrer toda a rodovia?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "30",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "42",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "72",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "288",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "360",
+"imagem": null
+}
+],
+"gabarito": "B",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H20",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.34079,
+"b": 1.00185,
+"c": 0.23885,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 124",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/124",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-125",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 125,
+"area": "natureza",
+"enunciado": "**Pais com síndrome de Down**\n\nA síndrome de Down é uma alteração genética associada à trissomia do cromossomo 21, ou seja, o indivíduo possui três cromossomos 21 e não um par, como é normal. Isso ocorre pela união de um gameta contendo um cromossomo 21 com um gameta possuidor de dois cromossomos 21. Embora, normalmente, as mulheres com a síndrome sejam estéreis, em 2008, no interior de São Paulo, uma delas deu à luz uma menina sem a síndrome de Down\n\nMORENO, T. **Três anos após dar à luz, mãe portadora de síndrome de Down revela detalhes de seu dia a dia**. Disponível em: www.band.uol.com.br. Acesso em: 31 out. 2013 (adaptado).\n\nSabendo disso, um jovem casal, ambos com essa síndrome, procura um médico especialista para aconselhamento genético porque querem ter um bebê.\nO médico informa ao casal que, com relação ao cromossomo 21, os zigotos formados serão",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Todos normais.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Todos tetrassômicos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Apenas normais ou tetrassômicos",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Apenas trissômicos ou tetrassômicos",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Normais, trissômicos ou tetrassômicos.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H13",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.81427,
+"b": 1.4199,
+"c": 0.25187,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 125",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/125",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-126",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 126,
+"area": "natureza",
+"enunciado": "Para que uma molécula dê origem a um medicamento de administração oral, além de apresentar atividade farmacológica, deve ser capaz de atingir o local de ação. Para tanto, essa molécula não deve se degradar no estômago (onde o meio é fortemente ácido e há várias enzimas que reagem mediante catálise ácida), deve ser capaz de atravessar as membranas celulares e ser solúvel no plasma sanguíneo (sistema aquoso). Para os fármacos cujas estruturas são formadas por cadeias carbônicas longas contendo pelo menos um grupamento amino, um recurso tecnológico empregado é sua conversão no cloridrato correspondente. Essa conversão é representada, de forma genérica, pela equação química:\n\n![](/questoes/natureza/aedcc5408ee9e5f7.png)\n\nO aumento da eficiência de circulação do fármaco no sangue, promovido por essa conversão, deve-se ao incremento de seu(sua)",
+"imagens": [
+"/questoes/natureza/aedcc5408ee9e5f7.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Basicidade.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Lipofilicidade.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Caráter iônico.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Cadeia carbônica.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Estado de oxidação.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 2.32351,
+"b": 1.21005,
+"c": 0.10449,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 126",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/126",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-127",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 127,
+"area": "natureza",
+"enunciado": "**Toxicidade do cianeto**\n\nA produção de ATP depende do gradiente de prótons gerado pela cadeia respiratória. Nessas reações, os elétrons  \nprovenientes da oxidação do NADH em NAD+ percorrem a cadeia até chegarem à citocromo c oxidase reduzindo o  \nFe3+ a Fe2+. O oxigênio atua como aceptor final desses elétrons formando água. O cianeto é uma espécie química  \naltamente tóxica que tem grande afinidade pelo Fe3+. Quando células são expostas ao cianeto, ele se liga ao sítio de  \nFe3+ da citocromo c oxidase, impedindo a sua conversão em Fe2+ e bloqueando a cadeia respiratória.\n\n![](/questoes/natureza/64cdc89914ef6c94.png)\n\nALBERTS, B. et al. **Biologia molecular da célula**. Porto Alegre: Artmed, 2010 (adaptado).\n\nEsse bloqueio aumenta a concentração celular de",
+"imagens": [
+"/questoes/natureza/64cdc89914ef6c94.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "ATP.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Água.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "NADH.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Dióxido de carbono.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Citocromo c oxidase.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H15",
+"habilidade_origem": "inep",
+"competencia": "C4",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.04923,
+"b": 2.24438,
+"c": 0.15941,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 127",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/127",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-128",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 128,
+"area": "natureza",
+"enunciado": "É comum em viagens de avião sermos solicitados a desligar aparelhos cujo funcionamento envolva a emissão ou a recepção de ondas eletromagnéticas, como celulares. A justificativa dada para esse procedimento é, entre outras coisas, a necessidade de eliminar fontes de sinais eletromagnéticos que possam interferir nas comunicações, via rádio, dos pilotos com a torre de controle.\n\nEssa interferência poderá ocorrer somente se as ondas emitidas pelo celular e as recebidas pelo rádio do avião",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Forem ambas audíveis.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Tiverem a mesma potência.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Tiverem a mesma frequência.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Tiverem a mesma intensidade.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Propagarem-se com velocidades diferentes.",
+"imagem": null
+}
+],
+"gabarito": "C",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H2",
+"habilidade_origem": "inep",
+"competencia": "C1",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.87231,
+"b": -0.45616,
+"c": 0.19791,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 128",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/128",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-129",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 129,
+"area": "natureza",
+"enunciado": "O Aldrin é um inseticida agrícola organoclorado sintético de baixa polaridade, cuja estrutura molecular simétrica, de fórmula ![](/questoes/natureza/f8762db87fb61c6e.svg), está representada na figura. Introduzido na agricultura a partir da década de 1950, esse composto apresenta alta persistência no meio ambiente e acumulação nos organismos, sendo danoso para a saúde.\n\n![](/questoes/natureza/f8762db87fb61c6e.svg)\n\nVIEGAS JÚNIOR, C. Terpenos com atividade inseticida: uma alternativa para o controle químico de insetos. **Química Nova**, v. 26, n. 3, 2003 (adaptado).\n\nUm pesquisador coletou fluidos biológicos de indivíduos de uma população contaminada por esse inseticida agrícola. Ele analisou amostras de saliva, sangue, lágrima, urina e leite quanto à presença dessa substância.\n\nEm qual dos fluidos o pesquisador provavelmente encontrou a maior concentração dessa substância?",
+"imagens": [
+"/questoes/natureza/f8762db87fb61c6e.svg",
+"/questoes/natureza/f8762db87fb61c6e.svg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Saliva, por consequência da atividade de enzimas.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Sangue, em função das hemácias e leucócitos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Lágrima, em razão da concentração de sais.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Urina, pela presenca de moléculas de ureia.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Leite, por causa do alto teor de gorduras.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H10",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.39558,
+"b": 1.60649,
+"c": 0.08851,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 129",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/129",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-130",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 130,
+"area": "natureza",
+"enunciado": "Uma cafeteria adotou copos fabricados a partir de uma composição de 50% de plástico reciclado não biodegradável e 50% de casca de café. O copo é reutilizável e retornável, pois o material, semelhante a uma cerâmica, suporta a lavagem. Embora ele seja comercializado por um preço considerado alto quando comparado ao de um copo de plástico descartável, essa cafeteria possibilita aos clientes retornarem o copo sujo e levarem o café quente servido em outro copo já limpo e higienizado. O material desse copo oferece também o conforto de não esquentar na parte externa.\n\n**Cafeteria adota copo reutilizável feito com casca de café.** Disponível em: www.gazetadopovo.com.br. Acesso em: 5 dez. 2019 (adaptado).\n\nQuais duas vantagens esse copo apresenta em comparação ao copo descartável?",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Ter a durabilidade de uma cerâmica e ser totalmente biodegradável.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Ser tão durável quanto uma cerâmica e ter alta condutividade térmica.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ser um mau condutor térmico e aumentar o resíduo biodegradável na natureza.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Ter baixa condutividade térmica e reduzir o resíduo não biodegradável na natureza.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Ter alta condutividade térmica e possibilitar a degradação do material no meio ambiente.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H12",
+"habilidade_origem": "inep",
+"competencia": "C3",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.09202,
+"b": 0.32873,
+"c": 0.1577,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 130",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/130",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-131",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 131,
+"area": "natureza",
+"enunciado": "O consumo exagerado de refrigerantes é preocupante, pois contribui para o aumento de casos de obesidade e diabetes. Considere dois refrigerantes enlatados, um comum e um diet, e que ambos possuam a mesma quantidade de aditivos, exceto pela presença de açúcar. O refrigerante comum contém basicamente água carbonatada e grande quantidade de açúcar; já o refrigerante diet tem água carbonatada e adoçantes, cujas massas são muito pequenas.\n\nCAVAGIS, A. D. M.; PEREIRA, E. A.; OLIVEIRA, L. C. Um método simples para avaliar o teor de sacarose e CO2 em refrigerantes. **Química Nova na Escola**, n. 3, ago. 2014 (adaptado).\n\nEntre as duas versões apresentadas, o refrigerante comum possui",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Maior densidade.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Menor viscosidade.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Maior volume de gás dissolvido.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Menor massa de solutos dissolvidos.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Maior temperatura de congelamento.",
+"imagem": null
+}
+],
+"gabarito": "A",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H18",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.50761,
+"b": 0.49481,
+"c": 0.17371,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 131",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/131",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-132",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 132,
+"area": "natureza",
+"enunciado": "O manual de um automóvel alerta sobre os cuidados em relação à pressão do ar no interior dos pneus. Recomenda-se que a pressão seja verificada com os pneus frios (à temperatura ambiente). Um motorista, desatento a essa informação, realizou uma viagem longa sobre o asfalto quente e, em seguida, verificou que a pressão![](/questoes/natureza/ff3b83b173eb99ee.jpg) no interior dos pneus não era a recomendada pelo fabricante. Na ocasião, a temperatura dos pneus era ![](/questoes/natureza/f087455ee0aa8c8d.jpg). Após um longo período em repouso, os pneus do carro atingiram a temperatura ambiente T. Durante o resfriamento, não há alteração no volume dos pneus e na quantidade de ar no seu interior. Considere o ar dos pneus um gás perfeito (também denominado gás ideal).\n\nDurante o processo de resfriamento, os valores de pressão em relação à temperatura (P x T) são representados pelo gráfico:",
+"imagens": [
+"/questoes/natureza/ff3b83b173eb99ee.jpg",
+"/questoes/natureza/f087455ee0aa8c8d.jpg"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "",
+"imagem": "/questoes/natureza/5f576eb5096a1cd2.jpg"
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H21",
+"habilidade_origem": "inep",
+"competencia": "C6",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.52403,
+"b": 0.95966,
+"c": 0.15221,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "facil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 132",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/132",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-133",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 133,
+"area": "natureza",
+"enunciado": "O descarte de detergentes comuns nos esgotos domésticos ocasiona a formação de uma camada de espuma que impede a entrada de oxigênio na água. Os microrganismos que vivem nessas águas não são capazes de quebrar moléculas ramificadas, ocorrendo assim um desequilíbrio ambiental nos rios. A fórmula a seguir representa a estrutura química de um tensoativo presente na composição de um detergente não biodegradável.\n\n![](/questoes/natureza/e3671af7a725c83f.png)\n\n**Tensoativo não biodegradável**\n\nQual modificação química na estrutura desse tensoativo o tornaria um detergente biodegradável?",
+"imagens": [
+"/questoes/natureza/e3671af7a725c83f.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Retirar a parte polar da molécula.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Eliminar as insaturações do anel aromático.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Trocar o grupo aniônico por um grupo neutro.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Alterar o grupo aniônico por um grupo catiônico.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Modificar a cadeia carbônica para cadeia normal.",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H27",
+"habilidade_origem": "inep",
+"competencia": "C7",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.63689,
+"b": 1.43988,
+"c": 0.1836,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 133",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/133",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+},
+{
+"id": "enem-2023-134",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 134,
+"area": "natureza",
+"enunciado": "**Avaliação de substâncias genotóxicas**\n\nO ensaio de micronúcleos é um teste de avaliação de genotoxicidade que associa a presença de micronúcleos (pequenos núcleos que aparecem próximo aos núcleos das células) com lesões genéticas. Os micronúcleos são fragmentos de DNA encapsulados, provenientes do fuso mitótico durante a divisão celular.\n\nDIAS, V. M. **Micronúcleos em células tumorais**: biologia e implicações  \npara a tumorigênese. Dissertação de Mestrado. USP, 2006 (adaptado).\n\nOs micronúcleos se originam dos(as)",
+"imagens": [],
+"alternativas": [
+{
+"letra": "A",
+"texto": "Nucléolos.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "Lisossomos.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "Ribossomos",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "Mitocôndrias",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "Cromossomos",
+"imagem": null
+}
+],
+"gabarito": "E",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H29",
+"habilidade_origem": "inep",
+"competencia": "C8",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 1.56816,
+"b": 1.75342,
+"c": 0.18632,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "dificil",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 134",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/134",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": false
+}
+},
+{
+"id": "enem-2023-135",
+"ano": 2023,
+"dia": 2,
+"caderno": "azul",
+"numero": 135,
+"area": "natureza",
+"enunciado": "O petróleo é uma matéria-prima muito valiosa e métodos geofísicos são úteis na sua prospecção. É possível identificar a composição de materiais estratificados medindo-se a velocidade de propagação do som (onda mecânica) através deles. Considere que uma camada de 450 m de um líquido se encontra presa no subsolo entre duas camadas rochosas, conforme o esquema. Um pulso acústico (que gera uma vibração mecânica) é emitido a partir da superfície do solo, onde são posteriormente recebidas duas vibrações refletidas (ecos). A primeira corresponde à reflexão do pulso na interface superior do líquido com a camada rochosa. A segunda vibração deve-se à reflexão do pulso na interface inferior. O tempo entre a emissão do pulso e a chegada do primeiro eco é de 0,5 s. O segundo eco chega 1,1 s após a emissão do pulso\n\n![](/questoes/natureza/969fd120c7c2e5bd.png)\n\nA velocidade do som na camada líquida, em metro por segundo, é",
+"imagens": [
+"/questoes/natureza/969fd120c7c2e5bd.png"
+],
+"alternativas": [
+{
+"letra": "A",
+"texto": "270.",
+"imagem": null
+},
+{
+"letra": "B",
+"texto": "540.",
+"imagem": null
+},
+{
+"letra": "C",
+"texto": "818.",
+"imagem": null
+},
+{
+"letra": "D",
+"texto": "1 500.",
+"imagem": null
+},
+{
+"letra": "E",
+"texto": "1 800.",
+"imagem": null
+}
+],
+"gabarito": "D",
+"gabarito_fonte": "inep",
+"anulada": false,
+"habilidade": "CN-H19",
+"habilidade_origem": "inep",
+"competencia": "C5",
+"assuntos": [],
+"classificacao": "heuristica",
+"tri": {
+"a": 3.9865,
+"b": 1.63479,
+"c": 0.19026,
+"fonte": "INEP, microdados do ENEM 2023 (ITENS_PROVA), caderno azul"
+},
+"dificuldade_estimada": "media",
+"fonte": {
+"orgao": "INEP",
+"prova": "ENEM 2023, caderno azul (aplicação regular), questão 135",
+"url_oficial": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos",
+"transcricao": "enem.dev",
+"transcricao_url": "https://api.enem.dev/v1/exams/2023/questions/135",
+"microdados_url": "https://download.inep.gov.br/microdados/microdados_enem_2023.zip"
+},
+"qualidade": {
+"enunciado_vazio": false,
+"alternativas_incompletas": false,
+"depende_de_imagem": true
+}
+}
+]
