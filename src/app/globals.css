@@ -513,6 +513,12 @@ mark {
 .entrada-stagger > :nth-child(n + 6) {
   animation-delay: 200ms;
 }
+/* Mesmos atrasos (0, 40…200ms) com sibling-index(); os :nth-child acima ficam como fallback. */
+@supports (animation-delay: calc(sibling-index() * 1ms)) {
+  .entrada-stagger > :nth-child(n) {
+    animation-delay: calc(min(sibling-index() - 1, 5) * 40ms);
+  }
+}
 .anim-entrada {
   animation: gab-entrada 220ms var(--ease) both;
 }
